@@ -1,0 +1,1172 @@
+{
+  "map": "islands",
+  "concept": "B",
+  "size_km": 16,
+  "ops": [
+    {
+      "op": 1,
+      "name": "Black Strand",
+      "start": [
+        2500,
+        600
+      ],
+      "objectives": [
+        {
+          "id": "1-01",
+          "name": "Strand Bunker Line",
+          "xy": [
+            2800,
+            1800
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Covers the whole black beach",
+          "recon_visible_from_m": 2532,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "1-02",
+          "name": "Lava Rib Gun Pits",
+          "xy": [
+            2000,
+            1900
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Pits in the lava ribs enfilade the beach",
+          "recon_visible_from_m": 2578,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-03",
+          "name": "Lighthouse Station",
+          "xy": [
+            4120,
+            2328
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Spots for the Stack Garden guns",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 221 m to sketch land"
+        },
+        {
+          "id": "1-04",
+          "name": "Ash Village",
+          "xy": [
+            3000,
+            2800
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "FOB site for op 2",
+          "recon_visible_from_m": 2368,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-05",
+          "name": "Lava Tube Shelters",
+          "xy": [
+            2400,
+            3300
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in the lava ridge, tight and dark",
+          "recon_visible_from_m": 2391,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "1-06",
+          "name": "Summit Post",
+          "xy": [
+            2800,
+            3400
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Sees the airfield; intel for op 2",
+          "recon_visible_from_m": 1725,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-07",
+          "name": "Cliff AA North",
+          "xy": [
+            2200,
+            3900
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Grounds air on the north cliffs",
+          "recon_visible_from_m": 2445,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-08",
+          "name": "Geothermal Plant",
+          "xy": [
+            3600,
+            3300
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Powers the island shields",
+          "recon_visible_from_m": 2453,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-09",
+          "name": "Droid Artillery Park",
+          "xy": [
+            1600,
+            2700
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Guns are targets only (Zeus fires); pilots soften them",
+          "recon_visible_from_m": 2359,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-10",
+          "name": "Sniper Stacks",
+          "xy": [
+            5200,
+            2800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Stacks overlook the beach flank",
+          "recon_visible_from_m": 1435,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-11",
+          "name": "Offshore Picket Platform",
+          "xy": [
+            1000,
+            4200
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Warns the airfield of the fleet",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 2,
+      "name": "Stacks and Airfield",
+      "start": [
+        3000,
+        2800
+      ],
+      "objectives": [
+        {
+          "id": "2-01",
+          "name": "Arch Gate Fort",
+          "xy": [
+            5784,
+            3528
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Fort under a natural arch",
+          "recon_visible_from_m": 1653,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 173 m to sketch land"
+        },
+        {
+          "id": "2-02",
+          "name": "Stack-top Gun Nests",
+          "xy": [
+            6696,
+            2600
+          ],
+          "size": "squad",
+          "kind": "battery",
+          "reason": "Guns on stacks cover the boat water",
+          "recon_visible_from_m": 968,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 196 m to sketch land"
+        },
+        {
+          "id": "2-03",
+          "name": "Stack Boat Pens",
+          "xy": [
+            6200,
+            3900
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Droid boats; take them to free the water",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-04",
+          "name": "Airfield Runway",
+          "xy": [
+            9800,
+            3900
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "CIS fighters base here; take it and air arrives faster",
+          "recon_visible_from_m": 3144,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "2-05",
+          "name": "Hangar Row",
+          "xy": [
+            10392,
+            4072
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Big halls with staggered cover",
+          "recon_visible_from_m": 2124,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 29 m to sketch land"
+        },
+        {
+          "id": "2-06",
+          "name": "AA Battery West",
+          "xy": [
+            8500,
+            3600
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the west approach",
+          "recon_visible_from_m": 1703,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-07",
+          "name": "AA Battery East",
+          "xy": [
+            10936,
+            4040
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the causeway",
+          "recon_visible_from_m": 1649,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 513 m to sketch land"
+        },
+        {
+          "id": "2-08",
+          "name": "Fuel Farm",
+          "xy": [
+            9300,
+            3300
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fighters stay grounded without it",
+          "recon_visible_from_m": 1023,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "2-09",
+          "name": "Control Tower",
+          "xy": [
+            10072,
+            4008
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel: CIS flight plans",
+          "recon_visible_from_m": 913,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 399 m to sketch land"
+        },
+        {
+          "id": "2-10",
+          "name": "Revetment Tunnels",
+          "xy": [
+            10776,
+            3096
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Covered ways between revetments",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 162 m to sketch land"
+        },
+        {
+          "id": "2-11",
+          "name": "Parked Droid Fighters",
+          "xy": [
+            9600,
+            3500
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the flight line",
+          "recon_visible_from_m": 1617,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-12",
+          "name": "Workers' Camp",
+          "xy": [
+            8632,
+            4056
+          ],
+          "size": "squad",
+          "kind": "town",
+          "reason": "Small sci-fi camp",
+          "recon_visible_from_m": 903,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 519 m to sketch land"
+        }
+      ]
+    },
+    {
+      "op": 3,
+      "name": "Fjord Fortress",
+      "start": [
+        3192,
+        4184
+      ],
+      "objectives": [
+        {
+          "id": "3-01",
+          "name": "South Notch Wall",
+          "xy": [
+            4600,
+            6000
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Wall plugs a cliff notch: the gate into the island",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "3-02",
+          "name": "West Notch Wall",
+          "xy": [
+            3200,
+            7600
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Second walled notch: another way in",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-03",
+          "name": "Sound Mouth Batteries",
+          "xy": [
+            6568,
+            6936
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns close the sound to boats",
+          "recon_visible_from_m": 1660,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 72 m to sketch land"
+        },
+        {
+          "id": "3-04",
+          "name": "Sound Boom Gate",
+          "xy": [
+            6200,
+            7200
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Boom blocks boats until opened",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-05",
+          "name": "Sound Head Town",
+          "xy": [
+            4712,
+            7992
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Town at the head of the sound",
+          "recon_visible_from_m": 2508,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 127 m to sketch land"
+        },
+        {
+          "id": "3-06",
+          "name": "Cliff Galleries",
+          "xy": [
+            5384,
+            8072
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Tunnel shells in the cliff",
+          "recon_visible_from_m": 2503,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 393 m to sketch land"
+        },
+        {
+          "id": "3-07",
+          "name": "Summit AA",
+          "xy": [
+            5000,
+            7400
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Highest AA on the map",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-08",
+          "name": "Terrace Farms",
+          "xy": [
+            4232,
+            8328
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Stepped fields, low walls for cover",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 358 m to sketch land"
+        },
+        {
+          "id": "3-09",
+          "name": "Cable Car Station",
+          "xy": [
+            5300,
+            6600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fast way up the cliff once taken",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-10",
+          "name": "Sound Rim Guns",
+          "xy": [
+            5900,
+            6600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the rim guns",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-11",
+          "name": "North Cove Landing",
+          "xy": [
+            5160,
+            8744
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Back door from the north",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 709 m to sketch land"
+        },
+        {
+          "id": "3-12",
+          "name": "Peak Relay Dish",
+          "xy": [
+            4400,
+            7000
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Links the fortress to the caldera",
+          "recon_visible_from_m": 4500,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 4,
+      "name": "Shoals and Crags",
+      "start": [
+        4792,
+        8040
+      ],
+      "objectives": [
+        {
+          "id": "4-01",
+          "name": "Shoal Pillboxes",
+          "xy": [
+            7600,
+            9000
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Wading under fire across the shoals",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-02",
+          "name": "Shoal Wreck Fort",
+          "xy": [
+            7000,
+            8600
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Wrecked freighter on the bar",
+          "recon_visible_from_m": 1608,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-03",
+          "name": "Crag Research Station",
+          "xy": [
+            3800,
+            12800
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Sci-fi station on a crag",
+          "recon_visible_from_m": 4500,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "4-04",
+          "name": "Crag Stair Fort",
+          "xy": [
+            4312,
+            13304
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Fort on the cliff stair",
+          "recon_visible_from_m": 1609,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 130 m to sketch land"
+        },
+        {
+          "id": "4-05",
+          "name": "Crag Cave Shells",
+          "xy": [
+            3400,
+            12400
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Tight tunnel shells",
+          "recon_visible_from_m": 3592,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "4-06",
+          "name": "Crag AA",
+          "xy": [
+            4232,
+            12152
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the northern water",
+          "recon_visible_from_m": 1063,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 371 m to sketch land"
+        },
+        {
+          "id": "4-07",
+          "name": "Caldera West Outpost",
+          "xy": [
+            8600,
+            11400
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Foothold on the caldera's west flank",
+          "recon_visible_from_m": 2873,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-08",
+          "name": "Breach Watch Battery",
+          "xy": [
+            8900,
+            9700
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the breach channel",
+          "recon_visible_from_m": 2655,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-09",
+          "name": "Steam Vent Bores",
+          "xy": [
+            8200,
+            10800
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Heat plumes hide CIS movement",
+          "recon_visible_from_m": 1476,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-10",
+          "name": "Flank Gun Line",
+          "xy": [
+            9000,
+            12400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the flank guns",
+          "recon_visible_from_m": 2516,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-11",
+          "name": "Skerry Beacon",
+          "xy": [
+            2000,
+            11400
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Guides CIS shipping",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 5,
+      "name": "Cinder Road and Breach",
+      "start": [
+        10088,
+        4792
+      ],
+      "objectives": [
+        {
+          "id": "5-01",
+          "name": "Cinder Cone Fort",
+          "xy": [
+            10568,
+            6008
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the cone between the causeways",
+          "recon_visible_from_m": 2506,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 68 m to sketch land"
+        },
+        {
+          "id": "5-02",
+          "name": "Causeway Checkpoint",
+          "xy": [
+            10296,
+            5192
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Gate on the causeway (starts closed)",
+          "recon_visible_from_m": 916,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 9 m to sketch land"
+        },
+        {
+          "id": "5-03",
+          "name": "Causeway Bridge Gun",
+          "xy": [
+            10728,
+            7176
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Covers the second causeway",
+          "recon_visible_from_m": 1612,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 37 m to sketch land"
+        },
+        {
+          "id": "5-04",
+          "name": "Caldera Foot Town",
+          "xy": [
+            11080,
+            8568
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Town at the end of the causeway",
+          "recon_visible_from_m": 2463,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 280 m to sketch land"
+        },
+        {
+          "id": "5-05",
+          "name": "Breach Dam Gate",
+          "xy": [
+            9600,
+            10000
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Dam closes the caldera to boats",
+          "recon_visible_from_m": 3000,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-06",
+          "name": "Dam Turbine Hall",
+          "xy": [
+            9400,
+            9600
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Interior halls in the dam",
+          "recon_visible_from_m": 2100,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-07",
+          "name": "South Flank Tunnels",
+          "xy": [
+            11800,
+            8800
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells up the south flank",
+          "recon_visible_from_m": 2534,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-08",
+          "name": "Rim AA South",
+          "xy": [
+            11400,
+            9400
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Stops drops onto the rim",
+          "recon_visible_from_m": 2534,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-09",
+          "name": "East Slope Comms",
+          "xy": [
+            13200,
+            10600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel on the shipyard",
+          "recon_visible_from_m": 2343,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-10",
+          "name": "Rim Shield Pylons",
+          "xy": [
+            12400,
+            9600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Shields the yard until hit",
+          "recon_visible_from_m": 3318,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-11",
+          "name": "Lava Quarry",
+          "xy": [
+            12264,
+            8744
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Quarry pits for cover",
+          "recon_visible_from_m": 1425,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 481 m to sketch land"
+        },
+        {
+          "id": "5-12",
+          "name": "Steam Plume Sensor",
+          "xy": [
+            13800,
+            12000
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Early warning on the east",
+          "recon_visible_from_m": 1418,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 6,
+      "name": "Inside the Caldera",
+      "start": [
+        11192,
+        9560
+      ],
+      "objectives": [
+        {
+          "id": "6-01",
+          "name": "Dry Dock Alpha",
+          "xy": [
+            10200,
+            12400
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Frigate in dry dock: the run's end goal",
+          "recon_visible_from_m": 3618,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-02",
+          "name": "Slipway Cranes",
+          "xy": [
+            11900,
+            12500
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Crane decks over the water",
+          "recon_visible_from_m": 3633,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-03",
+          "name": "Rim Foundry Shell",
+          "xy": [
+            12792,
+            11000
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Multi-level foundry built into the rim",
+          "recon_visible_from_m": 3050,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 192 m to sketch land"
+        },
+        {
+          "id": "6-04",
+          "name": "Shield Generator",
+          "xy": [
+            11000,
+            12900
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Drops the yard's shield",
+          "recon_visible_from_m": 3965,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-05",
+          "name": "Crater Wall Barracks",
+          "xy": [
+            9384,
+            11416
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Reserve garrison",
+          "recon_visible_from_m": 1608,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 245 m to sketch land"
+        },
+        {
+          "id": "6-06",
+          "name": "Rim Tunnel Maze",
+          "xy": [
+            12300,
+            10000
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Tight maze down from the rim",
+          "recon_visible_from_m": 2633,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-07",
+          "name": "Floating Fuel Docks",
+          "xy": [
+            11000,
+            11000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fuel for the yard",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-08",
+          "name": "North Rim Command",
+          "xy": [
+            11800,
+            13000
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Command and intel",
+          "recon_visible_from_m": 3141,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-09",
+          "name": "Unfinished Frigate Hull",
+          "xy": [
+            10800,
+            11600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Big air target in the lake",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-10",
+          "name": "Pump House",
+          "xy": [
+            9600,
+            12200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Floods the dry dock if taken",
+          "recon_visible_from_m": 2812,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "6-11",
+          "name": "Crane Gantry Bridge",
+          "xy": [
+            12600,
+            12200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Walkway between rim and docks",
+          "recon_visible_from_m": 2337,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    }
+  ],
+  "measured_or_assumed": "ASSUMED: positions hand-placed on the sketch, then snapped to the nearest sketch land cell unless the site sits on water; recon distances, garrison counts and ways-in are ASSUMED rules of thumb (see tools/make_all.py)"
+}
