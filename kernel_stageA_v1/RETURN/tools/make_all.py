@@ -80,6 +80,7 @@ def stats_md(name, H, d, ops_json):
     rows = ["| Island (sketch) | Area km² |", "|---|---|"]
     total_land = float((H > 0).mean() * 256)
     for nm, x, y in d["islands"]:
+        x, y, _ = T.snap_to_land(H, x, y, min_h=0.1, max_m=900)
         r, c = int(y / T.CELL), int(x / T.CELL)
         L = lab[r, c]
         rows.append(f"| {nm} | {areas[L - 1]:.1f} |" if L > 0 else f"| {nm} | (label point in water) |")

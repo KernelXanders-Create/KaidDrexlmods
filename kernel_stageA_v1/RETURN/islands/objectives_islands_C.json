@@ -1074,16 +1074,16 @@
           "name": "Hull AA Blisters",
           "xy": [
             10008,
-            11720
+            11704
           ],
           "size": "two_squad",
           "kind": "air_prep",
           "reason": "Pilots soften the blisters",
-          "recon_visible_from_m": 1611,
+          "recon_visible_from_m": 1617,
           "interior": false,
           "tunnels": false,
           "ways_in": 3,
-          "notes": "garrison points ~8-15 (ASSUMED); snapped 210 m to sketch land"
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 224 m to sketch land"
         },
         {
           "id": "6-10",
@@ -1105,17 +1105,17 @@
           "id": "6-11",
           "name": "Escape Pod Bay",
           "xy": [
-            10600,
-            11784
+            10584,
+            11800
           ],
           "size": "squad",
           "kind": "other",
           "reason": "Stops CIS officers escaping",
-          "recon_visible_from_m": 912,
+          "recon_visible_from_m": 905,
           "interior": false,
           "tunnels": false,
           "ways_in": 2,
-          "notes": "garrison points ~4-8 (ASSUMED); snapped 231 m to sketch land"
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 238 m to sketch land"
         }
       ]
     }

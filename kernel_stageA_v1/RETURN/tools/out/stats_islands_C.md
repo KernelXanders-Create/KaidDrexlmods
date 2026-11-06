@@ -12,7 +12,7 @@
 | Gap / route | Line length m | Water along it m | Deepest m | Shallowest m | Crossed by |
 |---|---|---|---|---|---|
 | Reef walk: east motu -> south motu | 3471 | 1355 | -1.2 | -0.0 | wade the reef flat |
-| East pass | 2571 | 2571 | -3.0 | -0.0 | boats only |
+| East pass (along its axis) | 1800 | 1800 | -14.9 | -10.0 | boats only |
 | South motu -> stilt town (lagoon) | 2828 | 2692 | -10.9 | -0.0 | boat / hover / air |
 | Stilt town -> makatea | 3672 | 3062 | -11.7 | -0.2 | boat / hover / air |
 | West motu -> makatea | 1980 | 1050 | -1.5 | -0.0 | boat; reef flat then lagoon |

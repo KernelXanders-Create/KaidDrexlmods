@@ -7,7 +7,7 @@
 | Airfield Isle | 4.1 |
 | Fjord Isle | 8.8 |
 | The Caldera | 21.0 |
-| Cinder Cone | (label point in water) |
+| Cinder Cone | 0.8 |
 | Northern Crags | 3.6 |
 | **All land above 0 m** | **49.0** |
 

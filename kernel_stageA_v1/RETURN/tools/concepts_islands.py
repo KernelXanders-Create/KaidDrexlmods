@@ -62,12 +62,12 @@ def islands_A():
     T.tower(H, 12700, 6500, 520, 110, seed=10)
     T.set_blob(H, 12720, 6520, 170, -1.8, soft=50, seed=11, mode="set")
     # The Crown: big karst massif, ring of towers around a dry doline floor
-    T.island(H, 11800, 11700, 3100, 2800, 60, seed=12, ramp=900, cliff_dir=45, cliff_ramp=80)
+    T.island(H, 11800, 11200, 3300, 3100, 50, seed=12, ramp=1100, cliff_dir=45, cliff_ramp=80)
     d = _ring(H, 11800, 11800, 1500, 650, 320, seed=13, notches=(260, 190, 95))
     floor = 25 + 3 * T.fbm(14, 300, 3)
     t = T.smoothstep(1150, 950, d)
     H[:] = H * (1 - t) + floor * t
-    T.set_blob(H, 11500, 8600, 1250, -0.8, soft=300, seed=15, mode="max")   # fringing reef S
+    T.set_blob(H, 11300, 7900, 900, -0.8, soft=250, seed=15, mode="max")    # fringing reef S
     # Stepping-stone cays between Market Isle and the Crown
     T.island(H, 8800, 8200, 420, 300, 12, seed=16, ramp=200)
     T.island(H, 9600, 9300, 300, 260, 8, seed=17, ramp=150)
@@ -84,7 +84,7 @@ def islands_A():
               ("The Crown", 13400, 14900), ("doline floor", 11800, 12100), ("north karst field", 7900, 15700),
               ("sandbar", 4300, 5000), ("cays", 9400, 8000)]
     islands = [("Landing Key", 3200, 3000), ("Market Isle", 6600, 7000), ("Gun Tower Isle", 2600, 8800),
-               ("The Crown", 11800, 9800), ("Twin Hong W", 11200, 4700), ("Twin Hong E", 12700, 6200),
+               ("The Crown", 13000, 11800), ("Twin Hong W", 11200, 4700), ("Twin Hong E", 12700, 6200),
                ("Wreck Reef motu", 4300, 12900), ("Cay 1", 8800, 8200)]
     crossings = [
         ("Landing Key -> Market Isle (sandbar)", (4400, 3600), (5900, 6300), "wade the sandbar; boats either side"),
@@ -92,7 +92,7 @@ def islands_A():
         ("Market Isle -> Gun Tower Isle", (5300, 7300), (3500, 8300), "boat / air"),
         ("Market Isle -> Twin Hongs", (7800, 6600), (10500, 5600), "boat / air"),
         ("Market Isle -> Crown via cays", (7800, 7600), (9900, 9600), "boat hop via cays / air"),
-        ("Twin Hongs -> Crown south reef", (11500, 5900), (11500, 9000), "boat, then wade the reef flat"),
+        ("Twin Hongs -> Crown south reef", (11500, 5900), (11500, 9300), "boat, then wade the reef flat"),
         ("Gun Tower Isle -> Wreck Reef", (2800, 10800), (4300, 11800), "boat, then wade the reef"),
     ]
     S, Tt, P = "s", "t", "p"
@@ -147,13 +147,13 @@ def islands_A():
             ("Reef Power Pylons", "other", S, 12.0, 7.3, "Cables run to the Crown: proves the facility", "w"),
             ("Cay Outpost", "outpost", S, 8.8, 8.2, "Stepping stone for boats", ""),
             ("Cay Relay", "other", S, 9.6, 9.3, "Relays Crown comms", ""),
-            ("Crown South Beach Defences", "outpost", P, 10.6, 10.3, "The second beach assault; FOB site for op 5", ""),
-            ("Reef Obstacle Line", "outpost", S, 11.8, 9.0, "Wading under fire across the reef flat", "w"),
+            ("Crown South Beach Defences", "outpost", P, 11.0, 9.3, "The second beach assault; FOB site for op 5", ""),
+            ("Reef Obstacle Line", "outpost", S, 11.6, 8.3, "Wading under fire across the reef flat", "w"),
             ("South Shield Projector", "air_prep", Tt, 12.4, 9.6, "Shields the beach guns until hit", ""),
             ("Coastal Research Station", "town", Tt, 10.2, 9.8, "Sci-fi station; intel on the bowl", "i"),
             ("Hong Comms Dish", "air_only", S, 13.0, 6.8, "Links the Crown to the CIS fleet", ""),
         ]),
-        dict(op=5, name="The Ring", start=(11000, 9200), rows=[
+        dict(op=5, name="The Ring", start=(11000, 9300), rows=[
             ("South Notch Gate", "facility", P, 11.6, 10.3, "Vehicle way into the bowl (gate starts closed)", "v"),
             ("West Notch Wall", "facility", Tt, 10.3, 11.8, "Wall plugs the west notch; second way in", ""),
             ("East Cliff Lift", "other", Tt, 13.3, 11.6, "Lift up the cliff: third way in", "i"),
@@ -356,11 +356,13 @@ def islands_C():
         px, py = cx + rx * np.cos(r), cy + ry * np.sin(r)
         T.island(H, px, py, a, b, h, ang=ang + 90, seed=50 + k, ramp=120, shelf_w=80, floor=-30.0, wstr=150)
     # Passes through the ring (boats only)
+    passes = []
     for ang in (-10, -75, 170, 80):
         r = np.radians(ang)
         p0 = (cx + (rx - 900) * np.cos(r), cy + (ry - 900) * np.sin(r))
         p1 = (cx + (rx + 900) * np.cos(r), cy + (ry + 900) * np.sin(r))
         T.carve_line(H, [p0, p1], 240, 10, soft=80)
+        passes.append((p0, p1))
     # Patch reefs in the lagoon (stilt towns stand on these)
     for (x, y, r) in [(8400, 5400, 350), (6600, 6200, 300), (9800, 6000, 250), (7400, 7000, 260),
                       (5800, 5000, 220), (10400, 7400, 230), (7700, 4600, 200), (9000, 6600, 180)]:
@@ -380,7 +382,7 @@ def islands_C():
                ("West motu", cx - rx, cy)]
     crossings = [
         ("Reef walk: east motu -> south motu", (13800, 5000), (11200, 2700), "wade the reef flat"),
-        ("East pass", (13000, 6600), (15500, 6000), "boats only"),
+        ("East pass (along its axis)", passes[0][0], passes[0][1], "boats only"),
         ("South motu -> stilt town (lagoon)", (8000, 2400), (8400, 5200), "boat / hover / air"),
         ("Stilt town -> makatea", (8200, 5600), (6400, 8800), "boat / hover / air"),
         ("West motu -> makatea", (2400, 9000), (3800, 10400), "boat; reef flat then lagoon"),

@@ -733,24 +733,24 @@
           "id": "4-08",
           "name": "Crown South Beach Defences",
           "xy": [
-            10664,
-            10360
+            11064,
+            9352
           ],
           "size": "platoon",
           "kind": "outpost",
           "reason": "The second beach assault; FOB site for op 5",
-          "recon_visible_from_m": 4500,
+          "recon_visible_from_m": 2503,
           "interior": false,
           "tunnels": false,
           "ways_in": 4,
-          "notes": "garrison points ~15-30 (ASSUMED); snapped 88 m to sketch land"
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 82 m to sketch land"
         },
         {
           "id": "4-09",
           "name": "Reef Obstacle Line",
           "xy": [
-            11800,
-            9000
+            11600,
+            8300
           ],
           "size": "squad",
           "kind": "outpost",
@@ -771,7 +771,7 @@
           "size": "two_squad",
           "kind": "air_prep",
           "reason": "Shields the beach guns until hit",
-          "recon_visible_from_m": 1718,
+          "recon_visible_from_m": 1981,
           "interior": false,
           "tunnels": false,
           "ways_in": 3,
@@ -781,17 +781,17 @@
           "id": "4-11",
           "name": "Coastal Research Station",
           "xy": [
-            10616,
-            10392
+            10408,
+            9976
           ],
           "size": "two_squad",
           "kind": "town",
           "reason": "Sci-fi station; intel on the bowl",
-          "recon_visible_from_m": 3965,
+          "recon_visible_from_m": 1604,
           "interior": true,
           "tunnels": false,
           "ways_in": 3,
-          "notes": "garrison points ~8-15 (ASSUMED); snapped 724 m to sketch land"
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 272 m to sketch land"
         },
         {
           "id": "4-12",
@@ -815,16 +815,16 @@
       "op": 5,
       "name": "The Ring",
       "start": [
-        11000,
-        9200
+        11064,
+        9352
       ],
       "objectives": [
         {
           "id": "5-01",
           "name": "South Notch Gate",
           "xy": [
-            11592,
-            10392
+            11600,
+            10300
           ],
           "size": "platoon",
           "kind": "facility",
@@ -833,7 +833,7 @@
           "interior": false,
           "tunnels": false,
           "ways_in": 5,
-          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 92 m to sketch land"
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane"
         },
         {
           "id": "5-02",
@@ -935,17 +935,17 @@
           "id": "5-08",
           "name": "Jungle Workers' Town",
           "xy": [
-            10392,
-            10520
+            10300,
+            10400
           ],
           "size": "two_squad",
           "kind": "town",
           "reason": "Facility staff housing",
-          "recon_visible_from_m": 2840,
+          "recon_visible_from_m": 1950,
           "interior": true,
           "tunnels": false,
           "ways_in": 3,
-          "notes": "garrison points ~8-15 (ASSUMED); snapped 151 m to sketch land"
+          "notes": "garrison points ~8-15 (ASSUMED)"
         },
         {
           "id": "5-09",
@@ -1005,7 +1005,7 @@
           "size": "squad",
           "kind": "air_only",
           "reason": "Early warning for the bowl",
-          "recon_visible_from_m": 910,
+          "recon_visible_from_m": 927,
           "interior": false,
           "tunnels": false,
           "ways_in": 2,
@@ -1017,8 +1017,8 @@
       "op": 6,
       "name": "Into the Crown",
       "start": [
-        11656,
-        10376
+        11600,
+        10100
       ],
       "objectives": [
         {
@@ -1191,7 +1191,7 @@
           "size": "squad",
           "kind": "other",
           "reason": "Calls the fleet; cut it before the end",
-          "recon_visible_from_m": 1137,
+          "recon_visible_from_m": 1134,
           "interior": false,
           "tunnels": false,
           "ways_in": 2,
