@@ -1,0 +1,162 @@
+{
+ "nearest_gap_m": {
+  "median": 0.57,
+  "p25": 0.32,
+  "p75": 1.27
+ },
+ "touching_lt1m_share_in_groups_of_3plus": 48.1,
+ "touching_groups_sizes": [
+  6,
+  5,
+  4,
+  4,
+  4,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "door_square_to_street_deg": {
+  "median": 1.6,
+  "share_within_2deg": 63.8
+ },
+ "setback_from_ribbon_m": {
+  "median": 0.59,
+  "p90": 0.77,
+  "share_over_1m": 7.4
+ },
+ "street_wall_continuity_pct": {
+  "M": [
+   "main",
+   311,
+   65
+  ],
+  "U": [
+   "lane",
+   312,
+   82
+  ],
+  "K": [
+   "lane",
+   85,
+   70
+  ],
+  "K2": [
+   "lane",
+   121,
+   79
+  ],
+  "C1": [
+   "lane",
+   74,
+   38
+  ],
+  "C2": [
+   "lane",
+   71,
+   53
+  ],
+  "C3": [
+   "lane",
+   69,
+   59
+  ],
+  "C4": [
+   "lane",
+   73,
+   44
+  ],
+  "HL": [
+   "lane",
+   70,
+   74
+  ]
+ },
+ "top_models": [
+  [
+   "WH11",
+   10,
+   9.6
+  ],
+  [
+   "ND03",
+   10,
+   9.6
+  ],
+  [
+   "WH24",
+   10,
+   9.6
+  ],
+  [
+   "WH19",
+   10,
+   9.6
+  ],
+  [
+   "ND01",
+   7,
+   6.7
+  ],
+  [
+   "WH06",
+   7,
+   6.7
+  ]
+ ],
+ "ND01_ND02_next_to_ND01_ND02": 0,
+ "families": {
+  "naboo_dome": 27,
+  "scifi": 15,
+  "white_or_pale_house": 60,
+  "industrial": 2
+ },
+ "square_area_m2": 1632,
+ "square_comp_cover_pct": 15.5,
+ "landmark_distance_to_square_m": 0.0,
+ "buildings_within_6m_of_square": 7,
+ "cut_or_fill_max_m": {
+  "median": 1.86,
+  "max": 3.14,
+  "share_over_2_5": 8.7
+ },
+ "distinct_pad_levels": 53,
+ "retaining_wall_total_m": 0,
+ "median_low_building_height_m": 5.4,
+ "parallel_main_street_spacing_m": {
+  "M-U": 35.3,
+  "M-K": 48.9,
+  "M-K2": 77.2
+ },
+ "row_field": {
+  "null": 104
+ },
+ "street_field": {
+  "SQ": 6,
+  "M": 27,
+  "U": 36,
+  "K": 9,
+  "K2": 11,
+  "C2": 2,
+  "C3": 2,
+  "C4": 2,
+  "HL": 5,
+  "QY": 4
+ }
+}
