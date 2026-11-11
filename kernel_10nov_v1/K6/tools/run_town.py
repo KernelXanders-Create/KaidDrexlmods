@@ -84,7 +84,7 @@ fig.text(0.04, 0.955, cfg["title"], fontsize=15, weight="bold")
 fig.savefig(os.path.join(OUT, cfg["key"] + "_plan.png"), dpi=110); plt.close(fig)
 layout = {"town": cfg["town"], "version": cfg["version"],
           "frame": {"units": "metres", "x": "east", "y": "north", "origin": "map south-west corner", "yaw": "degrees clockwise from north"},
-          "streets": [{"id": k, "name": st.get("name", k), "class": st["cls"], "width_m": st["w"], "points": [[round(x, 2), round(y, 2)] for x, y in st["pts"][::2] + [st["pts"][-1]]],
+          "streets": [{"id": k, "name": st.get("name", k), "class": st.get("out_cls", st["cls"]), "width_m": st["w"], "points": [[round(x, 2), round(y, 2)] for x, y in st["pts"][::2] + [st["pts"][-1]]],
                        "points_z": [round(float(v), 2) for v in list(st["z"][::2]) + [st["z"][-1]]],
                        "segments": [dict(s0_m=round(g["s0"], 1), s1_m=round(g["s1"], 1), level_m=g["z"]) for g in st["segments"]] if st["cls"] != "path" else None}
                       for k, st in T.streets.items()],

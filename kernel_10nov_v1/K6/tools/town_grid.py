@@ -125,10 +125,20 @@ class Town:
         L = st["line"].length; seg_rng = st.get("seg", (30, 48)); gap = st.get("gap", 16.0)
         g_drop = st.get("drop_grade", 0.12 if st["cls"] == "main" else 0.19)
         cuts, s = [], 0.0
-        while s < L - 8:
-            e = min(L, s + self.rng.uniform(*seg_rng))
-            if L - e < 14: e = L
-            cuts.append([s, e]); s = e + gap
+        if st.get("ramp"):                                      # a link lane: short level landings at both ends, one graded ramp between
+            cuts = [[0.0, 3.0], [L - 3.0, L]]
+        elif st.get("gaps_at"):                                   # level changes only where cross lanes meet the street
+            ss = sorted(st["line"].project(Point(*p)) for p in st["gaps_at"])
+            edges = [0.0]
+            for v in ss:
+                if gap / 2 + 6 < v < L - gap / 2 - 6: edges += [v - gap / 2, v + gap / 2]
+            edges.append(L)
+            cuts = [[edges[i], edges[i + 1]] for i in range(0, len(edges), 2)]
+        else:
+            while s < L - 8:
+                e = min(L, s + self.rng.uniform(*seg_rng))
+                if L - e < 14: e = L
+                cuts.append([s, e]); s = e + gap
         # pins: start / end levels from a fixed point or a parent street
         def band_level(a, b):
             ss = np.linspace(a, b, max(3, int((b - a) / 3)))
