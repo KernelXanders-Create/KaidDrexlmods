@@ -1,0 +1,4688 @@
+{
+ "grader": "town_grader 1.0 (11 Nov 2026)",
+ "layout": "oyra_v2_layout",
+ "command": "town_grader.py oyra_v2_layout.json --grid5 oyra_natural_5m.npy 11420 12000",
+ "counts": {
+  "town": "Oyra",
+  "version": "K6 v2 (graded with the 11 Nov grader) PROPOSED",
+  "buildings": 106,
+  "pad_rule": "v5: footprint + 1.5 m street side / ends, + 0.4 m rear (front rows); 1.5 m all round otherwise",
+  "window_vertices": {
+   "i0": 2298,
+   "i1": 2414,
+   "j0": 2418,
+   "j1": 2516
+  },
+  "grid_clash": {
+   "pad_group_pairs_sharing_a_vertex_at_different_levels": 0,
+   "shared_vertices": 0,
+   "pairs": [],
+   "buildings_whose_pad_meets_street_cells_at_another_level": 0,
+   "such_vertices": 0,
+   "street_vertices_held_by_an_earlier_street_at_another_level": {
+    "R": 0,
+    "U": 0,
+    "V": 0,
+    "C1": 0,
+    "C2": 22,
+    "C3": 16,
+    "C4": 14
+   }
+  },
+  "pad_cutfill": {
+   "median": 1.9,
+   "max": 3.94,
+   "n_over_2_5": 35,
+   "n_over_4": 0,
+   "over_4": [],
+   "square": {
+    "level": 129.75,
+    "cutfill_max": 3.68,
+    "feasible": true,
+    "why": "cut/fill 3.68"
+   }
+  },
+  "grader_as_drawn": {
+   "accepted": 106,
+   "refused": 0,
+   "causes": {},
+   "accepted_by_role": {
+    "landmark": 1,
+    "main": 40,
+    "lane": 65
+   },
+   "rows": {
+    "B001": "ok",
+    "B002": "ok",
+    "B003": "ok",
+    "B004": "ok",
+    "B005": "ok",
+    "B006": "ok",
+    "B007": "ok",
+    "B008": "ok",
+    "B009": "ok",
+    "B010": "ok",
+    "B011": "ok",
+    "B012": "ok",
+    "B013": "ok",
+    "B014": "ok",
+    "B015": "ok",
+    "B016": "ok",
+    "B017": "ok",
+    "B018": "ok",
+    "B019": "ok",
+    "B020": "ok",
+    "B021": "ok",
+    "B022": "ok",
+    "B023": "ok",
+    "B024": "ok",
+    "B025": "ok",
+    "B026": "ok",
+    "B027": "ok",
+    "B028": "ok",
+    "B029": "ok",
+    "B030": "ok",
+    "B031": "ok",
+    "B032": "ok",
+    "B033": "ok",
+    "B034": "ok",
+    "B035": "ok",
+    "B036": "ok",
+    "B037": "ok",
+    "B038": "ok",
+    "B039": "ok",
+    "B040": "ok",
+    "B041": "ok",
+    "B042": "ok",
+    "B043": "ok",
+    "B044": "ok",
+    "B045": "ok",
+    "B046": "ok",
+    "B047": "ok",
+    "B048": "ok",
+    "B049": "ok",
+    "B050": "ok",
+    "B051": "ok",
+    "B052": "ok",
+    "B053": "ok",
+    "B054": "ok",
+    "B055": "ok",
+    "B056": "ok",
+    "B057": "ok",
+    "B058": "ok",
+    "B059": "ok",
+    "B060": "ok",
+    "B061": "ok",
+    "B062": "ok",
+    "B063": "ok",
+    "B064": "ok",
+    "B065": "ok",
+    "B066": "ok",
+    "B067": "ok",
+    "B068": "ok",
+    "B069": "ok",
+    "B070": "ok",
+    "B071": "ok",
+    "B072": "ok",
+    "B073": "ok",
+    "B074": "ok",
+    "B075": "ok",
+    "B076": "ok",
+    "B077": "ok",
+    "B078": "ok",
+    "B079": "ok",
+    "B080": "ok",
+    "B081": "ok",
+    "B082": "ok",
+    "B083": "ok",
+    "B084": "ok",
+    "B085": "ok",
+    "B086": "ok",
+    "B087": "ok",
+    "B088": "ok",
+    "B089": "ok",
+    "B090": "ok",
+    "B091": "ok",
+    "B092": "ok",
+    "B093": "ok",
+    "B094": "ok",
+    "B095": "ok",
+    "B096": "ok",
+    "B097": "ok",
+    "B098": "ok",
+    "B099": "ok",
+    "B100": "ok",
+    "B101": "ok",
+    "B102": "ok",
+    "B103": "ok",
+    "B104": "ok",
+    "B105": "ok",
+    "B106": "ok"
+   }
+  },
+  "ground": {
+   "infeasible_vertices": 0
+  }
+ },
+ "checks": {
+  "buildings seated": {
+   "rule": "every building must be seated as drawn",
+   "result": "106 of 106",
+   "status": "PASS"
+  },
+  "refusals by kind": {
+   "rule": "first failed test per refused building",
+   "result": "none",
+   "status": "PASS"
+  },
+  "pad-pad clash": {
+   "rule": "two pads at different levels may not share a grid point (all buildings, order-free)",
+   "result": "0 pairs of pad groups, 0 shared points",
+   "status": "PASS"
+  },
+  "pad-street / ramp / lane clash": {
+   "rule": "no pad point may sit on a street, lane, path or square point at another level (all buildings, order-free)",
+   "result": "0 buildings, 0 grid points",
+   "status": "PASS"
+  },
+  "street-street clash": {
+   "rule": "grid points two streets both claim at different levels; the earlier street keeps its level there, so the later one gets a step. A few at a junction where a ramp meets a level street are normal; dozens mean two streets run over each other at different levels (report)",
+   "result": {
+    "C2": 22,
+    "C3": 16,
+    "C4": 14
+   },
+   "status": "REPORT"
+  },
+  "square": {
+   "rule": "one level; every point within 4.0 m of natural ground; no street point at another level; 31 deg bank to everything else",
+   "result": "level 129.75 m, cut/fill max 3.68 m, 0 points meet streets at another level ; ok",
+   "status": "PASS"
+  },
+  "pad cut / fill (true grid)": {
+   "rule": "every pad point within 4.0 m of the natural ground; aim for 2.5 m (all buildings as drawn)",
+   "result": "median 1.90 m, max 3.94 m, 35 over 2.5 m, 0 over 4.0 m ",
+   "status": "PASS"
+  },
+  "ground solvable": {
+   "rule": "31 deg cones between all fixed points must meet (seated set)",
+   "result": "0 infeasible grid points",
+   "status": "PASS"
+  },
+  "door threshold vs ground 1 m out": {
+   "rule": "pad (= floor = threshold) within 5 cm of the graded surface 1 m out of the door (seated)",
+   "result": "max 0.000 m; 0 fail ",
+   "status": "PASS"
+  },
+  "door threshold vs street surface": {
+   "rule": "pad within 5 cm of its street's level at the door's station, for doors within 12 m of the centre line (seated)",
+   "result": "105 checked, 0 fail ; 0 doors more than 12 m from their street (listed in result.json)",
+   "status": "PASS"
+  },
+  "wall below ground": {
+   "rule": "highest ground 0.25 m outside the walls minus the floor <= 0.3 m (seated)",
+   "result": "max 0.00 m; 0 fail ",
+   "status": "PASS"
+  },
+  "overlaps": {
+   "rule": "no two footprint boxes overlap (whole layout as drawn)",
+   "result": "0 pairs ; closest gap 0.000 m",
+   "status": "PASS"
+  },
+  "in a street ribbon (own street)": {
+   "rule": "footprint >= half-width + 0.2 m from its own street's centre line (whole layout)",
+   "result": "0 buildings ",
+   "status": "PASS"
+  },
+  "corner clearance (other streets)": {
+   "rule": "footprint >= half-width + 1.0 m from every other street's centre line (whole layout)",
+   "result": "0 buildings ",
+   "status": "PASS"
+  },
+  "back-to-back gap (31 deg bank)": {
+   "rule": "pads at different levels need at least |dz| / 0.6 m between their grid points (first failure per building)",
+   "result": "0 buildings refused ",
+   "status": "PASS"
+  },
+  "banks facing streets": {
+   "rule": "a graded bank over 1.5 m seen from a main street or lane edge, before any building (seated set; report)",
+   "result": "18 runs, 55 stations (by street: {'R': 7, 'U': 5, 'V': 6})",
+   "status": "REPORT"
+  },
+  "straight runs": {
+   "rule": "no main street or lane straight for more than 80 m (within 1.0 m of its chord)",
+   "result": "longest main street or lane: R 64.8 m; roads and paths (report): none",
+   "status": "PASS"
+  },
+  "street grades": {
+   "rule": "main streets under 5 % (8 % average, 12 % on a short drop), lanes under 19 %, paths are stairs (report)",
+   "result": {
+    "R": 6.3,
+    "U": 7.8,
+    "V": 15.8,
+    "C1": 0.0,
+    "C2": 1.0,
+    "C3": 11.1,
+    "C4": 12.9
+   },
+   "status": "REPORT"
+  },
+  "model / twin share (drawn)": {
+   "rule": "any one model <= 15 %, any one twin group (colour variants of one house) <= 12 %",
+   "result": "largest model ND03 11 = 10.4 %, largest twin group ND01+ND02 12 = 11.3 %",
+   "status": "PASS"
+  },
+  "model / twin share (seated)": {
+   "rule": "any one model <= 15 %, any one twin group (colour variants of one house) <= 12 % (the check is on the town as drawn; the seated share is a report)",
+   "result": "largest model ND03 11 = 10.4 %, largest twin group ND01+ND02 12 = 11.3 %",
+   "status": "REPORT"
+  },
+  "lamps": {
+   "rule": "lamp positions, if given",
+   "result": "none given (we place lamps ourselves)",
+   "status": "n/a"
+  },
+  "comp seat and height": {
+   "rule": "whole comps with a footprint, if given",
+   "result": "none given with a footprint (roles only)",
+   "status": "n/a"
+  }
+ },
+ "buildings": [
+  {
+   "id": "B001",
+   "model": "ND07",
+   "street": "SQ",
+   "role": "landmark",
+   "pad_group": "P001",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.6,
+   "clash_points": 0,
+   "grade_order": 1
+  },
+  {
+   "id": "B002",
+   "model": "WH07",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.39,
+   "clash_points": 0,
+   "grade_order": 2
+  },
+  {
+   "id": "B003",
+   "model": "SF01",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.43,
+   "clash_points": 0,
+   "grade_order": 3
+  },
+  {
+   "id": "B004",
+   "model": "ND03",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.43,
+   "clash_points": 0,
+   "grade_order": 4
+  },
+  {
+   "id": "B005",
+   "model": "SF08",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.36,
+   "clash_points": 0,
+   "grade_order": 5
+  },
+  {
+   "id": "B006",
+   "model": "SF16",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.64,
+   "clash_points": 0,
+   "grade_order": 6
+  },
+  {
+   "id": "B007",
+   "model": "WH22",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.33,
+   "clash_points": 0,
+   "grade_order": 7
+  },
+  {
+   "id": "B008",
+   "model": "SF16",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.0,
+   "clash_points": 0,
+   "grade_order": 8
+  },
+  {
+   "id": "B009",
+   "model": "SF15",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.9,
+   "clash_points": 0,
+   "grade_order": 9
+  },
+  {
+   "id": "B010",
+   "model": "SF08",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.93,
+   "clash_points": 0,
+   "grade_order": 10
+  },
+  {
+   "id": "B011",
+   "model": "SF01",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.93,
+   "clash_points": 0,
+   "grade_order": 11
+  },
+  {
+   "id": "B012",
+   "model": "WH18",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.03,
+   "clash_points": 0,
+   "grade_order": 12
+  },
+  {
+   "id": "B013",
+   "model": "ND02",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P005",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.03,
+   "clash_points": 0,
+   "grade_order": 13
+  },
+  {
+   "id": "B014",
+   "model": "SF16",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P006",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.48,
+   "clash_points": 0,
+   "grade_order": 14
+  },
+  {
+   "id": "B015",
+   "model": "SF15",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P006",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.4,
+   "clash_points": 0,
+   "grade_order": 15
+  },
+  {
+   "id": "B016",
+   "model": "SF16",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P007",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.75,
+   "clash_points": 0,
+   "grade_order": 16
+  },
+  {
+   "id": "B017",
+   "model": "WH18",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P007",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.68,
+   "clash_points": 0,
+   "grade_order": 17
+  },
+  {
+   "id": "B018",
+   "model": "WH19",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P007",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.85,
+   "clash_points": 0,
+   "grade_order": 18
+  },
+  {
+   "id": "B019",
+   "model": "WH19",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P007",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.66,
+   "clash_points": 0,
+   "grade_order": 19
+  },
+  {
+   "id": "B020",
+   "model": "ND02",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.6,
+   "clash_points": 0,
+   "grade_order": 20
+  },
+  {
+   "id": "B021",
+   "model": "WH18",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.84,
+   "clash_points": 0,
+   "grade_order": 21
+  },
+  {
+   "id": "B022",
+   "model": "WH18",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.44,
+   "clash_points": 0,
+   "grade_order": 22
+  },
+  {
+   "id": "B023",
+   "model": "WH18",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.49,
+   "clash_points": 0,
+   "grade_order": 23
+  },
+  {
+   "id": "B024",
+   "model": "WH03",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.38,
+   "clash_points": 0,
+   "grade_order": 24
+  },
+  {
+   "id": "B025",
+   "model": "WH24",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.94,
+   "clash_points": 0,
+   "grade_order": 25
+  },
+  {
+   "id": "B026",
+   "model": "WH07",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.39,
+   "clash_points": 0,
+   "grade_order": 26
+  },
+  {
+   "id": "B027",
+   "model": "ND02",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.39,
+   "clash_points": 0,
+   "grade_order": 27
+  },
+  {
+   "id": "B028",
+   "model": "ND01",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.9,
+   "clash_points": 0,
+   "grade_order": 28
+  },
+  {
+   "id": "B029",
+   "model": "WH12",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.6,
+   "clash_points": 0,
+   "grade_order": 29
+  },
+  {
+   "id": "B030",
+   "model": "ND01",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.12,
+   "clash_points": 0,
+   "grade_order": 30
+  },
+  {
+   "id": "B031",
+   "model": "ND03",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.01,
+   "clash_points": 0,
+   "grade_order": 31
+  },
+  {
+   "id": "B032",
+   "model": "WH19",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.57,
+   "clash_points": 0,
+   "grade_order": 32
+  },
+  {
+   "id": "B033",
+   "model": "ND02",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.37,
+   "clash_points": 0,
+   "grade_order": 33
+  },
+  {
+   "id": "B034",
+   "model": "WH19",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 129.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.02,
+   "clash_points": 0,
+   "grade_order": 34
+  },
+  {
+   "id": "B035",
+   "model": "SF08",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P010",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.42,
+   "clash_points": 0,
+   "grade_order": 35
+  },
+  {
+   "id": "B036",
+   "model": "WH11",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P010",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.17,
+   "clash_points": 0,
+   "grade_order": 36
+  },
+  {
+   "id": "B037",
+   "model": "WH24",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.17,
+   "clash_points": 0,
+   "grade_order": 37
+  },
+  {
+   "id": "B038",
+   "model": "WH12",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.97,
+   "clash_points": 0,
+   "grade_order": 38
+  },
+  {
+   "id": "B039",
+   "model": "WH11",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.29,
+   "clash_points": 0,
+   "grade_order": 39
+  },
+  {
+   "id": "B040",
+   "model": "ND03",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.49,
+   "clash_points": 0,
+   "grade_order": 40
+  },
+  {
+   "id": "B041",
+   "model": "WH19",
+   "street": "R",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.72,
+   "clash_points": 0,
+   "grade_order": 41
+  },
+  {
+   "id": "B042",
+   "model": "WH18",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P012",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.56,
+   "clash_points": 0,
+   "grade_order": 42
+  },
+  {
+   "id": "B043",
+   "model": "WH09",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P012",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.57,
+   "clash_points": 0,
+   "grade_order": 43
+  },
+  {
+   "id": "B044",
+   "model": "ND03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P012",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.94,
+   "clash_points": 0,
+   "grade_order": 44
+  },
+  {
+   "id": "B045",
+   "model": "WH04",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P013",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.72,
+   "clash_points": 0,
+   "grade_order": 45
+  },
+  {
+   "id": "B046",
+   "model": "WH11",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P013",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.25,
+   "clash_points": 0,
+   "grade_order": 46
+  },
+  {
+   "id": "B047",
+   "model": "WH01",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P014",
+   "pad_z": 130.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.01,
+   "clash_points": 0,
+   "grade_order": 47
+  },
+  {
+   "id": "B048",
+   "model": "WH12",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P014",
+   "pad_z": 130.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.78,
+   "clash_points": 0,
+   "grade_order": 48
+  },
+  {
+   "id": "B049",
+   "model": "WH08",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P014",
+   "pad_z": 130.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.06,
+   "clash_points": 0,
+   "grade_order": 49
+  },
+  {
+   "id": "B050",
+   "model": "WH02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P015",
+   "pad_z": 129.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.87,
+   "clash_points": 0,
+   "grade_order": 50
+  },
+  {
+   "id": "B051",
+   "model": "WH09",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P015",
+   "pad_z": 129.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.21,
+   "clash_points": 0,
+   "grade_order": 51
+  },
+  {
+   "id": "B052",
+   "model": "WH01",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.4,
+   "clash_points": 0,
+   "grade_order": 52
+  },
+  {
+   "id": "B053",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.01,
+   "clash_points": 0,
+   "grade_order": 53
+  },
+  {
+   "id": "B054",
+   "model": "WH08",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.55,
+   "clash_points": 0,
+   "grade_order": 54
+  },
+  {
+   "id": "B055",
+   "model": "WH23",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.94,
+   "clash_points": 0,
+   "grade_order": 55
+  },
+  {
+   "id": "B056",
+   "model": "WH06",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.57,
+   "clash_points": 0,
+   "grade_order": 56
+  },
+  {
+   "id": "B057",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.15,
+   "clash_points": 0,
+   "grade_order": 57
+  },
+  {
+   "id": "B058",
+   "model": "WH15",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P017",
+   "pad_z": 128.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.94,
+   "clash_points": 0,
+   "grade_order": 58
+  },
+  {
+   "id": "B059",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P017",
+   "pad_z": 128.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.65,
+   "clash_points": 0,
+   "grade_order": 59
+  },
+  {
+   "id": "B060",
+   "model": "WH10",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.79,
+   "clash_points": 0,
+   "grade_order": 60
+  },
+  {
+   "id": "B061",
+   "model": "ND03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.76,
+   "clash_points": 0,
+   "grade_order": 61
+  },
+  {
+   "id": "B062",
+   "model": "WH11",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.69,
+   "clash_points": 0,
+   "grade_order": 62
+  },
+  {
+   "id": "B063",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 130.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.46,
+   "clash_points": 0,
+   "grade_order": 63
+  },
+  {
+   "id": "B064",
+   "model": "WH03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 130.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.49,
+   "clash_points": 0,
+   "grade_order": 64
+  },
+  {
+   "id": "B065",
+   "model": "WH15",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P020",
+   "pad_z": 130.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.04,
+   "clash_points": 0,
+   "grade_order": 65
+  },
+  {
+   "id": "B066",
+   "model": "WH12",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P020",
+   "pad_z": 130.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 0.95,
+   "clash_points": 0,
+   "grade_order": 66
+  },
+  {
+   "id": "B067",
+   "model": "WH17",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P021",
+   "pad_z": 129.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.25,
+   "clash_points": 0,
+   "grade_order": 67
+  },
+  {
+   "id": "B068",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P021",
+   "pad_z": 129.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.06,
+   "clash_points": 0,
+   "grade_order": 68
+  },
+  {
+   "id": "B069",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P021",
+   "pad_z": 129.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.03,
+   "clash_points": 0,
+   "grade_order": 69
+  },
+  {
+   "id": "B070",
+   "model": "WH15",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.66,
+   "clash_points": 0,
+   "grade_order": 70
+  },
+  {
+   "id": "B071",
+   "model": "WH17",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.43,
+   "clash_points": 0,
+   "grade_order": 71
+  },
+  {
+   "id": "B072",
+   "model": "WH01",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.55,
+   "clash_points": 0,
+   "grade_order": 72
+  },
+  {
+   "id": "B073",
+   "model": "WH09",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.51,
+   "clash_points": 0,
+   "grade_order": 73
+  },
+  {
+   "id": "B074",
+   "model": "ND04",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.31,
+   "clash_points": 0,
+   "grade_order": 74
+  },
+  {
+   "id": "B075",
+   "model": "WH15",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.2,
+   "clash_points": 0,
+   "grade_order": 75
+  },
+  {
+   "id": "B076",
+   "model": "WH23",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 128.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.44,
+   "clash_points": 0,
+   "grade_order": 76
+  },
+  {
+   "id": "B077",
+   "model": "WH11",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P023",
+   "pad_z": 128.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.25,
+   "clash_points": 0,
+   "grade_order": 77
+  },
+  {
+   "id": "B078",
+   "model": "WH08",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P023",
+   "pad_z": 128.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.51,
+   "clash_points": 0,
+   "grade_order": 78
+  },
+  {
+   "id": "B079",
+   "model": "WH17",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P024",
+   "pad_z": 124.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.39,
+   "clash_points": 0,
+   "grade_order": 79
+  },
+  {
+   "id": "B080",
+   "model": "WH14",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P024",
+   "pad_z": 124.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.01,
+   "clash_points": 0,
+   "grade_order": 80
+  },
+  {
+   "id": "B081",
+   "model": "WH12",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P024",
+   "pad_z": 124.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.55,
+   "clash_points": 0,
+   "grade_order": 81
+  },
+  {
+   "id": "B082",
+   "model": "WH17",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.91,
+   "clash_points": 0,
+   "grade_order": 82
+  },
+  {
+   "id": "B083",
+   "model": "WH23",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.77,
+   "clash_points": 0,
+   "grade_order": 83
+  },
+  {
+   "id": "B084",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.33,
+   "clash_points": 0,
+   "grade_order": 84
+  },
+  {
+   "id": "B085",
+   "model": "WH24",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.52,
+   "clash_points": 0,
+   "grade_order": 85
+  },
+  {
+   "id": "B086",
+   "model": "WH05",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.58,
+   "clash_points": 0,
+   "grade_order": 86
+  },
+  {
+   "id": "B087",
+   "model": "WH18",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.99,
+   "clash_points": 0,
+   "grade_order": 87
+  },
+  {
+   "id": "B088",
+   "model": "WH09",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P025",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.81,
+   "clash_points": 0,
+   "grade_order": 88
+  },
+  {
+   "id": "B089",
+   "model": "WH11",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 124.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.51,
+   "clash_points": 0,
+   "grade_order": 89
+  },
+  {
+   "id": "B090",
+   "model": "WH14",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 124.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.72,
+   "clash_points": 0,
+   "grade_order": 90
+  },
+  {
+   "id": "B091",
+   "model": "WH17",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 124.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.99,
+   "clash_points": 0,
+   "grade_order": 91
+  },
+  {
+   "id": "B092",
+   "model": "WH03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P027",
+   "pad_z": 121.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.95,
+   "clash_points": 0,
+   "grade_order": 92
+  },
+  {
+   "id": "B093",
+   "model": "WH08",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P027",
+   "pad_z": 121.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.47,
+   "clash_points": 0,
+   "grade_order": 93
+  },
+  {
+   "id": "B094",
+   "model": "WH17",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P028",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.77,
+   "clash_points": 0,
+   "grade_order": 94
+  },
+  {
+   "id": "B095",
+   "model": "WH11",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P028",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.52,
+   "clash_points": 0,
+   "grade_order": 95
+  },
+  {
+   "id": "B096",
+   "model": "WH03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P028",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.9,
+   "clash_points": 0,
+   "grade_order": 96
+  },
+  {
+   "id": "B097",
+   "model": "WH03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P029",
+   "pad_z": 124.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.76,
+   "clash_points": 0,
+   "grade_order": 97
+  },
+  {
+   "id": "B098",
+   "model": "WH14",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P029",
+   "pad_z": 124.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.33,
+   "clash_points": 0,
+   "grade_order": 98
+  },
+  {
+   "id": "B099",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P030",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.7,
+   "clash_points": 0,
+   "grade_order": 99
+  },
+  {
+   "id": "B100",
+   "model": "WH17",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P030",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.48,
+   "clash_points": 0,
+   "grade_order": 100
+  },
+  {
+   "id": "B101",
+   "model": "WH23",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P030",
+   "pad_z": 125.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.62,
+   "clash_points": 0,
+   "grade_order": 101
+  },
+  {
+   "id": "B102",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P031",
+   "pad_z": 124.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.01,
+   "clash_points": 0,
+   "grade_order": 102
+  },
+  {
+   "id": "B103",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P031",
+   "pad_z": 124.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.91,
+   "clash_points": 0,
+   "grade_order": 103
+  },
+  {
+   "id": "B104",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.84,
+   "clash_points": 0,
+   "grade_order": 104
+  },
+  {
+   "id": "B105",
+   "model": "ND03",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.04,
+   "clash_points": 0,
+   "grade_order": 105
+  },
+  {
+   "id": "B106",
+   "model": "WH14",
+   "street": "V",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 122.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.55,
+   "clash_points": 0,
+   "grade_order": 106
+  }
+ ],
+ "streets": {
+  "R": {
+   "cls": "main",
+   "width_m": 6.5,
+   "length_m": 382.5,
+   "grid_points_fixed": 318,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 1.29,
+   "clash_points": []
+  },
+  "U": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 402.8,
+   "grid_points_fixed": 317,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 1.55,
+   "clash_points": []
+  },
+  "V": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 364.3,
+   "grid_points_fixed": 280,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 3.44,
+   "clash_points": []
+  },
+  "C1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 75.4,
+   "grid_points_fixed": 36,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 1.05,
+   "clash_points": []
+  },
+  "C2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 75.3,
+   "grid_points_fixed": 35,
+   "points_held_by_earlier_street_at_another_level": 22,
+   "cutfill_max_m": 1.26,
+   "clash_points": [
+    [
+     11800.0,
+     12285.0,
+     129.85,
+     129.75,
+     "R"
+    ],
+    [
+     11810.0,
+     12285.0,
+     129.85,
+     130.02,
+     "R"
+    ],
+    [
+     11800.0,
+     12290.0,
+     129.84,
+     129.75,
+     "R"
+    ],
+    [
+     11805.0,
+     12290.0,
+     129.84,
+     129.83,
+     "R"
+    ],
+    [
+     11810.0,
+     12290.0,
+     129.83,
+     129.97,
+     "R"
+    ],
+    [
+     11815.0,
+     12290.0,
+     129.81,
+     130.12,
+     "R"
+    ],
+    [
+     11800.0,
+     12295.0,
+     129.81,
+     129.75,
+     "R"
+    ],
+    [
+     11810.0,
+     12295.0,
+     129.78,
+     129.93,
+     "R"
+    ],
+    [
+     11815.0,
+     12295.0,
+     129.77,
+     130.07,
+     "R"
+    ],
+    [
+     11800.0,
+     12300.0,
+     129.77,
+     129.75,
+     "R"
+    ],
+    [
+     11810.0,
+     12300.0,
+     129.75,
+     129.89,
+     "R"
+    ],
+    [
+     11810.0,
+     12350.0,
+     129.32,
+     129.25,
+     "U"
+    ],
+    [
+     11815.0,
+     12350.0,
+     129.31,
+     129.25,
+     "U"
+    ],
+    [
+     11820.0,
+     12350.0,
+     129.31,
+     129.06,
+     "U"
+    ],
+    [
+     11825.0,
+     12350.0,
+     129.3,
+     128.7,
+     "U"
+    ],
+    [
+     11810.0,
+     12355.0,
+     129.27,
+     129.25,
+     "U"
+    ],
+    [
+     11815.0,
+     12355.0,
+     129.27,
+     129.25,
+     "U"
+    ],
+    [
+     11820.0,
+     12355.0,
+     129.27,
+     129.12,
+     "U"
+    ],
+    [
+     11825.0,
+     12355.0,
+     129.26,
+     128.77,
+     "U"
+    ],
+    [
+     11820.0,
+     12360.0,
+     129.25,
+     129.19,
+     "U"
+    ],
+    [
+     11825.0,
+     12360.0,
+     129.25,
+     128.84,
+     "U"
+    ],
+    [
+     11825.0,
+     12365.0,
+     129.25,
+     128.91,
+     "U"
+    ]
+   ]
+  },
+  "C3": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 51.8,
+   "grid_points_fixed": 23,
+   "points_held_by_earlier_street_at_another_level": 16,
+   "cutfill_max_m": 0.92,
+   "clash_points": [
+    [
+     11700.0,
+     12385.0,
+     130.75,
+     130.71,
+     "U"
+    ],
+    [
+     11705.0,
+     12385.0,
+     130.75,
+     130.5,
+     "U"
+    ],
+    [
+     11705.0,
+     12390.0,
+     130.74,
+     130.55,
+     "U"
+    ],
+    [
+     11695.0,
+     12395.0,
+     130.73,
+     130.75,
+     "U"
+    ],
+    [
+     11700.0,
+     12395.0,
+     130.67,
+     130.75,
+     "U"
+    ],
+    [
+     11705.0,
+     12395.0,
+     130.56,
+     130.61,
+     "U"
+    ],
+    [
+     11710.0,
+     12395.0,
+     130.34,
+     130.35,
+     "U"
+    ],
+    [
+     11695.0,
+     12400.0,
+     130.5,
+     130.75,
+     "U"
+    ],
+    [
+     11715.0,
+     12430.0,
+     126.62,
+     125.75,
+     "V"
+    ],
+    [
+     11720.0,
+     12430.0,
+     126.51,
+     125.75,
+     "V"
+    ],
+    [
+     11710.0,
+     12435.0,
+     126.17,
+     125.75,
+     "V"
+    ],
+    [
+     11715.0,
+     12435.0,
+     126.09,
+     125.75,
+     "V"
+    ],
+    [
+     11720.0,
+     12435.0,
+     126.0,
+     125.75,
+     "V"
+    ],
+    [
+     11710.0,
+     12440.0,
+     125.8,
+     125.75,
+     "V"
+    ],
+    [
+     11715.0,
+     12440.0,
+     125.78,
+     125.75,
+     "V"
+    ],
+    [
+     11720.0,
+     12440.0,
+     125.76,
+     125.75,
+     "V"
+    ]
+   ]
+  },
+  "C4": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 55.1,
+   "grid_points_fixed": 24,
+   "points_held_by_earlier_street_at_another_level": 14,
+   "cutfill_max_m": 1.03,
+   "clash_points": [
+    [
+     11865.0,
+     12335.0,
+     127.98,
+     128.0,
+     "U"
+    ],
+    [
+     11870.0,
+     12335.0,
+     127.92,
+     128.0,
+     "U"
+    ],
+    [
+     11875.0,
+     12335.0,
+     127.77,
+     128.0,
+     "U"
+    ],
+    [
+     11880.0,
+     12335.0,
+     127.52,
+     128.0,
+     "U"
+    ],
+    [
+     11865.0,
+     12340.0,
+     127.71,
+     128.0,
+     "U"
+    ],
+    [
+     11870.0,
+     12340.0,
+     127.45,
+     128.0,
+     "U"
+    ],
+    [
+     11875.0,
+     12340.0,
+     127.19,
+     128.0,
+     "U"
+    ],
+    [
+     11870.0,
+     12345.0,
+     126.86,
+     128.0,
+     "U"
+    ],
+    [
+     11890.0,
+     12375.0,
+     122.41,
+     121.75,
+     "V"
+    ],
+    [
+     11880.0,
+     12380.0,
+     122.11,
+     121.75,
+     "V"
+    ],
+    [
+     11885.0,
+     12380.0,
+     121.95,
+     121.75,
+     "V"
+    ],
+    [
+     11890.0,
+     12380.0,
+     121.85,
+     121.75,
+     "V"
+    ],
+    [
+     11895.0,
+     12380.0,
+     121.82,
+     121.75,
+     "V"
+    ],
+    [
+     11880.0,
+     12385.0,
+     121.78,
+     121.75,
+     "V"
+    ]
+   ]
+  }
+ },
+ "pads": {
+  "square": {
+   "who": "SQUARE",
+   "level": 129.75,
+   "vertices": 46,
+   "ok": true,
+   "why": "cut/fill 3.68",
+   "cutfill_max": 3.68,
+   "clash_points": 0,
+   "clash_owners": {},
+   "bank": null
+  }
+ },
+ "extra": {
+  "thresholds": [
+   [
+    "B001",
+    0.0
+   ],
+   [
+    "B002",
+    0.0
+   ],
+   [
+    "B003",
+    0.0
+   ],
+   [
+    "B004",
+    0.0
+   ],
+   [
+    "B005",
+    0.0
+   ],
+   [
+    "B006",
+    0.0
+   ],
+   [
+    "B007",
+    0.0
+   ],
+   [
+    "B008",
+    0.0
+   ],
+   [
+    "B009",
+    0.0
+   ],
+   [
+    "B010",
+    0.0
+   ],
+   [
+    "B011",
+    0.0
+   ],
+   [
+    "B012",
+    0.0
+   ],
+   [
+    "B013",
+    0.0
+   ],
+   [
+    "B014",
+    0.0
+   ],
+   [
+    "B015",
+    0.0
+   ],
+   [
+    "B016",
+    0.0
+   ],
+   [
+    "B017",
+    0.0
+   ],
+   [
+    "B018",
+    0.0
+   ],
+   [
+    "B019",
+    0.0
+   ],
+   [
+    "B020",
+    0.0
+   ],
+   [
+    "B021",
+    0.0
+   ],
+   [
+    "B022",
+    0.0
+   ],
+   [
+    "B023",
+    0.0
+   ],
+   [
+    "B024",
+    0.0
+   ],
+   [
+    "B025",
+    0.0
+   ],
+   [
+    "B026",
+    0.0
+   ],
+   [
+    "B027",
+    0.0
+   ],
+   [
+    "B028",
+    0.0
+   ],
+   [
+    "B029",
+    0.0
+   ],
+   [
+    "B030",
+    0.0
+   ],
+   [
+    "B031",
+    0.0
+   ],
+   [
+    "B032",
+    0.0
+   ],
+   [
+    "B033",
+    0.0
+   ],
+   [
+    "B034",
+    0.0
+   ],
+   [
+    "B035",
+    0.0
+   ],
+   [
+    "B036",
+    0.0
+   ],
+   [
+    "B037",
+    0.0
+   ],
+   [
+    "B038",
+    0.0
+   ],
+   [
+    "B039",
+    0.0
+   ],
+   [
+    "B040",
+    0.0
+   ],
+   [
+    "B041",
+    0.0
+   ],
+   [
+    "B042",
+    0.0
+   ],
+   [
+    "B043",
+    0.0
+   ],
+   [
+    "B044",
+    0.0
+   ],
+   [
+    "B045",
+    0.0
+   ],
+   [
+    "B046",
+    0.0
+   ],
+   [
+    "B047",
+    0.0
+   ],
+   [
+    "B048",
+    0.0
+   ],
+   [
+    "B049",
+    0.0
+   ],
+   [
+    "B050",
+    0.0
+   ],
+   [
+    "B051",
+    0.0
+   ],
+   [
+    "B052",
+    0.0
+   ],
+   [
+    "B053",
+    0.0
+   ],
+   [
+    "B054",
+    0.0
+   ],
+   [
+    "B055",
+    0.0
+   ],
+   [
+    "B056",
+    0.0
+   ],
+   [
+    "B057",
+    0.0
+   ],
+   [
+    "B058",
+    0.0
+   ],
+   [
+    "B059",
+    0.0
+   ],
+   [
+    "B060",
+    0.0
+   ],
+   [
+    "B061",
+    0.0
+   ],
+   [
+    "B062",
+    0.0
+   ],
+   [
+    "B063",
+    0.0
+   ],
+   [
+    "B064",
+    0.0
+   ],
+   [
+    "B065",
+    0.0
+   ],
+   [
+    "B066",
+    0.0
+   ],
+   [
+    "B067",
+    0.0
+   ],
+   [
+    "B068",
+    0.0
+   ],
+   [
+    "B069",
+    0.0
+   ],
+   [
+    "B070",
+    0.0
+   ],
+   [
+    "B071",
+    0.0
+   ],
+   [
+    "B072",
+    0.0
+   ],
+   [
+    "B073",
+    0.0
+   ],
+   [
+    "B074",
+    0.0
+   ],
+   [
+    "B075",
+    0.0
+   ],
+   [
+    "B076",
+    0.0
+   ],
+   [
+    "B077",
+    0.0
+   ],
+   [
+    "B078",
+    0.0
+   ],
+   [
+    "B079",
+    0.0
+   ],
+   [
+    "B080",
+    0.0
+   ],
+   [
+    "B081",
+    0.0
+   ],
+   [
+    "B082",
+    0.0
+   ],
+   [
+    "B083",
+    0.0
+   ],
+   [
+    "B084",
+    0.0
+   ],
+   [
+    "B085",
+    0.0
+   ],
+   [
+    "B086",
+    0.0
+   ],
+   [
+    "B087",
+    0.0
+   ],
+   [
+    "B088",
+    0.0
+   ],
+   [
+    "B089",
+    0.0
+   ],
+   [
+    "B090",
+    0.0
+   ],
+   [
+    "B091",
+    0.0
+   ],
+   [
+    "B092",
+    0.0
+   ],
+   [
+    "B093",
+    0.0
+   ],
+   [
+    "B094",
+    0.0
+   ],
+   [
+    "B095",
+    0.0
+   ],
+   [
+    "B096",
+    0.0
+   ],
+   [
+    "B097",
+    0.0
+   ],
+   [
+    "B098",
+    0.0
+   ],
+   [
+    "B099",
+    0.0
+   ],
+   [
+    "B100",
+    0.0
+   ],
+   [
+    "B101",
+    0.0
+   ],
+   [
+    "B102",
+    0.0
+   ],
+   [
+    "B103",
+    0.0
+   ],
+   [
+    "B104",
+    0.0
+   ],
+   [
+    "B105",
+    0.0
+   ],
+   [
+    "B106",
+    0.0
+   ]
+  ],
+  "door_vs_street": [
+   [
+    "B002",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B003",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B004",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B005",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B006",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B007",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B008",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B009",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B010",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B011",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B012",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B013",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B014",
+    "R",
+    0.0,
+    6.6
+   ],
+   [
+    "B015",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B016",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B017",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B018",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B019",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B020",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B021",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B022",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B023",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B024",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B025",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B026",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B027",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B028",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B029",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B030",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B031",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B032",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B033",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B034",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B035",
+    "R",
+    0.0,
+    4.5
+   ],
+   [
+    "B036",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B037",
+    "R",
+    0.0,
+    3.6
+   ],
+   [
+    "B038",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B039",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B040",
+    "R",
+    0.0,
+    4.5
+   ],
+   [
+    "B041",
+    "R",
+    0.0,
+    4.0
+   ],
+   [
+    "B042",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B043",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B044",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B045",
+    "U",
+    0.0,
+    4.3
+   ],
+   [
+    "B046",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B047",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B048",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B049",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B050",
+    "U",
+    0.0,
+    3.3
+   ],
+   [
+    "B051",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B052",
+    "U",
+    0.0,
+    5.8
+   ],
+   [
+    "B053",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B054",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B055",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B056",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B057",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B058",
+    "U",
+    0.0,
+    4.4
+   ],
+   [
+    "B059",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B060",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B061",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B062",
+    "U",
+    0.0,
+    4.3
+   ],
+   [
+    "B063",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B064",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B065",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B066",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B067",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B068",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B069",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B070",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B071",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B072",
+    "U",
+    0.0,
+    4.4
+   ],
+   [
+    "B073",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B074",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B075",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B076",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B077",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B078",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B079",
+    "V",
+    0.0,
+    2.8
+   ],
+   [
+    "B080",
+    "V",
+    0.0,
+    2.8
+   ],
+   [
+    "B081",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B082",
+    "V",
+    0.0,
+    4.4
+   ],
+   [
+    "B083",
+    "V",
+    0.0,
+    3.7
+   ],
+   [
+    "B084",
+    "V",
+    0.0,
+    3.3
+   ],
+   [
+    "B085",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B086",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B087",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B088",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B089",
+    "V",
+    0.0,
+    5.9
+   ],
+   [
+    "B090",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B091",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B092",
+    "V",
+    0.0,
+    5.0
+   ],
+   [
+    "B093",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B094",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B095",
+    "V",
+    0.0,
+    3.3
+   ],
+   [
+    "B096",
+    "V",
+    0.0,
+    3.3
+   ],
+   [
+    "B097",
+    "V",
+    0.0,
+    2.8
+   ],
+   [
+    "B098",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B099",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B100",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B101",
+    "V",
+    0.0,
+    3.2
+   ],
+   [
+    "B102",
+    "V",
+    0.0,
+    2.8
+   ],
+   [
+    "B103",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B104",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B105",
+    "V",
+    0.0,
+    2.9
+   ],
+   [
+    "B106",
+    "V",
+    0.0,
+    2.8
+   ]
+  ],
+  "wall_below_ground": [
+   [
+    "B001",
+    0.0
+   ],
+   [
+    "B002",
+    0.0
+   ],
+   [
+    "B003",
+    0.0
+   ],
+   [
+    "B004",
+    0.0
+   ],
+   [
+    "B005",
+    0.0
+   ],
+   [
+    "B006",
+    0.0
+   ],
+   [
+    "B007",
+    0.0
+   ],
+   [
+    "B008",
+    0.0
+   ],
+   [
+    "B009",
+    0.0
+   ],
+   [
+    "B010",
+    0.0
+   ],
+   [
+    "B011",
+    0.0
+   ],
+   [
+    "B012",
+    0.0
+   ],
+   [
+    "B013",
+    0.0
+   ],
+   [
+    "B014",
+    0.0
+   ],
+   [
+    "B015",
+    0.0
+   ],
+   [
+    "B016",
+    0.0
+   ],
+   [
+    "B017",
+    0.0
+   ],
+   [
+    "B018",
+    0.0
+   ],
+   [
+    "B019",
+    0.0
+   ],
+   [
+    "B020",
+    0.0
+   ],
+   [
+    "B021",
+    0.0
+   ],
+   [
+    "B022",
+    0.0
+   ],
+   [
+    "B023",
+    0.0
+   ],
+   [
+    "B024",
+    0.0
+   ],
+   [
+    "B025",
+    0.0
+   ],
+   [
+    "B026",
+    0.0
+   ],
+   [
+    "B027",
+    0.0
+   ],
+   [
+    "B028",
+    0.0
+   ],
+   [
+    "B029",
+    0.0
+   ],
+   [
+    "B030",
+    0.0
+   ],
+   [
+    "B031",
+    0.0
+   ],
+   [
+    "B032",
+    0.0
+   ],
+   [
+    "B033",
+    0.0
+   ],
+   [
+    "B034",
+    0.0
+   ],
+   [
+    "B035",
+    0.0
+   ],
+   [
+    "B036",
+    0.0
+   ],
+   [
+    "B037",
+    0.0
+   ],
+   [
+    "B038",
+    0.0
+   ],
+   [
+    "B039",
+    0.0
+   ],
+   [
+    "B040",
+    0.0
+   ],
+   [
+    "B041",
+    0.0
+   ],
+   [
+    "B042",
+    0.0
+   ],
+   [
+    "B043",
+    0.0
+   ],
+   [
+    "B044",
+    0.0
+   ],
+   [
+    "B045",
+    0.0
+   ],
+   [
+    "B046",
+    0.0
+   ],
+   [
+    "B047",
+    0.0
+   ],
+   [
+    "B048",
+    0.0
+   ],
+   [
+    "B049",
+    0.0
+   ],
+   [
+    "B050",
+    0.0
+   ],
+   [
+    "B051",
+    0.0
+   ],
+   [
+    "B052",
+    0.0
+   ],
+   [
+    "B053",
+    0.0
+   ],
+   [
+    "B054",
+    0.0
+   ],
+   [
+    "B055",
+    0.0
+   ],
+   [
+    "B056",
+    0.0
+   ],
+   [
+    "B057",
+    0.0
+   ],
+   [
+    "B058",
+    0.0
+   ],
+   [
+    "B059",
+    0.0
+   ],
+   [
+    "B060",
+    0.0
+   ],
+   [
+    "B061",
+    0.0
+   ],
+   [
+    "B062",
+    0.0
+   ],
+   [
+    "B063",
+    0.0
+   ],
+   [
+    "B064",
+    0.0
+   ],
+   [
+    "B065",
+    0.0
+   ],
+   [
+    "B066",
+    0.0
+   ],
+   [
+    "B067",
+    0.0
+   ],
+   [
+    "B068",
+    0.0
+   ],
+   [
+    "B069",
+    0.0
+   ],
+   [
+    "B070",
+    0.0
+   ],
+   [
+    "B071",
+    0.0
+   ],
+   [
+    "B072",
+    0.0
+   ],
+   [
+    "B073",
+    0.0
+   ],
+   [
+    "B074",
+    0.0
+   ],
+   [
+    "B075",
+    0.0
+   ],
+   [
+    "B076",
+    0.0
+   ],
+   [
+    "B077",
+    0.0
+   ],
+   [
+    "B078",
+    0.0
+   ],
+   [
+    "B079",
+    0.0
+   ],
+   [
+    "B080",
+    0.0
+   ],
+   [
+    "B081",
+    0.0
+   ],
+   [
+    "B082",
+    0.0
+   ],
+   [
+    "B083",
+    0.0
+   ],
+   [
+    "B084",
+    0.0
+   ],
+   [
+    "B085",
+    0.0
+   ],
+   [
+    "B086",
+    0.0
+   ],
+   [
+    "B087",
+    0.0
+   ],
+   [
+    "B088",
+    0.0
+   ],
+   [
+    "B089",
+    0.0
+   ],
+   [
+    "B090",
+    0.0
+   ],
+   [
+    "B091",
+    0.0
+   ],
+   [
+    "B092",
+    0.0
+   ],
+   [
+    "B093",
+    0.0
+   ],
+   [
+    "B094",
+    0.0
+   ],
+   [
+    "B095",
+    0.0
+   ],
+   [
+    "B096",
+    0.0
+   ],
+   [
+    "B097",
+    0.0
+   ],
+   [
+    "B098",
+    0.0
+   ],
+   [
+    "B099",
+    0.0
+   ],
+   [
+    "B100",
+    0.0
+   ],
+   [
+    "B101",
+    0.0
+   ],
+   [
+    "B102",
+    0.0
+   ],
+   [
+    "B103",
+    0.0
+   ],
+   [
+    "B104",
+    0.0
+   ],
+   [
+    "B105",
+    0.0
+   ],
+   [
+    "B106",
+    0.0
+   ]
+  ],
+  "bank_runs": [
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 45.0,
+    "s1": 45.0,
+    "n": 1,
+    "dz": 3.65,
+    "xy": [
+     11629.3,
+     12352.9
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 127.0,
+    "s1": 127.0,
+    "n": 1,
+    "dz": 3.39,
+    "xy": [
+     11705.7,
+     12326.9
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 181.0,
+    "s1": 181.0,
+    "n": 1,
+    "dz": 4.72,
+    "xy": [
+     11756.9,
+     12312.9
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 247.0,
+    "s1": 249.0,
+    "n": 2,
+    "dz": 1.95,
+    "xy": [
+     11817.8,
+     12288.2
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 287.0,
+    "s1": 289.0,
+    "n": 2,
+    "dz": 3.19,
+    "xy": [
+     11848.8,
+     12264.1
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 311.0,
+    "s1": 315.0,
+    "n": 3,
+    "dz": 3.38,
+    "xy": [
+     11865.4,
+     12246.7
+    ]
+   },
+   {
+    "street": "R",
+    "side": -1,
+    "s0": 381.0,
+    "s1": 381.0,
+    "n": 1,
+    "dz": 3.35,
+    "xy": [
+     11905.5,
+     12191.4
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 43.0,
+    "s1": 43.0,
+    "n": 1,
+    "dz": 1.63,
+    "xy": [
+     11641.2,
+     12415.7
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 227.0,
+    "s1": 227.0,
+    "n": 1,
+    "dz": 2.37,
+    "xy": [
+     11814.3,
+     12358.2
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 327.0,
+    "s1": 327.0,
+    "n": 1,
+    "dz": 2.41,
+    "xy": [
+     11899.4,
+     12309.6
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 351.0,
+    "s1": 361.0,
+    "n": 6,
+    "dz": 2.29,
+    "xy": [
+     11920.2,
+     12297.6
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 377.0,
+    "s1": 379.0,
+    "n": 2,
+    "dz": 1.81,
+    "xy": [
+     11937.8,
+     12278.7
+    ]
+   },
+   {
+    "street": "V",
+    "side": -1,
+    "s0": 35.0,
+    "s1": 41.0,
+    "n": 4,
+    "dz": 3.23,
+    "xy": [
+     11673.8,
+     12460.8
+    ]
+   },
+   {
+    "street": "V",
+    "side": -1,
+    "s0": 309.0,
+    "s1": 317.0,
+    "n": 5,
+    "dz": 2.76,
+    "xy": [
+     11921.4,
+     12356.7
+    ]
+   },
+   {
+    "street": "V",
+    "side": 1,
+    "s0": 35.0,
+    "s1": 67.0,
+    "n": 17,
+    "dz": 3.92,
+    "xy": [
+     11673.8,
+     12460.8
+    ]
+   },
+   {
+    "street": "V",
+    "side": 1,
+    "s0": 157.0,
+    "s1": 159.0,
+    "n": 2,
+    "dz": 2.65,
+    "xy": [
+     11787.9,
+     12423.4
+    ]
+   },
+   {
+    "street": "V",
+    "side": 1,
+    "s0": 229.0,
+    "s1": 233.0,
+    "n": 3,
+    "dz": 3.33,
+    "xy": [
+     11854.0,
+     12395.7
+    ]
+   },
+   {
+    "street": "V",
+    "side": 1,
+    "s0": 287.0,
+    "s1": 289.0,
+    "n": 2,
+    "dz": 2.63,
+    "xy": [
+     11905.8,
+     12372.2
+    ]
+   }
+  ],
+  "bank_stations": [
+   {
+    "street": "R",
+    "s": 45.0,
+    "side": -1,
+    "r": 18.3,
+    "dz": -3.65,
+    "xy": [
+     11629.3,
+     12352.9
+    ]
+   },
+   {
+    "street": "R",
+    "s": 127.0,
+    "side": -1,
+    "r": 16.8,
+    "dz": -3.39,
+    "xy": [
+     11705.7,
+     12326.9
+    ]
+   },
+   {
+    "street": "R",
+    "s": 181.0,
+    "side": -1,
+    "r": 15.8,
+    "dz": -4.72,
+    "xy": [
+     11756.9,
+     12312.9
+    ]
+   },
+   {
+    "street": "R",
+    "s": 247.0,
+    "side": -1,
+    "r": 21.8,
+    "dz": -1.95,
+    "xy": [
+     11817.8,
+     12288.2
+    ]
+   },
+   {
+    "street": "R",
+    "s": 249.0,
+    "side": -1,
+    "r": 22.3,
+    "dz": -1.72,
+    "xy": [
+     11819.7,
+     12287.5
+    ]
+   },
+   {
+    "street": "R",
+    "s": 287.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": -3.19,
+    "xy": [
+     11848.8,
+     12264.1
+    ]
+   },
+   {
+    "street": "R",
+    "s": 289.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": -2.47,
+    "xy": [
+     11850.1,
+     12262.5
+    ]
+   },
+   {
+    "street": "R",
+    "s": 311.0,
+    "side": -1,
+    "r": 16.8,
+    "dz": -3.33,
+    "xy": [
+     11865.4,
+     12246.7
+    ]
+   },
+   {
+    "street": "R",
+    "s": 313.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": -3.11,
+    "xy": [
+     11866.9,
+     12245.4
+    ]
+   },
+   {
+    "street": "R",
+    "s": 315.0,
+    "side": -1,
+    "r": 18.3,
+    "dz": -3.38,
+    "xy": [
+     11868.4,
+     12244.1
+    ]
+   },
+   {
+    "street": "R",
+    "s": 381.0,
+    "side": -1,
+    "r": 13.3,
+    "dz": -3.35,
+    "xy": [
+     11905.5,
+     12191.4
+    ]
+   },
+   {
+    "street": "U",
+    "s": 43.0,
+    "side": 1,
+    "r": 21.8,
+    "dz": -1.63,
+    "xy": [
+     11641.2,
+     12415.7
+    ]
+   },
+   {
+    "street": "U",
+    "s": 227.0,
+    "side": 1,
+    "r": 20.8,
+    "dz": -2.37,
+    "xy": [
+     11814.3,
+     12358.2
+    ]
+   },
+   {
+    "street": "U",
+    "s": 327.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.41,
+    "xy": [
+     11899.4,
+     12309.6
+    ]
+   },
+   {
+    "street": "U",
+    "s": 351.0,
+    "side": 1,
+    "r": 20.8,
+    "dz": -1.6,
+    "xy": [
+     11920.2,
+     12297.6
+    ]
+   },
+   {
+    "street": "U",
+    "s": 353.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -1.53,
+    "xy": [
+     11921.7,
+     12296.3
+    ]
+   },
+   {
+    "street": "U",
+    "s": 355.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.29,
+    "xy": [
+     11923.3,
+     12295.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 357.0,
+    "side": 1,
+    "r": 19.8,
+    "dz": -1.95,
+    "xy": [
+     11924.8,
+     12293.8
+    ]
+   },
+   {
+    "street": "U",
+    "s": 359.0,
+    "side": 1,
+    "r": 19.8,
+    "dz": -2.14,
+    "xy": [
+     11926.3,
+     12292.5
+    ]
+   },
+   {
+    "street": "U",
+    "s": 361.0,
+    "side": 1,
+    "r": 20.8,
+    "dz": -1.93,
+    "xy": [
+     11927.8,
+     12291.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 377.0,
+    "side": 1,
+    "r": 20.8,
+    "dz": -1.69,
+    "xy": [
+     11937.8,
+     12278.7
+    ]
+   },
+   {
+    "street": "U",
+    "s": 379.0,
+    "side": 1,
+    "r": 21.3,
+    "dz": -1.81,
+    "xy": [
+     11938.9,
+     12277.0
+    ]
+   },
+   {
+    "street": "V",
+    "s": 35.0,
+    "side": 1,
+    "r": 17.3,
+    "dz": -3.92,
+    "xy": [
+     11673.8,
+     12460.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 35.0,
+    "side": -1,
+    "r": 18.8,
+    "dz": 3.09,
+    "xy": [
+     11673.8,
+     12460.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 37.0,
+    "side": 1,
+    "r": 15.3,
+    "dz": -3.31,
+    "xy": [
+     11675.7,
+     12460.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 37.0,
+    "side": -1,
+    "r": 18.8,
+    "dz": 3.23,
+    "xy": [
+     11675.7,
+     12460.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 39.0,
+    "side": 1,
+    "r": 14.8,
+    "dz": -2.1,
+    "xy": [
+     11677.6,
+     12459.6
+    ]
+   },
+   {
+    "street": "V",
+    "s": 39.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 2.93,
+    "xy": [
+     11677.6,
+     12459.6
+    ]
+   },
+   {
+    "street": "V",
+    "s": 41.0,
+    "side": 1,
+    "r": 8.8,
+    "dz": -2.36,
+    "xy": [
+     11679.5,
+     12458.9
+    ]
+   },
+   {
+    "street": "V",
+    "s": 41.0,
+    "side": -1,
+    "r": 17.3,
+    "dz": 2.28,
+    "xy": [
+     11679.5,
+     12458.9
+    ]
+   },
+   {
+    "street": "V",
+    "s": 43.0,
+    "side": 1,
+    "r": 6.8,
+    "dz": -1.74,
+    "xy": [
+     11681.3,
+     12458.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 45.0,
+    "side": 1,
+    "r": 5.3,
+    "dz": -1.95,
+    "xy": [
+     11683.2,
+     12457.5
+    ]
+   },
+   {
+    "street": "V",
+    "s": 47.0,
+    "side": 1,
+    "r": 5.3,
+    "dz": -1.58,
+    "xy": [
+     11685.1,
+     12456.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 49.0,
+    "side": 1,
+    "r": 4.8,
+    "dz": -2.01,
+    "xy": [
+     11686.9,
+     12456.0
+    ]
+   },
+   {
+    "street": "V",
+    "s": 51.0,
+    "side": 1,
+    "r": 4.8,
+    "dz": -2.53,
+    "xy": [
+     11688.8,
+     12455.3
+    ]
+   },
+   {
+    "street": "V",
+    "s": 53.0,
+    "side": 1,
+    "r": 5.8,
+    "dz": -2.61,
+    "xy": [
+     11690.6,
+     12454.5
+    ]
+   },
+   {
+    "street": "V",
+    "s": 55.0,
+    "side": 1,
+    "r": 6.3,
+    "dz": -3.04,
+    "xy": [
+     11692.4,
+     12453.6
+    ]
+   },
+   {
+    "street": "V",
+    "s": 57.0,
+    "side": 1,
+    "r": 7.3,
+    "dz": -3.11,
+    "xy": [
+     11694.2,
+     12452.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 59.0,
+    "side": 1,
+    "r": 8.3,
+    "dz": -3.08,
+    "xy": [
+     11696.0,
+     12451.9
+    ]
+   },
+   {
+    "street": "V",
+    "s": 61.0,
+    "side": 1,
+    "r": 9.3,
+    "dz": -3.4,
+    "xy": [
+     11697.8,
+     12451.0
+    ]
+   },
+   {
+    "street": "V",
+    "s": 63.0,
+    "side": 1,
+    "r": 11.3,
+    "dz": -3.12,
+    "xy": [
+     11699.6,
+     12450.1
+    ]
+   },
+   {
+    "street": "V",
+    "s": 65.0,
+    "side": 1,
+    "r": 14.8,
+    "dz": -3.46,
+    "xy": [
+     11701.4,
+     12449.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 67.0,
+    "side": 1,
+    "r": 16.8,
+    "dz": -3.63,
+    "xy": [
+     11703.1,
+     12448.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 157.0,
+    "side": 1,
+    "r": 19.8,
+    "dz": -2.65,
+    "xy": [
+     11787.9,
+     12423.4
+    ]
+   },
+   {
+    "street": "V",
+    "s": 159.0,
+    "side": 1,
+    "r": 18.8,
+    "dz": -1.83,
+    "xy": [
+     11789.8,
+     12423.0
+    ]
+   },
+   {
+    "street": "V",
+    "s": 229.0,
+    "side": 1,
+    "r": 17.3,
+    "dz": -3.28,
+    "xy": [
+     11854.0,
+     12395.7
+    ]
+   },
+   {
+    "street": "V",
+    "s": 231.0,
+    "side": 1,
+    "r": 16.3,
+    "dz": -3.33,
+    "xy": [
+     11855.9,
+     12395.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 233.0,
+    "side": 1,
+    "r": 16.3,
+    "dz": -1.64,
+    "xy": [
+     11857.9,
+     12394.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 287.0,
+    "side": 1,
+    "r": 19.3,
+    "dz": -2.63,
+    "xy": [
+     11905.8,
+     12372.2
+    ]
+   },
+   {
+    "street": "V",
+    "s": 289.0,
+    "side": 1,
+    "r": 19.8,
+    "dz": -1.6,
+    "xy": [
+     11907.2,
+     12370.7
+    ]
+   },
+   {
+    "street": "V",
+    "s": 309.0,
+    "side": -1,
+    "r": 21.3,
+    "dz": 1.95,
+    "xy": [
+     11921.4,
+     12356.7
+    ]
+   },
+   {
+    "street": "V",
+    "s": 311.0,
+    "side": -1,
+    "r": 21.3,
+    "dz": 2.58,
+    "xy": [
+     11922.9,
+     12355.4
+    ]
+   },
+   {
+    "street": "V",
+    "s": 313.0,
+    "side": -1,
+    "r": 20.3,
+    "dz": 2.59,
+    "xy": [
+     11924.4,
+     12354.1
+    ]
+   },
+   {
+    "street": "V",
+    "s": 315.0,
+    "side": -1,
+    "r": 21.3,
+    "dz": 2.32,
+    "xy": [
+     11925.9,
+     12352.8
+    ]
+   },
+   {
+    "street": "V",
+    "s": 317.0,
+    "side": -1,
+    "r": 20.3,
+    "dz": 2.76,
+    "xy": [
+     11927.5,
+     12351.5
+    ]
+   }
+  ],
+  "straight_runs": {
+   "R": {
+    "longest_m": 64.8,
+    "from_s": 0.0,
+    "to_s": 64.8
+   },
+   "U": {
+    "longest_m": 60.8,
+    "from_s": 43.9,
+    "to_s": 104.7
+   },
+   "V": {
+    "longest_m": 63.7,
+    "from_s": 270.8,
+    "to_s": 334.5
+   },
+   "C1": {
+    "longest_m": 51.6,
+    "from_s": 23.8,
+    "to_s": 75.4
+   },
+   "C2": {
+    "longest_m": 51.6,
+    "from_s": 21.8,
+    "to_s": 73.4
+   },
+   "C3": {
+    "longest_m": 39.8,
+    "from_s": 0.0,
+    "to_s": 39.8
+   },
+   "C4": {
+    "longest_m": 43.3,
+    "from_s": 11.8,
+    "to_s": 55.1
+   }
+  },
+  "grades": {
+   "R": 6.3,
+   "U": 7.8,
+   "V": 15.8,
+   "C1": 0.0,
+   "C2": 1.0,
+   "C3": 11.1,
+   "C4": 12.9
+  },
+  "overlaps": [],
+  "ribbons_own": [],
+  "ribbons_other": []
+ }
+}

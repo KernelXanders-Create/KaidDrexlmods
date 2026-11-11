@@ -81,6 +81,7 @@ def req_sep(yaw):
 
 
 class Town:
+    SETBACKS = (0.0, 0.8, 1.6, 2.4)
     def __init__(self, cfg, cat, ground, seed=11):
         self.cfg, self.G, self.rng = cfg, ground, np.random.default_rng(seed)
         self.CAT = {k: dict(v) for k, v in cat.items()}
@@ -126,7 +127,7 @@ class Town:
         g_drop = st.get("drop_grade", 0.12 if st["cls"] == "main" else 0.19)
         cuts, s = [], 0.0
         if st.get("ramp"):                                      # a link lane: short level landings at both ends, one graded ramp between
-            cuts = [[0.0, 3.0], [L - 3.0, L]]
+            land = min(st.get("landing", 3.0), L / 3); cuts = [[0.0, land], [L - land, L]]
         elif st.get("gaps_at"):                                   # level changes only where cross lanes meet the street
             ss = sorted(st["line"].project(Point(*p)) for p in st["gaps_at"])
             edges = [0.0]
@@ -156,10 +157,18 @@ class Town:
             def bvals(a, b):
                 return [band_level(v, v) for v in np.arange(a, b + 0.01, 2.0)]
             prev = None                                          # (end of previous segment, its level)
+            hold = None
+            if st.get("hold"):                                   # one level stretch held around a point (for a square): (x, y, half-length)
+                hx, hy, hh = st["hold"]; hs = st["line"].project(Point(hx, hy)); hold = (max(0.0, hs - hh), min(L, hs + hh))
             while s < L - 8:
+                if hold and s >= hold[0] - gap - 6 and s < hold[1]:
+                    while cuts and cuts[-1][1] > hold[0] - gap:
+                        cuts[-1][1] = hold[0] - gap
+                        if cuts[-1][1] - cuts[-1][0] < 6: cuts.pop()
+                    cuts.append([hold[0], hold[1]]); prev = (hold[1], round(band_level(*hold) * 4) / 4); s = hold[1] + gap; hold = None; continue
                 for _ in range(4):                               # move the start on until the drop from the last level fits the gap
                     e = min(L, s + minlen); vals = bvals(s, e)
-                    while e + 2 <= L and e - s < maxlen:
+                    while e + 2 <= L and e - s < maxlen and not (hold and e + 2 > hold[0] - gap):
                         nv = vals + bvals(e + 2, e + 2)
                         if max(nv) - min(nv) > 2 * tol: break
                         vals = nv; e += 2
@@ -182,7 +191,7 @@ class Town:
             else:
                 mc.append(c); ml.append(l)
         # widen a gap if its drop is too steep for the street class
-        for i in range(1, len(mc)):
+        for i in range(1, len(mc) if not st.get("keep_landings") else 1):
             need = abs(ml[i] - ml[i - 1]) / g_drop; have = mc[i][0] - mc[i - 1][1]
             if need > have:
                 shift = need - have; mc[i][0] = min(mc[i][0] + shift, mc[i][1] - 6)
@@ -301,10 +310,10 @@ class Town:
                     n = np.array([-t[1], t[0]]) * side
                     door_pt = np.array(line.interpolate(smid).coords[0]) + n * (w / 2 + 0.35)
                     yaw = self.yaw_for(math.degrees(math.atan2(-n[0], -n[1])) % 360, door)
-                    for extra in (0.0, 0.8, 1.6, 2.4):
+                    for extra in self.SETBACKS:
                         cen = door_pt + n * (extra + dp / 2); poly = self.foot(mid, cen[0], cen[1], yaw)
-                        if self.ok(poly, sg["z"], k, yaw, cut_lim):
-                            self.add(mid, cen[0], cen[1], yaw, door, sg["z"], k, role, self._pg); placed = True; break
+                        if self.ok(poly, sg["z"], k, yaw, cut_lim) and self.add(mid, cen[0], cen[1], yaw, door, sg["z"], k, role, self._pg) is not None:
+                            placed = True; break
                     if placed:
                         s += fw + 0.08; nb += 1
                         if nb % 4 == 0: s += self.rng.uniform(2.8, 3.8)
@@ -325,8 +334,8 @@ class Town:
                 if np.dot(n, np.array(outward_ref) - mid_pt) > 0: n = -n          # n points away from the space
                 yaw = self.yaw_for(math.degrees(math.atan2(-n[0], -n[1])) % 360, door)
                 cen = mid_pt + n * (dp / 2 + 0.45); poly = self.foot(mid, cen[0], cen[1], yaw)
-                if self.ok(poly, pz, street_id, yaw, cut_lim):
-                    self.add(mid, cen[0], cen[1], yaw, door, pz, street_id, role, self._pg); s += fw + 0.08; placed = True; break
+                if self.ok(poly, pz, street_id, yaw, cut_lim) and self.add(mid, cen[0], cen[1], yaw, door, pz, street_id, role, self._pg) is not None:
+                    s += fw + 0.08; placed = True; break
             if not placed: s += 1.5
 
     # ------------------------------------------------------------------ checks
