@@ -52,7 +52,7 @@
 | Grades: lanes | up to 15.6 % | pass |
 | Grades: cross lanes | 0-13 % | pass |
 | Grades: look-out stairs | 21-37 % average | they are stairs |
-| Street cut / fill | at most 0.9 m / 1.8 m | pass |
+| Street cut / fill | at most 1.2 m / 1.8 m | pass |
 | Largest model / twin group | WH19 10.1 %; ND01-size domes 10.1 %; WH11 + WH24 8.4 %; 27 models | pass (12 % cap) |
 | Buildings / garrison | **119 / 55** (88 enterable) | pass (top of 40-55) |
 | Sci-fi share | 12 of 119 (10 %), mostly on the rim street | |
