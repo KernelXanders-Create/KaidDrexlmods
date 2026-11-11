@@ -151,6 +151,24 @@ class Town:
                 else: offs = tuple(sides[0] * (st["w"] / 2 + d) for d in st.get("band", (2.0, 5.0, 8.0)))   # street + near half of the row
                 for off in offs: vals.append(self.G.z(*(p + n * off)))
             return float(np.mean(vals))
+        if st.get("adaptive"):                                  # end a level segment where its frontage band leaves +-tol of one level
+            tol = st.get("tol", 1.5); maxlen = st.get("maxlen", 46.0); minlen = st.get("minlen", 12.0); cuts, s = [], 0.0
+            def bvals(a, b):
+                return [band_level(v, v) for v in np.arange(a, b + 0.01, 2.0)]
+            prev = None                                          # (end of previous segment, its level)
+            while s < L - 8:
+                for _ in range(4):                               # move the start on until the drop from the last level fits the gap
+                    e = min(L, s + minlen); vals = bvals(s, e)
+                    while e + 2 <= L and e - s < maxlen:
+                        nv = vals + bvals(e + 2, e + 2)
+                        if max(nv) - min(nv) > 2 * tol: break
+                        vals = nv; e += 2
+                    if L - e < 14: e = L
+                    lv = round(float(np.mean(vals)) * 4) / 4
+                    if prev is None or abs(lv - prev[1]) / g_drop <= s - prev[0] + 0.01: break
+                    s = prev[0] + abs(lv - prev[1]) / g_drop
+                if s >= L - 8: break
+                cuts.append([s, e]); prev = (e, lv); s = e + gap
         lev = [round(band_level(a, b) * 4) / 4 for a, b in cuts]
         pin0 = self._pin(st, "start"); pin1 = self._pin(st, "end")
         if pin0 is not None: lev[0] = pin0
