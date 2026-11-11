@@ -47,7 +47,7 @@ QUAY = box(2637, 10657, 2670, 10684); QUAY_Z = 3.0
 CFG = dict(
     key="sound_head", town="Sound Head", version="K6 (grid rule) PROPOSED", seed=5,
     tile=PACK + "/towns6/sound_head/height_1m.npy", tile_origin=(2200, 10200), ground_label="site tile (as built today)",
-    target_n=90, garrison_range=(40, 50), square=True,
+    target_n=64, garrison_range=(40, 50), square=True,
     view=((2420, 2720), (10410, 10760)),
     inset=dict(view=((2595, 2685), (10425, 10500)), title="the gate square on the valley floor (one level)"),
     title="Sound Head (op 3, 3-M3), K6 PROPOSED: contour terraces on the bowl, real models, 5 m grid rule",
@@ -64,7 +64,7 @@ CFG = dict(
 def build(T):
     sq = Polygon(SQ_PTS); T.SQ = sq
     x0, y0, x1, y1 = sq.bounds; xs, ys = np.meshgrid(np.arange(x0, x1), np.arange(y0, y1)); from shapely import contains_xy
-    m = contains_xy(sq, xs, ys); sqz = round(float(T.G.zv(xs[m], ys[m]).mean()) * 4) / 4
+    m = contains_xy(sq, xs, ys); sqz = round((float(T.G.zv(xs[m], ys[m]).mean()) + 1.4) * 4) / 4   # level with the uphill edge: the ring cuts little, the seaward edge is a terrace on fill
     T.square_z = sqz
     # pin the main street to the square level at its start; recompute its levels
     T.streets["M"]["pin_start"] = sqz; T._levels(T.streets["M"]); pass
@@ -81,7 +81,7 @@ def build(T):
     P = SQ_PTS          # 0:(+u,+v) 1:(+u,-v) 2:(-u,-v) 3:(-u,+v); -v side is uphill (south-west)
     T.log.clear()
     for edge in ([P[2], P[1]], [P[3], P[2]], [P[1], P[0]]):
-        T.pack_edge(edge, c, sqz, ["SF01", "SF08", "SF15", "SF16", "WH19", "ND03", "WH03", "ND01", "ND02", "WH11"], "square", allow_tall=False, cut_lim=3.2)
+        T.pack_edge(edge, c, sqz, ["SF03", "SF03", "SF01", "SF08", "SF15", "SF16", "WH19", "ND03", "WH03", "ND01", "ND02", "WH11"], "square", allow_tall=False, cut_lim=3.2)
     print("RING", dict(T.log), "square level", sqz, "corners", P); T.log.clear()
     # terraces
     for k in ("M", "T14", "T21", "T28", "T42", "T49", "T56"):
@@ -110,5 +110,5 @@ CFG["streets"] += [
     dict(id="P2", cls="path", w=3.0, name="middle stair", pts=[(2472, 10604), (2502, 10612), (2532, 10606), (2562, 10614), (2592, 10608), (2626, 10616)]),
     dict(id="P3", cls="path", w=3.0, name="north stair", pts=[(2468, 10676), (2498, 10670), (2528, 10678), (2558, 10670), (2588, 10676), (2616, 10668), (2640, 10672)]),
 ]
-CFG["pool_main"] = ["WH12", "WH02", "WH21", "WH23", "SF01", "SF08", "SF15", "SF16", "WH01", "WH03", "WH04", "WH11", "WH19", "ND01", "ND02", "ND03", "WH08", "WH24", "WH09"]
+CFG["pool_main"] = ["SF03", "SF13", "SF12", "WH12", "WH02", "WH21", "WH23", "SF01", "SF08", "SF15", "SF16", "WH01", "WH03", "WH04", "WH11", "WH19", "ND01", "ND02", "ND03", "WH08", "WH24", "WH09"]
 CFG["pool_lane"] = ["WH12", "WH02", "WH07", "WH09", "WH21", "WH22", "WH23", "WH18", "WH01", "WH03", "WH04", "WH08", "WH11", "WH19", "WH24", "ND01", "ND02", "ND03", "ND04", "WH06", "WH17", "WH14", "WH15", "WH05"]
