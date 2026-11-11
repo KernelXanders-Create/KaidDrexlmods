@@ -51,6 +51,9 @@ class Plan:
         self.water = self.H <= 0.3
         self.cross_max = 0.5
         self.balanced = False
+        self.cliff_dilate = 2
+        self.route_sigma = 1.5
+        self.chaikin = 3
 
     # ----------------------------------------------------------------- pads
     def search(self, x, y, hx, hy, radius, step=10.0, yaws=range(0, 180, 15), water_ok=False, cap=3.6, prefer_low=True, avoid=(), pull=None):
@@ -115,29 +118,35 @@ class Plan:
         self.block[J.ravel()[m], I.ravel()[m]] = True
 
     # ----------------------------------------------------------------- roads
-    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=0.8, pre=None):
+    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=0.8, pre=None, post=None, own_ids=()):
         """A* on a 10 m lattice (16 directions) inside the pair's box + margin, over smoothed natural ground; the grade limit is a
         hard limit per step (times `steep`, which the profile pass then absorbs with cut / fill); returns the road dict or None"""
         H = self.H; k = int(cell / C)
         x0 = max(min(a[0], b[0]) - margin, self.box[0]); x1 = min(max(a[0], b[0]) + margin, self.box[1])
         y0 = max(min(a[1], b[1]) - margin, self.box[2]); y1 = min(max(a[1], b[1]) + margin, self.box[3])
         i0, i1, j0, j1 = int(x0 / C), int(x1 / C), int(y0 / C), int(y1 / C)
-        Hs = ndimage.gaussian_filter(H[j0:j1 + 1, i0:i1 + 1], 1.5)[::k, ::k]
+        Hs = ndimage.gaussian_filter(H[j0:j1 + 1, i0:i1 + 1], self.route_sigma)[::k, ::k]
         water = self.water[j0:j1 + 1, i0:i1 + 1]
         own = self.owner[j0:j1 + 1, i0:i1 + 1]
         padonly = np.vectorize(lambda o: bool(o) and not o.startswith("R:"))(own)
         band = int(math.ceil((width / 2 + 3.5 + ROAD_CLEAR) / C))
-        bad = ndimage.binary_dilation(water, iterations=2) | ndimage.binary_dilation(padonly, iterations=band)
+        wband = int(math.ceil((width / 2 + 3.5 + 1.0) / C))                 # the whole band stays on dry ground
+        bad = ndimage.binary_dilation(water, iterations=max(2, wband)) | ndimage.binary_dilation(padonly, iterations=band)
         Hf = ndimage.gaussian_filter(H[j0:j1 + 1, i0:i1 + 1], 1.0); gy_, gx_ = np.gradient(Hf, C)
         sl_ = np.hypot(gx_, gy_)
         bad |= sl_ > self.cross_max                                 # side slope: the 7 m band would cut / fill too much
-        bad |= ndimage.binary_dilation(sl_ > 0.9, iterations=2)    # and keep the band off cliff edges
+        if self.cliff_dilate: bad |= ndimage.binary_dilation(sl_ > 0.9, iterations=self.cliff_dilate)    # and keep the band off cliff edges
+        Hr = H[j0:j1 + 1, i0:i1 + 1]; nb = int(math.ceil((width / 2 + 3.5) / C)) * 2 + 1
+        bad |= (ndimage.maximum_filter(Hr, size=nb) - ndimage.minimum_filter(Hr, size=nb)) > 7.6   # no single level holds the band within 4 m
         bad = ndimage.maximum_filter(bad.astype(np.uint8), size=k)[::k, ::k].astype(bool)
         ny, nx = Hs.shape
         sa = (int(round((a[1] - j0 * C) / cell)), int(round((a[0] - i0 * C) / cell))); sb = (int(round((b[1] - j0 * C) / cell)), int(round((b[0] - i0 * C) / cell)))
         r_free = band // k + 2
         for (sj, si) in (sa, sb):
             bad[max(0, sj - r_free):sj + r_free + 1, max(0, si - r_free):si + r_free + 1] = False
+        others = np.vectorize(lambda o: bool(o) and not o.startswith("R:") and o not in own_ids)(own)       # other pads stay blocked near the ends
+        others = ndimage.binary_dilation(others, iterations=int(math.ceil((width / 2 + ROAD_CLEAR) / C)) + 1)
+        bad |= ndimage.maximum_filter(others.astype(np.uint8), size=k)[::k, ::k].astype(bool)
         steps = [(dj, di) for dj in range(-2, 3) for di in range(-2, 3) if (dj, di) != (0, 0) and math.gcd(abs(dj), abs(di)) == 1]
         g = {sa: 0.0}; prev = {}; pq = [(0.0, sa)]; done = set()
         while pq:
@@ -160,26 +169,23 @@ class Plan:
         P = np.array([(i0 * C + p[1] * cell, j0 * C + p[0] * cell) for p in path], float)
         P[0] = a; P[-1] = b
         if pre is not None: P = np.vstack([np.array(pre, float), P])        # a straight stub out of the pad before the route
+        if post is not None: P = np.vstack([P, np.array(post, float)])      # and a straight stub into the pad after it
         return self._road(P, grade, width, za, zb, name, kind, links)
 
     def _road(self, P, grade, width, za, zb, name, kind, links):
         P = np.asarray(P, float)
-        # break straight runs: resample the raw path every 60 m and push alternate points 3 m sideways
-        s0 = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]
-        if s0[-1] > 150 and straight_run(P, 1.0) > 140:
-            m = max(3, int(s0[-1] // 60) + 1); ss0 = np.linspace(0, s0[-1], m)
-            Q = np.c_[np.interp(ss0, s0, P[:, 0]), np.interp(ss0, s0, P[:, 1])]
-            for k in range(1, m - 1):
-                t = Q[k + 1] - Q[k - 1]; t = t / (np.linalg.norm(t) + 1e-9); Q[k] = Q[k] + np.array([-t[1], t[0]]) * 3.0 * (1 if k % 2 else -1)
-            P = Q
         # smooth (Chaikin) and resample every 4.5 m
-        for _ in range(3):
+        for _ in range(self.chaikin):
             Q = [P[0]]
             for p, q in zip(P[:-1], P[1:]): Q += [0.75 * p + 0.25 * q, 0.25 * p + 0.75 * q]
             Q.append(P[-1]); P = np.array(Q)
         s = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = s[-1]
         n = max(2, int(math.ceil(L / 4.5)) + 1); ss = np.linspace(0, L, n)
         P = np.c_[np.interp(ss, s, P[:, 0]), np.interp(ss, s, P[:, 1])]
+        if L > 150 and straight_run(P, 1.0) > 140:          # break long straights: a gentle 2.5 m side-to-side wave (keeps switchbacks)
+            T = np.gradient(P, axis=0); T = T / (np.linalg.norm(T, axis=1)[:, None] + 1e-9); Nn = np.c_[-T[:, 1], T[:, 0]]
+            w = 2.5 * np.sin(2 * np.pi * ss / 120.0) * np.clip(np.minimum(ss, L - ss) / 20.0, 0, 1)
+            P = P + Nn * w[:, None]
         gz = np.array([world.z(x, y) for x, y in P])
         # target level per station: the middle of the natural ground over the band points nearest to it (balances cut against fill)
         Rb = width / 2 + 3.5
@@ -215,8 +221,8 @@ class Plan:
             dev = nat[inb] - zp[bk[inb]]
             dmax = np.full(n, -np.inf); dmin = np.full(n, np.inf)
             np.maximum.at(dmax, bk[inb], dev); np.minimum.at(dmin, bk[inb], dev)
-            up = np.where(np.isfinite(dmax) & (dmax > 3.9), dmax - 3.9, 0.0); dn = np.where(np.isfinite(dmin) & (dmin < -3.9), dmin + 3.9, 0.0)
-            shift = np.where(up > 0, np.where(dmin - up >= -3.9, up, 0.5 * (up + dn)), dn)
+            up = np.where(np.isfinite(dmax) & (dmax > 3.8), dmax - 3.8, 0.0); dn = np.where(np.isfinite(dmin) & (dmin < -3.8), dmin + 3.8, 0.0)
+            shift = np.where(up > 0, np.where(dmin - up >= -3.8, up, 0.5 * (up + dn)), dn)
             shift[fixed] = 0.0
             if np.abs(shift).max() < 0.01: break
             zp = zp + ndimage.uniform_filter1d(shift, 5, mode="nearest") * 1.2
@@ -272,7 +278,7 @@ class Plan:
         for k in range(len(P) - 1):
             a, b = P[k], P[k + 1]; ab = b - a; t = np.clip(((pts - a) @ ab) / (ab @ ab + 1e-9), 0, 1)
             dmin = np.minimum(dmin, np.hypot(*(pts - (a + t[:, None] * ab)).T))
-        m = dmin <= r["width_m"] / 2 + ROAD_CLEAR + 3.5
+        m = dmin <= r["width_m"] / 2 + ROAD_CLEAR + 3.5 + 2.5          # + 2.5 m: pads are tested on 5 m grid points
         self.block[J2.ravel()[m], I2.ravel()[m]] = True
         self.roads.append(r)
 

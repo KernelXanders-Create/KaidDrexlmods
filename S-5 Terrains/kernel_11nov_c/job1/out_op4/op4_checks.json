@@ -1,0 +1,248 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    21.1,
+    "4-11",
+    "4-12",
+    true
+   ],
+   [
+    25.4,
+    "4-07",
+    "A4-08",
+    true
+   ],
+   [
+    26.5,
+    "4-11",
+    "A4-07",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "4-04-4-F": [
+    300,
+    2.78
+   ],
+   "4-06-4-F": [
+    4,
+    0.35
+   ],
+   "4-02-4-04": [
+    7,
+    1.33
+   ],
+   "4-11-4-04": [
+    155,
+    3.0
+   ],
+   "4-12-4-11": [
+    11,
+    0.63
+   ],
+   "4-M2-4-11": [
+    7,
+    2.01
+   ],
+   "4-M2-T-4-M2": [
+    127,
+    1.63
+   ],
+   "4-03-4-11": [
+    31,
+    0.67
+   ],
+   "4-10-4-08": [
+    14,
+    0.67
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "4-M2-T",
+   3.68
+  ],
+  "over_3_5": [
+   [
+    "4-M2-T",
+    3.68
+   ],
+   [
+    "4-09",
+    3.65
+   ],
+   [
+    "4-12",
+    3.59
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "trunk-1:trunk start 0-4-M1",
+   14.0
+  ]
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "trunk-1:trunk start 0-4-M1",
+   3.74
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "PASS",
+  "nets": {
+   "Cinder Cone, Mole Rock and the south causeway": {
+    "pieces": [
+     [
+      "4-04",
+      "4-06",
+      "4-02",
+      "4-03",
+      "4-11",
+      "4-12",
+      "4-M2",
+      "4-M2-T"
+     ]
+    ],
+    "not_reached": []
+   },
+   "Ember Crescent and the north causeway": {
+    "pieces": [
+     [
+      "4-01",
+      "4-07",
+      "4-09",
+      "4-08",
+      "4-10"
+     ]
+    ],
+    "not_reached": []
+   }
+  },
+  "vehicle_sites_not_on_the_net": [],
+  "reading": "the rule binds sites with a vehicle approach; the purpose map gives no op 3 site one, so every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "4-11-4-04",
+   116.7
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    4.5,
+    "4-F",
+    "4-03-4-11"
+   ],
+   [
+    4.7,
+    "4-06",
+    "trunk-2:4-M1-4-F"
+   ],
+   [
+    6.3,
+    "A4-09",
+    "4-10-4-08"
+   ]
+  ]
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    21.1,
+    "4-11",
+    "4-12",
+    true
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    10.3,
+    "A4-07"
+   ],
+   [
+    11.3,
+    "A4-06"
+   ],
+   [
+    11.6,
+    "A4-08"
+   ]
+  ],
+  "exempt": [
+   "4-12"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    930,
+    "4-F",
+    "4-M2-T"
+   ],
+   [
+    998,
+    "4-F",
+    "4-M2"
+   ],
+   [
+    1069,
+    "4-M2-T",
+    "4-M4"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "4-F Cinder Cone Fort": [
+    "by the trunk road over the south causeway, through the Mole Rock Gate and up the cone's south side (vehicles)",
+    "from the north causeway or the cone's north beach (the landers) up the cone's north-west side, on foot or on the trunk"
+   ],
+   "4-M1 Mole Rock Gate": [
+    "along the south causeway from the Airfield Terrace (vehicles, on the trunk)",
+    "by boat to Mole Rock's own shore (see shores)"
+   ],
+   "4-M2 Cone Flank Batteries": [
+    "by boat to the cone's east shore below the batteries",
+    "along the cone's east flank road from the South Foot Depot (vehicles)"
+   ],
+   "4-M3 Causeway Foot": [
+    "over the north causeway from the cone (vehicles, on the trunk)",
+    "by boat to the beach south of the town, or down the slope road from the north"
+   ],
+   "4-M4 Skerry AA Platform": [
+    "by boat to the skerry's landing below the bunkers (4-05)",
+    "by air once the platform's own AA is suppressed from the cone (no LZ given)"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
