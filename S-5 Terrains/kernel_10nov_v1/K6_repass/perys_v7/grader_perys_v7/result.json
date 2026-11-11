@@ -1,0 +1,5947 @@
+{
+ "grader": "town_grader 1.0 (11 Nov 2026)",
+ "layout": "perys_v7_layout",
+ "command": "town_grader.py perys_v7_layout.json --grid5 perys_natural_5m.npy 4730 2800 --fixed perys_fixed.json",
+ "counts": {
+  "town": "Perys",
+  "version": "v7 (Kernel third pass, graded with the 11 Nov grader) PROPOSED",
+  "buildings": 69,
+  "pad_rule": "v5: footprint + 1.5 m street side / ends, + 0.4 m rear (front rows); 1.5 m all round otherwise",
+  "window_vertices": {
+   "i0": 980,
+   "i1": 1171,
+   "j0": 610,
+   "j1": 741
+  },
+  "grid_clash": {
+   "pad_group_pairs_sharing_a_vertex_at_different_levels": 0,
+   "shared_vertices": 0,
+   "pairs": [],
+   "buildings_whose_pad_meets_street_cells_at_another_level": 0,
+   "such_vertices": 0,
+   "street_vertices_held_by_an_earlier_street_at_another_level": {
+    "M": 0,
+    "U": 0,
+    "U2": 0,
+    "KW": 0,
+    "KE": 0,
+    "CT1": 25,
+    "CT2": 27,
+    "CU1": 18,
+    "CU2": 23,
+    "CU3": 25,
+    "CU4": 22,
+    "CM1": 25,
+    "CM2": 19,
+    "CM3": 21,
+    "CM4": 25,
+    "HL": 14,
+    "HR": 33
+   }
+  },
+  "pad_cutfill": {
+   "median": 2.1,
+   "max": 3.79,
+   "n_over_2_5": 25,
+   "n_over_4": 0,
+   "over_4": [],
+   "square": {
+    "level": 57.0,
+    "cutfill_max": 3.71,
+    "feasible": true,
+    "why": "cut/fill 3.71"
+   }
+  },
+  "grader_as_drawn": {
+   "accepted": 69,
+   "refused": 0,
+   "causes": {},
+   "accepted_by_role": {
+    "landmark": 1,
+    "square": 1,
+    "quay": 4,
+    "main": 20,
+    "lane": 43
+   },
+   "rows": {
+    "B001": "ok",
+    "B002": "ok",
+    "B068": "ok",
+    "B069": "ok",
+    "B070": "ok",
+    "B071": "ok",
+    "B003": "ok",
+    "B004": "ok",
+    "B005": "ok",
+    "B006": "ok",
+    "B007": "ok",
+    "B008": "ok",
+    "B009": "ok",
+    "B010": "ok",
+    "B011": "ok",
+    "B012": "ok",
+    "B013": "ok",
+    "B014": "ok",
+    "B015": "ok",
+    "B016": "ok",
+    "B017": "ok",
+    "B018": "ok",
+    "B019": "ok",
+    "B020": "ok",
+    "B021": "ok",
+    "B022": "ok",
+    "B023": "ok",
+    "B024": "ok",
+    "B025": "ok",
+    "B028": "ok",
+    "B029": "ok",
+    "B030": "ok",
+    "B031": "ok",
+    "B032": "ok",
+    "B033": "ok",
+    "B034": "ok",
+    "B035": "ok",
+    "B036": "ok",
+    "B037": "ok",
+    "B038": "ok",
+    "B039": "ok",
+    "B040": "ok",
+    "B041": "ok",
+    "B042": "ok",
+    "B043": "ok",
+    "B044": "ok",
+    "B045": "ok",
+    "B046": "ok",
+    "B047": "ok",
+    "B048": "ok",
+    "B049": "ok",
+    "B050": "ok",
+    "B051": "ok",
+    "B052": "ok",
+    "B053": "ok",
+    "B054": "ok",
+    "B055": "ok",
+    "B056": "ok",
+    "B057": "ok",
+    "B058": "ok",
+    "B059": "ok",
+    "B060": "ok",
+    "B061": "ok",
+    "B062": "ok",
+    "B063": "ok",
+    "B064": "ok",
+    "B065": "ok",
+    "B066": "ok",
+    "B067": "ok"
+   }
+  },
+  "ground": {
+   "infeasible_vertices": 0
+  }
+ },
+ "checks": {
+  "buildings seated": {
+   "rule": "every building must be seated as drawn",
+   "result": "69 of 69",
+   "status": "PASS"
+  },
+  "refusals by kind": {
+   "rule": "first failed test per refused building",
+   "result": "none",
+   "status": "PASS"
+  },
+  "pad-pad clash": {
+   "rule": "two pads at different levels may not share a grid point (all buildings, order-free)",
+   "result": "0 pairs of pad groups, 0 shared points",
+   "status": "PASS"
+  },
+  "pad-street / ramp / lane clash": {
+   "rule": "no pad point may sit on a street, lane, path or square point at another level (all buildings, order-free)",
+   "result": "0 buildings, 0 grid points",
+   "status": "PASS"
+  },
+  "street-street clash": {
+   "rule": "grid points two streets both claim at different levels; the earlier street keeps its level there, so the later one gets a step. A few at a junction where a ramp meets a level street are normal; dozens mean two streets run over each other at different levels (report)",
+   "result": {
+    "CT1": 25,
+    "CT2": 27,
+    "CU1": 18,
+    "CU2": 23,
+    "CU3": 25,
+    "CU4": 22,
+    "CM1": 25,
+    "CM2": 19,
+    "CM3": 21,
+    "CM4": 25,
+    "HL": 14,
+    "HR": 33
+   },
+   "status": "REPORT"
+  },
+  "square": {
+   "rule": "one level; every point within 4.0 m of natural ground; no street point at another level; 31 deg bank to everything else",
+   "result": "level 57.00 m, cut/fill max 3.71 m, 0 points meet streets at another level ; ok",
+   "status": "PASS"
+  },
+  "fixed pad QUAY": {
+   "rule": "a fixed level patch of ours (from --fixed)",
+   "result": "level 2.20 m, cut/fill 2.93 m, ok",
+   "status": "PASS"
+  },
+  "pad cut / fill (true grid)": {
+   "rule": "every pad point within 4.0 m of the natural ground; aim for 2.5 m (all buildings as drawn)",
+   "result": "median 2.10 m, max 3.79 m, 25 over 2.5 m, 0 over 4.0 m ",
+   "status": "PASS"
+  },
+  "ground solvable": {
+   "rule": "31 deg cones between all fixed points must meet (seated set)",
+   "result": "0 infeasible grid points",
+   "status": "PASS"
+  },
+  "door threshold vs ground 1 m out": {
+   "rule": "pad (= floor = threshold) within 5 cm of the graded surface 1 m out of the door (seated)",
+   "result": "max 0.000 m; 0 fail ",
+   "status": "PASS"
+  },
+  "door threshold vs street surface": {
+   "rule": "pad within 5 cm of its street's level at the door's station, for doors within 12 m of the centre line (seated)",
+   "result": "63 checked, 0 fail ; 0 doors more than 12 m from their street (listed in result.json)",
+   "status": "PASS"
+  },
+  "wall below ground": {
+   "rule": "highest ground 0.25 m outside the walls minus the floor <= 0.3 m (seated)",
+   "result": "max 0.00 m; 0 fail ",
+   "status": "PASS"
+  },
+  "overlaps": {
+   "rule": "no two footprint boxes overlap (whole layout as drawn)",
+   "result": "0 pairs ; closest gap 0.006 m",
+   "status": "PASS"
+  },
+  "in a street ribbon (own street)": {
+   "rule": "footprint >= half-width + 0.2 m from its own street's centre line (whole layout)",
+   "result": "0 buildings ",
+   "status": "PASS"
+  },
+  "corner clearance (other streets)": {
+   "rule": "footprint >= half-width + 1.0 m from every other street's centre line (whole layout)",
+   "result": "0 buildings ",
+   "status": "PASS"
+  },
+  "back-to-back gap (31 deg bank)": {
+   "rule": "pads at different levels need at least |dz| / 0.6 m between their grid points (first failure per building)",
+   "result": "0 buildings refused ",
+   "status": "PASS"
+  },
+  "banks facing streets": {
+   "rule": "a graded bank over 1.5 m seen from a main street or lane edge, before any building (seated set; report)",
+   "result": "26 runs, 102 stations (by street: {'CM1': 1, 'CM2': 1, 'CM3': 1, 'CU2': 1, 'KE': 4, 'KW': 2, 'M': 9, 'U': 4, 'U2': 3})",
+   "status": "REPORT"
+  },
+  "straight runs": {
+   "rule": "no main street or lane straight for more than 80 m (within 1.0 m of its chord)",
+   "result": "longest main street or lane: U 73.7 m; roads and paths (report): HR 169.2 m",
+   "status": "PASS"
+  },
+  "street grades": {
+   "rule": "main streets under 5 % (8 % average, 12 % on a short drop), lanes under 19 %, paths are stairs (report)",
+   "result": {
+    "M": 12.0,
+    "U": 19.1,
+    "U2": 14.0,
+    "KW": 7.8,
+    "KE": 19.1,
+    "CT1": 9.1,
+    "CT2": 9.5,
+    "CU1": 10.9,
+    "CU2": 11.9,
+    "CU3": 11.0,
+    "CU4": 11.5,
+    "CM1": 14.5,
+    "CM2": 12.7,
+    "CM3": 17.0,
+    "CM4": 15.9,
+    "HL": 10.3,
+    "HR": 11.4
+   },
+   "status": "REPORT"
+  },
+  "model / twin share (drawn)": {
+   "rule": "any one model <= 15 %, any one twin group (colour variants of one house) <= 12 %",
+   "result": "largest model ND02 6 = 8.7 %, largest twin group ND01+ND02 8 = 11.6 %",
+   "status": "PASS"
+  },
+  "model / twin share (seated)": {
+   "rule": "any one model <= 15 %, any one twin group (colour variants of one house) <= 12 % (the check is on the town as drawn; the seated share is a report)",
+   "result": "largest model ND02 6 = 8.7 %, largest twin group ND01+ND02 8 = 11.6 %",
+   "status": "REPORT"
+  },
+  "lamps": {
+   "rule": "lamp positions, if given",
+   "result": "none given (we place lamps ourselves)",
+   "status": "n/a"
+  },
+  "comp seat and height": {
+   "rule": "a whole comp needs its own level pad (every grid point of its rectangle at its pad_z_m, the same tests as a building pad, after the buildings), clear of seated buildings and of every carriageway",
+   "result": [
+    [
+     "Landing Pad Crap (the quay comp: a landing pad and crates) (kept from v4)",
+     "level 2.2: its pad would seat: cut/fill 3.50"
+    ]
+   ],
+   "status": "PASS"
+  }
+ },
+ "buildings": [
+  {
+   "id": "B001",
+   "model": "ND07",
+   "street": "SQ",
+   "role": "landmark",
+   "pad_group": "P001",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.71,
+   "clash_points": 0,
+   "grade_order": 1
+  },
+  {
+   "id": "B002",
+   "model": "WH09",
+   "street": "SQ",
+   "role": "square",
+   "pad_group": "P002",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.94,
+   "clash_points": 0,
+   "grade_order": 2
+  },
+  {
+   "id": "B003",
+   "model": "ND05",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.37,
+   "clash_points": 0,
+   "grade_order": 7
+  },
+  {
+   "id": "B004",
+   "model": "SF08",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.58,
+   "clash_points": 0,
+   "grade_order": 8
+  },
+  {
+   "id": "B005",
+   "model": "WH08",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P004",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.63,
+   "clash_points": 0,
+   "grade_order": 9
+  },
+  {
+   "id": "B006",
+   "model": "ND02",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P006",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.97,
+   "clash_points": 0,
+   "grade_order": 10
+  },
+  {
+   "id": "B007",
+   "model": "SF08",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P006",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.44,
+   "clash_points": 0,
+   "grade_order": 11
+  },
+  {
+   "id": "B008",
+   "model": "ND01",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P006",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.55,
+   "clash_points": 0,
+   "grade_order": 12
+  },
+  {
+   "id": "B009",
+   "model": "ND02",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P007",
+   "pad_z": 53.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.07,
+   "clash_points": 0,
+   "grade_order": 13
+  },
+  {
+   "id": "B010",
+   "model": "ND02",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 50.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.38,
+   "clash_points": 0,
+   "grade_order": 14
+  },
+  {
+   "id": "B011",
+   "model": "ND01",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P008",
+   "pad_z": 50.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.65,
+   "clash_points": 0,
+   "grade_order": 15
+  },
+  {
+   "id": "B012",
+   "model": "SF15",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.01,
+   "clash_points": 0,
+   "grade_order": 16
+  },
+  {
+   "id": "B013",
+   "model": "ND05",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.3,
+   "clash_points": 0,
+   "grade_order": 17
+  },
+  {
+   "id": "B014",
+   "model": "ND03",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P009",
+   "pad_z": 59.4,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.58,
+   "clash_points": 0,
+   "grade_order": 18
+  },
+  {
+   "id": "B015",
+   "model": "ND02",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P010",
+   "pad_z": 57.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.49,
+   "clash_points": 0,
+   "grade_order": 19
+  },
+  {
+   "id": "B016",
+   "model": "WH19",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.11,
+   "clash_points": 0,
+   "grade_order": 20
+  },
+  {
+   "id": "B017",
+   "model": "SF01",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.76,
+   "clash_points": 0,
+   "grade_order": 21
+  },
+  {
+   "id": "B018",
+   "model": "WH23",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.39,
+   "clash_points": 0,
+   "grade_order": 22
+  },
+  {
+   "id": "B019",
+   "model": "ND02",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.68,
+   "clash_points": 0,
+   "grade_order": 23
+  },
+  {
+   "id": "B020",
+   "model": "WH08",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.5,
+   "clash_points": 0,
+   "grade_order": 24
+  },
+  {
+   "id": "B021",
+   "model": "WH12",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P011",
+   "pad_z": 57.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.03,
+   "clash_points": 0,
+   "grade_order": 25
+  },
+  {
+   "id": "B022",
+   "model": "WH11",
+   "street": "M",
+   "role": "main",
+   "pad_group": "P013",
+   "pad_z": 50.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.82,
+   "clash_points": 0,
+   "grade_order": 26
+  },
+  {
+   "id": "B023",
+   "model": "ND03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P014",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.63,
+   "clash_points": 0,
+   "grade_order": 27
+  },
+  {
+   "id": "B024",
+   "model": "ND02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P014",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.51,
+   "clash_points": 0,
+   "grade_order": 28
+  },
+  {
+   "id": "B025",
+   "model": "WH06",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P016",
+   "pad_z": 58.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.98,
+   "clash_points": 0,
+   "grade_order": 29
+  },
+  {
+   "id": "B028",
+   "model": "WH07",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.09,
+   "clash_points": 0,
+   "grade_order": 30
+  },
+  {
+   "id": "B029",
+   "model": "WH02",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.1,
+   "clash_points": 0,
+   "grade_order": 31
+  },
+  {
+   "id": "B030",
+   "model": "ND03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.57,
+   "clash_points": 0,
+   "grade_order": 32
+  },
+  {
+   "id": "B031",
+   "model": "WH12",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.34,
+   "clash_points": 0,
+   "grade_order": 33
+  },
+  {
+   "id": "B032",
+   "model": "SF15",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P018",
+   "pad_z": 62.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.68,
+   "clash_points": 0,
+   "grade_order": 34
+  },
+  {
+   "id": "B033",
+   "model": "WH03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 62.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.77,
+   "clash_points": 0,
+   "grade_order": 35
+  },
+  {
+   "id": "B034",
+   "model": "WH17",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 62.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.04,
+   "clash_points": 0,
+   "grade_order": 36
+  },
+  {
+   "id": "B035",
+   "model": "WH11",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 62.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.74,
+   "clash_points": 0,
+   "grade_order": 37
+  },
+  {
+   "id": "B036",
+   "model": "WH12",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 62.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.58,
+   "clash_points": 0,
+   "grade_order": 38
+  },
+  {
+   "id": "B037",
+   "model": "WH24",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P019",
+   "pad_z": 62.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.35,
+   "clash_points": 0,
+   "grade_order": 39
+  },
+  {
+   "id": "B038",
+   "model": "WH12",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P020",
+   "pad_z": 58.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.66,
+   "clash_points": 0,
+   "grade_order": 40
+  },
+  {
+   "id": "B039",
+   "model": "WH17",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P020",
+   "pad_z": 58.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.13,
+   "clash_points": 0,
+   "grade_order": 41
+  },
+  {
+   "id": "B040",
+   "model": "WH07",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P021",
+   "pad_z": 55.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.24,
+   "clash_points": 0,
+   "grade_order": 42
+  },
+  {
+   "id": "B041",
+   "model": "ND03",
+   "street": "U",
+   "role": "lane",
+   "pad_group": "P021",
+   "pad_z": 55.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.75,
+   "clash_points": 0,
+   "grade_order": 43
+  },
+  {
+   "id": "B042",
+   "model": "WH11",
+   "street": "KW",
+   "role": "lane",
+   "pad_group": "P022",
+   "pad_z": 53.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.86,
+   "clash_points": 0,
+   "grade_order": 44
+  },
+  {
+   "id": "B043",
+   "model": "WH03",
+   "street": "KW",
+   "role": "lane",
+   "pad_group": "P023",
+   "pad_z": 52.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.36,
+   "clash_points": 0,
+   "grade_order": 45
+  },
+  {
+   "id": "B044",
+   "model": "WH05",
+   "street": "KW",
+   "role": "lane",
+   "pad_group": "P023",
+   "pad_z": 52.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.22,
+   "clash_points": 0,
+   "grade_order": 46
+  },
+  {
+   "id": "B045",
+   "model": "WH04",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 47.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.33,
+   "clash_points": 0,
+   "grade_order": 47
+  },
+  {
+   "id": "B046",
+   "model": "SF16",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 47.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.14,
+   "clash_points": 0,
+   "grade_order": 48
+  },
+  {
+   "id": "B047",
+   "model": "WH24",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P026",
+   "pad_z": 47.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.79,
+   "clash_points": 0,
+   "grade_order": 49
+  },
+  {
+   "id": "B048",
+   "model": "SF16",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P027",
+   "pad_z": 42.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.21,
+   "clash_points": 0,
+   "grade_order": 50
+  },
+  {
+   "id": "B049",
+   "model": "WH17",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P027",
+   "pad_z": 42.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.68,
+   "clash_points": 0,
+   "grade_order": 51
+  },
+  {
+   "id": "B050",
+   "model": "WH08",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P027",
+   "pad_z": 42.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 3.63,
+   "clash_points": 0,
+   "grade_order": 52
+  },
+  {
+   "id": "B051",
+   "model": "WH19",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P028",
+   "pad_z": 47.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.54,
+   "clash_points": 0,
+   "grade_order": 53
+  },
+  {
+   "id": "B052",
+   "model": "WH19",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P029",
+   "pad_z": 42.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.74,
+   "clash_points": 0,
+   "grade_order": 54
+  },
+  {
+   "id": "B053",
+   "model": "WH22",
+   "street": "KE",
+   "role": "lane",
+   "pad_group": "P029",
+   "pad_z": 42.25,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.61,
+   "clash_points": 0,
+   "grade_order": 55
+  },
+  {
+   "id": "B054",
+   "model": "ND03",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P031",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.18,
+   "clash_points": 0,
+   "grade_order": 56
+  },
+  {
+   "id": "B055",
+   "model": "WH17",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P031",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.37,
+   "clash_points": 0,
+   "grade_order": 57
+  },
+  {
+   "id": "B056",
+   "model": "WH03",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P031",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.83,
+   "clash_points": 0,
+   "grade_order": 58
+  },
+  {
+   "id": "B057",
+   "model": "WH17",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 67.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.34,
+   "clash_points": 0,
+   "grade_order": 59
+  },
+  {
+   "id": "B058",
+   "model": "WH08",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 67.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.07,
+   "clash_points": 0,
+   "grade_order": 60
+  },
+  {
+   "id": "B059",
+   "model": "ND04",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 67.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.64,
+   "clash_points": 0,
+   "grade_order": 61
+  },
+  {
+   "id": "B060",
+   "model": "WH04",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 67.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.65,
+   "clash_points": 0,
+   "grade_order": 62
+  },
+  {
+   "id": "B061",
+   "model": "WH05",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P033",
+   "pad_z": 67.0,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.51,
+   "clash_points": 0,
+   "grade_order": 63
+  },
+  {
+   "id": "B062",
+   "model": "WH12",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P034",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.4,
+   "clash_points": 0,
+   "grade_order": 64
+  },
+  {
+   "id": "B063",
+   "model": "WH05",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P034",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 2.03,
+   "clash_points": 0,
+   "grade_order": 65
+  },
+  {
+   "id": "B064",
+   "model": "WH19",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P034",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.31,
+   "clash_points": 0,
+   "grade_order": 66
+  },
+  {
+   "id": "B065",
+   "model": "WH06",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P034",
+   "pad_z": 65.75,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.02,
+   "clash_points": 0,
+   "grade_order": 67
+  },
+  {
+   "id": "B066",
+   "model": "ND03",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P035",
+   "pad_z": 63.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.17,
+   "clash_points": 0,
+   "grade_order": 68
+  },
+  {
+   "id": "B067",
+   "model": "WH12",
+   "street": "U2",
+   "role": "lane",
+   "pad_group": "P035",
+   "pad_z": 63.5,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.11,
+   "clash_points": 0,
+   "grade_order": 69
+  },
+  {
+   "id": "B068",
+   "model": "IN01",
+   "street": "QY",
+   "role": "quay",
+   "pad_group": "P036",
+   "pad_z": 2.2,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.16,
+   "clash_points": 0,
+   "grade_order": 3
+  },
+  {
+   "id": "B069",
+   "model": "IN03",
+   "street": "QY",
+   "role": "quay",
+   "pad_group": "P036",
+   "pad_z": 2.2,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.31,
+   "clash_points": 0,
+   "grade_order": 4
+  },
+  {
+   "id": "B070",
+   "model": "IN01",
+   "street": "QY",
+   "role": "quay",
+   "pad_group": "P036",
+   "pad_z": 2.2,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.37,
+   "clash_points": 0,
+   "grade_order": 5
+  },
+  {
+   "id": "B071",
+   "model": "IN03",
+   "street": "QY",
+   "role": "quay",
+   "pad_group": "P036",
+   "pad_z": 2.2,
+   "seated": "yes",
+   "kind": "",
+   "reason": "seated",
+   "grader_message": "ok",
+   "cutfill_m": 1.58,
+   "clash_points": 0,
+   "grade_order": 6
+  }
+ ],
+ "streets": {
+  "M": {
+   "cls": "main",
+   "width_m": 8.0,
+   "length_m": 311.5,
+   "grid_points_fixed": 288,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 3.02,
+   "clash_points": []
+  },
+  "U": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 310.8,
+   "grid_points_fixed": 248,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 2.62,
+   "clash_points": []
+  },
+  "U2": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 215.6,
+   "grid_points_fixed": 169,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 1.71,
+   "clash_points": []
+  },
+  "KW": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 91.4,
+   "grid_points_fixed": 79,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 1.32,
+   "clash_points": []
+  },
+  "KE": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 135.2,
+   "grid_points_fixed": 111,
+   "points_held_by_earlier_street_at_another_level": 0,
+   "cutfill_max_m": 3.23,
+   "clash_points": []
+  },
+  "CT1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 50.1,
+   "grid_points_fixed": 23,
+   "points_held_by_earlier_street_at_another_level": 25,
+   "cutfill_max_m": 1.01,
+   "clash_points": [
+    [
+     5120.0,
+     3265.0,
+     66.38,
+     66.3,
+     "U2"
+    ],
+    [
+     5125.0,
+     3265.0,
+     66.38,
+     66.04,
+     "U2"
+    ],
+    [
+     5130.0,
+     3265.0,
+     66.38,
+     65.79,
+     "U2"
+    ],
+    [
+     5120.0,
+     3270.0,
+     66.38,
+     66.59,
+     "U2"
+    ],
+    [
+     5125.0,
+     3270.0,
+     66.38,
+     66.32,
+     "U2"
+    ],
+    [
+     5130.0,
+     3270.0,
+     66.35,
+     66.03,
+     "U2"
+    ],
+    [
+     5120.0,
+     3275.0,
+     66.36,
+     66.85,
+     "U2"
+    ],
+    [
+     5125.0,
+     3275.0,
+     66.31,
+     66.6,
+     "U2"
+    ],
+    [
+     5130.0,
+     3275.0,
+     66.11,
+     66.33,
+     "U2"
+    ],
+    [
+     5120.0,
+     3280.0,
+     66.15,
+     67.0,
+     "U2"
+    ],
+    [
+     5125.0,
+     3280.0,
+     65.93,
+     66.84,
+     "U2"
+    ],
+    [
+     5145.0,
+     3305.0,
+     63.05,
+     62.33,
+     "U"
+    ],
+    [
+     5150.0,
+     3305.0,
+     62.79,
+     62.13,
+     "U"
+    ],
+    [
+     5155.0,
+     3305.0,
+     62.53,
+     62.02,
+     "U"
+    ],
+    [
+     5140.0,
+     3310.0,
+     62.94,
+     62.66,
+     "U"
+    ],
+    [
+     5145.0,
+     3310.0,
+     62.68,
+     62.47,
+     "U"
+    ],
+    [
+     5150.0,
+     3310.0,
+     62.44,
+     62.28,
+     "U"
+    ],
+    [
+     5155.0,
+     3310.0,
+     62.39,
+     62.09,
+     "U"
+    ],
+    [
+     5140.0,
+     3315.0,
+     62.57,
+     62.75,
+     "U"
+    ],
+    [
+     5145.0,
+     3315.0,
+     62.42,
+     62.6,
+     "U"
+    ],
+    [
+     5150.0,
+     3315.0,
+     62.38,
+     62.41,
+     "U"
+    ],
+    [
+     5155.0,
+     3315.0,
+     62.38,
+     62.23,
+     "U"
+    ],
+    [
+     5145.0,
+     3320.0,
+     62.38,
+     62.7,
+     "U"
+    ],
+    [
+     5150.0,
+     3320.0,
+     62.38,
+     62.54,
+     "U"
+    ],
+    [
+     5155.0,
+     3320.0,
+     62.38,
+     62.36,
+     "U"
+    ]
+   ]
+  },
+  "CT2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 50.8,
+   "grid_points_fixed": 22,
+   "points_held_by_earlier_street_at_another_level": 27,
+   "cutfill_max_m": 1.24,
+   "clash_points": [
+    [
+     5195.0,
+     3215.0,
+     64.62,
+     65.07,
+     "U2"
+    ],
+    [
+     5200.0,
+     3215.0,
+     64.62,
+     64.42,
+     "U2"
+    ],
+    [
+     5205.0,
+     3215.0,
+     64.62,
+     63.78,
+     "U2"
+    ],
+    [
+     5195.0,
+     3220.0,
+     64.62,
+     65.34,
+     "U2"
+    ],
+    [
+     5200.0,
+     3220.0,
+     64.62,
+     64.71,
+     "U2"
+    ],
+    [
+     5205.0,
+     3220.0,
+     64.57,
+     64.08,
+     "U2"
+    ],
+    [
+     5210.0,
+     3220.0,
+     64.3,
+     63.6,
+     "U2"
+    ],
+    [
+     5215.0,
+     3220.0,
+     63.95,
+     63.5,
+     "U2"
+    ],
+    [
+     5195.0,
+     3225.0,
+     64.62,
+     65.57,
+     "U2"
+    ],
+    [
+     5200.0,
+     3225.0,
+     64.6,
+     65.0,
+     "U2"
+    ],
+    [
+     5205.0,
+     3225.0,
+     64.41,
+     64.37,
+     "U2"
+    ],
+    [
+     5210.0,
+     3225.0,
+     64.04,
+     63.74,
+     "U2"
+    ],
+    [
+     5200.0,
+     3230.0,
+     64.53,
+     65.28,
+     "U2"
+    ],
+    [
+     5230.0,
+     3250.0,
+     61.06,
+     60.62,
+     "U"
+    ],
+    [
+     5235.0,
+     3250.0,
+     60.68,
+     59.72,
+     "U"
+    ],
+    [
+     5220.0,
+     3255.0,
+     61.3,
+     62.0,
+     "U"
+    ],
+    [
+     5225.0,
+     3255.0,
+     61.06,
+     61.92,
+     "U"
+    ],
+    [
+     5230.0,
+     3255.0,
+     60.73,
+     61.02,
+     "U"
+    ],
+    [
+     5235.0,
+     3255.0,
+     60.52,
+     60.14,
+     "U"
+    ],
+    [
+     5240.0,
+     3255.0,
+     60.48,
+     59.3,
+     "U"
+    ],
+    [
+     5225.0,
+     3260.0,
+     60.78,
+     61.96,
+     "U"
+    ],
+    [
+     5230.0,
+     3260.0,
+     60.53,
+     61.42,
+     "U"
+    ],
+    [
+     5235.0,
+     3260.0,
+     60.48,
+     60.55,
+     "U"
+    ],
+    [
+     5240.0,
+     3260.0,
+     60.48,
+     59.72,
+     "U"
+    ],
+    [
+     5230.0,
+     3265.0,
+     60.48,
+     61.79,
+     "U"
+    ],
+    [
+     5235.0,
+     3265.0,
+     60.48,
+     60.95,
+     "U"
+    ],
+    [
+     5240.0,
+     3265.0,
+     60.48,
+     60.15,
+     "U"
+    ]
+   ]
+  },
+  "CU1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 44.4,
+   "grid_points_fixed": 19,
+   "points_held_by_earlier_street_at_another_level": 18,
+   "cutfill_max_m": 1.08,
+   "clash_points": [
+    [
+     5110.0,
+     3340.0,
+     62.73,
+     62.75,
+     "U"
+    ],
+    [
+     5115.0,
+     3340.0,
+     62.53,
+     62.75,
+     "U"
+    ],
+    [
+     5120.0,
+     3340.0,
+     62.1,
+     62.75,
+     "U"
+    ],
+    [
+     5110.0,
+     3345.0,
+     62.66,
+     62.75,
+     "U"
+    ],
+    [
+     5115.0,
+     3345.0,
+     62.23,
+     62.75,
+     "U"
+    ],
+    [
+     5105.0,
+     3350.0,
+     62.69,
+     62.75,
+     "U"
+    ],
+    [
+     5110.0,
+     3350.0,
+     62.37,
+     62.75,
+     "U"
+    ],
+    [
+     5135.0,
+     3365.0,
+     59.17,
+     58.47,
+     "M"
+    ],
+    [
+     5140.0,
+     3365.0,
+     58.82,
+     58.08,
+     "M"
+    ],
+    [
+     5130.0,
+     3370.0,
+     59.12,
+     59.09,
+     "M"
+    ],
+    [
+     5135.0,
+     3370.0,
+     58.79,
+     58.72,
+     "M"
+    ],
+    [
+     5140.0,
+     3370.0,
+     58.58,
+     58.31,
+     "M"
+    ],
+    [
+     5145.0,
+     3370.0,
+     58.58,
+     57.92,
+     "M"
+    ],
+    [
+     5130.0,
+     3375.0,
+     58.77,
+     59.32,
+     "M"
+    ],
+    [
+     5135.0,
+     3375.0,
+     58.58,
+     59.0,
+     "M"
+    ],
+    [
+     5145.0,
+     3375.0,
+     58.58,
+     58.15,
+     "M"
+    ],
+    [
+     5135.0,
+     3380.0,
+     58.58,
+     59.31,
+     "M"
+    ],
+    [
+     5140.0,
+     3380.0,
+     58.58,
+     58.88,
+     "M"
+    ]
+   ]
+  },
+  "CU2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48.4,
+   "grid_points_fixed": 21,
+   "points_held_by_earlier_street_at_another_level": 23,
+   "cutfill_max_m": 0.95,
+   "clash_points": [
+    [
+     5145.0,
+     3310.0,
+     62.38,
+     62.47,
+     "U"
+    ],
+    [
+     5150.0,
+     3310.0,
+     62.38,
+     62.28,
+     "U"
+    ],
+    [
+     5155.0,
+     3310.0,
+     62.38,
+     62.09,
+     "U"
+    ],
+    [
+     5145.0,
+     3315.0,
+     62.38,
+     62.6,
+     "U"
+    ],
+    [
+     5150.0,
+     3315.0,
+     62.36,
+     62.41,
+     "U"
+    ],
+    [
+     5155.0,
+     3315.0,
+     62.3,
+     62.23,
+     "U"
+    ],
+    [
+     5160.0,
+     3315.0,
+     62.17,
+     62.06,
+     "U"
+    ],
+    [
+     5145.0,
+     3320.0,
+     62.29,
+     62.7,
+     "U"
+    ],
+    [
+     5150.0,
+     3320.0,
+     62.11,
+     62.54,
+     "U"
+    ],
+    [
+     5155.0,
+     3320.0,
+     61.87,
+     62.36,
+     "U"
+    ],
+    [
+     5170.0,
+     3345.0,
+     58.33,
+     57.2,
+     "M"
+    ],
+    [
+     5175.0,
+     3345.0,
+     57.92,
+     57.05,
+     "M"
+    ],
+    [
+     5165.0,
+     3350.0,
+     58.23,
+     57.59,
+     "M"
+    ],
+    [
+     5170.0,
+     3350.0,
+     57.86,
+     57.38,
+     "M"
+    ],
+    [
+     5175.0,
+     3350.0,
+     57.54,
+     57.18,
+     "M"
+    ],
+    [
+     5180.0,
+     3350.0,
+     57.38,
+     57.04,
+     "M"
+    ],
+    [
+     5165.0,
+     3355.0,
+     57.81,
+     57.7,
+     "M"
+    ],
+    [
+     5170.0,
+     3355.0,
+     57.51,
+     57.53,
+     "M"
+    ],
+    [
+     5175.0,
+     3355.0,
+     57.38,
+     57.33,
+     "M"
+    ],
+    [
+     5180.0,
+     3355.0,
+     57.38,
+     57.15,
+     "M"
+    ],
+    [
+     5170.0,
+     3360.0,
+     57.38,
+     57.65,
+     "M"
+    ],
+    [
+     5175.0,
+     3360.0,
+     57.38,
+     57.47,
+     "M"
+    ],
+    [
+     5180.0,
+     3360.0,
+     57.38,
+     57.3,
+     "M"
+    ]
+   ]
+  },
+  "CU3": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 47.0,
+   "grid_points_fixed": 19,
+   "points_held_by_earlier_street_at_another_level": 25,
+   "cutfill_max_m": 2.23,
+   "clash_points": [
+    [
+     5230.0,
+     3255.0,
+     60.48,
+     61.02,
+     "U"
+    ],
+    [
+     5235.0,
+     3255.0,
+     60.48,
+     60.14,
+     "U"
+    ],
+    [
+     5240.0,
+     3255.0,
+     60.48,
+     59.3,
+     "U"
+    ],
+    [
+     5230.0,
+     3260.0,
+     60.48,
+     61.42,
+     "U"
+    ],
+    [
+     5235.0,
+     3260.0,
+     60.44,
+     60.55,
+     "U"
+    ],
+    [
+     5240.0,
+     3260.0,
+     60.39,
+     59.72,
+     "U"
+    ],
+    [
+     5245.0,
+     3260.0,
+     60.21,
+     58.91,
+     "U"
+    ],
+    [
+     5230.0,
+     3265.0,
+     60.33,
+     61.79,
+     "U"
+    ],
+    [
+     5235.0,
+     3265.0,
+     60.13,
+     60.95,
+     "U"
+    ],
+    [
+     5240.0,
+     3265.0,
+     59.91,
+     60.15,
+     "U"
+    ],
+    [
+     5260.0,
+     3285.0,
+     56.74,
+     55.72,
+     "M"
+    ],
+    [
+     5265.0,
+     3285.0,
+     56.48,
+     55.15,
+     "M"
+    ],
+    [
+     5250.0,
+     3290.0,
+     57.1,
+     56.96,
+     "M"
+    ],
+    [
+     5255.0,
+     3290.0,
+     56.67,
+     56.61,
+     "M"
+    ],
+    [
+     5260.0,
+     3290.0,
+     56.33,
+     56.03,
+     "M"
+    ],
+    [
+     5265.0,
+     3290.0,
+     56.12,
+     55.48,
+     "M"
+    ],
+    [
+     5270.0,
+     3290.0,
+     56.05,
+     54.95,
+     "M"
+    ],
+    [
+     5255.0,
+     3295.0,
+     56.18,
+     56.84,
+     "M"
+    ],
+    [
+     5260.0,
+     3295.0,
+     56.08,
+     56.3,
+     "M"
+    ],
+    [
+     5265.0,
+     3295.0,
+     56.04,
+     55.77,
+     "M"
+    ],
+    [
+     5270.0,
+     3295.0,
+     56.04,
+     55.27,
+     "M"
+    ],
+    [
+     5255.0,
+     3300.0,
+     56.04,
+     56.93,
+     "M"
+    ],
+    [
+     5260.0,
+     3300.0,
+     56.04,
+     56.54,
+     "M"
+    ],
+    [
+     5265.0,
+     3300.0,
+     56.04,
+     56.03,
+     "M"
+    ],
+    [
+     5270.0,
+     3300.0,
+     56.04,
+     55.53,
+     "M"
+    ]
+   ]
+  },
+  "CU4": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48.0,
+   "grid_points_fixed": 23,
+   "points_held_by_earlier_street_at_another_level": 22,
+   "cutfill_max_m": 1.5,
+   "clash_points": [
+    [
+     5280.0,
+     3230.0,
+     57.25,
+     58.38,
+     "U"
+    ],
+    [
+     5285.0,
+     3230.0,
+     57.25,
+     57.49,
+     "U"
+    ],
+    [
+     5290.0,
+     3230.0,
+     57.25,
+     56.6,
+     "U"
+    ],
+    [
+     5295.0,
+     3230.0,
+     57.25,
+     55.9,
+     "U"
+    ],
+    [
+     5280.0,
+     3235.0,
+     57.25,
+     58.56,
+     "U"
+    ],
+    [
+     5285.0,
+     3235.0,
+     57.24,
+     57.82,
+     "U"
+    ],
+    [
+     5290.0,
+     3235.0,
+     57.2,
+     56.95,
+     "U"
+    ],
+    [
+     5295.0,
+     3235.0,
+     57.13,
+     56.15,
+     "U"
+    ],
+    [
+     5285.0,
+     3240.0,
+     57.02,
+     58.13,
+     "U"
+    ],
+    [
+     5290.0,
+     3240.0,
+     56.81,
+     57.28,
+     "U"
+    ],
+    [
+     5295.0,
+     3240.0,
+     56.58,
+     56.43,
+     "U"
+    ],
+    [
+     5305.0,
+     3265.0,
+     53.54,
+     53.42,
+     "M"
+    ],
+    [
+     5310.0,
+     3265.0,
+     53.16,
+     53.0,
+     "M"
+    ],
+    [
+     5315.0,
+     3265.0,
+     52.84,
+     52.43,
+     "M"
+    ],
+    [
+     5320.0,
+     3265.0,
+     52.61,
+     51.84,
+     "M"
+    ],
+    [
+     5305.0,
+     3270.0,
+     53.02,
+     53.5,
+     "M"
+    ],
+    [
+     5310.0,
+     3270.0,
+     52.74,
+     53.19,
+     "M"
+    ],
+    [
+     5315.0,
+     3270.0,
+     52.54,
+     52.63,
+     "M"
+    ],
+    [
+     5320.0,
+     3270.0,
+     52.54,
+     52.06,
+     "M"
+    ],
+    [
+     5310.0,
+     3275.0,
+     52.54,
+     53.33,
+     "M"
+    ],
+    [
+     5315.0,
+     3275.0,
+     52.54,
+     52.82,
+     "M"
+    ],
+    [
+     5320.0,
+     3275.0,
+     52.54,
+     52.25,
+     "M"
+    ]
+   ]
+  },
+  "CM1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 47.4,
+   "grid_points_fixed": 21,
+   "points_held_by_earlier_street_at_another_level": 25,
+   "cutfill_max_m": 0.68,
+   "clash_points": [
+    [
+     5135.0,
+     3365.0,
+     58.58,
+     58.47,
+     "M"
+    ],
+    [
+     5140.0,
+     3365.0,
+     58.58,
+     58.08,
+     "M"
+    ],
+    [
+     5135.0,
+     3370.0,
+     58.58,
+     58.72,
+     "M"
+    ],
+    [
+     5140.0,
+     3370.0,
+     58.58,
+     58.31,
+     "M"
+    ],
+    [
+     5145.0,
+     3370.0,
+     58.54,
+     57.92,
+     "M"
+    ],
+    [
+     5135.0,
+     3375.0,
+     58.58,
+     59.0,
+     "M"
+    ],
+    [
+     5140.0,
+     3375.0,
+     58.49,
+     58.58,
+     "M"
+    ],
+    [
+     5145.0,
+     3375.0,
+     58.25,
+     58.15,
+     "M"
+    ],
+    [
+     5150.0,
+     3375.0,
+     57.79,
+     57.75,
+     "M"
+    ],
+    [
+     5135.0,
+     3380.0,
+     58.45,
+     59.31,
+     "M"
+    ],
+    [
+     5140.0,
+     3380.0,
+     58.07,
+     58.88,
+     "M"
+    ],
+    [
+     5145.0,
+     3380.0,
+     57.65,
+     58.42,
+     "M"
+    ],
+    [
+     5150.0,
+     3380.0,
+     57.15,
+     57.96,
+     "M"
+    ],
+    [
+     5140.0,
+     3385.0,
+     57.52,
+     59.21,
+     "M"
+    ],
+    [
+     5170.0,
+     3400.0,
+     53.14,
+     52.33,
+     "KW"
+    ],
+    [
+     5175.0,
+     3400.0,
+     52.75,
+     52.08,
+     "KW"
+    ],
+    [
+     5165.0,
+     3405.0,
+     52.96,
+     52.81,
+     "KW"
+    ],
+    [
+     5170.0,
+     3405.0,
+     52.71,
+     52.51,
+     "KW"
+    ],
+    [
+     5175.0,
+     3405.0,
+     52.62,
+     52.19,
+     "KW"
+    ],
+    [
+     5165.0,
+     3410.0,
+     52.66,
+     53.04,
+     "KW"
+    ],
+    [
+     5170.0,
+     3410.0,
+     52.62,
+     52.72,
+     "KW"
+    ],
+    [
+     5175.0,
+     3410.0,
+     52.62,
+     52.39,
+     "KW"
+    ],
+    [
+     5165.0,
+     3415.0,
+     52.62,
+     53.18,
+     "KW"
+    ],
+    [
+     5170.0,
+     3415.0,
+     52.62,
+     52.95,
+     "KW"
+    ],
+    [
+     5175.0,
+     3415.0,
+     52.62,
+     52.61,
+     "KW"
+    ]
+   ]
+  },
+  "CM2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48.4,
+   "grid_points_fixed": 22,
+   "points_held_by_earlier_street_at_another_level": 19,
+   "cutfill_max_m": 1.44,
+   "clash_points": [
+    [
+     5175.0,
+     3350.0,
+     57.38,
+     57.18,
+     "M"
+    ],
+    [
+     5180.0,
+     3350.0,
+     57.38,
+     57.04,
+     "M"
+    ],
+    [
+     5170.0,
+     3355.0,
+     57.38,
+     57.53,
+     "M"
+    ],
+    [
+     5175.0,
+     3355.0,
+     57.38,
+     57.33,
+     "M"
+    ],
+    [
+     5180.0,
+     3355.0,
+     57.32,
+     57.15,
+     "M"
+    ],
+    [
+     5170.0,
+     3360.0,
+     57.33,
+     57.65,
+     "M"
+    ],
+    [
+     5175.0,
+     3360.0,
+     57.23,
+     57.47,
+     "M"
+    ],
+    [
+     5180.0,
+     3360.0,
+     56.93,
+     57.3,
+     "M"
+    ],
+    [
+     5185.0,
+     3360.0,
+     56.61,
+     57.12,
+     "M"
+    ],
+    [
+     5170.0,
+     3365.0,
+     56.98,
+     57.71,
+     "M"
+    ],
+    [
+     5175.0,
+     3365.0,
+     56.69,
+     57.59,
+     "M"
+    ],
+    [
+     5205.0,
+     3380.0,
+     52.9,
+     52.0,
+     "KW"
+    ],
+    [
+     5200.0,
+     3385.0,
+     52.81,
+     52.0,
+     "KW"
+    ],
+    [
+     5205.0,
+     3385.0,
+     52.45,
+     52.0,
+     "KW"
+    ],
+    [
+     5190.0,
+     3390.0,
+     53.09,
+     52.0,
+     "KW"
+    ],
+    [
+     5195.0,
+     3390.0,
+     52.66,
+     52.0,
+     "KW"
+    ],
+    [
+     5200.0,
+     3390.0,
+     52.31,
+     52.0,
+     "KW"
+    ],
+    [
+     5205.0,
+     3390.0,
+     52.05,
+     52.0,
+     "KW"
+    ],
+    [
+     5195.0,
+     3395.0,
+     52.19,
+     52.0,
+     "KW"
+    ]
+   ]
+  },
+  "CM3": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 55.6,
+   "grid_points_fixed": 25,
+   "points_held_by_earlier_street_at_another_level": 21,
+   "cutfill_max_m": 2.1,
+   "clash_points": [
+    [
+     5255.0,
+     3290.0,
+     56.04,
+     56.61,
+     "M"
+    ],
+    [
+     5265.0,
+     3290.0,
+     56.04,
+     55.48,
+     "M"
+    ],
+    [
+     5270.0,
+     3290.0,
+     56.04,
+     54.95,
+     "M"
+    ],
+    [
+     5255.0,
+     3295.0,
+     56.04,
+     56.84,
+     "M"
+    ],
+    [
+     5260.0,
+     3295.0,
+     56.04,
+     56.3,
+     "M"
+    ],
+    [
+     5265.0,
+     3295.0,
+     56.04,
+     55.77,
+     "M"
+    ],
+    [
+     5270.0,
+     3295.0,
+     56.04,
+     55.27,
+     "M"
+    ],
+    [
+     5255.0,
+     3300.0,
+     55.73,
+     56.93,
+     "M"
+    ],
+    [
+     5260.0,
+     3300.0,
+     55.74,
+     56.54,
+     "M"
+    ],
+    [
+     5265.0,
+     3300.0,
+     55.75,
+     56.03,
+     "M"
+    ],
+    [
+     5270.0,
+     3300.0,
+     55.76,
+     55.53,
+     "M"
+    ],
+    [
+     5255.0,
+     3305.0,
+     55.01,
+     56.98,
+     "M"
+    ],
+    [
+     5260.0,
+     3305.0,
+     54.94,
+     56.78,
+     "M"
+    ],
+    [
+     5265.0,
+     3305.0,
+     54.87,
+     56.29,
+     "M"
+    ],
+    [
+     5285.0,
+     3325.0,
+     48.9,
+     47.75,
+     "KE"
+    ],
+    [
+     5290.0,
+     3325.0,
+     48.82,
+     47.75,
+     "KE"
+    ],
+    [
+     5280.0,
+     3330.0,
+     48.15,
+     47.75,
+     "KE"
+    ],
+    [
+     5285.0,
+     3330.0,
+     48.07,
+     47.75,
+     "KE"
+    ],
+    [
+     5290.0,
+     3330.0,
+     47.98,
+     47.75,
+     "KE"
+    ],
+    [
+     5295.0,
+     3330.0,
+     47.91,
+     47.75,
+     "KE"
+    ],
+    [
+     5280.0,
+     3335.0,
+     47.77,
+     47.75,
+     "KE"
+    ]
+   ]
+  },
+  "CM4": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 46.2,
+   "grid_points_fixed": 19,
+   "points_held_by_earlier_street_at_another_level": 25,
+   "cutfill_max_m": 1.95,
+   "clash_points": [
+    [
+     5310.0,
+     3265.0,
+     52.54,
+     53.0,
+     "M"
+    ],
+    [
+     5315.0,
+     3265.0,
+     52.54,
+     52.43,
+     "M"
+    ],
+    [
+     5320.0,
+     3265.0,
+     52.54,
+     51.84,
+     "M"
+    ],
+    [
+     5310.0,
+     3270.0,
+     52.54,
+     53.19,
+     "M"
+    ],
+    [
+     5315.0,
+     3270.0,
+     52.54,
+     52.63,
+     "M"
+    ],
+    [
+     5320.0,
+     3270.0,
+     52.52,
+     52.06,
+     "M"
+    ],
+    [
+     5325.0,
+     3270.0,
+     52.46,
+     51.49,
+     "M"
+    ],
+    [
+     5310.0,
+     3275.0,
+     52.5,
+     53.33,
+     "M"
+    ],
+    [
+     5315.0,
+     3275.0,
+     52.43,
+     52.82,
+     "M"
+    ],
+    [
+     5320.0,
+     3275.0,
+     52.21,
+     52.25,
+     "M"
+    ],
+    [
+     5325.0,
+     3275.0,
+     51.91,
+     51.71,
+     "M"
+    ],
+    [
+     5315.0,
+     3280.0,
+     51.8,
+     53.01,
+     "M"
+    ],
+    [
+     5320.0,
+     3280.0,
+     51.49,
+     52.44,
+     "M"
+    ],
+    [
+     5340.0,
+     3300.0,
+     47.13,
+     45.64,
+     "KE"
+    ],
+    [
+     5345.0,
+     3300.0,
+     46.83,
+     44.74,
+     "KE"
+    ],
+    [
+     5330.0,
+     3305.0,
+     47.23,
+     47.64,
+     "KE"
+    ],
+    [
+     5335.0,
+     3305.0,
+     46.81,
+     46.87,
+     "KE"
+    ],
+    [
+     5340.0,
+     3305.0,
+     46.46,
+     45.97,
+     "KE"
+    ],
+    [
+     5345.0,
+     3305.0,
+     46.31,
+     45.07,
+     "KE"
+    ],
+    [
+     5335.0,
+     3310.0,
+     46.3,
+     47.19,
+     "KE"
+    ],
+    [
+     5340.0,
+     3310.0,
+     46.23,
+     46.29,
+     "KE"
+    ],
+    [
+     5345.0,
+     3310.0,
+     46.23,
+     45.39,
+     "KE"
+    ],
+    [
+     5335.0,
+     3315.0,
+     46.23,
+     47.5,
+     "KE"
+    ],
+    [
+     5340.0,
+     3315.0,
+     46.23,
+     46.62,
+     "KE"
+    ],
+    [
+     5345.0,
+     3315.0,
+     46.23,
+     45.72,
+     "KE"
+    ]
+   ]
+  },
+  "HL": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 54.6,
+   "grid_points_fixed": 39,
+   "points_held_by_earlier_street_at_another_level": 14,
+   "cutfill_max_m": 1.43,
+   "clash_points": [
+    [
+     5165.0,
+     3400.0,
+     52.62,
+     53.55,
+     "CM1"
+    ],
+    [
+     5170.0,
+     3400.0,
+     52.62,
+     52.33,
+     "KW"
+    ],
+    [
+     5175.0,
+     3400.0,
+     52.62,
+     52.08,
+     "KW"
+    ],
+    [
+     5165.0,
+     3405.0,
+     52.62,
+     52.81,
+     "KW"
+    ],
+    [
+     5170.0,
+     3405.0,
+     52.62,
+     52.51,
+     "KW"
+    ],
+    [
+     5175.0,
+     3405.0,
+     52.61,
+     52.19,
+     "KW"
+    ],
+    [
+     5165.0,
+     3410.0,
+     52.62,
+     53.04,
+     "KW"
+    ],
+    [
+     5170.0,
+     3410.0,
+     52.58,
+     52.72,
+     "KW"
+    ],
+    [
+     5175.0,
+     3410.0,
+     52.46,
+     52.39,
+     "KW"
+    ],
+    [
+     5180.0,
+     3410.0,
+     52.17,
+     52.09,
+     "KW"
+    ],
+    [
+     5165.0,
+     3415.0,
+     52.56,
+     53.18,
+     "KW"
+    ],
+    [
+     5170.0,
+     3415.0,
+     52.36,
+     52.95,
+     "KW"
+    ],
+    [
+     5175.0,
+     3415.0,
+     52.06,
+     52.61,
+     "KW"
+    ],
+    [
+     5170.0,
+     3420.0,
+     51.96,
+     53.15,
+     "KW"
+    ]
+   ]
+  },
+  "HR": {
+   "cls": "road",
+   "width_m": 7.0,
+   "length_m": 469.5,
+   "grid_points_fixed": 354,
+   "points_held_by_earlier_street_at_another_level": 33,
+   "cutfill_max_m": 3.29,
+   "clash_points": [
+    [
+     5200.0,
+     3440.0,
+     48.0,
+     48.43,
+     "HL"
+    ],
+    [
+     5205.0,
+     3440.0,
+     48.0,
+     47.94,
+     "HL"
+    ],
+    [
+     5210.0,
+     3440.0,
+     48.0,
+     47.76,
+     "HL"
+    ],
+    [
+     5200.0,
+     3445.0,
+     48.0,
+     48.17,
+     "HL"
+    ],
+    [
+     5205.0,
+     3445.0,
+     48.0,
+     47.81,
+     "HL"
+    ],
+    [
+     5210.0,
+     3445.0,
+     48.0,
+     47.75,
+     "HL"
+    ],
+    [
+     5215.0,
+     3445.0,
+     48.0,
+     47.75,
+     "HL"
+    ],
+    [
+     5200.0,
+     3450.0,
+     47.88,
+     47.95,
+     "HL"
+    ],
+    [
+     5205.0,
+     3450.0,
+     47.83,
+     47.76,
+     "HL"
+    ],
+    [
+     5210.0,
+     3450.0,
+     47.77,
+     47.75,
+     "HL"
+    ],
+    [
+     5215.0,
+     3450.0,
+     47.64,
+     47.75,
+     "HL"
+    ],
+    [
+     5205.0,
+     3455.0,
+     47.5,
+     47.75,
+     "HL"
+    ],
+    [
+     5210.0,
+     3455.0,
+     47.37,
+     47.75,
+     "HL"
+    ],
+    [
+     5630.0,
+     3545.0,
+     4.48,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5630.0,
+     3550.0,
+     4.32,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5635.0,
+     3550.0,
+     3.82,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5640.0,
+     3550.0,
+     3.32,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5645.0,
+     3550.0,
+     2.81,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5630.0,
+     3555.0,
+     4.17,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5635.0,
+     3555.0,
+     3.67,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5640.0,
+     3555.0,
+     3.17,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5645.0,
+     3555.0,
+     2.66,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5650.0,
+     3555.0,
+     2.5,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5630.0,
+     3560.0,
+     4.01,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5635.0,
+     3560.0,
+     3.51,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5640.0,
+     3560.0,
+     3.01,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5645.0,
+     3560.0,
+     2.51,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5650.0,
+     3560.0,
+     2.5,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5630.0,
+     3565.0,
+     3.86,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5635.0,
+     3565.0,
+     3.36,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5640.0,
+     3565.0,
+     2.86,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5645.0,
+     3565.0,
+     2.5,
+     2.2,
+     "QUAY"
+    ],
+    [
+     5650.0,
+     3565.0,
+     2.5,
+     2.2,
+     "QUAY"
+    ]
+   ]
+  }
+ },
+ "pads": {
+  "square": {
+   "who": "SQUARE",
+   "level": 57.0,
+   "vertices": 49,
+   "ok": true,
+   "why": "cut/fill 3.71",
+   "cutfill_max": 3.71,
+   "clash_points": 0,
+   "clash_owners": {},
+   "bank": null
+  },
+  "QUAY": {
+   "who": "QUAY",
+   "level": 2.2,
+   "vertices": 180,
+   "ok": true,
+   "why": "cut/fill 2.93",
+   "cutfill_max": 2.93,
+   "clash_points": 0,
+   "clash_owners": {},
+   "bank": null
+  }
+ },
+ "extra": {
+  "thresholds": [
+   [
+    "B001",
+    0.0
+   ],
+   [
+    "B002",
+    0.0
+   ],
+   [
+    "B068",
+    0.0
+   ],
+   [
+    "B069",
+    0.0
+   ],
+   [
+    "B070",
+    0.0
+   ],
+   [
+    "B071",
+    0.0
+   ],
+   [
+    "B003",
+    0.0
+   ],
+   [
+    "B004",
+    0.0
+   ],
+   [
+    "B005",
+    0.0
+   ],
+   [
+    "B006",
+    0.0
+   ],
+   [
+    "B007",
+    0.0
+   ],
+   [
+    "B008",
+    0.0
+   ],
+   [
+    "B009",
+    0.0
+   ],
+   [
+    "B010",
+    0.0
+   ],
+   [
+    "B011",
+    0.0
+   ],
+   [
+    "B012",
+    0.0
+   ],
+   [
+    "B013",
+    0.0
+   ],
+   [
+    "B014",
+    0.0
+   ],
+   [
+    "B015",
+    0.0
+   ],
+   [
+    "B016",
+    0.0
+   ],
+   [
+    "B017",
+    0.0
+   ],
+   [
+    "B018",
+    0.0
+   ],
+   [
+    "B019",
+    0.0
+   ],
+   [
+    "B020",
+    0.0
+   ],
+   [
+    "B021",
+    0.0
+   ],
+   [
+    "B022",
+    0.0
+   ],
+   [
+    "B023",
+    0.0
+   ],
+   [
+    "B024",
+    0.0
+   ],
+   [
+    "B025",
+    0.0
+   ],
+   [
+    "B028",
+    0.0
+   ],
+   [
+    "B029",
+    0.0
+   ],
+   [
+    "B030",
+    0.0
+   ],
+   [
+    "B031",
+    0.0
+   ],
+   [
+    "B032",
+    0.0
+   ],
+   [
+    "B033",
+    0.0
+   ],
+   [
+    "B034",
+    0.0
+   ],
+   [
+    "B035",
+    0.0
+   ],
+   [
+    "B036",
+    0.0
+   ],
+   [
+    "B037",
+    0.0
+   ],
+   [
+    "B038",
+    0.0
+   ],
+   [
+    "B039",
+    0.0
+   ],
+   [
+    "B040",
+    0.0
+   ],
+   [
+    "B041",
+    0.0
+   ],
+   [
+    "B042",
+    0.0
+   ],
+   [
+    "B043",
+    0.0
+   ],
+   [
+    "B044",
+    0.0
+   ],
+   [
+    "B045",
+    0.0
+   ],
+   [
+    "B046",
+    0.0
+   ],
+   [
+    "B047",
+    0.0
+   ],
+   [
+    "B048",
+    0.0
+   ],
+   [
+    "B049",
+    0.0
+   ],
+   [
+    "B050",
+    0.0
+   ],
+   [
+    "B051",
+    0.0
+   ],
+   [
+    "B052",
+    0.0
+   ],
+   [
+    "B053",
+    0.0
+   ],
+   [
+    "B054",
+    0.0
+   ],
+   [
+    "B055",
+    0.0
+   ],
+   [
+    "B056",
+    0.0
+   ],
+   [
+    "B057",
+    0.0
+   ],
+   [
+    "B058",
+    0.0
+   ],
+   [
+    "B059",
+    0.0
+   ],
+   [
+    "B060",
+    0.0
+   ],
+   [
+    "B061",
+    0.0
+   ],
+   [
+    "B062",
+    0.0
+   ],
+   [
+    "B063",
+    0.0
+   ],
+   [
+    "B064",
+    0.0
+   ],
+   [
+    "B065",
+    0.0
+   ],
+   [
+    "B066",
+    0.0
+   ],
+   [
+    "B067",
+    0.0
+   ]
+  ],
+  "door_vs_street": [
+   [
+    "B003",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B004",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B005",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B006",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B007",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B008",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B009",
+    "M",
+    0.0,
+    4.3
+   ],
+   [
+    "B010",
+    "M",
+    0.0,
+    5.3
+   ],
+   [
+    "B011",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B012",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B013",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B014",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B015",
+    "M",
+    0.0,
+    5.2
+   ],
+   [
+    "B016",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B017",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B018",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B019",
+    "M",
+    0.0,
+    4.7
+   ],
+   [
+    "B020",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B021",
+    "M",
+    0.0,
+    4.4
+   ],
+   [
+    "B022",
+    "M",
+    0.0,
+    4.3
+   ],
+   [
+    "B023",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B024",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B025",
+    "U",
+    0.0,
+    5.8
+   ],
+   [
+    "B028",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B029",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B030",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B031",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B032",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B033",
+    "U",
+    0.0,
+    5.9
+   ],
+   [
+    "B034",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B035",
+    "U",
+    0.0,
+    2.8
+   ],
+   [
+    "B036",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B037",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B038",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B039",
+    "U",
+    0.0,
+    2.9
+   ],
+   [
+    "B040",
+    "U",
+    0.0,
+    5.8
+   ],
+   [
+    "B041",
+    "U",
+    0.0,
+    3.2
+   ],
+   [
+    "B042",
+    "KW",
+    0.0,
+    2.8
+   ],
+   [
+    "B043",
+    "KW",
+    0.0,
+    4.4
+   ],
+   [
+    "B044",
+    "KW",
+    0.0,
+    2.9
+   ],
+   [
+    "B045",
+    "KE",
+    0.0,
+    3.2
+   ],
+   [
+    "B046",
+    "KE",
+    0.0,
+    3.2
+   ],
+   [
+    "B047",
+    "KE",
+    0.0,
+    3.2
+   ],
+   [
+    "B048",
+    "KE",
+    0.0,
+    5.1
+   ],
+   [
+    "B049",
+    "KE",
+    0.0,
+    3.2
+   ],
+   [
+    "B050",
+    "KE",
+    0.0,
+    3.2
+   ],
+   [
+    "B051",
+    "KE",
+    0.0,
+    2.9
+   ],
+   [
+    "B052",
+    "KE",
+    0.0,
+    2.9
+   ],
+   [
+    "B053",
+    "KE",
+    0.0,
+    2.9
+   ],
+   [
+    "B054",
+    "U2",
+    0.0,
+    3.2
+   ],
+   [
+    "B055",
+    "U2",
+    0.0,
+    2.8
+   ],
+   [
+    "B056",
+    "U2",
+    0.0,
+    2.8
+   ],
+   [
+    "B057",
+    "U2",
+    0.0,
+    3.3
+   ],
+   [
+    "B058",
+    "U2",
+    0.0,
+    3.2
+   ],
+   [
+    "B059",
+    "U2",
+    0.0,
+    3.2
+   ],
+   [
+    "B060",
+    "U2",
+    0.0,
+    3.3
+   ],
+   [
+    "B061",
+    "U2",
+    0.0,
+    3.2
+   ],
+   [
+    "B062",
+    "U2",
+    0.0,
+    2.9
+   ],
+   [
+    "B063",
+    "U2",
+    0.0,
+    3.3
+   ],
+   [
+    "B064",
+    "U2",
+    0.0,
+    3.2
+   ],
+   [
+    "B065",
+    "U2",
+    0.0,
+    2.9
+   ],
+   [
+    "B066",
+    "U2",
+    0.0,
+    5.0
+   ],
+   [
+    "B067",
+    "U2",
+    0.0,
+    2.9
+   ]
+  ],
+  "wall_below_ground": [
+   [
+    "B001",
+    0.0
+   ],
+   [
+    "B002",
+    0.0
+   ],
+   [
+    "B068",
+    0.0
+   ],
+   [
+    "B069",
+    0.0
+   ],
+   [
+    "B070",
+    0.0
+   ],
+   [
+    "B071",
+    0.0
+   ],
+   [
+    "B003",
+    0.0
+   ],
+   [
+    "B004",
+    0.0
+   ],
+   [
+    "B005",
+    0.0
+   ],
+   [
+    "B006",
+    0.0
+   ],
+   [
+    "B007",
+    0.0
+   ],
+   [
+    "B008",
+    0.0
+   ],
+   [
+    "B009",
+    0.0
+   ],
+   [
+    "B010",
+    0.0
+   ],
+   [
+    "B011",
+    0.0
+   ],
+   [
+    "B012",
+    0.0
+   ],
+   [
+    "B013",
+    0.0
+   ],
+   [
+    "B014",
+    0.0
+   ],
+   [
+    "B015",
+    0.0
+   ],
+   [
+    "B016",
+    0.0
+   ],
+   [
+    "B017",
+    0.0
+   ],
+   [
+    "B018",
+    0.0
+   ],
+   [
+    "B019",
+    0.0
+   ],
+   [
+    "B020",
+    0.0
+   ],
+   [
+    "B021",
+    0.0
+   ],
+   [
+    "B022",
+    0.0
+   ],
+   [
+    "B023",
+    0.0
+   ],
+   [
+    "B024",
+    0.0
+   ],
+   [
+    "B025",
+    0.0
+   ],
+   [
+    "B028",
+    0.0
+   ],
+   [
+    "B029",
+    0.0
+   ],
+   [
+    "B030",
+    0.0
+   ],
+   [
+    "B031",
+    0.0
+   ],
+   [
+    "B032",
+    0.0
+   ],
+   [
+    "B033",
+    0.0
+   ],
+   [
+    "B034",
+    0.0
+   ],
+   [
+    "B035",
+    0.0
+   ],
+   [
+    "B036",
+    0.0
+   ],
+   [
+    "B037",
+    0.0
+   ],
+   [
+    "B038",
+    0.0
+   ],
+   [
+    "B039",
+    0.0
+   ],
+   [
+    "B040",
+    0.0
+   ],
+   [
+    "B041",
+    0.0
+   ],
+   [
+    "B042",
+    0.0
+   ],
+   [
+    "B043",
+    0.0
+   ],
+   [
+    "B044",
+    0.0
+   ],
+   [
+    "B045",
+    0.0
+   ],
+   [
+    "B046",
+    0.0
+   ],
+   [
+    "B047",
+    0.0
+   ],
+   [
+    "B048",
+    0.0
+   ],
+   [
+    "B049",
+    0.0
+   ],
+   [
+    "B050",
+    0.0
+   ],
+   [
+    "B051",
+    0.0
+   ],
+   [
+    "B052",
+    0.0
+   ],
+   [
+    "B053",
+    0.0
+   ],
+   [
+    "B054",
+    0.0
+   ],
+   [
+    "B055",
+    0.0
+   ],
+   [
+    "B056",
+    0.0
+   ],
+   [
+    "B057",
+    0.0
+   ],
+   [
+    "B058",
+    0.0
+   ],
+   [
+    "B059",
+    0.0
+   ],
+   [
+    "B060",
+    0.0
+   ],
+   [
+    "B061",
+    0.0
+   ],
+   [
+    "B062",
+    0.0
+   ],
+   [
+    "B063",
+    0.0
+   ],
+   [
+    "B064",
+    0.0
+   ],
+   [
+    "B065",
+    0.0
+   ],
+   [
+    "B066",
+    0.0
+   ],
+   [
+    "B067",
+    0.0
+   ]
+  ],
+  "bank_runs": [
+   {
+    "street": "CM1",
+    "side": 1,
+    "s0": 17.0,
+    "s1": 21.0,
+    "n": 3,
+    "dz": 2.43,
+    "xy": [
+     5149.2,
+     3386.3
+    ]
+   },
+   {
+    "street": "CM2",
+    "side": -1,
+    "s0": 29.0,
+    "s1": 31.0,
+    "n": 2,
+    "dz": 2.02,
+    "xy": [
+     5191.5,
+     3378.8
+    ]
+   },
+   {
+    "street": "CM3",
+    "side": -1,
+    "s0": 9.0,
+    "s1": 11.0,
+    "n": 2,
+    "dz": 2.18,
+    "xy": [
+     5262.5,
+     3304.2
+    ]
+   },
+   {
+    "street": "CU2",
+    "side": -1,
+    "s0": 19.0,
+    "s1": 21.0,
+    "n": 2,
+    "dz": 1.88,
+    "xy": [
+     5158.0,
+     3331.5
+    ]
+   },
+   {
+    "street": "KE",
+    "side": -1,
+    "s0": 35.0,
+    "s1": 35.0,
+    "n": 1,
+    "dz": 2.66,
+    "xy": [
+     5317.4,
+     3316.9
+    ]
+   },
+   {
+    "street": "KE",
+    "side": -1,
+    "s0": 83.0,
+    "s1": 103.0,
+    "n": 11,
+    "dz": 4.26,
+    "xy": [
+     5362.2,
+     3300.0
+    ]
+   },
+   {
+    "street": "KE",
+    "side": 1,
+    "s0": 43.0,
+    "s1": 51.0,
+    "n": 4,
+    "dz": 2.83,
+    "xy": [
+     5324.8,
+     3314.1
+    ]
+   },
+   {
+    "street": "KE",
+    "side": 1,
+    "s0": 127.0,
+    "s1": 133.0,
+    "n": 4,
+    "dz": 3.75,
+    "xy": [
+     5401.9,
+     3281.4
+    ]
+   },
+   {
+    "street": "KW",
+    "side": -1,
+    "s0": 1.0,
+    "s1": 15.0,
+    "n": 8,
+    "dz": 3.81,
+    "xy": [
+     5146.3,
+     3430.7
+    ]
+   },
+   {
+    "street": "KW",
+    "side": 1,
+    "s0": 85.0,
+    "s1": 87.0,
+    "n": 2,
+    "dz": 2.31,
+    "xy": [
+     5213.7,
+     3382.0
+    ]
+   },
+   {
+    "street": "M",
+    "side": -1,
+    "s0": 75.0,
+    "s1": 75.0,
+    "n": 1,
+    "dz": 2.87,
+    "xy": [
+     5150.0,
+     3368.5
+    ]
+   },
+   {
+    "street": "M",
+    "side": -1,
+    "s0": 119.0,
+    "s1": 119.0,
+    "n": 1,
+    "dz": 1.7,
+    "xy": [
+     5186.1,
+     3344.1
+    ]
+   },
+   {
+    "street": "M",
+    "side": -1,
+    "s0": 297.0,
+    "s1": 299.0,
+    "n": 2,
+    "dz": 3.13,
+    "xy": [
+     5341.0,
+     3260.3
+    ]
+   },
+   {
+    "street": "M",
+    "side": -1,
+    "s0": 309.0,
+    "s1": 309.0,
+    "n": 1,
+    "dz": 1.6,
+    "xy": [
+     5351.1,
+     3253.9
+    ]
+   },
+   {
+    "street": "M",
+    "side": 1,
+    "s0": 39.0,
+    "s1": 43.0,
+    "n": 3,
+    "dz": 3.3,
+    "xy": [
+     5121.4,
+     3390.0
+    ]
+   },
+   {
+    "street": "M",
+    "side": 1,
+    "s0": 185.0,
+    "s1": 197.0,
+    "n": 6,
+    "dz": 2.98,
+    "xy": [
+     5239.2,
+     3306.0
+    ]
+   },
+   {
+    "street": "M",
+    "side": 1,
+    "s0": 213.0,
+    "s1": 213.0,
+    "n": 1,
+    "dz": 1.51,
+    "xy": [
+     5264.2,
+     3293.5
+    ]
+   },
+   {
+    "street": "M",
+    "side": 1,
+    "s0": 235.0,
+    "s1": 241.0,
+    "n": 4,
+    "dz": 2.17,
+    "xy": [
+     5283.2,
+     3282.6
+    ]
+   },
+   {
+    "street": "M",
+    "side": 1,
+    "s0": 251.0,
+    "s1": 255.0,
+    "n": 3,
+    "dz": 3.48,
+    "xy": [
+     5298.3,
+     3277.2
+    ]
+   },
+   {
+    "street": "U",
+    "side": -1,
+    "s0": 269.0,
+    "s1": 269.0,
+    "n": 1,
+    "dz": 1.51,
+    "xy": [
+     5297.9,
+     3228.7
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 107.0,
+    "s1": 155.0,
+    "n": 25,
+    "dz": 3.65,
+    "xy": [
+     5157.6,
+     3306.9
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 161.0,
+    "s1": 161.0,
+    "n": 1,
+    "dz": 1.54,
+    "xy": [
+     5202.3,
+     3277.3
+    ]
+   },
+   {
+    "street": "U",
+    "side": 1,
+    "s0": 289.0,
+    "s1": 297.0,
+    "n": 5,
+    "dz": 2.85,
+    "xy": [
+     5315.5,
+     3219.2
+    ]
+   },
+   {
+    "street": "U2",
+    "side": 1,
+    "s0": 37.0,
+    "s1": 43.0,
+    "n": 4,
+    "dz": 1.85,
+    "xy": [
+     5089.8,
+     3296.9
+    ]
+   },
+   {
+    "street": "U2",
+    "side": 1,
+    "s0": 95.0,
+    "s1": 97.0,
+    "n": 2,
+    "dz": 1.62,
+    "xy": [
+     5134.6,
+     3260.3
+    ]
+   },
+   {
+    "street": "U2",
+    "side": 1,
+    "s0": 201.0,
+    "s1": 205.0,
+    "n": 3,
+    "dz": 2.26,
+    "xy": [
+     5225.9,
+     3207.2
+    ]
+   }
+  ],
+  "bank_stations": [
+   {
+    "street": "M",
+    "s": 39.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -3.3,
+    "xy": [
+     5121.4,
+     3390.0
+    ]
+   },
+   {
+    "street": "M",
+    "s": 41.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -2.18,
+    "xy": [
+     5123.0,
+     3388.7
+    ]
+   },
+   {
+    "street": "M",
+    "s": 43.0,
+    "side": 1,
+    "r": 11.3,
+    "dz": -2.56,
+    "xy": [
+     5124.4,
+     3387.4
+    ]
+   },
+   {
+    "street": "M",
+    "s": 75.0,
+    "side": -1,
+    "r": 16.3,
+    "dz": 2.87,
+    "xy": [
+     5150.0,
+     3368.5
+    ]
+   },
+   {
+    "street": "M",
+    "s": 119.0,
+    "side": -1,
+    "r": 13.8,
+    "dz": 1.7,
+    "xy": [
+     5186.1,
+     3344.1
+    ]
+   },
+   {
+    "street": "M",
+    "s": 185.0,
+    "side": 1,
+    "r": 20.8,
+    "dz": -2.8,
+    "xy": [
+     5239.2,
+     3306.0
+    ]
+   },
+   {
+    "street": "M",
+    "s": 187.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -2.98,
+    "xy": [
+     5240.8,
+     3304.7
+    ]
+   },
+   {
+    "street": "M",
+    "s": 189.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -2.92,
+    "xy": [
+     5242.5,
+     3303.6
+    ]
+   },
+   {
+    "street": "M",
+    "s": 191.0,
+    "side": 1,
+    "r": 15.3,
+    "dz": -2.49,
+    "xy": [
+     5244.2,
+     3302.5
+    ]
+   },
+   {
+    "street": "M",
+    "s": 193.0,
+    "side": 1,
+    "r": 15.3,
+    "dz": -2.26,
+    "xy": [
+     5245.9,
+     3301.6
+    ]
+   },
+   {
+    "street": "M",
+    "s": 197.0,
+    "side": 1,
+    "r": 16.3,
+    "dz": -1.74,
+    "xy": [
+     5249.5,
+     3299.9
+    ]
+   },
+   {
+    "street": "M",
+    "s": 213.0,
+    "side": 1,
+    "r": 6.3,
+    "dz": -1.51,
+    "xy": [
+     5264.2,
+     3293.5
+    ]
+   },
+   {
+    "street": "M",
+    "s": 235.0,
+    "side": 1,
+    "r": 21.8,
+    "dz": -2.13,
+    "xy": [
+     5283.2,
+     3282.6
+    ]
+   },
+   {
+    "street": "M",
+    "s": 237.0,
+    "side": 1,
+    "r": 21.8,
+    "dz": -2.16,
+    "xy": [
+     5285.1,
+     3281.8
+    ]
+   },
+   {
+    "street": "M",
+    "s": 239.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.05,
+    "xy": [
+     5286.9,
+     3281.0
+    ]
+   },
+   {
+    "street": "M",
+    "s": 241.0,
+    "side": 1,
+    "r": 19.3,
+    "dz": -2.17,
+    "xy": [
+     5288.8,
+     3280.3
+    ]
+   },
+   {
+    "street": "M",
+    "s": 251.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": -3.33,
+    "xy": [
+     5298.3,
+     3277.2
+    ]
+   },
+   {
+    "street": "M",
+    "s": 253.0,
+    "side": 1,
+    "r": 13.3,
+    "dz": -3.48,
+    "xy": [
+     5300.2,
+     3276.6
+    ]
+   },
+   {
+    "street": "M",
+    "s": 255.0,
+    "side": 1,
+    "r": 13.8,
+    "dz": -2.14,
+    "xy": [
+     5302.1,
+     3276.0
+    ]
+   },
+   {
+    "street": "M",
+    "s": 297.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 2.31,
+    "xy": [
+     5341.0,
+     3260.3
+    ]
+   },
+   {
+    "street": "M",
+    "s": 299.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": 3.13,
+    "xy": [
+     5342.7,
+     3259.2
+    ]
+   },
+   {
+    "street": "M",
+    "s": 309.0,
+    "side": -1,
+    "r": 21.8,
+    "dz": 1.6,
+    "xy": [
+     5351.1,
+     3253.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 107.0,
+    "side": 1,
+    "r": 21.8,
+    "dz": -1.98,
+    "xy": [
+     5157.6,
+     3306.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 109.0,
+    "side": 1,
+    "r": 21.3,
+    "dz": -2.13,
+    "xy": [
+     5159.1,
+     3305.6
+    ]
+   },
+   {
+    "street": "U",
+    "s": 111.0,
+    "side": 1,
+    "r": 21.8,
+    "dz": -2.09,
+    "xy": [
+     5160.5,
+     3304.2
+    ]
+   },
+   {
+    "street": "U",
+    "s": 113.0,
+    "side": 1,
+    "r": 21.3,
+    "dz": -2.26,
+    "xy": [
+     5162.0,
+     3302.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 115.0,
+    "side": 1,
+    "r": 19.8,
+    "dz": -2.11,
+    "xy": [
+     5163.5,
+     3301.5
+    ]
+   },
+   {
+    "street": "U",
+    "s": 117.0,
+    "side": 1,
+    "r": 18.8,
+    "dz": -2.22,
+    "xy": [
+     5165.0,
+     3300.2
+    ]
+   },
+   {
+    "street": "U",
+    "s": 119.0,
+    "side": 1,
+    "r": 16.8,
+    "dz": -2.25,
+    "xy": [
+     5166.5,
+     3298.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 121.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": -2.31,
+    "xy": [
+     5168.1,
+     3297.7
+    ]
+   },
+   {
+    "street": "U",
+    "s": 123.0,
+    "side": 1,
+    "r": 13.3,
+    "dz": -2.53,
+    "xy": [
+     5169.7,
+     3296.5
+    ]
+   },
+   {
+    "street": "U",
+    "s": 125.0,
+    "side": 1,
+    "r": 12.8,
+    "dz": -3.06,
+    "xy": [
+     5171.3,
+     3295.3
+    ]
+   },
+   {
+    "street": "U",
+    "s": 127.0,
+    "side": 1,
+    "r": 12.8,
+    "dz": -3.44,
+    "xy": [
+     5172.9,
+     3294.2
+    ]
+   },
+   {
+    "street": "U",
+    "s": 129.0,
+    "side": 1,
+    "r": 12.3,
+    "dz": -3.6,
+    "xy": [
+     5174.6,
+     3293.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 131.0,
+    "side": 1,
+    "r": 11.8,
+    "dz": -3.65,
+    "xy": [
+     5176.3,
+     3292.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 133.0,
+    "side": 1,
+    "r": 11.8,
+    "dz": -3.51,
+    "xy": [
+     5178.1,
+     3291.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 135.0,
+    "side": 1,
+    "r": 12.3,
+    "dz": -2.97,
+    "xy": [
+     5179.8,
+     3290.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 137.0,
+    "side": 1,
+    "r": 12.3,
+    "dz": -2.69,
+    "xy": [
+     5181.6,
+     3289.3
+    ]
+   },
+   {
+    "street": "U",
+    "s": 139.0,
+    "side": 1,
+    "r": 13.3,
+    "dz": -2.51,
+    "xy": [
+     5183.5,
+     3288.4
+    ]
+   },
+   {
+    "street": "U",
+    "s": 141.0,
+    "side": 1,
+    "r": 13.3,
+    "dz": -2.58,
+    "xy": [
+     5185.3,
+     3287.6
+    ]
+   },
+   {
+    "street": "U",
+    "s": 143.0,
+    "side": 1,
+    "r": 12.3,
+    "dz": -3.52,
+    "xy": [
+     5187.1,
+     3286.8
+    ]
+   },
+   {
+    "street": "U",
+    "s": 145.0,
+    "side": 1,
+    "r": 11.8,
+    "dz": -3.11,
+    "xy": [
+     5188.9,
+     3285.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 147.0,
+    "side": 1,
+    "r": 12.3,
+    "dz": -2.61,
+    "xy": [
+     5190.7,
+     3285.0
+    ]
+   },
+   {
+    "street": "U",
+    "s": 149.0,
+    "side": 1,
+    "r": 13.8,
+    "dz": -2.24,
+    "xy": [
+     5192.5,
+     3284.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 151.0,
+    "side": 1,
+    "r": 13.8,
+    "dz": -2.59,
+    "xy": [
+     5194.2,
+     3283.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 153.0,
+    "side": 1,
+    "r": 13.8,
+    "dz": -2.62,
+    "xy": [
+     5195.9,
+     3282.0
+    ]
+   },
+   {
+    "street": "U",
+    "s": 155.0,
+    "side": 1,
+    "r": 14.8,
+    "dz": -1.75,
+    "xy": [
+     5197.6,
+     3280.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 161.0,
+    "side": 1,
+    "r": 15.8,
+    "dz": -1.54,
+    "xy": [
+     5202.3,
+     3277.3
+    ]
+   },
+   {
+    "street": "U",
+    "s": 269.0,
+    "side": -1,
+    "r": 20.8,
+    "dz": 1.51,
+    "xy": [
+     5297.9,
+     3228.7
+    ]
+   },
+   {
+    "street": "U",
+    "s": 289.0,
+    "side": 1,
+    "r": 19.3,
+    "dz": -2.71,
+    "xy": [
+     5315.5,
+     3219.2
+    ]
+   },
+   {
+    "street": "U",
+    "s": 291.0,
+    "side": 1,
+    "r": 18.8,
+    "dz": -2.37,
+    "xy": [
+     5317.2,
+     3218.1
+    ]
+   },
+   {
+    "street": "U",
+    "s": 293.0,
+    "side": 1,
+    "r": 17.8,
+    "dz": -2.38,
+    "xy": [
+     5318.8,
+     3216.9
+    ]
+   },
+   {
+    "street": "U",
+    "s": 295.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -2.61,
+    "xy": [
+     5320.4,
+     3215.8
+    ]
+   },
+   {
+    "street": "U",
+    "s": 297.0,
+    "side": 1,
+    "r": 17.8,
+    "dz": -2.85,
+    "xy": [
+     5322.0,
+     3214.6
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 37.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": -1.85,
+    "xy": [
+     5089.8,
+     3296.9
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 39.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": -1.62,
+    "xy": [
+     5091.5,
+     3295.8
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 41.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": -1.53,
+    "xy": [
+     5093.1,
+     3294.7
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 43.0,
+    "side": 1,
+    "r": 14.8,
+    "dz": -1.71,
+    "xy": [
+     5094.8,
+     3293.6
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 95.0,
+    "side": 1,
+    "r": 22.8,
+    "dz": -1.62,
+    "xy": [
+     5134.6,
+     3260.3
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 97.0,
+    "side": 1,
+    "r": 22.8,
+    "dz": -1.62,
+    "xy": [
+     5136.2,
+     3259.2
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 201.0,
+    "side": 1,
+    "r": 22.3,
+    "dz": -1.67,
+    "xy": [
+     5225.9,
+     3207.2
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 203.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.26,
+    "xy": [
+     5227.6,
+     3206.2
+    ]
+   },
+   {
+    "street": "U2",
+    "s": 205.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -1.58,
+    "xy": [
+     5229.3,
+     3205.2
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 1.0,
+    "side": -1,
+    "r": 14.8,
+    "dz": 3.68,
+    "xy": [
+     5146.3,
+     3430.7
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 3.0,
+    "side": -1,
+    "r": 14.3,
+    "dz": 3.21,
+    "xy": [
+     5147.7,
+     3429.3
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 5.0,
+    "side": -1,
+    "r": 14.3,
+    "dz": 3.32,
+    "xy": [
+     5149.2,
+     3427.9
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 7.0,
+    "side": -1,
+    "r": 14.8,
+    "dz": 3.81,
+    "xy": [
+     5150.6,
+     3426.5
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 9.0,
+    "side": -1,
+    "r": 15.3,
+    "dz": 3.69,
+    "xy": [
+     5152.1,
+     3425.2
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 11.0,
+    "side": -1,
+    "r": 15.3,
+    "dz": 2.9,
+    "xy": [
+     5153.5,
+     3423.8
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 13.0,
+    "side": -1,
+    "r": 16.8,
+    "dz": 2.5,
+    "xy": [
+     5155.0,
+     3422.4
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 15.0,
+    "side": -1,
+    "r": 19.8,
+    "dz": 1.8,
+    "xy": [
+     5156.4,
+     3421.0
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 85.0,
+    "side": 1,
+    "r": 18.3,
+    "dz": -2.31,
+    "xy": [
+     5213.7,
+     3382.0
+    ]
+   },
+   {
+    "street": "KW",
+    "s": 87.0,
+    "side": 1,
+    "r": 17.3,
+    "dz": -2.13,
+    "xy": [
+     5215.0,
+     3380.4
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 35.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 2.66,
+    "xy": [
+     5317.4,
+     3316.9
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 43.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.83,
+    "xy": [
+     5324.8,
+     3314.1
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 45.0,
+    "side": 1,
+    "r": 18.8,
+    "dz": -2.76,
+    "xy": [
+     5326.7,
+     3313.4
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 47.0,
+    "side": 1,
+    "r": 15.3,
+    "dz": -2.59,
+    "xy": [
+     5328.6,
+     3312.8
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 51.0,
+    "side": 1,
+    "r": 5.8,
+    "dz": -1.93,
+    "xy": [
+     5332.4,
+     3311.5
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 83.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 2.65,
+    "xy": [
+     5362.2,
+     3300.0
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 85.0,
+    "side": -1,
+    "r": 16.8,
+    "dz": 3.8,
+    "xy": [
+     5364.0,
+     3299.1
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 87.0,
+    "side": -1,
+    "r": 16.8,
+    "dz": 3.95,
+    "xy": [
+     5365.8,
+     3298.2
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 89.0,
+    "side": -1,
+    "r": 17.3,
+    "dz": 3.84,
+    "xy": [
+     5367.6,
+     3297.3
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 91.0,
+    "side": -1,
+    "r": 17.3,
+    "dz": 3.4,
+    "xy": [
+     5369.4,
+     3296.3
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 93.0,
+    "side": -1,
+    "r": 17.3,
+    "dz": 3.57,
+    "xy": [
+     5371.1,
+     3295.3
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 95.0,
+    "side": -1,
+    "r": 17.3,
+    "dz": 4.07,
+    "xy": [
+     5372.8,
+     3294.3
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 97.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 4.26,
+    "xy": [
+     5374.5,
+     3293.3
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 99.0,
+    "side": -1,
+    "r": 18.3,
+    "dz": 3.34,
+    "xy": [
+     5376.2,
+     3292.2
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 101.0,
+    "side": -1,
+    "r": 17.8,
+    "dz": 2.67,
+    "xy": [
+     5377.9,
+     3291.2
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 103.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": 1.62,
+    "xy": [
+     5379.6,
+     3290.1
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 127.0,
+    "side": 1,
+    "r": 20.3,
+    "dz": -2.26,
+    "xy": [
+     5401.9,
+     3281.4
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 129.0,
+    "side": 1,
+    "r": 18.8,
+    "dz": -3.11,
+    "xy": [
+     5403.8,
+     3281.0
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 131.0,
+    "side": 1,
+    "r": 13.3,
+    "dz": -3.75,
+    "xy": [
+     5405.8,
+     3280.5
+    ]
+   },
+   {
+    "street": "KE",
+    "s": 133.0,
+    "side": 1,
+    "r": 10.8,
+    "dz": -2.07,
+    "xy": [
+     5407.7,
+     3280.0
+    ]
+   },
+   {
+    "street": "CU2",
+    "s": 19.0,
+    "side": -1,
+    "r": 16.3,
+    "dz": -1.88,
+    "xy": [
+     5158.0,
+     3331.5
+    ]
+   },
+   {
+    "street": "CU2",
+    "s": 21.0,
+    "side": -1,
+    "r": 13.3,
+    "dz": -1.7,
+    "xy": [
+     5158.8,
+     3333.3
+    ]
+   },
+   {
+    "street": "CM1",
+    "s": 17.0,
+    "side": 1,
+    "r": 15.3,
+    "dz": 1.95,
+    "xy": [
+     5149.2,
+     3386.3
+    ]
+   },
+   {
+    "street": "CM1",
+    "s": 19.0,
+    "side": 1,
+    "r": 14.3,
+    "dz": 2.03,
+    "xy": [
+     5150.7,
+     3387.6
+    ]
+   },
+   {
+    "street": "CM1",
+    "s": 21.0,
+    "side": 1,
+    "r": 16.8,
+    "dz": 2.43,
+    "xy": [
+     5152.2,
+     3388.9
+    ]
+   },
+   {
+    "street": "CM2",
+    "s": 29.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": 2.02,
+    "xy": [
+     5191.5,
+     3378.8
+    ]
+   },
+   {
+    "street": "CM2",
+    "s": 31.0,
+    "side": -1,
+    "r": 19.3,
+    "dz": 1.59,
+    "xy": [
+     5192.9,
+     3380.2
+    ]
+   },
+   {
+    "street": "CM3",
+    "s": 9.0,
+    "side": -1,
+    "r": 2.3,
+    "dz": -1.91,
+    "xy": [
+     5262.5,
+     3304.2
+    ]
+   },
+   {
+    "street": "CM3",
+    "s": 11.0,
+    "side": -1,
+    "r": 0.3,
+    "dz": -2.18,
+    "xy": [
+     5262.6,
+     3306.2
+    ]
+   }
+  ],
+  "straight_runs": {
+   "M": {
+    "longest_m": 63.9,
+    "from_s": 228.6,
+    "to_s": 292.5
+   },
+   "U": {
+    "longest_m": 73.7,
+    "from_s": 0.0,
+    "to_s": 73.7
+   },
+   "U2": {
+    "longest_m": 67.9,
+    "from_s": 147.7,
+    "to_s": 215.6
+   },
+   "KW": {
+    "longest_m": 46.7,
+    "from_s": 27.8,
+    "to_s": 74.5
+   },
+   "KE": {
+    "longest_m": 68.6,
+    "from_s": 23.9,
+    "to_s": 92.5
+   },
+   "CT1": {
+    "longest_m": 49.1,
+    "from_s": 0.0,
+    "to_s": 49.1
+   },
+   "CT2": {
+    "longest_m": 29.3,
+    "from_s": 13.7,
+    "to_s": 43.0
+   },
+   "CU1": {
+    "longest_m": 32.8,
+    "from_s": 11.6,
+    "to_s": 44.4
+   },
+   "CU2": {
+    "longest_m": 35.8,
+    "from_s": 0.0,
+    "to_s": 35.8
+   },
+   "CU3": {
+    "longest_m": 26.4,
+    "from_s": 15.7,
+    "to_s": 42.1
+   },
+   "CU4": {
+    "longest_m": 29.8,
+    "from_s": 13.4,
+    "to_s": 43.2
+   },
+   "CM1": {
+    "longest_m": 30.6,
+    "from_s": 9.9,
+    "to_s": 40.5
+   },
+   "CM2": {
+    "longest_m": 36.8,
+    "from_s": 11.6,
+    "to_s": 48.4
+   },
+   "CM3": {
+    "longest_m": 17.9,
+    "from_s": 37.6,
+    "to_s": 55.6
+   },
+   "CM4": {
+    "longest_m": 26.9,
+    "from_s": 13.5,
+    "to_s": 40.4
+   },
+   "HL": {
+    "longest_m": 41.9,
+    "from_s": 0.0,
+    "to_s": 41.9
+   },
+   "HR": {
+    "longest_m": 169.2,
+    "from_s": 119.5,
+    "to_s": 288.7
+   }
+  },
+  "grades": {
+   "M": 12.0,
+   "U": 19.1,
+   "U2": 14.0,
+   "KW": 7.8,
+   "KE": 19.1,
+   "CT1": 9.1,
+   "CT2": 9.5,
+   "CU1": 10.9,
+   "CU2": 11.9,
+   "CU3": 11.0,
+   "CU4": 11.5,
+   "CM1": 14.5,
+   "CM2": 12.7,
+   "CM3": 17.0,
+   "CM4": 15.9,
+   "HL": 10.3,
+   "HR": 11.4
+  },
+  "overlaps": [],
+  "ribbons_own": [],
+  "ribbons_other": []
+ }
+}

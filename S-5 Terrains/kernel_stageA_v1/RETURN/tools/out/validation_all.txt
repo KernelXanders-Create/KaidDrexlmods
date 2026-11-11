@@ -1,0 +1,45 @@
+House-rule checks per op (MEASURED by script on the JSON):
+10-20 sites, all three sizes, 1-2 air-prep, <=2 air-only, >=1 tunnel site.
+
+islands A (Pillar Reach):
+  op1 Beachhead: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op2 The Lagoon: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op3 Western Guns: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op4 Hongs and Crown Shore: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op5 The Ring: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op6 Into the Crown: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS
+islands B (Ember Chain):
+  op1 Black Strand: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op2 Stacks and Airfield: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=1 -> PASS
+  op3 Fjord Fortress: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op4 Shoals and Crags: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op5 Cinder Road and Breach: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op6 Inside the Caldera: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS
+islands C (The Shallows):
+  op1 East Motus: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op2 The Reef Walk: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op3 Lagoon Stilts: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=1 -> PASS
+  op4 West Ring: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op5 Makatea Cliffs: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op6 The Ship on the Reef: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS
+swamp A (The Mire Line):
+  op1 Over the Top: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=3 -> PASS
+  op2 The Drain: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS
+  op3 Esker Road: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op4 The Cauldron: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=2 -> PASS
+  op5 Third Line: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=3 -> PASS
+  op6 Moraine Citadel: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=2 -> PASS
+swamp B (The Glow):
+  op1 Edge of the Grass: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op2 Canal Road: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=1 -> PASS
+  op3 Spore Ridge: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op4 The Felled Titan: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=1 -> PASS
+  op5 Hammock Archipelago: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op6 Spore Citadel: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS
+swamp C (River Country):
+  op1 River Mouth: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op2 The Oxbow: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=2 -> PASS
+  op3 Rodian River City: 12 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op4 North Bluffs: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op5 Upper Bends: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=1, tunnel sites=1 -> PASS
+  op6 Headwater Works: 11 sites, sizes=['platoon', 'squad', 'two_squad'], air_prep=1, air_only=0, tunnel sites=2 -> PASS

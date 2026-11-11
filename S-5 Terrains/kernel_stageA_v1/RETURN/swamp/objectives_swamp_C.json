@@ -1,0 +1,1140 @@
+{
+  "map": "swamp",
+  "concept": "C",
+  "size_km": 16,
+  "ops": [
+    {
+      "op": 1,
+      "name": "River Mouth",
+      "start": [
+        500,
+        5500
+      ],
+      "objectives": [
+        {
+          "id": "1-01",
+          "name": "Levee Fort West",
+          "xy": [
+            1600,
+            5000
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the levee road",
+          "recon_visible_from_m": 2504,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "1-02",
+          "name": "Ferry Landing",
+          "xy": [
+            2800,
+            4400
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Ferry across the river",
+          "recon_visible_from_m": 1608,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-03",
+          "name": "Fishing Stilt Village",
+          "xy": [
+            1200,
+            2600
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Rodian stilt village",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-04",
+          "name": "Bayou Gunboat Pens",
+          "xy": [
+            2200,
+            3200
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the gunboats",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-05",
+          "name": "Levee Battery",
+          "xy": [
+            4200,
+            4000
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the river",
+          "recon_visible_from_m": 1605,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-06",
+          "name": "Backswamp Pillboxes",
+          "xy": [
+            3400,
+            6000
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes in the backswamp",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-07",
+          "name": "South Bluff AA",
+          "xy": [
+            3000,
+            1400
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the river mouth",
+          "recon_visible_from_m": 1605,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-08",
+          "name": "Levee Bunker Galleries",
+          "xy": [
+            4424,
+            5192
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in the levee",
+          "recon_visible_from_m": 1606,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 25 m to sketch land"
+        },
+        {
+          "id": "1-09",
+          "name": "Pump Tower",
+          "xy": [
+            856,
+            3880
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel and water",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 132 m to sketch land"
+        },
+        {
+          "id": "1-10",
+          "name": "Cypress Hammock Snipers",
+          "xy": [
+            1896,
+            6760
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Snipers in the trees",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 262 m to sketch land"
+        },
+        {
+          "id": "1-11",
+          "name": "Channel Marker Sensor",
+          "xy": [
+            3800,
+            3000
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Guides CIS boats",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 2,
+      "name": "The Oxbow",
+      "start": [
+        4280,
+        4920
+      ],
+      "objectives": [
+        {
+          "id": "2-01",
+          "name": "Stilt Refinery",
+          "xy": [
+            6400,
+            8700
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Fuel refinery rising out of the oxbow lake",
+          "recon_visible_from_m": 3000,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-02",
+          "name": "Refinery Pier Causeway",
+          "xy": [
+            6000,
+            8000
+          ],
+          "size": "two_squad",
+          "kind": "bridge",
+          "reason": "Pier causeway: the foot way in",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-03",
+          "name": "Oxbow Tank Farm",
+          "xy": [
+            7352,
+            8744
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Fuel tanks",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 162 m to sketch land"
+        },
+        {
+          "id": "2-04",
+          "name": "Levee Road Checkpoint",
+          "xy": [
+            5368,
+            6536
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Gate on the levee road",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 140 m to sketch land"
+        },
+        {
+          "id": "2-05",
+          "name": "Refinery Flare Stacks",
+          "xy": [
+            6800,
+            9200
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-06",
+          "name": "Pipeline Gun Nests",
+          "xy": [
+            5200,
+            9200
+          ],
+          "size": "squad",
+          "kind": "battery",
+          "reason": "Guns on the pipeline berm",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "2-07",
+          "name": "Neck Village",
+          "xy": [
+            6600,
+            7400
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Village on the oxbow neck",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-08",
+          "name": "Oxbow AA Barge",
+          "xy": [
+            5800,
+            9100
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "AA on the lake",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-09",
+          "name": "Pumphouse Tunnels",
+          "xy": [
+            7400,
+            9600
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Pipe galleries",
+          "recon_visible_from_m": 1602,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-10",
+          "name": "Bayou Boat Dock",
+          "xy": [
+            4600,
+            8400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Boats up the bayou",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-11",
+          "name": "Gas Flare Tower",
+          "xy": [
+            7800,
+            10200
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Tall flare",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 3,
+      "name": "Rodian River City",
+      "start": [
+        6600,
+        7400
+      ],
+      "objectives": [
+        {
+          "id": "3-01",
+          "name": "City Levee Wall Gate",
+          "xy": [
+            8504,
+            7064
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Walled levee gate (starts closed)",
+          "recon_visible_from_m": 3001,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 171 m to sketch land"
+        },
+        {
+          "id": "3-02",
+          "name": "River City Market Tiers",
+          "xy": [
+            9000,
+            7600
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Tiered Rodian city on the levee",
+          "recon_visible_from_m": 2508,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "3-03",
+          "name": "City Bridge",
+          "xy": [
+            8600,
+            7900
+          ],
+          "size": "two_squad",
+          "kind": "bridge",
+          "reason": "Only vehicle bridge over the river",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "3-04",
+          "name": "Harbour Quay",
+          "xy": [
+            9200,
+            6800
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "River harbour",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-05",
+          "name": "Water Temple Tower",
+          "xy": [
+            9600,
+            7900
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Tall landmark; intel",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-06",
+          "name": "Undercity Canal Shells",
+          "xy": [
+            8900,
+            7300
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Tight canal corridors into halls",
+          "recon_visible_from_m": 2507,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "3-07",
+          "name": "Rooftop AA",
+          "xy": [
+            9300,
+            7200
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the city",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-08",
+          "name": "South Bank Battery",
+          "xy": [
+            7600,
+            5600
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the bridge",
+          "recon_visible_from_m": 1605,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-09",
+          "name": "Gunboat Moorings",
+          "xy": [
+            8000,
+            6200
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1612,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-10",
+          "name": "Council Hall",
+          "xy": [
+            9500,
+            7400
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rescue Rodian leaders",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-11",
+          "name": "South Levee Pillboxes",
+          "xy": [
+            8800,
+            5800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Flank cover",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-12",
+          "name": "City Spire Relay",
+          "xy": [
+            9800,
+            7000
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Links the city to the foundry",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 4,
+      "name": "North Bluffs",
+      "start": [
+        9000,
+        7800
+      ],
+      "objectives": [
+        {
+          "id": "4-01",
+          "name": "Bluff Fort",
+          "xy": [
+            8200,
+            13200
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the bluff edge",
+          "recon_visible_from_m": 2509,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "4-02",
+          "name": "Bluff Stair Battery",
+          "xy": [
+            9600,
+            13400
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns look over the floodplain",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-03",
+          "name": "Bluff Face Galleries",
+          "xy": [
+            7400,
+            13200
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells cut into the bluff",
+          "recon_visible_from_m": 1606,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "4-04",
+          "name": "Bayou Head Village",
+          "xy": [
+            4600,
+            13400
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Village at the bayou head",
+          "recon_visible_from_m": 1629,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-05",
+          "name": "Bluff AA",
+          "xy": [
+            10840,
+            13624
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the north",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 47 m to sketch land"
+        },
+        {
+          "id": "4-06",
+          "name": "Backswamp Outposts",
+          "xy": [
+            8600,
+            10800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Outposts on hammocks",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-07",
+          "name": "Logging Camp",
+          "xy": [
+            5576,
+            11800
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Timber and boats",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 424 m to sketch land"
+        },
+        {
+          "id": "4-08",
+          "name": "Bluff Gun Park",
+          "xy": [
+            11600,
+            14400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften it",
+          "recon_visible_from_m": 1763,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-09",
+          "name": "Comms Relay",
+          "xy": [
+            9000,
+            14400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel on the foundry",
+          "recon_visible_from_m": 959,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-10",
+          "name": "Bayou Bridge",
+          "xy": [
+            5000,
+            12184
+          ],
+          "size": "squad",
+          "kind": "bridge",
+          "reason": "Road over the bayou",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 16 m to sketch land"
+        },
+        {
+          "id": "4-11",
+          "name": "Bluff Sensor Mast",
+          "xy": [
+            12600,
+            13600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Early warning",
+          "recon_visible_from_m": 947,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 5,
+      "name": "Upper Bends",
+      "start": [
+        9992,
+        8504
+      ],
+      "objectives": [
+        {
+          "id": "5-01",
+          "name": "Second Oxbow Fort",
+          "xy": [
+            10600,
+            6500
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort inside the second oxbow",
+          "recon_visible_from_m": 2503,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "5-02",
+          "name": "Levee Battery East",
+          "xy": [
+            11800,
+            8600
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the bends",
+          "recon_visible_from_m": 1614,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-03",
+          "name": "River Weir",
+          "xy": [
+            12600,
+            9800
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Weir and lock",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-04",
+          "name": "Splay Pillboxes",
+          "xy": [
+            13400,
+            8200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "On the crevasse splay",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-05",
+          "name": "Plantation Stilt Town",
+          "xy": [
+            13200,
+            10800
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Stilt town on the bend",
+          "recon_visible_from_m": 2500,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-06",
+          "name": "Levee Tunnels East",
+          "xy": [
+            12200,
+            10200
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in the levee",
+          "recon_visible_from_m": 1609,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-07",
+          "name": "Bluff Road Checkpoint",
+          "xy": [
+            12000,
+            5400
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "South bluff road",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "5-08",
+          "name": "Hover Tank Park",
+          "xy": [
+            13992,
+            9592
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften it",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 11 m to sketch land"
+        },
+        {
+          "id": "5-09",
+          "name": "Levee AA East",
+          "xy": [
+            11200,
+            7600
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the bends",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-10",
+          "name": "Fuel Barges",
+          "xy": [
+            14600,
+            11000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fuel for the foundry",
+          "recon_visible_from_m": 913,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-11",
+          "name": "Weir Control Tower",
+          "xy": [
+            13000,
+            9200
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Air-only kill",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 6,
+      "name": "Headwater Works",
+      "start": [
+        13224,
+        10760
+      ],
+      "objectives": [
+        {
+          "id": "6-01",
+          "name": "Foundry Terraces",
+          "xy": [
+            14400,
+            13600
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Droid foundry on the east terrace: end of run",
+          "recon_visible_from_m": 3188,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-02",
+          "name": "Assembly Halls",
+          "xy": [
+            15000,
+            12800
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Big halls with staggered cover",
+          "recon_visible_from_m": 3178,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "6-03",
+          "name": "Terrace Gate Wall",
+          "xy": [
+            13600,
+            12600
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Gate (starts closed)",
+          "recon_visible_from_m": 2165,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "6-04",
+          "name": "Gallery Tunnel Maze",
+          "xy": [
+            14000,
+            14400
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Maze between the halls",
+          "recon_visible_from_m": 2670,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-05",
+          "name": "Foundry Battery",
+          "xy": [
+            12800,
+            14200
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the bends",
+          "recon_visible_from_m": 1731,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-06",
+          "name": "River Intake Pumphouse",
+          "xy": [
+            15200,
+            11400
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Cooling water for the foundry",
+          "recon_visible_from_m": 1615,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-07",
+          "name": "Cooling Stacks",
+          "xy": [
+            15400,
+            14400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1840,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-08",
+          "name": "Workers' Stilts",
+          "xy": [
+            12400,
+            12000
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Worker housing",
+          "recon_visible_from_m": 1600,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-09",
+          "name": "Shield Pylon",
+          "xy": [
+            13400,
+            13800
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Drops the foundry shield",
+          "recon_visible_from_m": 1033,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "6-10",
+          "name": "AA Terrace Nest",
+          "xy": [
+            15400,
+            13600
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the terrace",
+          "recon_visible_from_m": 1068,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "6-11",
+          "name": "Landing Pad",
+          "xy": [
+            14800,
+            15200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Escape pad",
+          "recon_visible_from_m": 1173,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    }
+  ],
+  "measured_or_assumed": "ASSUMED: positions hand-placed on the sketch, then snapped to the nearest sketch land cell unless the site sits on water; recon distances, garrison counts and ways-in are ASSUMED rules of thumb (see tools/make_all.py)"
+}

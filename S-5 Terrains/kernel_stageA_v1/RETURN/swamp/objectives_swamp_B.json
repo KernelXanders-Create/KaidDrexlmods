@@ -1,0 +1,1124 @@
+{
+  "map": "swamp",
+  "concept": "B",
+  "size_km": 16,
+  "ops": [
+    {
+      "op": 1,
+      "name": "Edge of the Grass",
+      "start": [
+        8000,
+        600
+      ],
+      "objectives": [
+        {
+          "id": "1-01",
+          "name": "Lakeshore Hover Pens",
+          "xy": [
+            6600,
+            2000
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Droid hovers; take them to own the lake",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-02",
+          "name": "Sawgrass Pillboxes",
+          "xy": [
+            9000,
+            2800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes in open grass",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-03",
+          "name": "Heron Hammock Fort",
+          "xy": [
+            7528,
+            3688
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Fort on a big hammock",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 297 m to sketch land"
+        },
+        {
+          "id": "1-04",
+          "name": "Spore Sampler Station",
+          "xy": [
+            10616,
+            3000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel: what the labs make",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 16 m to sketch land"
+        },
+        {
+          "id": "1-05",
+          "name": "Gladeside Village",
+          "xy": [
+            4600,
+            3200
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Sci-fi stilt village; FOB for op 3",
+          "recon_visible_from_m": 2502,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "1-06",
+          "name": "Cenote Rim Shells",
+          "xy": [
+            5800,
+            4200
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Tunnel shells round a sinkhole",
+          "recon_visible_from_m": 1602,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "1-07",
+          "name": "Hammock Gun Nest",
+          "xy": [
+            11800,
+            4200
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns hit the lake landing",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-08",
+          "name": "AA Hammock",
+          "xy": [
+            9600,
+            4800
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Grounds LAATs over the grass",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-09",
+          "name": "Droid Hover Park",
+          "xy": [
+            12800,
+            2600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the hovers",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-10",
+          "name": "Canal Road Checkpoint",
+          "xy": [
+            13800,
+            3800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Gate on the canal road (starts closed)",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "1-11",
+          "name": "Spore Balloon Tether",
+          "xy": [
+            8536,
+            5656
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Spreads spores over the grass",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 85 m to sketch land"
+        }
+      ]
+    },
+    {
+      "op": 2,
+      "name": "Canal Road",
+      "start": [
+        12800,
+        3000
+      ],
+      "objectives": [
+        {
+          "id": "2-01",
+          "name": "Canal Lock Fort",
+          "xy": [
+            13800,
+            6392
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the lock: the vehicle route north",
+          "recon_visible_from_m": 2502,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane; snapped 8 m to sketch land"
+        },
+        {
+          "id": "2-02",
+          "name": "Pumping Station",
+          "xy": [
+            14400,
+            7600
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Powers the east shields",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-03",
+          "name": "Levee Battery",
+          "xy": [
+            13400,
+            8600
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the grass to the west",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-04",
+          "name": "Canal Barge Yard",
+          "xy": [
+            14200,
+            5400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Barges and boats",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-05",
+          "name": "Levee Bunker Galleries",
+          "xy": [
+            13900,
+            9600
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in the levee",
+          "recon_visible_from_m": 1602,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-06",
+          "name": "Ranger Station",
+          "xy": [
+            12200,
+            7200
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Old Republic post to retake",
+          "recon_visible_from_m": 1602,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-07",
+          "name": "Fungus Farm Hammock",
+          "xy": [
+            11200,
+            6400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Food and spores",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "2-08",
+          "name": "Fuel Silos",
+          "xy": [
+            14600,
+            10400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-09",
+          "name": "Canal Bridge",
+          "xy": [
+            13600,
+            11200
+          ],
+          "size": "squad",
+          "kind": "bridge",
+          "reason": "Keeps the road open north",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "2-10",
+          "name": "East Hammock Hamlet",
+          "xy": [
+            11600,
+            9400
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Small hamlet",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-11",
+          "name": "Levee AA Nest",
+          "xy": [
+            12800,
+            10600
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the canal",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 3,
+      "name": "Spore Ridge",
+      "start": [
+        4600,
+        3400
+      ],
+      "objectives": [
+        {
+          "id": "3-01",
+          "name": "Ridge Road Fort",
+          "xy": [
+            3000,
+            6400
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the ridge road",
+          "recon_visible_from_m": 2576,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "3-02",
+          "name": "Giant Cap Grove",
+          "xy": [
+            2400,
+            7800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Snipers under giant caps",
+          "recon_visible_from_m": 937,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-03",
+          "name": "Spore Works South Lab",
+          "xy": [
+            3400,
+            8800
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Bio-lab, multi-level",
+          "recon_visible_from_m": 3066,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "3-04",
+          "name": "Ridge Gun Battery",
+          "xy": [
+            3600,
+            10000
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the main slough",
+          "recon_visible_from_m": 1646,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-05",
+          "name": "Root Cellar Maze",
+          "xy": [
+            2600,
+            9400
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Maze in the root mass",
+          "recon_visible_from_m": 1664,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "3-06",
+          "name": "Cenote Pump House",
+          "xy": [
+            4600,
+            7200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Water for the labs",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-07",
+          "name": "Ridge AA",
+          "xy": [
+            2000,
+            10800
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the west",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-08",
+          "name": "Spore Silos",
+          "xy": [
+            4000,
+            11200
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1630,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-09",
+          "name": "Fungal Hamlet",
+          "xy": [
+            1720,
+            5544
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Hamlet in the caps",
+          "recon_visible_from_m": 1601,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 132 m to sketch land"
+        },
+        {
+          "id": "3-10",
+          "name": "Glade Comms",
+          "xy": [
+            5256,
+            9864
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel for the Titan",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 264 m to sketch land"
+        },
+        {
+          "id": "3-11",
+          "name": "Spore Venting Tower",
+          "xy": [
+            1200,
+            12400
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Spore plume over the ridge",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 4,
+      "name": "The Felled Titan",
+      "start": [
+        6000,
+        6000
+      ],
+      "objectives": [
+        {
+          "id": "4-01",
+          "name": "Titan West Root Fort",
+          "xy": [
+            6400,
+            8400
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort in the root plate",
+          "recon_visible_from_m": 2502,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "4-02",
+          "name": "Titan Hollow Trunk",
+          "xy": [
+            8000,
+            8600
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Lab inside the hollow trunk: halls and tight bores",
+          "recon_visible_from_m": 3000,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "4-03",
+          "name": "Titan Crown East",
+          "xy": [
+            9600,
+            8900
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Fort in the fallen crown",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-04",
+          "name": "Slough Hover Pens",
+          "xy": [
+            8200,
+            7200
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Hovers in the slough",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-05",
+          "name": "Channel Pillboxes",
+          "xy": [
+            7400,
+            9600
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes on the boat channel",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-06",
+          "name": "Tree Island Battery",
+          "xy": [
+            10200,
+            10000
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns cover the Titan",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-07",
+          "name": "Hammock Hamlet North",
+          "xy": [
+            7144,
+            11064
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Hamlet",
+          "recon_visible_from_m": 1601,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 434 m to sketch land"
+        },
+        {
+          "id": "4-08",
+          "name": "Titan AA Blisters",
+          "xy": [
+            8600,
+            9000
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the blisters",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-09",
+          "name": "Fungus Light Tower",
+          "xy": [
+            9032,
+            7864
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Comms",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 266 m to sketch land"
+        },
+        {
+          "id": "4-10",
+          "name": "Spore Pond Pumps",
+          "xy": [
+            10800,
+            7800
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Feed the trunk lab",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-11",
+          "name": "Mid-slough AA",
+          "xy": [
+            7000,
+            7400
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the slough",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 5,
+      "name": "Hammock Archipelago",
+      "start": [
+        9600,
+        9000
+      ],
+      "objectives": [
+        {
+          "id": "5-01",
+          "name": "Big Hammock Fort",
+          "xy": [
+            9320,
+            12280
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Biggest hammock, ringed by grass",
+          "recon_visible_from_m": 2502,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 291 m to sketch land"
+        },
+        {
+          "id": "5-02",
+          "name": "Grass Sea Pillboxes",
+          "xy": [
+            11000,
+            11800
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes in the grass",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-03",
+          "name": "Cenote Ring Tunnels",
+          "xy": [
+            8400,
+            12800
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells round a sinkhole",
+          "recon_visible_from_m": 1615,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-04",
+          "name": "Hammock Battery",
+          "xy": [
+            11368,
+            12712
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns reach the north rise",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 637 m to sketch land"
+        },
+        {
+          "id": "5-05",
+          "name": "Stilt Supply Depot",
+          "xy": [
+            12400,
+            12400
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Supplies for the citadel",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-06",
+          "name": "Spore Works North Lab",
+          "xy": [
+            4200,
+            13000
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Second lab on the ridge",
+          "recon_visible_from_m": 2137,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-07",
+          "name": "North Village Ruin",
+          "xy": [
+            7000,
+            13400
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Ruined village",
+          "recon_visible_from_m": 1601,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-08",
+          "name": "Hover Tank Park North",
+          "xy": [
+            12600,
+            13800
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften it",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-09",
+          "name": "Ridge Comms",
+          "xy": [
+            3400,
+            12600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel",
+          "recon_visible_from_m": 983,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-10",
+          "name": "AA Hammock North",
+          "xy": [
+            6408,
+            11944
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the north grass",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 215 m to sketch land"
+        },
+        {
+          "id": "5-11",
+          "name": "Drone Hive Tower",
+          "xy": [
+            14000,
+            12800
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Launches spore drones",
+          "recon_visible_from_m": 906,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 6,
+      "name": "Spore Citadel",
+      "start": [
+        9368,
+        12440
+      ],
+      "objectives": [
+        {
+          "id": "6-01",
+          "name": "Citadel Main Lab",
+          "xy": [
+            8200,
+            15000
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "The bio-lab heart: end of the run",
+          "recon_visible_from_m": 3082,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-02",
+          "name": "Culture Vat Halls",
+          "xy": [
+            9400,
+            15200
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Big halls with staggered vats",
+          "recon_visible_from_m": 3105,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "6-03",
+          "name": "Citadel Gate Wall",
+          "xy": [
+            8600,
+            14400
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Gate (starts closed)",
+          "recon_visible_from_m": 2107,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "6-04",
+          "name": "Root Tunnel Maze",
+          "xy": [
+            7200,
+            15200
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Maze through giant roots",
+          "recon_visible_from_m": 2545,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-05",
+          "name": "Citadel Battery",
+          "xy": [
+            10600,
+            14800
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns on the rise",
+          "recon_visible_from_m": 1609,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-06",
+          "name": "Spore Cannon Silos",
+          "xy": [
+            6400,
+            14600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-07",
+          "name": "Generator Cap",
+          "xy": [
+            11592,
+            15416
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Power for the shield",
+          "recon_visible_from_m": 1601,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 18 m to sketch land"
+        },
+        {
+          "id": "6-08",
+          "name": "Landing Pad Ring",
+          "xy": [
+            5864,
+            15624
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Escape pads",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 515 m to sketch land"
+        },
+        {
+          "id": "6-09",
+          "name": "Prisoner Pods",
+          "xy": [
+            9800,
+            14200
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rescue clones",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-10",
+          "name": "West Gate Bunkers",
+          "xy": [
+            5784,
+            14184
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Second way in",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 23 m to sketch land"
+        },
+        {
+          "id": "6-11",
+          "name": "AA Cap Nest",
+          "xy": [
+            12400,
+            14600
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the rise",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    }
+  ],
+  "measured_or_assumed": "ASSUMED: positions hand-placed on the sketch, then snapped to the nearest sketch land cell unless the site sits on water; recon distances, garrison counts and ways-in are ASSUMED rules of thumb (see tools/make_all.py)"
+}

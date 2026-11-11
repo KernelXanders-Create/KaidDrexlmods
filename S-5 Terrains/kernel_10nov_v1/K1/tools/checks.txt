@@ -1,0 +1,8 @@
+K1 town checks (MEASURED by tools/make_towns.py)
+
+Sound Head: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS
+Causeway Foot: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS
+Kastro Quay: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS
+Lantern Quay: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS
+Kamar Village: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS
+Oyra: 60-110 buildings PASS, ~80% in blocks (>=75) PASS, main street 6-8 m PASS, lanes 4-6 m PASS, no straight run > 80 m PASS, garrison 10-15 PASS, uneven frontages (cv >= 0.2) PASS

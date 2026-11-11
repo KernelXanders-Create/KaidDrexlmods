@@ -1,0 +1,1156 @@
+{
+  "map": "swamp",
+  "concept": "A",
+  "size_km": 16,
+  "ops": [
+    {
+      "op": 1,
+      "name": "Over the Top",
+      "start": [
+        8000,
+        1200
+      ],
+      "objectives": [
+        {
+          "id": "1-01",
+          "name": "First Trench Belt West",
+          "xy": [
+            4500,
+            4400
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Platoon trench system: dugouts, saps, MG posts",
+          "recon_visible_from_m": 2507,
+          "interior": false,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "1-02",
+          "name": "First Trench Belt East",
+          "xy": [
+            11500,
+            4600
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Second half of the line; a bypass option",
+          "recon_visible_from_m": 2506,
+          "interior": false,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "1-03",
+          "name": "Pillbox Knoll",
+          "xy": [
+            8000,
+            4000
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Concrete knoll that sees both belts",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-04",
+          "name": "Wire Mill Ruin",
+          "xy": [
+            6300,
+            3400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Ruin with cover in no man's land",
+          "recon_visible_from_m": 904,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-05",
+          "name": "Dugout Galleries",
+          "xy": [
+            9600,
+            4900
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Covered galleries: tight, dark, into a command room",
+          "recon_visible_from_m": 1604,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "1-06",
+          "name": "Droid Gun Line",
+          "xy": [
+            8792,
+            5816
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Guns are targets only (Zeus fires); pilots soften them",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 18 m to sketch land"
+        },
+        {
+          "id": "1-07",
+          "name": "Esker Observation Post",
+          "xy": [
+            3200,
+            5200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Sees the whole first belt",
+          "recon_visible_from_m": 904,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-08",
+          "name": "Rail Halt",
+          "xy": [
+            5600,
+            2800
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Railhead for Republic armour",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "1-09",
+          "name": "Crater Field Snipers",
+          "xy": [
+            13000,
+            3600
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Snipers in the craters",
+          "recon_visible_from_m": 906,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-10",
+          "name": "Field Hospital Ruin",
+          "xy": [
+            10600,
+            3200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Rescue captured clones",
+          "recon_visible_from_m": 904,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-11",
+          "name": "AA Pit",
+          "xy": [
+            7000,
+            5400
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Grounds LAATs over the first belt",
+          "recon_visible_from_m": 1605,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-12",
+          "name": "Observation Blimp Tether",
+          "xy": [
+            12500,
+            6200
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Spots for the gun line",
+          "recon_visible_from_m": 906,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 2,
+      "name": "The Drain",
+      "start": [
+        8000,
+        4300
+      ],
+      "objectives": [
+        {
+          "id": "2-01",
+          "name": "Drain Bridge",
+          "xy": [
+            7600,
+            7000
+          ],
+          "size": "two_squad",
+          "kind": "bridge",
+          "reason": "Only tank crossing of the Drain",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "2-02",
+          "name": "Drain Lock and Pumphouse",
+          "xy": [
+            10600,
+            7200
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Powers the second belt's shields",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-03",
+          "name": "Peat Cutters' Village",
+          "xy": [
+            5000,
+            7600
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Sci-fi village on piles; FOB site for op 3",
+          "recon_visible_from_m": 2507,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "2-04",
+          "name": "Barge Quay",
+          "xy": [
+            12600,
+            7100
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "CIS supply barges",
+          "recon_visible_from_m": 907,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-05",
+          "name": "Second Trench Belt",
+          "xy": [
+            9000,
+            8600
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Main line north of the Drain",
+          "recon_visible_from_m": 2524,
+          "interior": false,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-06",
+          "name": "Sap-head Bunkers",
+          "xy": [
+            6600,
+            8200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Forward bunkers",
+          "recon_visible_from_m": 907,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "2-07",
+          "name": "Duckboard Maze",
+          "xy": [
+            11400,
+            8200
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Covered trench maze into a dugout hall",
+          "recon_visible_from_m": 1605,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-08",
+          "name": "Esker Battery",
+          "xy": [
+            3592,
+            8392
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns on the esker hit the village and bridge",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 11 m to sketch land"
+        },
+        {
+          "id": "2-09",
+          "name": "Fuel Dump",
+          "xy": [
+            13600,
+            8400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Fuels the walker park",
+          "recon_visible_from_m": 1605,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-10",
+          "name": "Kettle Lake Outpost",
+          "xy": [
+            2216,
+            7240
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Covers the west flank",
+          "recon_visible_from_m": 901,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 43 m to sketch land"
+        },
+        {
+          "id": "2-11",
+          "name": "Signal Tower",
+          "xy": [
+            8000,
+            6400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel: second belt layout",
+          "recon_visible_from_m": 908,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "2-12",
+          "name": "AA Halftrack Park",
+          "xy": [
+            14000,
+            6000
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Mobile AA",
+          "recon_visible_from_m": 1609,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 3,
+      "name": "Esker Road",
+      "start": [
+        5000,
+        7600
+      ],
+      "objectives": [
+        {
+          "id": "3-01",
+          "name": "Esker Fort North",
+          "xy": [
+            3000,
+            11400
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Fort on the esker crest",
+          "recon_visible_from_m": 2508,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "3-02",
+          "name": "Gravel Pit Bunkers",
+          "xy": [
+            2000,
+            10000
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Pits as cover",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-03",
+          "name": "Esker Rail Cutting",
+          "xy": [
+            4400,
+            10600
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rail cut through the esker; vehicle way",
+          "recon_visible_from_m": 1606,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "3-04",
+          "name": "Moss Chapel Ruin",
+          "xy": [
+            5800,
+            10200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Ruin; intel cache",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-05",
+          "name": "Bog Pool Pillboxes",
+          "xy": [
+            6600,
+            11600
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes between pools",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "3-06",
+          "name": "Esker Dugouts",
+          "xy": [
+            3400,
+            12600
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Tunnel shells in the esker side",
+          "recon_visible_from_m": 1607,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "3-07",
+          "name": "West AA Battery",
+          "xy": [
+            1600,
+            12800
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the west",
+          "recon_visible_from_m": 1606,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-08",
+          "name": "Walker Park",
+          "xy": [
+            5000,
+            12400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Walkers would counterattack the eskers",
+          "recon_visible_from_m": 1602,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-09",
+          "name": "Hamlet of Stakes",
+          "xy": [
+            1800,
+            8600
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Pile village",
+          "recon_visible_from_m": 1605,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "3-10",
+          "name": "Kettle Ferry",
+          "xy": [
+            4600,
+            9000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Ferry across the kettle lake",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-11",
+          "name": "Esker Beacon",
+          "xy": [
+            2600,
+            14600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Guides CIS reinforcements",
+          "recon_visible_from_m": 1001,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 4,
+      "name": "The Cauldron",
+      "start": [
+        9000,
+        8800
+      ],
+      "objectives": [
+        {
+          "id": "4-01",
+          "name": "Cauldron Refinery",
+          "xy": [
+            11000,
+            11000
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Fuel refinery on stilts in the flooded crater",
+          "recon_visible_from_m": 3000,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "4-02",
+          "name": "Rim Bunker Ring",
+          "xy": [
+            10400,
+            10600
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Bunkers round the rim",
+          "recon_visible_from_m": 2505,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "4-03",
+          "name": "Terrace Stair Batteries",
+          "xy": [
+            11464,
+            11528
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns on the inner terraces",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 46 m to sketch land"
+        },
+        {
+          "id": "4-04",
+          "name": "Rim Tunnels",
+          "xy": [
+            11500,
+            10500
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Shells in the rim spoil",
+          "recon_visible_from_m": 2506,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "4-05",
+          "name": "Spoil Heap Snipers",
+          "xy": [
+            12400,
+            11600
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "High spoil heaps",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-06",
+          "name": "Pipeline Pumping Station",
+          "xy": [
+            9600,
+            12000
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Pipes fuel north to the moraine",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-07",
+          "name": "Tank Laager",
+          "xy": [
+            12800,
+            10000
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "CIS tanks",
+          "recon_visible_from_m": 1609,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "4-08",
+          "name": "Refinery Flare Stacks",
+          "xy": [
+            11000,
+            11300
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Tall stacks: pilots soften them",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-09",
+          "name": "Ruined Mining Town",
+          "xy": [
+            13600,
+            11200
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Town on the crater apron",
+          "recon_visible_from_m": 1607,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "4-10",
+          "name": "Cauldron AA Pits",
+          "xy": [
+            10200,
+            11600
+          ],
+          "size": "squad",
+          "kind": "AA",
+          "reason": "Covers the crater",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-11",
+          "name": "Gas Holder",
+          "xy": [
+            8800,
+            10600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Feeds the refinery",
+          "recon_visible_from_m": 1000,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 5,
+      "name": "Third Line",
+      "start": [
+        10500,
+        10500
+      ],
+      "objectives": [
+        {
+          "id": "5-01",
+          "name": "Third Belt West",
+          "xy": [
+            6400,
+            13400
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Last trench line, west half",
+          "recon_visible_from_m": 2503,
+          "interior": false,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-02",
+          "name": "Third Belt East",
+          "xy": [
+            13000,
+            13200
+          ],
+          "size": "platoon",
+          "kind": "outpost",
+          "reason": "Last trench line, east half",
+          "recon_visible_from_m": 2505,
+          "interior": false,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-03",
+          "name": "Command Dugout",
+          "xy": [
+            9600,
+            13600
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Deep dugout shell with map rooms",
+          "recon_visible_from_m": 2504,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-04",
+          "name": "Rail Junction",
+          "xy": [
+            11400,
+            13000
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rail into the moraine",
+          "recon_visible_from_m": 1606,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "5-05",
+          "name": "Mud Fort",
+          "xy": [
+            8000,
+            12600
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Earth fort",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-06",
+          "name": "Bog Bridge",
+          "xy": [
+            14400,
+            12400
+          ],
+          "size": "squad",
+          "kind": "bridge",
+          "reason": "Vehicle bridge on the east",
+          "recon_visible_from_m": 906,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "5-07",
+          "name": "Field Gun Battery",
+          "xy": [
+            9000,
+            14400
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns are targets only",
+          "recon_visible_from_m": 1614,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-08",
+          "name": "Droid Reserve Camp",
+          "xy": [
+            12000,
+            14400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Reserve for counterattacks",
+          "recon_visible_from_m": 1606,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-09",
+          "name": "Signal Tower North",
+          "xy": [
+            7200,
+            14600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel for op 6",
+          "recon_visible_from_m": 966,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-10",
+          "name": "Wrecked Walker Strongpoint",
+          "xy": [
+            10600,
+            12400
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Dead walker as a bunker",
+          "recon_visible_from_m": 902,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-11",
+          "name": "AA Belt",
+          "xy": [
+            14200,
+            14000
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the moraine approach",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        }
+      ]
+    },
+    {
+      "op": 6,
+      "name": "Moraine Citadel",
+      "start": [
+        9600,
+        13600
+      ],
+      "objectives": [
+        {
+          "id": "6-01",
+          "name": "Moraine Citadel",
+          "xy": [
+            8400,
+            15400
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "CIS HQ built into the moraine",
+          "recon_visible_from_m": 3217,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-02",
+          "name": "Citadel Gate Wall",
+          "xy": [
+            8000,
+            14900
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Wall and gate (starts closed)",
+          "recon_visible_from_m": 2233,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "6-03",
+          "name": "Hangar Bunkers",
+          "xy": [
+            10600,
+            15300
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Gunship bunkers",
+          "recon_visible_from_m": 2233,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-04",
+          "name": "Moraine Battery",
+          "xy": [
+            6400,
+            15300
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns on the moraine",
+          "recon_visible_from_m": 1765,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-05",
+          "name": "Moraine Gallery Maze",
+          "xy": [
+            9400,
+            15600
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Maze between the halls",
+          "recon_visible_from_m": 2707,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-06",
+          "name": "Supply Railhead",
+          "xy": [
+            12000,
+            15200
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rail end",
+          "recon_visible_from_m": 1664,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "6-07",
+          "name": "Comms Mast",
+          "xy": [
+            7200,
+            15700
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Calls the fleet",
+          "recon_visible_from_m": 1160,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "6-08",
+          "name": "Fuel Tanks",
+          "xy": [
+            13400,
+            15400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften them",
+          "recon_visible_from_m": 1660,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-09",
+          "name": "Water Tower Snipers",
+          "xy": [
+            5200,
+            15200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Overwatch",
+          "recon_visible_from_m": 1004,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "6-10",
+          "name": "Prisoner Pens",
+          "xy": [
+            11200,
+            14800
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rescue clones",
+          "recon_visible_from_m": 1626,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-11",
+          "name": "Orbital Uplink Dish",
+          "xy": [
+            14600,
+            15600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Air-only kill",
+          "recon_visible_from_m": 1104,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        }
+      ]
+    }
+  ],
+  "measured_or_assumed": "ASSUMED: positions hand-placed on the sketch, then snapped to the nearest sketch land cell unless the site sits on water; recon distances, garrison counts and ways-in are ASSUMED rules of thumb (see tools/make_all.py)"
+}

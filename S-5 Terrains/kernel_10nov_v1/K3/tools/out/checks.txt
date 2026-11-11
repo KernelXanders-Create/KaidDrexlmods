@@ -1,0 +1,41 @@
+K3 checks (MEASURED by tools/make_k3.py on the sketch data)
+Per op: 1 final, mains + supporting >= 12, 12-16 supporting, all three sizes, 1-2 air-prep, <= 2 air-only,
+a platoon site before the final, planned garrison <= 1,200 if all filled at once (S 25 / 2S 50 / P 110 ASSUMED).
+Per map: 8 ops, 4-6 draws, 1-2 new-build centerpieces, exactly 1 capstone, 2-3 tunnel sites.
+
+Concept A The Mire Line:
+  op1 Over the Wire: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 770 -> PASS
+  op2 The Old Listening Post: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op3 The Peat-Gas Fields: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 770 -> PASS
+  op4 The Drain: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 855 -> PASS
+  op5 Esker Road: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op6 The Cauldron: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 830 -> PASS
+  op7 Moraine Foot: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 770 -> PASS
+  op8 The Moraine Citadel: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 770 -> PASS
+  map: ops 8, draws 6, new-build centerpieces 2, capstone interiors 1, tunnel sites 3 -> PASS
+  recon (terrain-only screening): draws/finals/mains seen from >=1 km on fewer than 6 of 24 bearings: none
+
+Concept B The Glow:
+  op1 Edge of the Grass: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 805 -> PASS
+  op2 Canal Road: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op3 Spore Ridge: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op4 The Felled Titan: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op5 East Hammocks: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op6 The Cenote Caves: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op7 North-west Groves: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op8 The Spore Citadel: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  map: ops 8, draws 6, new-build centerpieces 2, capstone interiors 1, tunnel sites 2 -> PASS
+  recon (terrain-only screening): draws/finals/mains seen from >=1 km on fewer than 6 of 24 bearings: none
+
+Concept C River Country:
+  op1 River Mouth: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 720 -> PASS
+  op2 The Oxbow: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op3 Rodian River City: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op4 South Bluff Quarry: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op5 The Weir: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op6 North Bluffs: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op7 Upper Bends: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  op8 Headwater Works: final 1, mains 4, supporting 12, sizes ['platoon', 'squad', 'two_squad'], air-prep 1, air-only 1, platoon before final True, planned garrison 745 -> PASS
+  map: ops 8, draws 6, new-build centerpieces 2, capstone interiors 1, tunnel sites 2 -> PASS
+  recon (terrain-only screening): draws/finals/mains seen from >=1 km on fewer than 6 of 24 bearings: none
+

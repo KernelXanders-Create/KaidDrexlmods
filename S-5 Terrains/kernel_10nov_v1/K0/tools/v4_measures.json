@@ -1,0 +1,189 @@
+{
+ "nearest_gap_m": {
+  "median": 0.72,
+  "p25": 0.46,
+  "p75": 1.39
+ },
+ "touching_lt1m_share_in_groups_of_3plus": 44.1,
+ "touching_groups_sizes": [
+  9,
+  9,
+  7,
+  4,
+  3,
+  3,
+  3,
+  3,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "door_square_to_street_deg": {
+  "median": 0.3,
+  "share_within_2deg": 92.9
+ },
+ "setback_from_ribbon_m": {
+  "median": 1.14,
+  "p90": 8.22,
+  "share_over_1m": 51.2
+ },
+ "street_wall_continuity_pct": {
+  "MS": [
+   "main",
+   308,
+   52
+  ],
+  "KR": [
+   "main",
+   272,
+   59
+  ],
+  "MR": [
+   "main",
+   256,
+   20
+  ],
+  "AR": [
+   "main",
+   194,
+   82
+  ],
+  "L3a": [
+   "lane",
+   51,
+   0
+  ],
+  "L3b": [
+   "lane",
+   60,
+   0
+  ],
+  "L2a": [
+   "lane",
+   49,
+   0
+  ],
+  "L2b": [
+   "lane",
+   56,
+   0
+  ],
+  "FKa": [
+   "main",
+   67,
+   0
+  ],
+  "FKb": [
+   "main",
+   50,
+   0
+  ],
+  "ARa": [
+   "lane",
+   66,
+   0
+  ],
+  "ARb": [
+   "lane",
+   83,
+   0
+  ],
+  "HR": [
+   "main",
+   470,
+   0
+  ]
+ },
+ "top_models": [
+  [
+   "ND01",
+   11,
+   11.8
+  ],
+  [
+   "SF01",
+   10,
+   10.8
+  ],
+  [
+   "ND02",
+   9,
+   9.7
+  ],
+  [
+   "WH01",
+   9,
+   9.7
+  ],
+  [
+   "WH02",
+   6,
+   6.5
+  ],
+  [
+   "WH03",
+   6,
+   6.5
+  ]
+ ],
+ "ND01_ND02_next_to_ND01_ND02": 0,
+ "families": {
+  "scifi": 22,
+  "naboo_dome": 30,
+  "industrial": 2,
+  "white_or_pale_house": 39
+ },
+ "square_area_m2": 1126,
+ "square_comp_cover_pct": 7.9,
+ "landmark_distance_to_square_m": 75.3,
+ "buildings_within_6m_of_square": 6,
+ "cut_or_fill_max_m": {
+  "median": 2.12,
+  "max": 3.38,
+  "share_over_2_5": 30.1
+ },
+ "distinct_pad_levels": 5,
+ "retaining_wall_total_m": 243,
+ "median_low_building_height_m": 5.8,
+ "parallel_main_street_spacing_m": {
+  "MS-KR": 98.6,
+  "KR-MR": 46.3,
+  "MS-AR": 71.3
+ },
+ "row_field": {
+  "landmark": 1,
+  "square_end_SE": 1,
+  "square_back": 3,
+  "MS_SE_up": 5,
+  "MS_SE_dn": 3,
+  "MS_fork_dn": 2,
+  "MS_NW_up": 7,
+  "MS_NW_dn": 7,
+  "KR_up": 7,
+  "MR_up": 4,
+  "MR_dn": 3,
+  "AR_dn": 8,
+  "AR_up": 13,
+  "KR_dn": 15,
+  "AR_back_up": 8,
+  "MS_SE_end": 1,
+  "quay": 5
+ },
+ "street_field": {
+  "AR": 30,
+  "SQ": 4,
+  "MS": 25,
+  "KR": 22,
+  "MR": 7,
+  "QY": 5
+ }
+}

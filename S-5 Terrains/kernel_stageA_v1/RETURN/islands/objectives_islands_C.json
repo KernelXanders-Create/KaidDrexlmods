@@ -1,0 +1,1124 @@
+{
+  "map": "islands",
+  "concept": "C",
+  "size_km": 16,
+  "ops": [
+    {
+      "op": 1,
+      "name": "East Motus",
+      "start": [
+        15400,
+        7000
+      ],
+      "objectives": [
+        {
+          "id": "1-01",
+          "name": "Motu Landing Line",
+          "xy": [
+            14300,
+            7400
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Beach and palm-root cover",
+          "recon_visible_from_m": 1619,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-02",
+          "name": "Palm Grove Bunkers",
+          "xy": [
+            14100,
+            8200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Flanks the landing",
+          "recon_visible_from_m": 922,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "1-03",
+          "name": "East Pass Battery",
+          "xy": [
+            14104,
+            6808
+          ],
+          "size": "platoon",
+          "kind": "battery",
+          "reason": "Closes the east pass to the Navy",
+          "recon_visible_from_m": 2504,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 421 m to sketch land"
+        },
+        {
+          "id": "1-04",
+          "name": "Desalination Plant",
+          "xy": [
+            14200,
+            7000
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Fresh water: the FOB needs it",
+          "recon_visible_from_m": 1618,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-05",
+          "name": "Pass Fort",
+          "xy": [
+            14200,
+            5800
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Fort on the reef beside the pass",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-06",
+          "name": "Resort Motu",
+          "xy": [
+            13400,
+            10300
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Sci-fi resort, now a droid billet",
+          "recon_visible_from_m": 1626,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "1-07",
+          "name": "South Motu AA",
+          "xy": [
+            13432,
+            4776
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Grounds air over the east ring",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 128 m to sketch land"
+        },
+        {
+          "id": "1-08",
+          "name": "Coral Block Tunnels",
+          "xy": [
+            13960,
+            9064
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in a coral-rubble berm",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 175 m to sketch land"
+        },
+        {
+          "id": "1-09",
+          "name": "Gunboat Mooring",
+          "xy": [
+            12800,
+            6600
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Gunboats would hit the landing",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-10",
+          "name": "Minefield Control",
+          "xy": [
+            14700,
+            5200
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Clears the mines in the pass",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "1-11",
+          "name": "Outer Sensor Platform",
+          "xy": [
+            15300,
+            9600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Blinds CIS to the fleet",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 2,
+      "name": "The Reef Walk",
+      "start": [
+        13608,
+        4824
+      ],
+      "objectives": [
+        {
+          "id": "2-01",
+          "name": "Reef Pillbox Belt",
+          "xy": [
+            11900,
+            3400
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Wading under fire, no hard cover but coral heads",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-02",
+          "name": "Tide Wreck Fort",
+          "xy": [
+            10000,
+            2400
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Old freighter on the reef",
+          "recon_visible_from_m": 1600,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-03",
+          "name": "Long Motu Village",
+          "xy": [
+            8000,
+            2000
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Biggest motu town; FOB for op 3",
+          "recon_visible_from_m": 2538,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "2-04",
+          "name": "South Pass Batteries",
+          "xy": [
+            9144,
+            2104
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Close the south pass",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 56 m to sketch land"
+        },
+        {
+          "id": "2-05",
+          "name": "Fish-farm Pens",
+          "xy": [
+            8800,
+            3300
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Feeds the garrison",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-06",
+          "name": "Motu Comms",
+          "xy": [
+            6952,
+            2232
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel on the lagoon towns",
+          "recon_visible_from_m": 903,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 390 m to sketch land"
+        },
+        {
+          "id": "2-07",
+          "name": "Coral Quarry Tunnels",
+          "xy": [
+            7400,
+            2200
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in quarry spoil",
+          "recon_visible_from_m": 1637,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "2-08",
+          "name": "SW Motu AA",
+          "xy": [
+            4900,
+            2800
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the south lagoon",
+          "recon_visible_from_m": 1629,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-09",
+          "name": "Hover-tank Park",
+          "xy": [
+            11100,
+            2800
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Hovers would counterattack along the flat",
+          "recon_visible_from_m": 1639,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "2-10",
+          "name": "Reef Pumping Station",
+          "xy": [
+            5800,
+            2400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Powers the south motus",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "2-11",
+          "name": "Drift Mine Tender",
+          "xy": [
+            8000,
+            800
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Lays mines in the passes",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 3,
+      "name": "Lagoon Stilts",
+      "start": [
+        8000,
+        2200
+      ],
+      "objectives": [
+        {
+          "id": "3-01",
+          "name": "South Stilt Town",
+          "xy": [
+            8400,
+            5400
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Big stilt town on a patch reef",
+          "recon_visible_from_m": 2500,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-02",
+          "name": "Stilt Market Ring",
+          "xy": [
+            6600,
+            6200
+          ],
+          "size": "two_squad",
+          "kind": "town",
+          "reason": "Ring of decks around a market",
+          "recon_visible_from_m": 1600,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-03",
+          "name": "Patch Reef Gun Platform",
+          "xy": [
+            9800,
+            6000
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Guns reach the makatea landing",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-04",
+          "name": "Hover Pier",
+          "xy": [
+            7400,
+            7000
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Droid hovers; take it to free the lagoon",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-05",
+          "name": "Coral Garden Pillboxes",
+          "xy": [
+            10400,
+            7400
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Pillboxes on a patch reef",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-06",
+          "name": "Kelp Processing Barge",
+          "xy": [
+            5800,
+            5000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fuel for the hover pier",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-07",
+          "name": "Water Tower Comms",
+          "xy": [
+            9000,
+            6600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Intel on the hull",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-08",
+          "name": "Habitat Dome Corridors",
+          "xy": [
+            6400,
+            7600
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Half-flooded dome: corridors open into halls",
+          "recon_visible_from_m": 1600,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "3-09",
+          "name": "Lagoon AA Barge",
+          "xy": [
+            8000,
+            8400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the AA barge",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-10",
+          "name": "Hull Watch Buoys",
+          "xy": [
+            9600,
+            8600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Spots for the hull guns",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "3-11",
+          "name": "Stilt Clinic",
+          "xy": [
+            7700,
+            4600
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Rescue Republic prisoners; they carry intel",
+          "recon_visible_from_m": 1600,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 4,
+      "name": "West Ring",
+      "start": [
+        8200,
+        5400
+      ],
+      "objectives": [
+        {
+          "id": "4-01",
+          "name": "West Motu Airstrip",
+          "xy": [
+            2000,
+            7800
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "CIS air base; take it and air arrives faster",
+          "recon_visible_from_m": 3026,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "4-02",
+          "name": "Hangar Revetments",
+          "xy": [
+            2040,
+            8760
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Revetments as cover",
+          "recon_visible_from_m": 1604,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 226 m to sketch land"
+        },
+        {
+          "id": "4-03",
+          "name": "West Pass AA North",
+          "xy": [
+            2392,
+            10072
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the makatea approach",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 345 m to sketch land"
+        },
+        {
+          "id": "4-04",
+          "name": "West Pass AA South",
+          "xy": [
+            2408,
+            5128
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the lagoon",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 72 m to sketch land"
+        },
+        {
+          "id": "4-05",
+          "name": "Fuel Bladders",
+          "xy": [
+            1800,
+            7000
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Fighters stay grounded without it",
+          "recon_visible_from_m": 924,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-06",
+          "name": "Radar Dome",
+          "xy": [
+            1900,
+            9300
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Cues all CIS AA",
+          "recon_visible_from_m": 907,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "4-07",
+          "name": "Coral-berm Tunnels",
+          "xy": [
+            1976,
+            6408
+          ],
+          "size": "two_squad",
+          "kind": "tunnel",
+          "reason": "Shells in a storm berm",
+          "recon_visible_from_m": 1603,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground); snapped 164 m to sketch land"
+        },
+        {
+          "id": "4-08",
+          "name": "Lagoon Ferry Dock",
+          "xy": [
+            3000,
+            7600
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Ferry to makatea",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-09",
+          "name": "Droid Fighter Line",
+          "xy": [
+            2088,
+            8024
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the flight line",
+          "recon_visible_from_m": 1603,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 225 m to sketch land"
+        },
+        {
+          "id": "4-10",
+          "name": "Pass Boom Fort",
+          "xy": [
+            1900,
+            4400
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Boom closes the west pass",
+          "recon_visible_from_m": 1600,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "4-11",
+          "name": "Weather Station Spire",
+          "xy": [
+            3200,
+            12600
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "CIS forecasts for their boats",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        }
+      ]
+    },
+    {
+      "op": 5,
+      "name": "Makatea Cliffs",
+      "start": [
+        2264,
+        9080
+      ],
+      "objectives": [
+        {
+          "id": "5-01",
+          "name": "West Cliff Notch Wall",
+          "xy": [
+            3736,
+            10376
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Wall plugs the only west notch",
+          "recon_visible_from_m": 3006,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); snapped 43 m to sketch land"
+        },
+        {
+          "id": "5-02",
+          "name": "South Landing Stair",
+          "xy": [
+            6000,
+            8900
+          ],
+          "size": "two_squad",
+          "kind": "outpost",
+          "reason": "Stair up the south cliff",
+          "recon_visible_from_m": 1768,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-03",
+          "name": "Cliff Gun Galleries",
+          "xy": [
+            4400,
+            11600
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Galleries cover the west water",
+          "recon_visible_from_m": 1957,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-04",
+          "name": "Phosphate Railhead",
+          "xy": [
+            5600,
+            9600
+          ],
+          "size": "two_squad",
+          "kind": "other",
+          "reason": "Ore railway; vehicle way onto the plateau",
+          "recon_visible_from_m": 1826,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); vehicle objective: needs a clear AI lane"
+        },
+        {
+          "id": "5-05",
+          "name": "Pinnacle Maze",
+          "xy": [
+            5400,
+            10800
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Mined coral pinnacles plus shells: a maze",
+          "recon_visible_from_m": 2766,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "5-06",
+          "name": "Miners' Town",
+          "xy": [
+            6600,
+            10200
+          ],
+          "size": "platoon",
+          "kind": "town",
+          "reason": "Sci-fi mining town; FOB for op 6",
+          "recon_visible_from_m": 2732,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "5-07",
+          "name": "Plateau AA",
+          "xy": [
+            7300,
+            11600
+          ],
+          "size": "two_squad",
+          "kind": "AA",
+          "reason": "Covers the hull from the air",
+          "recon_visible_from_m": 1871,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-08",
+          "name": "Conveyor Pier",
+          "xy": [
+            8400,
+            9400
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Loads ore into the hull",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "5-09",
+          "name": "Ore Crusher Plant",
+          "xy": [
+            6400,
+            11400
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Tall plant; pilots soften it",
+          "recon_visible_from_m": 1846,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "5-10",
+          "name": "North Cliff Lookout",
+          "xy": [
+            6200,
+            12200
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Sees the north side of the hull",
+          "recon_visible_from_m": 1142,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED)"
+        },
+        {
+          "id": "5-11",
+          "name": "Hull Antenna Mast",
+          "xy": [
+            9624,
+            11480
+          ],
+          "size": "squad",
+          "kind": "air_only",
+          "reason": "Links the hull to the CIS fleet",
+          "recon_visible_from_m": 911,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 253 m to sketch land"
+        }
+      ]
+    },
+    {
+      "op": 6,
+      "name": "The Ship on the Reef",
+      "start": [
+        6600,
+        10200
+      ],
+      "objectives": [
+        {
+          "id": "6-01",
+          "name": "Bow Gate",
+          "xy": [
+            8400,
+            10600
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Gate in the bow, on the makatea (starts closed)",
+          "recon_visible_from_m": 3336,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED)"
+        },
+        {
+          "id": "6-02",
+          "name": "Keel Hangar",
+          "xy": [
+            9300,
+            11100
+          ],
+          "size": "platoon",
+          "kind": "facility",
+          "reason": "Big hangar hall in the hull",
+          "recon_visible_from_m": 3336,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 5,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-03",
+          "name": "Midships Foundry Deck",
+          "xy": [
+            9800,
+            11400
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "The droid foundry: the run's end goal",
+          "recon_visible_from_m": 2436,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-04",
+          "name": "Stern Reactor Hall",
+          "xy": [
+            10300,
+            11700
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Kills foundry power",
+          "recon_visible_from_m": 2436,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-05",
+          "name": "Hull Breach Tunnels",
+          "xy": [
+            8900,
+            10900
+          ],
+          "size": "platoon",
+          "kind": "tunnel",
+          "reason": "Tight decks opening into halls",
+          "recon_visible_from_m": 2836,
+          "interior": true,
+          "tunnels": true,
+          "ways_in": 4,
+          "notes": "garrison points ~15-30 (ASSUMED); tunnels are above-ground shells hidden in rock or berm (04: no underground)"
+        },
+        {
+          "id": "6-06",
+          "name": "Spine Turret Row",
+          "xy": [
+            9500,
+            11400
+          ],
+          "size": "two_squad",
+          "kind": "battery",
+          "reason": "Hull turrets cover the lagoon",
+          "recon_visible_from_m": 1629,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-07",
+          "name": "Debris Field Pillboxes",
+          "xy": [
+            9000,
+            10300
+          ],
+          "size": "squad",
+          "kind": "outpost",
+          "reason": "Wading through wreckage",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-08",
+          "name": "Salvage Cranes",
+          "xy": [
+            10600,
+            11300
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Crane decks on the reef",
+          "recon_visible_from_m": 900,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); on water: decks/stilts/piers must be NORMAL objects, not simple (04)"
+        },
+        {
+          "id": "6-09",
+          "name": "Hull AA Blisters",
+          "xy": [
+            10008,
+            11704
+          ],
+          "size": "two_squad",
+          "kind": "air_prep",
+          "reason": "Pilots soften the blisters",
+          "recon_visible_from_m": 1617,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED); snapped 224 m to sketch land"
+        },
+        {
+          "id": "6-10",
+          "name": "Command Bridge Tower",
+          "xy": [
+            8600,
+            10900
+          ],
+          "size": "two_squad",
+          "kind": "facility",
+          "reason": "Command and intel, high in the bow",
+          "recon_visible_from_m": 2137,
+          "interior": true,
+          "tunnels": false,
+          "ways_in": 3,
+          "notes": "garrison points ~8-15 (ASSUMED)"
+        },
+        {
+          "id": "6-11",
+          "name": "Escape Pod Bay",
+          "xy": [
+            10584,
+            11800
+          ],
+          "size": "squad",
+          "kind": "other",
+          "reason": "Stops CIS officers escaping",
+          "recon_visible_from_m": 905,
+          "interior": false,
+          "tunnels": false,
+          "ways_in": 2,
+          "notes": "garrison points ~4-8 (ASSUMED); snapped 238 m to sketch land"
+        }
+      ]
+    }
+  ],
+  "measured_or_assumed": "ASSUMED: positions hand-placed on the sketch, then snapped to the nearest sketch land cell unless the site sits on water; recon distances, garrison counts and ways-in are ASSUMED rules of thumb (see tools/make_all.py)"
+}

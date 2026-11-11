@@ -1,0 +1,381 @@
+{
+ "pad_cut_fill_m": {
+  "median": 1.7,
+  "max": 2.88,
+  "n_over_2_5": 1,
+  "n_over_4": 0,
+  "near_limit": [
+   "B001"
+  ]
+ },
+ "grid_points_claimed_by_two_levels": 0,
+ "different_level_pairs_closer_than_required": 0,
+ "closest_different_level_pair_m": 16.13,
+ "overlaps": {
+  "building_pairs": 0,
+  "building_vs_street": 0
+ },
+ "corner_houses_within_2m_of_a_cross_street": 0,
+ "straight_runs_m": {
+  "M": 71.7,
+  "U": 77.6,
+  "U2": 71.8,
+  "CT1": 50.0,
+  "CT2": 32.9,
+  "KW": 53.4,
+  "KE": 77.4,
+  "CU1": 36.5,
+  "CM1": 39.2,
+  "CU2": 38.6,
+  "CM2": 42.4,
+  "CU3": 34.9,
+  "CM3": 19.6,
+  "CU4": 36.2,
+  "CM4": 36.2,
+  "HL": 44.7,
+  "HR": 213.7
+ },
+ "model_share": {
+  "largest_model": [
+   "ND03",
+   9.2
+  ],
+  "largest_twin_group": [
+   "WH11+WH24",
+   10.2
+  ],
+  "WH11_plus_WH24_pct": 10.2,
+  "distinct_models": 28
+ },
+ "door_check": {
+  "ok": 98,
+  "fail": 0,
+  "fail_ids": [],
+  "door_level_off_street_over_0_75m": []
+ },
+ "street_grades": {
+  "M": {
+   "cls": "main",
+   "width_m": 8.0,
+   "length_m": 312,
+   "segments": 5,
+   "max_grade_pct": 12.0,
+   "average_grade_pct": 3.0,
+   "max_cut_m": 0.82,
+   "max_fill_m": 1.51
+  },
+  "U": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 311,
+   "segments": 4,
+   "max_grade_pct": 19.0,
+   "average_grade_pct": 2.3,
+   "max_cut_m": 0.98,
+   "max_fill_m": 1.72
+  },
+  "U2": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 216,
+   "segments": 3,
+   "max_grade_pct": 14.1,
+   "average_grade_pct": 1.6,
+   "max_cut_m": 1.14,
+   "max_fill_m": 1.34
+  },
+  "CT1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 50,
+   "segments": 2,
+   "max_grade_pct": 9.1,
+   "average_grade_pct": 8.0,
+   "max_cut_m": 0.63,
+   "max_fill_m": -0.29
+  },
+  "CT2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 51,
+   "segments": 2,
+   "max_grade_pct": 9.2,
+   "average_grade_pct": 8.2,
+   "max_cut_m": -0.2,
+   "max_fill_m": 0.75
+  },
+  "KW": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 91,
+   "segments": 2,
+   "max_grade_pct": 7.8,
+   "average_grade_pct": 1.4,
+   "max_cut_m": 0.66,
+   "max_fill_m": 0.33
+  },
+  "KE": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 135,
+   "segments": 2,
+   "max_grade_pct": 19.0,
+   "average_grade_pct": 4.1,
+   "max_cut_m": 1.3,
+   "max_fill_m": 2.57
+  },
+  "CU1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 44,
+   "segments": 2,
+   "max_grade_pct": 10.9,
+   "average_grade_pct": 9.4,
+   "max_cut_m": -0.06,
+   "max_fill_m": 0.43
+  },
+  "CM1": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 47,
+   "segments": 2,
+   "max_grade_pct": 14.4,
+   "average_grade_pct": 12.6,
+   "max_cut_m": 0.69,
+   "max_fill_m": 0.69
+  },
+  "CU2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48,
+   "segments": 2,
+   "max_grade_pct": 11.8,
+   "average_grade_pct": 10.3,
+   "max_cut_m": 0.63,
+   "max_fill_m": -0.09
+  },
+  "CM2": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48,
+   "segments": 2,
+   "max_grade_pct": 12.7,
+   "average_grade_pct": 11.1,
+   "max_cut_m": 0.13,
+   "max_fill_m": 0.29
+  },
+  "CU3": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 47,
+   "segments": 2,
+   "max_grade_pct": 10.8,
+   "average_grade_pct": 9.4,
+   "max_cut_m": -0.41,
+   "max_fill_m": 0.96
+  },
+  "CM3": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 56,
+   "segments": 2,
+   "max_grade_pct": 16.7,
+   "average_grade_pct": 14.9,
+   "max_cut_m": 1.41,
+   "max_fill_m": 1.13
+  },
+  "CU4": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 48,
+   "segments": 2,
+   "max_grade_pct": 11.2,
+   "average_grade_pct": 9.8,
+   "max_cut_m": 0.24,
+   "max_fill_m": 0.72
+  },
+  "CM4": {
+   "cls": "lane",
+   "width_m": 4.5,
+   "length_m": 46,
+   "segments": 2,
+   "max_grade_pct": 15.7,
+   "average_grade_pct": 13.7,
+   "max_cut_m": -0.72,
+   "max_fill_m": 1.13
+  },
+  "HL": {
+   "cls": "lane",
+   "width_m": 5.0,
+   "length_m": 55,
+   "segments": 2,
+   "max_grade_pct": 10.0,
+   "average_grade_pct": 8.9,
+   "max_cut_m": 0.39,
+   "max_fill_m": 0.31
+  },
+  "HR": {
+   "cls": "path",
+   "width_m": 7.0,
+   "length_m": 469,
+   "segments": 1,
+   "max_grade_pct": 30.8,
+   "average_grade_pct": 9.7,
+   "max_cut_m": 0.0,
+   "max_fill_m": 0.0
+  }
+ },
+ "lane_end_level_mismatch_m": [
+  [
+   "CT1",
+   "start",
+   "U2",
+   0.0
+  ],
+  [
+   "CT1",
+   "end",
+   "U",
+   0.0
+  ],
+  [
+   "CT2",
+   "start",
+   "U2",
+   0.0
+  ],
+  [
+   "CT2",
+   "end",
+   "U",
+   0.0
+  ],
+  [
+   "CU1",
+   "start",
+   "U",
+   0.0
+  ],
+  [
+   "CU1",
+   "end",
+   "M",
+   0.0
+  ],
+  [
+   "CM1",
+   "start",
+   "M",
+   0.0
+  ],
+  [
+   "CM1",
+   "end",
+   "KW",
+   0.0
+  ],
+  [
+   "CU2",
+   "start",
+   "U",
+   0.0
+  ],
+  [
+   "CU2",
+   "end",
+   "M",
+   0.0
+  ],
+  [
+   "CM2",
+   "start",
+   "M",
+   0.0
+  ],
+  [
+   "CM2",
+   "end",
+   "KW",
+   0.0
+  ],
+  [
+   "CU3",
+   "start",
+   "U",
+   0.0
+  ],
+  [
+   "CU3",
+   "end",
+   "M",
+   0.0
+  ],
+  [
+   "CM3",
+   "start",
+   "M",
+   0.0
+  ],
+  [
+   "CM3",
+   "end",
+   "KE",
+   0.0
+  ],
+  [
+   "CU4",
+   "start",
+   "U",
+   0.0
+  ],
+  [
+   "CU4",
+   "end",
+   "M",
+   0.0
+  ],
+  [
+   "CM4",
+   "start",
+   "M",
+   0.0
+  ],
+  [
+   "CM4",
+   "end",
+   "KE",
+   0.0
+  ],
+  [
+   "HL",
+   "start",
+   "KW",
+   0.0
+  ]
+ ],
+ "counts": {
+  "buildings": 98,
+  "enterable": 66,
+  "garrison": 52,
+  "pad_levels": 17,
+  "tall": [
+   [
+    "B001",
+    "ND07",
+    "landmark"
+   ]
+  ],
+  "by_role": {
+   "landmark": 1,
+   "main": 24,
+   "lane": 69,
+   "quay": 4
+  },
+  "families": {
+   "naboo_dome": 26,
+   "scifi": 5,
+   "white_or_pale_house": 63,
+   "industrial": 4
+  }
+ }
+}
