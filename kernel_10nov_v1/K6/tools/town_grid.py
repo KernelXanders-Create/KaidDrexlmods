@@ -167,6 +167,7 @@ class Town:
                     lv = round(float(np.mean(vals)) * 4) / 4
                     if prev is None or abs(lv - prev[1]) / g_drop <= s - prev[0] + 0.01: break
                     s = prev[0] + abs(lv - prev[1]) / g_drop
+                    if s >= L - 8: break
                 if s >= L - 8: break
                 cuts.append([s, e]); prev = (e, lv); s = e + gap
         lev = [round(band_level(a, b) * 4) / 4 for a, b in cuts]
