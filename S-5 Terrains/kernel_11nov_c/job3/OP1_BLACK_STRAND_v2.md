@@ -65,7 +65,7 @@ Supporting sites pay off if you take them:
 
 ## History
 - This is the opener: no op ran before it on this map (purpose map: "History drawn: none").
-- **Opening line** (read at the start; replaces your "optional" line) †: "Black Strand holds the only harbour on this side of the caldera. Take Perys and the Republic has a foothold; leave it, and every landing this month starts from the ships."
+- **Opening line** (read at the start; replaces your draft's opening line) †: "Perys is the only harbour on Black Strand. Take it and the Republic has a foothold; leave it, and every landing this month starts from the ships."
 
 ## Results Zeus records for op 2's history
 - Perys taken: yes / no.
