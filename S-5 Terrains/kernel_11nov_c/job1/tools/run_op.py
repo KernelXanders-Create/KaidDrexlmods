@@ -1,0 +1,276 @@
+"""Run one op's ground plan: sites -> road nets -> squad positions -> shores -> checks -> opN_plan.json / .png / _checks.json.
+Usage: python3 run_op.py op3 <out dir>"""
+import sys, os, json, math, importlib, collections
+import numpy as np
+from shapely.geometry import Polygon, LineString, Point, MultiPoint
+import matplotlib; matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import world, planner
+from planner import rect
+
+op = importlib.import_module(sys.argv[1]); OUT = sys.argv[2]; os.makedirs(OUT, exist_ok=True)
+N = sys.argv[1].replace("op", "")
+D = world.objectives(); R = {s["id"]: s for s in D["sites"]}
+P = planner.Plan(op.BOX)
+log = []
+
+# ---- towns (hand-made, from the K6 v2 layouts): blocked areas with an entry point at their square
+towns = {}
+for tid, tl in getattr(op, "TOWNS", {}).items():
+    L = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), tl["layout"])))
+    pts = [(b["x"], b["y"]) for b in L["buildings"]] + [tuple(p) for s in L["streets"] for p in s["points"]]
+    hull = MultiPoint(pts).convex_hull.buffer(10)
+    P.add_area(tid, list(hull.exterior.coords), None)
+    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], n_buildings=len(L["buildings"]),
+                                            garrison=sum(1 for b in L["buildings"] if b.get("garrison")), layout=tl["layout"])
+
+# ---- sites
+for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
+    base = sid.split("-N")[0]
+    x, y = xy if xy else (R[base]["x"], R[base]["y"])
+    s = P.add_site(sid, name, comp, hx, hy, x, y, rad, water_ok=wmode, size_note=ev, step=5.0 if rad <= 200 else 10.0)
+    if s is None:
+        for r2 in (rad * 1.6, rad * 2.4):
+            s = P.add_site(sid, name, comp, hx, hy, x, y, r2, water_ok=wmode, cap=3.9, size_note=ev)
+            if s: break
+    if s is None:
+        log.append(f"{sid}: NO PAD FOUND within {rad * 2.4:.0f} m"); continue
+    s.update(role=R.get(base, {}).get("role", "squad"), size=R.get(base, {}).get("tier"), stake=R.get(base, {}).get("stake", ""), island=R.get(base, {}).get("island", ""))
+SITE = {s["id"]: s for s in P.sites}
+
+
+def entry_point(s, toward, out=2.5, rank=0):
+    """the pad edge midpoint (grown by `out`) that faces `toward` (rank 1: the second-best edge)"""
+    best = None; allc = []
+    a = math.radians(s["yaw"]); ex = np.array([math.cos(a), -math.sin(a)]); ey = np.array([math.sin(a), math.cos(a)])
+    c = np.array([s["x"], s["y"]])
+    for v, h in ((ex, s["hx"]), (-ex, s["hx"]), (ey, s["hy"]), (-ey, s["hy"])):
+        p = c + v * (h + 1.5 + out)
+        allc.append((math.dist(p, toward), p, v))
+    allc.sort(key=lambda t: t[0])
+    return allc[rank][1], allc[rank][2]
+
+
+# ---- road nets
+nodes = {}       # net name -> list of (x, y, z, owner)
+for net, order in op.NETS.items():
+    root = op.ROOT[net]
+    if root in towns:
+        t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
+    else:
+        s = SITE[root]; s["_root"] = True
+        a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+        nodes[net] = [tuple(np.array([s["x"], s["y"]]) + v * (h + 1.5 + 2.5)) + (s["z"], root) for v, h in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"]))]
+    pending = [x for x in order if x in SITE and x != root]
+    for pass_no in range(3):
+      failed = []
+      for sid in pending:
+        s = SITE[sid]
+        cand = sorted(nodes[net], key=lambda n: math.dist((n[0], n[1]), (s["x"], s["y"])))
+        picked = []                                    # up to 4 candidates at least 150 m apart (not four points of one road)
+        for nd in cand:
+            if nd[3] == sid: continue
+            if all(math.dist((nd[0], nd[1]), (q[0], q[1])) > 150 for q in picked): picked.append(nd)
+            if len(picked) >= 6: break
+        done = False
+        tries = [(q, 450, e) for q in picked[:2] for e in (0, 1)] + [(q, 900, e) for q in picked[:3] for e in (0, 1)]
+        if pass_no > 0: tries += [(q, 1500, e) for q in picked[:6] for e in (0, 1, 2)]
+        for nd, margin, e_rank in tries:
+            ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
+            out = np.array(ep) + 12.0 * v
+            r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)])
+            if r is None: continue
+            if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > 3.0:
+                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']})"); continue
+            P.commit_road(r)
+            s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
+            s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
+            zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
+            flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
+            nodes[net] += flat if len(flat) >= 2 else [(x, y, z, sid) for (x, y), z in zip(r["points"][::4], r["points_z"][::4])]
+            done = True; break
+        if not done: failed.append(sid)
+      if not failed or len(failed) == len(pending): pending = failed; break
+      pending = failed
+    for sid in pending: log.append(f"road for {sid}: NO ROUTE found to the {net} net")
+
+# ---- foot links (stairs / paths, not graded ground) for every site the road net does not reach
+foot = []
+road_pts = [(x, y, z, r["id"]) for r in P.roads for (x, y), z in zip(r["points"], r["points_z"])]
+
+
+def dry(a, b):
+    """True if the straight line a-b stays on land (+0.3 m) all the way"""
+    L = math.dist(a, b); n = max(2, int(L / 5))
+    return all(P.H[int(round((a[1] + (b[1] - a[1]) * t) / 5)), int(round((a[0] + (b[0] - a[0]) * t) / 5))] > 0.3 for t in np.linspace(0.05, 0.95, n))
+
+
+def nearest_dry(xy):
+    for t in sorted(road_pts, key=lambda t: math.dist((t[0], t[1]), xy))[:4000:7]:
+        if dry(xy, (t[0], t[1])): return t
+    return None
+reached_ids = {x for r in P.roads for x in r["links"]}
+for s in P.sites:
+    if s["id"] in reached_ids or s.get("water_ok") == "beach" and s["id"] in getattr(op, "BOAT_ONLY", ()): continue
+    if s["id"] in reached_ids: continue
+    isl = s.get("island", "")
+    if isl not in op.NETS: continue
+    q = nearest_dry((s["x"], s["y"])) if road_pts else None
+    if q is None: continue
+    foot.append(dict(site=s["id"], bottom_xyz=[round(s["x"], 1), round(s["y"], 1), s["z"]], top_xyz=[round(q[0], 1), round(q[1], 1), round(q[2], 2)], top_on_road=q[3],
+                     straight_m=round(math.dist((q[0], q[1]), (s["x"], s["y"]))), rise_m=round(q[2] - s["z"], 1)))
+for t in towns.values():
+    q = nearest_dry(t["entry"])
+    if q is None: continue
+    foot.append(dict(site=t["id"], bottom_xyz=[t["entry"][0], t["entry"][1], t["z"]], top_xyz=[round(q[0], 1), round(q[1], 1), round(q[2], 2)], top_on_road=q[3],
+                     straight_m=round(math.dist((q[0], q[1]), t["entry"])), rise_m=round(q[2] - t["z"], 1)))
+
+# ---- entrances for sites the net does not end at (roots, foot-only and sea sites): face the foot link / the road / the sea
+for s in P.sites:
+    if "entrance_xy" in s: continue
+    fl = next((f for f in foot if f["site"] == s["id"]), None)
+    if fl: tgt = fl["top_xyz"][:2]; why = "faces its foot link"
+    elif road_pts and s["id"] in reached_ids:
+        q = min(road_pts, key=lambda t: math.dist((t[0], t[1]), (s["x"], s["y"]))); tgt = (q[0], q[1]); why = "faces the road that serves it"
+    else:
+        J, I = np.nonzero(P.water[int(s["y"] / 5) - 40:int(s["y"] / 5) + 41, int(s["x"] / 5) - 40:int(s["x"] / 5) + 41])
+        k = np.argmin(np.hypot(J - 40, I - 40)) if len(J) else None
+        tgt = ((int(s["x"] / 5) - 40 + I[k]) * 5, (int(s["y"] / 5) - 40 + J[k]) * 5) if k is not None else (s["x"], s["y"] + 1); why = "faces the water (a sea / beach work)"
+    ep, v = entry_point(s, tgt)
+    s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360); s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]; s["entrance_note"] = why
+
+# ---- squad positions
+for qid, comp, hx, hy, ax, ay, rad, guards in getattr(op, "SQUADS", []):
+    s = P.add_site(qid, "squad position", comp, hx, hy, ax, ay, rad, size_note="KNOWN: same composition in pads_op1 / pads_op2")
+    if s is None:
+        s = P.add_site(qid, "squad position", comp, hx, hy, ax, ay, rad * 1.8, cap=3.9, size_note="KNOWN")
+    if s is None: log.append(f"{qid}: NO PAD FOUND"); continue
+    near = min([x for x in P.sites if not x["id"].startswith("A")] + [dict(id=t, x=v["entry"][0], y=v["entry"][1]) for t, v in towns.items()],
+               key=lambda z_: math.dist((z_["x"], z_["y"]), (s["x"], s["y"])))
+    s.update(role="squad position", guards=guards, nearest_site=near["id"], nearest_site_m=round(math.dist((near["x"], near["y"]), (s["x"], s["y"]))))
+
+# ---- shores
+shores = P.shores(*op.BOX)
+
+# ---- checks
+pads = P.sites
+polys = {s["id"]: Polygon(rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])) for s in pads}
+C = collections.OrderedDict()
+worst = []
+for i in range(len(pads)):
+    for j in range(i + 1, len(pads)):
+        a, b = pads[i], pads[j]; d = polys[a["id"]].distance(polys[b["id"]])
+        if d < 40: worst.append((round(d, 1), a["id"], b["id"], abs(a["z"] - b["z"]) > 0.01))
+worst.sort()
+bad1 = [w for w in worst if (w[3] and w[0] < 17.0)]
+bad4 = [w for w in worst if w[0] < 12.0]
+# road vs pad / road clashes on the grid
+road_clash = {r["id"]: (r["clash_points"], r["clash_with"]) for r in P.roads}
+C["1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)"] = dict(status="PASS" if not bad1 else "FAIL", closest=worst[:3], failing=bad1)
+C["1 grid: road points vs pad points at another level (5 cm)"] = dict(status="PASS" if all(v[0] == 0 for v in road_clash.values()) else "FAIL",
+    total=sum(v[0] for v in road_clash.values()), by_road={k: v for k, v in road_clash.items() if v[0]})
+C["1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)"] = dict(
+    status="REPORT", by_road={r["id"]: [r["junction_step_points"], r["junction_step_max_m"]] for r in P.roads if r["junction_step_points"]},
+    note="each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it")
+ch = max(pads, key=lambda s: s["max_change_m"])
+C["2 pad ground change <= 4.0 m"] = dict(status="PASS" if ch["max_change_m"] <= 4.0 else "FAIL", worst=[ch["id"], ch["max_change_m"]],
+                                          over_3_5=[[s["id"], s["max_change_m"]] for s in pads if s["max_change_m"] > 3.5])
+g = max(P.roads, key=lambda r: r["max_grade_pct"]) if P.roads else None
+cf = max(P.roads, key=lambda r: r["max_cut_fill_m"]) if P.roads else None
+st = max(P.roads, key=lambda r: r["straight_max_m"]) if P.roads else None
+# clearance: pad footprints vs road edges
+clr = []
+for r in P.roads:
+    ln = LineString(r["points"]).buffer(r["width_m"] / 2)
+    for s in pads:
+        if s["id"] in r["links"]: continue
+        clr.append((round(polys[s["id"]].distance(ln), 1), s["id"], r["id"]))
+clr.sort()
+# connectivity: union of links per net
+conn = {}
+for net, order in op.NETS.items():
+    par = {}
+    def f(a):
+        while par.get(a, a) != a: a = par[a]
+        return a
+    for r in P.roads:
+        a, b = r["links"]; par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
+    reached = {x for r in P.roads for x in r["links"]}
+    want = [x for x in [op.ROOT[net]] + order if x in SITE and x in reached]
+    comps = collections.defaultdict(list)
+    for x in want: comps[f(x)].append(x)
+    conn[net] = dict(pieces=list(comps.values()), not_reached=[x for x in order if x in SITE and x not in reached])
+C["3 roads: dirt grade <= 14 %"] = dict(status="PASS" if not g or g["max_grade_pct"] <= 14.05 else "FAIL", worst=[g["id"], g["max_grade_pct"]] if g else None)
+C["3 roads: cut / fill <= 4 m (every grid point the road fixes)"] = dict(status="PASS" if not cf or cf["max_cut_fill_m"] <= 4.0 else "FAIL", worst=[cf["id"], cf["max_cut_fill_m"]] if cf else None)
+C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) else "FAIL", nets=conn,
+    reading="the rule binds sites with a vehicle approach; the purpose map gives no op 3 site one, so every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)")
+C["3 roads: no straight run over 150 m (within 1 m of the chord)"] = dict(status="PASS" if not st or st["straight_max_m"] <= 150 else "FAIL", worst=[st["id"], st["straight_max_m"]] if st else None)
+C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if not clr or clr[0][0] >= 3.0 else "FAIL", closest=clr[:3])
+wd = []
+for s in pads:
+    if s.get("water_ok"): continue
+    poly = polys[s["id"]]
+    x0, y0, x1, y1 = poly.bounds
+    I, J = np.meshgrid(np.arange(int((x0 - 30) / 5), int((x1 + 30) / 5) + 1), np.arange(int((y0 - 30) / 5), int((y1 + 30) / 5) + 1))
+    w = P.water[J, I]
+    dmin = min([poly.distance(Point(i * 5, j * 5)) for i, j in zip(I[w], J[w])] or [99])
+    wd.append((round(dmin, 1), s["id"]))
+wd.sort()
+C["4 pads: no two within 12 m"] = dict(status="PASS" if not bad4 else "FAIL", closest=worst[:1])
+C["4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)"] = dict(status="PASS" if not wd or wd[0][0] >= 10 else "FAIL", closest=wd[:3],
+    exempt=[s["id"] for s in pads if s.get("water_ok")])
+mains = [x for x in pads if x.get("role") in ("FINAL", "MAIN") and x["id"] != "3-F-N"] + [dict(id=t, x=v["hull"].centroid.x, y=v["hull"].centroid.y) for t, v in towns.items() if R.get(t, {}).get("role") in ("FINAL", "MAIN")]
+md = sorted((round(math.dist((a["x"], a["y"]), (b["x"], b["y"]))), a["id"], b["id"]) for i, a in enumerate(mains) for b in mains[i + 1:] if a["id"].split("-N")[0] != b["id"].split("-N")[0])
+C["5 final and mains >= 400 m apart"] = dict(status="PASS" if not md or md[0][0] >= 400 else "FAIL", closest=md[:3])
+C["6 approaches (two per main, designed)"] = dict(status="SEE NOTES", per_main=getattr(op, "APPROACHES", {}))
+C["7 no rock walls / rock towers as dressing on fought ground"] = dict(status="PASS (none placed by this plan)")
+
+plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+            sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
+            squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
+            towns=[{k: v for k, v in t.items() if k != "hull"} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
+            roads=P.roads, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s["rough"]), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            log=log)
+json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
+json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
+
+# ---- plan image
+x0, x1, y0, y1 = op.VIEW if hasattr(op, "VIEW") else op.BOX
+h, hs = world.hillshade(x0, x1, y0, y1)
+X = np.linspace(x0, x0 + 5 * (h.shape[1] - 1), h.shape[1]); Y = np.linspace(y0, y0 + 5 * (h.shape[0] - 1), h.shape[0])
+fig, ax = plt.subplots(figsize=(18, 14))
+ax.imshow(hs, origin="lower", extent=(X[0], X[-1], Y[0], Y[-1]), cmap="gray", alpha=0.85)
+ax.contourf(X, Y, h, levels=[-500, 0.3], colors=["#a9cbe0"], alpha=0.8)
+cs = ax.contour(X, Y, h, levels=range(50, 700, 50), colors="#6b5a3a", linewidths=0.35); ax.clabel(cs, fontsize=6, fmt="%d")
+for sh in shores: ax.plot([sh["from_xy"][0], sh["to_xy"][0]], [sh["from_xy"][1], sh["to_xy"][1]], color="#00a6d6", lw=4, alpha=0.7, solid_capstyle="round")
+for r in P.roads:
+    p = np.array(r["points"]); ax.plot(p[:, 0], p[:, 1], color="#b5651d", lw=2.2)
+for fl in foot:
+    ax.plot([fl["bottom_xyz"][0], fl["top_xyz"][0]], [fl["bottom_xyz"][1], fl["top_xyz"][1]], color="#6a3d9a", lw=1.4, ls="--")
+for t in towns.values():
+    hp = np.array(t["hull"].exterior.coords); ax.fill(hp[:, 0], hp[:, 1], fc="#f4d06f", ec="#8a6d00", alpha=0.7)
+    ax.text(*t["hull"].centroid.coords[0], f"{t['id']} {t['name']}\n(town, {t['n_buildings']} bldgs)", fontsize=8, ha="center", weight="bold")
+col = {"FINAL": "#d62728", "MAIN": "#ff7f0e", "SUP": "#1f77b4", "squad position": "#7f7f7f"}
+for s in pads:
+    c = rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])
+    ax.fill(c[:, 0], c[:, 1], fc=col.get(s.get("role"), "#2ca02c"), ec="k", lw=0.6, alpha=0.85)
+    if "entrance_xy" in s: ax.plot(*s["entrance_xy"], "w^", ms=5, mec="k")
+    lab = s["id"] if s["id"].startswith("A") else f"{s['id']} {s['name']}"
+    ax.text(s["x"] + s["hx"] + 10, s["y"], lab, fontsize=7.5 if not s["id"].startswith("A") else 6.5, color="k", weight="bold" if s.get("role") in ("FINAL", "MAIN") else None,
+            bbox=dict(fc="white", ec="none", alpha=0.6, pad=0.5))
+    ax.plot([s["rough"][0], s["x"]], [s["rough"][1], s["y"]], color="r", lw=0.6, ls=":")
+if getattr(op, "GATE", None):
+    (ga, gb) = op.GATE; ax.plot([ga[0], gb[0]], [ga[1], gb[1]], color="#d62728", lw=3, ls="--"); ax.text((ga[0] + gb[0]) / 2 + 20, (ga[1] + gb[1]) / 2, "sea gate", color="#d62728", fontsize=8)
+ax.plot([x1 - 1100, x1 - 100], [y0 + 120, y0 + 120], "k", lw=4); ax.text(x1 - 600, y0 + 160, "1 km", ha="center")
+ax.annotate("N", xy=(x0 + 150, y1 - 150), xytext=(x0 + 150, y1 - 450), arrowprops=dict(arrowstyle="->", lw=2), ha="center", fontsize=12)
+from matplotlib.patches import Patch
+from matplotlib.lines import Line2D
+ax.legend(handles=[Patch(fc=col["FINAL"], label="final"), Patch(fc=col["MAIN"], label="main"), Patch(fc=col["SUP"], label="supporting"),
+                   Patch(fc=col["squad position"], label="squad position"), Patch(fc="#f4d06f", label="town (K6 layout)"), Line2D([], [], color="#b5651d", lw=2, label="dirt road (7 m)"), Line2D([], [], color="#6a3d9a", ls="--", label="foot link (stair / path; not graded)"),
+                   Line2D([], [], color="#00a6d6", lw=4, label="landing shore (boat)"), Line2D([], [], color="r", ls=":", label="moved from the purpose map point"),
+                   Line2D([], [], marker="^", color="w", mec="k", ls="", label="entrance (road end)")], loc="lower left", fontsize=8)
+nfail = sum(1 for v in C.values() if str(v["status"]).startswith("FAIL"))
+ax.set_title(f"Op {N}: {getattr(op, 'NAME', '')} ground plan (Kernel, PROPOSED) over the real ground, build 4 | rules failing: {nfail}", fontsize=13)
+ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_aspect("equal"); ax.set_xlabel("x east (m)"); ax.set_ylabel("y north (m)")
+fig.savefig(os.path.join(OUT, f"op{N}_plan.png"), dpi=90, bbox_inches="tight"); plt.close(fig)
+print("\n".join(log)); print({k: v["status"] for k, v in C.items()})

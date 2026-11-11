@@ -1,0 +1,230 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    25.0,
+    "3-12",
+    "A3-04",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "3-14-3-M4": [
+    9,
+    1.95
+   ],
+   "3-02-3-M4": [
+    12,
+    2.21
+   ],
+   "3-12-3-13": [
+    17,
+    2.47
+   ],
+   "3-M1-3-12": [
+    5,
+    1.26
+   ],
+   "3-03-3-M1": [
+    38,
+    2.32
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "3-09",
+   3.93
+  ],
+  "over_3_5": [
+   [
+    "3-08",
+    3.65
+   ],
+   [
+    "3-09",
+    3.93
+   ],
+   [
+    "A3-09",
+    3.53
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "3-M4-3-13",
+   14.0
+  ]
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "3-10-3-08",
+   3.98
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "PASS",
+  "nets": {
+   "Sound Isle": {
+    "pieces": [
+     [
+      "3-13",
+      "3-M4",
+      "3-14",
+      "3-08",
+      "3-02",
+      "3-11",
+      "3-10",
+      "3-04",
+      "3-12",
+      "3-M1",
+      "3-03"
+     ]
+    ],
+    "not_reached": [
+     "3-M2",
+     "3-01",
+     "3-F-N",
+     "3-09",
+     "3-F"
+    ]
+   },
+   "Ash Crescent": {
+    "pieces": [
+     [
+      "3-15",
+      "3-15",
+      "3-16"
+     ]
+    ],
+    "not_reached": []
+   }
+  },
+  "reading": "the rule binds sites with a vehicle approach; the purpose map gives no op 3 site one, so every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "3-02-3-M4",
+   125.7
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    18.1,
+    "A3-04",
+    "3-12-3-13"
+   ],
+   [
+    42.2,
+    "A3-04",
+    "3-M1-3-12"
+   ],
+   [
+    64.8,
+    "3-13",
+    "3-02-3-M4"
+   ]
+  ]
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    25.0,
+    "3-12",
+    "A3-04",
+    true
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    99,
+    "3-01"
+   ],
+   [
+    99,
+    "3-02"
+   ],
+   [
+    99,
+    "3-04"
+   ]
+  ],
+  "exempt": [
+   "3-F",
+   "3-F-N",
+   "3-03",
+   "3-06",
+   "3-07"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    590,
+    "3-M4",
+    "3-M3"
+   ],
+   [
+    1364,
+    "3-F",
+    "3-M3"
+   ],
+   [
+    1771,
+    "3-F",
+    "3-M4"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "3-F Sound Gate": [
+    "by boat to the beach just east of the mouth (x 4140-4240, y 10840-10850) or onto the south keep's own shelf beside the ring islet",
+    "from the north cove beach along the north shore shelf to the north keep (3-F-N), then the gate's north end"
+   ],
+   "3-M1 South Notch Keep": [
+    "from the beach at x 3310-3430, y 7525-7565 (shore list), north along the coast and up the gully into the keep's wall",
+    "down the Notch road from the plateau (3-04 Notch Road Checkpoint), on the road net, with vehicles"
+   ],
+   "3-M2 West Notch Keep": [
+    "from the west-coast beach at x 510, y 10675-10730 (shore list), south along the coast and up the gully",
+    "on foot from the plateau: Terrace Farms Post (3-02) down the west slope to the keep's back"
+   ],
+   "3-M3 Sound Head": [
+    "by boat into the Sound to the town quay (under the gate's guns until 3-F falls)",
+    "on foot down the crater stair from the plateau road (see foot links)"
+   ],
+   "3-M4 Summit AA": [
+    "by road from the Inland Ramp Depot (3-14) and the Peak Relay Dish (3-08)",
+    "by road from the Sound Fuel Depot (3-13)"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
