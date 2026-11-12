@@ -158,9 +158,9 @@ for phase in (0, 1):
         elif root in towns:
             t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
         elif root == "EXTERNAL_ROADS":      # other ops' roads: every 4th point inside the box is a join point at its own level
-        nodes[net] = [(x, y, z, r_["id"]) for r_ in EXT_ROADS for (x, y), z in list(zip(r_["points"], r_["points_z"]))[::4]
-                      if op.BOX[0] < x < op.BOX[1] and op.BOX[2] < y < op.BOX[3]]
-    elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
+            nodes[net] = [(x, y, z, r_["id"]) for r_ in EXT_ROADS for (x, y), z in list(zip(r_["points"], r_["points_z"]))[::4]
+                          if op.BOX[0] < x < op.BOX[1] and op.BOX[2] < y < op.BOX[3]]
+        elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
             e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
             nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
                           if math.dist(np.array([e["x"], e["y"]]) + v * (h + 4.0), e.get("used_entrance", (1e9, 1e9))) > 5]
