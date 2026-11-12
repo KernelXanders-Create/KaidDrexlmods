@@ -23,11 +23,20 @@ for tid, tl in getattr(op, "TOWNS", {}).items():
     hull = MultiPoint(pts).convex_hull.buffer(10)
     P.add_area(tid, list(hull.exterior.coords), None)
     P.add_buildings(tid, [(b["x"], b["y"]) for b in L["buildings"]])     # roads keep off the town's buildings (8 m round each centre, ASSUMED)
-    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], n_buildings=len(L["buildings"]),
+    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], out_bearing=tl.get("out_bearing", 0.0), n_buildings=len(L["buildings"]),
                                             garrison=sum(1 for b in L["buildings"] if b.get("garrison")), layout=tl["layout"], exits=tl.get("exits", {}))
     if tid in R:
         towns[tid]["purpose_map_xy"] = [R[tid]["x"], R[tid]["y"]]; towns[tid]["layout_centre_xy"] = [round(hull.centroid.x, 1), round(hull.centroid.y, 1)]
         towns[tid]["layout_offset_m"] = round(math.dist((R[tid]["x"], R[tid]["y"]), (hull.centroid.x, hull.centroid.y)))
+
+# ---- pads of other ops inside this box (from their plans): blocked for this op's pads and roads; a net may grow from one
+EXT = {}
+for e in getattr(op, "EXTERNAL_PADS", []):
+    c_ = rect(e["x"], e["y"], e["hx"] + 1.5, e["hy"] + 1.5, e["yaw"]); pol_ = Polygon(c_)
+    P.add_area(e["id"], [tuple(q) for q in c_], None)
+    gx_, gy_ = np.meshgrid(np.arange(int(min(c_[:, 0]) // 5), int(max(c_[:, 0]) // 5) + 2) * 5.0, np.arange(int(min(c_[:, 1]) // 5), int(max(c_[:, 1]) // 5) + 2) * 5.0)
+    P.add_buildings(e["id"], [(a, b) for a, b in zip(gx_.ravel(), gy_.ravel()) if pol_.contains(Point(a, b))], r=0.0)
+    EXT[e["id"]] = e
 
 # ---- sites
 def place_sites(only=None, skip=()):
@@ -122,15 +131,21 @@ for net, order in op.NETS.items():
         nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
     elif root in towns:
         t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
+    elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
+        e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+        nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
+                      if math.dist(np.array([e["x"], e["y"]]) + v * (h + 4.0), e.get("used_entrance", (1e9, 1e9))) > 5]
     else:
         s = SITE[root]; s["_root"] = True
         a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
         nodes[net] = [tuple(np.array([s["x"], s["y"]]) + v * (h + 1.5 + 2.5)) + (s["z"], root) for v, h in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"]))]
-    pending = [x for x in order if x in SITE and x != root]
+    pending = [x for x in order if (x in SITE or x in towns) and x != root]
     for pass_no in range(3):
       failed = []
       for sid in pending:
-        s = SITE[sid]
+        if sid in towns:     # a town joins the net at its road port, leaving along the bearing its op file gives
+            t_ = towns[sid]; s = dict(id=sid, x=t_["entry"][0], y=t_["entry"][1], z=t_["z"], _town=t_)
+        else: s = SITE[sid]
         cand = sorted(nodes[net], key=lambda n: math.dist((n[0], n[1]), (s["x"], s["y"])))
         picked = []                                    # up to 4 candidates at least 150 m apart (not four points of one road)
         for nd in cand:
@@ -141,15 +156,19 @@ for net, order in op.NETS.items():
         tries = [(q, 450, e) for q in picked[:2] for e in (0, 1)] + [(q, 900, e) for q in picked[:3] for e in (0, 1)]
         if pass_no > 0: tries += [(q, 1500, e) for q in picked[:6] for e in (0, 1, 2)]
         for nd, margin, e_rank in tries:
-            ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
+            if "_town" in s:
+                if e_rank: continue
+                b_ = math.radians(s["_town"]["out_bearing"]); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([s["x"], s["y"]])
+            else: ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
             out = np.array(ep) + 12.0 * v
             r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
             if r is None: continue
             if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > 3.0:
                 log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']})"); continue
             P.commit_road(r)
-            s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
-            s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
+            if "_town" not in s:
+                s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
+                s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
             zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
             flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
             nodes[net] += flat if len(flat) >= 2 else [(x, y, z, sid) for (x, y), z in zip(r["points"][::4], r["points_z"][::4])]
@@ -276,7 +295,7 @@ for line_ in open(os.path.join(world.PACK, "design", "PURPOSE_MAP.md"), encoding
     if line_.startswith("| ") and line_.count("|") > 8:
         cells = [c.strip() for c in line_.strip().strip("|").split("|")]
         APPR[cells[0]] = cells[-1]
-veh = [x for x in SITE if "vehicles" in APPR.get(x.split("-N")[0].split("-T")[0], "")]
+veh = [x for x in list(SITE) + list(towns) if "vehicles" in APPR.get(x.split("-N")[0].split("-T")[0], "")]
 veh_missing = [x for x in veh if x not in {y for r in P.roads for y in r["links"]}]
 C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) and not veh_missing else "FAIL", nets=conn,
     vehicle_sites_not_on_the_net=veh_missing,
@@ -341,6 +360,9 @@ for t in towns.values():
         dx_, dy_ = R[t["id"]]["x"], R[t["id"]]["y"]; cx_, cy_ = t["hull"].centroid.coords[0]
         ax.plot([dx_, cx_], [dy_, cy_], color="r", ls=":", lw=1.2); ax.plot(dx_, dy_, "rx", ms=8, mew=2)
         ax.text(dx_, dy_ - 60, f"{t['id']} purpose-map point\n({math.dist((dx_, dy_), (cx_, cy_)):.0f} m from the layout)", fontsize=6.5, color="r", ha="center", va="top")
+for e in EXT.values():
+    c_ = rect(e["x"], e["y"], e["hx"], e["hy"], e["yaw"]); ax.fill(c_[:, 0], c_[:, 1], fc="none", ec="k", hatch="///", lw=0.8)
+    ax.text(e["x"] + e["hx"] + 15, e["y"], e["id"], fontsize=7, va="center")
 col = {"FINAL": "#d62728", "MAIN": "#ff7f0e", "SUP": "#1f77b4", "squad position": "#7f7f7f"}
 for s in pads:
     c = rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])
