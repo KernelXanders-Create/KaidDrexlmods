@@ -43,9 +43,9 @@
     7,
     0.45
    ],
-   "7-M3-7-M2": [
-    10,
-    1.58
+   "7-06-7-M2": [
+    9,
+    1.38
    ],
    "7-07-7-M4": [
     11,
@@ -102,6 +102,7 @@
       "7-F",
       "7-13",
       "7-02",
+      "7-06",
       "7-M3",
       "7-M3-T",
       "7-11",
@@ -111,26 +112,24 @@
      ]
     ],
     "not_reached": [
-     "7-M1",
-     "7-06"
+     "7-M1"
     ]
    }
   },
   "vehicle_sites_not_on_the_net": [
-   "7-M1",
-   "7-06"
+   "7-M1"
   ],
   "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
  },
  "3 roads: no straight run over 150 m (within 1 m of the chord)": {
   "status": "PASS",
   "worst": [
-   "7-M3-7-M2",
-   111.8
+   "7-06-7-M2",
+   116.6
   ]
  },
  "3 roads: nothing built within 3 m of a road edge": {
-  "status": "FAIL",
+  "status": "PASS",
   "closest": [
    [
     8.0,
@@ -143,29 +142,29 @@
     "7-11-7-M3-T"
    ],
    [
-    113.8,
-    "7-F",
-    "7-02-7-03"
+    109.0,
+    "7-06",
+    "7-M2-7-13"
    ]
   ],
   "town_buildings_closest": [
    [
-    7.3,
-    "7-M2 B079",
-    "7-M3-7-M2"
-   ],
-   [
-    9.9,
-    "7-M2 B097",
-    "7-M3-7-M2"
-   ],
-   [
     14.0,
     "7-M2 B092",
     "7-M2-7-13"
+   ],
+   [
+    14.2,
+    "7-M2 B093",
+    "7-M2-7-13"
+   ],
+   [
+    14.9,
+    "7-M2 B088",
+    "7-M2-7-13"
    ]
   ],
-  "town_note": "town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road port where the road meets the town's own street"
+  "town_note": "town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road ports (street ends), where a road meets the town's own street"
  },
  "4 pads: no two within 12 m": {
   "status": "PASS",
@@ -186,12 +185,12 @@
     "A7-02"
    ],
    [
-    55.3,
-    "7-06"
+    99,
+    "7-01"
    ],
    [
     99,
-    "7-01"
+    "7-02"
    ]
   ],
   "exempt": [
