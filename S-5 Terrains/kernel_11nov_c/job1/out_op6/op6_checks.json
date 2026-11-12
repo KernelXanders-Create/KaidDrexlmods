@@ -1,0 +1,281 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    19.2,
+    "6-13",
+    "A6-01",
+    true
+   ],
+   [
+    19.6,
+    "6-08",
+    "A6-07",
+    true
+   ],
+   [
+    21.7,
+    "6-03",
+    "A6-05",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "6-F-6-03": [
+    16,
+    1.49
+   ],
+   "6-M3-6-03": [
+    12,
+    1.82
+   ],
+   "6-07-6-03": [
+    9,
+    1.46
+   ],
+   "6-04-6-M3": [
+    6,
+    0.43
+   ],
+   "6-06-6-F": [
+    104,
+    2.57
+   ],
+   "6-13-6-06": [
+    5,
+    1.03
+   ],
+   "6-05-6-13": [
+    11,
+    2.94
+   ],
+   "6-M2-6-13": [
+    5,
+    0.8
+   ],
+   "6-01-6-07": [
+    7,
+    0.72
+   ],
+   "6-F-T-6-07": [
+    15,
+    2.23
+   ],
+   "6-02-6-03": [
+    8,
+    2.13
+   ],
+   "6-14-6-03": [
+    269,
+    3.56
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "A6-06",
+   3.82
+  ],
+  "over_3_5": [
+   [
+    "6-06",
+    3.57
+   ],
+   [
+    "6-08",
+    3.76
+   ],
+   [
+    "6-11",
+    3.73
+   ],
+   [
+    "6-14",
+    3.77
+   ],
+   [
+    "A6-06",
+    3.82
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "6-03-4-10 (op 4 net)",
+   14.0
+  ]
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "6-02-6-03",
+   3.98
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "PASS",
+  "nets": {
+   "Ember Crescent": {
+    "pieces": [
+     [
+      "6-06",
+      "6-13",
+      "6-05",
+      "6-M2",
+      "6-03",
+      "6-F-T",
+      "6-F",
+      "6-M3",
+      "6-07",
+      "6-04",
+      "6-02",
+      "6-14"
+     ]
+    ],
+    "not_reached": []
+   }
+  },
+  "vehicle_sites_not_on_the_net": [],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "6-M2-6-13",
+   134.3
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    8.0,
+    "A6-05",
+    "6-03-4-10 (op 4 net)"
+   ],
+   [
+    11.2,
+    "6-14",
+    "6-03-4-10 (op 4 net)"
+   ],
+   [
+    11.2,
+    "6-F-T",
+    "6-06-6-F"
+   ]
+  ],
+  "town_buildings_closest": [
+   [
+    16.0,
+    "6-01 B018",
+    "6-01-6-07"
+   ],
+   [
+    18.4,
+    "6-01 B019",
+    "6-01-6-07"
+   ],
+   [
+    21.0,
+    "6-01 B023",
+    "6-01-6-07"
+   ]
+  ],
+  "town_note": "town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road port where the road meets the town's own street"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    19.2,
+    "6-13",
+    "A6-01",
+    true
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    50.2,
+    "A6-09"
+   ],
+   [
+    99,
+    "6-02"
+   ],
+   [
+    99,
+    "6-03"
+   ]
+  ],
+  "exempt": [
+   "6-08",
+   "6-10",
+   "6-12",
+   "6-13"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    798,
+    "6-M1",
+    "6-M4"
+   ],
+   [
+    918,
+    "6-F-T",
+    "6-M3"
+   ],
+   [
+    985,
+    "6-F",
+    "6-M3"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "6-F Prophet Monastery": [
+    "by road from Causeway Foot (op 4's net) up the west climb, past the Upper Spring Outpost (6-14) and the Prophet Road Checkpoint (6-02) (vehicles)",
+    "the covered climb up the quarry (6-04) from the north-west, on foot"
+   ],
+   "6-M1 Signal Isle Turbolaser Battery": [
+    "by boat to the Signal Isle Landing (6-08) beach, then up past the Signal Ridge Comms (6-M4)",
+    "by boat or air to the north cape under the North Cape AA (6-11), then up the north slope"
+   ],
+   "6-M2 Kamar Strand Bunker Line": [
+    "by boat to the black beach of Kamar Strand (shores list)",
+    "by road down from the massif past the refuelling base (6-05) (vehicles)"
+   ],
+   "6-M3 North Point Ferry Pens": [
+    "by road from the Massif AA (6-03) (vehicles)",
+    "by boat to the north point beach under the pillboxes (6-07)"
+   ],
+   "6-M4 Signal Ridge Comms": [
+    "from the Signal Isle Landing (6-08) up the ridge",
+    "by air once the North Cape AA (6-11) falls"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}

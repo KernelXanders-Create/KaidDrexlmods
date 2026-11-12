@@ -402,7 +402,7 @@ from matplotlib.lines import Line2D
 ax.legend(handles=[Patch(fc=col["FINAL"], label="final"), Patch(fc=col["MAIN"], label="main"), Patch(fc=col["SUP"], label="supporting"),
                    Patch(fc=col["squad position"], label="squad position"), Patch(fc="#f4d06f", label="town (K6 layout)"), Line2D([], [], color="#b5651d", lw=2, label="dirt road (7 m)"), Line2D([], [], color="#6a3d9a", ls="--", label="foot link (stair / path; not graded)"),
                    Line2D([], [], color="#00a6d6", lw=4, label="landing shore (boat)"), Line2D([], [], color="r", ls=":", label="moved from the purpose map point"),
-                   Line2D([], [], marker="^", color="w", mec="k", ls="", label="entrance (road end)")], loc="lower left", fontsize=8)
+                   Line2D([], [], marker="^", color="w", mec="k", ls="", label="entrance (road end)")], loc=getattr(op, "LEGEND_LOC", "lower left"), fontsize=8)
 nfail = sum(1 for v in C.values() if str(v["status"]).startswith("FAIL"))
 ax.set_title(f"Op {N}: {getattr(op, 'NAME', '')} ground plan (Kernel, PROPOSED) over the real ground, build 4 | rules failing: {nfail}", fontsize=13)
 ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_aspect("equal"); ax.set_xlabel("x east (m)"); ax.set_ylabel("y north (m)")

@@ -67,3 +67,4 @@ BOAT_ONLY = ("6-12",)
 # the spring outpost is seated after the roads, beside the west climb road (its own ridge takes no road)
 LATE_SITES = ("6-14",)
 JUNCTION_MAX_LATE = 3.6      # its spur may meet the climb road at a step up to 3.6 m (a reported item, not a rule; the road builder ramps it)
+LEGEND_LOC = "upper left"
