@@ -63,3 +63,6 @@ APPROACHES = {
     "6-M4 Signal Ridge Comms": ["from the Signal Isle Landing (6-08) up the ridge", "by air once the North Cape AA (6-11) falls"],
 }
 BOAT_ONLY = ("6-12",)
+
+# the spring outpost is seated after the roads, beside the west climb road (its own ridge takes no road)
+LATE_SITES = ("6-14",)

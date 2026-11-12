@@ -41,7 +41,7 @@ for e in getattr(op, "EXTERNAL_PADS", []):
 # ---- sites
 def place_sites(only=None, skip=()):
     for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
-        if (only is not None and sid not in only) or sid in skip: continue
+        if (only is not None and sid not in only) or sid in skip or (only is None and sid in getattr(op, "LATE_SITES", ())): continue
         base = sid.split("-N")[0].split("-T")[0]
         x, y = xy if xy else (R[base]["x"], R[base]["y"])
         kw_ = getattr(op, "SITE_KW", {}).get(sid, {})
@@ -125,20 +125,28 @@ if trunk_stops:
 
 # ---- road nets
 nodes = {}       # net name -> list of (x, y, z, owner)
-for net, order in op.NETS.items():
+LATE = tuple(getattr(op, "LATE_SITES", ()))     # sites seated after the roads, beside them, then joined by a short spur
+for phase in (0, 1):
+  if phase == 1:
+    if not LATE: break
+    place_sites(only=LATE); SITE = {s["id"]: s for s in P.sites}
+  for net, order in op.NETS.items():
+    if phase == 1: order = [x for x in order if x in LATE]
+    else: order = [x for x in order if x not in LATE]
     root = op.ROOT[net]
-    if root == "TRUNK":
-        nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
-    elif root in towns:
-        t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
-    elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
-        e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
-        nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
-                      if math.dist(np.array([e["x"], e["y"]]) + v * (h + 4.0), e.get("used_entrance", (1e9, 1e9))) > 5]
-    else:
-        s = SITE[root]; s["_root"] = True
-        a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
-        nodes[net] = [tuple(np.array([s["x"], s["y"]]) + v * (h + 1.5 + 2.5)) + (s["z"], root) for v, h in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"]))]
+    if phase == 0:
+        if root == "TRUNK":
+            nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
+        elif root in towns:
+            t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
+        elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
+            e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+            nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
+                          if math.dist(np.array([e["x"], e["y"]]) + v * (h + 4.0), e.get("used_entrance", (1e9, 1e9))) > 5]
+        else:
+            s = SITE[root]; s["_root"] = True
+            a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+            nodes[net] = [tuple(np.array([s["x"], s["y"]]) + v * (h + 1.5 + 2.5)) + (s["z"], root) for v, h in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"]))]
     pending = [x for x in order if (x in SITE or x in towns) and x != root]
     for pass_no in range(3):
       failed = []
