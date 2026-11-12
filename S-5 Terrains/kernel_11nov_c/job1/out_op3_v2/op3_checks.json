@@ -18,7 +18,12 @@
  },
  "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
   "status": "REPORT",
-  "by_road": {},
+  "by_road": {
+   "3-08-3-M4": [
+    2,
+    0.09
+   ]
+  },
   "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
  },
  "2 pad ground change <= 4.0 m": {
@@ -43,13 +48,13 @@
   ]
  },
  "3 roads: dirt grade <= 14 %": {
-  "status": "FAIL",
+  "status": "PASS",
   "worst": [
    "3-14-3-M4",
    {
-    "over_10_m": 14.0,
-    "over_20_m": 14.0,
-    "point_to_point": 14.1
+    "over_10_m": 13.8,
+    "over_20_m": 13.8,
+    "point_to_point": 13.9
    }
   ],
   "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
@@ -57,8 +62,8 @@
  "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
   "status": "PASS",
   "worst": [
-   "3-14-3-M4",
-   3.73
+   "3-08-3-M4",
+   2.93
   ]
  },
  "3 roads: one connected net per island": {
@@ -105,37 +110,37 @@
  "3 roads: no straight run over 150 m (within 1 m of the chord)": {
   "status": "PASS",
   "worst": [
-   "3-08-3-14",
-   98.8
+   "3-M4-3-13",
+   76.4
   ]
  },
  "3 roads: nothing built within 3 m of a road edge": {
   "status": "PASS",
   "closest": [
    [
-    25.5,
-    "3-15",
-    "3-16-3-15"
+    18.2,
+    "3-M4",
+    "3-08-3-M4"
    ],
    [
-    26.5,
-    "3-08",
-    "3-08-3-14"
-   ],
-   [
-    26.6,
+    25.1,
     "3-14",
     "3-14-3-M4"
+   ],
+   [
+    25.5,
+    "3-08",
+    "3-08-3-M4"
    ]
   ],
   "town_houses_closest": [
    [
-    290.38,
+    290.45,
     "3-M3",
     "3-M4-3-13"
    ],
    [
-    293.4,
+    293.46,
     "3-M3",
     "3-M4-3-13"
    ],

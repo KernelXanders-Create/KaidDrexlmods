@@ -289,7 +289,7 @@ for phase in (0, 1):
             t_r = time.time()
             r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
             if os.environ.get("PLAN_VERBOSE"):
-                print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {'no path' if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
+                print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {('no path ' + str(getattr(P, 'last_fail', ''))) if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
             def undo():
                 if rl: P.uncommit(rl[0]); rl[0]["points_z"] = rl[1]; P.recommit(rl[0])
             if r is None: undo(); continue

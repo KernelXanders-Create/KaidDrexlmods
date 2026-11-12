@@ -158,7 +158,21 @@ class Plan:
                     if math.hypot(dj * C, di * C) <= r and not self.owner[j0 + dj, i0 + di]: self.owner[j0 + dj, i0 + di] = sid
 
     # ----------------------------------------------------------------- roads
-    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=None, pre=None, post=None, own_ids=()):
+    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=None, pre=None, post=None, own_ids=(), tries=None):
+        """route; where the smoothed road breaks the 4 m cut / fill (smoothing shortens a climb, so the ground gets ahead of a road held to the grade),
+        try again with lighter corner smoothing (1 and 2 Chaikin passes): the road then keeps closer to the searched line"""
+        self._avoid = None; keep = self.chaikin; best = None
+        for ch in [keep] + [c for c in (1, 2) if c != keep]:
+            self.chaikin = ch
+            r = self._route_once(a, b, grade, width, za, zb, name, kind, links, margin, cell, steep, pre, post, own_ids)
+            if r is None: break                      # no path: lighter smoothing will not find one either
+            r["chaikin_passes"] = ch
+            if best is None or r["max_cut_fill_m"] < best["max_cut_fill_m"]: best = r
+            if r["max_cut_fill_m"] <= 4.0: break
+        self.chaikin = keep
+        return best
+
+    def _route_once(self, a, b, grade, width, za, zb, name, kind, links, margin, cell, steep, pre, post, own_ids):
         """A* on a 10 m lattice (16 directions) inside the pair's box + margin, over smoothed natural ground; the grade limit is a
         hard limit per step (times `steep`, which the profile pass then absorbs with cut / fill); returns the road dict or None"""
         H = self.H; k = int(cell / C)
@@ -179,6 +193,7 @@ class Plan:
         if self.cliff_dilate: bad |= ndimage.binary_dilation(sl_ > 0.9, iterations=self.cliff_dilate)    # and keep the band off cliff edges
         Hr = H[j0:j1 + 1, i0:i1 + 1]; nb = int(math.ceil((width / 2 + 3.5) / C)) * 2 + 1
         bad |= (ndimage.maximum_filter(Hr, size=nb) - ndimage.minimum_filter(Hr, size=nb)) > self.band_range   # no single level holds the band within 4 m (the profile repair and the 4 m check still apply)
+        if getattr(self, "_avoid", None) is not None: bad |= self._avoid[j0:j1 + 1, i0:i1 + 1]     # points an earlier try broke the 4 m rule on
         bad = ndimage.maximum_filter(bad.astype(np.uint8), size=k)[::k, ::k].astype(bool)
         ny, nx = Hs.shape
         sa = (int(round((a[1] - j0 * C) / cell)), int(round((a[0] - i0 * C) / cell))); sb = (int(round((b[1] - j0 * C) / cell)), int(round((b[0] - i0 * C) / cell)))
@@ -203,7 +218,9 @@ class Plan:
                 ng = g[n] + L * (1 + 2.0 * max(0.0, dz - 0.6 * grade) / grade)
                 if ng < g.get(m, 1e18):
                     g[m] = ng; prev[m] = n; heapq.heappush(pq, (ng + math.hypot(m[0] - sb[0], m[1] - sb[1]) * cell, m))
-        if sb not in g: return None
+        if sb not in g:
+            self.last_fail = dict(reached=len(done), start_bad=bool(bad[sa]) if 0 <= sa[0] < ny and 0 <= sa[1] < nx else "outside", end_bad=bool(bad[sb]) if 0 <= sb[0] < ny and 0 <= sb[1] < nx else "outside")
+            return None
         path = [sb]
         while path[-1] != sa: path.append(prev[path[-1]])
         path = path[::-1]

@@ -2,7 +2,7 @@
 KNOWN = the same composition's pad in pads_op1 / pads_op2; ASSUMED = no pad of that composition exists yet (named nearest kin)."""
 
 BOX = (0, 9500, 6800, 13600)
-PLAN_KW = dict(band_range=10.0, steep=1.0, repair_to=3.6)     # as ops 5-8 (re-pass): every road is still measured against 14 % and 4 m
+PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)     # re-pass: no band filter (as v1); roads that break 4 m retry with lighter corner smoothing; every road is measured against 14 % and 4 m
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode, priority
 SITES = [
