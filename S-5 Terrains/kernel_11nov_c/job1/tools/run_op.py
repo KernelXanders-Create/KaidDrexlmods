@@ -21,9 +21,9 @@ for tid, tl in getattr(op, "TOWNS", {}).items():
     L = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), tl["layout"])))
     pts = [(b["x"], b["y"]) for b in L["buildings"]] + [tuple(p) for s in L["streets"] for p in s["points"]]
     hull = MultiPoint(pts).convex_hull.buffer(10)
-    P.add_area(tid, list(hull.exterior.coords), None)
+    P.add_area(tid, list(hull.exterior.coords), None, own=True)     # roads keep off the whole town outline, except its own road at its port
     P.add_buildings(tid, [(b["x"], b["y"]) for b in L["buildings"]])     # roads keep off the town's buildings (8 m round each centre, ASSUMED)
-    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], out_bearing=tl.get("out_bearing", 0.0), n_buildings=len(L["buildings"]),
+    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], ports=tl.get("ports", [(ex, ey, tl["entry_z"], tl.get("out_bearing", 0.0), "road port")]), n_buildings=len(L["buildings"]),
                                             garrison=sum(1 for b in L["buildings"] if b.get("garrison")), layout=tl["layout"], exits=tl.get("exits", {}))
     if tid in R:
         towns[tid]["purpose_map_xy"] = [R[tid]["x"], R[tid]["y"]]; towns[tid]["layout_centre_xy"] = [round(hull.centroid.x, 1), round(hull.centroid.y, 1)]
@@ -155,10 +155,13 @@ for net, order in op.NETS.items():
         done = False
         tries = [(q, 450, e) for q in picked[:2] for e in (0, 1)] + [(q, 900, e) for q in picked[:3] for e in (0, 1)]
         if pass_no > 0: tries += [(q, 1500, e) for q in picked[:6] for e in (0, 1, 2)]
+        if "_town" in s: tries = [(q, m_, e) for m_ in (450, 900, 1500) for q in picked[:4] for e in range(len(s["_town"]["ports"]))]
         for nd, margin, e_rank in tries:
-            if "_town" in s:
-                if e_rank: continue
-                b_ = math.radians(s["_town"]["out_bearing"]); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([s["x"], s["y"]])
+            if "_town" in s:      # a town tries each of its road ports (street ends at the town's edge) in turn
+                pts_ = s["_town"]["ports"]
+                if e_rank >= len(pts_): continue
+                px_, py_, pz_, pb_, pn_ = pts_[e_rank]; s["x"], s["y"], s["z"] = px_, py_, pz_
+                b_ = math.radians(pb_); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([px_, py_])
             else: ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
             out = np.array(ep) + 12.0 * v
             t_r = time.time()
@@ -169,6 +172,8 @@ for net, order in op.NETS.items():
             if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > 3.0:
                 log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']})"); continue
             P.commit_road(r)
+            if "_town" in s:      # the port the road reached becomes the town's entry
+                t_ = s["_town"]; t_["entry"] = (s["x"], s["y"]); t_["z"] = s["z"]; t_["port_used"] = pn_
             if "_town" not in s:
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]

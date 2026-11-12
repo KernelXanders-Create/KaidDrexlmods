@@ -24,16 +24,20 @@ SITES = [
     ("6-11", "North Cape AA", "CIS AA Tooth Fixed with GPs", 25.0, 25.0, "ASSUMED: 50 x 50 m", None, 300, False),
     ("6-12", "Deep-Sea Sensor Stack", "Giant Radar Dish", 15.0, 15.0, "REDUCED / ASSUMED: the stack top takes about 30 x 30 m (the dish and a ring of guns); air only", None, 120, "beach"),
     ("6-13", "Kamar Landers", "CIS Lander Base Fixed with GPs (D)", 44.5, 67.0, "ASSUMED: as the CIS Landing Position (1-02); a beach work", None, 300, "beach"),
-    ("6-14", "Upper Spring Outpost", "Zavala CIS Outpost with GPs", 30.0, 30.0, "ASSUMED: 60 x 60 m (as op 3's Zavala outpost)", None, 300, False),
+    ("6-14", "Upper Spring Outpost", "Zavala CIS Outpost with GPs", 30.0, 30.0, "ASSUMED: 60 x 60 m (as op 3's Zavala outpost); seated on the west climb road above the spring (the spring's own ridge at 385 m takes no road)", (14750, 11300), 250, False),
 ]
 
 TOWNS = {"6-01": dict(name="Kamar Village", layout="../../../kernel_10nov_v1/K6_repass/kamar_village_v2/kamar_village_v2_layout.json",
-                      entry=(16648.0, 11506.0), entry_z=246.0, out_bearing=180.0)}     # the main street's south end
+                      entry=(16648.0, 11506.0), entry_z=246.0,
+                      # street ends at the village's edge, each with the bearing a road leaves it on (K6 v2 layout)
+                      ports=[(16648.0, 11506.0, 246.0, 180.0, "main street, south end"), (16786.0, 11566.0, 242.25, 180.0, "east lane, south end"),
+                             (16584.0, 11540.0, 259.5, 180.0, "west lane, south end"), (16600.0, 11790.0, 236.5, 270.0, "north lane, west end"),
+                             (16728.0, 11784.0, 239.0, 90.0, "north lane, east end")])}
 
 # op 4's East Slope Comms pad: the end of op 4's Ember Crescent net (its own road leaves the south edge); op 6's net grows from its free edges
 EXTERNAL_PADS = [dict(id="4-10 (op 4 net)", x=14800.0, y=9370.0, hx=20.1, hy=46.3, yaw=0.0, z=155.25, used_entrance=(14800.0, 9319.7))]
 # the net climbs the south slope to the east upland first (the west side is cut by ravines), then spreads over the upland and back west
-NETS = {"Ember Crescent": ["6-06", "6-13", "6-05", "6-M2", "6-01", "6-03", "6-F-T", "6-F", "6-M3", "6-07", "6-04", "6-14", "6-02"]}
+NETS = {"Ember Crescent": ["6-06", "6-13", "6-05", "6-M2", "6-01", "6-03", "6-F-T", "6-F", "6-M3", "6-07", "6-04", "6-02", "6-14"]}
 ROOT = {"Ember Crescent": "4-10 (op 4 net)"}
 
 SQUADS = [

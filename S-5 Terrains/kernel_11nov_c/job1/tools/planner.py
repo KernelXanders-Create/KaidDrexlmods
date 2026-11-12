@@ -126,7 +126,7 @@ class Plan:
         self.sites.append(s)
         return s
 
-    def add_area(self, sid, poly_pts, z, grow=SEP):
+    def add_area(self, sid, poly_pts, z, grow=SEP, own=False):
         """a fixed area that is not a single pad (a town): its points are blocked for other pads"""
         from matplotlib.path import Path
         P = np.array(poly_pts); x0, y0 = P.min(0) - grow; x1, y1 = P.max(0) + grow
@@ -135,6 +135,9 @@ class Plan:
         pol = Polygon(P).buffer(grow)
         m = np.array([pol.contains(Point(i * C, j * C)) for i, j in zip(I.ravel(), J.ravel())])
         self.block[J.ravel()[m], I.ravel()[m]] = True
+        if own:      # the area itself (not grown) is owned, so roads other than its own keep their band off it
+            pol0 = Polygon(P); m0 = np.array([pol0.contains(Point(i * C, j * C)) for i, j in zip(I.ravel(), J.ravel())])
+            jj, ii = J.ravel()[m0], I.ravel()[m0]; free = self.owner[jj, ii] == ""; self.owner[jj[free], ii[free]] = sid
 
     def add_buildings(self, sid, pts, r=8.0):
         """a town's buildings: each centre and the grid points within r metres are owned by the town, so roads keep their band off them"""
