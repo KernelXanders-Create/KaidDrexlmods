@@ -314,7 +314,7 @@ class Plan:
         J, I, Z = self.band_points(r); free = np.isnan(self.fixed[J, I])
         self.fixed[J[free], I[free]] = Z[free]; self.owner[J[free], I[free]] = "R:" + r["id"]
 
-    def relevel(self, r, k, half=15.0, grade=0.14):
+    def relevel(self, r, k, half=25.0, grade=0.14):
         """give road r a level landing (+-half m) at point k, so a road can join it on its own level; the rest is re-held to the grade.
         Returns the new levels, or None if the grade, the 4 m cut / fill or a pad would be broken. Does not change r."""
         X = np.array(r["points"], float); Z = np.array(r["points_z"], float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; L = s_[-1]

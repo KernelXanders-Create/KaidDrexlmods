@@ -158,7 +158,7 @@ def own_nodes(r, owner, away=None, every=3):
     """every 3rd point of a road this op builds (away from its end landings): a road may join there once it gets a level landing"""
     X = np.array(r["points"], float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; L_ = s_[-1]
     return [(float(X[k, 0]), float(X[k, 1]), float(r["points_z"][k]), owner, r["id"], k) for k in range(0, len(X), every)
-            if 31.0 <= s_[k] <= L_ - 27.0 and (away is None or math.dist(X[k], away) > 40.0)]
+            if 41.0 <= s_[k] <= L_ - 37.0 and (away is None or math.dist(X[k], away) > 40.0)]
 
 
 ROADS_BY_ID = {}
@@ -233,8 +233,23 @@ if getattr(op, "TRUNK", None):
                 r, st = trunk_leg(prev, a_xy, a_z, None, dict(leg, kind=leg.get("kind", "dirt"), width=leg.get("width", 7.0), grade=leg.get("grade", 0.14)), k, f"point {k}")
                 if r is not None:
                     P.commit_road(r); ROADS_BY_ID[r["id"]] = r; trunk_nodes += own_nodes(r, f"point {k}")
-                else:
-                    near = min(prev, key=lambda q: math.dist((q[0], q[1]), a_xy))
+                else:               # take the road as near as it will go (a bench above the point), and give the ramp for the rest
+                    best_ = None
+                    I_, J_ = np.meshgrid(np.arange(int((a_xy[0] - 400) / 5), int((a_xy[0] + 400) / 5) + 1), np.arange(int((a_xy[1] - 400) / 5), int((a_xy[1] + 400) / 5) + 1))
+                    hh_ = P.H[J_, I_]; dd_ = np.hypot(I_ * 5.0 - a_xy[0], J_ * 5.0 - a_xy[1])
+                    ok_ = (hh_ > a_z + 2.0) & (dd_ > 40) & (dd_ < 400) & ~P.water[J_, I_]
+                    cand_ = sorted(zip(dd_[ok_], I_[ok_] * 5.0, J_[ok_] * 5.0, hh_[ok_]), key=lambda t_: (t_[3] - a_z) / max(t_[0], 1.0))
+                    tried_ = []
+                    for d0, bx_, by_, bz_ in cand_:
+                        if any(math.dist((bx_, by_), q_) < 60 for q_ in tried_): continue
+                        tried_.append((bx_, by_))
+                        r2_, st2_ = trunk_leg(prev, np.array([bx_, by_]), round(float(bz_), 2), None, dict(leg, kind=leg.get("kind", "dirt"), width=leg.get("width", 7.0), grade=leg.get("grade", 0.14)), k, f"bench {k}")
+                        if r2_ is not None: best_ = (r2_, (bx_, by_, round(float(bz_), 2))); break
+                        if len(tried_) >= 8: break
+                    if best_:
+                        P.commit_road(best_[0]); ROADS_BY_ID[best_[0]["id"]] = best_[0]; trunk_nodes += own_nodes(best_[0], f"bench {k}")
+                        near = (best_[1][0], best_[1][1], best_[1][2], best_[0]["id"])
+                    else: near = min(prev, key=lambda q: math.dist((q[0], q[1]), a_xy))
                     spec = ramp_spec(a_xy, a_z, (near[0], near[1]), near[2]); spec["between"] = [near[3], leg.get("label", f"point {k}")]
                     ramps.append(spec); trunk_breaks.append(dict(at=list(key), z=a_z, label=leg.get("label", "") + f"; no road holds the rules here: a ramp of {spec['rise_m']} m rise ({spec['length_at_14_pct_m']} m at 14 %)"))
             prev = [(float(a_xy[0]), float(a_xy[1]), a_z, f"point {k}")]; continue
