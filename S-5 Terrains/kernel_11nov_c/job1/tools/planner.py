@@ -50,6 +50,8 @@ class Plan:
         self.owner = np.full(self.H.shape, "", object)
         self.water = self.H <= 0.3
         self.cross_max = 0.5
+        self.steep = 0.8                                        # router step limit as a share of the grade (the profile pass holds the grade)
+        self.band_range = 7.6                                   # the most the ground under a road band may vary (router filter only)
         self.balanced = False
         self.cliff_dilate = 2
         self.route_sigma = 1.5
@@ -117,11 +119,20 @@ class Plan:
         m = np.array([pol.contains(Point(i * C, j * C)) for i, j in zip(I.ravel(), J.ravel())])
         self.block[J.ravel()[m], I.ravel()[m]] = True
 
+    def add_buildings(self, sid, pts, r=8.0):
+        """a town's buildings: each centre and the grid points within r metres are owned by the town, so roads keep their band off them"""
+        for x, y in pts:
+            n = int(math.ceil(r / C)); j0, i0 = int(round(y / C)), int(round(x / C))
+            for dj in range(-n, n + 1):
+                for di in range(-n, n + 1):
+                    if math.hypot(dj * C, di * C) <= r and not self.owner[j0 + dj, i0 + di]: self.owner[j0 + dj, i0 + di] = sid
+
     # ----------------------------------------------------------------- roads
-    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=0.8, pre=None, post=None, own_ids=()):
+    def route(self, a, b, grade=0.14, width=7.0, za=None, zb=None, name="", kind="dirt", links=(), margin=450.0, cell=5.0, steep=None, pre=None, post=None, own_ids=()):
         """A* on a 10 m lattice (16 directions) inside the pair's box + margin, over smoothed natural ground; the grade limit is a
         hard limit per step (times `steep`, which the profile pass then absorbs with cut / fill); returns the road dict or None"""
         H = self.H; k = int(cell / C)
+        if steep is None: steep = self.steep
         x0 = max(min(a[0], b[0]) - margin, self.box[0]); x1 = min(max(a[0], b[0]) + margin, self.box[1])
         y0 = max(min(a[1], b[1]) - margin, self.box[2]); y1 = min(max(a[1], b[1]) + margin, self.box[3])
         i0, i1, j0, j1 = int(x0 / C), int(x1 / C), int(y0 / C), int(y1 / C)
@@ -137,7 +148,7 @@ class Plan:
         bad |= sl_ > self.cross_max                                 # side slope: the 7 m band would cut / fill too much
         if self.cliff_dilate: bad |= ndimage.binary_dilation(sl_ > 0.9, iterations=self.cliff_dilate)    # and keep the band off cliff edges
         Hr = H[j0:j1 + 1, i0:i1 + 1]; nb = int(math.ceil((width / 2 + 3.5) / C)) * 2 + 1
-        bad |= (ndimage.maximum_filter(Hr, size=nb) - ndimage.minimum_filter(Hr, size=nb)) > 7.6   # no single level holds the band within 4 m
+        bad |= (ndimage.maximum_filter(Hr, size=nb) - ndimage.minimum_filter(Hr, size=nb)) > self.band_range   # no single level holds the band within 4 m (the profile repair and the 4 m check still apply)
         bad = ndimage.maximum_filter(bad.astype(np.uint8), size=k)[::k, ::k].astype(bool)
         ny, nx = Hs.shape
         sa = (int(round((a[1] - j0 * C) / cell)), int(round((a[0] - i0 * C) / cell))); sb = (int(round((b[1] - j0 * C) / cell)), int(round((b[0] - i0 * C) / cell)))

@@ -12,6 +12,7 @@ op = importlib.import_module(sys.argv[1]); OUT = sys.argv[2]; os.makedirs(OUT, e
 N = sys.argv[1].replace("op", "")
 D = world.objectives(); R = {s["id"]: s for s in D["sites"]}
 P = planner.Plan(op.BOX)
+for k_, v_ in getattr(op, "PLAN_KW", {}).items(): setattr(P, k_, v_)     # per-op router settings (none change a rule)
 log = []
 
 # ---- towns (hand-made, from the K6 v2 layouts): blocked areas with an entry point at their square
@@ -21,8 +22,12 @@ for tid, tl in getattr(op, "TOWNS", {}).items():
     pts = [(b["x"], b["y"]) for b in L["buildings"]] + [tuple(p) for s in L["streets"] for p in s["points"]]
     hull = MultiPoint(pts).convex_hull.buffer(10)
     P.add_area(tid, list(hull.exterior.coords), None)
+    P.add_buildings(tid, [(b["x"], b["y"]) for b in L["buildings"]])     # roads keep off the town's buildings (8 m round each centre, ASSUMED)
     ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], n_buildings=len(L["buildings"]),
                                             garrison=sum(1 for b in L["buildings"] if b.get("garrison")), layout=tl["layout"], exits=tl.get("exits", {}))
+    if tid in R:
+        towns[tid]["purpose_map_xy"] = [R[tid]["x"], R[tid]["y"]]; towns[tid]["layout_centre_xy"] = [round(hull.centroid.x, 1), round(hull.centroid.y, 1)]
+        towns[tid]["layout_offset_m"] = round(math.dist((R[tid]["x"], R[tid]["y"]), (hull.centroid.x, hull.centroid.y)))
 
 # ---- sites
 def place_sites(only=None, skip=()):
@@ -174,12 +179,16 @@ for s in P.sites:
     if s["id"] in reached_ids or s.get("water_ok") == "beach" and s["id"] in getattr(op, "BOAT_ONLY", ()): continue
     if s["id"] in reached_ids: continue
     isl = s.get("island", "")
-    if isl not in op.NETS: continue
-    q = nearest_dry((s["x"], s["y"])) if road_pts else None
+    q = nearest_dry((s["x"], s["y"])) if road_pts and isl in op.NETS else None
+    if q is None:      # no road on its island: a foot path to a town on the same island, if one stands there
+        tq = [(t["entry"][0], t["entry"][1], t["z"], f"town {t['id']} ({t['name']})") for t in towns.values()
+              if R.get(t["id"], {}).get("island") == isl and dry((s["x"], s["y"]), t["entry"])]
+        q = min(tq, key=lambda t: math.dist((t[0], t[1]), (s["x"], s["y"]))) if tq else None
     if q is None: continue
     foot.append(dict(site=s["id"], bottom_xyz=[round(s["x"], 1), round(s["y"], 1), s["z"]], top_xyz=[round(q[0], 1), round(q[1], 1), round(q[2], 2)], top_on_road=q[3],
                      straight_m=round(math.dist((q[0], q[1]), (s["x"], s["y"]))), rise_m=round(q[2] - s["z"], 1)))
 for t in towns.values():
+    if t["id"] in reached_ids: continue          # the road net ends at the town's road port
     q = nearest_dry(t["entry"])
     if q is None: continue
     foot.append(dict(site=t["id"], bottom_xyz=[t["entry"][0], t["entry"][1], t["z"]], top_xyz=[round(q[0], 1), round(q[1], 1), round(q[2], 2)], top_on_road=q[3],
@@ -271,9 +280,19 @@ veh = [x for x in SITE if "vehicles" in APPR.get(x.split("-N")[0].split("-T")[0]
 veh_missing = [x for x in veh if x not in {y for r in P.roads for y in r["links"]}]
 C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) and not veh_missing else "FAIL", nets=conn,
     vehicle_sites_not_on_the_net=veh_missing,
-    reading="the rule binds sites with a vehicle approach; the purpose map gives no op 3 site one, so every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)")
+    reading="the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)")
 C["3 roads: no straight run over 150 m (within 1 m of the chord)"] = dict(status="PASS" if not st or st["straight_max_m"] <= 150 else "FAIL", worst=[st["id"], st["straight_max_m"]] if st else None)
-C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if not clr or clr[0][0] >= 3.0 else "FAIL", closest=clr[:3])
+tb = []        # town buildings: centre to road edge >= 8 m (a building's half-size ASSUMED 5 m, + 3 m), except the last 25 m of a road at the town's own road port
+for tid, tl in getattr(op, "TOWNS", {}).items():
+    L_ = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), tl["layout"])))
+    for r in P.roads:
+        pts_ = [p_ for p_ in r["points"] if math.dist(p_, towns[tid]["entry"]) > 25.0]
+        if len(pts_) < 2: continue
+        ln = LineString(pts_).buffer(r["width_m"] / 2)
+        for b in L_["buildings"]: tb.append((round(ln.distance(Point(b["x"], b["y"])), 1), f"{tid} {b['id']}", r["id"]))
+tb.sort()
+C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if (not clr or clr[0][0] >= 3.0) and (not tb or tb[0][0] >= 8.0) else "FAIL", closest=clr[:3],
+    town_buildings_closest=tb[:3], town_note="town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road port where the road meets the town's own street")
 wd = []
 for s in pads:
     if s.get("water_ok"): continue
@@ -318,6 +337,10 @@ for fl in foot:
 for t in towns.values():
     hp = np.array(t["hull"].exterior.coords); ax.fill(hp[:, 0], hp[:, 1], fc="#f4d06f", ec="#8a6d00", alpha=0.7)
     ax.text(*t["hull"].centroid.coords[0], f"{t['id']} {t['name']}\n(town, {t['n_buildings']} bldgs)", fontsize=8, ha="center", weight="bold")
+    if t["id"] in R:     # the purpose map's point for the town, and how far the K6 layout sits from it
+        dx_, dy_ = R[t["id"]]["x"], R[t["id"]]["y"]; cx_, cy_ = t["hull"].centroid.coords[0]
+        ax.plot([dx_, cx_], [dy_, cy_], color="r", ls=":", lw=1.2); ax.plot(dx_, dy_, "rx", ms=8, mew=2)
+        ax.text(dx_, dy_ - 60, f"{t['id']} purpose-map point\n({math.dist((dx_, dy_), (cx_, cy_)):.0f} m from the layout)", fontsize=6.5, color="r", ha="center", va="top")
 col = {"FINAL": "#d62728", "MAIN": "#ff7f0e", "SUP": "#1f77b4", "squad position": "#7f7f7f"}
 for s in pads:
     c = rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])
