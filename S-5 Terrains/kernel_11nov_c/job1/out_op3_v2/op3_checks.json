@@ -43,13 +43,13 @@
   ]
  },
  "3 roads: dirt grade <= 14 %": {
-  "status": "FAIL",
+  "status": "PASS",
   "worst": [
    "3-11-3-14",
    {
-    "over_10_m": 13.9,
+    "over_10_m": 13.8,
     "over_20_m": 13.8,
-    "point_to_point": 14.3
+    "point_to_point": 13.9
    }
   ],
   "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
