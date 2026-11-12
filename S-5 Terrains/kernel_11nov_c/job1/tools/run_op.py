@@ -91,7 +91,7 @@ def entry_point(s, toward, out=2.5, rank=0):
 
 # ---- trunk (an AI road through given stops: a fixed point, sites (through-comps enter one edge and leave another), a town entry)
 trunk_nodes = []
-trunk_breaks = []
+trunk_breaks = [dict(at=list(g_["at"]), z=round(world.z(*g_["at"]), 2), label=g_["label"]) for g_ in getattr(op, "GAPS", [])]      # known gaps (need your ramps)
 def flat_nodes(r, owner):
     zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
     fl = [(x, y, z, owner) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
@@ -181,9 +181,14 @@ for phase in (0, 1):
             if nd[3] == sid: continue
             if all(math.dist((nd[0], nd[1]), (q[0], q[1])) > 150 for q in picked): picked.append(nd)
             if len(picked) >= 6: break
+        own_ = {}                                       # and the nearest point of each other road or pad, so a far net is tried too
+        for nd in cand:
+            o_ = nd[3]
+            if o_ != sid and o_ not in own_: own_[o_] = nd
+        picked += [nd for nd in list(own_.values())[:12] if nd not in picked][:6]
         done = False
         tries = [(q, 450, e) for q in picked[:2] for e in (0, 1)] + [(q, 900, e) for q in picked[:3] for e in (0, 1)]
-        if pass_no > 0: tries += [(q, 1500, e) for q in picked[:6] for e in (0, 1, 2)]
+        if pass_no > 0: tries += [(q, 1500, e) for q in picked[:12] for e in (0, 1, 2)]
         if "_town" in s: tries = [(q, m_, e) for m_ in (450, 900, 1500) for q in picked[:4] for e in range(len(s["_town"]["ports"]))]
         for nd, margin, e_rank in tries:
             if "_town" in s:      # a town tries each of its road ports (street ends at the town's edge) in turn
@@ -322,7 +327,12 @@ for r in P.roads:
 clr.sort()
 # connectivity: union of links per net
 conn = {}
+ISL = collections.OrderedDict()      # rule 3 is per island: nets named "<island>: <part>" are one island and must join up
 for net, order in op.NETS.items():
+    k_ = net.split(":")[0].strip(); ISL.setdefault(k_, dict(roots=[], order=[]))
+    ISL[k_]["roots"].append(op.ROOT[net]); ISL[k_]["order"] += order
+for net, io in ISL.items():
+    order = io["order"]
     par = {}
     def f(a):
         while par.get(a, a) != a: a = par[a]
@@ -331,7 +341,7 @@ for net, order in op.NETS.items():
         a, b = [("EXTERNAL NET" if x.startswith("op") and ":" in x else x) for x in r["links"]]     # other ops' roads are one net already
         par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
     reached = {x for r in P.roads for x in r["links"]}
-    want = [x for x in [op.ROOT[net]] + order if x in SITE and x in reached]
+    want = [x for x in io["roots"] + order if (x in SITE or x in towns) and x in reached]
     comps = collections.defaultdict(list)
     for x in want: comps[f(x)].append(x)
     conn[net] = dict(pieces=list(comps.values()), not_reached=[x for x in order if x in SITE and x not in reached])

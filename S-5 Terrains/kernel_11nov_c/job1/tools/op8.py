@@ -3,12 +3,12 @@ NAME = "The Caldera Yard"
 BOX = (7000, 14500, 5800, 12000)
 VIEW = (7000, 14500, 5800, 12000)
 LEGEND_LOC = "upper left"
-PLAN_KW = dict(band_range=10.0, steep=1.0, repair_to=3.6)     # as ops 5-7; every road is still held to 14 % and 4 m
+PLAN_KW = dict(band_range=14.0, steep=1.0, repair_to=3.6, cross_max=0.6, cliff_dilate=1)     # looser than ops 5-7 (the south arm's tip is broken ground); every road is still measured against 14 % and 4 m
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
 SITES = [
-    ("8-F", "Caldera Yard + Rim Foundry", "NEW 1: the Yard (capstone inside the Rim Foundry)", 140.0, 190.0,
-     "MEASURED ground: your build-4 grid already has a flat shelf at 3.5 m here, 298 x 450 m (101,600 m2); a 280 x 380 m pad fits inside it (the purpose map's 'about 400 x 300 m'); a harbour work (dry dock and slipways reach the lagoon)", None, 200, "beach"),
+    ("8-F", "Caldera Yard + Rim Foundry", "NEW 1: the Yard (capstone inside the Rim Foundry)", 120.0, 170.0,
+     "MEASURED ground: your build-4 grid already has a flat shelf at 3.5 m here, 298 x 450 m (101,600 m2) but not square; the largest pad that holds 4 m on it is 240 x 340 m (280 x 380 m does not), against the purpose map's 'about 400 x 300 m'; a harbour work (dry dock and slipways reach the lagoon)", None, 200, "beach"),
     ("8-M1", "Breach Dam (east abutment and gate house)", "CIS Fortress Dam with GPs", 40.0, 30.0,
      "ASSUMED: the dam spans the breach (see the dam line); this is its east abutment and gate house, 80 x 60 m, on the south arm's tip (a harbour work)", (9265, 8570), 250, "beach"),
     ("8-M2", "Kameni Shield Generator", "Destructable Shield Generator and its shield template", 30.0, 30.0, "ASSUMED: 60 x 60 m", None, 350, False),
@@ -36,8 +36,12 @@ GATE_LABEL = "Breach Dam (span)"
 
 # ops 4, 6 and 7 are done: their pads here are blocked and their roads are the net this op joins
 EXTERNAL_PLANS = ["../out_op4/op4_plan.json", "../out_op6/op6_plan.json", "../out_op7/op7_plan.json"]
-NETS = {"Ember Crescent": ["8-08", "8-M3", "8-13", "8-02", "8-M1", "8-14", "8-14-T", "8-09", "8-03", "8-04", "8-10", "8-12", "8-F", "8-M4"]}
-ROOT = {"Ember Crescent": "EXTERNAL_ROADS"}
+# two nets on one island: the arm net joins ops 4, 6 and 7; the inner shore (under a 20-110 m inner cliff all round the lagoon) cannot be reached
+# by any road within your rules, so it is its own net from the Yard, and rule 3 fails until a ramp joins them (GAPS)
+NETS = {"Ember Crescent": ["8-08", "8-M3", "8-13", "8-02", "8-M1", "8-14", "8-14-T", "8-09", "8-M4"],
+        "Ember Crescent: the inner shore": ["8-12", "8-10", "8-04", "8-03"]}
+ROOT = {"Ember Crescent": "EXTERNAL_ROADS", "Ember Crescent: the inner shore": "8-F"}
+GAPS = [dict(at=(9830, 8310), label="the inner shore to the south arm: the lowest step (MEASURED), 19.4 m between (10005, 8305) at 10 m and (9650, 8315) at 29.5 m, 355 m apart; your ramp here joins the Yard's net to the AI net")]
 
 SQUADS = [
     ("A8-01", "CIS Small Checkpoint with GPs", 28.4, 34.4, 12900, 7600, 300, "the south arm road from Causeway Foot"),
