@@ -25,7 +25,7 @@ Every other rule passes (`op7_checks.json`). Every other Ember Crescent site, an
    - **The rim road:** the road from the Chora to Oyra runs 2.5 km along the lagoon rim and enters Oyra at the west end of its rim street.
      - It passes 14 m from the town's south row of buildings.
      - The east end, where the K6 notes put the crest road, gave no road within 4 m.
-   - **Oyra Head's north tip has no landing shore on the 5 m grid.** The landers (7-05) sit at 125 m, and the bunkers (7-11) at 161 m. Boats reach the Coral Shelf shores west of the head (about 80 m stretches at y 15570-15950) and the Ash Crescent shores.
+   - **Oyra Head's north tip has no landing shore on the 5 m grid.** The landers (7-05) sit at 125 m, and the bunkers (7-11) at 161 m. Boats reach the Coral Shelf shores west of the head (about 80 m stretches at y 15570-15950) and Ash Crescent's 53 m shore.
 
 ## Oyra (job 2)
 - **Where it is:**
@@ -98,7 +98,7 @@ They stand 130-859 m from their nearest site. A7-05, on the rim road, is 859 m f
 
 ## Ash Crescent and the skerry
 - **No road:** 7-01 Narrows West Battery (34 m) and 7-08 Ash North Ridge Post (106 m) are foot and boat sites on Ash Crescent, as the purpose map says.
-- **Shores:** the two Ash Crescent stretches in the box are 547 m and 503 m, at its south end (y 9870-9945), and 148 m, 80 m and 53 m elsewhere along its shores.
+- **Shores** (corrected in v2): Ash Crescent has one stretch in the box, 53 m at (9255, 11635). The 547 m, 503 m, 148 m and 80 m stretches I gave as Ash's in v1 are on Kameni, the islet in the lagoon (op 8).
 - **7-15 North Skerry Sensor:** on its stack, air only.
 
 ## Roads

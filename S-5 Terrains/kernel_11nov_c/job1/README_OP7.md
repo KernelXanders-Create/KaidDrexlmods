@@ -1,4 +1,6 @@
-# KERNEL_RETURN_11NOV_C_JOB1_OP7_v1: op 7 (The Rim), ground plan
+# KERNEL_RETURN_11NOV_C_JOB1_OP7_v2: op 7 (The Rim), ground plan
+
+**v2 changes one thing from v1:** the Ash Crescent shores in `op7_notes.md`. The 547 m, 503 m, 148 m and 80 m stretches are on Kameni, not Ash Crescent. The plan, checks and image are unchanged.
 
 **One rule fails: rule 3, for 7-M1 Skaros Rock Keep only.** It stands on a 22 m lagoon ledge under a 130 m climb of 40-60 % ground, so it has a stair, not a road. Every other rule passes. Every other vehicle site and Oyra are on one net, joined to op 6's road to the Prophet Monastery. Read the first lines of `op7_notes.md`.
 
