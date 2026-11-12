@@ -1,6 +1,6 @@
 """Run one op's ground plan: sites -> road nets -> squad positions -> shores -> checks -> opN_plan.json / .png / _checks.json.
 Usage: python3 run_op.py op3 <out dir>"""
-import sys, os, json, math, importlib, collections
+import sys, os, json, math, importlib, collections, time
 import numpy as np
 from shapely.geometry import Polygon, LineString, Point, MultiPoint
 import matplotlib; matplotlib.use("Agg")
@@ -161,7 +161,10 @@ for net, order in op.NETS.items():
                 b_ = math.radians(s["_town"]["out_bearing"]); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([s["x"], s["y"]])
             else: ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
             out = np.array(ep) + 12.0 * v
+            t_r = time.time()
             r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
+            if os.environ.get("PLAN_VERBOSE"):
+                print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {'no path' if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
             if r is None: continue
             if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > 3.0:
                 log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']})"); continue

@@ -13,6 +13,7 @@ Rules (from 00_START_HERE_11NOV_C.md), as this tool applies them:
 import math, heapq, json
 import numpy as np
 from scipy import ndimage
+from scipy.spatial import cKDTree
 import world
 
 C = 5.0
@@ -39,6 +40,21 @@ def offsets(hx, hy, yaw, grow):
     m = (np.abs(u) <= hx + grow + 1e-6) & (np.abs(v) <= hy + grow + 1e-6)
     return dj[m], di[m]
 
+
+
+def nearest_on_line(P, pts, R, step=0.25):
+    """for each point: distance to the polyline P, the index k of the segment it falls on and t along it (0..1);
+    the line is sampled every `step` m and searched with a k-d tree (distance error under 0.01 m at the band edge)"""
+    P = np.asarray(P, float); seg = np.diff(P, axis=0); Ls = np.hypot(*seg.T)
+    ks, ts = [], []
+    for k in range(len(seg)):
+        m = max(1, int(math.ceil(Ls[k] / step))); t = np.arange(m) / m; ks.append(np.full(m, k)); ts.append(t)
+    ks.append(np.array([len(seg) - 1])); ts.append(np.array([1.0]))
+    ks = np.concatenate(ks); ts = np.concatenate(ts)
+    S = P[ks] + seg[ks] * ts[:, None]
+    d, i = cKDTree(S).query(pts, distance_upper_bound=R + step)
+    ok = np.isfinite(d); i = np.where(ok, i, 0)
+    return np.where(ok, d, 1e9), ks[i], ts[i]
 
 class Plan:
     def __init__(self, box):
@@ -203,10 +219,7 @@ class Plan:
         x0b, y0b = P.min(0) - Rb - C; x1b, y1b = P.max(0) + Rb + C
         Ib, Jb = np.meshgrid(np.arange(int(x0b / C), int(x1b / C) + 2), np.arange(int(y0b / C), int(y1b / C) + 2))
         pts = np.c_[(Ib * C).ravel(), (Jb * C).ravel()]; nat = self.H[Jb.ravel(), Ib.ravel()]
-        bd = np.full(len(pts), 1e9); bk = np.zeros(len(pts), int)
-        for k in range(len(P) - 1):
-            a_, b_ = P[k], P[k + 1]; ab = b_ - a_; t = np.clip(((pts - a_) @ ab) / (ab @ ab + 1e-9), 0, 1)
-            d = np.hypot(*(pts - (a_ + t[:, None] * ab)).T); m = d < bd; bd[m] = d[m]; bk[m] = np.where(t[m] < 0.5, k, k + 1)
+        bd, k_, t_ = nearest_on_line(P, pts, Rb); bk = np.where(t_ < 0.5, k_, k_ + 1)
         inb = bd <= Rb
         lo = np.full(n, np.inf); hi = np.full(n, -np.inf)
         np.minimum.at(lo, bk[inb], nat[inb]); np.maximum.at(hi, bk[inb], nat[inb])
@@ -255,11 +268,7 @@ class Plan:
         x0, y0 = P.min(0) - R - C; x1, y1 = P.max(0) + R + C
         I, J = np.meshgrid(np.arange(int(x0 / C), int(x1 / C) + 2), np.arange(int(y0 / C), int(y1 / C) + 2))
         X, Y = I * C, J * C; pts = np.c_[X.ravel(), Y.ravel()]
-        best_d = np.full(len(pts), 1e9); best_z = np.zeros(len(pts))
-        for k in range(len(P) - 1):
-            a, b = P[k], P[k + 1]; ab = b - a; L2 = ab @ ab + 1e-9
-            t = np.clip(((pts - a) @ ab) / L2, 0, 1); q = a + t[:, None] * ab; d = np.hypot(*(pts - q).T)
-            m = d < best_d; best_d[m] = d[m]; best_z[m] = Z[k] + (Z[k + 1] - Z[k]) * t[m]
+        best_d, k_, t_ = nearest_on_line(P, pts, R); best_z = Z[k_] + (Z[k_ + 1] - Z[k_]) * t_
         m = best_d <= R
         return J.ravel()[m], I.ravel()[m], best_z[m]
 
