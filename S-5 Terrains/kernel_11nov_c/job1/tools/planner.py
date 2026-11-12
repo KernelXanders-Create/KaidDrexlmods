@@ -139,6 +139,16 @@ class Plan:
             pol0 = Polygon(P); m0 = np.array([pol0.contains(Point(i * C, j * C)) for i, j in zip(I.ravel(), J.ravel())])
             jj, ii = J.ravel()[m0], I.ravel()[m0]; free = self.owner[jj, ii] == ""; self.owner[jj[free], ii[free]] = sid
 
+    def own_polys(self, sid, polys):
+        """grid points inside these polygons (a town's house footprints) are owned by the town: roads keep their band off them"""
+        from matplotlib.path import Path
+        for pol in polys:
+            c = np.array(pol.exterior.coords); x0, y0 = c.min(0) - C; x1, y1 = c.max(0) + C
+            I, J = np.meshgrid(np.arange(int(x0 / C), int(x1 / C) + 2), np.arange(int(y0 / C), int(y1 / C) + 2))
+            m = Path(c).contains_points(np.c_[(I * C).ravel(), (J * C).ravel()], radius=C * 0.75)    # a point within ~4 m of the wall counts as the house
+            jj, ii = J.ravel()[m], I.ravel()[m]; free = self.owner[jj, ii] == ""
+            self.owner[jj[free], ii[free]] = sid
+
     def add_buildings(self, sid, pts, r=8.0):
         """a town's buildings: each centre and the grid points within r metres are owned by the town, so roads keep their band off them"""
         for x, y in pts:

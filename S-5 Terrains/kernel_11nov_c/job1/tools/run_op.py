@@ -7,6 +7,14 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import world, planner
 from planner import rect
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../kernel_10nov_v1/K6/grader"))
+import town_grader as TG       # house footprints exactly as your grader reads them
+
+# built pads of ops 1-2: the measured size of every composition that already stands somewhere (tried first)
+BUILT = {}
+for f_ in ("pads_op1", "pads_op2"):
+    for p_ in json.load(open(os.path.join(world.PACK, "ops_1_2", f_ + ".json")))["pads"]:
+        if p_.get("hx") and p_.get("hy") and p_.get("comp") and p_["comp"] not in BUILT: BUILT[p_["comp"]] = (p_["hx"], p_["hy"], p_.get("site"))
 
 op = importlib.import_module(sys.argv[1]); OUT = sys.argv[2]; os.makedirs(OUT, exist_ok=True)
 N = sys.argv[1].replace("op", "")
@@ -22,8 +30,9 @@ for tid, tl in getattr(op, "TOWNS", {}).items():
     pts = [(b["x"], b["y"]) for b in L["buildings"]] + [tuple(p) for s in L["streets"] for p in s["points"]]
     hull = MultiPoint(pts).convex_hull.buffer(10)
     P.add_area(tid, list(hull.exterior.coords), None, own=True)     # roads keep off the whole town outline, except its own road at its port
-    P.add_buildings(tid, [(b["x"], b["y"]) for b in L["buildings"]])     # roads keep off the town's buildings (8 m round each centre, ASSUMED)
-    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], ports=tl.get("ports", [(ex, ey, tl["entry_z"], tl.get("out_bearing", 0.0), "road port")]), n_buildings=len(L["buildings"]),
+    houses = [Polygon(TG.footprint(TG.Model(b["model_id"]), TG.origin_from_centre(TG.Model(b["model_id"]), b["x"], b["y"], b["yaw_deg"]), b["yaw_deg"])) for b in L["buildings"]]
+    P.own_polys(tid, houses)       # the grader's house footprints: roads keep their band (and 3 m) off the walls
+    ex, ey = tl["entry"]; towns[tid] = dict(id=tid, name=tl["name"], hull=hull, entry=(ex, ey), z=tl["entry_z"], ports=tl.get("ports", [(ex, ey, tl["entry_z"], tl.get("out_bearing", 0.0), "road port")]), n_buildings=len(L["buildings"]), houses=houses,
                                             garrison=sum(1 for b in L["buildings"] if b.get("garrison")), layout=tl["layout"], exits=tl.get("exits", {}))
     if tid in R:
         towns[tid]["purpose_map_xy"] = [R[tid]["x"], R[tid]["y"]]; towns[tid]["layout_centre_xy"] = [round(hull.centroid.x, 1), round(hull.centroid.y, 1)]
@@ -56,6 +65,27 @@ for f_ in getattr(op, "EXTERNAL_PLANS", []):
         r2 = dict(r_, id=f"op{D_['op']}:{r_['id']}", external=True)
         P.commit_road(r2); P.roads.remove(r2); EXT_ROADS.append(r2)
 
+# ---- your built ops 1-2 roads (ground/roads_ops_1_2.json): fixed ground; levels read off the build-4 grid (the file has none)
+for r_ in json.load(open(os.path.join(world.PACK, "ground", "roads_ops_1_2.json"))):
+    if not r_["kind"] in ("dirt", "main"): continue          # Perys's town streets stay in Perys
+    pts_ = np.array(r_["points"], float)
+    if not ((pts_[:, 0] > op.BOX[0]) & (pts_[:, 0] < op.BOX[1]) & (pts_[:, 1] > op.BOX[2]) & (pts_[:, 1] < op.BOX[3])).any(): continue
+    r2 = dict(id=f"built:{r_['link']}#{len(EXT_ROADS)}", kind=r_["kind"], width_m=10.0 if r_["kind"] == "main" else 7.0, links=[], points=r_["points"],
+              points_z=[round(world.z(x, y), 2) for x, y in r_["points"]], external=True, source="roads_ops_1_2.json")
+    P.commit_road(r2); P.roads.remove(r2); EXT_ROADS.append(r2)
+# other ops' and built roads that touch are one net: group them (12 m)
+EXT_GROUP = {}
+_par = {r_["id"]: r_["id"] for r_ in EXT_ROADS}
+def _f(a):
+    while _par[a] != a: a = _par[a]
+    return a
+from scipy.spatial import cKDTree as _KD
+_trees = [(r_["id"], _KD(np.array(r_["points"]))) for r_ in EXT_ROADS]
+for i_, (a_, ta_) in enumerate(_trees):
+    for b_, tb_ in _trees[i_ + 1:]:
+        if ta_.sparse_distance_matrix(tb_, 12.0).nnz: _par[_f(a_)] = _f(b_)
+for r_ in EXT_ROADS: EXT_GROUP[r_["id"]] = "existing net " + _f(r_["id"]).split("#")[0]
+
 # ---- sites
 def place_sites(only=None, skip=()):
     for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
@@ -63,14 +93,27 @@ def place_sites(only=None, skip=()):
         base = sid.split("-N")[0].split("-T")[0]
         x, y = xy if xy else (R[base]["x"], R[base]["y"])
         kw_ = getattr(op, "SITE_KW", {}).get(sid, {})
-        s = P.add_site(sid, name, comp, hx, hy, x, y, rad, water_ok=wmode, size_note=ev, step=5.0 if rad <= 200 else 10.0, **kw_)
+        # sizes to try: your built pad of the same composition first (MEASURED), then the op file's size (with its stated basis)
+        sizes = []
+        bk = comp if comp in BUILT else comp.split(" + ")[0] if comp.split(" + ")[0] in BUILT else None
+        if bk and (abs(BUILT[bk][0] - hx) > 0.5 or abs(BUILT[bk][1] - hy) > 0.5) and not ev.startswith("REDUCED: the stack"):
+            sizes.append((BUILT[bk][0], BUILT[bk][1], f"KNOWN (built): your {BUILT[bk][2]} pad of {bk}, {2 * BUILT[bk][0]:.0f} x {2 * BUILT[bk][1]:.0f} m"))
+        sizes.append((hx, hy, ev if not bk or sizes == [] else f"REDUCED: your built pad ({BUILT[bk][2]}, {2 * BUILT[bk][0]:.0f} x {2 * BUILT[bk][1]:.0f} m) holds 4 m nowhere within {rad * 2.4:.0f} m; this {2 * hx:.0f} x {2 * hy:.0f} m pad needs a trimmed composition. Was: {ev}"))
+        s = None
+        for hx_, hy_, ev_ in sizes:
+            s = P.add_site(sid, name, comp, hx_, hy_, x, y, rad, water_ok=wmode, size_note=ev_, step=5.0 if rad <= 200 else 10.0, **kw_)
+            if s is None:
+                for r2 in (rad * 1.6, rad * 2.4):
+                    s = P.add_site(sid, name, comp, hx_, hy_, x, y, r2, water_ok=wmode, cap=3.9, size_note=ev_, **kw_)
+                    if s: break
+            if s: break
         if s is None:
-            for r2 in (rad * 1.6, rad * 2.4):
-                s = P.add_site(sid, name, comp, hx, hy, x, y, r2, water_ok=wmode, cap=3.9, size_note=ev, **kw_)
-                if s: break
-        if s is None:
-            log.append(f"{sid}: NO PAD FOUND within {rad * 2.4:.0f} m"); continue
-        s.update(role=R.get(base, {}).get("role", "squad"), size=R.get(base, {}).get("tier"), stake=R.get(base, {}).get("stake", ""), island=R.get(base, {}).get("island", ""))
+            log.append(f"{sid}: NO PAD FOUND within {rad * 2.4:.0f} m at {', '.join(f'{2 * a:.0f} x {2 * b:.0f} m' for a, b, _ in sizes)}"); continue
+        d_ = R.get(base, {})
+        s.update(role=d_.get("role", "squad"), size=d_.get("tier"), stake=d_.get("stake", ""), island=d_.get("island", ""))
+        if d_:     # moves are measured from the purpose map's design point (for a split site's second pad: from its main's point)
+            s["moved_from_rough_m"] = s.get("moved_m"); s["design_xy"] = [d_["x"], d_["y"]]
+            s["moved_m"] = round(math.dist((d_["x"], d_["y"]), (s["x"], s["y"]))); s["rough"] = [d_["x"], d_["y"]] if not xy else list(xy)
 
 trunk_stops = [leg["stop"][1] for leg in getattr(op, "TRUNK", []) if leg["stop"][0] == "site"]
 place_sites(only=trunk_stops) if trunk_stops else place_sites()
@@ -144,6 +187,36 @@ if trunk_stops:
 # ---- road nets
 nodes = {}       # net name -> list of (x, y, z, owner)
 LATE = tuple(getattr(op, "LATE_SITES", ()))     # sites seated after the roads, beside them, then joined by a short spur
+def level_nodes(points, points_z, owner, away=None, half=15.0, tol=0.2, every=3):
+    """points of a road where it is level (within tol over +-half metres along it): a road joining there meets it on its own level"""
+    X = np.array(points, float); Z = np.array(points_z, float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; out = []
+    for k in range(0, len(X), every):
+        m = np.abs(s_ - s_[k]) <= half
+        if s_[k] < half or s_[-1] - s_[k] < half: continue
+        if np.ptp(Z[m]) <= tol and (away is None or math.dist(X[k], away) > 40.0): out.append((float(X[k, 0]), float(X[k, 1]), float(Z[k]), owner))
+    return out
+
+
+def pad_edge_nodes(e, owner, used=None):
+    a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+    out = []
+    for v_, h_ in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"])):
+        q_ = np.array([e["x"], e["y"]]) + v_ * (h_ + 4.0)
+        if used is None or math.dist(q_, used) > 5: out.append((float(q_[0]), float(q_[1]), e["z"], owner))
+    return out
+
+
+JMAX = getattr(op, "JUNCTION_MAX", 0.3)      # item 9: a joining road ends on the earlier road's own level (step <= 0.3 m)
+HOUSES = [(tid, h) for tid, t in towns.items() for h in t["houses"]]
+
+
+def house_clear(r):
+    """nearest house wall (the grader's footprints) to the road's edge, m"""
+    if not HOUSES: return 1e9
+    ln = LineString(r["points"]).buffer(r["width_m"] / 2)
+    return min(ln.distance(h) for _, h in HOUSES)
+
+
 for phase in (0, 1):
   if phase == 1:
     if not LATE: break
@@ -157,9 +230,9 @@ for phase in (0, 1):
             nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
         elif root in towns:
             t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
-        elif root == "EXTERNAL_ROADS":      # other ops' roads: every 4th point inside the box is a join point at its own level
-            nodes[net] = [(x, y, z, r_["id"]) for r_ in EXT_ROADS for (x, y), z in list(zip(r_["points"], r_["points_z"]))[::4]
-                          if op.BOX[0] < x < op.BOX[1] and op.BOX[2] < y < op.BOX[3]]
+        elif root == "EXTERNAL_ROADS":      # existing roads (other ops', your built ones): their level stretches, and the free edges of the pads on them
+            nodes[net] = [n_ for r_ in EXT_ROADS for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]]
+            nodes[net] += [n_ for eid, e in EXT.items() for n_ in pad_edge_nodes(e, eid)]
         elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
             e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
             nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
@@ -203,26 +276,19 @@ for phase in (0, 1):
             if os.environ.get("PLAN_VERBOSE"):
                 print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {'no path' if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
             if r is None: continue
-            if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > (getattr(op, "JUNCTION_MAX_LATE", 3.0) if phase == 1 else 3.0):
-                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']})"); continue
+            if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > JMAX or house_clear(r) < 3.0:
+                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m)"); continue
             P.commit_road(r)
             if "_town" in s:      # the port the road reached becomes the town's entry
                 t_ = s["_town"]; t_["entry"] = (s["x"], s["y"]); t_["z"] = s["z"]; t_["port_used"] = pn_
             if "_town" not in s:
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
-            zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
-            flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03
-                    and math.dist((x, y), ep) > 40.0]          # not the road's own landing at its pad: a road joining there would touch the pad
-            if len(flat) < 2: flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 4 == 0 and math.dist((x, y), ep) > 40.0]
-            nodes[net] += flat
+            nodes[net] += level_nodes(r["points"], r["points_z"], sid, away=ep)      # its level stretches (not its own landing at its pad)
             if "_town" in s:      # a joined town's other street ends are on the net too (its streets carry traffic)
                 nodes[net] += [(px_, py_, pz_, sid) for px_, py_, pz_, pb_, pn_ in s["_town"]["ports"] if math.dist((px_, py_), (s["x"], s["y"])) > 5]
             else:                 # and a joined pad's free edges (level, at the pad's height) are join points
-                a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
-                for v_, h_ in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"])):
-                    q_ = np.array([s["x"], s["y"]]) + v_ * (h_ + 4.0)
-                    if math.dist(q_, ep) > 5: nodes[net].append((float(q_[0]), float(q_[1]), s["z"], sid))
+                nodes[net] += pad_edge_nodes(s, sid, used=ep)
             done = True; break
         if not done: failed.append(sid)
       if not failed or len(failed) == len(pending): pending = failed; break
@@ -319,11 +385,16 @@ cf = max(P.roads, key=lambda r: r["max_cut_fill_m"]) if P.roads else None
 st = max(P.roads, key=lambda r: r["straight_max_m"]) if P.roads else None
 # clearance: pad footprints vs road edges
 clr = []
+ALLPADS = [(s["id"], polys[s["id"]]) for s in pads] + [(eid, Polygon(rect(e["x"], e["y"], e["hx"], e["hy"], e["yaw"]))) for eid, e in EXT.items()]
 for r in P.roads:
-    ln = LineString(r["points"]).buffer(r["width_m"] / 2)
-    for s in pads:
-        if s["id"] in r["links"]: continue
-        clr.append((round(polys[s["id"]].distance(ln), 1), s["id"], r["id"]))
+    X = np.array(r["points"])
+    for pid, pol in ALLPADS:
+        if pid in r["links"]:      # the pad a road serves: only the road's own end (its last 25 m) may meet it
+            keep = [k for k in range(len(X)) if pol.distance(Point(X[k])) > 25.0 + r["width_m"] / 2]
+            if len(keep) < 2: continue
+            ln = LineString(X[keep[0]:keep[-1] + 1]).buffer(r["width_m"] / 2)
+        else: ln = LineString(X).buffer(r["width_m"] / 2)
+        clr.append((round(pol.distance(ln), 1), pid, r["id"]))
 clr.sort()
 # connectivity: union of links per net
 conn = {}
@@ -338,14 +409,24 @@ for net, io in ISL.items():
         while par.get(a, a) != a: a = par[a]
         return a
     for r in P.roads:
-        a, b = [("EXTERNAL NET" if x.startswith("op") and ":" in x else x) for x in r["links"]]     # other ops' roads are one net already
+        a, b = [EXT_GROUP.get(x, x) for x in r["links"]]     # other ops' and built roads: their own connected groups
         par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
     reached = {x for r in P.roads for x in r["links"]}
     want = [x for x in io["roots"] + order if (x in SITE or x in towns) and x in reached]
     comps = collections.defaultdict(list)
     for x in want: comps[f(x)].append(x)
     conn[net] = dict(pieces=list(comps.values()), not_reached=[x for x in order if x in SITE and x not in reached])
-C["3 roads: dirt grade <= 14 %"] = dict(status="PASS" if not g or g["max_grade_pct"] <= 14.05 else "FAIL", worst=[g["id"], g["max_grade_pct"]] if g else None)
+def worst_grade(r, base):
+    """steepest grade over any stretch of `base` metres, measured along the points as handed over"""
+    X = np.array(r["points"]); Z = np.array(r["points_z"]); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; w = 0.0
+    for i in range(len(s_)):
+        j = np.searchsorted(s_, s_[i] + base)
+        if j < len(s_): w = max(w, abs(Z[j] - Z[i]) / (s_[j] - s_[i]))
+    return round(100 * w, 1)
+GR = sorted(((worst_grade(r, 10.0), worst_grade(r, 20.0), r["max_grade_pct"], r["id"]) for r in P.roads), reverse=True)
+C["3 roads: dirt grade <= 14 %"] = dict(status="PASS" if not GR or max(GR[0][0], max(x[2] for x in GR)) <= 14.05 else "FAIL",
+    worst=[GR[0][3], dict(over_10_m=GR[0][0], over_20_m=GR[0][1], point_to_point=GR[0][2])] if GR else None,
+    method="measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them")
 C["3 roads: cut / fill <= 4 m (every grid point the road fixes)"] = dict(status="PASS" if not cf or cf["max_cut_fill_m"] <= 4.0 else "FAIL", worst=[cf["id"], cf["max_cut_fill_m"]] if cf else None)
 APPR = {}
 for line_ in open(os.path.join(world.PACK, "design", "PURPOSE_MAP.md"), encoding="utf-8"):
@@ -358,17 +439,9 @@ C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pi
     vehicle_sites_not_on_the_net=veh_missing,
     reading="the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)")
 C["3 roads: no straight run over 150 m (within 1 m of the chord)"] = dict(status="PASS" if not st or st["straight_max_m"] <= 150 else "FAIL", worst=[st["id"], st["straight_max_m"]] if st else None)
-tb = []        # town buildings: centre to road edge >= 8 m (a building's half-size ASSUMED 5 m, + 3 m), except the last 25 m of a road at the town's own road port
-for tid, tl in getattr(op, "TOWNS", {}).items():
-    L_ = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), tl["layout"])))
-    for r in P.roads:
-        pts_ = [p_ for p_ in r["points"] if min(math.dist(p_, q_[:2]) for q_ in towns[tid]["ports"]) > 25.0]     # any of the town's road ports
-        if len(pts_) < 2: continue
-        ln = LineString(pts_).buffer(r["width_m"] / 2)
-        for b in L_["buildings"]: tb.append((round(ln.distance(Point(b["x"], b["y"])), 1), f"{tid} {b['id']}", r["id"]))
-tb.sort()
-C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if (not clr or clr[0][0] >= 3.0) and (not tb or tb[0][0] >= 8.0) else "FAIL", closest=clr[:3],
-    town_buildings_closest=tb[:3], town_note="town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road ports (street ends), where a road meets the town's own street")
+tb = sorted((round(LineString(r["points"]).buffer(r["width_m"] / 2).distance(h), 2), tid, r["id"]) for r in P.roads for tid, h in HOUSES)     # house walls (the grader's footprints), no exemption
+C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if (not clr or clr[0][0] >= 3.0) and (not tb or tb[0][0] >= 3.0) else "FAIL", closest=clr[:3],
+    town_houses_closest=tb[:3], town_note="town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends")
 wd = []
 for s in pads:
     if s.get("water_ok"): continue
@@ -392,7 +465,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k != "hull"} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith("op") and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s["rough"]), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            roads=P.roads, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith("op") and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
@@ -430,7 +503,7 @@ for s in pads:
     lab = s["id"] if s["id"].startswith("A") else f"{s['id']} {s['name']}"
     ax.text(s["x"] + s["hx"] + 10, s["y"], lab, fontsize=7.5 if not s["id"].startswith("A") else 6.5, color="k", weight="bold" if s.get("role") in ("FINAL", "MAIN") else None,
             bbox=dict(fc="white", ec="none", alpha=0.6, pad=0.5))
-    ax.plot([s["rough"][0], s["x"]], [s["rough"][1], s["y"]], color="r", lw=0.6, ls=":")
+    ax.plot([s.get("design_xy", s["rough"])[0], s["x"]], [s.get("design_xy", s["rough"])[1], s["y"]], color="r", lw=0.6, ls=":")
 for tb in trunk_breaks:
     ax.plot(*tb["at"], marker="X", color="#d62728", ms=14, mec="k"); ax.text(tb["at"][0] + 40, tb["at"][1] - 60, "GAP: " + tb["label"].split(";")[-1].strip(), color="#d62728", fontsize=8, weight="bold",
                                                                               bbox=dict(fc="white", ec="#d62728", alpha=0.8))
