@@ -24,7 +24,7 @@ SITES = [
     ("6-11", "North Cape AA", "CIS AA Tooth Fixed with GPs", 25.0, 25.0, "ASSUMED: 50 x 50 m", None, 300, False),
     ("6-12", "Deep-Sea Sensor Stack", "Giant Radar Dish", 15.0, 15.0, "REDUCED / ASSUMED: the stack top takes about 30 x 30 m (the dish and a ring of guns); air only", None, 120, "beach"),
     ("6-13", "Kamar Landers", "CIS Lander Base Fixed with GPs (D)", 44.5, 67.0, "ASSUMED: as the CIS Landing Position (1-02); a beach work", None, 300, "beach"),
-    ("6-14", "Upper Spring Outpost", "Zavala CIS Outpost with GPs", 30.0, 30.0, "ASSUMED: 60 x 60 m (as op 3's Zavala outpost); seated on the west climb road above the spring (the spring's own ridge at 385 m takes no road)", (14750, 11300), 250, False),
+    ("6-14", "Upper Spring Outpost", "Zavala CIS Outpost with GPs", 30.0, 30.0, "ASSUMED: 60 x 60 m (as op 3's Zavala outpost); seated beside the west climb road below the spring (the spring's own ridge at 385 m takes no road)", (14680, 11450), 150, False),
 ]
 
 TOWNS = {"6-01": dict(name="Kamar Village", layout="../../../kernel_10nov_v1/K6_repass/kamar_village_v2/kamar_village_v2_layout.json",
