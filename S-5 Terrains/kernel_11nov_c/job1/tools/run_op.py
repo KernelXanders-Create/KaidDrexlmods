@@ -197,6 +197,16 @@ def level_nodes(points, points_z, owner, away=None, half=15.0, tol=0.2, every=3)
     return out
 
 
+def own_nodes(r, owner, away=None, every=3):
+    """every 3rd point of a road this op builds (away from its end landings): a road may join there once it gets a level landing"""
+    X = np.array(r["points"], float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; L_ = s_[-1]
+    return [(float(X[k, 0]), float(X[k, 1]), float(r["points_z"][k]), owner, r["id"], k) for k in range(0, len(X), every)
+            if 31.0 <= s_[k] <= L_ - 27.0 and (away is None or math.dist(X[k], away) > 40.0)]
+
+
+ROADS_BY_ID = {}
+
+
 def pad_edge_nodes(e, owner, used=None):
     a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
     out = []
@@ -271,20 +281,31 @@ for phase in (0, 1):
                 b_ = math.radians(pb_); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([px_, py_])
             else: ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
             out = np.array(ep) + 12.0 * v
+            rl = None                   # a road of this op at the join: give it a level landing there first (item 9: no steps)
+            if len(nd) > 4:
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5])
+                if zl is None: continue
+                rl = (r_own, r_own["points_z"]); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
             t_r = time.time()
             r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
             if os.environ.get("PLAN_VERBOSE"):
                 print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {'no path' if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
-            if r is None: continue
+            def undo():
+                if rl: P.uncommit(rl[0]); rl[0]["points_z"] = rl[1]; P.recommit(rl[0])
+            if r is None: undo(); continue
             if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > JMAX or house_clear(r) < 3.0:
-                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m)"); continue
-            P.commit_road(r)
+                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m)"); undo(); continue
+            P.commit_road(r); ROADS_BY_ID[r["id"]] = r
+            if rl:                # the re-levelled road's join points move with its new levels
+                rid_ = rl[0]["id"]; own_ = [n_ for n_ in nodes[net] if len(n_) > 4 and n_[4] == rid_][:1]
+                nodes[net] = [n_ for n_ in nodes[net] if not (len(n_) > 4 and n_[4] == rid_)] + own_nodes(rl[0], own_[0][3] if own_ else nd[3])
+                rl[0].setdefault("landings_for_joins", []).append(dict(at=[round(nd[0], 1), round(nd[1], 1)], z=round(nd[2], 2), for_road=r["id"]))
             if "_town" in s:      # the port the road reached becomes the town's entry
                 t_ = s["_town"]; t_["entry"] = (s["x"], s["y"]); t_["z"] = s["z"]; t_["port_used"] = pn_
             if "_town" not in s:
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
-            nodes[net] += level_nodes(r["points"], r["points_z"], sid, away=ep)      # its level stretches (not its own landing at its pad)
+            nodes[net] += own_nodes(r, sid, away=ep)      # its points (not its own landing at its pad); a join there gets a level landing
             if "_town" in s:      # a joined town's other street ends are on the net too (its streets carry traffic)
                 nodes[net] += [(px_, py_, pz_, sid) for px_, py_, pz_, pb_, pn_ in s["_town"]["ports"] if math.dist((px_, py_), (s["x"], s["y"])) > 5]
             else:                 # and a joined pad's free edges (level, at the pad's height) are join points
@@ -294,6 +315,11 @@ for phase in (0, 1):
       if not failed or len(failed) == len(pending): pending = failed; break
       pending = failed
     for sid in pending: log.append(f"road for {sid}: NO ROUTE found to the {net} net")
+
+# ---- re-measure every road of this op on the final ground (landings for joins changed some levels)
+for r in P.roads:
+    P.uncommit(r); P.check_road(r); P.recommit(r)
+    X_ = np.array(r["points"]); r["max_grade_pct"] = round(float(np.max(np.abs(np.diff(r["points_z"])) / np.maximum(np.hypot(*np.diff(X_, axis=0).T), 1e-6)) * 100), 1)
 
 # ---- foot links (stairs / paths, not graded ground) for every site the road net does not reach
 foot = []

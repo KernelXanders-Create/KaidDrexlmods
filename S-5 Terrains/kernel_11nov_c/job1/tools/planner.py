@@ -246,6 +246,7 @@ class Plan:
         if zb is not None: zp[-1] = zb
         ss = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = ss[-1]       # distances along the points as handed over
         ds = np.diff(ss).mean(); seg = np.maximum(np.diff(ss), 1e-6)     # each segment's own length: the grade holds point to point
+        grade = grade * 0.995                                             # a margin so levels rounded to 1 cm still hold the limit
         land_a = (ss <= 16.0) if za is not None else np.zeros(n, bool)          # level landings: the band at a pad or junction keeps its level
         land_b = (ss >= L - 12.0) if zb is not None else np.zeros(n, bool)
         fixed = land_a | land_b
@@ -279,6 +280,38 @@ class Plan:
                  points_z=[round(float(v), 2) for v in zp], length_m=round(float(L)), max_grade_pct=round(float(np.max(np.abs(np.diff(zp)) / seg) * 100), 1))
         self.check_road(r)
         return r
+
+    def uncommit(self, r):
+        """take a road's band out of the fixed grid (its own cells only)"""
+        J, I, Z = self.band_points(r); m = self.owner[J, I] == "R:" + r["id"]
+        self.fixed[J[m], I[m]] = np.nan; self.owner[J[m], I[m]] = ""
+
+    def recommit(self, r):
+        J, I, Z = self.band_points(r); free = np.isnan(self.fixed[J, I])
+        self.fixed[J[free], I[free]] = Z[free]; self.owner[J[free], I[free]] = "R:" + r["id"]
+
+    def relevel(self, r, k, half=15.0, grade=0.14):
+        """give road r a level landing (+-half m) at point k, so a road can join it on its own level; the rest is re-held to the grade.
+        Returns the new levels, or None if the grade, the 4 m cut / fill or a pad would be broken. Does not change r."""
+        X = np.array(r["points"], float); Z = np.array(r["points_z"], float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; L = s_[-1]
+        seg = np.maximum(np.diff(s_), 1e-6); win = np.abs(s_ - s_[k]) <= half
+        ends = (s_ <= 16.0) | (s_ >= L - 12.0)
+        if (win & ends).any(): return None
+        zp = Z.copy(); zp[win] = Z[k]; fixed = win | ends; g = grade * 0.995
+        for _ in range(300):
+            old = zp.copy()
+            for i in range(1, len(zp)):
+                if not fixed[i]: zp[i] = min(max(zp[i], zp[i - 1] - g * seg[i - 1]), zp[i - 1] + g * seg[i - 1])
+            for i in range(len(zp) - 2, -1, -1):
+                if not fixed[i]: zp[i] = min(max(zp[i], zp[i + 1] - g * seg[i]), zp[i + 1] + g * seg[i])
+            if np.abs(zp - old).max() < 1e-4: break
+        if np.max(np.abs(np.diff(zp)) / seg) > grade + 1e-3: return None
+        r2 = dict(r, points_z=[round(float(v), 2) for v in zp])
+        self.uncommit(r)
+        self.check_road(r2)
+        self.recommit(r)
+        if r2["max_cut_fill_m"] > 4.0 or r2["clash_points"] > 0 or r2["in_water_points"]: return None
+        return r2["points_z"]
 
     def band_points(self, r):
         """grid points the road fixes (within half width + 3.5 m), each with the road level at its nearest station"""

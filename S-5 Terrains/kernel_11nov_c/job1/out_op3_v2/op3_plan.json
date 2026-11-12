@@ -1,0 +1,6383 @@
+{
+ "op": 3,
+ "name": "The Sound",
+ "frame": "map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+ "sites": [
+  {
+   "id": "3-F",
+   "name": "Sound Gate: south headland keep",
+   "comp": "NEW 2: Sound fortress kit (keep)",
+   "x": 3900.0,
+   "y": 10785.0,
+   "yaw": 0,
+   "hx": 20.0,
+   "hy": 20.0,
+   "z": 23.25,
+   "cut_m": 2.54,
+   "fill_m": 2.35,
+   "max_change_m": 2.54,
+   "moved_m": 52,
+   "rough": [
+    3880,
+    10820
+   ],
+   "size_note": "ASSUMED: no pad of the new kit exists; the south headland has only a 21 m shelf beside the ring islet at the mouth, which takes a 40 x 40 m keep (a sea work: may stand at the water's edge)",
+   "water_ok": "beach",
+   "n_points": 81,
+   "role": "FINAL",
+   "size": "P",
+   "stake": "NEW build 2 of 2 (the Sound fortress kit): a sea gate across the Sound mouth between two headland gun keeps seals the Sound, the west's only sheltered anchorage. The site is the south headland keep; the gate spans the mouth. Blowing the gate opens the Sound to Republic boats",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 40,
+   "design_xy": [
+    3850,
+    10800
+   ],
+   "entrance_bearing_deg": 270,
+   "entrance_xy": [
+    3876.0,
+    10785.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-F-N",
+   "name": "Sound Gate: north headland keep",
+   "comp": "NEW 2: Sound fortress kit (keep)",
+   "x": 3500.0,
+   "y": 11160.0,
+   "yaw": 75,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 17.0,
+   "cut_m": 3.12,
+   "fill_m": 3.13,
+   "max_change_m": 3.13,
+   "moved_m": 502,
+   "rough": [
+    3510,
+    11150
+   ],
+   "size_note": "ASSUMED, as the south keep, on the north headland point",
+   "water_ok": "beach",
+   "n_points": 157,
+   "role": "FINAL",
+   "size": "P",
+   "stake": "NEW build 2 of 2 (the Sound fortress kit): a sea gate across the Sound mouth between two headland gun keeps seals the Sound, the west's only sheltered anchorage. The site is the south headland keep; the gate spans the mouth. Blowing the gate opens the Sound to Republic boats",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 14,
+   "design_xy": [
+    3850,
+    10800
+   ],
+   "entrance_bearing_deg": 255,
+   "entrance_xy": [
+    3467.2,
+    11151.2
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-M1",
+   "name": "South Notch Keep",
+   "comp": "NEW 2: Sound fortress kit (keep + wall)",
+   "x": 3270.0,
+   "y": 8210.0,
+   "yaw": 15,
+   "hx": 40.0,
+   "hy": 55.0,
+   "z": 97.5,
+   "cut_m": 1.84,
+   "fill_m": 1.97,
+   "max_change_m": 1.97,
+   "moved_m": 277,
+   "rough": [
+    3450,
+    8000
+   ],
+   "size_note": "ASSUMED: keep and wall across the gully, 80 x 110 m",
+   "water_ok": false,
+   "n_points": 375,
+   "role": "MAIN",
+   "size": "P",
+   "stake": "A keep and wall from the same Sound fortress kit plug the south-east cliff gully: the main way into the island",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 277,
+   "design_xy": [
+    3450,
+    8000
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    3285.3,
+    8267.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-M2",
+   "name": "West Notch Keep",
+   "comp": "NEW 2: Sound fortress kit (keep + wall)",
+   "x": 660.0,
+   "y": 10000.0,
+   "yaw": 90,
+   "hx": 35.0,
+   "hy": 45.0,
+   "z": 31.25,
+   "cut_m": 1.77,
+   "fill_m": 1.82,
+   "max_change_m": 1.82,
+   "moved_m": 0,
+   "rough": [
+    660,
+    10000
+   ],
+   "size_note": "ASSUMED: 70 x 90 m",
+   "water_ok": false,
+   "n_points": 285,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "A second keep and wall from the Sound fortress kit plug the west-coast gully: another way in. Its recon is from the sea",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    660,
+    10000
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    709.0,
+    10000.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-M4",
+   "name": "Summit AA",
+   "comp": "CIS Heavy AD Tower with GPs",
+   "x": 2140.0,
+   "y": 10980.0,
+   "yaw": 165,
+   "hx": 46.4,
+   "hy": 44.0,
+   "z": 369.5,
+   "cut_m": 2.22,
+   "fill_m": 2.24,
+   "max_change_m": 2.24,
+   "moved_m": 63,
+   "rough": [
+    2200,
+    11000
+   ],
+   "size_note": "ASSUMED: as the CIS Flower Tower (1-11)",
+   "water_ok": false,
+   "n_points": 349,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "The highest AA in the west; taking it opens the Sound's sky to LAATs",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 63,
+   "design_xy": [
+    2200,
+    11000
+   ],
+   "entrance_bearing_deg": 165,
+   "entrance_xy": [
+    2152.4,
+    10933.6
+   ]
+  },
+  {
+   "id": "3-01",
+   "name": "Cliff Galleries",
+   "comp": "Royal Tunnel Holdout 1 (Mono)",
+   "x": 3200.0,
+   "y": 11250.0,
+   "yaw": 135,
+   "hx": 30.0,
+   "hy": 25.0,
+   "z": 43.25,
+   "cut_m": 1.85,
+   "fill_m": 1.82,
+   "max_change_m": 1.85,
+   "moved_m": 50,
+   "rough": [
+    3200,
+    11300
+   ],
+   "size_note": "ASSUMED: tunnel mouth pad 60 x 50 m on the cliff top",
+   "water_ok": false,
+   "n_points": 127,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Tunnel shells in the north cliff of the Sound (tunnel 1 of 2); taking them takes the wall's north headland from behind",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 50,
+   "design_xy": [
+    3200,
+    11300
+   ],
+   "entrance_bearing_deg": 225,
+   "entrance_xy": [
+    3176.0,
+    11226.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-02",
+   "name": "Terrace Farms Post",
+   "comp": "CIS Outpost with GPs (D)",
+   "x": 1500.0,
+   "y": 9300.0,
+   "yaw": 15,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 214.25,
+   "cut_m": 1.28,
+   "fill_m": 1.18,
+   "max_change_m": 1.28,
+   "moved_m": 0,
+   "rough": [
+    1500,
+    9300
+   ],
+   "size_note": "ASSUMED: 60 x 60 m",
+   "water_ok": false,
+   "n_points": 157,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Stepped fields with low walls; taking it opens the south-west slopes to the West Notch",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    1500,
+    9300
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    1508.8,
+    9332.8
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-03",
+   "name": "South Cape Landers",
+   "comp": "CIS Landing Position with GPs",
+   "x": 2410.0,
+   "y": 7560.0,
+   "yaw": 105,
+   "hx": 44.5,
+   "hy": 67.0,
+   "z": 238.5,
+   "cut_m": 2.58,
+   "fill_m": 2.78,
+   "max_change_m": 2.78,
+   "moved_m": 14,
+   "rough": [
+    2400,
+    7550
+   ],
+   "size_note": "KNOWN: 1-02 / 2-06",
+   "water_ok": "beach",
+   "n_points": 503,
+   "role": "SUP",
+   "size": "S",
+   "stake": "CIS landers on the south cape face Black Strand; taking them opens the cape beach (the FOB fallback)",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 14,
+   "design_xy": [
+    2400,
+    7550
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    2422.6,
+    7606.8
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-04",
+   "name": "Notch Road Checkpoint",
+   "comp": "CIS Heavy Checkpoint with GPs",
+   "x": 3000.0,
+   "y": 8640.0,
+   "yaw": 30,
+   "hx": 32.9,
+   "hy": 49.5,
+   "z": 223.75,
+   "cut_m": 2.08,
+   "fill_m": 1.88,
+   "max_change_m": 2.08,
+   "moved_m": 64,
+   "rough": [
+    3050,
+    8600
+   ],
+   "size_note": "ASSUMED: as the CIS Double Checkpoint (2-07)",
+   "water_ok": false,
+   "n_points": 283,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Holds the road from the South Notch inland",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 64,
+   "design_xy": [
+    3050,
+    8600
+   ],
+   "entrance_bearing_deg": 300,
+   "entrance_xy": [
+    2968.0,
+    8658.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-06",
+   "name": "Shoal Pillboxes",
+   "comp": "Small Wall with Bunker",
+   "x": 5700.0,
+   "y": 9420.0,
+   "yaw": 0,
+   "hx": 20.0,
+   "hy": 12.0,
+   "z": 4.25,
+   "cut_m": 0.0,
+   "fill_m": 0.06,
+   "max_change_m": 0.06,
+   "moved_m": 0,
+   "rough": [
+    5700,
+    9420
+   ],
+   "size_note": "ASSUMED: 40 x 24 m on the tephra bank",
+   "water_ok": "beach",
+   "n_points": 45,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Pillboxes on a tephra bank in the Pumice Shoals channel fire on boats crossing to Ash Crescent",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    5700,
+    9420
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    5724.0,
+    9420.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "3-07",
+   "name": "Shoal Wreck Fort",
+   "comp": "Falling Lander Unarmed",
+   "x": 6550.0,
+   "y": 9440.0,
+   "yaw": 0,
+   "hx": 40.0,
+   "hy": 40.0,
+   "z": 4.25,
+   "cut_m": 0.0,
+   "fill_m": 0.18,
+   "max_change_m": 0.18,
+   "moved_m": 0,
+   "rough": [
+    6550,
+    9440
+   ],
+   "size_note": "ASSUMED: 80 x 80 m on the bar",
+   "water_ok": "beach",
+   "n_points": 289,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "A wrecked CIS lander on the bar, garrisoned; boats crossing the shoals pass under its guns",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    6550,
+    9440
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    6594.0,
+    9440.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "3-08",
+   "name": "Peak Relay Dish",
+   "comp": "Giant Comms Antenna Array",
+   "x": 1980.0,
+   "y": 11460.0,
+   "yaw": 15,
+   "hx": 40.0,
+   "hy": 40.0,
+   "z": 338.5,
+   "cut_m": 3.65,
+   "fill_m": 3.5,
+   "max_change_m": 3.65,
+   "moved_m": 22,
+   "rough": [
+    2000,
+    11450
+   ],
+   "size_note": "ASSUMED: twice the CIS Comms Array's short side",
+   "water_ok": false,
+   "n_points": 273,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Links the Sound to the caldera; a foot path climbs the summit spire. Taking it cuts the walls' warning to the Yard",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 22,
+   "design_xy": [
+    2000,
+    11450
+   ],
+   "entrance_bearing_deg": 195,
+   "entrance_xy": [
+    1968.6,
+    11417.5
+   ]
+  },
+  {
+   "id": "3-09",
+   "name": "Sound Rim Guns",
+   "comp": "CIS AAT Turbolaster Base with GPs",
+   "x": 3670.0,
+   "y": 11820.0,
+   "yaw": 60,
+   "hx": 45.0,
+   "hy": 45.0,
+   "z": 25.25,
+   "cut_m": 3.93,
+   "fill_m": 3.86,
+   "max_change_m": 3.93,
+   "moved_m": 184,
+   "rough": [
+    3600,
+    11650
+   ],
+   "size_note": "ASSUMED: 90 x 90 m",
+   "water_ok": false,
+   "n_points": 345,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns on the north rim cover the inlet; air softens them",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 184,
+   "design_xy": [
+    3600,
+    11650
+   ],
+   "entrance_bearing_deg": 240,
+   "entrance_xy": [
+    3627.6,
+    11795.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-10",
+   "name": "North Cove Outpost",
+   "comp": "Zavala CIS Outpost with GPs",
+   "x": 2860.0,
+   "y": 12800.0,
+   "yaw": 60,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 18.25,
+   "cut_m": 1.95,
+   "fill_m": 2.01,
+   "max_change_m": 2.01,
+   "moved_m": 168,
+   "rough": [
+    2700,
+    12850
+   ],
+   "size_note": "ASSUMED: 60 x 60 m",
+   "water_ok": false,
+   "n_points": 157,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Watches the north cove, the back door; taking it opens a second landing beach for the Sound Head assault",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 168,
+   "design_xy": [
+    2700,
+    12850
+   ],
+   "entrance_bearing_deg": 240,
+   "entrance_xy": [
+    2830.6,
+    12783.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-11",
+   "name": "West Cliff Battery",
+   "comp": "CIS Small Artillery Base with GPs",
+   "x": 700.0,
+   "y": 11590.0,
+   "yaw": 165,
+   "hx": 63.8,
+   "hy": 31.4,
+   "z": 129.0,
+   "cut_m": 2.36,
+   "fill_m": 2.53,
+   "max_change_m": 2.53,
+   "moved_m": 51,
+   "rough": [
+    750,
+    11600
+   ],
+   "size_note": "KNOWN: 1-M3",
+   "water_ok": false,
+   "n_points": 345,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns on the west cliffs cover the open sea and the West Notch's approach",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 51,
+   "design_xy": [
+    750,
+    11600
+   ],
+   "entrance_bearing_deg": 165,
+   "entrance_xy": [
+    709.2,
+    11555.8
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-12",
+   "name": "Ridge Stair Tower",
+   "comp": "CIS Guard Tower with GPs",
+   "x": 3390.0,
+   "y": 9230.0,
+   "yaw": 75,
+   "hx": 15.0,
+   "hy": 15.0,
+   "z": 220.5,
+   "cut_m": 1.9,
+   "fill_m": 2.0,
+   "max_change_m": 2.0,
+   "moved_m": 32,
+   "rough": [
+    3400,
+    9200
+   ],
+   "size_note": "ASSUMED: 30 x 30 m",
+   "water_ok": false,
+   "n_points": 41,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Holds the stair from the east beach up the cliff; taking it opens the east beach as a way onto the island",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 32,
+   "design_xy": [
+    3400,
+    9200
+   ],
+   "entrance_bearing_deg": 345,
+   "entrance_xy": [
+    3385.1,
+    9248.4
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "3-13",
+   "name": "Sound Fuel Depot",
+   "comp": "CIS Fuel Depot with GPs",
+   "x": 2100.0,
+   "y": 10050.0,
+   "yaw": 60,
+   "hx": 43.6,
+   "hy": 32.3,
+   "z": 362.5,
+   "cut_m": 3.2,
+   "fill_m": 3.43,
+   "max_change_m": 3.43,
+   "moved_m": 0,
+   "rough": [
+    2100,
+    10050
+   ],
+   "size_note": "KNOWN: 1-12",
+   "water_ok": false,
+   "n_points": 243,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Fuel for the boats; it burns when hit",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    2100,
+    10050
+   ],
+   "entrance_bearing_deg": 330,
+   "entrance_xy": [
+    2076.2,
+    10091.2
+   ],
+   "entrance_note": "faces the road that serves it"
+  },
+  {
+   "id": "3-14",
+   "name": "Inland Ramp Depot",
+   "comp": "CIS Elevated Ramp Depot with GPs",
+   "x": 1400.0,
+   "y": 10700.0,
+   "yaw": 105,
+   "hx": 60.6,
+   "hy": 39.5,
+   "z": 300.75,
+   "cut_m": 3.0,
+   "fill_m": 3.19,
+   "max_change_m": 3.19,
+   "moved_m": 0,
+   "rough": [
+    1400,
+    10700
+   ],
+   "size_note": "ASSUMED: as the CIS Elevated Landing Pad Construction (2-01)",
+   "water_ok": false,
+   "n_points": 407,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Holds the Summit AA's ammunition; taking it opens the inland road to the summit",
+   "island": "Sound Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    1400,
+    10700
+   ],
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    1442.0,
+    10688.7
+   ]
+  },
+  {
+   "id": "3-15",
+   "name": "Ash Middle Comms",
+   "comp": "CIS Comms Array with GPs",
+   "x": 8050.0,
+   "y": 10150.0,
+   "yaw": 0,
+   "hx": 20.1,
+   "hy": 46.3,
+   "z": 231.0,
+   "cut_m": 2.45,
+   "fill_m": 2.7,
+   "max_change_m": 2.7,
+   "moved_m": 0,
+   "rough": [
+    8050,
+    10150
+   ],
+   "size_note": "KNOWN: A1-03 / 2-08",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "SUP",
+   "size": "S",
+   "stake": "A comms relay on Ash Crescent's crest above the shoals; taking it gives the first look into the lagoon (intel on the Yard)",
+   "island": "Ash Crescent",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    8050,
+    10150
+   ],
+   "entrance_bearing_deg": 180,
+   "entrance_xy": [
+    8050.0,
+    10099.7
+   ],
+   "entrance_note": "faces the road that serves it"
+  },
+  {
+   "id": "3-16",
+   "name": "Ash South Gun Line",
+   "comp": "CIS Turbolaser Tower with GPs",
+   "x": 8410.0,
+   "y": 9440.0,
+   "yaw": 105,
+   "hx": 27.5,
+   "hy": 30.1,
+   "z": 208.25,
+   "cut_m": 1.96,
+   "fill_m": 1.96,
+   "max_change_m": 1.96,
+   "moved_m": 41,
+   "rough": [
+    8400,
+    9400
+   ],
+   "size_note": "KNOWN: 2-09",
+   "water_ok": false,
+   "n_points": 149,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns on Ash's south crest cover the Pumice Shoals channel; silencing them makes the boat crossing to Ash safe",
+   "island": "Ash Crescent",
+   "moved_from_rough_m": 41,
+   "design_xy": [
+    8400,
+    9400
+   ],
+   "entrance_bearing_deg": 285,
+   "entrance_xy": [
+    8377.1,
+    9448.8
+   ]
+  }
+ ],
+ "squad_positions": [
+  {
+   "id": "A3-01",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 3390.0,
+   "y": 8190.0,
+   "yaw": 150,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 87.75,
+   "cut_m": 3.03,
+   "fill_m": 2.83,
+   "max_change_m": 3.03,
+   "moved_m": 178,
+   "rough": [
+    3500,
+    8050
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 135,
+   "role": "squad position",
+   "guards": "the South Notch beach and the gully mouth below the South Notch Keep",
+   "nearest_site": "3-M1",
+   "nearest_site_m": 122
+  },
+  {
+   "id": "A3-02",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 2710.0,
+   "y": 7980.0,
+   "yaw": 45,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 224.0,
+   "cut_m": 3.37,
+   "fill_m": 3.3,
+   "max_change_m": 3.37,
+   "moved_m": 255,
+   "rough": [
+    2600,
+    7750
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the South Cape beach and the landers (the FOB fallback)",
+   "nearest_site": "3-03",
+   "nearest_site_m": 516
+  },
+  {
+   "id": "A3-03",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 3000.0,
+   "y": 9180.0,
+   "yaw": 90,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 296.5,
+   "cut_m": 1.82,
+   "fill_m": 2.05,
+   "max_change_m": 2.05,
+   "moved_m": 375,
+   "rough": [
+    3250,
+    8900
+   ],
+   "size_note": "KNOWN",
+   "water_ok": false,
+   "n_points": 165,
+   "role": "squad position",
+   "guards": "the Notch road near the Ridge Stair Tower's road junction",
+   "nearest_site": "3-12",
+   "nearest_site_m": 393
+  },
+  {
+   "id": "A3-04",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 3420.0,
+   "y": 9300.0,
+   "yaw": 105,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 218.75,
+   "cut_m": 2.29,
+   "fill_m": 2.46,
+   "max_change_m": 2.46,
+   "moved_m": 239,
+   "rough": [
+    3550,
+    9500
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the east beach under the Ridge Stair Tower",
+   "nearest_site": "3-12",
+   "nearest_site_m": 76
+  },
+  {
+   "id": "A3-05",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 780.0,
+   "y": 9680.0,
+   "yaw": 105,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 67.75,
+   "cut_m": 3.11,
+   "fill_m": 3.28,
+   "max_change_m": 3.28,
+   "moved_m": 122,
+   "rough": [
+    900,
+    9700
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 137,
+   "role": "squad position",
+   "guards": "the west-coast approach to the West Notch",
+   "nearest_site": "3-M2",
+   "nearest_site_m": 342
+  },
+  {
+   "id": "A3-06",
+   "name": "squad position",
+   "comp": "CIS Mixed AA Platform with GPs",
+   "x": 1770.0,
+   "y": 10170.0,
+   "yaw": 15,
+   "hx": 50.7,
+   "hy": 46.4,
+   "z": 326.0,
+   "cut_m": 2.74,
+   "fill_m": 2.58,
+   "max_change_m": 2.74,
+   "moved_m": 232,
+   "rough": [
+    1800,
+    10400
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 399,
+   "role": "squad position",
+   "guards": "the air over the Sound head, between the fuel depot and the summit",
+   "nearest_site": "3-13",
+   "nearest_site_m": 351
+  },
+  {
+   "id": "A3-07",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 2390.0,
+   "y": 12370.0,
+   "yaw": 90,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 150.5,
+   "cut_m": 3.28,
+   "fill_m": 3.49,
+   "max_change_m": 3.49,
+   "moved_m": 136,
+   "rough": [
+    2350,
+    12500
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the north cove beach, the back door",
+   "nearest_site": "3-10",
+   "nearest_site_m": 637
+  },
+  {
+   "id": "A3-08",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 3090.0,
+   "y": 11150.0,
+   "yaw": 30,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 45.0,
+   "cut_m": 2.13,
+   "fill_m": 2.01,
+   "max_change_m": 2.13,
+   "moved_m": 196,
+   "rough": [
+    2900,
+    11200
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "the north shore shelf between the Cliff Galleries and the north gate keep (no road there: foot and boat)",
+   "nearest_site": "3-01",
+   "nearest_site_m": 149
+  },
+  {
+   "id": "A3-09",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 3910.0,
+   "y": 10510.0,
+   "yaw": 135,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 165.5,
+   "cut_m": 3.53,
+   "fill_m": 3.41,
+   "max_change_m": 3.53,
+   "moved_m": 236,
+   "rough": [
+    4100,
+    10650
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 195,
+   "role": "squad position",
+   "guards": "the Sound mouth from the south cliff, over the gate",
+   "nearest_site": "3-F",
+   "nearest_site_m": 275
+  },
+  {
+   "id": "A3-10",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 8000.0,
+   "y": 9870.0,
+   "yaw": 30,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 207.0,
+   "cut_m": 2.99,
+   "fill_m": 2.78,
+   "max_change_m": 2.99,
+   "moved_m": 260,
+   "rough": [
+    8250,
+    9800
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 135,
+   "role": "squad position",
+   "guards": "the Ash Crescent shore between the comms and the gun line",
+   "nearest_site": "3-15",
+   "nearest_site_m": 284
+  }
+ ],
+ "towns": [
+  {
+   "id": "3-M3",
+   "name": "Sound Head",
+   "entry": [
+    2658.0,
+    10442.0
+   ],
+   "z": 33.0,
+   "ports": [
+    [
+     2658.0,
+     10442.0,
+     33.0,
+     0.0,
+     "road port"
+    ]
+   ],
+   "n_buildings": 27,
+   "garrison": 15,
+   "layout": "../../../kernel_10nov_v1/K6_repass/sound_head_v2/sound_head_v2_layout.json",
+   "exits": {},
+   "purpose_map_xy": [
+    2550,
+    10550
+   ],
+   "layout_centre_xy": [
+    2555.0,
+    10560.9
+   ],
+   "layout_offset_m": 12,
+   "hull": [
+    [
+     2654.1,
+     10453.5
+    ],
+    [
+     2653.9,
+     10452.5
+    ],
+    [
+     2653.5,
+     10451.6
+    ],
+    [
+     2653.1,
+     10450.8
+    ],
+    [
+     2652.6,
+     10450.0
+    ],
+    [
+     2652.0,
+     10449.2
+    ],
+    [
+     2651.4,
+     10448.5
+    ],
+    [
+     2650.6,
+     10447.9
+    ],
+    [
+     2649.9,
+     10447.3
+    ],
+    [
+     2649.0,
+     10446.8
+    ],
+    [
+     2648.2,
+     10446.4
+    ],
+    [
+     2647.3,
+     10446.1
+    ],
+    [
+     2646.3,
+     10445.8
+    ],
+    [
+     2645.4,
+     10445.7
+    ],
+    [
+     2644.4,
+     10445.6
+    ],
+    [
+     2643.5,
+     10445.7
+    ],
+    [
+     2482.5,
+     10460.0
+    ],
+    [
+     2481.5,
+     10460.2
+    ],
+    [
+     2480.5,
+     10460.4
+    ],
+    [
+     2479.6,
+     10460.8
+    ],
+    [
+     2478.6,
+     10461.2
+    ],
+    [
+     2477.8,
+     10461.7
+    ],
+    [
+     2477.0,
+     10462.4
+    ],
+    [
+     2476.2,
+     10463.1
+    ],
+    [
+     2475.5,
+     10463.8
+    ],
+    [
+     2475.0,
+     10464.7
+    ],
+    [
+     2458.7,
+     10490.5
+    ],
+    [
+     2458.3,
+     10491.3
+    ],
+    [
+     2457.9,
+     10492.1
+    ],
+    [
+     2457.6,
+     10493.0
+    ],
+    [
+     2454.2,
+     10504.7
+    ],
+    [
+     2454.2,
+     10504.7
+    ],
+    [
+     2445.9,
+     10533.9
+    ],
+    [
+     2445.9,
+     10533.9
+    ],
+    [
+     2441.1,
+     10550.8
+    ],
+    [
+     2440.9,
+     10551.9
+    ],
+    [
+     2440.7,
+     10552.9
+    ],
+    [
+     2440.7,
+     10554.0
+    ],
+    [
+     2440.8,
+     10555.0
+    ],
+    [
+     2457.0,
+     10663.5
+    ],
+    [
+     2457.2,
+     10664.5
+    ],
+    [
+     2457.5,
+     10665.4
+    ],
+    [
+     2457.9,
+     10666.4
+    ],
+    [
+     2458.4,
+     10667.3
+    ],
+    [
+     2459.0,
+     10668.1
+    ],
+    [
+     2459.6,
+     10668.9
+    ],
+    [
+     2460.4,
+     10669.6
+    ],
+    [
+     2461.2,
+     10670.2
+    ],
+    [
+     2462.0,
+     10670.7
+    ],
+    [
+     2462.9,
+     10671.2
+    ],
+    [
+     2463.9,
+     10671.5
+    ],
+    [
+     2464.9,
+     10671.8
+    ],
+    [
+     2465.9,
+     10671.9
+    ],
+    [
+     2466.9,
+     10672.0
+    ],
+    [
+     2562.9,
+     10672.0
+    ],
+    [
+     2563.1,
+     10672.0
+    ],
+    [
+     2615.6,
+     10671.0
+    ],
+    [
+     2616.6,
+     10670.9
+    ],
+    [
+     2617.5,
+     10670.8
+    ],
+    [
+     2618.4,
+     10670.5
+    ],
+    [
+     2619.3,
+     10670.2
+    ],
+    [
+     2620.2,
+     10669.8
+    ],
+    [
+     2621.0,
+     10669.3
+    ],
+    [
+     2621.8,
+     10668.7
+    ],
+    [
+     2622.5,
+     10668.1
+    ],
+    [
+     2623.1,
+     10667.4
+    ],
+    [
+     2623.7,
+     10666.6
+    ],
+    [
+     2642.2,
+     10639.5
+    ],
+    [
+     2642.8,
+     10638.5
+    ],
+    [
+     2644.6,
+     10635.0
+    ],
+    [
+     2644.9,
+     10634.3
+    ],
+    [
+     2645.2,
+     10633.6
+    ],
+    [
+     2661.4,
+     10586.4
+    ],
+    [
+     2661.6,
+     10585.5
+    ],
+    [
+     2661.8,
+     10584.5
+    ],
+    [
+     2661.9,
+     10583.5
+    ],
+    [
+     2664.9,
+     10503.5
+    ],
+    [
+     2664.9,
+     10502.6
+    ],
+    [
+     2664.8,
+     10501.7
+    ],
+    [
+     2664.7,
+     10500.9
+    ],
+    [
+     2654.1,
+     10453.5
+    ]
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "id": "3-M4-3-13",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "3-M4",
+    "3-13"
+   ],
+   "points": [
+    [
+     2152.42,
+     10933.64
+    ],
+    [
+     2153.59,
+     10929.3
+    ],
+    [
+     2154.67,
+     10924.94
+    ],
+    [
+     2155.28,
+     10920.5
+    ],
+    [
+     2155.1,
+     10916.02
+    ],
+    [
+     2155.0,
+     10911.53
+    ],
+    [
+     2154.98,
+     10907.04
+    ],
+    [
+     2153.76,
+     10902.74
+    ],
+    [
+     2151.82,
+     10898.69
+    ],
+    [
+     2149.48,
+     10894.87
+    ],
+    [
+     2146.51,
+     10891.51
+    ],
+    [
+     2143.34,
+     10888.34
+    ],
+    [
+     2140.39,
+     10884.95
+    ],
+    [
+     2138.07,
+     10881.11
+    ],
+    [
+     2136.05,
+     10877.11
+    ],
+    [
+     2134.05,
+     10873.09
+    ],
+    [
+     2132.04,
+     10869.07
+    ],
+    [
+     2130.03,
+     10865.06
+    ],
+    [
+     2128.02,
+     10861.04
+    ],
+    [
+     2126.01,
+     10857.03
+    ],
+    [
+     2124.01,
+     10853.01
+    ],
+    [
+     2122.01,
+     10848.99
+    ],
+    [
+     2120.38,
+     10844.82
+    ],
+    [
+     2120.0,
+     10840.36
+    ],
+    [
+     2120.0,
+     10835.88
+    ],
+    [
+     2120.0,
+     10831.39
+    ],
+    [
+     2120.0,
+     10826.9
+    ],
+    [
+     2120.0,
+     10822.41
+    ],
+    [
+     2120.0,
+     10817.92
+    ],
+    [
+     2120.0,
+     10813.43
+    ],
+    [
+     2120.0,
+     10808.94
+    ],
+    [
+     2120.0,
+     10804.45
+    ],
+    [
+     2120.0,
+     10799.96
+    ],
+    [
+     2120.0,
+     10795.47
+    ],
+    [
+     2120.0,
+     10790.98
+    ],
+    [
+     2120.0,
+     10786.49
+    ],
+    [
+     2120.0,
+     10782.0
+    ],
+    [
+     2120.0,
+     10777.51
+    ],
+    [
+     2120.0,
+     10773.02
+    ],
+    [
+     2120.88,
+     10768.65
+    ],
+    [
+     2122.72,
+     10764.56
+    ],
+    [
+     2124.73,
+     10760.54
+    ],
+    [
+     2126.74,
+     10756.53
+    ],
+    [
+     2128.74,
+     10752.51
+    ],
+    [
+     2130.75,
+     10748.5
+    ],
+    [
+     2132.76,
+     10744.48
+    ],
+    [
+     2134.47,
+     10740.34
+    ],
+    [
+     2135.0,
+     10735.91
+    ],
+    [
+     2135.0,
+     10731.42
+    ],
+    [
+     2135.0,
+     10726.93
+    ],
+    [
+     2135.0,
+     10722.44
+    ],
+    [
+     2135.0,
+     10717.95
+    ],
+    [
+     2135.0,
+     10713.46
+    ],
+    [
+     2135.73,
+     10709.06
+    ],
+    [
+     2137.52,
+     10704.95
+    ],
+    [
+     2139.31,
+     10700.83
+    ],
+    [
+     2140.0,
+     10696.43
+    ],
+    [
+     2139.97,
+     10691.94
+    ],
+    [
+     2138.72,
+     10687.65
+    ],
+    [
+     2136.8,
+     10683.6
+    ],
+    [
+     2134.79,
+     10679.58
+    ],
+    [
+     2132.78,
+     10675.56
+    ],
+    [
+     2130.93,
+     10671.48
+    ],
+    [
+     2130.0,
+     10667.12
+    ],
+    [
+     2130.0,
+     10662.63
+    ],
+    [
+     2130.0,
+     10658.14
+    ],
+    [
+     2130.0,
+     10653.65
+    ],
+    [
+     2130.0,
+     10649.16
+    ],
+    [
+     2130.0,
+     10644.67
+    ],
+    [
+     2130.0,
+     10640.18
+    ],
+    [
+     2130.0,
+     10635.69
+    ],
+    [
+     2130.13,
+     10631.21
+    ],
+    [
+     2131.57,
+     10626.97
+    ],
+    [
+     2133.53,
+     10622.93
+    ],
+    [
+     2135.54,
+     10618.92
+    ],
+    [
+     2137.55,
+     10614.9
+    ],
+    [
+     2139.56,
+     10610.88
+    ],
+    [
+     2141.57,
+     10606.87
+    ],
+    [
+     2143.57,
+     10602.85
+    ],
+    [
+     2145.58,
+     10598.84
+    ],
+    [
+     2147.59,
+     10594.82
+    ],
+    [
+     2149.35,
+     10590.7
+    ],
+    [
+     2150.0,
+     10586.29
+    ],
+    [
+     2150.0,
+     10581.8
+    ],
+    [
+     2150.0,
+     10577.31
+    ],
+    [
+     2150.0,
+     10572.82
+    ],
+    [
+     2150.0,
+     10568.33
+    ],
+    [
+     2150.0,
+     10563.84
+    ],
+    [
+     2150.0,
+     10559.35
+    ],
+    [
+     2150.0,
+     10554.86
+    ],
+    [
+     2150.0,
+     10550.37
+    ],
+    [
+     2150.0,
+     10545.88
+    ],
+    [
+     2149.9,
+     10541.4
+    ],
+    [
+     2148.51,
+     10537.14
+    ],
+    [
+     2146.7,
+     10533.04
+    ],
+    [
+     2146.35,
+     10528.6
+    ],
+    [
+     2147.81,
+     10524.39
+    ],
+    [
+     2149.81,
+     10520.37
+    ],
+    [
+     2151.82,
+     10516.36
+    ],
+    [
+     2153.83,
+     10512.34
+    ],
+    [
+     2155.84,
+     10508.32
+    ],
+    [
+     2157.85,
+     10504.31
+    ],
+    [
+     2159.85,
+     10500.29
+    ],
+    [
+     2161.86,
+     10496.28
+    ],
+    [
+     2163.36,
+     10492.09
+    ],
+    [
+     2161.33,
+     10488.3
+    ],
+    [
+     2157.49,
+     10485.98
+    ],
+    [
+     2154.28,
+     10482.87
+    ],
+    [
+     2152.0,
+     10479.01
+    ],
+    [
+     2150.0,
+     10474.99
+    ],
+    [
+     2147.99,
+     10470.98
+    ],
+    [
+     2145.98,
+     10466.96
+    ],
+    [
+     2143.97,
+     10462.94
+    ],
+    [
+     2141.96,
+     10458.93
+    ],
+    [
+     2139.96,
+     10454.91
+    ],
+    [
+     2137.95,
+     10450.9
+    ],
+    [
+     2135.94,
+     10446.88
+    ],
+    [
+     2133.93,
+     10442.87
+    ],
+    [
+     2131.93,
+     10438.85
+    ],
+    [
+     2129.92,
+     10434.83
+    ],
+    [
+     2127.91,
+     10430.82
+    ],
+    [
+     2125.9,
+     10426.8
+    ],
+    [
+     2123.89,
+     10422.79
+    ],
+    [
+     2121.9,
+     10418.76
+    ],
+    [
+     2120.31,
+     10414.57
+    ],
+    [
+     2119.62,
+     10410.15
+    ],
+    [
+     2117.98,
+     10405.98
+    ],
+    [
+     2115.88,
+     10402.01
+    ],
+    [
+     2113.29,
+     10398.35
+    ],
+    [
+     2109.94,
+     10395.38
+    ],
+    [
+     2106.1,
+     10393.06
+    ],
+    [
+     2102.14,
+     10390.95
+    ],
+    [
+     2098.46,
+     10388.39
+    ],
+    [
+     2095.47,
+     10385.06
+    ],
+    [
+     2093.13,
+     10381.23
+    ],
+    [
+     2091.2,
+     10377.18
+    ],
+    [
+     2090.01,
+     10372.87
+    ],
+    [
+     2090.0,
+     10368.38
+    ],
+    [
+     2090.0,
+     10363.89
+    ],
+    [
+     2090.0,
+     10359.4
+    ],
+    [
+     2090.0,
+     10354.91
+    ],
+    [
+     2090.0,
+     10350.42
+    ],
+    [
+     2090.0,
+     10345.93
+    ],
+    [
+     2090.0,
+     10341.44
+    ],
+    [
+     2090.0,
+     10336.95
+    ],
+    [
+     2090.0,
+     10332.46
+    ],
+    [
+     2090.0,
+     10327.97
+    ],
+    [
+     2090.0,
+     10323.48
+    ],
+    [
+     2090.0,
+     10318.99
+    ],
+    [
+     2090.56,
+     10314.57
+    ],
+    [
+     2092.29,
+     10310.43
+    ],
+    [
+     2094.44,
+     10306.49
+    ],
+    [
+     2097.11,
+     10302.89
+    ],
+    [
+     2100.57,
+     10300.04
+    ],
+    [
+     2104.44,
+     10297.78
+    ],
+    [
+     2108.46,
+     10295.77
+    ],
+    [
+     2112.47,
+     10293.76
+    ],
+    [
+     2116.49,
+     10291.76
+    ],
+    [
+     2120.5,
+     10289.75
+    ],
+    [
+     2124.52,
+     10287.74
+    ],
+    [
+     2128.54,
+     10285.73
+    ],
+    [
+     2132.55,
+     10283.72
+    ],
+    [
+     2136.57,
+     10281.72
+    ],
+    [
+     2140.58,
+     10279.71
+    ],
+    [
+     2144.6,
+     10277.7
+    ],
+    [
+     2148.61,
+     10275.69
+    ],
+    [
+     2152.63,
+     10273.69
+    ],
+    [
+     2156.64,
+     10271.68
+    ],
+    [
+     2160.66,
+     10269.67
+    ],
+    [
+     2164.68,
+     10267.66
+    ],
+    [
+     2168.61,
+     10265.5
+    ],
+    [
+     2172.19,
+     10262.81
+    ],
+    [
+     2172.32,
+     10260.0
+    ],
+    [
+     2173.04,
+     10256.93
+    ],
+    [
+     2175.68,
+     10253.3
+    ],
+    [
+     2177.82,
+     10249.36
+    ],
+    [
+     2179.51,
+     10245.21
+    ],
+    [
+     2180.0,
+     10240.77
+    ],
+    [
+     2180.0,
+     10236.28
+    ],
+    [
+     2180.0,
+     10231.79
+    ],
+    [
+     2180.0,
+     10227.3
+    ],
+    [
+     2180.0,
+     10222.81
+    ],
+    [
+     2180.0,
+     10218.32
+    ],
+    [
+     2180.77,
+     10213.93
+    ],
+    [
+     2182.59,
+     10209.83
+    ],
+    [
+     2184.59,
+     10205.81
+    ],
+    [
+     2186.6,
+     10201.8
+    ],
+    [
+     2188.61,
+     10197.78
+    ],
+    [
+     2190.62,
+     10193.77
+    ],
+    [
+     2192.62,
+     10189.75
+    ],
+    [
+     2194.63,
+     10185.74
+    ],
+    [
+     2196.64,
+     10181.72
+    ],
+    [
+     2198.65,
+     10177.7
+    ],
+    [
+     2200.66,
+     10173.69
+    ],
+    [
+     2202.66,
+     10169.67
+    ],
+    [
+     2203.75,
+     10165.35
+    ],
+    [
+     2202.94,
+     10160.97
+    ],
+    [
+     2200.7,
+     10157.1
+    ],
+    [
+     2197.47,
+     10154.0
+    ],
+    [
+     2193.57,
+     10151.79
+    ],
+    [
+     2189.56,
+     10149.78
+    ],
+    [
+     2185.54,
+     10147.77
+    ],
+    [
+     2181.53,
+     10145.76
+    ],
+    [
+     2177.51,
+     10143.76
+    ],
+    [
+     2173.5,
+     10141.75
+    ],
+    [
+     2169.48,
+     10139.74
+    ],
+    [
+     2165.47,
+     10137.73
+    ],
+    [
+     2161.45,
+     10135.72
+    ],
+    [
+     2157.43,
+     10133.72
+    ],
+    [
+     2153.42,
+     10131.71
+    ],
+    [
+     2149.4,
+     10129.7
+    ],
+    [
+     2145.39,
+     10127.69
+    ],
+    [
+     2141.37,
+     10125.69
+    ],
+    [
+     2137.36,
+     10123.68
+    ],
+    [
+     2133.33,
+     10121.7
+    ],
+    [
+     2129.1,
+     10120.2
+    ],
+    [
+     2124.63,
+     10120.0
+    ],
+    [
+     2120.14,
+     10120.0
+    ],
+    [
+     2115.67,
+     10119.76
+    ],
+    [
+     2111.47,
+     10118.21
+    ],
+    [
+     2107.44,
+     10116.22
+    ],
+    [
+     2103.43,
+     10114.21
+    ],
+    [
+     2099.41,
+     10112.2
+    ],
+    [
+     2095.54,
+     10109.94
+    ],
+    [
+     2092.08,
+     10107.08
+    ],
+    [
+     2088.91,
+     10103.91
+    ],
+    [
+     2085.74,
+     10100.74
+    ],
+    [
+     2082.56,
+     10097.56
+    ],
+    [
+     2079.38,
+     10094.39
+    ],
+    [
+     2076.2,
+     10091.22
+    ]
+   ],
+   "points_z": [
+    369.5,
+    369.5,
+    369.5,
+    369.5,
+    370.13,
+    370.76,
+    371.38,
+    371.17,
+    370.87,
+    370.58,
+    370.28,
+    369.93,
+    369.56,
+    369.13,
+    368.65,
+    368.18,
+    367.84,
+    367.55,
+    367.25,
+    366.94,
+    366.62,
+    366.26,
+    365.89,
+    365.62,
+    365.45,
+    365.35,
+    365.34,
+    365.41,
+    365.45,
+    365.44,
+    365.41,
+    365.32,
+    365.13,
+    364.85,
+    364.59,
+    364.41,
+    364.37,
+    364.45,
+    364.7,
+    365.03,
+    365.31,
+    365.51,
+    365.66,
+    365.83,
+    365.98,
+    366.16,
+    366.38,
+    366.62,
+    366.8,
+    366.94,
+    367.05,
+    367.09,
+    367.04,
+    366.91,
+    366.71,
+    366.39,
+    366.03,
+    365.65,
+    365.2,
+    364.71,
+    364.29,
+    363.89,
+    363.5,
+    363.19,
+    362.97,
+    362.79,
+    362.69,
+    362.71,
+    362.79,
+    362.96,
+    363.19,
+    363.5,
+    363.88,
+    364.32,
+    364.75,
+    365.16,
+    365.54,
+    365.9,
+    366.29,
+    366.69,
+    367.12,
+    367.55,
+    367.93,
+    368.26,
+    368.54,
+    368.73,
+    368.87,
+    368.96,
+    369.0,
+    368.99,
+    368.99,
+    369.04,
+    369.17,
+    369.45,
+    369.86,
+    370.34,
+    370.86,
+    371.31,
+    371.72,
+    372.14,
+    372.51,
+    372.88,
+    373.3,
+    373.82,
+    374.29,
+    374.78,
+    375.27,
+    375.68,
+    375.99,
+    376.25,
+    376.5,
+    376.77,
+    377.15,
+    377.52,
+    377.95,
+    378.43,
+    378.84,
+    379.12,
+    379.47,
+    379.83,
+    380.17,
+    380.54,
+    380.93,
+    381.35,
+    381.78,
+    382.22,
+    382.63,
+    382.93,
+    383.22,
+    383.61,
+    384.09,
+    384.66,
+    385.29,
+    385.84,
+    386.24,
+    386.51,
+    386.72,
+    387.02,
+    387.4,
+    387.72,
+    387.99,
+    388.24,
+    388.39,
+    388.42,
+    388.45,
+    388.42,
+    388.32,
+    388.17,
+    387.98,
+    387.76,
+    387.51,
+    387.28,
+    386.96,
+    386.54,
+    386.03,
+    385.51,
+    385.01,
+    384.65,
+    384.36,
+    384.11,
+    383.79,
+    383.36,
+    382.82,
+    382.29,
+    381.75,
+    381.22,
+    380.7,
+    380.22,
+    379.75,
+    379.34,
+    378.9,
+    378.47,
+    378.07,
+    377.63,
+    377.0,
+    376.48,
+    376.07,
+    375.74,
+    375.46,
+    375.22,
+    375.0,
+    374.78,
+    374.53,
+    374.26,
+    374.07,
+    373.92,
+    373.79,
+    373.63,
+    373.5,
+    373.3,
+    373.03,
+    372.69,
+    372.33,
+    371.91,
+    371.48,
+    371.11,
+    370.79,
+    370.54,
+    370.35,
+    370.19,
+    370.0,
+    369.79,
+    369.55,
+    369.26,
+    368.94,
+    368.6,
+    368.27,
+    367.97,
+    367.72,
+    367.51,
+    367.36,
+    367.25,
+    367.15,
+    367.03,
+    366.86,
+    366.61,
+    366.33,
+    366.03,
+    365.74,
+    365.47,
+    365.22,
+    364.95,
+    364.64,
+    364.32,
+    364.01,
+    363.71,
+    363.13,
+    362.5,
+    362.5,
+    362.5
+   ],
+   "length_m": 1024,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 2.31,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 71.8
+  },
+  {
+   "id": "3-14-3-M4",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "3-14",
+    "3-M4"
+   ],
+   "points": [
+    [
+     1442.02,
+     10688.74
+    ],
+    [
+     1446.39,
+     10687.71
+    ],
+    [
+     1450.82,
+     10686.95
+    ],
+    [
+     1455.3,
+     10686.63
+    ],
+    [
+     1459.78,
+     10686.91
+    ],
+    [
+     1464.25,
+     10687.31
+    ],
+    [
+     1468.74,
+     10687.47
+    ],
+    [
+     1473.23,
+     10687.49
+    ],
+    [
+     1477.72,
+     10687.37
+    ],
+    [
+     1482.21,
+     10687.12
+    ],
+    [
+     1486.68,
+     10686.76
+    ],
+    [
+     1491.15,
+     10686.3
+    ],
+    [
+     1495.61,
+     10685.77
+    ],
+    [
+     1500.07,
+     10685.2
+    ],
+    [
+     1504.52,
+     10684.62
+    ],
+    [
+     1508.98,
+     10684.06
+    ],
+    [
+     1513.44,
+     10683.55
+    ],
+    [
+     1517.91,
+     10683.12
+    ],
+    [
+     1522.39,
+     10682.79
+    ],
+    [
+     1526.88,
+     10682.58
+    ],
+    [
+     1531.37,
+     10682.5
+    ],
+    [
+     1535.86,
+     10682.56
+    ],
+    [
+     1540.34,
+     10682.76
+    ],
+    [
+     1544.83,
+     10683.08
+    ],
+    [
+     1549.3,
+     10683.5
+    ],
+    [
+     1553.76,
+     10684.0
+    ],
+    [
+     1558.22,
+     10684.56
+    ],
+    [
+     1562.67,
+     10685.14
+    ],
+    [
+     1567.13,
+     10685.71
+    ],
+    [
+     1571.59,
+     10686.25
+    ],
+    [
+     1576.05,
+     10686.71
+    ],
+    [
+     1580.53,
+     10687.09
+    ],
+    [
+     1585.01,
+     10687.35
+    ],
+    [
+     1589.5,
+     10687.48
+    ],
+    [
+     1593.99,
+     10687.48
+    ],
+    [
+     1598.48,
+     10687.33
+    ],
+    [
+     1602.97,
+     10687.07
+    ],
+    [
+     1607.44,
+     10686.68
+    ],
+    [
+     1611.91,
+     10686.21
+    ],
+    [
+     1616.37,
+     10685.67
+    ],
+    [
+     1620.82,
+     10685.1
+    ],
+    [
+     1625.28,
+     10684.52
+    ],
+    [
+     1629.73,
+     10683.97
+    ],
+    [
+     1634.2,
+     10683.47
+    ],
+    [
+     1638.67,
+     10683.06
+    ],
+    [
+     1643.15,
+     10682.75
+    ],
+    [
+     1647.64,
+     10682.56
+    ],
+    [
+     1652.13,
+     10682.51
+    ],
+    [
+     1656.62,
+     10682.59
+    ],
+    [
+     1661.11,
+     10682.81
+    ],
+    [
+     1665.48,
+     10683.77
+    ],
+    [
+     1669.51,
+     10685.68
+    ],
+    [
+     1673.58,
+     10687.57
+    ],
+    [
+     1677.75,
+     10686.64
+    ],
+    [
+     1681.38,
+     10684.02
+    ],
+    [
+     1685.36,
+     10682.32
+    ],
+    [
+     1688.45,
+     10685.58
+    ],
+    [
+     1691.3,
+     10689.05
+    ],
+    [
+     1694.25,
+     10692.44
+    ],
+    [
+     1697.3,
+     10695.74
+    ],
+    [
+     1700.39,
+     10698.99
+    ],
+    [
+     1703.26,
+     10702.43
+    ],
+    [
+     1705.7,
+     10706.2
+    ],
+    [
+     1708.03,
+     10710.04
+    ],
+    [
+     1710.44,
+     10713.84
+    ],
+    [
+     1712.9,
+     10717.59
+    ],
+    [
+     1715.4,
+     10721.33
+    ],
+    [
+     1717.91,
+     10725.05
+    ],
+    [
+     1720.4,
+     10728.79
+    ],
+    [
+     1722.85,
+     10732.55
+    ],
+    [
+     1725.11,
+     10736.42
+    ],
+    [
+     1726.84,
+     10740.55
+    ],
+    [
+     1727.98,
+     10744.88
+    ],
+    [
+     1729.78,
+     10748.99
+    ],
+    [
+     1731.73,
+     10753.03
+    ],
+    [
+     1733.54,
+     10757.14
+    ],
+    [
+     1735.66,
+     10761.07
+    ],
+    [
+     1738.83,
+     10759.04
+    ],
+    [
+     1741.67,
+     10755.56
+    ],
+    [
+     1744.68,
+     10753.14
+    ],
+    [
+     1747.49,
+     10756.48
+    ],
+    [
+     1748.99,
+     10760.71
+    ],
+    [
+     1750.67,
+     10764.88
+    ],
+    [
+     1752.91,
+     10768.59
+    ],
+    [
+     1757.21,
+     10769.89
+    ],
+    [
+     1760.72,
+     10771.55
+    ],
+    [
+     1763.95,
+     10774.13
+    ],
+    [
+     1768.19,
+     10774.8
+    ],
+    [
+     1771.4,
+     10771.66
+    ],
+    [
+     1774.33,
+     10768.26
+    ],
+    [
+     1776.65,
+     10764.43
+    ],
+    [
+     1778.42,
+     10760.31
+    ],
+    [
+     1781.56,
+     10757.27
+    ],
+    [
+     1785.18,
+     10759.75
+    ],
+    [
+     1788.73,
+     10762.5
+    ],
+    [
+     1792.26,
+     10765.27
+    ],
+    [
+     1796.29,
+     10766.58
+    ],
+    [
+     1800.42,
+     10764.84
+    ],
+    [
+     1804.58,
+     10763.22
+    ],
+    [
+     1808.98,
+     10762.53
+    ],
+    [
+     1813.47,
+     10762.6
+    ],
+    [
+     1817.96,
+     10762.81
+    ],
+    [
+     1822.44,
+     10763.15
+    ],
+    [
+     1826.91,
+     10763.58
+    ],
+    [
+     1831.37,
+     10764.09
+    ],
+    [
+     1835.83,
+     10764.65
+    ],
+    [
+     1840.28,
+     10765.23
+    ],
+    [
+     1844.74,
+     10765.8
+    ],
+    [
+     1849.2,
+     10766.32
+    ],
+    [
+     1853.67,
+     10766.78
+    ],
+    [
+     1858.14,
+     10767.13
+    ],
+    [
+     1862.63,
+     10767.37
+    ],
+    [
+     1867.12,
+     10767.48
+    ],
+    [
+     1871.61,
+     10767.46
+    ],
+    [
+     1876.1,
+     10767.29
+    ],
+    [
+     1880.58,
+     10767.01
+    ],
+    [
+     1885.06,
+     10766.61
+    ],
+    [
+     1889.52,
+     10766.13
+    ],
+    [
+     1893.98,
+     10765.58
+    ],
+    [
+     1898.43,
+     10765.01
+    ],
+    [
+     1902.89,
+     10764.43
+    ],
+    [
+     1907.35,
+     10763.89
+    ],
+    [
+     1911.81,
+     10763.4
+    ],
+    [
+     1916.28,
+     10762.92
+    ],
+    [
+     1920.61,
+     10761.86
+    ],
+    [
+     1924.66,
+     10759.91
+    ],
+    [
+     1928.67,
+     10757.91
+    ],
+    [
+     1932.75,
+     10756.03
+    ],
+    [
+     1936.94,
+     10754.42
+    ],
+    [
+     1941.29,
+     10753.51
+    ],
+    [
+     1945.78,
+     10753.69
+    ],
+    [
+     1950.24,
+     10754.21
+    ],
+    [
+     1954.7,
+     10754.78
+    ],
+    [
+     1959.15,
+     10755.36
+    ],
+    [
+     1963.61,
+     10755.92
+    ],
+    [
+     1968.07,
+     10756.43
+    ],
+    [
+     1972.54,
+     10756.87
+    ],
+    [
+     1977.0,
+     10757.32
+    ],
+    [
+     1981.3,
+     10758.53
+    ],
+    [
+     1985.33,
+     10760.52
+    ],
+    [
+     1989.14,
+     10762.88
+    ],
+    [
+     1992.82,
+     10765.46
+    ],
+    [
+     1996.69,
+     10767.7
+    ],
+    [
+     2000.85,
+     10769.37
+    ],
+    [
+     2005.2,
+     10770.35
+    ],
+    [
+     2009.68,
+     10770.34
+    ],
+    [
+     2013.93,
+     10769.22
+    ],
+    [
+     2017.75,
+     10766.85
+    ],
+    [
+     2021.7,
+     10765.58
+    ],
+    [
+     2025.1,
+     10765.15
+    ],
+    [
+     2027.85,
+     10761.64
+    ],
+    [
+     2031.24,
+     10760.04
+    ],
+    [
+     2035.32,
+     10761.92
+    ],
+    [
+     2038.55,
+     10765.03
+    ],
+    [
+     2041.64,
+     10768.29
+    ],
+    [
+     2044.66,
+     10771.61
+    ],
+    [
+     2048.09,
+     10774.51
+    ],
+    [
+     2051.82,
+     10777.01
+    ],
+    [
+     2055.57,
+     10779.49
+    ],
+    [
+     2059.3,
+     10781.99
+    ],
+    [
+     2062.94,
+     10784.62
+    ],
+    [
+     2066.22,
+     10787.69
+    ],
+    [
+     2069.03,
+     10791.19
+    ],
+    [
+     2071.9,
+     10794.65
+    ],
+    [
+     2074.84,
+     10798.04
+    ],
+    [
+     2077.63,
+     10801.55
+    ],
+    [
+     2079.91,
+     10805.42
+    ],
+    [
+     2082.03,
+     10809.38
+    ],
+    [
+     2084.25,
+     10813.29
+    ],
+    [
+     2086.65,
+     10817.07
+    ],
+    [
+     2089.69,
+     10820.36
+    ],
+    [
+     2093.51,
+     10822.73
+    ],
+    [
+     2097.76,
+     10824.16
+    ],
+    [
+     2102.21,
+     10824.77
+    ],
+    [
+     2106.69,
+     10824.46
+    ],
+    [
+     2111.15,
+     10823.97
+    ],
+    [
+     2115.57,
+     10823.14
+    ],
+    [
+     2120.0,
+     10822.41
+    ]
+   ],
+   "points_z": [
+    300.75,
+    300.75,
+    300.75,
+    300.75,
+    301.38,
+    302.01,
+    302.64,
+    303.27,
+    303.89,
+    304.52,
+    305.15,
+    305.78,
+    306.41,
+    307.04,
+    307.67,
+    308.05,
+    308.35,
+    308.65,
+    308.95,
+    309.25,
+    309.55,
+    309.85,
+    310.15,
+    310.44,
+    310.74,
+    311.03,
+    311.32,
+    311.62,
+    311.91,
+    312.2,
+    312.5,
+    312.79,
+    313.09,
+    313.39,
+    313.68,
+    313.98,
+    314.28,
+    314.59,
+    314.89,
+    315.19,
+    315.49,
+    315.79,
+    316.09,
+    316.39,
+    316.7,
+    317.0,
+    317.3,
+    317.61,
+    317.95,
+    318.3,
+    318.67,
+    319.09,
+    319.53,
+    320.0,
+    320.46,
+    320.91,
+    321.33,
+    321.73,
+    322.12,
+    322.53,
+    322.95,
+    323.39,
+    323.83,
+    324.29,
+    324.75,
+    325.24,
+    325.74,
+    326.24,
+    326.74,
+    327.25,
+    327.74,
+    328.22,
+    328.71,
+    329.17,
+    329.62,
+    330.08,
+    330.54,
+    331.0,
+    331.47,
+    331.92,
+    332.39,
+    332.88,
+    333.44,
+    334.05,
+    334.68,
+    335.22,
+    335.8,
+    336.4,
+    337.03,
+    337.45,
+    337.83,
+    338.23,
+    338.66,
+    339.13,
+    339.68,
+    340.18,
+    340.62,
+    340.99,
+    341.37,
+    341.71,
+    342.02,
+    342.31,
+    342.58,
+    342.76,
+    342.88,
+    342.97,
+    343.06,
+    343.2,
+    343.41,
+    343.67,
+    343.98,
+    344.33,
+    344.67,
+    345.01,
+    345.29,
+    345.57,
+    345.85,
+    346.09,
+    346.34,
+    346.64,
+    346.95,
+    347.27,
+    347.62,
+    348.0,
+    348.39,
+    348.8,
+    349.2,
+    349.55,
+    349.85,
+    350.17,
+    350.55,
+    351.0,
+    351.53,
+    352.11,
+    352.67,
+    353.21,
+    353.69,
+    354.1,
+    354.47,
+    354.78,
+    355.01,
+    355.22,
+    355.45,
+    355.75,
+    356.06,
+    356.4,
+    356.78,
+    357.21,
+    357.63,
+    358.11,
+    358.74,
+    359.26,
+    359.79,
+    360.25,
+    360.71,
+    361.16,
+    361.62,
+    361.98,
+    362.3,
+    362.54,
+    362.7,
+    362.78,
+    362.94,
+    363.18,
+    363.52,
+    363.97,
+    364.51,
+    365.08,
+    365.62,
+    366.1,
+    366.47,
+    366.77,
+    366.97,
+    366.67,
+    366.04,
+    365.41,
+    365.41,
+    365.41
+   ],
+   "length_m": 789,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 3.73,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 1,
+   "junction_step_max_m": 0.06,
+   "straight_max_m": 67.3
+  },
+  {
+   "id": "3-08-3-14",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "3-08",
+    "3-14"
+   ],
+   "points": [
+    [
+     1968.61,
+     11417.5
+    ],
+    [
+     1967.45,
+     11413.17
+    ],
+    [
+     1966.11,
+     11408.89
+    ],
+    [
+     1963.26,
+     11405.58
+    ],
+    [
+     1958.82,
+     11405.03
+    ],
+    [
+     1954.34,
+     11405.0
+    ],
+    [
+     1949.85,
+     11405.0
+    ],
+    [
+     1945.37,
+     11405.0
+    ],
+    [
+     1940.9,
+     11405.2
+    ],
+    [
+     1936.68,
+     11406.7
+    ],
+    [
+     1932.62,
+     11408.61
+    ],
+    [
+     1928.35,
+     11409.94
+    ],
+    [
+     1923.87,
+     11410.0
+    ],
+    [
+     1919.38,
+     11410.0
+    ],
+    [
+     1914.9,
+     11410.0
+    ],
+    [
+     1910.41,
+     11410.0
+    ],
+    [
+     1905.92,
+     11410.0
+    ],
+    [
+     1901.44,
+     11409.91
+    ],
+    [
+     1897.19,
+     11408.53
+    ],
+    [
+     1893.15,
+     11406.58
+    ],
+    [
+     1889.14,
+     11404.57
+    ],
+    [
+     1885.13,
+     11402.56
+    ],
+    [
+     1881.11,
+     11400.56
+    ],
+    [
+     1877.1,
+     11398.55
+    ],
+    [
+     1873.09,
+     11396.55
+    ],
+    [
+     1869.08,
+     11394.54
+    ],
+    [
+     1865.07,
+     11392.53
+    ],
+    [
+     1860.96,
+     11390.74
+    ],
+    [
+     1856.57,
+     11390.0
+    ],
+    [
+     1852.08,
+     11390.0
+    ],
+    [
+     1847.6,
+     11390.0
+    ],
+    [
+     1843.26,
+     11388.97
+    ],
+    [
+     1839.19,
+     11387.09
+    ],
+    [
+     1835.33,
+     11384.8
+    ],
+    [
+     1831.93,
+     11381.9
+    ],
+    [
+     1829.3,
+     11378.27
+    ],
+    [
+     1827.16,
+     11374.33
+    ],
+    [
+     1824.89,
+     11370.46
+    ],
+    [
+     1822.04,
+     11367.02
+    ],
+    [
+     1819.38,
+     11363.41
+    ],
+    [
+     1817.24,
+     11359.47
+    ],
+    [
+     1815.53,
+     11355.33
+    ],
+    [
+     1815.0,
+     11350.9
+    ],
+    [
+     1815.0,
+     11346.42
+    ],
+    [
+     1814.97,
+     11341.93
+    ],
+    [
+     1813.72,
+     11337.64
+    ],
+    [
+     1811.82,
+     11333.58
+    ],
+    [
+     1810.26,
+     11329.38
+    ],
+    [
+     1810.44,
+     11324.97
+    ],
+    [
+     1812.1,
+     11320.81
+    ],
+    [
+     1813.73,
+     11316.65
+    ],
+    [
+     1810.47,
+     11315.0
+    ],
+    [
+     1805.98,
+     11315.0
+    ],
+    [
+     1801.58,
+     11314.71
+    ],
+    [
+     1802.25,
+     11310.5
+    ],
+    [
+     1803.75,
+     11306.3
+    ],
+    [
+     1801.53,
+     11303.64
+    ],
+    [
+     1803.38,
+     11300.13
+    ],
+    [
+     1801.54,
+     11297.25
+    ],
+    [
+     1803.41,
+     11293.18
+    ],
+    [
+     1805.42,
+     11289.17
+    ],
+    [
+     1807.42,
+     11285.15
+    ],
+    [
+     1809.43,
+     11281.14
+    ],
+    [
+     1811.44,
+     11277.13
+    ],
+    [
+     1813.44,
+     11273.12
+    ],
+    [
+     1815.45,
+     11269.1
+    ],
+    [
+     1817.45,
+     11265.09
+    ],
+    [
+     1819.64,
+     11261.18
+    ],
+    [
+     1822.37,
+     11257.63
+    ],
+    [
+     1825.87,
+     11254.84
+    ],
+    [
+     1829.76,
+     11252.62
+    ],
+    [
+     1833.69,
+     11250.45
+    ],
+    [
+     1837.26,
+     11247.74
+    ],
+    [
+     1840.07,
+     11244.26
+    ],
+    [
+     1842.31,
+     11240.38
+    ],
+    [
+     1844.47,
+     11236.45
+    ],
+    [
+     1847.15,
+     11232.86
+    ],
+    [
+     1850.32,
+     11229.68
+    ],
+    [
+     1853.45,
+     11226.47
+    ],
+    [
+     1856.0,
+     11222.79
+    ],
+    [
+     1858.09,
+     11218.82
+    ],
+    [
+     1860.1,
+     11214.81
+    ],
+    [
+     1862.1,
+     11210.8
+    ],
+    [
+     1864.11,
+     11206.79
+    ],
+    [
+     1866.11,
+     11202.77
+    ],
+    [
+     1868.05,
+     11198.73
+    ],
+    [
+     1868.75,
+     11194.34
+    ],
+    [
+     1867.53,
+     11190.05
+    ],
+    [
+     1865.04,
+     11186.33
+    ],
+    [
+     1861.65,
+     11183.43
+    ],
+    [
+     1857.68,
+     11181.34
+    ],
+    [
+     1853.67,
+     11179.33
+    ],
+    [
+     1849.65,
+     11177.33
+    ],
+    [
+     1845.52,
+     11175.59
+    ],
+    [
+     1841.11,
+     11175.0
+    ],
+    [
+     1836.62,
+     11175.0
+    ],
+    [
+     1832.14,
+     11175.0
+    ],
+    [
+     1827.65,
+     11175.0
+    ],
+    [
+     1823.16,
+     11175.0
+    ],
+    [
+     1818.68,
+     11175.0
+    ],
+    [
+     1814.19,
+     11175.0
+    ],
+    [
+     1809.71,
+     11175.0
+    ],
+    [
+     1805.26,
+     11174.64
+    ],
+    [
+     1801.08,
+     11173.03
+    ],
+    [
+     1797.21,
+     11170.78
+    ],
+    [
+     1794.08,
+     11167.59
+    ],
+    [
+     1791.87,
+     11163.69
+    ],
+    [
+     1790.29,
+     11159.5
+    ],
+    [
+     1790.0,
+     11155.04
+    ],
+    [
+     1790.0,
+     11150.56
+    ],
+    [
+     1790.0,
+     11146.07
+    ],
+    [
+     1790.0,
+     11141.59
+    ],
+    [
+     1790.0,
+     11137.1
+    ],
+    [
+     1790.0,
+     11132.61
+    ],
+    [
+     1788.98,
+     11128.28
+    ],
+    [
+     1787.1,
+     11124.21
+    ],
+    [
+     1784.81,
+     11120.35
+    ],
+    [
+     1781.93,
+     11116.93
+    ],
+    [
+     1778.75,
+     11113.75
+    ],
+    [
+     1775.58,
+     11110.58
+    ],
+    [
+     1772.41,
+     11107.41
+    ],
+    [
+     1768.87,
+     11104.67
+    ],
+    [
+     1764.96,
+     11102.48
+    ],
+    [
+     1761.25,
+     11099.98
+    ],
+    [
+     1758.37,
+     11096.56
+    ],
+    [
+     1756.29,
+     11092.59
+    ],
+    [
+     1754.29,
+     11088.57
+    ],
+    [
+     1752.28,
+     11084.56
+    ],
+    [
+     1750.04,
+     11080.68
+    ],
+    [
+     1747.21,
+     11077.21
+    ],
+    [
+     1744.04,
+     11074.04
+    ],
+    [
+     1740.98,
+     11070.76
+    ],
+    [
+     1738.55,
+     11067.0
+    ],
+    [
+     1736.55,
+     11062.98
+    ],
+    [
+     1735.12,
+     11058.74
+    ],
+    [
+     1735.0,
+     11054.26
+    ],
+    [
+     1735.0,
+     11049.78
+    ],
+    [
+     1735.0,
+     11045.29
+    ],
+    [
+     1735.0,
+     11040.81
+    ],
+    [
+     1735.0,
+     11036.32
+    ],
+    [
+     1735.0,
+     11031.83
+    ],
+    [
+     1735.0,
+     11027.35
+    ],
+    [
+     1735.0,
+     11022.86
+    ],
+    [
+     1735.0,
+     11018.38
+    ],
+    [
+     1735.75,
+     11013.99
+    ],
+    [
+     1737.56,
+     11009.89
+    ],
+    [
+     1740.08,
+     11006.19
+    ],
+    [
+     1743.51,
+     11003.33
+    ],
+    [
+     1747.49,
+     11001.26
+    ],
+    [
+     1751.5,
+     10999.25
+    ],
+    [
+     1755.51,
+     10997.24
+    ],
+    [
+     1759.39,
+     10994.99
+    ],
+    [
+     1762.85,
+     10992.15
+    ],
+    [
+     1766.02,
+     10988.98
+    ],
+    [
+     1769.3,
+     10985.93
+    ],
+    [
+     1773.08,
+     10983.51
+    ],
+    [
+     1777.09,
+     10981.51
+    ],
+    [
+     1781.34,
+     10980.11
+    ],
+    [
+     1785.82,
+     10980.0
+    ],
+    [
+     1788.22,
+     10978.29
+    ],
+    [
+     1787.04,
+     10975.03
+    ],
+    [
+     1787.4,
+     10972.4
+    ],
+    [
+     1783.86,
+     10969.66
+    ],
+    [
+     1779.94,
+     10967.47
+    ],
+    [
+     1775.83,
+     10965.69
+    ],
+    [
+     1771.47,
+     10964.8
+    ],
+    [
+     1773.57,
+     10961.21
+    ],
+    [
+     1771.48,
+     10958.72
+    ],
+    [
+     1773.46,
+     10955.17
+    ],
+    [
+     1772.23,
+     10952.77
+    ],
+    [
+     1775.71,
+     10949.94
+    ],
+    [
+     1779.59,
+     10947.7
+    ],
+    [
+     1782.95,
+     10944.87
+    ],
+    [
+     1782.76,
+     10940.53
+    ],
+    [
+     1780.76,
+     10936.51
+    ],
+    [
+     1778.75,
+     10932.5
+    ],
+    [
+     1776.74,
+     10928.49
+    ],
+    [
+     1774.74,
+     10924.48
+    ],
+    [
+     1772.73,
+     10920.46
+    ],
+    [
+     1770.73,
+     10916.45
+    ],
+    [
+     1768.72,
+     10912.44
+    ],
+    [
+     1766.71,
+     10908.43
+    ],
+    [
+     1764.71,
+     10904.42
+    ],
+    [
+     1762.7,
+     10900.4
+    ],
+    [
+     1760.87,
+     10896.31
+    ],
+    [
+     1760.0,
+     10891.95
+    ],
+    [
+     1760.0,
+     10887.46
+    ],
+    [
+     1758.92,
+     10883.13
+    ],
+    [
+     1757.03,
+     10879.06
+    ],
+    [
+     1755.03,
+     10875.05
+    ],
+    [
+     1753.02,
+     10871.04
+    ],
+    [
+     1751.01,
+     10867.03
+    ],
+    [
+     1749.01,
+     10863.02
+    ],
+    [
+     1746.97,
+     10859.02
+    ],
+    [
+     1744.24,
+     10855.49
+    ],
+    [
+     1740.64,
+     10852.82
+    ],
+    [
+     1736.63,
+     10850.82
+    ],
+    [
+     1732.62,
+     10848.81
+    ],
+    [
+     1728.59,
+     10846.85
+    ],
+    [
+     1725.0,
+     10847.5
+    ],
+    [
+     1722.06,
+     10847.08
+    ],
+    [
+     1719.7,
+     10848.64
+    ],
+    [
+     1716.21,
+     10846.21
+    ],
+    [
+     1713.04,
+     10843.04
+    ],
+    [
+     1709.86,
+     10839.86
+    ],
+    [
+     1706.69,
+     10836.69
+    ],
+    [
+     1703.52,
+     10833.52
+    ],
+    [
+     1699.84,
+     10831.25
+    ],
+    [
+     1696.32,
+     10833.82
+    ],
+    [
+     1693.82,
+     10837.54
+    ],
+    [
+     1691.67,
+     10841.47
+    ],
+    [
+     1688.03,
+     10842.95
+    ],
+    [
+     1684.21,
+     10842.45
+    ],
+    [
+     1681.84,
+     10846.23
+    ],
+    [
+     1678.94,
+     10849.59
+    ],
+    [
+     1674.53,
+     10850.0
+    ],
+    [
+     1670.3,
+     10849.05
+    ],
+    [
+     1667.71,
+     10845.42
+    ],
+    [
+     1665.87,
+     10841.33
+    ],
+    [
+     1665.0,
+     10836.96
+    ],
+    [
+     1665.0,
+     10832.48
+    ],
+    [
+     1665.0,
+     10827.99
+    ],
+    [
+     1665.0,
+     10823.51
+    ],
+    [
+     1665.0,
+     10819.02
+    ],
+    [
+     1664.45,
+     10814.6
+    ],
+    [
+     1662.73,
+     10810.46
+    ],
+    [
+     1660.72,
+     10806.45
+    ],
+    [
+     1658.72,
+     10802.44
+    ],
+    [
+     1656.69,
+     10798.44
+    ],
+    [
+     1654.31,
+     10794.64
+    ],
+    [
+     1651.31,
+     10791.31
+    ],
+    [
+     1648.14,
+     10788.14
+    ],
+    [
+     1644.73,
+     10785.24
+    ],
+    [
+     1640.88,
+     10782.95
+    ],
+    [
+     1636.81,
+     10781.06
+    ],
+    [
+     1632.48,
+     10780.0
+    ],
+    [
+     1627.99,
+     10780.0
+    ],
+    [
+     1623.5,
+     10780.0
+    ],
+    [
+     1619.02,
+     10780.0
+    ],
+    [
+     1614.53,
+     10780.0
+    ],
+    [
+     1610.05,
+     10780.0
+    ],
+    [
+     1605.56,
+     10780.0
+    ],
+    [
+     1601.08,
+     10780.0
+    ],
+    [
+     1596.59,
+     10780.0
+    ],
+    [
+     1592.1,
+     10780.0
+    ],
+    [
+     1587.62,
+     10780.0
+    ],
+    [
+     1583.13,
+     10780.0
+    ],
+    [
+     1578.65,
+     10780.0
+    ],
+    [
+     1574.16,
+     10780.0
+    ],
+    [
+     1569.67,
+     10780.0
+    ],
+    [
+     1565.19,
+     10780.0
+    ],
+    [
+     1560.7,
+     10780.0
+    ],
+    [
+     1556.22,
+     10780.0
+    ],
+    [
+     1551.73,
+     10780.0
+    ],
+    [
+     1547.25,
+     10780.0
+    ],
+    [
+     1542.76,
+     10780.0
+    ],
+    [
+     1538.27,
+     10780.0
+    ],
+    [
+     1533.79,
+     10780.0
+    ],
+    [
+     1529.3,
+     10780.0
+    ],
+    [
+     1524.82,
+     10780.0
+    ],
+    [
+     1520.33,
+     10780.0
+    ],
+    [
+     1515.85,
+     10780.0
+    ],
+    [
+     1511.36,
+     10780.0
+    ],
+    [
+     1506.87,
+     10780.0
+    ],
+    [
+     1502.39,
+     10780.0
+    ],
+    [
+     1497.9,
+     10780.0
+    ],
+    [
+     1493.42,
+     10780.0
+    ],
+    [
+     1488.93,
+     10780.0
+    ],
+    [
+     1484.44,
+     10780.0
+    ],
+    [
+     1480.0,
+     10779.57
+    ],
+    [
+     1475.84,
+     10777.91
+    ],
+    [
+     1471.77,
+     10776.04
+    ],
+    [
+     1467.43,
+     10775.0
+    ],
+    [
+     1463.11,
+     10773.91
+    ],
+    [
+     1459.04,
+     10772.03
+    ],
+    [
+     1454.87,
+     10770.39
+    ],
+    [
+     1450.42,
+     10770.0
+    ],
+    [
+     1445.95,
+     10769.81
+    ],
+    [
+     1441.73,
+     10768.33
+    ],
+    [
+     1437.67,
+     10766.41
+    ],
+    [
+     1433.41,
+     10765.07
+    ],
+    [
+     1429.02,
+     10764.26
+    ],
+    [
+     1424.91,
+     10762.46
+    ],
+    [
+     1420.72,
+     10760.9
+    ],
+    [
+     1416.72,
+     10762.4
+    ]
+   ],
+   "points_z": [
+    338.5,
+    338.5,
+    338.5,
+    338.5,
+    339.13,
+    339.22,
+    339.13,
+    339.03,
+    338.97,
+    339.04,
+    339.22,
+    339.34,
+    339.44,
+    339.61,
+    339.81,
+    339.98,
+    340.23,
+    340.57,
+    340.95,
+    341.33,
+    341.72,
+    342.16,
+    342.62,
+    343.07,
+    343.46,
+    343.85,
+    344.18,
+    344.45,
+    344.73,
+    345.1,
+    345.49,
+    345.83,
+    346.12,
+    346.35,
+    346.51,
+    346.68,
+    346.86,
+    346.97,
+    346.96,
+    346.78,
+    346.43,
+    346.01,
+    345.63,
+    345.29,
+    344.99,
+    344.77,
+    344.68,
+    344.45,
+    343.98,
+    343.5,
+    343.1,
+    342.65,
+    342.23,
+    341.76,
+    341.2,
+    340.58,
+    340.09,
+    339.54,
+    339.06,
+    338.43,
+    337.8,
+    337.23,
+    336.89,
+    336.39,
+    335.93,
+    335.76,
+    335.73,
+    335.63,
+    335.4,
+    335.06,
+    334.6,
+    334.26,
+    334.25,
+    334.48,
+    334.84,
+    335.22,
+    335.34,
+    335.09,
+    334.7,
+    334.4,
+    334.34,
+    334.55,
+    334.92,
+    335.26,
+    335.38,
+    335.28,
+    335.18,
+    335.24,
+    335.44,
+    335.73,
+    336.06,
+    336.44,
+    336.82,
+    337.23,
+    337.6,
+    337.87,
+    338.03,
+    338.21,
+    338.46,
+    338.89,
+    339.45,
+    340.01,
+    340.5,
+    340.88,
+    341.11,
+    341.27,
+    341.51,
+    341.76,
+    342.0,
+    342.17,
+    342.31,
+    342.41,
+    342.5,
+    342.63,
+    342.97,
+    343.57,
+    344.2,
+    344.82,
+    345.43,
+    345.85,
+    346.21,
+    346.5,
+    346.88,
+    347.36,
+    347.75,
+    347.92,
+    348.07,
+    348.28,
+    348.58,
+    348.98,
+    349.48,
+    349.94,
+    350.33,
+    350.64,
+    350.8,
+    350.84,
+    350.81,
+    350.7,
+    350.49,
+    350.26,
+    350.05,
+    349.9,
+    349.82,
+    349.79,
+    349.73,
+    349.55,
+    349.25,
+    348.85,
+    348.37,
+    347.88,
+    347.43,
+    347.02,
+    346.71,
+    346.5,
+    346.3,
+    346.06,
+    345.79,
+    345.35,
+    344.77,
+    344.36,
+    343.87,
+    343.5,
+    342.88,
+    342.25,
+    341.62,
+    341.1,
+    340.65,
+    340.19,
+    339.76,
+    339.38,
+    338.75,
+    338.13,
+    337.51,
+    336.9,
+    336.27,
+    335.71,
+    335.67,
+    335.71,
+    335.75,
+    335.76,
+    335.74,
+    335.65,
+    335.5,
+    335.31,
+    335.05,
+    334.73,
+    334.44,
+    334.19,
+    334.13,
+    334.23,
+    334.37,
+    334.39,
+    334.23,
+    333.81,
+    333.39,
+    333.06,
+    332.82,
+    332.63,
+    332.35,
+    331.84,
+    331.42,
+    331.03,
+    330.43,
+    329.8,
+    329.17,
+    328.55,
+    327.92,
+    327.47,
+    327.09,
+    326.65,
+    326.17,
+    325.69,
+    325.17,
+    324.61,
+    324.13,
+    323.72,
+    323.28,
+    322.83,
+    322.38,
+    321.91,
+    321.44,
+    321.03,
+    320.69,
+    320.35,
+    319.98,
+    319.58,
+    319.15,
+    318.7,
+    318.25,
+    317.82,
+    317.39,
+    316.97,
+    316.58,
+    316.2,
+    315.86,
+    315.53,
+    315.22,
+    314.92,
+    314.62,
+    314.32,
+    314.02,
+    313.72,
+    313.42,
+    313.12,
+    312.82,
+    312.53,
+    312.23,
+    311.93,
+    311.63,
+    311.33,
+    311.03,
+    310.73,
+    310.43,
+    310.14,
+    309.84,
+    309.54,
+    309.24,
+    308.94,
+    308.64,
+    308.34,
+    308.04,
+    307.74,
+    307.44,
+    307.15,
+    306.85,
+    306.55,
+    306.25,
+    305.95,
+    305.66,
+    305.38,
+    305.1,
+    304.82,
+    304.56,
+    304.29,
+    304.01,
+    303.73,
+    303.46,
+    303.18,
+    302.91,
+    302.63,
+    302.0,
+    301.38,
+    300.75,
+    300.75,
+    300.75
+   ],
+   "length_m": 1254,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 3.04,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 85.2
+  },
+  {
+   "id": "3-16-3-15",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "3-16",
+    "3-15"
+   ],
+   "points": [
+    [
+     8377.06,
+     9448.83
+    ],
+    [
+     8372.7,
+     9449.86
+    ],
+    [
+     8368.34,
+     9450.87
+    ],
+    [
+     8364.28,
+     9452.76
+    ],
+    [
+     8360.93,
+     9455.71
+    ],
+    [
+     8358.13,
+     9459.2
+    ],
+    [
+     8355.8,
+     9463.02
+    ],
+    [
+     8353.73,
+     9466.99
+    ],
+    [
+     8351.79,
+     9471.03
+    ],
+    [
+     8349.98,
+     9475.12
+    ],
+    [
+     8348.28,
+     9479.27
+    ],
+    [
+     8346.67,
+     9483.45
+    ],
+    [
+     8345.13,
+     9487.66
+    ],
+    [
+     8343.64,
+     9491.88
+    ],
+    [
+     8342.17,
+     9496.11
+    ],
+    [
+     8340.69,
+     9500.34
+    ],
+    [
+     8339.17,
+     9504.55
+    ],
+    [
+     8337.58,
+     9508.74
+    ],
+    [
+     8335.91,
+     9512.9
+    ],
+    [
+     8334.13,
+     9517.01
+    ],
+    [
+     8332.23,
+     9521.07
+    ],
+    [
+     8330.22,
+     9525.07
+    ],
+    [
+     8328.08,
+     9529.0
+    ],
+    [
+     8325.83,
+     9532.88
+    ],
+    [
+     8323.49,
+     9536.7
+    ],
+    [
+     8321.07,
+     9540.47
+    ],
+    [
+     8318.6,
+     9544.2
+    ],
+    [
+     8316.1,
+     9547.92
+    ],
+    [
+     8313.6,
+     9551.64
+    ],
+    [
+     8311.12,
+     9555.37
+    ],
+    [
+     8308.69,
+     9559.14
+    ],
+    [
+     8306.34,
+     9562.94
+    ],
+    [
+     8304.07,
+     9566.81
+    ],
+    [
+     8301.91,
+     9570.73
+    ],
+    [
+     8299.87,
+     9574.72
+    ],
+    [
+     8297.95,
+     9578.77
+    ],
+    [
+     8296.14,
+     9582.87
+    ],
+    [
+     8294.45,
+     9587.01
+    ],
+    [
+     8292.85,
+     9591.2
+    ],
+    [
+     8291.32,
+     9595.41
+    ],
+    [
+     8289.83,
+     9599.63
+    ],
+    [
+     8288.36,
+     9603.86
+    ],
+    [
+     8286.87,
+     9608.09
+    ],
+    [
+     8285.35,
+     9612.3
+    ],
+    [
+     8283.76,
+     9616.49
+    ],
+    [
+     8282.07,
+     9620.64
+    ],
+    [
+     8280.28,
+     9624.75
+    ],
+    [
+     8278.37,
+     9628.8
+    ],
+    [
+     8276.34,
+     9632.79
+    ],
+    [
+     8274.19,
+     9636.72
+    ],
+    [
+     8271.93,
+     9640.59
+    ],
+    [
+     8269.58,
+     9644.4
+    ],
+    [
+     8267.16,
+     9648.17
+    ],
+    [
+     8264.69,
+     9651.9
+    ],
+    [
+     8262.19,
+     9655.62
+    ],
+    [
+     8259.69,
+     9659.34
+    ],
+    [
+     8257.22,
+     9663.08
+    ],
+    [
+     8254.79,
+     9666.84
+    ],
+    [
+     8252.44,
+     9670.66
+    ],
+    [
+     8250.23,
+     9674.55
+    ],
+    [
+     8248.45,
+     9678.64
+    ],
+    [
+     8247.29,
+     9682.96
+    ],
+    [
+     8246.11,
+     9687.26
+    ],
+    [
+     8244.41,
+     9691.41
+    ],
+    [
+     8242.73,
+     9695.56
+    ],
+    [
+     8241.14,
+     9699.75
+    ],
+    [
+     8239.61,
+     9703.96
+    ],
+    [
+     8238.13,
+     9708.18
+    ],
+    [
+     8236.65,
+     9712.42
+    ],
+    [
+     8235.17,
+     9716.64
+    ],
+    [
+     8233.63,
+     9720.85
+    ],
+    [
+     8232.03,
+     9725.03
+    ],
+    [
+     8230.34,
+     9729.18
+    ],
+    [
+     8228.53,
+     9733.28
+    ],
+    [
+     8226.61,
+     9737.33
+    ],
+    [
+     8224.57,
+     9741.31
+    ],
+    [
+     8222.41,
+     9745.24
+    ],
+    [
+     8220.14,
+     9749.1
+    ],
+    [
+     8217.78,
+     9752.91
+    ],
+    [
+     8215.35,
+     9756.67
+    ],
+    [
+     8212.87,
+     9760.4
+    ],
+    [
+     8210.37,
+     9764.12
+    ],
+    [
+     8207.87,
+     9767.84
+    ],
+    [
+     8205.4,
+     9771.57
+    ],
+    [
+     8202.99,
+     9775.35
+    ],
+    [
+     8200.64,
+     9779.17
+    ],
+    [
+     8198.4,
+     9783.04
+    ],
+    [
+     8196.26,
+     9786.98
+    ],
+    [
+     8194.24,
+     9790.98
+    ],
+    [
+     8192.35,
+     9795.04
+    ],
+    [
+     8190.57,
+     9799.15
+    ],
+    [
+     8188.9,
+     9803.3
+    ],
+    [
+     8187.31,
+     9807.49
+    ],
+    [
+     8185.79,
+     9811.71
+    ],
+    [
+     8184.31,
+     9815.94
+    ],
+    [
+     8182.84,
+     9820.17
+    ],
+    [
+     8181.35,
+     9824.39
+    ],
+    [
+     8179.81,
+     9828.6
+    ],
+    [
+     8178.2,
+     9832.78
+    ],
+    [
+     8176.5,
+     9836.92
+    ],
+    [
+     8174.71,
+     9841.03
+    ],
+    [
+     8173.1,
+     9845.2
+    ],
+    [
+     8172.38,
+     9849.59
+    ],
+    [
+     8172.16,
+     9854.06
+    ],
+    [
+     8171.53,
+     9858.48
+    ],
+    [
+     8170.06,
+     9862.67
+    ],
+    [
+     8167.8,
+     9866.53
+    ],
+    [
+     8165.32,
+     9870.26
+    ],
+    [
+     8162.8,
+     9873.97
+    ],
+    [
+     8160.17,
+     9877.59
+    ],
+    [
+     8157.13,
+     9880.87
+    ],
+    [
+     8153.74,
+     9883.78
+    ],
+    [
+     8150.43,
+     9886.8
+    ],
+    [
+     8147.55,
+     9890.2
+    ],
+    [
+     8145.22,
+     9894.03
+    ],
+    [
+     8143.22,
+     9898.04
+    ],
+    [
+     8141.34,
+     9902.1
+    ],
+    [
+     8139.57,
+     9906.22
+    ],
+    [
+     8137.91,
+     9910.38
+    ],
+    [
+     8136.33,
+     9914.57
+    ],
+    [
+     8134.82,
+     9918.79
+    ],
+    [
+     8133.34,
+     9923.02
+    ],
+    [
+     8131.87,
+     9927.25
+    ],
+    [
+     8130.38,
+     9931.47
+    ],
+    [
+     8128.84,
+     9935.68
+    ],
+    [
+     8127.22,
+     9939.86
+    ],
+    [
+     8125.5,
+     9943.99
+    ],
+    [
+     8123.67,
+     9948.08
+    ],
+    [
+     8121.73,
+     9952.12
+    ],
+    [
+     8119.66,
+     9956.09
+    ],
+    [
+     8117.47,
+     9960.0
+    ],
+    [
+     8115.18,
+     9963.85
+    ],
+    [
+     8112.75,
+     9967.61
+    ],
+    [
+     8109.95,
+     9971.1
+    ],
+    [
+     8106.64,
+     9974.12
+    ],
+    [
+     8103.68,
+     9977.48
+    ],
+    [
+     8101.11,
+     9981.15
+    ],
+    [
+     8098.65,
+     9984.89
+    ],
+    [
+     8096.24,
+     9988.67
+    ],
+    [
+     8093.91,
+     9992.5
+    ],
+    [
+     8091.68,
+     9996.38
+    ],
+    [
+     8089.56,
+     10000.33
+    ],
+    [
+     8087.56,
+     10004.34
+    ],
+    [
+     8085.68,
+     10008.4
+    ],
+    [
+     8083.92,
+     10012.52
+    ],
+    [
+     8082.27,
+     10016.69
+    ],
+    [
+     8080.7,
+     10020.88
+    ],
+    [
+     8079.19,
+     10025.1
+    ],
+    [
+     8077.71,
+     10029.33
+    ],
+    [
+     8076.24,
+     10033.56
+    ],
+    [
+     8074.75,
+     10037.78
+    ],
+    [
+     8073.2,
+     10041.99
+    ],
+    [
+     8071.58,
+     10046.17
+    ],
+    [
+     8069.87,
+     10050.3
+    ],
+    [
+     8068.2,
+     10054.46
+    ],
+    [
+     8067.33,
+     10058.85
+    ],
+    [
+     8066.0,
+     10063.13
+    ],
+    [
+     8063.91,
+     10067.09
+    ],
+    [
+     8061.62,
+     10070.94
+    ],
+    [
+     8059.23,
+     10074.73
+    ],
+    [
+     8056.9,
+     10078.56
+    ],
+    [
+     8055.32,
+     10082.74
+    ],
+    [
+     8054.83,
+     10087.19
+    ],
+    [
+     8053.63,
+     10091.51
+    ],
+    [
+     8051.77,
+     10095.59
+    ],
+    [
+     8050.0,
+     10099.7
+    ]
+   ],
+   "points_z": [
+    208.25,
+    208.25,
+    208.25,
+    208.25,
+    207.93,
+    207.94,
+    207.97,
+    208.02,
+    208.09,
+    208.17,
+    208.26,
+    208.35,
+    208.45,
+    208.55,
+    208.65,
+    208.76,
+    208.92,
+    209.12,
+    209.37,
+    209.66,
+    209.98,
+    210.32,
+    210.65,
+    210.93,
+    211.15,
+    211.38,
+    211.65,
+    211.96,
+    212.2,
+    212.38,
+    212.49,
+    212.57,
+    212.69,
+    212.93,
+    213.26,
+    213.61,
+    213.88,
+    214.09,
+    214.27,
+    214.55,
+    214.9,
+    215.24,
+    215.48,
+    215.65,
+    215.71,
+    215.69,
+    215.63,
+    215.6,
+    215.71,
+    215.95,
+    216.25,
+    216.57,
+    216.73,
+    216.72,
+    216.56,
+    216.42,
+    216.44,
+    216.74,
+    217.03,
+    217.21,
+    217.32,
+    217.34,
+    217.3,
+    217.41,
+    217.59,
+    217.74,
+    217.86,
+    217.98,
+    218.24,
+    218.7,
+    219.24,
+    219.61,
+    219.77,
+    219.72,
+    219.46,
+    219.16,
+    219.0,
+    219.01,
+    219.2,
+    219.5,
+    219.76,
+    219.98,
+    220.06,
+    219.89,
+    219.59,
+    219.38,
+    219.31,
+    219.47,
+    219.83,
+    220.15,
+    220.33,
+    220.36,
+    220.24,
+    220.04,
+    219.94,
+    219.89,
+    219.88,
+    219.96,
+    220.07,
+    220.11,
+    220.13,
+    220.19,
+    220.23,
+    220.25,
+    220.32,
+    220.45,
+    220.51,
+    220.6,
+    220.77,
+    221.0,
+    221.29,
+    221.66,
+    222.05,
+    222.39,
+    222.7,
+    222.94,
+    223.2,
+    223.52,
+    223.91,
+    224.35,
+    224.85,
+    225.33,
+    225.77,
+    226.17,
+    226.58,
+    227.0,
+    227.44,
+    227.84,
+    228.13,
+    228.3,
+    228.42,
+    228.52,
+    228.69,
+    229.09,
+    229.61,
+    229.99,
+    230.17,
+    230.18,
+    230.03,
+    229.89,
+    229.97,
+    230.24,
+    230.49,
+    230.58,
+    230.51,
+    230.32,
+    230.12,
+    230.04,
+    230.11,
+    230.27,
+    230.43,
+    230.57,
+    230.68,
+    230.76,
+    230.87,
+    230.99,
+    231.1,
+    231.19,
+    231.29,
+    231.4,
+    231.51,
+    231.56,
+    231.54,
+    231.0,
+    231.0,
+    231.0
+   ],
+   "length_m": 739,
+   "max_grade_pct": 12.1,
+   "max_cut_fill_m": 2.33,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 67.1
+  }
+ ],
+ "external_roads_joined": [],
+ "trunk_breaks": [],
+ "foot_links": [
+  {
+   "site": "3-F",
+   "bottom_xyz": [
+    3900.0,
+    10785.0,
+    23.25
+   ],
+   "top_xyz": [
+    2177.8,
+    10249.4,
+    376.48
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 1804,
+   "rise_m": 353.2
+  },
+  {
+   "site": "3-F-N",
+   "bottom_xyz": [
+    3500.0,
+    11160.0,
+    17.0
+   ],
+   "top_xyz": [
+    2154.7,
+    10924.9,
+    369.5
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 1366,
+   "rise_m": 352.5
+  },
+  {
+   "site": "3-M1",
+   "bottom_xyz": [
+    3270.0,
+    8210.0,
+    97.5
+   ],
+   "top_xyz": [
+    2193.6,
+    10151.8,
+    370.19
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 2220,
+   "rise_m": 272.7
+  },
+  {
+   "site": "3-M2",
+   "bottom_xyz": [
+    660.0,
+    10000.0,
+    31.25
+   ],
+   "top_xyz": [
+    1442.0,
+    10688.7,
+    300.75
+   ],
+   "top_on_road": "3-14-3-M4",
+   "straight_m": 1042,
+   "rise_m": 269.5
+  },
+  {
+   "site": "3-01",
+   "bottom_xyz": [
+    3200.0,
+    11250.0,
+    43.25
+   ],
+   "top_xyz": [
+    2152.4,
+    10933.6,
+    369.5
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 1094,
+   "rise_m": 326.2
+  },
+  {
+   "site": "3-02",
+   "bottom_xyz": [
+    1500.0,
+    9300.0,
+    214.25
+   ],
+   "top_xyz": [
+    2076.2,
+    10091.2,
+    362.5
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 979,
+   "rise_m": 148.2
+  },
+  {
+   "site": "3-03",
+   "bottom_xyz": [
+    2410.0,
+    7560.0,
+    238.5
+   ],
+   "top_xyz": [
+    2076.2,
+    10091.2,
+    362.5
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 2553,
+   "rise_m": 124.0
+  },
+  {
+   "site": "3-04",
+   "bottom_xyz": [
+    3000.0,
+    8640.0,
+    223.75
+   ],
+   "top_xyz": [
+    2193.6,
+    10151.8,
+    370.19
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 1713,
+   "rise_m": 146.4
+  },
+  {
+   "site": "3-09",
+   "bottom_xyz": [
+    3670.0,
+    11820.0,
+    25.25
+   ],
+   "top_xyz": [
+    1968.6,
+    11417.5,
+    338.5
+   ],
+   "top_on_road": "3-08-3-14",
+   "straight_m": 1748,
+   "rise_m": 313.2
+  },
+  {
+   "site": "3-10",
+   "bottom_xyz": [
+    2860.0,
+    12800.0,
+    18.25
+   ],
+   "top_xyz": [
+    1968.6,
+    11417.5,
+    338.5
+   ],
+   "top_on_road": "3-08-3-14",
+   "straight_m": 1645,
+   "rise_m": 320.2
+  },
+  {
+   "site": "3-11",
+   "bottom_xyz": [
+    700.0,
+    11590.0,
+    129.0
+   ],
+   "top_xyz": [
+    1416.7,
+    10762.4,
+    300.75
+   ],
+   "top_on_road": "3-08-3-14",
+   "straight_m": 1095,
+   "rise_m": 171.8
+  },
+  {
+   "site": "3-12",
+   "bottom_xyz": [
+    3390.0,
+    9230.0,
+    220.5
+   ],
+   "top_xyz": [
+    2200.7,
+    10157.1,
+    370.54
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 1508,
+   "rise_m": 150.0
+  },
+  {
+   "site": "3-M3",
+   "bottom_xyz": [
+    2658.0,
+    10442.0,
+    33.0
+   ],
+   "top_xyz": [
+    2163.4,
+    10492.1,
+    374.29
+   ],
+   "top_on_road": "3-M4-3-13",
+   "straight_m": 497,
+   "rise_m": 341.3
+  }
+ ],
+ "approaches": {
+  "3-F Sound Gate": [
+   "by boat to the beach just east of the mouth (x 4140-4240, y 10840-10850) or onto the south keep's own shelf beside the ring islet",
+   "from the north cove beach along the north shore shelf to the north keep (3-F-N), then the gate's north end"
+  ],
+  "3-M1 South Notch Keep": [
+   "from the beach at x 3310-3430, y 7525-7565 (shore list), north along the coast and up the gully into the keep's wall",
+   "down the Notch road from the plateau (3-04 Notch Road Checkpoint), on the road net, with vehicles"
+  ],
+  "3-M2 West Notch Keep": [
+   "from the west-coast beach at x 510, y 10675-10730 (shore list), south along the coast and up the gully",
+   "on foot from the plateau: Terrace Farms Post (3-02) down the west slope to the keep's back"
+  ],
+  "3-M3 Sound Head": [
+   "by boat into the Sound to the town quay (under the gate's guns until 3-F falls)",
+   "on foot down the crater stair from the plateau road (see foot links)"
+  ],
+  "3-M4 Summit AA": [
+   "by road from the Inland Ramp Depot (3-14) and the Peak Relay Dish (3-08)",
+   "by road from the Sound Fuel Depot (3-13)"
+  ]
+ },
+ "shores": [
+  {
+   "from_xy": [
+    1510.0,
+    7100.0
+   ],
+   "to_xy": [
+    1460.0,
+    7240.0
+   ],
+   "length_m": 149,
+   "points": 31,
+   "mean_inland_slope_pct": 9.2
+  },
+  {
+   "from_xy": [
+    3310.0,
+    7525.0
+   ],
+   "to_xy": [
+    3430.0,
+    7565.0
+   ],
+   "length_m": 126,
+   "points": 61,
+   "mean_inland_slope_pct": 7.4
+  },
+  {
+   "from_xy": [
+    6635.0,
+    9570.0
+   ],
+   "to_xy": [
+    6675.0,
+    9575.0
+   ],
+   "length_m": 40,
+   "points": 15,
+   "mean_inland_slope_pct": 9.9
+  },
+  {
+   "from_xy": [
+    9495.0,
+    10025.0
+   ],
+   "to_xy": [
+    9325.0,
+    10275.0
+   ],
+   "length_m": 302,
+   "points": 58,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    8610.0,
+    10140.0
+   ],
+   "to_xy": [
+    8625.0,
+    10290.0
+   ],
+   "length_m": 151,
+   "points": 29,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    7305.0,
+    10190.0
+   ],
+   "to_xy": [
+    7340.0,
+    10220.0
+   ],
+   "length_m": 46,
+   "points": 18,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    7390.0,
+    10445.0
+   ],
+   "to_xy": [
+    7400.0,
+    10485.0
+   ],
+   "length_m": 41,
+   "points": 17,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    9260.0,
+    10600.0
+   ],
+   "to_xy": [
+    9265.0,
+    10680.0
+   ],
+   "length_m": 80,
+   "points": 17,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    4665.0,
+    10665.0
+   ],
+   "to_xy": [
+    4500.0,
+    10795.0
+   ],
+   "length_m": 210,
+   "points": 69,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    510.0,
+    10675.0
+   ],
+   "to_xy": [
+    510.0,
+    10730.0
+   ],
+   "length_m": 55,
+   "points": 13,
+   "mean_inland_slope_pct": 9.0
+  },
+  {
+   "from_xy": [
+    4240.0,
+    10840.0
+   ],
+   "to_xy": [
+    4140.0,
+    10850.0
+   ],
+   "length_m": 100,
+   "points": 40,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    9255.0,
+    11635.0
+   ],
+   "to_xy": [
+    9295.0,
+    11670.0
+   ],
+   "length_m": 53,
+   "points": 10,
+   "mean_inland_slope_pct": 8.7
+  },
+  {
+   "from_xy": [
+    365.0,
+    11715.0
+   ],
+   "to_xy": [
+    330.0,
+    11795.0
+   ],
+   "length_m": 87,
+   "points": 35,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    3830.0,
+    12050.0
+   ],
+   "to_xy": [
+    3780.0,
+    12075.0
+   ],
+   "length_m": 56,
+   "points": 16,
+   "mean_inland_slope_pct": 8.9
+  },
+  {
+   "from_xy": [
+    3435.0,
+    12385.0
+   ],
+   "to_xy": [
+    3390.0,
+    12395.0
+   ],
+   "length_m": 46,
+   "points": 17,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    360.0,
+    12610.0
+   ],
+   "to_xy": [
+    405.0,
+    12625.0
+   ],
+   "length_m": 47,
+   "points": 19,
+   "mean_inland_slope_pct": 5.7
+  }
+ ],
+ "gate": [
+  [
+   3900.0,
+   10805.0
+  ],
+  [
+   3510.0,
+   11130.0
+  ]
+ ],
+ "moves": [
+  {
+   "id": "3-F",
+   "from_xy": [
+    3850,
+    10800
+   ],
+   "to_xy": [
+    3900.0,
+    10785.0
+   ],
+   "moved_m": 52
+  },
+  {
+   "id": "3-F-N",
+   "from_xy": [
+    3850,
+    10800
+   ],
+   "to_xy": [
+    3500.0,
+    11160.0
+   ],
+   "moved_m": 502
+  },
+  {
+   "id": "3-M1",
+   "from_xy": [
+    3450,
+    8000
+   ],
+   "to_xy": [
+    3270.0,
+    8210.0
+   ],
+   "moved_m": 277
+  },
+  {
+   "id": "3-M4",
+   "from_xy": [
+    2200,
+    11000
+   ],
+   "to_xy": [
+    2140.0,
+    10980.0
+   ],
+   "moved_m": 63
+  },
+  {
+   "id": "3-01",
+   "from_xy": [
+    3200,
+    11300
+   ],
+   "to_xy": [
+    3200.0,
+    11250.0
+   ],
+   "moved_m": 50
+  },
+  {
+   "id": "3-03",
+   "from_xy": [
+    2400,
+    7550
+   ],
+   "to_xy": [
+    2410.0,
+    7560.0
+   ],
+   "moved_m": 14
+  },
+  {
+   "id": "3-04",
+   "from_xy": [
+    3050,
+    8600
+   ],
+   "to_xy": [
+    3000.0,
+    8640.0
+   ],
+   "moved_m": 64
+  },
+  {
+   "id": "3-08",
+   "from_xy": [
+    2000,
+    11450
+   ],
+   "to_xy": [
+    1980.0,
+    11460.0
+   ],
+   "moved_m": 22
+  },
+  {
+   "id": "3-09",
+   "from_xy": [
+    3600,
+    11650
+   ],
+   "to_xy": [
+    3670.0,
+    11820.0
+   ],
+   "moved_m": 184
+  },
+  {
+   "id": "3-10",
+   "from_xy": [
+    2700,
+    12850
+   ],
+   "to_xy": [
+    2860.0,
+    12800.0
+   ],
+   "moved_m": 168
+  },
+  {
+   "id": "3-11",
+   "from_xy": [
+    750,
+    11600
+   ],
+   "to_xy": [
+    700.0,
+    11590.0
+   ],
+   "moved_m": 51
+  },
+  {
+   "id": "3-12",
+   "from_xy": [
+    3400,
+    9200
+   ],
+   "to_xy": [
+    3390.0,
+    9230.0
+   ],
+   "moved_m": 32
+  },
+  {
+   "id": "3-16",
+   "from_xy": [
+    8400,
+    9400
+   ],
+   "to_xy": [
+    8410.0,
+    9440.0
+   ],
+   "moved_m": 41
+  }
+ ],
+ "log": [
+  "road 3-08 -> 3-M4: rejected (grade 14.0 %, cut/fill 3.22 m, pad clash 1 ['3-M4'], junction step 1.8 m, water 0, house 412.7 m)",
+  "road 3-08 -> 3-M4: rejected (grade 23.8 %, cut/fill 3.91 m, pad clash 1 ['3-M4'], junction step 1.61 m, water 0, house 412.6 m)",
+  "road 3-08 -> 3-M4: rejected (grade 14.0 %, cut/fill 3.04 m, pad clash 0 [], junction step 1.49 m, water 0, house 419.0 m)",
+  "road 3-08 -> 3-M4: rejected (grade 46.9 %, cut/fill 3.91 m, pad clash 0 [], junction step 1.49 m, water 0, house 419.0 m)",
+  "road 3-08 -> 3-M4: rejected (grade 14.0 %, cut/fill 3.22 m, pad clash 1 ['3-M4'], junction step 1.8 m, water 0, house 412.7 m)",
+  "road 3-08 -> 3-M4: rejected (grade 23.8 %, cut/fill 3.91 m, pad clash 1 ['3-M4'], junction step 1.61 m, water 0, house 412.6 m)",
+  "road 3-08 -> 3-M4: rejected (grade 14.0 %, cut/fill 3.04 m, pad clash 0 [], junction step 1.49 m, water 0, house 419.0 m)",
+  "road 3-08 -> 3-M4: rejected (grade 46.9 %, cut/fill 3.91 m, pad clash 0 [], junction step 1.49 m, water 0, house 419.0 m)",
+  "road for 3-02: NO ROUTE found to the Sound Isle net",
+  "road for 3-M2: NO ROUTE found to the Sound Isle net",
+  "road for 3-11: NO ROUTE found to the Sound Isle net",
+  "road for 3-01: NO ROUTE found to the Sound Isle net",
+  "road for 3-F-N: NO ROUTE found to the Sound Isle net",
+  "road for 3-09: NO ROUTE found to the Sound Isle net",
+  "road for 3-10: NO ROUTE found to the Sound Isle net",
+  "road for 3-04: NO ROUTE found to the Sound Isle net",
+  "road for 3-12: NO ROUTE found to the Sound Isle net",
+  "road for 3-M1: NO ROUTE found to the Sound Isle net",
+  "road for 3-03: NO ROUTE found to the Sound Isle net",
+  "road for 3-F: NO ROUTE found to the Sound Isle net"
+ ]
+}
