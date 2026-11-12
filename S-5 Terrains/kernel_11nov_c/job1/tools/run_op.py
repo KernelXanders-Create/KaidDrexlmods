@@ -352,13 +352,13 @@ tb = []        # town buildings: centre to road edge >= 8 m (a building's half-s
 for tid, tl in getattr(op, "TOWNS", {}).items():
     L_ = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), tl["layout"])))
     for r in P.roads:
-        pts_ = [p_ for p_ in r["points"] if math.dist(p_, towns[tid]["entry"]) > 25.0]
+        pts_ = [p_ for p_ in r["points"] if min(math.dist(p_, q_[:2]) for q_ in towns[tid]["ports"]) > 25.0]     # any of the town's road ports
         if len(pts_) < 2: continue
         ln = LineString(pts_).buffer(r["width_m"] / 2)
         for b in L_["buildings"]: tb.append((round(ln.distance(Point(b["x"], b["y"])), 1), f"{tid} {b['id']}", r["id"]))
 tb.sort()
 C["3 roads: nothing built within 3 m of a road edge"] = dict(status="PASS" if (not clr or clr[0][0] >= 3.0) and (not tb or tb[0][0] >= 8.0) else "FAIL", closest=clr[:3],
-    town_buildings_closest=tb[:3], town_note="town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road port where the road meets the town's own street")
+    town_buildings_closest=tb[:3], town_note="town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road ports (street ends), where a road meets the town's own street")
 wd = []
 for s in pads:
     if s.get("water_ok"): continue

@@ -17,7 +17,7 @@ SITES = [
     ("7-03", "Crest Road Checkpoint", "CIS Medium Checkpoint 3 with GPs", 30.0, 40.0, "ASSUMED: 60 x 80 m (a little over the Small Checkpoint, A2-05)", None, 300, False),
     ("7-04", "Oyra Head Radar", "Giant Radar Dish", 40.0, 40.0, "ASSUMED: 80 x 80 m", None, 300, False),
     ("7-05", "Oyra Head Landers", "CIS Fortified Lander (Backdoor) with GPs", 40.0, 60.0, "ASSUMED: 80 x 120 m; a beach work", None, 350, "beach"),
-    ("7-06", "North Rim Trench", "CIS Metal Trench Line with GPs", 21.7, 75.1, "KNOWN: op 1 pads", None, 300, False),
+    ("7-06", "North Rim Trench", "CIS Metal Trench Line with GPs", 21.7, 75.1, "KNOWN: op 1 pads; on the rim between Oyra and the Narrows (the purpose map's point, south-west of the town, is boxed in by the cliff and the town)", (11400, 12500), 200, False),
     ("7-07", "Chora Power Bank", "CIS Powerbank Facility with GPs", 60.0, 50.0, "REDUCED: the composition's own pad (2-14) is 192 x 166 m and no seat for it holds 4 m within 960 m; a 120 x 100 m pad (as op 4's 4-11; needs a smaller cut of the facility)", None, 400, False),
     ("7-08", "Ash North Ridge Post", "Zavala CIS Outpost with GPs", 30.0, 30.0, "ASSUMED: 60 x 60 m (as op 3's Zavala outpost)", None, 300, False),
     ("7-11", "Oyra Head Beach Bunkers", "Tukata Turret Bunker", 25.0, 25.0, "ASSUMED: 50 x 50 m", None, 300, False),
