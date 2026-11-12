@@ -293,8 +293,15 @@ class Plan:
                 for k in range(n - 2, -1, -1):
                     if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * seg[k]), zp[k + 1] + grade * seg[k])
                 if np.abs(zp - old).max() < 1e-4: break
+        for _ in range(1000):                                 # a last pass to convergence: the grade holds between every pair of points
+            old = zp.copy()
+            for k in range(1, n):
+                if not fixed[k]: zp[k] = min(max(zp[k], zp[k - 1] - grade * seg[k - 1]), zp[k - 1] + grade * seg[k - 1])
+            for k in range(n - 2, -1, -1):
+                if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * seg[k]), zp[k + 1] + grade * seg[k])
+            if np.abs(zp - old).max() < 1e-5: break
         r = dict(id=name, kind=kind, width_m=width, links=list(links), points=[[round(float(x), 2), round(float(y), 2)] for x, y in P],
-                 points_z=[round(float(v), 2) for v in zp], length_m=round(float(L)), max_grade_pct=round(float(np.max(np.abs(np.diff(zp)) / seg) * 100), 1))
+                 points_z=[round(float(v), 3) for v in zp], length_m=round(float(L)), max_grade_pct=round(float(np.max(np.abs(np.diff(zp)) / seg) * 100), 1))
         self.check_road(r)
         return r
 
@@ -323,7 +330,7 @@ class Plan:
                 if not fixed[i]: zp[i] = min(max(zp[i], zp[i + 1] - g * seg[i]), zp[i + 1] + g * seg[i])
             if np.abs(zp - old).max() < 1e-4: break
         if np.max(np.abs(np.diff(zp)) / seg) > grade + 1e-3: return None
-        r2 = dict(r, points_z=[round(float(v), 2) for v in zp])
+        r2 = dict(r, points_z=[round(float(v), 3) for v in zp])
         self.uncommit(r)
         self.check_road(r2)
         self.recommit(r)
