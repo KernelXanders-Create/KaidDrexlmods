@@ -425,7 +425,7 @@ for tb in trunk_breaks:
     ax.plot(*tb["at"], marker="X", color="#d62728", ms=14, mec="k"); ax.text(tb["at"][0] + 40, tb["at"][1] - 60, "GAP: " + tb["label"].split(";")[-1].strip(), color="#d62728", fontsize=8, weight="bold",
                                                                               bbox=dict(fc="white", ec="#d62728", alpha=0.8))
 if getattr(op, "GATE", None):
-    (ga, gb) = op.GATE; ax.plot([ga[0], gb[0]], [ga[1], gb[1]], color="#d62728", lw=3, ls="--"); ax.text((ga[0] + gb[0]) / 2 + 20, (ga[1] + gb[1]) / 2, "sea gate", color="#d62728", fontsize=8)
+    (ga, gb) = op.GATE; ax.plot([ga[0], gb[0]], [ga[1], gb[1]], color="#d62728", lw=3, ls="--"); ax.text((ga[0] + gb[0]) / 2 + 20, (ga[1] + gb[1]) / 2, getattr(op, "GATE_LABEL", "sea gate"), color="#d62728", fontsize=8)
 ax.plot([x1 - 1100, x1 - 100], [y0 + 120, y0 + 120], "k", lw=4); ax.text(x1 - 600, y0 + 160, "1 km", ha="center")
 ax.annotate("N", xy=(x0 + 150, y1 - 150), xytext=(x0 + 150, y1 - 450), arrowprops=dict(arrowstyle="->", lw=2), ha="center", fontsize=12)
 from matplotlib.patches import Patch
