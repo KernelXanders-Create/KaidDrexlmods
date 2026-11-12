@@ -246,7 +246,7 @@ class Plan:
         if zb is not None: zp[-1] = zb
         ss = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = ss[-1]       # distances along the points as handed over
         ds = np.diff(ss).mean(); seg = np.maximum(np.diff(ss), 1e-6)     # each segment's own length: the grade holds point to point
-        grade = grade * 0.995                                             # a margin so levels rounded to 1 cm still hold the limit
+        grade = grade * 0.985                                             # a margin so levels rounded to 1 cm still hold the limit
         land_a = (ss <= 16.0) if za is not None else np.zeros(n, bool)          # level landings: the band at a pad or junction keeps its level
         land_b = (ss >= L - 12.0) if zb is not None else np.zeros(n, bool)
         fixed = land_a | land_b
@@ -297,7 +297,7 @@ class Plan:
         seg = np.maximum(np.diff(s_), 1e-6); win = np.abs(s_ - s_[k]) <= half
         ends = (s_ <= 16.0) | (s_ >= L - 12.0)
         if (win & ends).any(): return None
-        zp = Z.copy(); zp[win] = Z[k]; fixed = win | ends; g = grade * 0.995
+        zp = Z.copy(); zp[win] = Z[k]; fixed = win | ends; g = grade * 0.985
         for _ in range(300):
             old = zp.copy()
             for i in range(1, len(zp)):
