@@ -265,7 +265,7 @@ class Plan:
         ds = np.diff(ss).mean(); seg = np.maximum(np.diff(ss), 1e-6)     # each segment's own length: the grade holds point to point
         grade = grade * 0.985                                             # a margin so levels rounded to 1 cm still hold the limit
         land_a = (ss <= 16.0) if za is not None else np.zeros(n, bool)          # level landings: the band at a pad or junction keeps its level
-        land_b = (ss >= L - 12.0) if zb is not None else np.zeros(n, bool)
+        land_b = (ss >= L - 20.0) if zb is not None else np.zeros(n, bool)     # 20 m level at a join, so the band meets the earlier road level all across
         fixed = land_a | land_b
         if za is not None: zp[land_a] = za
         if zb is not None: zp[land_b] = zb

@@ -18,7 +18,12 @@
  },
  "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
   "status": "REPORT",
-  "by_road": {},
+  "by_road": {
+   "4-11-4-F": [
+    4,
+    1.1
+   ]
+  },
   "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
  },
  "2 pad ground change <= 4.0 m": {
@@ -112,14 +117,14 @@
   "status": "PASS",
   "closest": [
    [
-    4.3,
-    "4-F",
-    "4-03-4-F"
-   ],
-   [
     4.5,
     "A4-05",
     "trunk-5:point 4-4-M3"
+   ],
+   [
+    5.0,
+    "4-F",
+    "4-03-4-F"
    ],
    [
     7.6,

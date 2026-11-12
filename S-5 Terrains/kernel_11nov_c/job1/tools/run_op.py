@@ -240,8 +240,11 @@ if getattr(op, "TRUNK", None):
                     ok_ = (hh_ > a_z + 2.0) & (dd_ > 40) & (dd_ < 400) & ~P.water[J_, I_]
                     cand_ = sorted(zip(dd_[ok_], I_[ok_] * 5.0, J_[ok_] * 5.0, hh_[ok_]), key=lambda t_: (t_[3] - a_z) / max(t_[0], 1.0))
                     tried_ = []
+                    def dry_line(p_, q_):
+                        n_ = max(2, int(math.dist(p_, q_) / 5))
+                        return not any(P.water[int(round((p_[1] + (q_[1] - p_[1]) * t_) / 5)), int(round((p_[0] + (q_[0] - p_[0]) * t_) / 5))] for t_ in np.linspace(0.05, 0.95, n_))
                     for d0, bx_, by_, bz_ in cand_:
-                        if any(math.dist((bx_, by_), q_) < 60 for q_ in tried_): continue
+                        if any(math.dist((bx_, by_), q_) < 60 for q_ in tried_) or not dry_line((bx_, by_), a_xy): continue     # the ramp must stand on dry ground
                         tried_.append((bx_, by_))
                         r2_, st2_ = trunk_leg(prev, np.array([bx_, by_]), round(float(bz_), 2), None, dict(leg, kind=leg.get("kind", "dirt"), width=leg.get("width", 7.0), grade=leg.get("grade", 0.14)), k, f"bench {k}")
                         if r2_ is not None: best_ = (r2_, (bx_, by_, round(float(bz_), 2))); break
@@ -342,7 +345,7 @@ for phase in (0, 1):
             out = np.array(ep) + 12.0 * v
             rl = None                   # a road of this op at the join: give it a level landing there first (item 9: no steps)
             if len(nd) > 4:
-                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5])
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
                 if zl is None: continue
                 rl = (r_own, r_own["points_z"]); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
             t_r = time.time()
