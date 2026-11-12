@@ -211,6 +211,13 @@ for phase in (0, 1):
                     and math.dist((x, y), ep) > 40.0]          # not the road's own landing at its pad: a road joining there would touch the pad
             if len(flat) < 2: flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 4 == 0 and math.dist((x, y), ep) > 40.0]
             nodes[net] += flat
+            if "_town" in s:      # a joined town's other street ends are on the net too (its streets carry traffic)
+                nodes[net] += [(px_, py_, pz_, sid) for px_, py_, pz_, pb_, pn_ in s["_town"]["ports"] if math.dist((px_, py_), (s["x"], s["y"])) > 5]
+            else:                 # and a joined pad's free edges (level, at the pad's height) are join points
+                a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
+                for v_, h_ in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"])):
+                    q_ = np.array([s["x"], s["y"]]) + v_ * (h_ + 4.0)
+                    if math.dist(q_, ep) > 5: nodes[net].append((float(q_[0]), float(q_[1]), s["z"], sid))
             done = True; break
         if not done: failed.append(sid)
       if not failed or len(failed) == len(pending): pending = failed; break
