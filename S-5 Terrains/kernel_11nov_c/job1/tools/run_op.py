@@ -73,6 +73,18 @@ for r_ in json.load(open(os.path.join(world.PACK, "ground", "roads_ops_1_2.json"
     r2 = dict(id=f"built:{r_['link']}#{len(EXT_ROADS)}", kind=r_["kind"], width_m=10.0 if r_["kind"] == "main" else 7.0, links=[], points=r_["points"],
               points_z=[round(world.z(x, y), 2) for x, y in r_["points"]], external=True, source="roads_ops_1_2.json")
     P.commit_road(r2); P.roads.remove(r2); EXT_ROADS.append(r2)
+# your built ops 1-2 pads inside the box: fixed ground (blocked for this op's pads and roads; a road may join one at a free edge)
+for f_ in ("pads_op1", "pads_op2"):
+    for p_ in json.load(open(os.path.join(world.PACK, "ops_1_2", f_ + ".json")))["pads"]:
+        hx_, hy_ = p_.get("hx") or p_.get("hu"), p_.get("hy") or (p_.get("hv", 0) / 2 if p_.get("hv") else None)
+        if not (hx_ and hy_ and "x" in p_ and "z" in p_): continue
+        if not (op.BOX[0] - 200 < p_["x"] < op.BOX[1] + 200 and op.BOX[2] - 200 < p_["y"] < op.BOX[3] + 200): continue
+        e2 = dict(id=f"{p_['site']} (built)", x=p_["x"], y=p_["y"], hx=hx_, hy=hy_, yaw=p_.get("yaw", 0.0), z=p_["z"])
+        c_ = rect(e2["x"], e2["y"], hx_ + 1.5, hy_ + 1.5, e2["yaw"]); pol_ = Polygon(c_)
+        P.add_area(e2["id"], [tuple(q) for q in c_], None)
+        gx_, gy_ = np.meshgrid(np.arange(int(min(c_[:, 0]) // 5), int(max(c_[:, 0]) // 5) + 2) * 5.0, np.arange(int(min(c_[:, 1]) // 5), int(max(c_[:, 1]) // 5) + 2) * 5.0)
+        P.add_buildings(e2["id"], [(a, b) for a, b in zip(gx_.ravel(), gy_.ravel()) if pol_.contains(Point(a, b))], r=0.0)
+        EXT[e2["id"]] = e2
 # other ops' and built roads that touch are one net: group them (12 m)
 EXT_GROUP = {}
 _par = {r_["id"]: r_["id"] for r_ in EXT_ROADS}
@@ -132,61 +144,6 @@ def entry_point(s, toward, out=2.5, rank=0):
     return allc[rank][1], allc[rank][2]
 
 
-# ---- trunk (an AI road through given stops: a fixed point, sites (through-comps enter one edge and leave another), a town entry)
-trunk_nodes = []
-trunk_breaks = [dict(at=list(g_["at"]), z=round(world.z(*g_["at"]), 2), label=g_["label"]) for g_ in getattr(op, "GAPS", [])]      # known gaps (need your ramps)
-def flat_nodes(r, owner):
-    zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
-    fl = [(x, y, z, owner) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
-    return fl if len(fl) >= 2 else [(x, y, z, owner) for (x, y), z in zip(r["points"][::4], r["points_z"][::4])]
-
-if getattr(op, "TRUNK", None):
-    prev_xy, prev_z, prev_id = None, None, None
-    for k, leg in enumerate(op.TRUNK):
-        kind_, key = leg["stop"]
-        if kind_ == "xyz":
-            prev_xy = np.array(key, float); prev_z = round(world.z(*key), 2); prev_id = "trunk start %d" % k; trunk_breaks.append(dict(at=list(key), z=prev_z, label=leg.get("label", ""))); continue
-        if kind_ == "site":
-            s = SITE[key]; ep, v = entry_point(s, tuple(prev_xy)); a_xy, a_z = ep, s["z"]
-        else:
-            t = towns[key]; a_xy, a_z = np.array(t["entry"]), t["z"]; v = None
-        out = a_xy + 12.0 * v if v is not None else a_xy
-        r = None
-        for margin in (500, 1000, 1600):
-            r = P.route(tuple(prev_xy), tuple(out), grade=leg["grade"], width=leg["width"], za=prev_z, zb=a_z, name=f"trunk-{k}:{prev_id}-{key}", kind=leg["kind"],
-                        links=[prev_id, key], margin=margin, post=[tuple(a_xy)] if v is not None else None, own_ids=(prev_id, key))
-            if r is None: continue
-            ok = r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= leg["grade"] * 100 + 0.05 and r["clash_points"] == 0 and r["in_water_points"] <= 3
-            if ok: break
-            log.append(f"trunk leg {k} to {key} (margin {margin}): grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, water {r['in_water_points']}")
-            r = None
-        if r is None:
-            log.append(f"TRUNK LEG {k} to {key}: NO ROUTE"); break
-        P.commit_road(r); trunk_nodes += flat_nodes(r, key)
-        if kind_ == "site":
-            s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360); s["entrance_xy"] = [round(float(a_xy[0]), 1), round(float(a_xy[1]), 1)]
-            if leg.get("through"):                              # leave by the edge facing the next stop
-                nxt = op.TRUNK[k + 1]["stop"]
-                tgt = SITE[nxt[1]] if nxt[0] == "site" else dict(x=towns[nxt[1]]["entry"][0], y=towns[nxt[1]]["entry"][1])
-                e2, v2 = entry_point(s, (tgt["x"], tgt["y"]))
-                if np.allclose(e2, a_xy): e2, v2 = entry_point(s, (tgt["x"], tgt["y"]), rank=1)
-                s["exit_xy"] = [round(float(e2[0]), 1), round(float(e2[1]), 1)]; s["exit_bearing_deg"] = round(math.degrees(math.atan2(v2[0], v2[1])) % 360)
-                prev_xy, prev_z, prev_id = e2 + 12.0 * v2, s["z"], key
-                # stub from the exit edge
-                stub = P._road(np.array([e2, e2 + 12.0 * v2]), 0.14, leg["width"], s["z"], s["z"], f"trunk-{k}b:{key}-exit", leg["kind"], [key, key])
-                P.commit_road(stub)
-            else:
-                prev_xy, prev_z, prev_id = a_xy, s["z"], key
-        else:
-            prev_xy, prev_z, prev_id = a_xy, a_z, key
-
-if trunk_stops:
-    place_sites(skip=trunk_stops)
-    SITE = {s["id"]: s for s in P.sites}
-
-# ---- road nets
-nodes = {}       # net name -> list of (x, y, z, owner)
-LATE = tuple(getattr(op, "LATE_SITES", ()))     # sites seated after the roads, beside them, then joined by a short spur
 def level_nodes(points, points_z, owner, away=None, half=15.0, tol=0.2, every=3):
     """points of a road where it is level (within tol over +-half metres along it): a road joining there meets it on its own level"""
     X = np.array(points, float); Z = np.array(points_z, float); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X, axis=0).T))]; out = []
@@ -227,6 +184,93 @@ def house_clear(r):
     return min(ln.distance(h) for _, h in HOUSES)
 
 
+
+# ---- trunk (an AI road through given stops: a fixed point, sites (through-comps enter one edge and leave another), a town entry)
+trunk_nodes = []
+trunk_breaks = [dict(at=list(g_["at"]), z=round(world.z(*g_["at"]), 2), label=g_["label"]) for g_ in getattr(op, "GAPS", [])]      # known gaps (need your ramps)
+def flat_nodes(r, owner):
+    zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
+    fl = [(x, y, z, owner) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
+    return fl if len(fl) >= 2 else [(x, y, z, owner) for (x, y), z in zip(r["points"][::4], r["points_z"][::4])]
+
+def ramp_spec(a_xy, a_z, b_xy, b_z, width=7.0, grade=0.14):
+    """what a ramp piece needs where no road holds the rules: rise, length at the grade, width, and the two ends"""
+    rise = abs(b_z - a_z)
+    return dict(bottom_xyz=[round(float(a_xy[0]), 1), round(float(a_xy[1]), 1), round(float(min(a_z, b_z) if a_z <= b_z else b_z), 2)] if a_z <= b_z else [round(float(b_xy[0]), 1), round(float(b_xy[1]), 1), round(float(b_z), 2)],
+                top_xyz=[round(float(b_xy[0]), 1), round(float(b_xy[1]), 1), round(float(b_z), 2)] if a_z <= b_z else [round(float(a_xy[0]), 1), round(float(a_xy[1]), 1), round(float(a_z), 2)],
+                straight_m=round(math.dist(a_xy, b_xy)), rise_m=round(rise, 1), length_at_14_pct_m=round(rise / grade), width_m=width,
+                note="a ramp of this rise at 14 % (zig-zag if the straight distance is shorter), 7 m deck, band within 4 m of its own cut")
+
+
+def trunk_leg(prev_list, a_xy, a_z, v, leg, k, key):
+    """route one trunk leg from the best of the start candidates; returns (road, start) or (None, None)"""
+    out = a_xy + 12.0 * v if v is not None else a_xy
+    for margin in (500, 1000, 1600):
+        for (px, py, pz, pid) in sorted(prev_list, key=lambda q: math.dist((q[0], q[1]), out))[:6]:
+            r = P.route((px, py), tuple(out), grade=leg["grade"], width=leg["width"], za=pz, zb=a_z, name=f"trunk-{k}:{pid}-{key}", kind=leg["kind"],
+                        links=[pid, key], margin=margin, post=[tuple(a_xy)] if v is not None else None, own_ids=(pid, key))
+            if r is None: continue
+            ok = (r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= leg["grade"] * 100 + 0.05 and r["clash_points"] == 0 and r["in_water_points"] <= 3
+                  and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0)
+            if ok: return r, (px, py, pz, pid)
+            log.append(f"trunk leg {k} to {key} from {pid} (margin {margin}): grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction {r['junction_step_max_m']} m, water {r['in_water_points']}")
+    return None, None
+
+
+ramps = []
+if getattr(op, "TRUNK", None):
+    prev = None                     # list of start candidates (x, y, z, owner)
+    for k, leg in enumerate(op.TRUNK):
+        kind_, key = leg["stop"][0], leg["stop"][1]
+        if kind_ == "net":          # start on your existing net near the anchor: its level stretches and the free edges of its pads
+            ax_, ay_ = key; rad_ = leg["stop"][2]
+            prev = [n_ for r_ in EXT_ROADS for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if math.dist(n_[:2], (ax_, ay_)) < rad_]
+            prev += [n_ for eid, e in EXT.items() if math.dist((e["x"], e["y"]), (ax_, ay_)) < rad_ + 150 for n_ in pad_edge_nodes(e, eid)]
+            log.append(f"trunk start: {len(prev)} join points on your existing net within {rad_} m of {key}"); continue
+        if kind_ == "xyz":          # a fixed point (a causeway end): a road to it is tried; if none holds the rules, the ramp it needs is given
+            a_xy = np.array(key, float); a_z = round(world.z(*key), 2)
+            if prev is not None:
+                r, st = trunk_leg(prev, a_xy, a_z, None, dict(leg, kind=leg.get("kind", "dirt"), width=leg.get("width", 7.0), grade=leg.get("grade", 0.14)), k, f"point {k}")
+                if r is not None:
+                    P.commit_road(r); ROADS_BY_ID[r["id"]] = r; trunk_nodes += own_nodes(r, f"point {k}")
+                else:
+                    near = min(prev, key=lambda q: math.dist((q[0], q[1]), a_xy))
+                    spec = ramp_spec(a_xy, a_z, (near[0], near[1]), near[2]); spec["between"] = [near[3], leg.get("label", f"point {k}")]
+                    ramps.append(spec); trunk_breaks.append(dict(at=list(key), z=a_z, label=leg.get("label", "") + f"; no road holds the rules here: a ramp of {spec['rise_m']} m rise ({spec['length_at_14_pct_m']} m at 14 %)"))
+            prev = [(float(a_xy[0]), float(a_xy[1]), a_z, f"point {k}")]; continue
+        if kind_ == "site":
+            s = SITE[key]; ep, v = entry_point(s, min(prev, key=lambda q: math.dist((q[0], q[1]), (s["x"], s["y"])))[:2]); a_xy, a_z = ep, s["z"]
+        else:
+            t = towns[key]; a_xy, a_z = np.array(t["entry"]), t["z"]; v = None
+        r, st = trunk_leg(prev, a_xy, a_z, v, leg, k, key)
+        if r is None:
+            near = min(prev, key=lambda q: math.dist((q[0], q[1]), a_xy))
+            spec = ramp_spec((near[0], near[1]), near[2], a_xy, a_z); spec["between"] = [near[3], key]; ramps.append(spec)
+            log.append(f"TRUNK LEG {k} to {key}: NO ROUTE (ramp spec given)"); break
+        P.commit_road(r); ROADS_BY_ID[r["id"]] = r; trunk_nodes += own_nodes(r, key)
+        if kind_ == "site":
+            s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360); s["entrance_xy"] = [round(float(a_xy[0]), 1), round(float(a_xy[1]), 1)]
+            if leg.get("through"):                              # leave by the edge facing the next stop
+                nxt = op.TRUNK[k + 1]["stop"]
+                tgt = SITE[nxt[1]] if nxt[0] == "site" else dict(x=towns[nxt[1]]["entry"][0], y=towns[nxt[1]]["entry"][1]) if nxt[0] == "town" else dict(x=nxt[1][0], y=nxt[1][1])
+                e2, v2 = entry_point(s, (tgt["x"], tgt["y"]))
+                if np.allclose(e2, a_xy): e2, v2 = entry_point(s, (tgt["x"], tgt["y"]), rank=1)
+                s["exit_xy"] = [round(float(e2[0]), 1), round(float(e2[1]), 1)]; s["exit_bearing_deg"] = round(math.degrees(math.atan2(v2[0], v2[1])) % 360)
+                stub = P._road(np.array([e2, e2 + 12.0 * v2]), 0.14, leg["width"], s["z"], s["z"], f"trunk-{k}b:{key}-exit", leg["kind"], [key, key])
+                P.commit_road(stub)
+                prev = [(float((e2 + 12.0 * v2)[0]), float((e2 + 12.0 * v2)[1]), s["z"], key)]
+            else:
+                prev = [(float(a_xy[0]), float(a_xy[1]), s["z"], key)] + pad_edge_nodes(s, key, used=a_xy)
+        else:
+            prev = [(float(a_xy[0]), float(a_xy[1]), a_z, key)]
+
+if trunk_stops:
+    place_sites(skip=trunk_stops)
+    SITE = {s["id"]: s for s in P.sites}
+
+# ---- road nets
+nodes = {}       # net name -> list of (x, y, z, owner)
+LATE = tuple(getattr(op, "LATE_SITES", ()))     # sites seated after the roads, beside them, then joined by a short spur
 for phase in (0, 1):
   if phase == 1:
     if not LATE: break
@@ -491,7 +535,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith("op") and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            roads=P.roads, ramps_needed=ramps, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)

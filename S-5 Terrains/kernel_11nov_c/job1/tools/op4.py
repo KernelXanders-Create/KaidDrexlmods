@@ -1,6 +1,7 @@
 """Op 4, Cinder Road: site list, trunk, nets, squad anchors and approaches for the planner (pad half-sizes in metres)."""
 NAME = "Cinder Road"
 BOX = (12300, 19400, 3000, 10350)
+PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)     # re-pass: as op 3 v2
 
 SITES = [
     ("4-F", "Cinder Cone Fort", "CIS Flower Fortress with GPs", 60.0, 60.0, "ASSUMED: no pad of this composition exists; 120 x 120 m on the crater's west rim, with the crater floor as its inner yard (the CIS Flower Tower is 93 x 88 m)", (16390, 7460), 150, False),
@@ -28,10 +29,11 @@ TOWNS = {"4-M3": dict(name="Causeway Foot", layout="../../../kernel_10nov_v1/K6_
 
 # the AI road trunk, south to north: from op 2's net at the causeway head, through the Mole Rock Gate and the cone fort, into Causeway Foot
 TRUNK = [
-    dict(stop=("xyz", (15845.0, 4060.0)), label="the south causeway's south end (3.5 m); the join up to op 2's net is a 20 m step that needs your ramp"),
+    dict(stop=("net", (15500.0, 3600.0), 700.0)),        # your built op 2 net (round 2-06 / 2-07), its level stretches and pad edges
+    dict(stop=("xyz", (15845.0, 4060.0)), label="the south causeway's south end (3.5 m)", kind="dirt", width=7.0, grade=0.14),
     dict(stop=("site", "4-M1"), through=True, kind="dirt", width=7.0, grade=0.14),
     dict(stop=("site", "4-F"), through=False, kind="dirt", width=7.0, grade=0.14),
-    dict(stop=("xyz", (15720.0, 7845.0)), label="the north causeway's cone end (3.5 m); the climb from here onto the cone is a 45 m step that needs your ramp"),
+    dict(stop=("xyz", (15720.0, 7845.0)), label="the north causeway's cone end (3.5 m)", kind="dirt", width=7.0, grade=0.14),
     dict(stop=("town", "4-M3"), kind="dirt", width=7.0, grade=0.14),
 ]
 
