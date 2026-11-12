@@ -31,7 +31,7 @@ def rect(cx, cy, hx, hy, yaw, grow=0.0):
 
 def offsets(hx, hy, yaw, grow):
     """grid offsets (dj, di) of every grid point inside the grown rectangle, for a centre on a grid point"""
-    R = max(hx, hy) + grow + C
+    R = math.hypot(hx + grow, hy + grow) + C          # the window reaches a rotated pad's corners (was max(hx, hy): corners were missed)
     n = int(math.ceil(R / C))
     dj, di = np.mgrid[-n:n + 1, -n:n + 1]
     X, Y = di * C, dj * C
@@ -217,6 +217,9 @@ class Plan:
             T = np.gradient(P, axis=0); T = T / (np.linalg.norm(T, axis=1)[:, None] + 1e-9); Nn = np.c_[-T[:, 1], T[:, 0]]
             w = 2.5 * np.sin(2 * np.pi * ss / 120.0) * np.clip(np.minimum(ss, L - ss) / 20.0, 0, 1)
             P = P + Nn * w[:, None]
+            s2 = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = s2[-1]          # the wave bunches points on curves: space them evenly again
+            n = max(2, int(math.ceil(L / 4.5)) + 1); ss = np.linspace(0, L, n)
+            P = np.c_[np.interp(ss, s2, P[:, 0]), np.interp(ss, s2, P[:, 1])]
         gz = np.array([world.z(x, y) for x, y in P])
         # target level per station: the middle of the natural ground over the band points nearest to it (balances cut against fill)
         Rb = width / 2 + 3.5
@@ -231,7 +234,8 @@ class Plan:
         zp = ndimage.uniform_filter1d(gz, 5, mode="nearest") if not self.balanced else ndimage.uniform_filter1d(mid, 3, mode="nearest")
         if za is not None: zp[0] = za
         if zb is not None: zp[-1] = zb
-        ds = np.diff(ss).mean()
+        ss = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = ss[-1]       # distances along the points as handed over
+        ds = np.diff(ss).mean(); seg = np.maximum(np.diff(ss), 1e-6)     # each segment's own length: the grade holds point to point
         land_a = (ss <= 16.0) if za is not None else np.zeros(n, bool)          # level landings: the band at a pad or junction keeps its level
         land_b = (ss >= L - 12.0) if zb is not None else np.zeros(n, bool)
         fixed = land_a | land_b
@@ -240,9 +244,9 @@ class Plan:
         for _ in range(200):                                  # grade limit: clamp toward the ground, never moving the landings
             old = zp.copy()
             for k in range(1, n):
-                if not fixed[k]: zp[k] = min(max(zp[k], zp[k - 1] - grade * ds), zp[k - 1] + grade * ds)
+                if not fixed[k]: zp[k] = min(max(zp[k], zp[k - 1] - grade * seg[k - 1]), zp[k - 1] + grade * seg[k - 1])
             for k in range(n - 2, -1, -1):
-                if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * ds), zp[k + 1] + grade * ds)
+                if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * seg[k]), zp[k + 1] + grade * seg[k])
             if np.abs(zp - old).max() < 1e-4: break
         # repair: where a station's band goes past 3.9 m of cut or fill, move that station toward its band (within the grade limit)
         for _ in range(80):
@@ -257,12 +261,12 @@ class Plan:
             for _k in range(30):
                 old = zp.copy()
                 for k in range(1, n):
-                    if not fixed[k]: zp[k] = min(max(zp[k], zp[k - 1] - grade * ds), zp[k - 1] + grade * ds)
+                    if not fixed[k]: zp[k] = min(max(zp[k], zp[k - 1] - grade * seg[k - 1]), zp[k - 1] + grade * seg[k - 1])
                 for k in range(n - 2, -1, -1):
-                    if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * ds), zp[k + 1] + grade * ds)
+                    if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * seg[k]), zp[k + 1] + grade * seg[k])
                 if np.abs(zp - old).max() < 1e-4: break
         r = dict(id=name, kind=kind, width_m=width, links=list(links), points=[[round(float(x), 2), round(float(y), 2)] for x, y in P],
-                 points_z=[round(float(v), 2) for v in zp], length_m=round(float(L)), max_grade_pct=round(float(np.max(np.abs(np.diff(zp)) / ds) * 100), 1))
+                 points_z=[round(float(v), 2) for v in zp], length_m=round(float(L)), max_grade_pct=round(float(np.max(np.abs(np.diff(zp)) / seg) * 100), 1))
         self.check_road(r)
         return r
 
