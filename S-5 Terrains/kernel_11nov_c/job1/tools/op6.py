@@ -2,7 +2,7 @@
 NAME = "Prophet Massif and Signal Isle"
 BOX = (13300, 19600, 9000, 18300)
 VIEW = (13300, 19600, 9000, 18300)
-PLAN_KW = dict(band_range=10.0, steep=1.0)      # as op 5: the massif's flanks are steep; every road is still held to 14 % and 4 m
+PLAN_KW = dict(band_range=10.0, steep=1.0, repair_to=3.6)      # as op 5, and the profile repair aims at 3.6 m: the massif's flanks are steep; every road is still held to 14 % and 4 m
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
 SITES = [

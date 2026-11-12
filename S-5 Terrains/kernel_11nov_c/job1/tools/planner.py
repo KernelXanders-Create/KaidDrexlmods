@@ -66,6 +66,7 @@ class Plan:
         self.owner = np.full(self.H.shape, "", object)
         self.water = self.H <= 0.3
         self.cross_max = 0.5
+        self.repair_to = 3.8                                    # the profile repair pulls each station's band to within this cut / fill
         self.steep = 0.8                                        # router step limit as a share of the grade (the profile pass holds the grade)
         self.band_range = 7.6                                   # the most the ground under a road band may vary (router filter only)
         self.balanced = False
@@ -241,12 +242,12 @@ class Plan:
                 if not fixed[k]: zp[k] = min(max(zp[k], zp[k + 1] - grade * ds), zp[k + 1] + grade * ds)
             if np.abs(zp - old).max() < 1e-4: break
         # repair: where a station's band goes past 3.9 m of cut or fill, move that station toward its band (within the grade limit)
-        for _ in range(40):
+        for _ in range(80):
             dev = nat[inb] - zp[bk[inb]]
             dmax = np.full(n, -np.inf); dmin = np.full(n, np.inf)
             np.maximum.at(dmax, bk[inb], dev); np.minimum.at(dmin, bk[inb], dev)
-            up = np.where(np.isfinite(dmax) & (dmax > 3.8), dmax - 3.8, 0.0); dn = np.where(np.isfinite(dmin) & (dmin < -3.8), dmin + 3.8, 0.0)
-            shift = np.where(up > 0, np.where(dmin - up >= -3.8, up, 0.5 * (up + dn)), dn)
+            T_ = self.repair_to; up = np.where(np.isfinite(dmax) & (dmax > T_), dmax - T_, 0.0); dn = np.where(np.isfinite(dmin) & (dmin < -T_), dmin + T_, 0.0)
+            shift = np.where(up > 0, np.where(dmin - up >= -T_, up, 0.5 * (up + dn)), dn)
             shift[fixed] = 0.0
             if np.abs(shift).max() < 0.01: break
             zp = zp + ndimage.uniform_filter1d(shift, 5, mode="nearest") * 1.2

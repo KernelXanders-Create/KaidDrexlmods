@@ -173,8 +173,10 @@ for net, order in op.NETS.items():
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
             zz = np.array(r["points_z"]); gg = np.abs(np.gradient(zz, 4.5))
-            flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03]
-            nodes[net] += flat if len(flat) >= 2 else [(x, y, z, sid) for (x, y), z in zip(r["points"][::4], r["points_z"][::4])]
+            flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 3 == 0 and gg[max(0, k - 3):k + 4].max() <= 0.03
+                    and math.dist((x, y), ep) > 40.0]          # not the road's own landing at its pad: a road joining there would touch the pad
+            if len(flat) < 2: flat = [(x, y, z, sid) for k, ((x, y), z) in enumerate(zip(r["points"], r["points_z"])) if k % 4 == 0 and math.dist((x, y), ep) > 40.0]
+            nodes[net] += flat
             done = True; break
         if not done: failed.append(sid)
       if not failed or len(failed) == len(pending): pending = failed; break
