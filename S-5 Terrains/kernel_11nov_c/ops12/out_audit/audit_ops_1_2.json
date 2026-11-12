@@ -1,0 +1,3079 @@
+{
+ "op1": {
+  "pads": {
+   "count": 28,
+   "off_level": [
+    {
+     "site": "1-04",
+     "comp": "CIS Mixed AA Platform with GPs",
+     "x": 4240.0,
+     "y": 4305.0,
+     "z": 43.1,
+     "hx": 47.9,
+     "hy": 43.6,
+     "yaw": 210.0,
+     "points": 355,
+     "max_off_level_m": 1.23,
+     "points_off_over_0_5_m": 3,
+     "profile": false
+    },
+    {
+     "site": "A1-06",
+     "comp": "CIS Heavy Gun Position with AA (D)",
+     "x": 1465.0,
+     "y": 2480.0,
+     "z": 18.48,
+     "hx": 29.8,
+     "hy": 42.5,
+     "yaw": 230.0,
+     "points": 219,
+     "max_off_level_m": 1.16,
+     "points_off_over_0_5_m": 3,
+     "profile": false
+    },
+    {
+     "site": "1-05",
+     "comp": "CIS Small Citadel with GPs",
+     "x": 2150.0,
+     "y": 2355.0,
+     "z": 133.8,
+     "hx": 74.2,
+     "hy": 76.6,
+     "yaw": 85.0,
+     "points": 945,
+     "max_off_level_m": 0.96,
+     "points_off_over_0_5_m": 2,
+     "profile": false
+    },
+    {
+     "site": "A1-09",
+     "comp": "Double Checkpojnt Fixed",
+     "x": 4845.0,
+     "y": 3350.0,
+     "z": 75.02,
+     "hx": 52.9,
+     "hy": 24.1,
+     "yaw": 50.0,
+     "points": 225,
+     "max_off_level_m": 0.92,
+     "points_off_over_0_5_m": 2,
+     "profile": false
+    },
+    {
+     "site": "1-01",
+     "comp": "CIS Medium FOB with GPs",
+     "x": 5070.0,
+     "y": 1775.0,
+     "z": 86.23,
+     "hx": 38.9,
+     "hy": 74.3,
+     "yaw": 0.0,
+     "points": 527,
+     "max_off_level_m": 0.88,
+     "points_off_over_0_5_m": 6,
+     "profile": false
+    },
+    {
+     "site": "1-13",
+     "comp": "CIS Communications FOB with GPs",
+     "x": 1969.5,
+     "y": 3214.5,
+     "z": 62.82,
+     "hx": 43.9,
+     "hy": 51.9,
+     "yaw": 120.0,
+     "points": 387,
+     "max_off_level_m": 0.74,
+     "points_off_over_0_5_m": 2,
+     "profile": false
+    },
+    {
+     "site": "1-M1",
+     "comp": "CIS Metal Trench Line with GPs",
+     "x": 3340.0,
+     "y": 890.0,
+     "z": 2.93,
+     "hx": 21.7,
+     "hy": 75.1,
+     "yaw": 85.0,
+     "points": 285,
+     "max_off_level_m": 0.7,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "1-02",
+     "comp": "CIS Landing Position with GPs",
+     "x": 1375.0,
+     "y": 2850.0,
+     "z": 20.11,
+     "hx": 44.5,
+     "hy": 67.0,
+     "yaw": 65.0,
+     "points": 505,
+     "max_off_level_m": 0.69,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "1-M2",
+     "comp": "CIS Chemical Plant with GPs",
+     "x": 4349.5,
+     "y": 2939.5,
+     "z": 154.05,
+     "hx": 70.0,
+     "hy": 75.0,
+     "yaw": 150.0,
+     "points": 876,
+     "max_off_level_m": 0.58,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "1-06",
+     "comp": "CIS Depot (Fixed) with GPs (D)",
+     "x": 2900.0,
+     "y": 1900.0,
+     "z": 166.34,
+     "hx": 67.1,
+     "hy": 124.1,
+     "yaw": 90.0,
+     "points": 1377,
+     "max_off_level_m": 0.58,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    }
+   ],
+   "closest_pairs": [
+    [
+     50.6,
+     "1-14",
+     "A1-11",
+     9.93
+    ],
+    [
+     61.8,
+     "1-M4",
+     "A1-07",
+     0.66
+    ],
+    [
+     86.4,
+     "1-M1",
+     "A1-01",
+     19.29
+    ],
+    [
+     116.2,
+     "1-M3",
+     "A1-04",
+     19.76
+    ],
+    [
+     132.8,
+     "1-M1",
+     "A1-02",
+     8.84
+    ],
+    [
+     174.8,
+     "1-05",
+     "A1-05",
+     24.08
+    ]
+   ],
+   "pairs_breaking_rule_1_or_4": [],
+   "near_water": [
+    [
+     6,
+     "1-M1"
+    ]
+   ]
+  },
+  "roads": {
+   "count": 48,
+   "over_limit": 1,
+   "length_km": 40.67,
+   "length_over_14_pct_km": 0.0,
+   "worst": [
+    {
+     "link": "1-F-1-M2",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 354,
+     "point_to_point": 13.8,
+     "over_10_m": 13.4,
+     "over_10_m_at": [
+      4933.8,
+      3258.1
+     ],
+     "over_20_m": 12.8,
+     "over_20_m_at": [
+      4786.0,
+      3200.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1411.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 76.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-1-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 680,
+     "point_to_point": 13.8,
+     "over_10_m": 13.5,
+     "over_10_m_at": [
+      4919.8,
+      3263.9
+     ],
+     "over_20_m": 12.9,
+     "over_20_m_at": [
+      4806.2,
+      3188.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2717.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 96.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-12-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 15,
+     "point_to_point": 13.3,
+     "over_10_m": 13.1,
+     "over_10_m_at": [
+      4865.4,
+      1274.2
+     ],
+     "over_20_m": 13.0,
+     "over_20_m_at": [
+      4865.5,
+      1266.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 58.1,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 20.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-11",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 605,
+     "point_to_point": 13.2,
+     "over_10_m": 12.8,
+     "over_10_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "over_20_m": 12.0,
+     "over_20_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2416.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 160.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-12-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 291,
+     "point_to_point": 13.2,
+     "over_10_m": 13.0,
+     "over_10_m_at": [
+      4453.6,
+      1418.1
+     ],
+     "over_20_m": 12.9,
+     "over_20_m_at": [
+      4457.1,
+      1416.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1163.0,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 88.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-02-1-05",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 379,
+     "point_to_point": 13.1,
+     "over_10_m": 12.7,
+     "over_10_m_at": [
+      1917.9,
+      2171.8
+     ],
+     "over_20_m": 12.2,
+     "over_20_m_at": [
+      1920.1,
+      2168.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1514.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 76.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-01-1-F",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 476,
+     "point_to_point": 13.0,
+     "over_10_m": 9.3,
+     "over_10_m_at": [
+      5072.1,
+      3404.3
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      5154.2,
+      2313.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1902.8,
+     "spacing_min_m": 3.8,
+     "straight_max_m": 120.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-F-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 426,
+     "point_to_point": 12.9,
+     "over_10_m": 11.2,
+     "over_10_m_at": [
+      4966.1,
+      2235.4
+     ],
+     "over_20_m": 11.0,
+     "over_20_m_at": [
+      4969.0,
+      2238.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1699.9,
+     "spacing_min_m": 3.8,
+     "straight_max_m": 116.0,
+     "over_limit": false
+    }
+   ],
+   "straight_over_150": [
+    {
+     "link": "1-M1-1-12",
+     "kind": "main",
+     "width_m": 10.0,
+     "limit_pct": 10.0,
+     "points": 331,
+     "point_to_point": 7.2,
+     "over_10_m": 7.1,
+     "over_10_m_at": [
+      4154.3,
+      1225.0
+     ],
+     "over_20_m": 6.9,
+     "over_20_m_at": [
+      4150.3,
+      1225.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1321.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 196.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-11",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 605,
+     "point_to_point": 13.2,
+     "over_10_m": 12.8,
+     "over_10_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "over_20_m": 12.0,
+     "over_20_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2416.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 160.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-1-13",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 195,
+     "point_to_point": 12.1,
+     "over_10_m": 12.0,
+     "over_10_m_at": [
+      2105.1,
+      3205.0
+     ],
+     "over_20_m": 11.8,
+     "over_20_m_at": [
+      2109.1,
+      3205.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 779.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 184.9,
+     "over_limit": false
+    },
+    {
+     "link": "1-11-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 371,
+     "point_to_point": 12.6,
+     "over_10_m": 12.4,
+     "over_10_m_at": [
+      3626.9,
+      1867.5
+     ],
+     "over_20_m": 11.9,
+     "over_20_m_at": [
+      3625.9,
+      1871.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1480.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 248.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-06-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 113,
+     "point_to_point": 6.4,
+     "over_10_m": 6.3,
+     "over_10_m_at": [
+      2744.1,
+      1912.8
+     ],
+     "over_20_m": 6.2,
+     "over_20_m_at": [
+      2744.1,
+      1912.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 448.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 164.2,
+     "over_limit": false
+    }
+   ],
+   "all": [
+    {
+     "link": "1-F-1-M2",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 354,
+     "point_to_point": 13.8,
+     "over_10_m": 13.4,
+     "over_10_m_at": [
+      4933.8,
+      3258.1
+     ],
+     "over_20_m": 12.8,
+     "over_20_m_at": [
+      4786.0,
+      3200.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1411.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 76.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-1-14",
+     "kind": "main",
+     "width_m": 10.0,
+     "limit_pct": 10.0,
+     "points": 308,
+     "point_to_point": 10.1,
+     "over_10_m": 10.0,
+     "over_10_m_at": [
+      3756.5,
+      3086.2
+     ],
+     "over_20_m": 9.9,
+     "over_20_m_at": [
+      3762.9,
+      3090.9
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1228.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 60.0,
+     "over_limit": true
+    },
+    {
+     "link": "1-M4-1-14",
+     "kind": "main",
+     "width_m": 10.0,
+     "limit_pct": 10.0,
+     "points": 225,
+     "point_to_point": 8.4,
+     "over_10_m": 8.1,
+     "over_10_m_at": [
+      3422.3,
+      3306.1
+     ],
+     "over_20_m": 7.8,
+     "over_20_m_at": [
+      3418.7,
+      3304.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 896.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 60.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-01-1-12",
+     "kind": "main",
+     "width_m": 10.0,
+     "limit_pct": 10.0,
+     "points": 539,
+     "point_to_point": 10.0,
+     "over_10_m": 9.2,
+     "over_10_m_at": [
+      5061.9,
+      2261.9
+     ],
+     "over_20_m": 8.9,
+     "over_20_m_at": [
+      5059.1,
+      2259.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2152.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 148.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-12",
+     "kind": "main",
+     "width_m": 10.0,
+     "limit_pct": 10.0,
+     "points": 331,
+     "point_to_point": 7.2,
+     "over_10_m": 7.1,
+     "over_10_m_at": [
+      4154.3,
+      1225.0
+     ],
+     "over_20_m": 6.9,
+     "over_20_m_at": [
+      4150.3,
+      1225.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1321.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 196.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-01-1-F",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 476,
+     "point_to_point": 13.0,
+     "over_10_m": 9.3,
+     "over_10_m_at": [
+      5072.1,
+      3404.3
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      5154.2,
+      2313.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1902.8,
+     "spacing_min_m": 3.8,
+     "straight_max_m": 120.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-F-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 426,
+     "point_to_point": 12.9,
+     "over_10_m": 11.2,
+     "over_10_m_at": [
+      4966.1,
+      2235.4
+     ],
+     "over_20_m": 11.0,
+     "over_20_m_at": [
+      4969.0,
+      2238.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1699.9,
+     "spacing_min_m": 3.8,
+     "straight_max_m": 116.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-11",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 605,
+     "point_to_point": 13.2,
+     "over_10_m": 12.8,
+     "over_10_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "over_20_m": 12.0,
+     "over_20_m_at": [
+      3148.0,
+      1378.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2416.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 160.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 599,
+     "point_to_point": 11.7,
+     "over_10_m": 11.5,
+     "over_10_m_at": [
+      2624.2,
+      1812.4
+     ],
+     "over_20_m": 11.1,
+     "over_20_m_at": [
+      2621.9,
+      1809.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2394.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 132.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-1-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 680,
+     "point_to_point": 13.8,
+     "over_10_m": 13.5,
+     "over_10_m_at": [
+      4919.8,
+      3263.9
+     ],
+     "over_20_m": 12.9,
+     "over_20_m_at": [
+      4806.2,
+      3188.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 2717.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 96.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-1-11",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 239,
+     "point_to_point": 10.1,
+     "over_10_m": 9.8,
+     "over_10_m_at": [
+      4300.1,
+      2660.9
+     ],
+     "over_20_m": 8.8,
+     "over_20_m_at": [
+      3955.6,
+      2170.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 954.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 68.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-1-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 138,
+     "point_to_point": 11.6,
+     "over_10_m": 11.4,
+     "over_10_m_at": [
+      2623.7,
+      1812.0
+     ],
+     "over_20_m": 11.1,
+     "over_20_m_at": [
+      2621.7,
+      1808.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 549.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 52.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-1-05",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 238,
+     "point_to_point": 5.8,
+     "over_10_m": 5.6,
+     "over_10_m_at": [
+      2415.1,
+      1690.0
+     ],
+     "over_20_m": 5.5,
+     "over_20_m_at": [
+      2407.9,
+      1686.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 948.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 120.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M4-1-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 321,
+     "point_to_point": 9.9,
+     "over_10_m": 9.9,
+     "over_10_m_at": [
+      2830.5,
+      2102.2
+     ],
+     "over_20_m": 9.7,
+     "over_20_m_at": [
+      2827.1,
+      2104.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1280.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 80.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-01-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 92,
+     "point_to_point": 10.2,
+     "over_10_m": 9.2,
+     "over_10_m_at": [
+      4934.4,
+      1872.1
+     ],
+     "over_20_m": 8.3,
+     "over_20_m_at": [
+      4936.9,
+      1868.9
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 365.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 52.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-02-1-05",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 379,
+     "point_to_point": 13.1,
+     "over_10_m": 12.7,
+     "over_10_m_at": [
+      1917.9,
+      2171.8
+     ],
+     "over_20_m": 12.2,
+     "over_20_m_at": [
+      1920.1,
+      2168.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1514.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 76.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-02-1-13",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 186,
+     "point_to_point": 10.7,
+     "over_10_m": 10.5,
+     "over_10_m_at": [
+      1949.9,
+      3284.8
+     ],
+     "over_20_m": 10.3,
+     "over_20_m_at": [
+      1945.9,
+      3284.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 741.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 84.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-1-13",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 195,
+     "point_to_point": 12.1,
+     "over_10_m": 12.0,
+     "over_10_m_at": [
+      2105.1,
+      3205.0
+     ],
+     "over_20_m": 11.8,
+     "over_20_m_at": [
+      2109.1,
+      3205.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 779.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 184.9,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-1-14",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 257,
+     "point_to_point": 9.6,
+     "over_10_m": 9.4,
+     "over_10_m_at": [
+      3098.8,
+      3660.2
+     ],
+     "over_20_m": 9.1,
+     "over_20_m_at": [
+      2925.2,
+      3680.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1026.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 92.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-04-1-14",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 476,
+     "point_to_point": 11.9,
+     "over_10_m": 11.5,
+     "over_10_m_at": [
+      3562.3,
+      4040.0
+     ],
+     "over_20_m": 10.9,
+     "over_20_m_at": [
+      3564.7,
+      4047.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1899.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 87.9,
+     "over_limit": false
+    },
+    {
+     "link": "1-11-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 371,
+     "point_to_point": 12.6,
+     "over_10_m": 12.4,
+     "over_10_m_at": [
+      3626.9,
+      1867.5
+     ],
+     "over_20_m": 11.9,
+     "over_20_m_at": [
+      3625.9,
+      1871.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1480.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 248.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-12-1-15",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 291,
+     "point_to_point": 13.2,
+     "over_10_m": 13.0,
+     "over_10_m_at": [
+      4453.6,
+      1418.1
+     ],
+     "over_20_m": 12.9,
+     "over_20_m_at": [
+      4457.1,
+      1416.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1163.0,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 88.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-F-1-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 336,
+     "point_to_point": 10.3,
+     "over_10_m": 9.3,
+     "over_10_m_at": [
+      5088.6,
+      3506.4
+     ],
+     "over_20_m": 7.8,
+     "over_20_m_at": [
+      5091.3,
+      3503.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1343.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 96.3,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-1-M3",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 470,
+     "point_to_point": 11.1,
+     "over_10_m": 10.9,
+     "over_10_m_at": [
+      3616.5,
+      1166.5
+     ],
+     "over_20_m": 10.7,
+     "over_20_m_at": [
+      3613.5,
+      1163.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1875.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 132.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-1-02",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 440,
+     "point_to_point": 12.0,
+     "over_10_m": 11.8,
+     "over_10_m_at": [
+      1665.0,
+      2187.2
+     ],
+     "over_20_m": 11.4,
+     "over_20_m_at": [
+      1665.0,
+      2179.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1757.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 116.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-1-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 411,
+     "point_to_point": 7.3,
+     "over_10_m": 7.0,
+     "over_10_m_at": [
+      3313.8,
+      4000.9
+     ],
+     "over_20_m": 6.6,
+     "over_20_m_at": [
+      3388.1,
+      4029.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1641.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 132.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 3,
+     "point_to_point": 0.1,
+     "over_10_m": 0.0,
+     "over_10_m_at": null,
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 11.2,
+     "spacing_min_m": 5.6,
+     "straight_max_m": 11.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-M2-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 81,
+     "point_to_point": 5.1,
+     "over_10_m": 4.9,
+     "over_10_m_at": [
+      4419.5,
+      2874.7
+     ],
+     "over_20_m": 4.9,
+     "over_20_m_at": [
+      4412.2,
+      2871.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 323.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 72.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-14-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 11,
+     "point_to_point": 7.1,
+     "over_10_m": 6.2,
+     "over_10_m_at": [
+      3588.3,
+      3361.5
+     ],
+     "over_20_m": 4.5,
+     "over_20_m_at": [
+      3596.3,
+      3360.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 40.9,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 20.4,
+     "over_limit": false
+    },
+    {
+     "link": "1-14-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 35,
+     "point_to_point": 11.5,
+     "over_10_m": 11.1,
+     "over_10_m_at": [
+      3572.4,
+      3379.0
+     ],
+     "over_20_m": 10.5,
+     "over_20_m_at": [
+      3578.3,
+      3373.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 136.8,
+     "spacing_min_m": 3.9,
+     "straight_max_m": 24.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M4-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 72,
+     "point_to_point": 2.7,
+     "over_10_m": 2.5,
+     "over_10_m_at": [
+      3270.0,
+      2708.6
+     ],
+     "over_20_m": 2.2,
+     "over_20_m_at": [
+      3270.0,
+      2712.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 285.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 88.5,
+     "over_limit": false
+    },
+    {
+     "link": "1-12-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 15,
+     "point_to_point": 13.3,
+     "over_10_m": 13.1,
+     "over_10_m_at": [
+      4865.4,
+      1274.2
+     ],
+     "over_20_m": 13.0,
+     "over_20_m_at": [
+      4865.5,
+      1266.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 58.1,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 20.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-12-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 16,
+     "point_to_point": 2.0,
+     "over_10_m": 1.9,
+     "over_10_m_at": [
+      4932.4,
+      1315.0
+     ],
+     "over_20_m": 1.6,
+     "over_20_m_at": [
+      4924.0,
+      1314.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 63.0,
+     "spacing_min_m": 4.2,
+     "straight_max_m": 25.1,
+     "over_limit": false
+    },
+    {
+     "link": "1-M1-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 31,
+     "point_to_point": 11.0,
+     "over_10_m": 10.6,
+     "over_10_m_at": [
+      3592.1,
+      1087.4
+     ],
+     "over_20_m": 10.5,
+     "over_20_m_at": [
+      3588.9,
+      1090.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 122.6,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 49.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-15-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 72,
+     "point_to_point": 8.6,
+     "over_10_m": 7.5,
+     "over_10_m_at": [
+      4757.8,
+      1978.6
+     ],
+     "over_20_m": 6.6,
+     "over_20_m_at": [
+      4761.4,
+      1976.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 285.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 72.4,
+     "over_limit": false
+    },
+    {
+     "link": "1-15-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 2,
+     "point_to_point": 2.8,
+     "over_10_m": 0.0,
+     "over_10_m_at": null,
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 7.1,
+     "spacing_min_m": 7.1,
+     "straight_max_m": 0.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-11-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 52,
+     "point_to_point": 9.1,
+     "over_10_m": 8.4,
+     "over_10_m_at": [
+      3909.0,
+      2057.3
+     ],
+     "over_20_m": 7.4,
+     "over_20_m_at": [
+      3909.0,
+      2057.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 205.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 40.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-06-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 113,
+     "point_to_point": 6.4,
+     "over_10_m": 6.3,
+     "over_10_m_at": [
+      2744.1,
+      1912.8
+     ],
+     "over_20_m": 6.2,
+     "over_20_m_at": [
+      2744.1,
+      1912.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 448.4,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 164.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-04-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 3,
+     "point_to_point": 4.0,
+     "over_10_m": 3.9,
+     "over_10_m_at": [
+      4185.0,
+      4265.0
+     ],
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 11.2,
+     "spacing_min_m": 5.6,
+     "straight_max_m": 11.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-04-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 56,
+     "point_to_point": 10.4,
+     "over_10_m": 9.8,
+     "over_10_m_at": [
+      4146.8,
+      4337.1
+     ],
+     "over_20_m": 9.6,
+     "over_20_m_at": [
+      4146.8,
+      4337.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 223.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 40.6,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 17,
+     "point_to_point": 2.6,
+     "over_10_m": 1.9,
+     "over_10_m_at": [
+      2320.0,
+      1615.0
+     ],
+     "over_20_m": 1.8,
+     "over_20_m_at": [
+      2320.0,
+      1615.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 64.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 36.0,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 12,
+     "point_to_point": 1.5,
+     "over_10_m": 1.2,
+     "over_10_m_at": [
+      2375.0,
+      1635.0
+     ],
+     "over_20_m": 1.2,
+     "over_20_m_at": [
+      2375.0,
+      1635.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 46.8,
+     "spacing_min_m": 4.2,
+     "straight_max_m": 29.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 29,
+     "point_to_point": 2.6,
+     "over_10_m": 1.9,
+     "over_10_m_at": [
+      2475.0,
+      1592.3
+     ],
+     "over_20_m": 1.6,
+     "over_20_m_at": [
+      2451.9,
+      1649.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 114.3,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 32.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-05-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 80,
+     "point_to_point": 10.4,
+     "over_10_m": 9.8,
+     "over_10_m_at": [
+      2055.0,
+      2345.0
+     ],
+     "over_20_m": 8.7,
+     "over_20_m_at": [
+      2062.5,
+      2424.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 318.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 84.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-02-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 7,
+     "point_to_point": 3.9,
+     "over_10_m": 2.8,
+     "over_10_m_at": [
+      1450.0,
+      2820.0
+     ],
+     "over_20_m": 2.0,
+     "over_20_m_at": [
+      1450.0,
+      2820.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 26.7,
+     "spacing_min_m": 4.4,
+     "straight_max_m": 13.2,
+     "over_limit": false
+    },
+    {
+     "link": "1-13-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 40,
+     "point_to_point": 9.4,
+     "over_10_m": 8.8,
+     "over_10_m_at": [
+      1965.0,
+      3280.0
+     ],
+     "over_20_m": 8.4,
+     "over_20_m_at": [
+      1965.0,
+      3280.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 159.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 32.7,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 42,
+     "point_to_point": 4.0,
+     "over_10_m": 4.0,
+     "over_10_m_at": [
+      2652.8,
+      3619.6
+     ],
+     "over_20_m": 3.9,
+     "over_20_m_at": [
+      2652.8,
+      3619.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 167.8,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 44.8,
+     "over_limit": false
+    },
+    {
+     "link": "1-03-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 21,
+     "point_to_point": 4.6,
+     "over_10_m": 3.9,
+     "over_10_m_at": [
+      2731.5,
+      3681.9
+     ],
+     "over_20_m": 3.9,
+     "over_20_m_at": [
+      2729.7,
+      3685.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 81.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 40.6,
+     "over_limit": false
+    }
+   ]
+  },
+  "clearance_under_3_m": [],
+  "road_pieces": 48,
+  "road_groups": 1,
+  "group_sizes": [
+   48
+  ],
+  "vehicle_sites_without_a_road_within_15_m": [],
+  "mains_closest": [
+   [
+    240,
+    "1-M1",
+    "1-M1"
+   ],
+   [
+    1168,
+    "1-M2",
+    "1-M4"
+   ],
+   [
+    1179,
+    "1-M1",
+    "1-M3"
+   ],
+   [
+    1287,
+    "1-M1",
+    "1-M3"
+   ]
+  ]
+ },
+ "op2": {
+  "pads": {
+   "count": 33,
+   "off_level": [
+    {
+     "site": "2-04",
+     "comp": "TKTA Checkpoint Fixed (Mono)",
+     "x": 12397.5,
+     "y": 2747.5,
+     "z": 35.54,
+     "hx": 24.0,
+     "hy": 39.0,
+     "yaw": 80.0,
+     "points": 164,
+     "max_off_level_m": 2.6,
+     "points_off_over_0_5_m": 60,
+     "profile": true
+    },
+    {
+     "site": "2-13",
+     "comp": "CIS Depot (Fixed) with GPs (D)",
+     "x": 13290.0,
+     "y": 1975.0,
+     "z": 48.26,
+     "hx": 69.1,
+     "hy": 127.0,
+     "yaw": 105.0,
+     "points": 1451,
+     "max_off_level_m": 0.93,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "A2-04",
+     "comp": "Claus - Medium Air Defense Base",
+     "x": 12890.0,
+     "y": 2295.0,
+     "z": 44.56,
+     "hx": 98.2,
+     "hy": 73.5,
+     "yaw": 90.0,
+     "points": 1209,
+     "max_off_level_m": 0.9,
+     "points_off_over_0_5_m": 7,
+     "profile": false
+    },
+    {
+     "site": "2-05",
+     "comp": "PLAD Smuggler Warehouse Camp",
+     "x": 13595.0,
+     "y": 3220.0,
+     "z": 70.2,
+     "hx": 57.1,
+     "hy": 43.5,
+     "yaw": 125.0,
+     "points": 421,
+     "max_off_level_m": 0.84,
+     "points_off_over_0_5_m": 3,
+     "profile": false
+    },
+    {
+     "site": "2-F",
+     "comp": "CIS Super Airbase with GPs",
+     "x": 14612.5,
+     "y": 2437.5,
+     "z": 43.73,
+     "hx": 249.3,
+     "hy": 285.9,
+     "yaw": 10.0,
+     "points": 11532,
+     "max_off_level_m": 0.64,
+     "points_off_over_0_5_m": 2,
+     "profile": false
+    },
+    {
+     "site": "2-M1",
+     "comp": "CIS Large Fuel Depot with GPs",
+     "x": 15653.5,
+     "y": 1888.5,
+     "z": 50.45,
+     "hx": 123.8,
+     "hy": 130.6,
+     "yaw": 20.0,
+     "points": 2647,
+     "max_off_level_m": 0.64,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "A2-11",
+     "comp": "CIS Small Checkpoint with GPs",
+     "x": 15520.0,
+     "y": 3480.0,
+     "z": 47.41,
+     "hx": 28.4,
+     "hy": 34.4,
+     "yaw": 35.0,
+     "points": 171,
+     "max_off_level_m": 0.62,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    },
+    {
+     "site": "2-02",
+     "comp": "CIS Small Citadel with GPs",
+     "x": 16000.0,
+     "y": 2790.0,
+     "z": 42.61,
+     "hx": 74.2,
+     "hy": 76.6,
+     "yaw": 205.0,
+     "points": 947,
+     "max_off_level_m": 0.58,
+     "points_off_over_0_5_m": 1,
+     "profile": false
+    }
+   ],
+   "closest_pairs": [
+    [
+     0.0,
+     "2-M3",
+     "A2-03",
+     0.1
+    ],
+    [
+     18.8,
+     "2-F",
+     "A2-08",
+     0.4
+    ],
+    [
+     20.5,
+     "2-M3",
+     "A2-04",
+     0.55
+    ],
+    [
+     23.4,
+     "2-M1",
+     "A2-12",
+     1.99
+    ],
+    [
+     23.5,
+     "2-03",
+     "A2-01",
+     1.54
+    ],
+    [
+     25.2,
+     "A2-16",
+     "A2-02",
+     2.32
+    ]
+   ],
+   "pairs_breaking_rule_1_or_4": [
+    [
+     0.0,
+     "2-M3",
+     "A2-03",
+     0.1
+    ]
+   ],
+   "near_water": []
+  },
+  "roads": {
+   "count": 40,
+   "over_limit": 0,
+   "length_km": 22.22,
+   "length_over_14_pct_km": 0.0,
+   "worst": [
+    {
+     "link": "2-14-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 74,
+     "point_to_point": 13.1,
+     "over_10_m": 12.9,
+     "over_10_m_at": [
+      16698.0,
+      3348.2
+     ],
+     "over_20_m": 12.2,
+     "over_20_m_at": [
+      16694.1,
+      3349.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 293.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 32.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-F-2-09",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 848,
+     "point_to_point": 12.7,
+     "over_10_m": 12.4,
+     "over_10_m_at": [
+      13987.8,
+      1358.2
+     ],
+     "over_20_m": 11.9,
+     "over_20_m_at": [
+      13980.6,
+      1354.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 3389.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 104.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-M2-2-05",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 122,
+     "point_to_point": 12.7,
+     "over_10_m": 10.4,
+     "over_10_m_at": [
+      13610.6,
+      3042.3
+     ],
+     "over_20_m": 9.6,
+     "over_20_m_at": [
+      13602.6,
+      2999.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 484.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 48.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-05-2-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 295,
+     "point_to_point": 10.3,
+     "over_10_m": 9.7,
+     "over_10_m_at": [
+      13616.2,
+      3055.9
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      13612.2,
+      3056.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1176.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 100.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-2-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 142,
+     "point_to_point": 9.9,
+     "over_10_m": 9.3,
+     "over_10_m_at": [
+      12478.1,
+      2709.2
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      12478.1,
+      2709.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 566.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 60.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-04-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 31,
+     "point_to_point": 9.6,
+     "over_10_m": 8.1,
+     "over_10_m_at": [
+      12444.6,
+      2714.8
+     ],
+     "over_20_m": 5.8,
+     "over_20_m_at": [
+      12433.5,
+      2710.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 119.8,
+     "spacing_min_m": 3.9,
+     "straight_max_m": 24.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-02-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 5,
+     "point_to_point": 8.7,
+     "over_10_m": 7.3,
+     "over_10_m_at": [
+      15982.1,
+      2698.8
+     ],
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 19.1,
+     "spacing_min_m": 4.7,
+     "straight_max_m": 9.5,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-2-07",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 186,
+     "point_to_point": 8.2,
+     "over_10_m": 7.6,
+     "over_10_m_at": [
+      15484.5,
+      3529.5
+     ],
+     "over_20_m": 7.2,
+     "over_20_m_at": [
+      15486.6,
+      3526.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 741.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 152.3,
+     "over_limit": false
+    }
+   ],
+   "straight_over_150": [
+    {
+     "link": "2-F-2-M2",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 136,
+     "point_to_point": 2.4,
+     "over_10_m": 2.3,
+     "over_10_m_at": [
+      14101.2,
+      2601.9
+     ],
+     "over_20_m": 2.2,
+     "over_20_m_at": [
+      14108.3,
+      2598.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 540.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 340.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-02",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 197,
+     "point_to_point": 5.7,
+     "over_10_m": 5.4,
+     "over_10_m_at": [
+      16409.8,
+      2982.4
+     ],
+     "over_20_m": 5.1,
+     "over_20_m_at": [
+      16287.2,
+      3005.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 787.0,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 164.6,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-12",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 229,
+     "point_to_point": 4.7,
+     "over_10_m": 3.5,
+     "over_10_m_at": [
+      16772.8,
+      2932.2
+     ],
+     "over_20_m": 3.3,
+     "over_20_m_at": [
+      16979.9,
+      2410.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 913.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 156.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-2-07",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 186,
+     "point_to_point": 8.2,
+     "over_10_m": 7.6,
+     "over_10_m_at": [
+      15484.5,
+      3529.5
+     ],
+     "over_20_m": 7.2,
+     "over_20_m_at": [
+      15486.6,
+      3526.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 741.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 152.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 124,
+     "point_to_point": 3.2,
+     "over_10_m": 3.1,
+     "over_10_m_at": [
+      12805.0,
+      2250.6
+     ],
+     "over_20_m": 2.9,
+     "over_20_m_at": [
+      12805.0,
+      2246.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 494.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 168.7,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 105,
+     "point_to_point": 3.2,
+     "over_10_m": 3.1,
+     "over_10_m_at": [
+      12805.0,
+      2262.1
+     ],
+     "over_20_m": 2.9,
+     "over_20_m_at": [
+      12805.0,
+      2266.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 419.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 157.3,
+     "over_limit": false
+    }
+   ],
+   "all": [
+    {
+     "link": "2-F-2-01",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 124,
+     "point_to_point": 5.0,
+     "over_10_m": 4.9,
+     "over_10_m_at": [
+      14786.6,
+      2736.1
+     ],
+     "over_20_m": 4.8,
+     "over_20_m_at": [
+      14784.2,
+      2732.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 494.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 84.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-F-2-M2",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 136,
+     "point_to_point": 2.4,
+     "over_10_m": 2.3,
+     "over_10_m_at": [
+      14101.2,
+      2601.9
+     ],
+     "over_20_m": 2.2,
+     "over_20_m_at": [
+      14108.3,
+      2598.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 540.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 340.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-F-2-09",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 848,
+     "point_to_point": 12.7,
+     "over_10_m": 12.4,
+     "over_10_m_at": [
+      13987.8,
+      1358.2
+     ],
+     "over_20_m": 11.9,
+     "over_20_m_at": [
+      13980.6,
+      1354.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 3389.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 104.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-M1-2-02",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 220,
+     "point_to_point": 5.4,
+     "over_10_m": 5.3,
+     "over_10_m_at": [
+      16044.7,
+      2242.6
+     ],
+     "over_20_m": 5.2,
+     "over_20_m_at": [
+      16042.3,
+      2235.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 877.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 52.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-M2-2-05",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 122,
+     "point_to_point": 12.7,
+     "over_10_m": 10.4,
+     "over_10_m_at": [
+      13610.6,
+      3042.3
+     ],
+     "over_20_m": 9.6,
+     "over_20_m_at": [
+      13602.6,
+      2999.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 484.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 48.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-2-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 142,
+     "point_to_point": 9.9,
+     "over_10_m": 9.3,
+     "over_10_m_at": [
+      12478.1,
+      2709.2
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      12478.1,
+      2709.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 566.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 60.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-2-13",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 114,
+     "point_to_point": 4.1,
+     "over_10_m": 3.8,
+     "over_10_m_at": [
+      12792.8,
+      2050.6
+     ],
+     "over_20_m": 3.6,
+     "over_20_m_at": [
+      12788.9,
+      2051.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 453.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 84.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-2-03",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 154,
+     "point_to_point": 7.2,
+     "over_10_m": 6.4,
+     "over_10_m_at": [
+      12640.0,
+      2090.0
+     ],
+     "over_20_m": 5.7,
+     "over_20_m_at": [
+      12640.0,
+      2090.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 615.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 96.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-14",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 62,
+     "point_to_point": 3.0,
+     "over_10_m": 2.7,
+     "over_10_m_at": [
+      16592.4,
+      3224.3
+     ],
+     "over_20_m": 2.3,
+     "over_20_m_at": [
+      16591.3,
+      3220.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 246.8,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 44.5,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-02",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 197,
+     "point_to_point": 5.7,
+     "over_10_m": 5.4,
+     "over_10_m_at": [
+      16409.8,
+      2982.4
+     ],
+     "over_20_m": 5.1,
+     "over_20_m_at": [
+      16287.2,
+      3005.5
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 787.0,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 164.6,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-08",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 209,
+     "point_to_point": 4.8,
+     "over_10_m": 4.7,
+     "over_10_m_at": [
+      17309.8,
+      2806.4
+     ],
+     "over_20_m": 4.6,
+     "over_20_m_at": [
+      17309.0,
+      2810.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 835.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 88.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-2-12",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 229,
+     "point_to_point": 4.7,
+     "over_10_m": 3.5,
+     "over_10_m_at": [
+      16772.8,
+      2932.2
+     ],
+     "over_20_m": 3.3,
+     "over_20_m_at": [
+      16979.9,
+      2410.2
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 913.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 156.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-2-07",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 186,
+     "point_to_point": 8.2,
+     "over_10_m": 7.6,
+     "over_10_m_at": [
+      15484.5,
+      3529.5
+     ],
+     "over_20_m": 7.2,
+     "over_20_m_at": [
+      15486.6,
+      3526.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 741.6,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 152.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-2-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 233,
+     "point_to_point": 3.8,
+     "over_10_m": 3.8,
+     "over_10_m_at": [
+      14760.8,
+      3344.6
+     ],
+     "over_20_m": 3.4,
+     "over_20_m_at": [
+      14764.4,
+      3342.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 930.8,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 116.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-03-2-04",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 278,
+     "point_to_point": 5.8,
+     "over_10_m": 5.7,
+     "over_10_m_at": [
+      12253.8,
+      2619.4
+     ],
+     "over_20_m": 5.2,
+     "over_20_m_at": [
+      12250.2,
+      2617.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1108.8,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 80.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-05-2-06",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 295,
+     "point_to_point": 10.3,
+     "over_10_m": 9.7,
+     "over_10_m_at": [
+      13616.2,
+      3055.9
+     ],
+     "over_20_m": 9.0,
+     "over_20_m_at": [
+      13612.2,
+      3056.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1176.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 100.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-06-2-07",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 256,
+     "point_to_point": 5.6,
+     "over_10_m": 5.5,
+     "over_10_m_at": [
+      15298.0,
+      3588.0
+     ],
+     "over_20_m": 5.3,
+     "over_20_m_at": [
+      15294.2,
+      3589.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1020.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 108.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-08-2-12",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 121,
+     "point_to_point": 5.5,
+     "over_10_m": 5.3,
+     "over_10_m_at": [
+      17467.3,
+      2509.6
+     ],
+     "over_20_m": 5.2,
+     "over_20_m_at": [
+      17483.7,
+      2582.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 480.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 100.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-08-2-14",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 234,
+     "point_to_point": 7.9,
+     "over_10_m": 7.4,
+     "over_10_m_at": [
+      17068.8,
+      3037.3
+     ],
+     "over_20_m": 7.1,
+     "over_20_m_at": [
+      17070.6,
+      3033.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 932.7,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 80.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-2-02",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 212,
+     "point_to_point": 5.4,
+     "over_10_m": 5.3,
+     "over_10_m_at": [
+      15710.7,
+      2799.3
+     ],
+     "over_20_m": 5.0,
+     "over_20_m_at": [
+      15707.9,
+      2802.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 843.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 83.9,
+     "over_limit": false
+    },
+    {
+     "link": "2-M2-2-13",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 273,
+     "point_to_point": 6.4,
+     "over_10_m": 6.2,
+     "over_10_m_at": [
+      13150.8,
+      2287.7
+     ],
+     "over_20_m": 6.0,
+     "over_20_m_at": [
+      13150.8,
+      2287.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 1090.9,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 144.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-F-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 165,
+     "point_to_point": 2.3,
+     "over_10_m": 2.3,
+     "over_10_m_at": [
+      14372.5,
+      2689.8
+     ],
+     "over_20_m": 2.1,
+     "over_20_m_at": [
+      14371.2,
+      2686.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 658.5,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 104.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 36,
+     "point_to_point": 2.7,
+     "over_10_m": 2.5,
+     "over_10_m_at": [
+      15135.2,
+      3002.0
+     ],
+     "over_20_m": 2.2,
+     "over_20_m_at": [
+      15136.2,
+      2998.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 142.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 28.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-01-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 46,
+     "point_to_point": 2.4,
+     "over_10_m": 2.2,
+     "over_10_m_at": [
+      15140.0,
+      3010.0
+     ],
+     "over_20_m": 2.1,
+     "over_20_m_at": [
+      15140.0,
+      3014.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 181.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 48.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-M2-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 37,
+     "point_to_point": 1.2,
+     "over_10_m": 1.1,
+     "over_10_m_at": [
+      13865.0,
+      2732.1
+     ],
+     "over_20_m": 0.9,
+     "over_20_m_at": [
+      13867.0,
+      2764.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 144.8,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 40.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-02-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 5,
+     "point_to_point": 8.7,
+     "over_10_m": 7.3,
+     "over_10_m_at": [
+      15982.1,
+      2698.8
+     ],
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 19.1,
+     "spacing_min_m": 4.7,
+     "straight_max_m": 9.5,
+     "over_limit": false
+    },
+    {
+     "link": "2-02-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 101,
+     "point_to_point": 7.9,
+     "over_10_m": 7.7,
+     "over_10_m_at": [
+      15930.2,
+      2724.0
+     ],
+     "over_20_m": 7.1,
+     "over_20_m_at": [
+      15934.0,
+      2722.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 401.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 72.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 124,
+     "point_to_point": 3.2,
+     "over_10_m": 3.1,
+     "over_10_m_at": [
+      12805.0,
+      2250.6
+     ],
+     "over_20_m": 2.9,
+     "over_20_m_at": [
+      12805.0,
+      2246.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 494.2,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 168.7,
+     "over_limit": false
+    },
+    {
+     "link": "2-M3-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 105,
+     "point_to_point": 3.2,
+     "over_10_m": 3.1,
+     "over_10_m_at": [
+      12805.0,
+      2262.1
+     ],
+     "over_20_m": 2.9,
+     "over_20_m_at": [
+      12805.0,
+      2266.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 419.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 157.3,
+     "over_limit": false
+    },
+    {
+     "link": "2-04-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 31,
+     "point_to_point": 9.6,
+     "over_10_m": 8.1,
+     "over_10_m_at": [
+      12444.6,
+      2714.8
+     ],
+     "over_20_m": 5.8,
+     "over_20_m_at": [
+      12433.5,
+      2710.6
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 119.8,
+     "spacing_min_m": 3.9,
+     "straight_max_m": 24.0,
+     "over_limit": false
+    },
+    {
+     "link": "2-13-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 38,
+     "point_to_point": 3.5,
+     "over_10_m": 3.2,
+     "over_10_m_at": [
+      13159.8,
+      2031.6
+     ],
+     "over_20_m": 2.9,
+     "over_20_m_at": [
+      13158.8,
+      2027.7
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 149.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 36.2,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 19,
+     "point_to_point": 1.8,
+     "over_10_m": 1.5,
+     "over_10_m_at": [
+      16673.3,
+      3046.2
+     ],
+     "over_20_m": 1.4,
+     "over_20_m_at": [
+      16671.5,
+      3042.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 75.1,
+     "spacing_min_m": 4.2,
+     "straight_max_m": 33.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 53,
+     "point_to_point": 5.7,
+     "over_10_m": 4.6,
+     "over_10_m_at": [
+      16794.8,
+      2956.6
+     ],
+     "over_20_m": 4.3,
+     "over_20_m_at": [
+      16795.0,
+      2984.8
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 209.3,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 84.6,
+     "over_limit": false
+    },
+    {
+     "link": "2-M4-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 5,
+     "point_to_point": 4.2,
+     "over_10_m": 2.7,
+     "over_10_m_at": [
+      16785.0,
+      2945.0
+     ],
+     "over_20_m": 0.0,
+     "over_20_m_at": null,
+     "length_over_14_pct_m": 0.0,
+     "length_m": 18.8,
+     "spacing_min_m": 4.7,
+     "straight_max_m": 9.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-14-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 74,
+     "point_to_point": 13.1,
+     "over_10_m": 12.9,
+     "over_10_m_at": [
+      16698.0,
+      3348.2
+     ],
+     "over_20_m": 12.2,
+     "over_20_m_at": [
+      16694.1,
+      3349.3
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 293.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 32.1,
+     "over_limit": false
+    },
+    {
+     "link": "2-08-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 18,
+     "point_to_point": 0.7,
+     "over_10_m": 0.6,
+     "over_10_m_at": [
+      17500.0,
+      2613.4
+     ],
+     "over_20_m": 0.5,
+     "over_20_m_at": [
+      17500.0,
+      2613.4
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 71.8,
+     "spacing_min_m": 4.2,
+     "straight_max_m": 46.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-12-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 33,
+     "point_to_point": 4.3,
+     "over_10_m": 4.3,
+     "over_10_m_at": [
+      17275.7,
+      2208.9
+     ],
+     "over_20_m": 4.1,
+     "over_20_m_at": [
+      17272.3,
+      2211.1
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 129.1,
+     "spacing_min_m": 4.0,
+     "straight_max_m": 52.4,
+     "over_limit": false
+    },
+    {
+     "link": "2-07-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 9,
+     "point_to_point": 7.4,
+     "over_10_m": 5.6,
+     "over_10_m_at": [
+      15460.0,
+      3550.0
+     ],
+     "over_20_m": 4.2,
+     "over_20_m_at": [
+      15460.0,
+      3550.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 33.6,
+     "spacing_min_m": 4.2,
+     "straight_max_m": 12.6,
+     "over_limit": false
+    },
+    {
+     "link": "2-06-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 28,
+     "point_to_point": 2.4,
+     "over_10_m": 2.1,
+     "over_10_m_at": [
+      14452.1,
+      3641.2
+     ],
+     "over_20_m": 2.1,
+     "over_20_m_at": [
+      14444.0,
+      3640.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 110.9,
+     "spacing_min_m": 4.1,
+     "straight_max_m": 32.9,
+     "over_limit": false
+    },
+    {
+     "link": "2-06-through",
+     "kind": "dirt",
+     "width_m": 7.0,
+     "limit_pct": 14.0,
+     "points": 6,
+     "point_to_point": 2.4,
+     "over_10_m": 1.7,
+     "over_10_m_at": [
+      14460.0,
+      3650.0
+     ],
+     "over_20_m": 1.3,
+     "over_20_m_at": [
+      14460.0,
+      3650.0
+     ],
+     "length_over_14_pct_m": 0.0,
+     "length_m": 22.6,
+     "spacing_min_m": 4.5,
+     "straight_max_m": 9.0,
+     "over_limit": false
+    }
+   ]
+  },
+  "clearance_under_3_m": [
+   [
+    2.1,
+    "A2-08",
+    "2-F-2-09",
+    ""
+   ],
+   [
+    2.2,
+    "A2-09",
+    "2-F-2-01",
+    ""
+   ]
+  ],
+  "road_pieces": 40,
+  "road_groups": 1,
+  "group_sizes": [
+   40
+  ],
+  "vehicle_sites_without_a_road_within_15_m": [
+   "2-05",
+   "2-10"
+  ],
+  "mains_closest": [
+   [
+    872,
+    "2-F",
+    "2-M2"
+   ],
+   [
+    1177,
+    "2-F",
+    "2-M1"
+   ],
+   [
+    1230,
+    "2-M2",
+    "2-M3"
+   ],
+   [
+    1551,
+    "2-M1",
+    "2-M4"
+   ]
+  ]
+ }
+}

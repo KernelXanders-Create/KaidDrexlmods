@@ -1,0 +1,119 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_11nov_c/ops12/../job1/tools/planner.py:260: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+{
+"reseated": [
+[
+"A2-03",
+2.0,
+"overlaps a pad (pad gap 0.0 m, road gap 25.7 m)"
+],
+[
+"A2-08",
+0.0,
+"within 3 m of a road edge (pad gap 18.8 m, road gap 2.1 m)"
+],
+[
+"A2-09",
+2.9,
+"within 3 m of a road edge (pad gap 30.5 m, road gap 2.2 m)"
+],
+[
+"2-10",
+758.0,
+"no road within the rules reaches its built seat on the knoll top; this seat beside the net does (a proposal: or build a ramp to the knoll)"
+]
+],
+"new": [
+[
+"stub 2-05",
+"2-05-2-06#64 stops 21 m short of the pad",
+95,
+3.96
+],
+[
+"road 2-10 (re-seat)",
+"road to 2-10's proposed new seat",
+313,
+2.88
+]
+],
+"replaced": [
+[
+"2-F-2-M2#50",
+"straight 340 m",
+63,
+2.52,
+0.57
+],
+[
+"2-M4-2-02#58",
+"straight 165 m",
+58,
+5.36,
+1.47
+],
+[
+"2-M4-2-12#60",
+"straight 156 m",
+85,
+12.11,
+0.96
+],
+[
+"2-01-2-07#61",
+"straight 152 m",
+58,
+13.82,
+1.97
+],
+[
+"2-M3-through#76",
+"straight 169 m",
+85,
+4.17,
+1.49
+],
+[
+"2-M3-through#77",
+"straight 157 m",
+63,
+6.79,
+1.18
+]
+],
+"offlevel": [
+[
+"2-F",
+0.64
+],
+[
+"2-M1",
+-0.64
+],
+[
+"2-02",
+0.58
+],
+[
+"2-05",
+0.84
+],
+[
+"2-13",
+0.93
+],
+[
+"A2-11",
+0.62
+],
+[
+"A2-04",
+-0.9
+]
+],
+"houses": [],
+"log": [
+"2-04: a pass-profile pad (its level runs along it); its road ends 16 m off the pad's centre level edge: check the profile end",
+"2-10: NO ROAD within the rules to its built seat (pad level 147.88 m)"
+]
+}
