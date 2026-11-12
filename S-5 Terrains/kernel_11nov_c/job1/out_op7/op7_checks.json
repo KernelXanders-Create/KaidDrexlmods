@@ -1,0 +1,250 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    18.1,
+    "7-05",
+    "A7-08",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "7-03-op6:6-03-4-10 (op 4 net)": [
+    5,
+    0.49
+   ],
+   "7-M4-7-03": [
+    5,
+    1.26
+   ],
+   "7-13-7-03": [
+    8,
+    1.44
+   ],
+   "7-M2-7-13": [
+    9,
+    2.01
+   ],
+   "7-M3-7-M2": [
+    6,
+    1.16
+   ],
+   "7-M3-T-7-M3": [
+    30,
+    0.48
+   ],
+   "7-12-7-M4": [
+    13,
+    1.29
+   ],
+   "7-F-7-13": [
+    32,
+    2.6
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "7-08",
+   3.65
+  ],
+  "over_3_5": [
+   [
+    "7-08",
+    3.65
+   ],
+   [
+    "A7-01",
+    3.56
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "7-03-op6:6-03-4-10 (op 4 net)",
+   14.0
+  ]
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "7-11-7-M3-T",
+   3.64
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "FAIL",
+  "nets": {
+   "Ember Crescent": {
+    "pieces": [
+     [
+      "7-12",
+      "7-03",
+      "7-M4",
+      "7-F",
+      "7-13",
+      "7-M3",
+      "7-M3-T",
+      "7-11"
+     ]
+    ],
+    "not_reached": [
+     "7-02",
+     "7-M1",
+     "7-06",
+     "7-04",
+     "7-14",
+     "7-05"
+    ]
+   }
+  },
+  "vehicle_sites_not_on_the_net": [
+   "7-M1",
+   "7-02",
+   "7-04",
+   "7-05",
+   "7-06",
+   "7-14"
+  ],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "7-M4-7-03",
+   125.8
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    5.8,
+    "A7-04",
+    "7-M2-7-13"
+   ],
+   [
+    16.5,
+    "7-F",
+    "7-13-7-03"
+   ],
+   [
+    23.2,
+    "7-F",
+    "7-M2-7-13"
+   ]
+  ],
+  "town_buildings_closest": [
+   [
+    13.6,
+    "7-M2 B096",
+    "7-M3-7-M2"
+   ],
+   [
+    14.6,
+    "7-M2 B080",
+    "7-M3-7-M2"
+   ],
+   [
+    14.8,
+    "7-M2 B092",
+    "7-M3-7-M2"
+   ]
+  ],
+  "town_note": "town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road port where the road meets the town's own street"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    18.1,
+    "7-05",
+    "A7-08",
+    true
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    11.9,
+    "A7-02"
+   ],
+   [
+    55.3,
+    "7-06"
+   ],
+   [
+    99,
+    "7-01"
+   ]
+  ],
+  "exempt": [
+   "7-M1",
+   "7-05",
+   "7-15"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    756,
+    "7-F",
+    "7-M1"
+   ],
+   [
+    759,
+    "7-F",
+    "7-M4"
+   ],
+   [
+    765,
+    "7-M3-T",
+    "7-M2"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "7-F Rim Chora": [
+    "along the crest road from the Prophet Monastery FOB (op 6), past the Crest Road Checkpoint (7-03) (vehicles)",
+    "the covered way up from Skaros through the Chora Lower Terraces (7-13), on foot"
+   ],
+   "7-M1 Skaros Rock Keep": [
+    "down the road from the Chora past the Skala Path Head (7-02) (vehicles)",
+    "by boat on the lagoon to the rock once the Narrows are open"
+   ],
+   "7-M2 Oyra": [
+    "along the rim road from the Chora (vehicles)",
+    "down the north road from Oyra Head, from the landers' beach (7-05)"
+   ],
+   "7-M3 Narrows East Battery": [
+    "along the rim road from Oyra past the North Rim Trench (7-06) (vehicles)",
+    "by boat to the shore below the battery (shores list), then up on foot"
+   ],
+   "7-M4 Chora AA Umbrella": [
+    "by road from the Chora (vehicles)",
+    "by road from the crest road past the Crew Barracks (7-12) and the Power Bank (7-07)"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
