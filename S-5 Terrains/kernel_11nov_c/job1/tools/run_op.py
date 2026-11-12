@@ -38,6 +38,24 @@ for e in getattr(op, "EXTERNAL_PADS", []):
     P.add_buildings(e["id"], [(a, b) for a, b in zip(gx_.ravel(), gy_.ravel()) if pol_.contains(Point(a, b))], r=0.0)
     EXT[e["id"]] = e
 
+# ---- other ops' finished plans (EXTERNAL_PLANS): their pads inside this box are blocked, their roads are fixed ground a net may join
+EXT_ROADS = []
+for f_ in getattr(op, "EXTERNAL_PLANS", []):
+    D_ = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), f_)))
+    for e in D_["sites"] + D_["squad_positions"]:
+        if op.BOX[0] - 200 < e["x"] < op.BOX[1] + 200 and op.BOX[2] - 200 < e["y"] < op.BOX[3] + 200:
+            e2 = dict(id=f"{e['id']} (op {D_['op']})", x=e["x"], y=e["y"], hx=e["hx"], hy=e["hy"], yaw=e["yaw"], z=e["z"])
+            c_ = rect(e2["x"], e2["y"], e2["hx"] + 1.5, e2["hy"] + 1.5, e2["yaw"]); pol_ = Polygon(c_)
+            P.add_area(e2["id"], [tuple(q) for q in c_], None)
+            gx_, gy_ = np.meshgrid(np.arange(int(min(c_[:, 0]) // 5), int(max(c_[:, 0]) // 5) + 2) * 5.0, np.arange(int(min(c_[:, 1]) // 5), int(max(c_[:, 1]) // 5) + 2) * 5.0)
+            P.add_buildings(e2["id"], [(a, b) for a, b in zip(gx_.ravel(), gy_.ravel()) if pol_.contains(Point(a, b))], r=0.0)
+            EXT[e2["id"]] = e2
+    for r_ in D_["roads"]:
+        pts_ = np.array(r_["points"])
+        if not ((pts_[:, 0] > op.BOX[0]) & (pts_[:, 0] < op.BOX[1]) & (pts_[:, 1] > op.BOX[2]) & (pts_[:, 1] < op.BOX[3])).any(): continue
+        r2 = dict(r_, id=f"op{D_['op']}:{r_['id']}", external=True)
+        P.commit_road(r2); P.roads.remove(r2); EXT_ROADS.append(r2)
+
 # ---- sites
 def place_sites(only=None, skip=()):
     for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
@@ -139,7 +157,10 @@ for phase in (0, 1):
             nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
         elif root in towns:
             t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
-        elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
+        elif root == "EXTERNAL_ROADS":      # other ops' roads: every 4th point inside the box is a join point at its own level
+        nodes[net] = [(x, y, z, r_["id"]) for r_ in EXT_ROADS for (x, y), z in list(zip(r_["points"], r_["points_z"]))[::4]
+                      if op.BOX[0] < x < op.BOX[1] and op.BOX[2] < y < op.BOX[3]]
+    elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
             e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
             nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
                           if math.dist(np.array([e["x"], e["y"]]) + v * (h + 4.0), e.get("used_entrance", (1e9, 1e9))) > 5]
@@ -300,7 +321,8 @@ for net, order in op.NETS.items():
         while par.get(a, a) != a: a = par[a]
         return a
     for r in P.roads:
-        a, b = r["links"]; par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
+        a, b = [("EXTERNAL NET" if x.startswith("op") and ":" in x else x) for x in r["links"]]     # other ops' roads are one net already
+        par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
     reached = {x for r in P.roads for x in r["links"]}
     want = [x for x in [op.ROOT[net]] + order if x in SITE and x in reached]
     comps = collections.defaultdict(list)
@@ -353,7 +375,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k != "hull"} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s["rough"]), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            roads=P.roads, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith("op") and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s["rough"]), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
@@ -367,6 +389,8 @@ ax.imshow(hs, origin="lower", extent=(X[0], X[-1], Y[0], Y[-1]), cmap="gray", al
 ax.contourf(X, Y, h, levels=[-500, 0.3], colors=["#a9cbe0"], alpha=0.8)
 cs = ax.contour(X, Y, h, levels=range(50, 700, 50), colors="#6b5a3a", linewidths=0.35); ax.clabel(cs, fontsize=6, fmt="%d")
 for sh in shores: ax.plot([sh["from_xy"][0], sh["to_xy"][0]], [sh["from_xy"][1], sh["to_xy"][1]], color="#00a6d6", lw=4, alpha=0.7, solid_capstyle="round")
+for r in EXT_ROADS:
+    p = np.array(r["points"]); ax.plot(p[:, 0], p[:, 1], color="#6b6b6b", lw=1.8, ls="--")
 for r in P.roads:
     p = np.array(r["points"]); ax.plot(p[:, 0], p[:, 1], color="#b5651d", lw=2.2)
 for fl in foot:
