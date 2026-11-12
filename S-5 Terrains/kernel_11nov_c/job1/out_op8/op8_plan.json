@@ -1,0 +1,8823 @@
+{
+ "op": 8,
+ "name": "The Caldera Yard",
+ "frame": "map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+ "sites": [
+  {
+   "id": "8-M1",
+   "name": "Breach Dam (east abutment and gate house)",
+   "comp": "CIS Fortress Dam with GPs",
+   "x": 9255.0,
+   "y": 8410.0,
+   "yaw": 90,
+   "hx": 40.0,
+   "hy": 30.0,
+   "z": 23.25,
+   "cut_m": 2.53,
+   "fill_m": 2.39,
+   "max_change_m": 2.53,
+   "moved_m": 160,
+   "rough": [
+    9265,
+    8570
+   ],
+   "size_note": "ASSUMED: the dam spans the breach (see the dam line); this is its east abutment and gate house, 80 x 60 m, on the south arm's tip (a harbour work)",
+   "water_ok": "beach",
+   "n_points": 221,
+   "role": "MAIN",
+   "size": "P",
+   "stake": "The dam closes the breach; its gate opens the lagoon to Republic boats; its crest road is the only AI link between the two crescents",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 180,
+   "entrance_xy": [
+    9255.0,
+    8366.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-M2",
+   "name": "Kameni Shield Generator",
+   "comp": "Destructable Shield Generator and its shield template",
+   "x": 10030.0,
+   "y": 10630.0,
+   "yaw": 45,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 104.5,
+   "cut_m": 2.03,
+   "fill_m": 1.93,
+   "max_change_m": 2.03,
+   "moved_m": 42,
+   "rough": [
+    10000,
+    10600
+   ],
+   "size_note": "ASSUMED: 60 x 60 m",
+   "water_ok": false,
+   "n_points": 145,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "Its shield blocks air strikes on the Yard until it is blown; it stands on the black lava islet in the lagoon (boats or air)",
+   "island": "Kameni",
+   "entrance_bearing_deg": 315,
+   "entrance_xy": [
+    10006.0,
+    10654.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "8-M3",
+   "name": "South Arm Gun Line",
+   "comp": "CIS AAT Turbolaster Base with GPs",
+   "x": 11080.0,
+   "y": 7830.0,
+   "yaw": 45,
+   "hx": 45.0,
+   "hy": 45.0,
+   "z": 136.25,
+   "cut_m": 1.58,
+   "fill_m": 1.68,
+   "max_change_m": 1.68,
+   "moved_m": 50,
+   "rough": [
+    11120,
+    7800
+   ],
+   "size_note": "ASSUMED: 90 x 90 m (as op 3's Sound Rim Guns)",
+   "water_ok": false,
+   "n_points": 349,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "Guns on the south crest cover the lagoon and the dam; air softens them",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 225,
+   "entrance_xy": [
+    11045.4,
+    7795.4
+   ]
+  },
+  {
+   "id": "8-M4",
+   "name": "Yard Power Plant",
+   "comp": "CIS Large Power Facility with GPs",
+   "x": 13280.0,
+   "y": 9080.0,
+   "yaw": 135,
+   "hx": 70.0,
+   "hy": 50.0,
+   "z": 342.0,
+   "cut_m": 1.94,
+   "fill_m": 2.15,
+   "max_change_m": 2.15,
+   "moved_m": 36,
+   "rough": [
+    13250,
+    9100
+   ],
+   "size_note": "ASSUMED: 140 x 100 m (as op 5's Ridge Power Station)",
+   "water_ok": false,
+   "n_points": 591,
+   "role": "MAIN",
+   "size": "P",
+   "stake": "On the rim above the foundry; it powers the foundry and the Kameni shield. Blowing it darkens the foundry's halls",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 225,
+   "entrance_xy": [
+    13227.7,
+    9027.7
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-01",
+   "name": "Dam West Tower",
+   "comp": "Tukata Defense Tower Turbolaser",
+   "x": 8640.0,
+   "y": 8850.0,
+   "yaw": 75,
+   "hx": 20.0,
+   "hy": 20.0,
+   "z": 179.75,
+   "cut_m": 1.84,
+   "fill_m": 1.97,
+   "max_change_m": 1.97,
+   "moved_m": 108,
+   "rough": [
+    8600,
+    8750
+   ],
+   "size_note": "ASSUMED: 40 x 40 m",
+   "water_ok": false,
+   "n_points": 73,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Covers the dam's west end on Ash Crescent's south tip",
+   "island": "Ash Crescent",
+   "entrance_bearing_deg": 165,
+   "entrance_xy": [
+    8646.2,
+    8826.8
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "8-02",
+   "name": "Dam East Bunkers",
+   "comp": "CIS Small Wall (Bunker) with GPs",
+   "x": 9280.0,
+   "y": 8260.0,
+   "yaw": 105,
+   "hx": 45.1,
+   "hy": 29.1,
+   "z": 26.75,
+   "cut_m": 1.95,
+   "fill_m": 2.1,
+   "max_change_m": 2.1,
+   "moved_m": 63,
+   "rough": [
+    9300,
+    8200
+   ],
+   "size_note": "KNOWN as built: your 1-09 (Small Wall with Bunker) is a Small Rectangle FOB, 90 x 58 m",
+   "water_ok": false,
+   "n_points": 227,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Cover the dam's east end and its gate house",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    9312.0,
+    8251.4
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-03",
+   "name": "Inner Shore Fuel Quay",
+   "comp": "CIS Large Fuel Depot with GPs",
+   "x": 11420.0,
+   "y": 8230.0,
+   "yaw": 0,
+   "hx": 80.0,
+   "hy": 60.0,
+   "z": 5.25,
+   "cut_m": 0.91,
+   "fill_m": 0.83,
+   "max_change_m": 0.91,
+   "moved_m": 0,
+   "rough": [
+    11420,
+    8230
+   ],
+   "size_note": "REDUCED: the composition's own pad (2-xx) is 248 x 261 m and the inner shore takes no more than 160 x 120 m; a harbour work",
+   "water_ok": "beach",
+   "n_points": 825,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Fuel for the Yard's tugs; it burns when hit and the tugs stop",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 270,
+   "entrance_xy": [
+    11336.0,
+    8230.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-04",
+   "name": "Crater Wall Depot",
+   "comp": "CIS Depot (Fixed) with GPs (D)",
+   "x": 12000.0,
+   "y": 8600.0,
+   "yaw": 135,
+   "hx": 40.0,
+   "hy": 30.0,
+   "z": 15.75,
+   "cut_m": 2.55,
+   "fill_m": 2.37,
+   "max_change_m": 2.55,
+   "moved_m": 28,
+   "rough": [
+    12020,
+    8620
+   ],
+   "size_note": "ASSUMED: 80 x 60 m (as op 6's Signal Isle Depot); on the inner shore (a harbour work)",
+   "water_ok": "beach",
+   "n_points": 195,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Reserve stores under the south-east cliffs; taking it gives a covered start line onto the inner shore road",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 225,
+   "entrance_xy": [
+    11968.9,
+    8568.9
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-05",
+   "name": "Kameni Vent Bunkers",
+   "comp": "Tukata Turret Bunker",
+   "x": 9740.0,
+   "y": 10940.0,
+   "yaw": 15,
+   "hx": 25.0,
+   "hy": 25.0,
+   "z": 78.75,
+   "cut_m": 2.09,
+   "fill_m": 2.13,
+   "max_change_m": 2.13,
+   "moved_m": 14,
+   "rough": [
+    9750,
+    10950
+   ],
+   "size_note": "ASSUMED: 50 x 50 m",
+   "water_ok": false,
+   "n_points": 113,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Bunkers among the fumaroles guard Kameni's north landing",
+   "island": "Kameni",
+   "entrance_bearing_deg": 285,
+   "entrance_xy": [
+    9712.0,
+    10947.5
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "8-08",
+   "name": "South Arm Road Tower",
+   "comp": "CIS Flower Tower with GPs",
+   "x": 12270.0,
+   "y": 7030.0,
+   "yaw": 165,
+   "hx": 46.4,
+   "hy": 44.0,
+   "z": 32.75,
+   "cut_m": 2.73,
+   "fill_m": 2.84,
+   "max_change_m": 2.84,
+   "moved_m": 388,
+   "rough": [
+    12050,
+    7350
+   ],
+   "size_note": "KNOWN: 1-11",
+   "water_ok": false,
+   "n_points": 349,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Holds the road from Causeway Foot along the south arm",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    12318.7,
+    7043.0
+   ]
+  },
+  {
+   "id": "8-09",
+   "name": "Akrotar Cape AA",
+   "comp": "CIS Medium AA Base with GPs",
+   "x": 9260.0,
+   "y": 6270.0,
+   "yaw": 45,
+   "hx": 98.5,
+   "hy": 96.4,
+   "z": 19.25,
+   "cut_m": 2.67,
+   "fill_m": 2.5,
+   "max_change_m": 2.67,
+   "moved_m": 277,
+   "rough": [
+    9050,
+    6450
+   ],
+   "size_note": "KNOWN: 2-M3",
+   "water_ok": false,
+   "n_points": 1399,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "AA on the cape; taking it opens the southern air route over the dam",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 45,
+   "entrance_xy": [
+    9331.0,
+    6341.0
+   ]
+  },
+  {
+   "id": "8-10",
+   "name": "Inner Shore Road Gate",
+   "comp": "CIS Double Checkpoint with GPs",
+   "x": 12350.0,
+   "y": 8970.0,
+   "yaw": 45,
+   "hx": 32.9,
+   "hy": 49.5,
+   "z": 3.25,
+   "cut_m": 1.53,
+   "fill_m": 1.51,
+   "max_change_m": 1.53,
+   "moved_m": 64,
+   "rough": [
+    12390,
+    9020
+   ],
+   "size_note": "KNOWN: 2-07; on the inner shore road (a harbour work)",
+   "water_ok": "beach",
+   "n_points": 275,
+   "role": "SUP",
+   "size": "S",
+   "stake": "The inner shore road from the south into the Yard (through-comp)",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 135,
+   "entrance_xy": [
+    12376.1,
+    8943.9
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-12",
+   "name": "Dry Dock Pump House",
+   "comp": "Supply Outpost Version 2",
+   "x": 12750.0,
+   "y": 9460.0,
+   "yaw": 120,
+   "hx": 41.0,
+   "hy": 32.5,
+   "z": 2.5,
+   "cut_m": 1.12,
+   "fill_m": 1.33,
+   "max_change_m": 1.33,
+   "moved_m": 22,
+   "rough": [
+    12770,
+    9450
+   ],
+   "size_note": "KNOWN: 82 x 65 m (the pad op 3 found); beside the Yard (a harbour work)",
+   "water_ok": "beach",
+   "n_points": 233,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Floods or drains the dry dock; taking it strands the hull in the cradle",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 210,
+   "entrance_xy": [
+    12727.5,
+    9421.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "8-13",
+   "name": "South Crest AA",
+   "comp": "Medium Covered AA Base with GPs",
+   "x": 10110.0,
+   "y": 7760.0,
+   "yaw": 135,
+   "hx": 60.0,
+   "hy": 55.0,
+   "z": 88.25,
+   "cut_m": 2.67,
+   "fill_m": 2.87,
+   "max_change_m": 2.87,
+   "moved_m": 22,
+   "rough": [
+    10100,
+    7780
+   ],
+   "size_note": "ASSUMED: 120 x 110 m (a little under the Medium AA Base, 2-M3)",
+   "water_ok": false,
+   "n_points": 527,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "AA on the south crest; taking it opens the lagoon's south sky to LAATs",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 135,
+   "entrance_xy": [
+    10151.7,
+    7718.3
+   ]
+  },
+  {
+   "id": "8-14",
+   "name": "Akrotar Dig (sheds and ramp depot)",
+   "comp": "CIS Elevated Ramp Depot with GPs",
+   "x": 9550.0,
+   "y": 6750.0,
+   "yaw": 30,
+   "hx": 60.6,
+   "hy": 39.5,
+   "z": 67.25,
+   "cut_m": 2.12,
+   "fill_m": 2.35,
+   "max_change_m": 2.35,
+   "moved_m": 0,
+   "rough": [
+    9550,
+    6750
+   ],
+   "size_note": "ASSUMED: as the CIS Elevated Landing Pad Construction (2-01)",
+   "water_ok": false,
+   "n_points": 407,
+   "role": "SUP",
+   "size": "P",
+   "stake": "The CIS strips a buried ancient city out of the ash; the Yard's ammunition and droid store sits in the dig sheds (a big burn)",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 30,
+   "entrance_xy": [
+    9571.8,
+    6787.7
+   ]
+  },
+  {
+   "id": "8-14-T",
+   "name": "Akrotar Dig (the temple dig)",
+   "comp": "Temple Run V4",
+   "x": 9750.0,
+   "y": 6850.0,
+   "yaw": 45,
+   "hx": 40.0,
+   "hy": 30.0,
+   "z": 77.5,
+   "cut_m": 2.05,
+   "fill_m": 2.04,
+   "max_change_m": 2.05,
+   "moved_m": 0,
+   "rough": [
+    9750,
+    6850
+   ],
+   "size_note": "ASSUMED: 80 x 60 m of dig beside the sheds",
+   "water_ok": false,
+   "n_points": 195,
+   "role": "SUP",
+   "size": "P",
+   "stake": "The CIS strips a buried ancient city out of the ash; the Yard's ammunition and droid store sits in the dig sheds (a big burn)",
+   "island": "Ember Crescent",
+   "entrance_bearing_deg": 45,
+   "entrance_xy": [
+    9774.0,
+    6874.0
+   ]
+  },
+  {
+   "id": "8-15",
+   "name": "Ash Crest Gun Line",
+   "comp": "CIS Small Artillery Base with GPs",
+   "x": 8730.0,
+   "y": 11560.0,
+   "yaw": 90,
+   "hx": 63.8,
+   "hy": 31.4,
+   "z": 163.25,
+   "cut_m": 1.76,
+   "fill_m": 1.83,
+   "max_change_m": 1.83,
+   "moved_m": 22,
+   "rough": [
+    8750,
+    11550
+   ],
+   "size_note": "KNOWN: 1-M3",
+   "water_ok": false,
+   "n_points": 351,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns on Ash's crest fire across the lagoon at boats making for the Yard",
+   "island": "Ash Crescent",
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    8765.4,
+    11560.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "8-16",
+   "name": "Ash Outer Depot",
+   "comp": "Supply Base Small_1",
+   "x": 7900.0,
+   "y": 11030.0,
+   "yaw": 120,
+   "hx": 41.0,
+   "hy": 32.5,
+   "z": 60.5,
+   "cut_m": 2.56,
+   "fill_m": 2.35,
+   "max_change_m": 2.56,
+   "moved_m": 177,
+   "rough": [
+    7850,
+    11200
+   ],
+   "size_note": "KNOWN: 82 x 65 m",
+   "water_ok": "beach",
+   "n_points": 233,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Supplies landed on Ash's outer slope for the crest guns; taking it opens Ash's west beach",
+   "island": "Ash Crescent",
+   "entrance_bearing_deg": 300,
+   "entrance_xy": [
+    7868.4,
+    11048.2
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  }
+ ],
+ "squad_positions": [
+  {
+   "id": "A8-01",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 12970.0,
+   "y": 7510.0,
+   "yaw": 75,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 28.75,
+   "cut_m": 2.95,
+   "fill_m": 3.14,
+   "max_change_m": 3.14,
+   "moved_m": 114,
+   "rough": [
+    12900,
+    7600
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "the south arm road from Causeway Foot",
+   "nearest_site": "8-08",
+   "nearest_site_m": 849
+  },
+  {
+   "id": "A8-02",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 11730.0,
+   "y": 8360.0,
+   "yaw": 120,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 2.5,
+   "cut_m": 1.93,
+   "fill_m": 1.86,
+   "max_change_m": 1.93,
+   "moved_m": 71,
+   "rough": [
+    11800,
+    8350
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 135,
+   "role": "squad position",
+   "guards": "the inner shore road between the fuel quay and the depot",
+   "nearest_site": "8-03",
+   "nearest_site_m": 336
+  },
+  {
+   "id": "A8-03",
+   "name": "squad position",
+   "comp": "CIS Mixed AA Platform with GPs",
+   "x": 13570.0,
+   "y": 9740.0,
+   "yaw": 90,
+   "hx": 50.7,
+   "hy": 46.4,
+   "z": 350.0,
+   "cut_m": 2.44,
+   "fill_m": 2.44,
+   "max_change_m": 2.44,
+   "moved_m": 220,
+   "rough": [
+    13400,
+    9600
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 399,
+   "role": "squad position",
+   "guards": "the air over the Yard, from the rim",
+   "nearest_site": "8-M4",
+   "nearest_site_m": 721
+  },
+  {
+   "id": "A8-04",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 12540.0,
+   "y": 9290.0,
+   "yaw": 30,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 2.5,
+   "cut_m": 1.75,
+   "fill_m": 1.9,
+   "max_change_m": 1.9,
+   "moved_m": 41,
+   "rough": [
+    12500,
+    9300
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the inner shore north of the road gate and the Yard's south end",
+   "nearest_site": "8-12",
+   "nearest_site_m": 270
+  },
+  {
+   "id": "A8-05",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 9520.0,
+   "y": 8050.0,
+   "yaw": 0,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 78.5,
+   "cut_m": 2.01,
+   "fill_m": 2.03,
+   "max_change_m": 2.03,
+   "moved_m": 102,
+   "rough": [
+    9500,
+    8150
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the dam's east end",
+   "nearest_site": "8-02",
+   "nearest_site_m": 319
+  },
+  {
+   "id": "A8-06",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 10600.0,
+   "y": 7700.0,
+   "yaw": 0,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 99.0,
+   "cut_m": 1.58,
+   "fill_m": 1.73,
+   "max_change_m": 1.73,
+   "moved_m": 0,
+   "rough": [
+    10600,
+    7700
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 143,
+   "role": "squad position",
+   "guards": "the south crest between the AA and the gun line",
+   "nearest_site": "8-13",
+   "nearest_site_m": 494
+  },
+  {
+   "id": "A8-07",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 9810.0,
+   "y": 6400.0,
+   "yaw": 30,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 16.25,
+   "cut_m": 2.15,
+   "fill_m": 1.98,
+   "max_change_m": 2.15,
+   "moved_m": 10,
+   "rough": [
+    9800,
+    6400
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "Akrotar's beaches",
+   "nearest_site": "8-14",
+   "nearest_site_m": 436
+  },
+  {
+   "id": "A8-08",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 10120.0,
+   "y": 10330.0,
+   "yaw": 30,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 56.25,
+   "cut_m": 1.89,
+   "fill_m": 1.99,
+   "max_change_m": 1.99,
+   "moved_m": 82,
+   "rough": [
+    10100,
+    10250
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 135,
+   "role": "squad position",
+   "guards": "Kameni's south shore",
+   "nearest_site": "8-M2",
+   "nearest_site_m": 313
+  },
+  {
+   "id": "A8-09",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 8460.0,
+   "y": 9140.0,
+   "yaw": 60,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 176.5,
+   "cut_m": 2.23,
+   "fill_m": 2.36,
+   "max_change_m": 2.36,
+   "moved_m": 41,
+   "rough": [
+    8450,
+    9100
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the dam's west end on Ash Crescent",
+   "nearest_site": "8-01",
+   "nearest_site_m": 341
+  },
+  {
+   "id": "A8-10",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 7820.0,
+   "y": 10570.0,
+   "yaw": 60,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 107.75,
+   "cut_m": 3.54,
+   "fill_m": 3.48,
+   "max_change_m": 3.54,
+   "moved_m": 133,
+   "rough": [
+    7950,
+    10600
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "Ash Crescent's west beach",
+   "nearest_site": "8-16",
+   "nearest_site_m": 467
+  }
+ ],
+ "towns": [],
+ "roads": [
+  {
+   "id": "8-08-op4:4-09-4-07",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-08",
+    "op4:4-09-4-07"
+   ],
+   "points": [
+    [
+     12318.68,
+     7043.04
+    ],
+    [
+     12322.98,
+     7044.33
+    ],
+    [
+     12327.15,
+     7045.93
+    ],
+    [
+     12330.86,
+     7048.17
+    ],
+    [
+     12333.72,
+     7051.4
+    ],
+    [
+     12336.53,
+     7054.79
+    ],
+    [
+     12339.57,
+     7058.06
+    ],
+    [
+     12342.73,
+     7061.25
+    ],
+    [
+     12345.98,
+     7064.35
+    ],
+    [
+     12349.32,
+     7067.35
+    ],
+    [
+     12352.74,
+     7070.26
+    ],
+    [
+     12356.24,
+     7073.11
+    ],
+    [
+     12359.78,
+     7075.91
+    ],
+    [
+     12363.36,
+     7078.67
+    ],
+    [
+     12366.94,
+     7081.43
+    ],
+    [
+     12370.51,
+     7084.2
+    ],
+    [
+     12374.05,
+     7087.01
+    ],
+    [
+     12377.53,
+     7089.87
+    ],
+    [
+     12380.93,
+     7092.81
+    ],
+    [
+     12384.25,
+     7095.83
+    ],
+    [
+     12387.48,
+     7098.94
+    ],
+    [
+     12390.61,
+     7102.16
+    ],
+    [
+     12393.64,
+     7105.46
+    ],
+    [
+     12396.59,
+     7108.86
+    ],
+    [
+     12399.46,
+     7112.33
+    ],
+    [
+     12402.28,
+     7115.86
+    ],
+    [
+     12405.05,
+     7119.42
+    ],
+    [
+     12407.81,
+     7123.01
+    ],
+    [
+     12410.57,
+     7126.59
+    ],
+    [
+     12413.36,
+     7130.14
+    ],
+    [
+     12416.2,
+     7133.64
+    ],
+    [
+     12419.11,
+     7137.08
+    ],
+    [
+     12422.1,
+     7140.43
+    ],
+    [
+     12425.18,
+     7143.69
+    ],
+    [
+     12428.35,
+     7146.86
+    ],
+    [
+     12431.62,
+     7149.93
+    ],
+    [
+     12434.99,
+     7152.91
+    ],
+    [
+     12438.43,
+     7155.81
+    ],
+    [
+     12441.94,
+     7158.64
+    ],
+    [
+     12445.49,
+     7161.43
+    ],
+    [
+     12449.07,
+     7164.19
+    ],
+    [
+     12452.66,
+     7166.95
+    ],
+    [
+     12456.22,
+     7169.72
+    ],
+    [
+     12459.74,
+     7172.54
+    ],
+    [
+     12463.21,
+     7175.42
+    ],
+    [
+     12466.59,
+     7178.38
+    ],
+    [
+     12469.89,
+     7181.42
+    ],
+    [
+     12473.09,
+     7184.56
+    ],
+    [
+     12476.2,
+     7187.8
+    ],
+    [
+     12479.21,
+     7191.13
+    ],
+    [
+     12482.14,
+     7194.54
+    ],
+    [
+     12485.0,
+     7198.03
+    ],
+    [
+     12487.8,
+     7201.56
+    ],
+    [
+     12490.57,
+     7205.14
+    ],
+    [
+     12493.32,
+     7208.72
+    ],
+    [
+     12496.09,
+     7212.3
+    ],
+    [
+     12498.89,
+     7215.84
+    ],
+    [
+     12501.75,
+     7219.33
+    ],
+    [
+     12504.67,
+     7222.74
+    ],
+    [
+     12507.68,
+     7226.08
+    ],
+    [
+     12510.78,
+     7229.32
+    ],
+    [
+     12513.98,
+     7232.46
+    ],
+    [
+     12517.28,
+     7235.51
+    ],
+    [
+     12520.66,
+     7238.46
+    ],
+    [
+     12524.12,
+     7241.35
+    ],
+    [
+     12527.64,
+     7244.17
+    ],
+    [
+     12531.2,
+     7246.95
+    ],
+    [
+     12534.79,
+     7249.7
+    ],
+    [
+     12538.37,
+     7252.46
+    ],
+    [
+     12541.93,
+     7255.25
+    ],
+    [
+     12545.44,
+     7258.08
+    ],
+    [
+     12548.88,
+     7260.98
+    ],
+    [
+     12552.25,
+     7263.95
+    ],
+    [
+     12555.52,
+     7267.02
+    ],
+    [
+     12558.7,
+     7270.18
+    ],
+    [
+     12561.79,
+     7273.44
+    ],
+    [
+     12564.78,
+     7276.79
+    ],
+    [
+     12567.69,
+     7280.23
+    ],
+    [
+     12570.53,
+     7283.73
+    ],
+    [
+     12573.32,
+     7287.27
+    ],
+    [
+     12576.08,
+     7290.85
+    ],
+    [
+     12578.84,
+     7294.44
+    ],
+    [
+     12581.61,
+     7298.01
+    ],
+    [
+     12584.43,
+     7301.54
+    ],
+    [
+     12587.3,
+     7305.01
+    ],
+    [
+     12590.24,
+     7308.41
+    ],
+    [
+     12593.27,
+     7311.72
+    ],
+    [
+     12596.4,
+     7314.93
+    ],
+    [
+     12599.62,
+     7318.05
+    ],
+    [
+     12602.94,
+     7321.08
+    ],
+    [
+     12606.34,
+     7324.02
+    ],
+    [
+     12609.82,
+     7326.88
+    ],
+    [
+     12613.35,
+     7329.69
+    ],
+    [
+     12616.92,
+     7332.46
+    ],
+    [
+     12620.5,
+     7335.22
+    ],
+    [
+     12624.08,
+     7337.98
+    ],
+    [
+     12627.63,
+     7340.78
+    ],
+    [
+     12631.12,
+     7343.63
+    ],
+    [
+     12634.55,
+     7346.54
+    ],
+    [
+     12637.9,
+     7349.54
+    ],
+    [
+     12641.15,
+     7352.63
+    ],
+    [
+     12644.31,
+     7355.81
+    ],
+    [
+     12647.37,
+     7359.09
+    ],
+    [
+     12650.34,
+     7362.46
+    ],
+    [
+     12653.23,
+     7365.91
+    ],
+    [
+     12656.06,
+     7369.43
+    ],
+    [
+     12658.84,
+     7372.99
+    ],
+    [
+     12661.6,
+     7376.57
+    ],
+    [
+     12664.36,
+     7380.15
+    ],
+    [
+     12667.14,
+     7383.71
+    ],
+    [
+     12669.96,
+     7387.23
+    ],
+    [
+     12672.85,
+     7390.68
+    ],
+    [
+     12675.81,
+     7394.06
+    ],
+    [
+     12678.87,
+     7397.35
+    ],
+    [
+     12682.02,
+     7400.54
+    ],
+    [
+     12685.34,
+     7403.71
+    ],
+    [
+     12689.13,
+     7406.59
+    ],
+    [
+     12693.35,
+     7408.68
+    ],
+    [
+     12697.47,
+     7410.38
+    ],
+    [
+     12701.31,
+     7412.5
+    ],
+    [
+     12705.09,
+     7414.94
+    ],
+    [
+     12709.25,
+     7416.74
+    ],
+    [
+     12713.52,
+     7418.38
+    ],
+    [
+     12717.56,
+     7420.62
+    ],
+    [
+     12721.19,
+     7423.13
+    ],
+    [
+     12725.03,
+     7425.04
+    ],
+    [
+     12729.16,
+     7427.01
+    ],
+    [
+     12733.1,
+     7429.66
+    ],
+    [
+     12736.4,
+     7432.57
+    ],
+    [
+     12739.91,
+     7434.92
+    ],
+    [
+     12743.76,
+     7437.32
+    ],
+    [
+     12747.37,
+     7440.32
+    ],
+    [
+     12750.44,
+     7443.63
+    ],
+    [
+     12753.88,
+     7446.4
+    ],
+    [
+     12757.55,
+     7449.0
+    ],
+    [
+     12760.89,
+     7451.98
+    ],
+    [
+     12763.96,
+     7455.35
+    ],
+    [
+     12767.65,
+     7458.2
+    ],
+    [
+     12771.39,
+     7460.61
+    ],
+    [
+     12774.75,
+     7463.18
+    ],
+    [
+     12778.08,
+     7466.25
+    ],
+    [
+     12782.11,
+     7468.79
+    ],
+    [
+     12786.12,
+     7470.75
+    ],
+    [
+     12789.79,
+     7472.87
+    ],
+    [
+     12793.41,
+     7475.52
+    ],
+    [
+     12797.6,
+     7477.62
+    ],
+    [
+     12801.83,
+     7479.24
+    ],
+    [
+     12805.86,
+     7481.2
+    ],
+    [
+     12809.58,
+     7483.68
+    ],
+    [
+     12813.59,
+     7485.59
+    ],
+    [
+     12817.81,
+     7487.25
+    ],
+    [
+     12821.97,
+     7489.45
+    ],
+    [
+     12825.53,
+     7492.15
+    ],
+    [
+     12829.16,
+     7494.29
+    ],
+    [
+     12833.15,
+     7496.33
+    ],
+    [
+     12837.11,
+     7498.98
+    ],
+    [
+     12840.36,
+     7502.11
+    ],
+    [
+     12843.72,
+     7504.72
+    ],
+    [
+     12847.45,
+     7507.19
+    ],
+    [
+     12851.06,
+     7510.09
+    ],
+    [
+     12854.11,
+     7513.49
+    ],
+    [
+     12857.5,
+     7516.46
+    ],
+    [
+     12861.18,
+     7519.05
+    ],
+    [
+     12864.59,
+     7521.8
+    ],
+    [
+     12867.68,
+     7525.08
+    ],
+    [
+     12871.38,
+     7528.01
+    ],
+    [
+     12875.26,
+     7530.33
+    ],
+    [
+     12878.78,
+     7532.63
+    ],
+    [
+     12882.15,
+     7535.49
+    ],
+    [
+     12886.16,
+     7538.03
+    ],
+    [
+     12890.32,
+     7539.91
+    ],
+    [
+     12894.19,
+     7541.8
+    ],
+    [
+     12897.85,
+     7544.31
+    ],
+    [
+     12901.92,
+     7546.46
+    ],
+    [
+     12906.18,
+     7548.07
+    ],
+    [
+     12910.35,
+     7549.92
+    ],
+    [
+     12914.11,
+     7552.41
+    ],
+    [
+     12917.92,
+     7554.5
+    ],
+    [
+     12922.02,
+     7556.24
+    ],
+    [
+     12926.21,
+     7558.44
+    ],
+    [
+     12929.79,
+     7561.27
+    ],
+    [
+     12933.23,
+     7563.7
+    ],
+    [
+     12937.03,
+     7565.88
+    ],
+    [
+     12940.95,
+     7568.5
+    ],
+    [
+     12944.23,
+     7571.73
+    ],
+    [
+     12947.46,
+     7574.64
+    ],
+    [
+     12951.09,
+     7577.2
+    ],
+    [
+     12954.69,
+     7579.99
+    ],
+    [
+     12957.74,
+     7583.31
+    ],
+    [
+     12960.5,
+     7586.86
+    ],
+    [
+     12963.31,
+     7590.4
+    ],
+    [
+     12966.18,
+     7593.87
+    ],
+    [
+     12969.12,
+     7597.27
+    ],
+    [
+     12972.15,
+     7600.58
+    ],
+    [
+     12975.27,
+     7603.81
+    ],
+    [
+     12978.49,
+     7606.93
+    ],
+    [
+     12981.8,
+     7609.96
+    ],
+    [
+     12985.2,
+     7612.9
+    ],
+    [
+     12988.68,
+     7615.77
+    ],
+    [
+     12992.21,
+     7618.58
+    ],
+    [
+     12995.78,
+     7621.35
+    ],
+    [
+     12999.36,
+     7624.11
+    ],
+    [
+     13002.94,
+     7626.87
+    ],
+    [
+     13006.48,
+     7629.66
+    ],
+    [
+     13009.91,
+     7632.31
+    ],
+    [
+     13013.62,
+     7634.36
+    ],
+    [
+     13017.67,
+     7636.22
+    ],
+    [
+     13021.77,
+     7638.64
+    ],
+    [
+     13025.19,
+     7641.61
+    ],
+    [
+     13028.58,
+     7644.11
+    ],
+    [
+     13032.36,
+     7646.42
+    ],
+    [
+     13036.14,
+     7649.21
+    ],
+    [
+     13039.27,
+     7652.54
+    ],
+    [
+     13042.57,
+     7655.48
+    ],
+    [
+     13046.22,
+     7658.08
+    ],
+    [
+     13049.71,
+     7660.88
+    ],
+    [
+     13052.76,
+     7664.22
+    ],
+    [
+     13056.27,
+     7667.28
+    ],
+    [
+     13060.07,
+     7669.77
+    ],
+    [
+     13063.56,
+     7672.21
+    ],
+    [
+     13066.79,
+     7675.19
+    ],
+    [
+     13070.64,
+     7677.96
+    ],
+    [
+     13074.73,
+     7680.05
+    ],
+    [
+     13078.5,
+     7682.01
+    ],
+    [
+     13081.93,
+     7684.49
+    ],
+    [
+     13085.37,
+     7687.3
+    ],
+    [
+     13088.91,
+     7690.09
+    ],
+    [
+     13092.48,
+     7692.86
+    ],
+    [
+     13096.07,
+     7695.62
+    ],
+    [
+     13099.64,
+     7698.39
+    ],
+    [
+     13103.18,
+     7701.19
+    ],
+    [
+     13106.66,
+     7704.05
+    ],
+    [
+     13110.08,
+     7706.98
+    ],
+    [
+     13113.4,
+     7709.99
+    ],
+    [
+     13116.64,
+     7713.1
+    ],
+    [
+     13119.77,
+     7716.31
+    ],
+    [
+     13122.81,
+     7719.61
+    ],
+    [
+     13125.77,
+     7723.0
+    ],
+    [
+     13128.65,
+     7726.46
+    ],
+    [
+     13131.46,
+     7729.99
+    ],
+    [
+     13134.24,
+     7733.55
+    ],
+    [
+     13137.0,
+     7737.13
+    ],
+    [
+     13139.76,
+     7740.72
+    ],
+    [
+     13142.67,
+     7744.31
+    ],
+    [
+     13146.23,
+     7747.38
+    ],
+    [
+     13150.05,
+     7749.85
+    ],
+    [
+     13153.53,
+     7752.25
+    ],
+    [
+     13156.6,
+     7755.11
+    ],
+    [
+     13159.65,
+     7758.17
+    ],
+    [
+     13162.55,
+     7761.21
+    ],
+    [
+     13164.96,
+     7764.64
+    ],
+    [
+     13167.28,
+     7768.39
+    ],
+    [
+     13169.71,
+     7772.19
+    ],
+    [
+     13172.19,
+     7775.96
+    ],
+    [
+     13174.72,
+     7779.71
+    ],
+    [
+     13177.24,
+     7783.46
+    ],
+    [
+     13179.79,
+     7787.11
+    ],
+    [
+     13182.6,
+     7790.34
+    ],
+    [
+     13185.9,
+     7792.83
+    ],
+    [
+     13189.64,
+     7794.77
+    ],
+    [
+     13193.63,
+     7796.58
+    ],
+    [
+     13197.66,
+     7798.54
+    ],
+    [
+     13201.63,
+     7800.61
+    ],
+    [
+     13205.55,
+     7802.81
+    ],
+    [
+     13209.43,
+     7805.12
+    ],
+    [
+     13213.28,
+     7807.64
+    ],
+    [
+     13216.83,
+     7810.67
+    ],
+    [
+     13219.73,
+     7814.24
+    ],
+    [
+     13222.49,
+     7817.82
+    ],
+    [
+     13225.26,
+     7821.41
+    ],
+    [
+     13228.26,
+     7824.95
+    ],
+    [
+     13231.93,
+     7827.9
+    ],
+    [
+     13235.85,
+     7830.33
+    ],
+    [
+     13239.76,
+     7832.55
+    ],
+    [
+     13243.68,
+     7834.63
+    ],
+    [
+     13247.41,
+     7836.66
+    ],
+    [
+     13250.8,
+     7839.05
+    ],
+    [
+     13254.23,
+     7841.77
+    ],
+    [
+     13258.04,
+     7844.44
+    ],
+    [
+     13262.19,
+     7846.51
+    ],
+    [
+     13266.38,
+     7848.24
+    ],
+    [
+     13270.47,
+     7850.08
+    ]
+   ],
+   "points_z": [
+    32.75,
+    32.75,
+    32.75,
+    32.75,
+    32.12,
+    32.07,
+    32.22,
+    32.34,
+    32.4,
+    32.38,
+    32.3,
+    32.22,
+    32.13,
+    32.02,
+    31.94,
+    31.87,
+    31.81,
+    31.83,
+    31.86,
+    31.88,
+    31.97,
+    32.13,
+    32.27,
+    32.42,
+    32.59,
+    32.72,
+    32.78,
+    32.83,
+    32.88,
+    32.96,
+    33.04,
+    33.11,
+    33.13,
+    33.15,
+    33.14,
+    33.12,
+    33.11,
+    33.1,
+    33.05,
+    32.96,
+    32.86,
+    32.74,
+    32.61,
+    32.52,
+    32.44,
+    32.39,
+    32.36,
+    32.32,
+    32.3,
+    32.27,
+    32.21,
+    32.19,
+    32.19,
+    32.17,
+    32.15,
+    32.14,
+    32.09,
+    31.98,
+    31.86,
+    31.75,
+    31.66,
+    31.6,
+    31.56,
+    31.52,
+    31.49,
+    31.46,
+    31.39,
+    31.37,
+    31.38,
+    31.37,
+    31.33,
+    31.37,
+    31.45,
+    31.51,
+    31.6,
+    31.73,
+    31.78,
+    31.74,
+    31.7,
+    31.62,
+    31.52,
+    31.44,
+    31.38,
+    31.34,
+    31.34,
+    31.32,
+    31.28,
+    31.25,
+    31.2,
+    31.14,
+    31.08,
+    31.04,
+    30.98,
+    30.93,
+    30.89,
+    30.84,
+    30.8,
+    30.81,
+    30.86,
+    30.96,
+    31.1,
+    31.24,
+    31.37,
+    31.48,
+    31.5,
+    31.49,
+    31.51,
+    31.54,
+    31.57,
+    31.67,
+    31.81,
+    31.88,
+    31.92,
+    31.92,
+    31.85,
+    31.71,
+    31.56,
+    31.43,
+    31.33,
+    31.28,
+    31.25,
+    31.25,
+    31.27,
+    31.24,
+    31.21,
+    31.22,
+    31.24,
+    31.26,
+    31.33,
+    31.45,
+    31.61,
+    31.81,
+    32.0,
+    32.16,
+    32.24,
+    32.23,
+    32.18,
+    32.1,
+    32.04,
+    32.03,
+    32.06,
+    32.15,
+    32.33,
+    32.54,
+    32.72,
+    32.88,
+    33.01,
+    33.07,
+    33.15,
+    33.24,
+    33.3,
+    33.37,
+    33.43,
+    33.49,
+    33.53,
+    33.61,
+    33.69,
+    33.79,
+    33.93,
+    34.17,
+    34.44,
+    34.7,
+    34.98,
+    35.18,
+    35.25,
+    35.3,
+    35.38,
+    35.42,
+    35.47,
+    35.61,
+    35.76,
+    35.91,
+    36.08,
+    36.25,
+    36.39,
+    36.52,
+    36.6,
+    36.62,
+    36.59,
+    36.58,
+    36.56,
+    36.51,
+    36.5,
+    36.54,
+    36.56,
+    36.6,
+    36.75,
+    36.96,
+    37.17,
+    37.38,
+    37.56,
+    37.67,
+    37.74,
+    37.86,
+    38.01,
+    38.18,
+    38.39,
+    38.55,
+    38.64,
+    38.65,
+    38.67,
+    38.7,
+    38.77,
+    38.9,
+    39.11,
+    39.38,
+    39.68,
+    40.01,
+    40.33,
+    40.62,
+    40.85,
+    40.98,
+    41.05,
+    41.04,
+    40.98,
+    40.85,
+    40.68,
+    40.48,
+    40.27,
+    40.04,
+    39.8,
+    39.55,
+    39.3,
+    39.04,
+    38.79,
+    38.56,
+    38.34,
+    38.11,
+    37.89,
+    37.66,
+    37.44,
+    37.23,
+    37.02,
+    36.83,
+    36.65,
+    36.48,
+    36.32,
+    36.18,
+    36.04,
+    35.91,
+    35.79,
+    35.66,
+    35.51,
+    35.31,
+    35.07,
+    34.79,
+    34.46,
+    34.09,
+    33.72,
+    33.32,
+    32.87,
+    32.38,
+    31.88,
+    31.3,
+    30.68,
+    30.06,
+    29.46,
+    28.83,
+    28.32,
+    27.88,
+    27.5,
+    27.18,
+    26.92,
+    26.61,
+    26.31,
+    26.03,
+    25.72,
+    25.39,
+    25.09,
+    24.82,
+    24.52,
+    24.19,
+    23.85,
+    23.51,
+    23.09,
+    22.46,
+    21.83,
+    21.21,
+    20.58,
+    19.95,
+    19.95,
+    19.95
+   ],
+   "length_m": 1260,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 1.85,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 25,
+   "junction_step_max_m": 2.05,
+   "straight_max_m": 67.5
+  },
+  {
+   "id": "8-13-8-08",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-13",
+    "8-08"
+   ],
+   "points": [
+    [
+     10151.72,
+     7718.28
+    ],
+    [
+     10154.99,
+     7715.19
+    ],
+    [
+     10158.49,
+     7712.39
+    ],
+    [
+     10162.35,
+     7710.22
+    ],
+    [
+     10166.58,
+     7708.7
+    ],
+    [
+     10170.89,
+     7706.76
+    ],
+    [
+     10174.68,
+     7703.81
+    ],
+    [
+     10177.96,
+     7700.57
+    ],
+    [
+     10181.06,
+     7697.31
+    ],
+    [
+     10183.97,
+     7694.04
+    ],
+    [
+     10187.08,
+     7691.16
+    ],
+    [
+     10190.63,
+     7688.65
+    ],
+    [
+     10194.39,
+     7686.17
+    ],
+    [
+     10198.16,
+     7683.64
+    ],
+    [
+     10201.92,
+     7681.11
+    ],
+    [
+     10205.69,
+     7678.59
+    ],
+    [
+     10209.48,
+     7676.12
+    ],
+    [
+     10213.31,
+     7673.72
+    ],
+    [
+     10217.19,
+     7671.42
+    ],
+    [
+     10221.12,
+     7669.22
+    ],
+    [
+     10225.11,
+     7667.15
+    ],
+    [
+     10229.17,
+     7665.2
+    ],
+    [
+     10233.28,
+     7663.37
+    ],
+    [
+     10237.45,
+     7661.65
+    ],
+    [
+     10241.66,
+     7660.02
+    ],
+    [
+     10245.92,
+     7658.47
+    ],
+    [
+     10250.18,
+     7656.97
+    ],
+    [
+     10254.37,
+     7655.23
+    ],
+    [
+     10258.27,
+     7652.82
+    ],
+    [
+     10261.85,
+     7649.99
+    ],
+    [
+     10265.36,
+     7647.13
+    ],
+    [
+     10268.8,
+     7644.21
+    ],
+    [
+     10272.15,
+     7641.2
+    ],
+    [
+     10275.42,
+     7638.11
+    ],
+    [
+     10278.58,
+     7634.91
+    ],
+    [
+     10281.65,
+     7631.62
+    ],
+    [
+     10284.63,
+     7628.24
+    ],
+    [
+     10287.53,
+     7624.77
+    ],
+    [
+     10290.37,
+     7621.25
+    ],
+    [
+     10293.16,
+     7617.68
+    ],
+    [
+     10295.93,
+     7614.09
+    ],
+    [
+     10298.7,
+     7610.49
+    ],
+    [
+     10301.49,
+     7606.92
+    ],
+    [
+     10304.32,
+     7603.4
+    ],
+    [
+     10307.22,
+     7599.93
+    ],
+    [
+     10310.19,
+     7596.55
+    ],
+    [
+     10313.26,
+     7593.25
+    ],
+    [
+     10316.42,
+     7590.05
+    ],
+    [
+     10319.68,
+     7586.95
+    ],
+    [
+     10323.03,
+     7583.94
+    ],
+    [
+     10326.47,
+     7581.02
+    ],
+    [
+     10329.98,
+     7578.16
+    ],
+    [
+     10333.53,
+     7575.36
+    ],
+    [
+     10337.12,
+     7572.58
+    ],
+    [
+     10340.72,
+     7569.82
+    ],
+    [
+     10344.3,
+     7567.04
+    ],
+    [
+     10347.84,
+     7564.22
+    ],
+    [
+     10351.33,
+     7561.35
+    ],
+    [
+     10354.74,
+     7558.4
+    ],
+    [
+     10358.07,
+     7555.36
+    ],
+    [
+     10361.3,
+     7552.23
+    ],
+    [
+     10364.44,
+     7549.01
+    ],
+    [
+     10367.47,
+     7545.68
+    ],
+    [
+     10370.43,
+     7542.28
+    ],
+    [
+     10373.3,
+     7538.79
+    ],
+    [
+     10376.12,
+     7535.25
+    ],
+    [
+     10378.91,
+     7531.67
+    ],
+    [
+     10381.67,
+     7528.07
+    ],
+    [
+     10384.44,
+     7524.49
+    ],
+    [
+     10387.25,
+     7520.93
+    ],
+    [
+     10390.1,
+     7517.42
+    ],
+    [
+     10393.02,
+     7513.98
+    ],
+    [
+     10396.02,
+     7510.62
+    ],
+    [
+     10399.12,
+     7507.36
+    ],
+    [
+     10402.31,
+     7504.19
+    ],
+    [
+     10405.61,
+     7501.12
+    ],
+    [
+     10408.99,
+     7498.14
+    ],
+    [
+     10412.45,
+     7495.24
+    ],
+    [
+     10415.97,
+     7492.4
+    ],
+    [
+     10419.54,
+     7489.61
+    ],
+    [
+     10423.13,
+     7486.84
+    ],
+    [
+     10426.73,
+     7484.07
+    ],
+    [
+     10430.3,
+     7481.28
+    ],
+    [
+     10433.83,
+     7478.45
+    ],
+    [
+     10437.29,
+     7475.55
+    ],
+    [
+     10440.68,
+     7472.58
+    ],
+    [
+     10443.97,
+     7469.51
+    ],
+    [
+     10447.17,
+     7466.35
+    ],
+    [
+     10450.28,
+     7463.09
+    ],
+    [
+     10453.29,
+     7459.74
+    ],
+    [
+     10456.21,
+     7456.31
+    ],
+    [
+     10459.01,
+     7452.9
+    ],
+    [
+     10462.22,
+     7449.93
+    ],
+    [
+     10465.85,
+     7447.33
+    ],
+    [
+     10469.83,
+     7445.09
+    ],
+    [
+     10474.33,
+     7444.07
+    ],
+    [
+     10478.87,
+     7443.55
+    ],
+    [
+     10483.37,
+     7443.11
+    ],
+    [
+     10487.87,
+     7442.78
+    ],
+    [
+     10492.36,
+     7442.57
+    ],
+    [
+     10496.63,
+     7442.51
+    ],
+    [
+     10500.52,
+     7441.84
+    ],
+    [
+     10504.34,
+     7440.33
+    ],
+    [
+     10508.17,
+     7438.5
+    ],
+    [
+     10511.74,
+     7436.15
+    ],
+    [
+     10515.23,
+     7433.39
+    ],
+    [
+     10518.81,
+     7430.61
+    ],
+    [
+     10522.4,
+     7427.84
+    ],
+    [
+     10525.99,
+     7425.06
+    ],
+    [
+     10529.58,
+     7422.11
+    ],
+    [
+     10532.61,
+     7418.49
+    ],
+    [
+     10535.08,
+     7414.57
+    ],
+    [
+     10537.33,
+     7410.64
+    ],
+    [
+     10539.45,
+     7406.67
+    ],
+    [
+     10541.44,
+     7402.64
+    ],
+    [
+     10543.32,
+     7398.56
+    ],
+    [
+     10545.06,
+     7394.5
+    ],
+    [
+     10546.98,
+     7390.66
+    ],
+    [
+     10549.52,
+     7387.0
+    ],
+    [
+     10551.64,
+     7382.89
+    ],
+    [
+     10553.23,
+     7378.6
+    ],
+    [
+     10554.72,
+     7374.32
+    ],
+    [
+     10556.24,
+     7370.05
+    ],
+    [
+     10557.81,
+     7365.8
+    ],
+    [
+     10559.46,
+     7361.6
+    ],
+    [
+     10561.21,
+     7357.44
+    ],
+    [
+     10563.07,
+     7353.35
+    ],
+    [
+     10565.06,
+     7349.31
+    ],
+    [
+     10567.16,
+     7345.33
+    ],
+    [
+     10569.39,
+     7341.42
+    ],
+    [
+     10571.72,
+     7337.55
+    ],
+    [
+     10574.14,
+     7333.74
+    ],
+    [
+     10576.63,
+     7329.95
+    ],
+    [
+     10579.15,
+     7326.18
+    ],
+    [
+     10581.69,
+     7322.42
+    ],
+    [
+     10584.21,
+     7318.65
+    ],
+    [
+     10586.68,
+     7314.86
+    ],
+    [
+     10589.08,
+     7311.03
+    ],
+    [
+     10591.39,
+     7307.16
+    ],
+    [
+     10593.59,
+     7303.23
+    ],
+    [
+     10595.67,
+     7299.24
+    ],
+    [
+     10597.63,
+     7295.19
+    ],
+    [
+     10599.47,
+     7291.08
+    ],
+    [
+     10601.19,
+     7286.91
+    ],
+    [
+     10602.82,
+     7282.7
+    ],
+    [
+     10604.38,
+     7278.45
+    ],
+    [
+     10605.89,
+     7274.17
+    ],
+    [
+     10607.38,
+     7269.89
+    ],
+    [
+     10608.87,
+     7265.61
+    ],
+    [
+     10610.41,
+     7261.34
+    ],
+    [
+     10612.1,
+     7257.04
+    ],
+    [
+     10614.37,
+     7252.88
+    ],
+    [
+     10617.12,
+     7249.34
+    ],
+    [
+     10619.3,
+     7245.73
+    ],
+    [
+     10621.41,
+     7241.76
+    ],
+    [
+     10624.13,
+     7237.84
+    ],
+    [
+     10627.31,
+     7234.62
+    ],
+    [
+     10629.97,
+     7231.25
+    ],
+    [
+     10632.48,
+     7227.52
+    ],
+    [
+     10635.43,
+     7223.94
+    ],
+    [
+     10638.94,
+     7221.0
+    ],
+    [
+     10642.54,
+     7218.23
+    ],
+    [
+     10646.11,
+     7215.44
+    ],
+    [
+     10649.64,
+     7212.61
+    ],
+    [
+     10653.11,
+     7209.72
+    ],
+    [
+     10656.5,
+     7206.74
+    ],
+    [
+     10659.92,
+     7203.53
+    ],
+    [
+     10662.8,
+     7199.63
+    ],
+    [
+     10664.91,
+     7195.52
+    ],
+    [
+     10666.86,
+     7191.71
+    ],
+    [
+     10669.3,
+     7188.23
+    ],
+    [
+     10672.11,
+     7184.79
+    ],
+    [
+     10674.91,
+     7181.24
+    ],
+    [
+     10677.69,
+     7177.65
+    ],
+    [
+     10680.45,
+     7174.05
+    ],
+    [
+     10683.23,
+     7170.47
+    ],
+    [
+     10686.05,
+     7166.92
+    ],
+    [
+     10688.92,
+     7163.43
+    ],
+    [
+     10691.86,
+     7160.02
+    ],
+    [
+     10694.89,
+     7156.69
+    ],
+    [
+     10698.02,
+     7153.45
+    ],
+    [
+     10701.24,
+     7150.31
+    ],
+    [
+     10704.56,
+     7147.27
+    ],
+    [
+     10707.96,
+     7144.31
+    ],
+    [
+     10711.51,
+     7141.37
+    ],
+    [
+     10715.49,
+     7138.89
+    ],
+    [
+     10719.75,
+     7137.14
+    ],
+    [
+     10724.05,
+     7135.64
+    ],
+    [
+     10728.33,
+     7134.15
+    ],
+    [
+     10732.53,
+     7132.7
+    ],
+    [
+     10736.73,
+     7131.8
+    ],
+    [
+     10741.32,
+     7131.36
+    ],
+    [
+     10745.84,
+     7129.72
+    ],
+    [
+     10749.98,
+     7127.79
+    ],
+    [
+     10753.99,
+     7125.77
+    ],
+    [
+     10757.82,
+     7123.73
+    ],
+    [
+     10761.69,
+     7122.12
+    ],
+    [
+     10766.07,
+     7120.98
+    ],
+    [
+     10770.23,
+     7118.7
+    ],
+    [
+     10774.04,
+     7116.18
+    ],
+    [
+     10777.81,
+     7113.65
+    ],
+    [
+     10781.57,
+     7111.12
+    ],
+    [
+     10785.34,
+     7108.61
+    ],
+    [
+     10789.15,
+     7106.15
+    ],
+    [
+     10792.99,
+     7103.78
+    ],
+    [
+     10796.88,
+     7101.5
+    ],
+    [
+     10800.82,
+     7099.34
+    ],
+    [
+     10804.83,
+     7097.29
+    ],
+    [
+     10808.9,
+     7095.37
+    ],
+    [
+     10813.03,
+     7093.57
+    ],
+    [
+     10817.21,
+     7091.88
+    ],
+    [
+     10821.44,
+     7090.27
+    ],
+    [
+     10825.7,
+     7088.73
+    ],
+    [
+     10829.98,
+     7087.23
+    ],
+    [
+     10834.26,
+     7085.75
+    ],
+    [
+     10838.54,
+     7084.25
+    ],
+    [
+     10842.8,
+     7082.7
+    ],
+    [
+     10847.01,
+     7081.08
+    ],
+    [
+     10851.19,
+     7079.37
+    ],
+    [
+     10855.31,
+     7077.55
+    ],
+    [
+     10859.37,
+     7075.61
+    ],
+    [
+     10863.37,
+     7073.55
+    ],
+    [
+     10867.3,
+     7071.37
+    ],
+    [
+     10871.19,
+     7069.07
+    ],
+    [
+     10875.02,
+     7066.68
+    ],
+    [
+     10878.82,
+     7064.22
+    ],
+    [
+     10882.59,
+     7061.7
+    ],
+    [
+     10886.35,
+     7059.17
+    ],
+    [
+     10890.11,
+     7056.64
+    ],
+    [
+     10893.9,
+     7054.14
+    ],
+    [
+     10897.72,
+     7051.71
+    ],
+    [
+     10901.79,
+     7049.36
+    ],
+    [
+     10906.49,
+     7047.71
+    ],
+    [
+     10911.32,
+     7047.51
+    ],
+    [
+     10915.83,
+     7047.52
+    ],
+    [
+     10920.33,
+     7047.67
+    ],
+    [
+     10924.83,
+     7047.94
+    ],
+    [
+     10929.32,
+     7048.33
+    ],
+    [
+     10933.82,
+     7048.81
+    ],
+    [
+     10938.32,
+     7049.36
+    ],
+    [
+     10942.81,
+     7049.94
+    ],
+    [
+     10947.32,
+     7049.31
+    ],
+    [
+     10951.68,
+     7047.87
+    ],
+    [
+     10955.94,
+     7046.3
+    ],
+    [
+     10960.14,
+     7044.65
+    ],
+    [
+     10964.3,
+     7042.91
+    ],
+    [
+     10968.4,
+     7041.05
+    ],
+    [
+     10972.44,
+     7039.07
+    ],
+    [
+     10976.42,
+     7036.97
+    ],
+    [
+     10980.34,
+     7034.75
+    ],
+    [
+     10984.2,
+     7032.42
+    ],
+    [
+     10988.02,
+     7030.01
+    ],
+    [
+     10991.81,
+     7027.52
+    ],
+    [
+     10995.58,
+     7025.0
+    ],
+    [
+     10999.34,
+     7022.46
+    ],
+    [
+     11003.11,
+     7019.94
+    ],
+    [
+     11006.9,
+     7017.47
+    ],
+    [
+     11010.72,
+     7015.06
+    ],
+    [
+     11014.6,
+     7012.74
+    ],
+    [
+     11018.52,
+     7010.54
+    ],
+    [
+     11022.51,
+     7008.45
+    ],
+    [
+     11026.56,
+     7006.48
+    ],
+    [
+     11030.81,
+     7004.61
+    ],
+    [
+     11035.55,
+     7003.28
+    ],
+    [
+     11040.3,
+     7003.48
+    ],
+    [
+     11044.63,
+     7003.62
+    ],
+    [
+     11048.86,
+     7002.55
+    ],
+    [
+     11053.16,
+     7001.21
+    ],
+    [
+     11057.55,
+     7000.7
+    ],
+    [
+     11061.96,
+     7001.25
+    ],
+    [
+     11066.46,
+     7001.72
+    ],
+    [
+     11070.96,
+     7002.1
+    ],
+    [
+     11075.45,
+     7002.36
+    ],
+    [
+     11079.95,
+     7002.49
+    ],
+    [
+     11084.49,
+     7002.48
+    ],
+    [
+     11089.36,
+     7002.13
+    ],
+    [
+     11093.96,
+     7000.28
+    ],
+    [
+     11097.86,
+     6998.01
+    ],
+    [
+     11101.71,
+     6996.25
+    ],
+    [
+     11106.01,
+     6995.65
+    ],
+    [
+     11110.51,
+     6995.07
+    ],
+    [
+     11115.01,
+     6994.48
+    ],
+    [
+     11119.5,
+     6993.93
+    ],
+    [
+     11124.0,
+     6993.43
+    ],
+    [
+     11128.5,
+     6993.02
+    ],
+    [
+     11133.0,
+     6992.72
+    ],
+    [
+     11137.5,
+     6992.54
+    ],
+    [
+     11141.99,
+     6992.5
+    ],
+    [
+     11146.49,
+     6992.6
+    ],
+    [
+     11150.99,
+     6992.83
+    ],
+    [
+     11155.49,
+     6993.18
+    ],
+    [
+     11159.99,
+     6993.63
+    ],
+    [
+     11164.48,
+     6994.16
+    ],
+    [
+     11168.98,
+     6994.73
+    ],
+    [
+     11173.48,
+     6995.32
+    ],
+    [
+     11177.98,
+     6995.89
+    ],
+    [
+     11182.48,
+     6996.41
+    ],
+    [
+     11186.98,
+     6996.85
+    ],
+    [
+     11191.47,
+     6997.19
+    ],
+    [
+     11195.97,
+     6997.41
+    ],
+    [
+     11200.47,
+     6997.5
+    ],
+    [
+     11204.97,
+     6997.45
+    ],
+    [
+     11209.47,
+     6997.26
+    ],
+    [
+     11213.96,
+     6996.95
+    ],
+    [
+     11218.46,
+     6996.53
+    ],
+    [
+     11222.96,
+     6996.03
+    ],
+    [
+     11227.46,
+     6995.46
+    ],
+    [
+     11231.96,
+     6994.88
+    ],
+    [
+     11236.45,
+     6994.3
+    ],
+    [
+     11240.95,
+     6993.76
+    ],
+    [
+     11245.45,
+     6993.29
+    ],
+    [
+     11249.95,
+     6992.91
+    ],
+    [
+     11254.45,
+     6992.65
+    ],
+    [
+     11258.95,
+     6992.51
+    ],
+    [
+     11263.44,
+     6992.52
+    ],
+    [
+     11267.94,
+     6992.66
+    ],
+    [
+     11272.44,
+     6992.93
+    ],
+    [
+     11276.94,
+     6993.32
+    ],
+    [
+     11281.44,
+     6993.8
+    ],
+    [
+     11285.93,
+     6994.34
+    ],
+    [
+     11290.43,
+     6994.92
+    ],
+    [
+     11294.93,
+     6995.51
+    ],
+    [
+     11299.43,
+     6996.06
+    ],
+    [
+     11303.93,
+     6996.56
+    ],
+    [
+     11308.42,
+     6996.97
+    ],
+    [
+     11312.92,
+     6997.28
+    ],
+    [
+     11317.42,
+     6997.46
+    ],
+    [
+     11321.92,
+     6997.5
+    ],
+    [
+     11326.42,
+     6997.4
+    ],
+    [
+     11330.92,
+     6997.17
+    ],
+    [
+     11335.41,
+     6996.82
+    ],
+    [
+     11339.91,
+     6996.37
+    ],
+    [
+     11344.41,
+     6995.85
+    ],
+    [
+     11348.91,
+     6995.28
+    ],
+    [
+     11353.41,
+     6994.69
+    ],
+    [
+     11357.9,
+     6994.12
+    ],
+    [
+     11362.4,
+     6993.6
+    ],
+    [
+     11366.9,
+     6993.15
+    ],
+    [
+     11371.4,
+     6992.81
+    ],
+    [
+     11375.9,
+     6992.59
+    ],
+    [
+     11380.4,
+     6992.5
+    ],
+    [
+     11384.89,
+     6992.55
+    ],
+    [
+     11389.39,
+     6992.74
+    ],
+    [
+     11393.89,
+     6993.05
+    ],
+    [
+     11398.39,
+     6993.46
+    ],
+    [
+     11402.89,
+     6993.97
+    ],
+    [
+     11407.38,
+     6994.53
+    ],
+    [
+     11411.88,
+     6995.11
+    ],
+    [
+     11416.38,
+     6995.69
+    ],
+    [
+     11420.88,
+     6996.23
+    ],
+    [
+     11425.38,
+     6996.71
+    ],
+    [
+     11429.87,
+     6997.09
+    ],
+    [
+     11434.37,
+     6997.35
+    ],
+    [
+     11438.87,
+     6997.48
+    ],
+    [
+     11443.37,
+     6997.48
+    ],
+    [
+     11447.87,
+     6997.34
+    ],
+    [
+     11452.37,
+     6997.07
+    ],
+    [
+     11456.86,
+     6996.69
+    ],
+    [
+     11461.36,
+     6996.21
+    ],
+    [
+     11465.86,
+     6995.67
+    ],
+    [
+     11470.36,
+     6995.09
+    ],
+    [
+     11474.86,
+     6994.5
+    ],
+    [
+     11479.35,
+     6993.94
+    ],
+    [
+     11483.85,
+     6993.44
+    ],
+    [
+     11488.35,
+     6993.03
+    ],
+    [
+     11492.85,
+     6992.73
+    ],
+    [
+     11497.35,
+     6992.55
+    ],
+    [
+     11501.84,
+     6992.5
+    ],
+    [
+     11506.34,
+     6992.6
+    ],
+    [
+     11510.84,
+     6992.82
+    ],
+    [
+     11515.34,
+     6993.17
+    ],
+    [
+     11519.84,
+     6993.62
+    ],
+    [
+     11524.34,
+     6994.14
+    ],
+    [
+     11528.83,
+     6994.71
+    ],
+    [
+     11533.33,
+     6995.3
+    ],
+    [
+     11537.83,
+     6995.87
+    ],
+    [
+     11542.33,
+     6996.39
+    ],
+    [
+     11546.83,
+     6996.84
+    ],
+    [
+     11551.32,
+     6997.18
+    ],
+    [
+     11555.82,
+     6997.41
+    ],
+    [
+     11560.32,
+     6997.5
+    ],
+    [
+     11564.82,
+     6997.45
+    ],
+    [
+     11569.32,
+     6997.27
+    ],
+    [
+     11573.81,
+     6996.96
+    ],
+    [
+     11578.31,
+     6996.54
+    ],
+    [
+     11582.81,
+     6996.04
+    ],
+    [
+     11587.31,
+     6995.48
+    ],
+    [
+     11591.81,
+     6994.9
+    ],
+    [
+     11596.31,
+     6994.32
+    ],
+    [
+     11600.8,
+     6993.78
+    ],
+    [
+     11605.3,
+     6993.3
+    ],
+    [
+     11609.8,
+     6992.92
+    ],
+    [
+     11614.3,
+     6992.65
+    ],
+    [
+     11618.8,
+     6992.52
+    ],
+    [
+     11623.29,
+     6992.52
+    ],
+    [
+     11627.79,
+     6992.66
+    ],
+    [
+     11632.29,
+     6992.92
+    ],
+    [
+     11636.79,
+     6993.3
+    ],
+    [
+     11641.29,
+     6993.78
+    ],
+    [
+     11645.78,
+     6994.32
+    ],
+    [
+     11650.28,
+     6994.9
+    ],
+    [
+     11654.78,
+     6995.49
+    ],
+    [
+     11659.28,
+     6996.05
+    ],
+    [
+     11663.78,
+     6996.55
+    ],
+    [
+     11668.28,
+     6996.96
+    ],
+    [
+     11672.77,
+     6997.27
+    ],
+    [
+     11677.27,
+     6997.45
+    ],
+    [
+     11681.77,
+     6997.5
+    ],
+    [
+     11686.27,
+     6997.41
+    ],
+    [
+     11690.77,
+     6997.18
+    ],
+    [
+     11695.26,
+     6996.84
+    ],
+    [
+     11699.76,
+     6996.39
+    ],
+    [
+     11704.26,
+     6995.87
+    ],
+    [
+     11708.76,
+     6995.3
+    ],
+    [
+     11713.26,
+     6994.71
+    ],
+    [
+     11717.75,
+     6994.14
+    ],
+    [
+     11722.25,
+     6993.61
+    ],
+    [
+     11726.75,
+     6993.17
+    ],
+    [
+     11731.25,
+     6992.82
+    ],
+    [
+     11735.75,
+     6992.6
+    ],
+    [
+     11740.25,
+     6992.5
+    ],
+    [
+     11744.74,
+     6992.55
+    ],
+    [
+     11749.24,
+     6992.73
+    ],
+    [
+     11753.74,
+     6993.03
+    ],
+    [
+     11758.24,
+     6993.45
+    ],
+    [
+     11762.74,
+     6993.95
+    ],
+    [
+     11767.23,
+     6994.51
+    ],
+    [
+     11771.72,
+     6995.09
+    ],
+    [
+     11775.93,
+     6996.44
+    ],
+    [
+     11779.72,
+     6998.72
+    ],
+    [
+     11783.5,
+     7001.14
+    ],
+    [
+     11787.35,
+     7003.5
+    ],
+    [
+     11791.26,
+     7005.75
+    ],
+    [
+     11795.22,
+     7007.88
+    ],
+    [
+     11799.24,
+     7009.9
+    ],
+    [
+     11803.32,
+     7011.79
+    ],
+    [
+     11807.48,
+     7013.57
+    ],
+    [
+     11811.84,
+     7015.23
+    ],
+    [
+     11816.55,
+     7016.17
+    ],
+    [
+     11821.23,
+     7015.69
+    ],
+    [
+     11825.74,
+     7015.11
+    ],
+    [
+     11830.23,
+     7014.52
+    ],
+    [
+     11834.73,
+     7013.96
+    ],
+    [
+     11839.23,
+     7013.46
+    ],
+    [
+     11843.73,
+     7013.04
+    ],
+    [
+     11848.23,
+     7012.73
+    ],
+    [
+     11852.72,
+     7012.55
+    ],
+    [
+     11857.22,
+     7012.5
+    ],
+    [
+     11861.72,
+     7012.59
+    ],
+    [
+     11866.22,
+     7012.81
+    ],
+    [
+     11870.72,
+     7013.16
+    ],
+    [
+     11875.21,
+     7013.6
+    ],
+    [
+     11879.71,
+     7014.12
+    ],
+    [
+     11884.21,
+     7014.69
+    ],
+    [
+     11888.71,
+     7015.28
+    ],
+    [
+     11893.21,
+     7015.85
+    ],
+    [
+     11897.71,
+     7016.38
+    ],
+    [
+     11902.2,
+     7016.83
+    ],
+    [
+     11906.7,
+     7017.17
+    ],
+    [
+     11911.2,
+     7017.4
+    ],
+    [
+     11915.7,
+     7017.5
+    ],
+    [
+     11920.2,
+     7017.45
+    ],
+    [
+     11924.69,
+     7017.28
+    ],
+    [
+     11929.19,
+     7016.97
+    ],
+    [
+     11933.69,
+     7016.56
+    ],
+    [
+     11938.19,
+     7016.06
+    ],
+    [
+     11942.69,
+     7015.5
+    ],
+    [
+     11947.19,
+     7014.92
+    ],
+    [
+     11951.68,
+     7014.34
+    ],
+    [
+     11956.18,
+     7013.79
+    ],
+    [
+     11960.68,
+     7013.32
+    ],
+    [
+     11965.18,
+     7012.93
+    ],
+    [
+     11969.68,
+     7012.66
+    ],
+    [
+     11974.17,
+     7012.52
+    ],
+    [
+     11978.67,
+     7012.52
+    ],
+    [
+     11983.17,
+     7012.65
+    ],
+    [
+     11987.67,
+     7012.91
+    ],
+    [
+     11992.17,
+     7013.29
+    ],
+    [
+     11996.66,
+     7013.76
+    ],
+    [
+     12001.16,
+     7014.3
+    ],
+    [
+     12005.66,
+     7014.88
+    ],
+    [
+     12010.16,
+     7015.47
+    ],
+    [
+     12014.66,
+     7016.03
+    ],
+    [
+     12019.16,
+     7016.53
+    ],
+    [
+     12023.65,
+     7016.95
+    ],
+    [
+     12028.15,
+     7017.26
+    ],
+    [
+     12032.65,
+     7017.45
+    ],
+    [
+     12037.15,
+     7017.5
+    ],
+    [
+     12041.65,
+     7017.41
+    ],
+    [
+     12046.14,
+     7017.19
+    ],
+    [
+     12050.64,
+     7016.85
+    ],
+    [
+     12055.14,
+     7016.41
+    ],
+    [
+     12059.64,
+     7015.89
+    ],
+    [
+     12064.14,
+     7015.32
+    ],
+    [
+     12068.63,
+     7014.73
+    ],
+    [
+     12073.13,
+     7014.16
+    ],
+    [
+     12077.63,
+     7013.63
+    ],
+    [
+     12082.13,
+     7013.18
+    ],
+    [
+     12086.63,
+     7012.83
+    ],
+    [
+     12091.13,
+     7012.6
+    ],
+    [
+     12095.62,
+     7012.5
+    ],
+    [
+     12100.12,
+     7012.54
+    ],
+    [
+     12104.62,
+     7012.72
+    ],
+    [
+     12109.12,
+     7013.02
+    ],
+    [
+     12113.62,
+     7013.43
+    ],
+    [
+     12118.11,
+     7013.93
+    ],
+    [
+     12122.61,
+     7014.49
+    ],
+    [
+     12127.11,
+     7015.07
+    ],
+    [
+     12131.61,
+     7015.65
+    ],
+    [
+     12136.11,
+     7016.2
+    ],
+    [
+     12140.6,
+     7016.68
+    ],
+    [
+     12145.1,
+     7017.06
+    ],
+    [
+     12149.6,
+     7017.34
+    ],
+    [
+     12154.1,
+     7017.48
+    ],
+    [
+     12158.6,
+     7017.49
+    ],
+    [
+     12163.1,
+     7017.35
+    ],
+    [
+     12167.59,
+     7017.09
+    ],
+    [
+     12172.09,
+     7016.72
+    ],
+    [
+     12176.59,
+     7016.25
+    ],
+    [
+     12181.09,
+     7015.71
+    ],
+    [
+     12185.59,
+     7015.13
+    ],
+    [
+     12190.08,
+     7014.54
+    ],
+    [
+     12194.58,
+     7013.98
+    ],
+    [
+     12199.08,
+     7013.48
+    ],
+    [
+     12203.58,
+     7013.25
+    ],
+    [
+     12208.08,
+     7013.48
+    ],
+    [
+     12212.65,
+     7013.9
+    ],
+    [
+     12217.14,
+     7015.1
+    ],
+    [
+     12221.32,
+     7016.96
+    ]
+   ],
+   "points_z": [
+    88.25,
+    88.25,
+    88.25,
+    88.25,
+    88.88,
+    89.51,
+    90.14,
+    90.77,
+    91.4,
+    92.03,
+    92.66,
+    93.29,
+    93.63,
+    93.83,
+    94.02,
+    94.2,
+    94.36,
+    94.5,
+    94.62,
+    94.73,
+    94.81,
+    94.88,
+    94.94,
+    95.01,
+    95.05,
+    95.07,
+    95.08,
+    95.07,
+    95.07,
+    95.06,
+    95.04,
+    95.02,
+    95.03,
+    95.05,
+    95.1,
+    95.15,
+    95.19,
+    95.15,
+    95.09,
+    94.97,
+    94.82,
+    94.66,
+    94.51,
+    94.34,
+    94.14,
+    93.94,
+    93.71,
+    93.44,
+    93.16,
+    92.91,
+    92.68,
+    92.5,
+    92.33,
+    92.13,
+    91.96,
+    91.83,
+    91.71,
+    91.65,
+    91.63,
+    91.6,
+    91.56,
+    91.54,
+    91.5,
+    91.46,
+    91.41,
+    91.29,
+    91.12,
+    90.89,
+    90.66,
+    90.4,
+    90.17,
+    89.97,
+    89.79,
+    89.6,
+    89.49,
+    89.44,
+    89.47,
+    89.56,
+    89.75,
+    89.98,
+    90.21,
+    90.47,
+    90.69,
+    90.84,
+    90.94,
+    90.99,
+    90.99,
+    91.0,
+    91.03,
+    91.04,
+    90.98,
+    90.86,
+    90.66,
+    90.36,
+    89.96,
+    89.55,
+    89.14,
+    88.71,
+    88.31,
+    87.94,
+    87.56,
+    87.19,
+    86.88,
+    86.63,
+    86.45,
+    86.41,
+    86.49,
+    86.66,
+    86.87,
+    87.12,
+    87.33,
+    87.52,
+    87.7,
+    87.89,
+    88.1,
+    88.28,
+    88.38,
+    88.4,
+    88.3,
+    88.1,
+    87.85,
+    87.54,
+    87.21,
+    86.87,
+    86.51,
+    86.16,
+    85.84,
+    85.55,
+    85.27,
+    84.96,
+    84.64,
+    84.36,
+    84.14,
+    83.96,
+    83.83,
+    83.72,
+    83.62,
+    83.57,
+    83.61,
+    83.74,
+    83.98,
+    84.19,
+    84.29,
+    84.25,
+    84.05,
+    83.77,
+    83.47,
+    83.16,
+    82.87,
+    82.63,
+    82.35,
+    82.13,
+    82.03,
+    82.01,
+    82.07,
+    82.23,
+    82.39,
+    82.5,
+    82.61,
+    82.69,
+    82.68,
+    82.61,
+    82.5,
+    82.31,
+    82.04,
+    81.71,
+    81.41,
+    81.12,
+    80.83,
+    80.59,
+    80.46,
+    80.32,
+    80.16,
+    80.04,
+    80.01,
+    80.0,
+    80.04,
+    80.14,
+    80.29,
+    80.45,
+    80.63,
+    80.85,
+    81.07,
+    81.3,
+    81.54,
+    81.79,
+    82.11,
+    82.51,
+    82.95,
+    83.39,
+    83.84,
+    84.27,
+    84.61,
+    84.9,
+    85.16,
+    85.39,
+    85.52,
+    85.57,
+    85.57,
+    85.46,
+    85.28,
+    85.0,
+    84.75,
+    84.54,
+    84.35,
+    84.18,
+    84.08,
+    83.97,
+    83.8,
+    83.61,
+    83.42,
+    83.2,
+    83.01,
+    82.84,
+    82.69,
+    82.55,
+    82.42,
+    82.31,
+    82.22,
+    82.15,
+    82.11,
+    82.16,
+    82.26,
+    82.41,
+    82.59,
+    82.76,
+    82.83,
+    82.81,
+    82.73,
+    82.61,
+    82.47,
+    82.35,
+    82.29,
+    82.22,
+    82.17,
+    82.12,
+    82.1,
+    82.05,
+    82.06,
+    82.11,
+    82.17,
+    82.18,
+    82.13,
+    82.03,
+    81.92,
+    81.83,
+    81.8,
+    81.81,
+    81.88,
+    81.93,
+    81.96,
+    82.02,
+    82.08,
+    82.15,
+    82.31,
+    82.52,
+    82.75,
+    83.07,
+    83.39,
+    83.68,
+    83.9,
+    84.09,
+    84.25,
+    84.42,
+    84.56,
+    84.65,
+    84.69,
+    84.68,
+    84.61,
+    84.57,
+    84.57,
+    84.6,
+    84.63,
+    84.68,
+    84.69,
+    84.6,
+    84.44,
+    84.27,
+    84.04,
+    83.8,
+    83.61,
+    83.45,
+    83.29,
+    83.15,
+    83.06,
+    83.01,
+    83.02,
+    83.07,
+    83.14,
+    83.24,
+    83.36,
+    83.52,
+    83.7,
+    83.91,
+    84.14,
+    84.35,
+    84.53,
+    84.64,
+    84.69,
+    84.69,
+    84.64,
+    84.55,
+    84.41,
+    84.23,
+    84.0,
+    83.73,
+    83.44,
+    83.14,
+    82.84,
+    82.54,
+    82.26,
+    82.01,
+    81.77,
+    81.56,
+    81.37,
+    81.2,
+    81.05,
+    80.91,
+    80.79,
+    80.67,
+    80.55,
+    80.43,
+    80.29,
+    80.14,
+    79.97,
+    79.77,
+    79.53,
+    79.27,
+    78.96,
+    78.62,
+    78.24,
+    77.82,
+    77.37,
+    76.92,
+    76.49,
+    76.08,
+    75.71,
+    75.38,
+    75.08,
+    74.81,
+    74.56,
+    74.35,
+    74.17,
+    74.02,
+    73.91,
+    73.82,
+    73.77,
+    73.72,
+    73.68,
+    73.64,
+    73.57,
+    73.48,
+    73.35,
+    73.18,
+    72.95,
+    72.67,
+    72.35,
+    71.99,
+    71.6,
+    71.19,
+    70.75,
+    70.31,
+    69.88,
+    69.49,
+    69.13,
+    68.83,
+    68.59,
+    68.41,
+    68.29,
+    68.21,
+    68.16,
+    68.13,
+    68.12,
+    68.12,
+    68.11,
+    68.09,
+    68.04,
+    67.93,
+    67.76,
+    67.54,
+    67.25,
+    66.92,
+    66.55,
+    66.16,
+    65.75,
+    65.34,
+    64.94,
+    64.53,
+    64.14,
+    63.77,
+    63.44,
+    63.14,
+    62.9,
+    62.69,
+    62.52,
+    62.36,
+    62.21,
+    62.04,
+    61.85,
+    61.65,
+    61.42,
+    61.17,
+    60.88,
+    60.57,
+    60.22,
+    59.85,
+    59.47,
+    59.08,
+    58.7,
+    58.32,
+    57.96,
+    57.59,
+    57.21,
+    56.81,
+    56.4,
+    55.97,
+    55.52,
+    55.08,
+    54.64,
+    54.22,
+    53.82,
+    53.46,
+    53.13,
+    52.84,
+    52.58,
+    52.36,
+    52.18,
+    52.05,
+    51.97,
+    51.93,
+    51.94,
+    51.99,
+    52.08,
+    52.17,
+    52.25,
+    52.32,
+    52.3,
+    52.14,
+    51.88,
+    51.52,
+    51.09,
+    50.61,
+    50.13,
+    49.62,
+    49.13,
+    48.69,
+    48.34,
+    48.05,
+    47.83,
+    47.71,
+    47.57,
+    47.39,
+    47.23,
+    47.07,
+    46.86,
+    46.68,
+    46.47,
+    46.23,
+    45.95,
+    45.64,
+    45.3,
+    44.93,
+    44.55,
+    44.19,
+    43.77,
+    43.31,
+    42.87,
+    42.48,
+    42.13,
+    41.81,
+    41.58,
+    41.39,
+    41.19,
+    40.95,
+    40.71,
+    40.42,
+    40.12,
+    39.85,
+    39.59,
+    39.43,
+    39.33,
+    39.22,
+    39.06,
+    38.86,
+    38.62,
+    38.37,
+    38.11,
+    37.86,
+    37.64,
+    37.39,
+    37.04,
+    36.66,
+    36.3,
+    35.97,
+    35.67,
+    35.43,
+    35.22,
+    35.03,
+    34.84,
+    34.64,
+    34.47,
+    34.34,
+    34.21,
+    34.06,
+    33.92,
+    33.78,
+    33.6,
+    33.44,
+    33.28,
+    33.17,
+    33.08,
+    33.01,
+    32.94,
+    32.87,
+    32.75,
+    32.62,
+    32.52,
+    32.43,
+    32.33,
+    32.27,
+    32.2,
+    32.12,
+    32.05,
+    31.96,
+    31.83,
+    32.12,
+    32.75,
+    32.75,
+    32.75
+   ],
+   "length_m": 2375,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 3.56,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 67.7
+  },
+  {
+   "id": "8-14-8-13",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-14",
+    "8-13"
+   ],
+   "points": [
+    [
+     9571.75,
+     6787.67
+    ],
+    [
+     9573.88,
+     6791.62
+    ],
+    [
+     9575.8,
+     6795.69
+    ],
+    [
+     9577.59,
+     6799.85
+    ],
+    [
+     9579.28,
+     6804.06
+    ],
+    [
+     9581.14,
+     6808.14
+    ],
+    [
+     9583.17,
+     6812.06
+    ],
+    [
+     9585.2,
+     6815.98
+    ],
+    [
+     9587.3,
+     6819.92
+    ],
+    [
+     9589.52,
+     6823.82
+    ],
+    [
+     9591.84,
+     6827.67
+    ],
+    [
+     9594.25,
+     6831.48
+    ],
+    [
+     9596.73,
+     6835.25
+    ],
+    [
+     9599.25,
+     6839.0
+    ],
+    [
+     9601.77,
+     6842.75
+    ],
+    [
+     9604.29,
+     6846.5
+    ],
+    [
+     9606.75,
+     6850.28
+    ],
+    [
+     9609.14,
+     6854.1
+    ],
+    [
+     9611.45,
+     6857.96
+    ],
+    [
+     9613.64,
+     6861.87
+    ],
+    [
+     9615.72,
+     6865.84
+    ],
+    [
+     9617.67,
+     6869.88
+    ],
+    [
+     9619.5,
+     6873.97
+    ],
+    [
+     9621.23,
+     6878.12
+    ],
+    [
+     9622.85,
+     6882.32
+    ],
+    [
+     9624.41,
+     6886.55
+    ],
+    [
+     9625.91,
+     6890.81
+    ],
+    [
+     9627.39,
+     6895.08
+    ],
+    [
+     9628.61,
+     6899.33
+    ],
+    [
+     9628.76,
+     6903.62
+    ],
+    [
+     9628.28,
+     6908.01
+    ],
+    [
+     9627.91,
+     6912.49
+    ],
+    [
+     9627.66,
+     6917.2
+    ],
+    [
+     9628.51,
+     6922.09
+    ],
+    [
+     9630.47,
+     6926.48
+    ],
+    [
+     9632.62,
+     6930.48
+    ],
+    [
+     9634.87,
+     6934.36
+    ],
+    [
+     9637.21,
+     6938.2
+    ],
+    [
+     9639.64,
+     6942.0
+    ],
+    [
+     9642.13,
+     6945.77
+    ],
+    [
+     9644.65,
+     6949.52
+    ],
+    [
+     9647.18,
+     6953.26
+    ],
+    [
+     9649.68,
+     6957.02
+    ],
+    [
+     9652.13,
+     6960.81
+    ],
+    [
+     9654.51,
+     6964.63
+    ],
+    [
+     9656.79,
+     6968.51
+    ],
+    [
+     9658.96,
+     6972.43
+    ],
+    [
+     9661.0,
+     6976.42
+    ],
+    [
+     9662.93,
+     6980.47
+    ],
+    [
+     9664.77,
+     6984.65
+    ],
+    [
+     9666.27,
+     6989.23
+    ],
+    [
+     9666.4,
+     6994.04
+    ],
+    [
+     9665.89,
+     6998.6
+    ],
+    [
+     9665.32,
+     7003.08
+    ],
+    [
+     9664.73,
+     7007.57
+    ],
+    [
+     9664.16,
+     7012.05
+    ],
+    [
+     9663.64,
+     7016.53
+    ],
+    [
+     9663.19,
+     7021.01
+    ],
+    [
+     9662.84,
+     7025.49
+    ],
+    [
+     9662.6,
+     7029.98
+    ],
+    [
+     9662.5,
+     7034.46
+    ],
+    [
+     9662.54,
+     7038.94
+    ],
+    [
+     9662.71,
+     7043.42
+    ],
+    [
+     9663.01,
+     7047.9
+    ],
+    [
+     9663.41,
+     7052.39
+    ],
+    [
+     9663.9,
+     7056.87
+    ],
+    [
+     9664.46,
+     7061.35
+    ],
+    [
+     9665.04,
+     7065.83
+    ],
+    [
+     9665.62,
+     7070.32
+    ],
+    [
+     9666.17,
+     7074.8
+    ],
+    [
+     9666.65,
+     7079.26
+    ],
+    [
+     9667.13,
+     7083.4
+    ],
+    [
+     9668.7,
+     7087.11
+    ],
+    [
+     9670.73,
+     7090.93
+    ],
+    [
+     9672.74,
+     7094.92
+    ],
+    [
+     9674.64,
+     7098.98
+    ],
+    [
+     9676.42,
+     7103.1
+    ],
+    [
+     9678.1,
+     7107.27
+    ],
+    [
+     9679.69,
+     7111.49
+    ],
+    [
+     9681.22,
+     7115.73
+    ],
+    [
+     9682.71,
+     7120.0
+    ],
+    [
+     9684.19,
+     7124.27
+    ],
+    [
+     9685.69,
+     7128.54
+    ],
+    [
+     9687.33,
+     7132.83
+    ],
+    [
+     9689.55,
+     7137.01
+    ],
+    [
+     9692.51,
+     7140.66
+    ],
+    [
+     9695.56,
+     7143.99
+    ],
+    [
+     9698.69,
+     7147.23
+    ],
+    [
+     9702.13,
+     7150.45
+    ],
+    [
+     9706.21,
+     7153.0
+    ],
+    [
+     9710.46,
+     7154.87
+    ],
+    [
+     9714.68,
+     7156.5
+    ],
+    [
+     9718.91,
+     7158.05
+    ],
+    [
+     9723.17,
+     7159.55
+    ],
+    [
+     9727.45,
+     7161.03
+    ],
+    [
+     9731.71,
+     7162.52
+    ],
+    [
+     9735.96,
+     7164.05
+    ],
+    [
+     9740.18,
+     7165.64
+    ],
+    [
+     9744.35,
+     7167.31
+    ],
+    [
+     9748.47,
+     7169.09
+    ],
+    [
+     9752.53,
+     7170.98
+    ],
+    [
+     9756.54,
+     7173.0
+    ],
+    [
+     9760.48,
+     7175.14
+    ],
+    [
+     9764.36,
+     7177.39
+    ],
+    [
+     9768.2,
+     7179.74
+    ],
+    [
+     9771.99,
+     7182.18
+    ],
+    [
+     9775.76,
+     7184.67
+    ],
+    [
+     9779.51,
+     7187.19
+    ],
+    [
+     9783.26,
+     7189.72
+    ],
+    [
+     9787.02,
+     7192.22
+    ],
+    [
+     9790.81,
+     7194.67
+    ],
+    [
+     9794.63,
+     7197.04
+    ],
+    [
+     9798.51,
+     7199.31
+    ],
+    [
+     9802.44,
+     7201.47
+    ],
+    [
+     9806.43,
+     7203.51
+    ],
+    [
+     9810.48,
+     7205.42
+    ],
+    [
+     9814.59,
+     7207.22
+    ],
+    [
+     9818.73,
+     7208.9
+    ],
+    [
+     9822.76,
+     7210.6
+    ],
+    [
+     9826.51,
+     7212.72
+    ],
+    [
+     9829.72,
+     7215.71
+    ],
+    [
+     9832.48,
+     7219.27
+    ],
+    [
+     9834.99,
+     7223.04
+    ],
+    [
+     9837.46,
+     7226.81
+    ],
+    [
+     9839.87,
+     7230.62
+    ],
+    [
+     9842.18,
+     7234.48
+    ],
+    [
+     9844.4,
+     7238.43
+    ],
+    [
+     9846.45,
+     7242.76
+    ],
+    [
+     9847.44,
+     7247.64
+    ],
+    [
+     9847.27,
+     7252.38
+    ],
+    [
+     9846.97,
+     7256.86
+    ],
+    [
+     9846.55,
+     7261.23
+    ],
+    [
+     9846.68,
+     7265.45
+    ],
+    [
+     9847.89,
+     7269.65
+    ],
+    [
+     9849.36,
+     7273.9
+    ],
+    [
+     9850.85,
+     7278.17
+    ],
+    [
+     9852.37,
+     7282.42
+    ],
+    [
+     9853.95,
+     7286.64
+    ],
+    [
+     9855.61,
+     7290.83
+    ],
+    [
+     9857.37,
+     7294.96
+    ],
+    [
+     9859.25,
+     7299.04
+    ],
+    [
+     9861.35,
+     7303.15
+    ],
+    [
+     9864.06,
+     7307.12
+    ],
+    [
+     9867.45,
+     7310.42
+    ],
+    [
+     9870.91,
+     7313.36
+    ],
+    [
+     9874.41,
+     7316.19
+    ],
+    [
+     9877.96,
+     7318.98
+    ],
+    [
+     9881.53,
+     7321.74
+    ],
+    [
+     9884.94,
+     7324.75
+    ],
+    [
+     9887.78,
+     7328.36
+    ],
+    [
+     9890.27,
+     7332.17
+    ],
+    [
+     9892.65,
+     7335.99
+    ],
+    [
+     9894.94,
+     7339.86
+    ],
+    [
+     9897.12,
+     7343.78
+    ],
+    [
+     9899.18,
+     7347.76
+    ],
+    [
+     9901.11,
+     7351.81
+    ],
+    [
+     9902.93,
+     7355.91
+    ],
+    [
+     9904.64,
+     7360.06
+    ],
+    [
+     9906.26,
+     7364.27
+    ],
+    [
+     9907.8,
+     7368.51
+    ],
+    [
+     9909.3,
+     7372.77
+    ],
+    [
+     9910.78,
+     7377.04
+    ],
+    [
+     9912.27,
+     7381.3
+    ],
+    [
+     9913.8,
+     7385.55
+    ],
+    [
+     9915.41,
+     7389.78
+    ],
+    [
+     9917.27,
+     7394.04
+    ],
+    [
+     9919.83,
+     7398.11
+    ],
+    [
+     9923.02,
+     7401.55
+    ],
+    [
+     9926.22,
+     7404.71
+    ],
+    [
+     9929.46,
+     7407.73
+    ],
+    [
+     9932.55,
+     7410.66
+    ],
+    [
+     9935.15,
+     7414.02
+    ],
+    [
+     9937.58,
+     7417.72
+    ],
+    [
+     9940.07,
+     7421.48
+    ],
+    [
+     9942.6,
+     7425.22
+    ],
+    [
+     9945.12,
+     7428.97
+    ],
+    [
+     9947.61,
+     7432.73
+    ],
+    [
+     9950.06,
+     7436.4
+    ],
+    [
+     9952.71,
+     7439.71
+    ],
+    [
+     9955.86,
+     7442.61
+    ],
+    [
+     9959.22,
+     7445.74
+    ],
+    [
+     9962.24,
+     7449.48
+    ],
+    [
+     9964.49,
+     7453.65
+    ],
+    [
+     9966.31,
+     7457.82
+    ],
+    [
+     9968.0,
+     7461.99
+    ],
+    [
+     9969.6,
+     7466.2
+    ],
+    [
+     9971.13,
+     7470.45
+    ],
+    [
+     9972.62,
+     7474.71
+    ],
+    [
+     9974.11,
+     7478.98
+    ],
+    [
+     9975.6,
+     7483.24
+    ],
+    [
+     9977.15,
+     7487.48
+    ],
+    [
+     9978.76,
+     7491.69
+    ],
+    [
+     9980.46,
+     7495.85
+    ],
+    [
+     9982.27,
+     7499.95
+    ],
+    [
+     9984.2,
+     7504.0
+    ],
+    [
+     9986.26,
+     7507.98
+    ],
+    [
+     9988.43,
+     7511.91
+    ],
+    [
+     9990.71,
+     7515.78
+    ],
+    [
+     9993.09,
+     7519.6
+    ],
+    [
+     9995.55,
+     7523.38
+    ],
+    [
+     9998.05,
+     7527.14
+    ],
+    [
+     10000.58,
+     7530.89
+    ],
+    [
+     10003.1,
+     7534.64
+    ],
+    [
+     10005.59,
+     7538.41
+    ],
+    [
+     10008.01,
+     7542.21
+    ],
+    [
+     10010.35,
+     7546.05
+    ],
+    [
+     10012.59,
+     7549.94
+    ],
+    [
+     10014.72,
+     7553.89
+    ],
+    [
+     10016.72,
+     7557.9
+    ],
+    [
+     10018.6,
+     7561.97
+    ],
+    [
+     10020.37,
+     7566.09
+    ],
+    [
+     10022.04,
+     7570.27
+    ],
+    [
+     10023.62,
+     7574.49
+    ],
+    [
+     10025.14,
+     7578.74
+    ],
+    [
+     10026.63,
+     7583.01
+    ],
+    [
+     10028.04,
+     7587.27
+    ],
+    [
+     10028.89,
+     7591.59
+    ],
+    [
+     10029.19,
+     7596.17
+    ],
+    [
+     10030.63,
+     7600.62
+    ],
+    [
+     10032.07,
+     7604.6
+    ],
+    [
+     10032.56,
+     7608.54
+    ],
+    [
+     10032.52,
+     7613.14
+    ],
+    [
+     10033.91,
+     7617.95
+    ],
+    [
+     10036.05,
+     7622.03
+    ],
+    [
+     10037.88,
+     7625.83
+    ],
+    [
+     10038.99,
+     7630.14
+    ],
+    [
+     10041.16,
+     7634.29
+    ],
+    [
+     10043.56,
+     7638.12
+    ],
+    [
+     10045.25,
+     7642.29
+    ],
+    [
+     10045.82,
+     7646.73
+    ],
+    [
+     10047.1,
+     7650.78
+    ],
+    [
+     10049.29,
+     7654.55
+    ],
+    [
+     10051.45,
+     7658.79
+    ],
+    [
+     10052.45,
+     7663.2
+    ],
+    [
+     10053.88,
+     7667.09
+    ],
+    [
+     10055.77,
+     7671.16
+    ],
+    [
+     10057.15,
+     7675.93
+    ],
+    [
+     10057.0,
+     7680.66
+    ],
+    [
+     10057.04,
+     7684.83
+    ],
+    [
+     10058.2,
+     7688.93
+    ],
+    [
+     10059.57,
+     7693.27
+    ],
+    [
+     10059.98,
+     7697.8
+    ],
+    [
+     10059.59,
+     7702.32
+    ],
+    [
+     10060.46,
+     7706.79
+    ],
+    [
+     10062.45,
+     7710.87
+    ],
+    [
+     10064.75,
+     7714.75
+    ]
+   ],
+   "points_z": [
+    67.25,
+    67.25,
+    67.25,
+    67.25,
+    67.88,
+    68.5,
+    69.13,
+    69.76,
+    70.39,
+    71.01,
+    71.64,
+    72.11,
+    72.35,
+    72.59,
+    72.84,
+    73.08,
+    73.32,
+    73.56,
+    73.81,
+    74.05,
+    74.29,
+    74.52,
+    74.76,
+    75.0,
+    75.24,
+    75.47,
+    75.71,
+    75.94,
+    76.16,
+    76.37,
+    76.57,
+    76.78,
+    76.99,
+    77.22,
+    77.46,
+    77.71,
+    77.96,
+    78.2,
+    78.44,
+    78.68,
+    78.92,
+    79.17,
+    79.41,
+    79.65,
+    79.89,
+    80.13,
+    80.37,
+    80.61,
+    80.86,
+    81.1,
+    81.33,
+    81.55,
+    81.76,
+    81.96,
+    82.16,
+    82.37,
+    82.59,
+    82.83,
+    83.1,
+    83.39,
+    83.7,
+    84.04,
+    84.39,
+    84.77,
+    85.17,
+    85.58,
+    86.01,
+    86.44,
+    86.87,
+    87.28,
+    87.67,
+    88.06,
+    88.43,
+    88.77,
+    89.1,
+    89.4,
+    89.66,
+    89.9,
+    90.09,
+    90.22,
+    90.23,
+    90.15,
+    89.94,
+    89.62,
+    89.23,
+    88.82,
+    88.38,
+    87.96,
+    87.57,
+    87.21,
+    86.89,
+    86.63,
+    86.39,
+    86.15,
+    85.88,
+    85.57,
+    85.21,
+    84.81,
+    84.39,
+    83.94,
+    83.45,
+    82.9,
+    82.29,
+    81.67,
+    81.04,
+    80.41,
+    79.78,
+    79.16,
+    78.53,
+    77.9,
+    77.27,
+    76.65,
+    76.02,
+    75.39,
+    75.02,
+    74.7,
+    74.39,
+    74.07,
+    73.7,
+    73.38,
+    73.13,
+    72.91,
+    72.75,
+    72.68,
+    72.65,
+    72.6,
+    72.57,
+    72.57,
+    72.57,
+    72.6,
+    72.71,
+    72.9,
+    73.12,
+    73.38,
+    73.73,
+    74.12,
+    74.49,
+    74.89,
+    75.31,
+    75.66,
+    75.94,
+    76.22,
+    76.49,
+    76.76,
+    77.05,
+    77.33,
+    77.55,
+    77.78,
+    78.0,
+    78.18,
+    78.4,
+    78.7,
+    78.94,
+    79.19,
+    79.44,
+    79.63,
+    79.77,
+    79.9,
+    79.99,
+    80.07,
+    80.16,
+    80.27,
+    80.48,
+    80.75,
+    81.06,
+    81.42,
+    81.84,
+    82.2,
+    82.54,
+    82.9,
+    83.23,
+    83.56,
+    83.85,
+    84.15,
+    84.41,
+    84.64,
+    84.86,
+    85.15,
+    85.5,
+    85.92,
+    86.37,
+    86.8,
+    87.2,
+    87.55,
+    87.85,
+    88.21,
+    88.58,
+    88.9,
+    89.2,
+    89.51,
+    89.73,
+    89.94,
+    90.11,
+    90.28,
+    90.43,
+    90.56,
+    90.7,
+    90.87,
+    91.04,
+    91.21,
+    91.35,
+    91.45,
+    91.59,
+    91.73,
+    91.91,
+    92.15,
+    92.42,
+    92.66,
+    92.87,
+    93.02,
+    93.15,
+    93.29,
+    93.43,
+    93.57,
+    93.68,
+    93.73,
+    93.69,
+    93.56,
+    93.36,
+    93.08,
+    92.73,
+    92.37,
+    92.02,
+    91.63,
+    91.25,
+    90.92,
+    90.6,
+    90.3,
+    90.04,
+    89.85,
+    89.69,
+    89.54,
+    89.44,
+    89.35,
+    89.27,
+    89.16,
+    89.06,
+    88.94,
+    88.83,
+    88.71,
+    88.59,
+    88.47,
+    88.36,
+    88.25,
+    88.25,
+    88.25
+   ],
+   "length_m": 1098,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 2.89,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 63.0
+  },
+  {
+   "id": "8-14-T-8-14",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-14-T",
+    "8-14"
+   ],
+   "points": [
+    [
+     9774.04,
+     6874.04
+    ],
+    [
+     9777.1,
+     6877.29
+    ],
+    [
+     9779.88,
+     6880.75
+    ],
+    [
+     9781.86,
+     6884.58
+    ],
+    [
+     9782.62,
+     6888.7
+    ],
+    [
+     9782.71,
+     6892.82
+    ],
+    [
+     9782.54,
+     6897.11
+    ],
+    [
+     9782.51,
+     6901.57
+    ],
+    [
+     9782.61,
+     6906.03
+    ],
+    [
+     9782.84,
+     6910.49
+    ],
+    [
+     9783.2,
+     6914.96
+    ],
+    [
+     9783.65,
+     6919.42
+    ],
+    [
+     9784.17,
+     6923.88
+    ],
+    [
+     9784.74,
+     6928.34
+    ],
+    [
+     9785.32,
+     6932.84
+    ],
+    [
+     9784.67,
+     6937.39
+    ],
+    [
+     9783.2,
+     6941.73
+    ],
+    [
+     9781.59,
+     6945.94
+    ],
+    [
+     9779.9,
+     6950.08
+    ],
+    [
+     9778.11,
+     6954.17
+    ],
+    [
+     9776.19,
+     6958.2
+    ],
+    [
+     9774.16,
+     6962.17
+    ],
+    [
+     9772.01,
+     6966.08
+    ],
+    [
+     9769.74,
+     6969.93
+    ],
+    [
+     9767.38,
+     6973.74
+    ],
+    [
+     9764.95,
+     6977.51
+    ],
+    [
+     9762.46,
+     6981.25
+    ],
+    [
+     9759.94,
+     6984.98
+    ],
+    [
+     9757.43,
+     6988.71
+    ],
+    [
+     9754.95,
+     6992.46
+    ],
+    [
+     9752.53,
+     6996.24
+    ],
+    [
+     9750.19,
+     7000.05
+    ],
+    [
+     9747.95,
+     7003.92
+    ],
+    [
+     9745.81,
+     7007.84
+    ],
+    [
+     9743.8,
+     7011.82
+    ],
+    [
+     9741.91,
+     7015.86
+    ],
+    [
+     9740.14,
+     7019.96
+    ],
+    [
+     9738.47,
+     7024.12
+    ],
+    [
+     9736.88,
+     7028.31
+    ],
+    [
+     9735.36,
+     7032.54
+    ],
+    [
+     9733.88,
+     7036.78
+    ],
+    [
+     9732.4,
+     7041.03
+    ],
+    [
+     9730.91,
+     7045.27
+    ],
+    [
+     9729.37,
+     7049.49
+    ],
+    [
+     9727.77,
+     7053.67
+    ],
+    [
+     9726.07,
+     7057.81
+    ],
+    [
+     9724.26,
+     7061.9
+    ],
+    [
+     9722.33,
+     7065.92
+    ],
+    [
+     9720.29,
+     7069.88
+    ],
+    [
+     9718.12,
+     7073.79
+    ],
+    [
+     9715.85,
+     7077.64
+    ],
+    [
+     9713.48,
+     7081.44
+    ],
+    [
+     9711.04,
+     7085.21
+    ],
+    [
+     9708.55,
+     7088.95
+    ],
+    [
+     9706.03,
+     7092.68
+    ],
+    [
+     9703.52,
+     7096.41
+    ],
+    [
+     9701.05,
+     7100.16
+    ],
+    [
+     9698.63,
+     7103.94
+    ],
+    [
+     9696.3,
+     7107.76
+    ],
+    [
+     9694.07,
+     7111.63
+    ],
+    [
+     9691.95,
+     7115.56
+    ],
+    [
+     9689.91,
+     7119.63
+    ],
+    [
+     9688.19,
+     7124.26
+    ],
+    [
+     9688.14,
+     7129.47
+    ],
+    [
+     9690.14,
+     7134.05
+    ],
+    [
+     9692.66,
+     7137.97
+    ],
+    [
+     9695.65,
+     7141.5
+    ],
+    [
+     9699.17,
+     7144.38
+    ],
+    [
+     9702.72,
+     7147.11
+    ],
+    [
+     9706.48,
+     7149.38
+    ],
+    [
+     9710.5,
+     7151.08
+    ],
+    [
+     9714.65,
+     7152.68
+    ],
+    [
+     9718.78,
+     7154.39
+    ],
+    [
+     9722.86,
+     7156.21
+    ],
+    [
+     9726.88,
+     7158.14
+    ],
+    [
+     9730.83,
+     7160.2
+    ],
+    [
+     9734.73,
+     7162.38
+    ],
+    [
+     9738.58,
+     7164.66
+    ],
+    [
+     9742.38,
+     7167.04
+    ],
+    [
+     9746.14,
+     7169.49
+    ],
+    [
+     9749.88,
+     7171.98
+    ],
+    [
+     9753.61,
+     7174.5
+    ],
+    [
+     9757.34,
+     7177.0
+    ],
+    [
+     9761.09,
+     7179.47
+    ],
+    [
+     9764.88,
+     7181.88
+    ],
+    [
+     9768.7,
+     7184.21
+    ],
+    [
+     9772.58,
+     7186.43
+    ],
+    [
+     9776.51,
+     7188.54
+    ],
+    [
+     9780.51,
+     7190.52
+    ],
+    [
+     9784.56,
+     7192.39
+    ],
+    [
+     9788.67,
+     7194.14
+    ],
+    [
+     9792.83,
+     7195.8
+    ],
+    [
+     9797.03,
+     7197.37
+    ],
+    [
+     9801.26,
+     7198.88
+    ],
+    [
+     9805.51,
+     7200.36
+    ],
+    [
+     9809.76,
+     7201.83
+    ],
+    [
+     9814.0,
+     7203.33
+    ],
+    [
+     9818.21,
+     7204.88
+    ],
+    [
+     9822.39,
+     7206.51
+    ],
+    [
+     9826.51,
+     7208.23
+    ],
+    [
+     9830.69,
+     7210.11
+    ],
+    [
+     9834.86,
+     7212.69
+    ],
+    [
+     9838.23,
+     7216.49
+    ],
+    [
+     9840.16,
+     7221.02
+    ],
+    [
+     9841.04,
+     7225.71
+    ],
+    [
+     9841.15,
+     7230.22
+    ],
+    [
+     9842.52,
+     7234.39
+    ],
+    [
+     9844.4,
+     7238.43
+    ]
+   ],
+   "points_z": [
+    77.5,
+    77.5,
+    77.51,
+    77.51,
+    78.13,
+    78.76,
+    79.38,
+    80.0,
+    80.62,
+    81.25,
+    81.87,
+    82.5,
+    83.12,
+    83.74,
+    84.32,
+    84.54,
+    84.73,
+    84.9,
+    85.07,
+    85.25,
+    85.44,
+    85.62,
+    85.79,
+    85.94,
+    86.06,
+    86.16,
+    86.27,
+    86.38,
+    86.5,
+    86.64,
+    86.79,
+    86.96,
+    87.16,
+    87.37,
+    87.59,
+    87.84,
+    88.1,
+    88.39,
+    88.69,
+    89.02,
+    89.38,
+    89.74,
+    90.1,
+    90.45,
+    90.78,
+    91.07,
+    91.34,
+    91.56,
+    91.71,
+    91.81,
+    91.88,
+    91.92,
+    91.94,
+    91.95,
+    91.94,
+    91.89,
+    91.79,
+    91.65,
+    91.49,
+    91.33,
+    91.1,
+    90.82,
+    90.5,
+    90.13,
+    89.7,
+    89.3,
+    88.94,
+    88.6,
+    88.31,
+    88.05,
+    87.8,
+    87.57,
+    87.33,
+    87.05,
+    86.69,
+    86.25,
+    85.71,
+    85.08,
+    84.46,
+    83.83,
+    83.21,
+    82.59,
+    81.96,
+    81.34,
+    80.71,
+    80.09,
+    79.46,
+    78.84,
+    78.21,
+    77.59,
+    76.96,
+    76.53,
+    76.26,
+    76.05,
+    75.84,
+    75.62,
+    75.37,
+    75.07,
+    74.7,
+    74.29,
+    73.88,
+    73.5,
+    73.12,
+    72.86,
+    72.7,
+    72.57,
+    72.57,
+    72.57
+   ],
+   "length_m": 477,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 3.74,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 92,
+   "junction_step_max_m": 0.87,
+   "straight_max_m": 67.1
+  },
+  {
+   "id": "8-09-8-14",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-09",
+    "8-14"
+   ],
+   "points": [
+    [
+     9330.99,
+     6340.99
+    ],
+    [
+     9334.08,
+     6344.26
+    ],
+    [
+     9336.6,
+     6347.82
+    ],
+    [
+     9336.89,
+     6351.86
+    ],
+    [
+     9334.93,
+     6355.45
+    ],
+    [
+     9332.53,
+     6358.78
+    ],
+    [
+     9329.69,
+     6361.82
+    ],
+    [
+     9326.55,
+     6364.92
+    ],
+    [
+     9323.45,
+     6368.19
+    ],
+    [
+     9320.35,
+     6371.67
+    ],
+    [
+     9317.83,
+     6375.74
+    ],
+    [
+     9316.02,
+     6380.03
+    ],
+    [
+     9314.48,
+     6384.32
+    ],
+    [
+     9312.98,
+     6388.59
+    ],
+    [
+     9311.4,
+     6392.87
+    ],
+    [
+     9309.28,
+     6396.96
+    ],
+    [
+     9306.77,
+     6400.64
+    ],
+    [
+     9304.88,
+     6404.53
+    ],
+    [
+     9303.18,
+     6408.61
+    ],
+    [
+     9301.36,
+     6412.72
+    ],
+    [
+     9299.37,
+     6416.85
+    ],
+    [
+     9296.88,
+     6420.93
+    ],
+    [
+     9293.67,
+     6424.48
+    ],
+    [
+     9290.22,
+     6427.48
+    ],
+    [
+     9286.98,
+     6430.37
+    ],
+    [
+     9284.24,
+     6433.75
+    ],
+    [
+     9281.71,
+     6437.46
+    ],
+    [
+     9279.18,
+     6441.22
+    ],
+    [
+     9276.64,
+     6445.01
+    ],
+    [
+     9274.35,
+     6449.1
+    ],
+    [
+     9273.17,
+     6453.23
+    ],
+    [
+     9270.44,
+     6456.76
+    ],
+    [
+     9268.99,
+     6461.96
+    ],
+    [
+     9270.71,
+     6466.98
+    ],
+    [
+     9272.79,
+     6471.1
+    ],
+    [
+     9274.94,
+     6475.05
+    ],
+    [
+     9277.2,
+     6478.94
+    ],
+    [
+     9279.57,
+     6482.79
+    ],
+    [
+     9282.05,
+     6486.63
+    ],
+    [
+     9284.89,
+     6490.28
+    ],
+    [
+     9288.31,
+     6493.32
+    ],
+    [
+     9291.9,
+     6496.09
+    ],
+    [
+     9295.48,
+     6498.88
+    ],
+    [
+     9299.0,
+     6501.72
+    ],
+    [
+     9302.47,
+     6504.61
+    ],
+    [
+     9305.85,
+     6507.59
+    ],
+    [
+     9309.68,
+     6511.45
+    ],
+    [
+     9309.19,
+     6517.57
+    ],
+    [
+     9305.14,
+     6519.99
+    ],
+    [
+     9304.27,
+     6521.6
+    ],
+    [
+     9306.71,
+     6524.2
+    ],
+    [
+     9309.6,
+     6528.71
+    ],
+    [
+     9306.24,
+     6532.72
+    ],
+    [
+     9301.82,
+     6534.32
+    ],
+    [
+     9297.54,
+     6535.81
+    ],
+    [
+     9293.06,
+     6537.54
+    ],
+    [
+     9290.52,
+     6542.13
+    ],
+    [
+     9294.16,
+     6546.3
+    ],
+    [
+     9298.08,
+     6549.01
+    ],
+    [
+     9302.08,
+     6551.25
+    ],
+    [
+     9306.07,
+     6553.33
+    ],
+    [
+     9310.02,
+     6555.25
+    ],
+    [
+     9313.72,
+     6557.26
+    ],
+    [
+     9317.11,
+     6559.81
+    ],
+    [
+     9320.55,
+     6562.65
+    ],
+    [
+     9324.09,
+     6565.47
+    ],
+    [
+     9327.7,
+     6568.26
+    ],
+    [
+     9331.68,
+     6570.46
+    ],
+    [
+     9335.88,
+     6572.1
+    ],
+    [
+     9340.13,
+     6573.62
+    ],
+    [
+     9344.36,
+     6575.22
+    ],
+    [
+     9348.55,
+     6576.9
+    ],
+    [
+     9352.69,
+     6578.69
+    ],
+    [
+     9356.76,
+     6580.6
+    ],
+    [
+     9360.78,
+     6582.63
+    ],
+    [
+     9364.73,
+     6584.78
+    ],
+    [
+     9368.63,
+     6587.04
+    ],
+    [
+     9372.48,
+     6589.41
+    ],
+    [
+     9376.28,
+     6591.85
+    ],
+    [
+     9380.06,
+     6594.36
+    ],
+    [
+     9383.82,
+     6596.89
+    ],
+    [
+     9387.58,
+     6599.42
+    ],
+    [
+     9391.36,
+     6601.93
+    ],
+    [
+     9395.16,
+     6604.38
+    ],
+    [
+     9399.01,
+     6606.75
+    ],
+    [
+     9402.9,
+     6609.02
+    ],
+    [
+     9406.85,
+     6611.18
+    ],
+    [
+     9410.86,
+     6613.22
+    ],
+    [
+     9414.93,
+     6615.13
+    ],
+    [
+     9419.06,
+     6616.93
+    ],
+    [
+     9423.25,
+     6618.62
+    ],
+    [
+     9427.48,
+     6620.22
+    ],
+    [
+     9431.74,
+     6621.76
+    ],
+    [
+     9436.02,
+     6623.25
+    ],
+    [
+     9440.3,
+     6624.74
+    ],
+    [
+     9444.58,
+     6626.24
+    ],
+    [
+     9448.83,
+     6627.79
+    ],
+    [
+     9453.06,
+     6629.42
+    ],
+    [
+     9457.3,
+     6631.19
+    ],
+    [
+     9461.5,
+     6633.52
+    ],
+    [
+     9465.14,
+     6636.61
+    ],
+    [
+     9468.4,
+     6639.95
+    ],
+    [
+     9471.38,
+     6643.67
+    ],
+    [
+     9473.57,
+     6647.89
+    ],
+    [
+     9475.29,
+     6652.03
+    ],
+    [
+     9477.33,
+     6655.88
+    ],
+    [
+     9480.01,
+     6659.43
+    ],
+    [
+     9482.78,
+     6663.02
+    ],
+    [
+     9485.55,
+     6666.61
+    ],
+    [
+     9488.35,
+     6670.17
+    ],
+    [
+     9491.2,
+     6673.68
+    ],
+    [
+     9494.12,
+     6677.12
+    ],
+    [
+     9497.13,
+     6680.48
+    ],
+    [
+     9500.22,
+     6683.74
+    ],
+    [
+     9503.42,
+     6686.91
+    ],
+    [
+     9506.7,
+     6689.99
+    ],
+    [
+     9510.08,
+     6692.97
+    ],
+    [
+     9513.54,
+     6695.87
+    ],
+    [
+     9517.15,
+     6698.62
+    ],
+    [
+     9520.77,
+     6701.35
+    ],
+    [
+     9524.11,
+     6704.37
+    ],
+    [
+     9526.54,
+     6708.16
+    ],
+    [
+     9528.25,
+     6712.33
+    ]
+   ],
+   "points_z": [
+    19.25,
+    19.25,
+    19.25,
+    19.25,
+    18.62,
+    18.72,
+    18.88,
+    19.04,
+    19.19,
+    19.34,
+    19.47,
+    19.58,
+    19.71,
+    19.85,
+    19.98,
+    20.11,
+    20.27,
+    20.51,
+    20.79,
+    21.11,
+    21.49,
+    21.94,
+    22.36,
+    22.76,
+    23.15,
+    23.54,
+    23.89,
+    24.23,
+    24.59,
+    24.96,
+    25.34,
+    25.75,
+    26.2,
+    26.66,
+    27.15,
+    27.63,
+    28.1,
+    28.58,
+    29.0,
+    29.41,
+    29.82,
+    30.22,
+    30.63,
+    31.08,
+    31.62,
+    32.25,
+    32.88,
+    33.51,
+    34.07,
+    34.62,
+    35.11,
+    35.53,
+    35.91,
+    36.3,
+    36.76,
+    37.17,
+    37.65,
+    38.27,
+    38.9,
+    39.52,
+    40.07,
+    40.59,
+    41.06,
+    41.46,
+    41.79,
+    42.13,
+    42.46,
+    42.79,
+    43.15,
+    43.54,
+    43.98,
+    44.45,
+    44.97,
+    45.52,
+    46.07,
+    46.64,
+    47.17,
+    47.67,
+    48.16,
+    48.68,
+    49.24,
+    49.86,
+    50.49,
+    51.12,
+    51.75,
+    52.38,
+    53.01,
+    53.62,
+    54.13,
+    54.59,
+    54.98,
+    55.34,
+    55.71,
+    56.11,
+    56.51,
+    56.91,
+    57.31,
+    57.7,
+    58.11,
+    58.52,
+    58.94,
+    59.36,
+    59.76,
+    60.12,
+    60.45,
+    60.74,
+    61.01,
+    61.26,
+    61.51,
+    61.75,
+    61.99,
+    62.23,
+    62.47,
+    62.84,
+    63.47,
+    64.1,
+    64.73,
+    65.36,
+    65.99,
+    66.62,
+    67.25,
+    67.25,
+    67.25
+   ],
+   "length_m": 549,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 2.87,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 59.0
+  },
+  {
+   "id": "8-M3-8-13",
+   "kind": "dirt",
+   "width_m": 7.0,
+   "links": [
+    "8-M3",
+    "8-13"
+   ],
+   "points": [
+    [
+     11045.35,
+     7795.35
+    ],
+    [
+     11042.27,
+     7792.09
+    ],
+    [
+     11039.27,
+     7788.71
+    ],
+    [
+     11036.06,
+     7785.43
+    ],
+    [
+     11032.62,
+     7782.32
+    ],
+    [
+     11028.91,
+     7779.63
+    ],
+    [
+     11025.01,
+     7777.31
+    ],
+    [
+     11021.05,
+     7775.24
+    ],
+    [
+     11017.3,
+     7773.25
+    ],
+    [
+     11013.78,
+     7770.77
+    ],
+    [
+     11009.92,
+     7768.22
+    ],
+    [
+     11005.61,
+     7766.32
+    ],
+    [
+     11001.14,
+     7764.96
+    ],
+    [
+     10996.55,
+     7764.77
+    ],
+    [
+     10992.1,
+     7765.37
+    ],
+    [
+     10988.08,
+     7767.1
+    ],
+    [
+     10984.33,
+     7769.44
+    ],
+    [
+     10980.53,
+     7771.83
+    ],
+    [
+     10976.67,
+     7774.13
+    ],
+    [
+     10972.76,
+     7776.33
+    ],
+    [
+     10968.79,
+     7778.4
+    ],
+    [
+     10964.86,
+     7780.32
+    ],
+    [
+     10961.19,
+     7782.34
+    ],
+    [
+     10957.83,
+     7784.91
+    ],
+    [
+     10954.4,
+     7787.74
+    ],
+    [
+     10950.88,
+     7790.55
+    ],
+    [
+     10947.31,
+     7793.33
+    ],
+    [
+     10943.73,
+     7796.08
+    ],
+    [
+     10940.15,
+     7798.84
+    ],
+    [
+     10936.55,
+     7801.69
+    ],
+    [
+     10933.3,
+     7805.08
+    ],
+    [
+     10930.68,
+     7808.96
+    ],
+    [
+     10928.42,
+     7812.9
+    ],
+    [
+     10926.3,
+     7816.85
+    ],
+    [
+     10924.3,
+     7820.86
+    ],
+    [
+     10922.42,
+     7824.93
+    ],
+    [
+     10920.66,
+     7829.06
+    ],
+    [
+     10918.99,
+     7833.24
+    ],
+    [
+     10917.41,
+     7837.46
+    ],
+    [
+     10915.89,
+     7841.71
+    ],
+    [
+     10914.41,
+     7845.98
+    ],
+    [
+     10912.92,
+     7850.26
+    ],
+    [
+     10911.16,
+     7854.51
+    ],
+    [
+     10908.58,
+     7858.6
+    ],
+    [
+     10904.25,
+     7861.74
+    ],
+    [
+     10898.85,
+     7861.58
+    ],
+    [
+     10894.26,
+     7859.87
+    ],
+    [
+     10890.16,
+     7857.87
+    ],
+    [
+     10886.2,
+     7855.79
+    ],
+    [
+     10882.4,
+     7853.68
+    ],
+    [
+     10878.68,
+     7852.0
+    ],
+    [
+     10874.53,
+     7851.41
+    ],
+    [
+     10870.07,
+     7850.89
+    ],
+    [
+     10865.59,
+     7850.32
+    ],
+    [
+     10861.11,
+     7849.74
+    ],
+    [
+     10856.63,
+     7849.16
+    ],
+    [
+     10852.33,
+     7848.65
+    ],
+    [
+     10848.48,
+     7847.11
+    ],
+    [
+     10844.83,
+     7844.98
+    ],
+    [
+     10841.39,
+     7842.62
+    ],
+    [
+     10838.31,
+     7839.78
+    ],
+    [
+     10835.12,
+     7836.64
+    ],
+    [
+     10831.43,
+     7833.64
+    ],
+    [
+     10827.22,
+     7831.41
+    ],
+    [
+     10822.97,
+     7829.71
+    ],
+    [
+     10818.74,
+     7828.14
+    ],
+    [
+     10814.48,
+     7826.63
+    ],
+    [
+     10810.21,
+     7825.15
+    ],
+    [
+     10805.94,
+     7823.66
+    ],
+    [
+     10801.65,
+     7822.02
+    ],
+    [
+     10797.52,
+     7819.75
+    ],
+    [
+     10793.92,
+     7816.81
+    ],
+    [
+     10790.55,
+     7813.83
+    ],
+    [
+     10787.27,
+     7810.77
+    ],
+    [
+     10784.09,
+     7807.61
+    ],
+    [
+     10781.0,
+     7804.36
+    ],
+    [
+     10778.01,
+     7801.01
+    ],
+    [
+     10775.1,
+     7797.58
+    ],
+    [
+     10772.26,
+     7794.09
+    ],
+    [
+     10769.46,
+     7790.54
+    ],
+    [
+     10766.7,
+     7786.97
+    ],
+    [
+     10763.94,
+     7783.38
+    ],
+    [
+     10761.17,
+     7779.82
+    ],
+    [
+     10758.36,
+     7776.29
+    ],
+    [
+     10755.5,
+     7772.81
+    ],
+    [
+     10752.56,
+     7769.41
+    ],
+    [
+     10749.54,
+     7766.1
+    ],
+    [
+     10746.42,
+     7762.88
+    ],
+    [
+     10743.2,
+     7759.76
+    ],
+    [
+     10739.89,
+     7756.73
+    ],
+    [
+     10736.49,
+     7753.79
+    ],
+    [
+     10733.02,
+     7750.92
+    ],
+    [
+     10729.49,
+     7748.11
+    ],
+    [
+     10725.93,
+     7745.34
+    ],
+    [
+     10722.34,
+     7742.58
+    ],
+    [
+     10718.77,
+     7739.82
+    ],
+    [
+     10715.22,
+     7737.03
+    ],
+    [
+     10711.72,
+     7734.19
+    ],
+    [
+     10708.29,
+     7731.28
+    ],
+    [
+     10704.94,
+     7728.29
+    ],
+    [
+     10701.69,
+     7725.21
+    ],
+    [
+     10698.53,
+     7722.03
+    ],
+    [
+     10695.46,
+     7718.75
+    ],
+    [
+     10692.49,
+     7715.39
+    ],
+    [
+     10689.6,
+     7711.95
+    ],
+    [
+     10686.77,
+     7708.44
+    ],
+    [
+     10683.98,
+     7704.88
+    ],
+    [
+     10681.22,
+     7701.3
+    ],
+    [
+     10678.47,
+     7697.72
+    ],
+    [
+     10675.69,
+     7694.16
+    ],
+    [
+     10672.87,
+     7690.64
+    ],
+    [
+     10669.99,
+     7687.18
+    ],
+    [
+     10667.03,
+     7683.8
+    ],
+    [
+     10663.99,
+     7680.51
+    ],
+    [
+     10660.84,
+     7677.31
+    ],
+    [
+     10657.61,
+     7674.21
+    ],
+    [
+     10654.28,
+     7671.21
+    ],
+    [
+     10650.86,
+     7668.28
+    ],
+    [
+     10647.37,
+     7665.43
+    ],
+    [
+     10643.84,
+     7662.63
+    ],
+    [
+     10640.26,
+     7659.86
+    ],
+    [
+     10636.68,
+     7657.11
+    ],
+    [
+     10633.11,
+     7654.34
+    ],
+    [
+     10629.57,
+     7651.54
+    ],
+    [
+     10626.09,
+     7648.69
+    ],
+    [
+     10622.67,
+     7645.76
+    ],
+    [
+     10619.35,
+     7642.75
+    ],
+    [
+     10616.11,
+     7639.64
+    ],
+    [
+     10612.97,
+     7636.44
+    ],
+    [
+     10609.93,
+     7633.15
+    ],
+    [
+     10606.98,
+     7629.76
+    ],
+    [
+     10604.1,
+     7626.3
+    ],
+    [
+     10601.28,
+     7622.78
+    ],
+    [
+     10598.5,
+     7619.22
+    ],
+    [
+     10595.75,
+     7615.64
+    ],
+    [
+     10592.99,
+     7612.06
+    ],
+    [
+     10590.2,
+     7608.51
+    ],
+    [
+     10587.37,
+     7605.0
+    ],
+    [
+     10584.47,
+     7601.56
+    ],
+    [
+     10581.5,
+     7598.2
+    ],
+    [
+     10578.43,
+     7594.93
+    ],
+    [
+     10575.27,
+     7591.75
+    ],
+    [
+     10572.01,
+     7588.67
+    ],
+    [
+     10568.66,
+     7585.68
+    ],
+    [
+     10565.22,
+     7582.78
+    ],
+    [
+     10561.72,
+     7579.94
+    ],
+    [
+     10558.18,
+     7577.15
+    ],
+    [
+     10554.6,
+     7574.39
+    ],
+    [
+     10551.02,
+     7571.63
+    ],
+    [
+     10547.45,
+     7568.86
+    ],
+    [
+     10543.92,
+     7566.05
+    ],
+    [
+     10540.46,
+     7563.18
+    ],
+    [
+     10537.06,
+     7560.23
+    ],
+    [
+     10533.75,
+     7557.2
+    ],
+    [
+     10530.54,
+     7554.08
+    ],
+    [
+     10527.43,
+     7550.85
+    ],
+    [
+     10524.4,
+     7547.54
+    ],
+    [
+     10521.47,
+     7544.14
+    ],
+    [
+     10518.6,
+     7540.66
+    ],
+    [
+     10515.8,
+     7537.13
+    ],
+    [
+     10513.03,
+     7533.56
+    ],
+    [
+     10510.27,
+     7529.98
+    ],
+    [
+     10507.51,
+     7526.4
+    ],
+    [
+     10504.71,
+     7522.86
+    ],
+    [
+     10501.87,
+     7519.36
+    ],
+    [
+     10498.96,
+     7515.94
+    ],
+    [
+     10495.96,
+     7512.6
+    ],
+    [
+     10492.87,
+     7509.35
+    ],
+    [
+     10489.69,
+     7506.19
+    ],
+    [
+     10486.41,
+     7503.14
+    ],
+    [
+     10483.03,
+     7500.17
+    ],
+    [
+     10479.59,
+     7497.28
+    ],
+    [
+     10476.07,
+     7494.45
+    ],
+    [
+     10472.52,
+     7491.67
+    ],
+    [
+     10468.94,
+     7488.91
+    ],
+    [
+     10465.36,
+     7486.15
+    ],
+    [
+     10461.8,
+     7483.37
+    ],
+    [
+     10458.4,
+     7480.43
+    ],
+    [
+     10455.29,
+     7477.2
+    ],
+    [
+     10452.34,
+     7473.8
+    ],
+    [
+     10449.56,
+     7470.21
+    ],
+    [
+     10447.17,
+     7466.35
+    ]
+   ],
+   "points_z": [
+    136.25,
+    136.25,
+    136.25,
+    136.25,
+    135.62,
+    135.5,
+    135.5,
+    135.49,
+    135.47,
+    135.39,
+    135.23,
+    134.98,
+    134.62,
+    134.23,
+    133.87,
+    133.56,
+    133.32,
+    133.13,
+    132.92,
+    132.64,
+    132.27,
+    131.86,
+    131.41,
+    130.91,
+    130.35,
+    129.75,
+    129.12,
+    128.5,
+    127.87,
+    127.24,
+    126.61,
+    125.99,
+    125.57,
+    125.26,
+    124.96,
+    124.66,
+    124.36,
+    124.06,
+    123.71,
+    123.39,
+    123.08,
+    122.7,
+    122.25,
+    121.82,
+    121.4,
+    120.97,
+    120.57,
+    120.22,
+    119.86,
+    119.51,
+    119.14,
+    118.75,
+    118.34,
+    117.94,
+    117.47,
+    116.97,
+    116.52,
+    116.14,
+    115.8,
+    115.5,
+    115.19,
+    114.89,
+    114.56,
+    114.22,
+    113.88,
+    113.52,
+    113.16,
+    112.77,
+    112.37,
+    111.97,
+    111.62,
+    111.31,
+    111.02,
+    110.71,
+    110.41,
+    110.14,
+    109.82,
+    109.46,
+    109.12,
+    108.77,
+    108.39,
+    107.98,
+    107.63,
+    107.31,
+    107.04,
+    106.81,
+    106.62,
+    106.49,
+    106.35,
+    106.19,
+    105.99,
+    105.75,
+    105.43,
+    105.08,
+    104.75,
+    104.46,
+    104.22,
+    104.02,
+    103.86,
+    103.7,
+    103.52,
+    103.32,
+    103.09,
+    102.81,
+    102.52,
+    102.24,
+    101.97,
+    101.75,
+    101.58,
+    101.45,
+    101.33,
+    101.24,
+    101.14,
+    101.0,
+    100.77,
+    100.46,
+    100.09,
+    99.73,
+    99.44,
+    99.2,
+    99.0,
+    98.82,
+    98.63,
+    98.45,
+    98.26,
+    98.11,
+    97.95,
+    97.8,
+    97.61,
+    97.42,
+    97.24,
+    97.06,
+    96.91,
+    96.76,
+    96.62,
+    96.48,
+    96.38,
+    96.25,
+    96.12,
+    95.98,
+    95.85,
+    95.76,
+    95.7,
+    95.65,
+    95.55,
+    95.42,
+    95.23,
+    95.0,
+    94.8,
+    94.67,
+    94.53,
+    94.36,
+    94.19,
+    93.96,
+    93.68,
+    93.46,
+    93.27,
+    93.1,
+    92.99,
+    92.88,
+    92.78,
+    92.7,
+    92.59,
+    92.49,
+    92.38,
+    92.26,
+    92.13,
+    92.03,
+    91.97,
+    91.89,
+    91.81,
+    91.78,
+    91.73,
+    91.65,
+    91.59,
+    91.54,
+    91.44,
+    91.35,
+    91.29,
+    91.0,
+    91.0,
+    91.0
+   ],
+   "length_m": 811,
+   "max_grade_pct": 14.0,
+   "max_cut_fill_m": 2.63,
+   "in_water_points": 0,
+   "clash_points": 0,
+   "clash_with": [],
+   "junction_step_points": 0,
+   "junction_step_max_m": 0.0,
+   "straight_max_m": 67.4
+  }
+ ],
+ "external_roads_joined": [
+  "op4:4-09-4-07"
+ ],
+ "trunk_breaks": [],
+ "foot_links": [
+  {
+   "site": "8-M1",
+   "bottom_xyz": [
+    9255.0,
+    8410.0,
+    23.25
+   ],
+   "top_xyz": [
+    10064.8,
+    7714.8,
+    88.25
+   ],
+   "top_on_road": "8-14-8-13",
+   "straight_m": 1067,
+   "rise_m": 65.0
+  },
+  {
+   "site": "8-M4",
+   "bottom_xyz": [
+    13280.0,
+    9080.0,
+    342.0
+   ],
+   "top_xyz": [
+    13270.5,
+    7850.1,
+    19.95
+   ],
+   "top_on_road": "8-08-op4:4-09-4-07",
+   "straight_m": 1230,
+   "rise_m": -322.1
+  },
+  {
+   "site": "8-02",
+   "bottom_xyz": [
+    9280.0,
+    8260.0,
+    26.75
+   ],
+   "top_xyz": [
+    10064.8,
+    7714.8,
+    88.25
+   ],
+   "top_on_road": "8-14-8-13",
+   "straight_m": 956,
+   "rise_m": 61.5
+  },
+  {
+   "site": "8-03",
+   "bottom_xyz": [
+    11420.0,
+    8230.0,
+    5.25
+   ],
+   "top_xyz": [
+    11045.4,
+    7795.4,
+    136.25
+   ],
+   "top_on_road": "8-M3-8-13",
+   "straight_m": 574,
+   "rise_m": 131.0
+  },
+  {
+   "site": "8-04",
+   "bottom_xyz": [
+    12000.0,
+    8600.0,
+    15.75
+   ],
+   "top_xyz": [
+    10992.1,
+    7765.4,
+    133.87
+   ],
+   "top_on_road": "8-M3-8-13",
+   "straight_m": 1309,
+   "rise_m": 118.1
+  },
+  {
+   "site": "8-10",
+   "bottom_xyz": [
+    12350.0,
+    8970.0,
+    3.25
+   ],
+   "top_xyz": [
+    13231.9,
+    7827.9,
+    24.19
+   ],
+   "top_on_road": "8-08-op4:4-09-4-07",
+   "straight_m": 1443,
+   "rise_m": 20.9
+  },
+  {
+   "site": "8-12",
+   "bottom_xyz": [
+    12750.0,
+    9460.0,
+    2.5
+   ],
+   "top_xyz": [
+    13270.5,
+    7850.1,
+    19.95
+   ],
+   "top_on_road": "8-08-op4:4-09-4-07",
+   "straight_m": 1692,
+   "rise_m": 17.4
+  }
+ ],
+ "approaches": {
+  "8-F Caldera Yard": [
+   "along the inner shore road from the south, through the Inner Shore Road Gate (8-10) (vehicles)",
+   "down the Skala path from the Rim Chora (op 7), on foot; or by boat across the lagoon once the dam gate opens"
+  ],
+  "8-M1 Breach Dam": [
+   "along the south arm road to the dam's east end (vehicles)",
+   "from Ash Crescent's south tip across the dam crest on foot, or by boat to either end"
+  ],
+  "8-M2 Kameni Shield Generator": [
+   "by boat to Kameni's north landing past the Vent Bunkers (8-05)",
+   "by boat to Kameni's south shore, or by air once the shield's AA falls"
+  ],
+  "8-M3 South Arm Gun Line": [
+   "along the south arm road from Causeway Foot past the South Arm Road Tower (8-08) (vehicles)",
+   "up from the Inner Shore Fuel Quay (8-03)"
+  ],
+  "8-M4 Yard Power Plant": [
+   "by road from the rim (the op 4 and op 7 nets) (vehicles)",
+   "up the cliff path from the Dry Dock Pump House (8-12), on foot"
+  ]
+ },
+ "shores": [
+  {
+   "from_xy": [
+    8930.0,
+    5990.0
+   ],
+   "to_xy": [
+    8880.0,
+    6005.0
+   ],
+   "length_m": 52,
+   "points": 12,
+   "mean_inland_slope_pct": 9.3
+  },
+  {
+   "from_xy": [
+    11680.0,
+    6520.0
+   ],
+   "to_xy": [
+    11845.0,
+    6570.0
+   ],
+   "length_m": 172,
+   "points": 34,
+   "mean_inland_slope_pct": 10.6
+  },
+  {
+   "from_xy": [
+    12930.0,
+    7140.0
+   ],
+   "to_xy": [
+    14495.0,
+    8195.0
+   ],
+   "length_m": 1887,
+   "points": 392,
+   "mean_inland_slope_pct": 7.7
+  },
+  {
+   "from_xy": [
+    10185.0,
+    9870.0
+   ],
+   "to_xy": [
+    10610.0,
+    10215.0
+   ],
+   "length_m": 547,
+   "points": 109,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    9705.0,
+    9945.0
+   ],
+   "to_xy": [
+    9325.0,
+    10275.0
+   ],
+   "length_m": 503,
+   "points": 100,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    8610.0,
+    10140.0
+   ],
+   "to_xy": [
+    8625.0,
+    10290.0
+   ],
+   "length_m": 151,
+   "points": 29,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    7305.0,
+    10190.0
+   ],
+   "to_xy": [
+    7340.0,
+    10220.0
+   ],
+   "length_m": 46,
+   "points": 18,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    7390.0,
+    10445.0
+   ],
+   "to_xy": [
+    7400.0,
+    10485.0
+   ],
+   "length_m": 41,
+   "points": 17,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    10830.0,
+    10590.0
+   ],
+   "to_xy": [
+    10910.0,
+    10715.0
+   ],
+   "length_m": 148,
+   "points": 28,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    9260.0,
+    10600.0
+   ],
+   "to_xy": [
+    9265.0,
+    10680.0
+   ],
+   "length_m": 80,
+   "points": 17,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    9255.0,
+    11635.0
+   ],
+   "to_xy": [
+    9295.0,
+    11670.0
+   ],
+   "length_m": 53,
+   "points": 10,
+   "mean_inland_slope_pct": 8.7
+  }
+ ],
+ "gate": [
+  [
+   9015.0,
+   8820.0
+  ],
+  [
+   9265.0,
+   8570.0
+  ]
+ ],
+ "moves": [
+  {
+   "id": "8-M1",
+   "from_xy": [
+    9265,
+    8570
+   ],
+   "to_xy": [
+    9255.0,
+    8410.0
+   ],
+   "moved_m": 160
+  },
+  {
+   "id": "8-M2",
+   "from_xy": [
+    10000,
+    10600
+   ],
+   "to_xy": [
+    10030.0,
+    10630.0
+   ],
+   "moved_m": 42
+  },
+  {
+   "id": "8-M3",
+   "from_xy": [
+    11120,
+    7800
+   ],
+   "to_xy": [
+    11080.0,
+    7830.0
+   ],
+   "moved_m": 50
+  },
+  {
+   "id": "8-M4",
+   "from_xy": [
+    13250,
+    9100
+   ],
+   "to_xy": [
+    13280.0,
+    9080.0
+   ],
+   "moved_m": 36
+  },
+  {
+   "id": "8-01",
+   "from_xy": [
+    8600,
+    8750
+   ],
+   "to_xy": [
+    8640.0,
+    8850.0
+   ],
+   "moved_m": 108
+  },
+  {
+   "id": "8-02",
+   "from_xy": [
+    9300,
+    8200
+   ],
+   "to_xy": [
+    9280.0,
+    8260.0
+   ],
+   "moved_m": 63
+  },
+  {
+   "id": "8-04",
+   "from_xy": [
+    12020,
+    8620
+   ],
+   "to_xy": [
+    12000.0,
+    8600.0
+   ],
+   "moved_m": 28
+  },
+  {
+   "id": "8-05",
+   "from_xy": [
+    9750,
+    10950
+   ],
+   "to_xy": [
+    9740.0,
+    10940.0
+   ],
+   "moved_m": 14
+  },
+  {
+   "id": "8-08",
+   "from_xy": [
+    12050,
+    7350
+   ],
+   "to_xy": [
+    12270.0,
+    7030.0
+   ],
+   "moved_m": 388
+  },
+  {
+   "id": "8-09",
+   "from_xy": [
+    9050,
+    6450
+   ],
+   "to_xy": [
+    9260.0,
+    6270.0
+   ],
+   "moved_m": 277
+  },
+  {
+   "id": "8-10",
+   "from_xy": [
+    12390,
+    9020
+   ],
+   "to_xy": [
+    12350.0,
+    8970.0
+   ],
+   "moved_m": 64
+  },
+  {
+   "id": "8-12",
+   "from_xy": [
+    12770,
+    9450
+   ],
+   "to_xy": [
+    12750.0,
+    9460.0
+   ],
+   "moved_m": 22
+  },
+  {
+   "id": "8-13",
+   "from_xy": [
+    10100,
+    7780
+   ],
+   "to_xy": [
+    10110.0,
+    7760.0
+   ],
+   "moved_m": 22
+  },
+  {
+   "id": "8-15",
+   "from_xy": [
+    8750,
+    11550
+   ],
+   "to_xy": [
+    8730.0,
+    11560.0
+   ],
+   "moved_m": 22
+  },
+  {
+   "id": "8-16",
+   "from_xy": [
+    7850,
+    11200
+   ],
+   "to_xy": [
+    7900.0,
+    11030.0
+   ],
+   "moved_m": 177
+  }
+ ],
+ "log": [
+  "8-F: NO PAD FOUND within 480 m",
+  "road 8-M3 -> 8-08: rejected (grade 58.6 %, cut/fill 5.02 m, pad clash 0 [], junction step 0.0 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 14.0 %, cut/fill 4.75 m, pad clash 0 [], junction step 0.0 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 58.6 %, cut/fill 5.02 m, pad clash 0 [], junction step 0.4 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 14.0 %, cut/fill 4.75 m, pad clash 0 [], junction step 0.42 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 58.6 %, cut/fill 5.02 m, pad clash 0 [], junction step 0.0 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 14.0 %, cut/fill 4.75 m, pad clash 0 [], junction step 0.0 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 58.6 %, cut/fill 5.02 m, pad clash 0 [], junction step 0.4 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 14.0 %, cut/fill 4.75 m, pad clash 0 [], junction step 0.42 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 58.7 %, cut/fill 5.02 m, pad clash 0 [], junction step 0.82 m, water 0)",
+  "road 8-M3 -> 8-08: rejected (grade 14.0 %, cut/fill 4.75 m, pad clash 0 [], junction step 0.87 m, water 0)",
+  "road 8-14-T -> 8-14: rejected (grade 14.0 %, cut/fill 2.6 m, pad clash 1 ['8-14'], junction step 0.0 m, water 0)",
+  "road 8-14-T -> 8-14: rejected (grade 14.0 %, cut/fill 0.69 m, pad clash 1 ['8-14'], junction step 0.0 m, water 0)",
+  "road for 8-02: NO ROUTE found to the Ember Crescent net",
+  "road for 8-M1: NO ROUTE found to the Ember Crescent net",
+  "road for 8-03: NO ROUTE found to the Ember Crescent net",
+  "road for 8-04: NO ROUTE found to the Ember Crescent net",
+  "road for 8-10: NO ROUTE found to the Ember Crescent net",
+  "road for 8-12: NO ROUTE found to the Ember Crescent net",
+  "road for 8-M4: NO ROUTE found to the Ember Crescent net"
+ ]
+}
