@@ -5,6 +5,7 @@ Usage: python3 repass12.py <op 1|2> <out dir>"""
 import sys, os, json, math, collections
 import numpy as np
 from shapely.geometry import Polygon, LineString, Point
+from shapely.ops import unary_union
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../job1/tools"))
@@ -176,7 +177,15 @@ if OP == 1:
     LP = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../kernel_10nov_v1/K6_repass/perys_v7/perys_v7_layout.json")))
     HSP = [Polygon(TG.footprint(TG.Model(b["model_id"]), TG.origin_from_centre(TG.Model(b["model_id"]), b["x"], b["y"], b["yaw_deg"]), b["yaw_deg"])) for b in LP["buildings"]]
     P.own_polys("Perys v7", HSP)
-    PORTS = [(st["points"][k][0], st["points"][k][1], st["points_z"][k], f"{st['id']} {'west' if k == 0 else 'east'} end") for st in LP["streets"] for k in (0, -1)]
+    # roads into Perys end on the main street M (owner's choice, 12 Nov): its west end first, then its east end
+    PORTS = []
+    for st in LP["streets"]:
+        if st["id"] != "M": continue
+        SP = np.array(st["points"], float)
+        for k in (0, -1):                    # each end, with the street's outward direction there: a road comes in along the street's own line
+            e_ = SP[k]; seq = SP if k == 0 else SP[::-1]
+            q_ = next(p_ for p_ in seq[1:] if math.dist(p_, e_) > 2.0); d_ = (e_ - q_) / math.dist(e_, q_)
+            PORTS.append((float(e_[0]), float(e_[1]), st["points_z"][k], f"{st['id']} {'west' if k == 0 else 'east'} end", d_))
     def hclear(pts, w): ln = LineString(pts).buffer(w / 2); return min(ln.distance(h) for h in HSP)
     for i_, r in enumerate(built):
         if hclear(r["points"], r["width_m"]) >= 3.0: continue
@@ -187,19 +196,24 @@ if OP == 1:
         if k0 == 0 or k1 == len(X) - 1:            # the road ends in Perys: keep the outside part, end it on a v7 street
             keep_ = X[k1:] if k0 == 0 else X[:k0 + 1]; keepz = r["points_z"][k1:] if k0 == 0 else r["points_z"][:k0 + 1]
             c = keep_[0] if k0 == 0 else keep_[-1]; cz = keepz[0] if k0 == 0 else keepz[-1]
-            for (px_, py_, pz_, pn_) in sorted(PORTS, key=lambda q: math.dist(q[:2], c))[:6]:
-                rr = P.route(tuple(c), (px_, py_), grade=0.14 if r["kind"] == "dirt" else 0.10, width=w, za=cz, zb=pz_, name=r["id"], kind=r["kind"], links=r["links"], margin=300)
+            for (px_, py_, pz_, pn_, d_) in PORTS:
+                out_ = np.array([px_, py_]) + d_ * 25.0
+                # the road stops 25 m out on M's own line; those 25 m are M extended (Perys street work, at M's end level), so the road itself keeps 3 m from every wall
+                rr = P.route(tuple(c), tuple(out_), grade=0.14 if r["kind"] == "dirt" else 0.10, width=w, za=cz, zb=pz_, name=r["id"], kind=r["kind"], links=r["links"], margin=400)
+                log.append(f"  {r['id']} to {pn_}: " + ("no path " + str(getattr(P, "last_fail", "")) if rr is None else f"cut/fill {rr['max_cut_fill_m']} m, clash {rr['clash_points']} {rr['clash_with']}, houses {hclear(rr['points'], w):.1f} m, grade {worst_grade(rr['points'], rr['points_z'])} %, from z {cz} to {pz_}"))
                 if rr and rr["max_cut_fill_m"] <= 4.0 and rr["clash_points"] == 0 and hclear(rr["points"], w) >= 3.0 and worst_grade(rr["points"], rr["points_z"]) <= (14.05 if r["kind"] == "dirt" else 10.05):
                     pts_ = (list(rr["points"])[::-1] + keep_.tolist()[1:]) if k0 == 0 else (keep_.tolist()[:-1] + list(rr["points"]))
                     zz_ = (list(rr["points_z"])[::-1] + list(keepz)[1:]) if k0 == 0 else (list(keepz)[:-1] + list(rr["points_z"]))
-                    fix = dict(r, points=pts_, points_z=zz_, ends_at=f"Perys v7 street {pn_} ({px_:.0f}, {py_:.0f}, {pz_} m)"); break
+                    fix = dict(r, points=pts_, points_z=zz_, ends_at=f"25 m out on the line of Perys v7 main street M at its {pn_.split()[1]} end: M extended 25 m from ({px_:.0f}, {py_:.0f}) to ({out_[0]:.0f}, {out_[1]:.0f}), level {pz_} m",
+                               m_extension=dict(from_xy=[round(px_, 1), round(py_, 1)], to_xy=[round(float(out_[0]), 1), round(float(out_[1]), 1)], level_m=pz_, width_m=8.0,
+                                                nearest_house_wall_m=round(LineString([(px_, py_), tuple(out_)]).buffer(4.0).distance(unary_union(HSP)), 2))); break
         else:                                       # the road passes by: re-route the stretch near the houses
             rr = P.route(tuple(X[k0]), tuple(X[k1]), grade=0.14 if r["kind"] == "dirt" else 0.10, width=w, za=r["points_z"][k0], zb=r["points_z"][k1], name=r["id"], kind=r["kind"], links=r["links"], margin=300)
             if rr and rr["max_cut_fill_m"] <= 4.0 and rr["clash_points"] == 0 and hclear(rr["points"], w) >= 3.0:
                 fix = dict(r, points=X[:k0].tolist() + list(rr["points"]) + X[k1 + 1:].tolist(), points_z=list(r["points_z"][:k0]) + list(rr["points_z"]) + list(r["points_z"][k1 + 1:]), ends_at="re-routed round the houses")
         if fix:
             P.check_road(fix); P.recommit(fix); built[i_] = fix
-            perys.append(dict(id=r["id"], kind=r["kind"], how=fix["ends_at"], house_clear_before_m=round(hclear(X, w), 2), house_clear_after_m=round(hclear(fix["points"], w), 2),
+            perys.append(dict(id=r["id"], kind=r["kind"], how=fix["ends_at"], m_extension=fix.get("m_extension"), house_clear_before_m=round(hclear(X, w), 2), house_clear_after_m=round(hclear(fix["points"], w), 2),
                               grade_after_pct=worst_grade(fix["points"], fix["points_z"]), max_cut_fill_m=fix["max_cut_fill_m"], points=fix["points"], points_z=fix["points_z"]))
         else:
             P.recommit(r); log.append(f"{r['id']}: crosses Perys v7 houses (clear {hclear(X, w):.1f} m); no re-route within the rules")

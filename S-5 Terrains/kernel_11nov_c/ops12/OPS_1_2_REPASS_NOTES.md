@@ -1,10 +1,12 @@
-# Ops 1 and 2: re-pass of what is built (Kernel, PROPOSED)
+# Ops 1 and 2: re-pass of what is built, v2 (Kernel, PROPOSED)
 
-**Rule breaks left after this re-pass:**
-- **Op 2, 2-10 Munitions Store (rule 3):** no road within the rules reaches its built seat on the knoll top (147.9 m). Two answers are drawn; you choose:
-  - re-seat it beside the net at (15615, 1590), 83.8 m, with your built 79 x 62 m pad, plus a 313 m road;
-  - or build a ramp up the knoll: about 98 m of rise, roughly 700 m at 14 % (switchbacks).
-- **Op 1, through-comp piece `1-06-through` (rule 3, straight 164 m):** it runs across the 1-06 depot's floor. The 2.5 m wave would need 4.4 m of cut, so it is left as built. If a run across a comp's own floor counts, it needs a ramp-free bend inside the comp.
+**v2 (your 12 Nov answers):**
+- **2-10:** the re-seat beside the net is taken.
+- **Perys:** the roads into it now meet the main street M, not the CT1 lane.
+
+**One rule break is left after this re-pass:** op 1's through-comp piece `1-06-through` (rule 3, straight 164 m). It runs across the 1-06 depot's floor; the 2.5 m wave would need 4.4 m of cut, so it is left as built. If a run across a comp's own floor counts, it needs a ramp-free bend inside the comp.
+
+**Op 2, 2-10 Munitions Store (your choice, re-seat):** no road within the rules reaches its built knoll-top seat (147.9 m). It is re-seated beside the net at (15615, 1590), 83.8 m, yaw 165, with your built 79 x 62 m pad (1.94 m of change). A 313 m road (13.8 %, 2.88 m cut/fill) joins it to the net on the net's own level.
 
 Everything else below is fixed, or is a check for your build.
 
@@ -24,7 +26,7 @@ The full audit is in `audit_ops_1_2.json` (`audit12.py`). The fixes are in `opN_
 | Straight runs over 150 m | 5 | 6 (worst `2-F-2-M2`, 340 m) |
 | Road edge within 3 m of a pad | 0 | 2 (A2-08, A2-09) |
 | Pads within 12 m of each other | 0 | 1 (A2-03 overlaps 2-M3 by 35 m²) |
-| Vehicle sites with no road | 0 | 2 (2-05: both roads stop 21 m short; 2-10: no road, 495 m away) |
+| Vehicle sites with no road | 0 | 2 (2-05: both roads stop 21 m short; 2-10: no road, 495 m away; now re-seated, see above) |
 | Roads within 3 m of a Perys v7 house wall | 5 (`1-F-1-M2`, `1-01-1-F`, `1-F-1-15`, `1-M2-1-04`, `1-F-1-04`; 0.0 m, they run through houses) | — |
 | Net per island | one | one |
 | Mains 400 m apart | yes | yes |
@@ -35,11 +37,17 @@ Your dirt roads hold 14 % everywhere on the grid: the grade fault was mine, in o
 **Op 1**
 - **Main road `1-M2-1-14`:** re-held to 10 % on its own line: 9.86 % at most, 2.15 m of cut/fill against the built ground.
 - **Four straights** (`1-M1-1-12` 196 m, `1-M1-1-11` 160 m, `1-03-1-13` 185 m, `1-11-1-15` 248 m): given a 2.5 m side-to-side wave (120 m period). Now 63-72 m at most, grade at most 13.8 %, cut/fill at most 3.0 m against the built ground.
-- **Perys v7** (your K6 second pass, not yet built) stands where the built ground still has the v5 streets. Five built roads ran through its houses:
-  - **Four now end on a v7 street end at that street's level:** `1-F-1-M2`, `1-01-1-F` and `1-F-1-15` at the CT1 lane's west end (5125, 3271, 66.38 m), and `1-F-1-04` at CM1's east end (5170, 3408, 52.62 m).
-  - **One goes round the houses:** `1-M2-1-04`.
-  - **The result:** every road edge is now 10-20 m from the nearest house wall; grades at most 13.82 %; cut/fill at most 2.14 m.
-  - **Check:** three roads now meet at one lane end (CT1 west, a 4.5 m lane). If you would rather they meet the main street M, its west end is (5087, 3409, 59.4 m).
+- **Perys v7** (your K6 second pass, not yet built) stands where the built ground still has the v5 streets. Five built roads ran through its houses.
+  - **Four now come in on the line of the main street M** (your choice). Each road stops 25 m out on M's line, and those 25 m are M extended, at M's own end level and width (8 m). That is Perys street work.
+    - **West end:** `1-F-1-M2` and `1-F-1-04`. M extended from (5087, 3409) to (5064, 3419), level 59.4 m: 1.2 m of ground change.
+    - **East end:** `1-01-1-F` and `1-F-1-15`. M extended from (5353, 3253) to (5374, 3239), level 50.0 m: 3.84 m of ground change.
+    - The two roads at each end meet there.
+  - **Why the extension, not the road, runs into the street end:** M's own row houses stand 0.2-0.3 m from M's edge (normal for a street row), and the walls nearest each end of M are 4.4-5.3 m from the end point. A 7 m road run into the very end would pass 0.9 m (west) or 1.8 m (east) from them.
+    - So the roads stop on the extension and keep 13-18 m from every house wall, with no exemption.
+    - The extension itself has walls 0.4 m (west) and 1.3 m (east) from its edge, as M's own rows do.
+  - **One road goes round the houses:** `1-M2-1-04`, 20 m from the nearest wall.
+  - **The five roads:** grades at most 13.82 %; cut/fill at most 3.84 m. The two east-end roads climb to M's east end at 50.0 m.
+  - Each extension is in `op1_repass.json` → `perys_roads_reended` → `m_extension`.
 
 **Op 2**
 - **Squad pads re-seated** (same composition and size):
@@ -52,7 +60,7 @@ Your dirt roads hold 14 % everywhere on the grid: the grade fault was mine, in o
 
   Each now keeps 12 m from pads and 3 m from road edges; ground change at most 1.9 m.
 - **2-05 Workers' Camp:** a 95 m stub from the pad to the end of `2-05-2-06` (13.8 %, 3.96 m cut/fill). It meets that road at a 0.4 m step; I would accept that, but flag it against item 9's 0.3 m.
-- **2-10:** see the first lines.
+- **2-10:** re-seated, with its road (top of this note).
 - **Five straights** (`2-F-2-M2` 340 m, `2-M4-2-02` 165 m, `2-M4-2-12` 156 m, `2-01-2-07` 152 m, and the two `2-M3-through` pieces 169 m and 157 m): waved. Now 58-85 m, grade at most 13.8 %, cut/fill at most 1.97 m.
 - **2-04 TKTA Checkpoint** is a pass-profile pad. Its road (`2-04-through`) ends 16 m from the pad's centre-level edge. On a profile pad that may be right (the low end), so I did not add a stub. Check it against the profile's end level.
 

@@ -1,10 +1,12 @@
-# KERNEL_RETURN_11NOV_C_OPS_1_2_REPASS_v1: ops 1 and 2, re-pass of what is built
+# KERNEL_RETURN_11NOV_C_OPS_1_2_REPASS_v2: ops 1 and 2, re-pass of what is built
 
-**Two rule breaks are left, both in the first lines of `OPS_1_2_REPASS_NOTES.md`:**
-- op 2's Munitions Store (2-10) has no road to its knoll-top seat. A re-seat beside the net, and a ramp size, are given;
-- op 1's `1-06-through` piece keeps a 164 m straight.
+**v2 changes two things from v1 (your answers):**
+- 2-10 is re-seated beside the net;
+- the Perys roads come in on the main street M (each stops 25 m out on M's line, and M is extended 25 m to meet them).
 
-Everything else the audit found is fixed in `op1_repass.json` / `op2_repass.json`, with its numbers.
+Op 2's files are unchanged from v1.
+
+**One rule break is left,** op 1's `1-06-through` piece (a 164 m straight across the depot's floor). See the first lines of `OPS_1_2_REPASS_NOTES.md`. Everything else the audit found is fixed in `op1_repass.json` / `op2_repass.json`, with its numbers.
 
 | File | What it is |
 |---|---|

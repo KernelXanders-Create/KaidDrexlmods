@@ -92,6 +92,12 @@
 ],
 "houses": [],
 "log": [
+"  1-F-1-M2#1 to M west end: cut/fill 2.12 m, clash 0 [], houses 13.5 m, grade 13.81 %, from z 72.452 to 59.4",
+"  1-01-1-F#6 to M west end: cut/fill 2.09 m, clash 0 [], houses 2.6 m, grade 13.81 %, from z 69.673 to 59.4",
+"  1-01-1-F#6 to M east end: cut/fill 3.84 m, clash 0 [], houses 13.3 m, grade 13.82 %, from z 69.673 to 50.0",
+"  1-F-1-15#7 to M west end: cut/fill 2.09 m, clash 0 [], houses 2.6 m, grade 13.82 %, from z 69.66 to 59.4",
+"  1-F-1-15#7 to M east end: cut/fill 3.84 m, clash 0 [], houses 13.3 m, grade 13.79 %, from z 69.66 to 50.0",
+"  1-F-1-04#23 to M west end: cut/fill 1.45 m, clash 0 [], houses 18.3 m, grade 13.79 %, from z 56.074 to 59.4",
 "1-06-through#38: no fix within the rules (cut/fill 4.4 m, straight 63 m, grade 6.63 %)"
 ]
 }
