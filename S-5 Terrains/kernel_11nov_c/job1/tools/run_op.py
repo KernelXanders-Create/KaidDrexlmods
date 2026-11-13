@@ -300,8 +300,11 @@ for phase in (0, 1):
     if phase == 0:
         if root == "TRUNK":
             nodes[net] = list(trunk_nodes) + [(x, y, z, tid) for tid, t in towns.items() for nm, (x, y, z) in t.get("exits", {}).items()]
-        elif root in towns:
-            t = towns[root]; nodes[net] = [(t["entry"][0], t["entry"][1], t["z"], root)]
+        elif root in towns:     # a town root: the net starts 15 m out on the line of each of its street ends (those 15 m are the street extended: town street work)
+            t = towns[root]; nodes[net] = []; t["street_extensions"] = []
+            for px_, py_, pz_, pb_, pn_ in t["ports"]:
+                b_ = math.radians(pb_); q_ = (px_ + 15.0 * math.sin(b_), py_ + 15.0 * math.cos(b_))
+                nodes[net].append((q_[0], q_[1], pz_, root)); t["street_extensions"].append(dict(street_end=pn_, from_xy=[px_, py_], to_xy=[round(q_[0], 1), round(q_[1], 1)], level_m=pz_, length_m=15.0))
         elif root == "EXTERNAL_ROADS":      # existing roads (other ops', your built ones): their level stretches, and the free edges of the pads on them
             nodes[net] = [n_ for r_ in EXT_ROADS for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]]
             nodes[net] += [n_ for eid, e in EXT.items() for n_ in pad_edge_nodes(e, eid)]

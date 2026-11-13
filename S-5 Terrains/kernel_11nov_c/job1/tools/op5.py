@@ -29,7 +29,10 @@ SITES = [
 K6 = "../../../kernel_10nov_v1/K6_repass/"
 TOWNS = {
     "5-M3": dict(name="Kastro Quay", layout=K6 + "kastro_quay_v2/kastro_quay_v2_layout.json",
-                 entry=(4488.0, 16752.0), entry_z=108.25),          # street B1's north end, the town's west edge (the road port to the citadel road)
+                 entry=(4488.0, 16752.0), entry_z=108.25,
+                 # its street ends (K6 v2 layout), each with the bearing a road leaves it on
+                 ports=[(4488.0, 16752.0, 108.25, 355.0, "B1 north end"), (4628.0, 16660.0, 132.75, 180.0, "M south end"), (4600.0, 17040.0, 120.5, 355.0, "M north end"),
+                        (4586.0, 16636.0, 122.0, 180.0, "W south end"), (4672.0, 16979.0, 119.0, 90.0, "N1 east end")]),          # street B1's north end, the town's west edge (the road port to the citadel road)
     "5-09": dict(name="Lantern Quay Hamlet", layout=K6 + "lantern_quay_v2/lantern_quay_v2_layout.json",
                  entry=(7533.3, 16542.3), entry_z=91.25),           # the top terrace's east end (foot only; no road on Lantern Rock)
 }
