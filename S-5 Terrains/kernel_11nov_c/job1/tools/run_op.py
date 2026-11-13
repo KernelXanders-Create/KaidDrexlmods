@@ -349,7 +349,8 @@ for phase in (0, 1):
                 pts_ = s["_town"]["ports"]
                 if e_rank >= len(pts_): continue
                 px_, py_, pz_, pb_, pn_ = pts_[e_rank]; s["x"], s["y"], s["z"] = px_, py_, pz_
-                b_ = math.radians(pb_); v = np.array([math.sin(b_), math.cos(b_)]); ep = np.array([px_, py_])
+                b_ = math.radians(pb_); v = np.array([math.sin(b_), math.cos(b_)])
+                ep = np.array([px_, py_]) + 15.0 * v       # the road starts 15 m out on the street's line: those 15 m are the street extended (town work), clear of the row houses
             else: ep, v = entry_point(s, (nd[0], nd[1]), rank=e_rank)
             out = np.array(ep) + 12.0 * v
             rl = None                   # a road of this op at the join: give it a level landing there first (item 9: no steps)
@@ -373,6 +374,7 @@ for phase in (0, 1):
                 rl[0].setdefault("landings_for_joins", []).append(dict(at=[round(nd[0], 1), round(nd[1], 1)], z=round(nd[2], 2), for_road=r["id"]))
             if "_town" in s:      # the port the road reached becomes the town's entry
                 t_ = s["_town"]; t_["entry"] = (s["x"], s["y"]); t_["z"] = s["z"]; t_["port_used"] = pn_
+                t_.setdefault("street_extensions", []).append(dict(street_end=pn_, from_xy=[s["x"], s["y"]], to_xy=[round(float(ep[0]), 1), round(float(ep[1]), 1)], level_m=s["z"], length_m=15.0))
             if "_town" not in s:
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
