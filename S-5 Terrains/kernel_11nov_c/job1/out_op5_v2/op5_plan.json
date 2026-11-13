@@ -1,0 +1,2334 @@
+{
+ "op": 5,
+ "name": "Acropolis Isle",
+ "frame": "map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+ "sites": [
+  {
+   "id": "5-F",
+   "name": "Acropolis Citadel",
+   "comp": "TKTA Citadel with Hangar (Mono, Fixed) + Le Temple 2",
+   "x": 2600.0,
+   "y": 17150.0,
+   "yaw": 60,
+   "hx": 80.0,
+   "hy": 80.0,
+   "z": 369.25,
+   "cut_m": 3.35,
+   "fill_m": 3.31,
+   "max_change_m": 3.35,
+   "moved_m": 0,
+   "rough": [
+    2600,
+    17150
+   ],
+   "size_note": "ASSUMED: no pad of either composition exists; 160 x 160 m, a little over the CIS Small Citadel (148 x 153 m) to take Le Temple 2 inside the walls",
+   "water_ok": false,
+   "n_points": 1065,
+   "role": "FINAL",
+   "size": "P",
+   "stake": "The CIS regional command inside the old acropolis; from 340 m it sees the whole north-west sea",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    2600,
+    17150
+   ],
+   "entrance_bearing_deg": 60,
+   "entrance_xy": [
+    2672.7,
+    17192.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-M1",
+   "name": "Windmill Ridge",
+   "comp": "Lessu Outskirts + CIS Flak Crown with GPs (Appalachia)",
+   "x": 3510.0,
+   "y": 16690.0,
+   "yaw": 135,
+   "hx": 58.4,
+   "hy": 54.0,
+   "z": 318.25,
+   "cut_m": 2.1,
+   "fill_m": 2.13,
+   "max_change_m": 2.13,
+   "moved_m": 91,
+   "rough": [
+    3500,
+    16600
+   ],
+   "size_note": "KNOWN for the Flak Crown (op 1 pads); the Lessu windmills are dressing strung along the spine either side of it (not a pad)",
+   "water_ok": false,
+   "n_points": 511,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "Sci-fi windmills on the spine power the citadel, with flak among them; blowing the windmills cuts the citadel's shields",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 91,
+   "design_xy": [
+    3500,
+    16600
+   ],
+   "entrance_bearing_deg": 45,
+   "entrance_xy": [
+    3554.1,
+    16734.1
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-M2",
+   "name": "Sea Cave Pens",
+   "comp": "PLAD Cave Base with Escape",
+   "x": 2300.0,
+   "y": 16100.0,
+   "yaw": 15,
+   "hx": 40.0,
+   "hy": 30.0,
+   "z": 23.0,
+   "cut_m": 2.08,
+   "fill_m": 2.15,
+   "max_change_m": 2.15,
+   "moved_m": 0,
+   "rough": [
+    2300,
+    16100
+   ],
+   "size_note": "ASSUMED: an 80 x 60 m apron at the cave mouth (a sea work: may stand at the water's edge); the cave itself is inside the cliff",
+   "water_ok": "beach",
+   "n_points": 209,
+   "role": "MAIN",
+   "size": "P",
+   "stake": "Boat pens in the sea caves under the white pumice cliffs (tunnel 2 of 2); taking them stops the Yard's northern supply boats",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    2300,
+    16100
+   ],
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    2342.5,
+    16088.6
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-M4",
+   "name": "Lantern Rock Beacon",
+   "comp": "CIS Big Radio Tower with GPs",
+   "x": 7700.0,
+   "y": 17000.0,
+   "yaw": 15,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 126.25,
+   "cut_m": 1.83,
+   "fill_m": 1.61,
+   "max_change_m": 1.83,
+   "moved_m": 0,
+   "rough": [
+    7700,
+    17000
+   ],
+   "size_note": "ASSUMED: 60 x 60 m",
+   "water_ok": false,
+   "n_points": 157,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "The lighthouse beacon guides Yard traffic into the North Narrows; blowing it blinds the Narrows to night traffic",
+   "island": "Lantern Rock",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    7700,
+    17000
+   ],
+   "entrance_bearing_deg": 195,
+   "entrance_xy": [
+    7691.2,
+    16967.2
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-01",
+   "name": "Pumice Coast Bunker Line",
+   "comp": "CIS Metal Trench Line with GPs",
+   "x": 3260.0,
+   "y": 16170.0,
+   "yaw": 105,
+   "hx": 21.7,
+   "hy": 75.1,
+   "z": 177.5,
+   "cut_m": 1.63,
+   "fill_m": 1.79,
+   "max_change_m": 1.79,
+   "moved_m": 22,
+   "rough": [
+    3250,
+    16150
+   ],
+   "size_note": "KNOWN: op 1 pads",
+   "water_ok": false,
+   "n_points": 283,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Faces the Kastro Strait and Sound Isle; taking it opens the south beach",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 22,
+   "design_xy": [
+    3250,
+    16150
+   ],
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    3336.4,
+    16149.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-02",
+   "name": "West Cliff AA",
+   "comp": "CIS Medium AA Base with GPs",
+   "x": 1560.0,
+   "y": 16720.0,
+   "yaw": 0,
+   "hx": 60.0,
+   "hy": 55.0,
+   "z": 239.5,
+   "cut_m": 3.44,
+   "fill_m": 3.62,
+   "max_change_m": 3.62,
+   "moved_m": 561,
+   "rough": [
+    1200,
+    17150
+   ],
+   "size_note": "REDUCED: your built pad (2-M3, 197 x 193 m) holds 4 m nowhere within 960 m; this 120 x 110 m pad needs a trimmed composition. Was: REDUCED: the composition's own pad (2-M3) is 197 x 193 m and nothing that big holds 4 m on the west cliffs; a 120 x 110 m pad fits (needs a smaller cut of the base)",
+   "water_ok": false,
+   "n_points": 575,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Covers the western sea; taking it opens the west air route to the citadel",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 561,
+   "design_xy": [
+    1200,
+    17150
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    1624.0,
+    16720.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-03",
+   "name": "North Cape Battery",
+   "comp": "CIS Turbolaser Tower with GPs",
+   "x": 2900.0,
+   "y": 18540.0,
+   "yaw": 60,
+   "hx": 27.5,
+   "hy": 30.1,
+   "z": 46.5,
+   "cut_m": 3.03,
+   "fill_m": 3.07,
+   "max_change_m": 3.07,
+   "moved_m": 90,
+   "rough": [
+    2900,
+    18450
+   ],
+   "size_note": "KNOWN: 2-09",
+   "water_ok": false,
+   "n_points": 145,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns on the north cape cover the north sea and the citadel's back slope",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 90,
+   "design_xy": [
+    2900,
+    18450
+   ],
+   "entrance_bearing_deg": 150,
+   "entrance_xy": [
+    2915.8,
+    18512.7
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-04",
+   "name": "Monastery Ledge",
+   "comp": "Zavala CIS Outpost Fixed with GPs",
+   "x": 1690.0,
+   "y": 18230.0,
+   "yaw": 60,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 54.5,
+   "cut_m": 3.16,
+   "fill_m": 3.18,
+   "max_change_m": 3.18,
+   "moved_m": 294,
+   "rough": [
+    1600,
+    17950
+   ],
+   "size_note": "ASSUMED: 60 x 60 m (as op 3's Zavala outpost)",
+   "water_ok": false,
+   "n_points": 157,
+   "role": "SUP",
+   "size": "S",
+   "stake": "An old cliff monastery (Altis chapel dressing) used as a lookout over the citadel's west approach",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 294,
+   "design_xy": [
+    1600,
+    17950
+   ],
+   "entrance_bearing_deg": 150,
+   "entrance_xy": [
+    1707.0,
+    18200.6
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-05",
+   "name": "Ridge Power Station",
+   "comp": "CIS Large Power Facility with GPs",
+   "x": 3980.0,
+   "y": 16430.0,
+   "yaw": 60,
+   "hx": 70.0,
+   "hy": 50.0,
+   "z": 228.0,
+   "cut_m": 1.94,
+   "fill_m": 2.0,
+   "max_change_m": 2.0,
+   "moved_m": 82,
+   "rough": [
+    3900,
+    16450
+   ],
+   "size_note": "ASSUMED: 140 x 100 m",
+   "water_ok": false,
+   "n_points": 591,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Takes the windmills' power to the citadel; blowing it drops the citadel's shields",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 82,
+   "design_xy": [
+    3900,
+    16450
+   ],
+   "entrance_bearing_deg": 60,
+   "entrance_xy": [
+    4026.8,
+    16457.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-06",
+   "name": "Quay Fuel Depot",
+   "comp": "CIS Fuel Depot with GPs",
+   "x": 4060.0,
+   "y": 17520.0,
+   "yaw": 45,
+   "hx": 43.6,
+   "hy": 32.3,
+   "z": 228.25,
+   "cut_m": 2.22,
+   "fill_m": 2.45,
+   "max_change_m": 2.45,
+   "moved_m": 559,
+   "rough": [
+    4550,
+    17250
+   ],
+   "size_note": "KNOWN: 1-12",
+   "water_ok": false,
+   "n_points": 237,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Fuel for the supply boats; it burns when hit",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 559,
+   "design_xy": [
+    4550,
+    17250
+   ],
+   "entrance_bearing_deg": 135,
+   "entrance_xy": [
+    4093.7,
+    17486.3
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-07",
+   "name": "Citadel Gate Checkpoint",
+   "comp": "TKTA Checkpoint Fixed (Mono)",
+   "x": 3100.0,
+   "y": 16900.0,
+   "yaw": 75,
+   "hx": 24.0,
+   "hy": 39.0,
+   "z": 367.75,
+   "cut_m": 2.68,
+   "fill_m": 2.54,
+   "max_change_m": 2.68,
+   "moved_m": 0,
+   "rough": [
+    3100,
+    16900
+   ],
+   "size_note": "KNOWN: 2-04 (a pass-profile pad 48 x 78 m; here seated level)",
+   "water_ok": false,
+   "n_points": 165,
+   "role": "SUP",
+   "size": "S",
+   "stake": "The road up to the acropolis; taking it opens the vehicle way up",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    3100,
+    16900
+   ],
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    3141.5,
+    16911.1
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-08",
+   "name": "Olive Terraces Post",
+   "comp": "CIS Outpost with GPs (D)",
+   "x": 2000.0,
+   "y": 16620.0,
+   "yaw": 75,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 294.5,
+   "cut_m": 1.87,
+   "fill_m": 2.11,
+   "max_change_m": 2.11,
+   "moved_m": 20,
+   "rough": [
+    2000,
+    16600
+   ],
+   "size_note": "ASSUMED: 60 x 60 m",
+   "water_ok": false,
+   "n_points": 157,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Watches the south-west slopes; taking it opens a covered climb to the citadel",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 20,
+   "design_xy": [
+    2000,
+    16600
+   ],
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    2032.8,
+    16628.8
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-10",
+   "name": "Coral Head Pillboxes",
+   "comp": "Small Wall with Bunker",
+   "x": 9300.0,
+   "y": 16250.0,
+   "yaw": 0,
+   "hx": 20.0,
+   "hy": 12.0,
+   "z": 4.25,
+   "cut_m": 0.0,
+   "fill_m": 0.06,
+   "max_change_m": 0.06,
+   "moved_m": 0,
+   "rough": [
+    9300,
+    16250
+   ],
+   "size_note": "ASSUMED: 40 x 24 m on a coral head (as op 3's shoal pillboxes)",
+   "water_ok": "beach",
+   "n_points": 45,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Pillboxes on coral heads cover the boat channels through the Coral Shelf",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    9300,
+    16250
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    9324.0,
+    16250.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "5-11",
+   "name": "Coral Shelf Wreck",
+   "comp": "2x Armed Landers Fixed",
+   "x": 10400.0,
+   "y": 15650.0,
+   "yaw": 0,
+   "hx": 40.0,
+   "hy": 60.0,
+   "z": 3.75,
+   "cut_m": 0.46,
+   "fill_m": 0.64,
+   "max_change_m": 0.64,
+   "moved_m": 0,
+   "rough": [
+    10400,
+    15650
+   ],
+   "size_note": "ASSUMED: 80 x 120 m for two landers side by side on the reef",
+   "water_ok": "beach",
+   "n_points": 425,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "A wrecked CIS landing craft on the reef, garrisoned; it holds the middle of the reef and fires on boats threading it",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    10400,
+    15650
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    10444.0,
+    15650.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "5-12",
+   "name": "Citadel Gun Park",
+   "comp": "CIS Vehicle Depot with GPs (D)",
+   "x": 2300.0,
+   "y": 17600.0,
+   "yaw": 105,
+   "hx": 50.0,
+   "hy": 40.0,
+   "z": 348.25,
+   "cut_m": 2.88,
+   "fill_m": 3.08,
+   "max_change_m": 3.08,
+   "moved_m": 0,
+   "rough": [
+    2300,
+    17600
+   ],
+   "size_note": "ASSUMED: 100 x 80 m",
+   "water_ok": false,
+   "n_points": 341,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns and vehicles on the north slope; air softens them",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    2300,
+    17600
+   ],
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    2342.5,
+    17588.6
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "5-13",
+   "name": "Kastro Strait Sensor Stack",
+   "comp": "CIS Comms Array with GPs",
+   "x": 2350.0,
+   "y": 14750.0,
+   "yaw": 0,
+   "hx": 15.0,
+   "hy": 15.0,
+   "z": 27.5,
+   "cut_m": 0.0,
+   "fill_m": 0.06,
+   "max_change_m": 0.06,
+   "moved_m": 0,
+   "rough": [
+    2350,
+    14750
+   ],
+   "size_note": "REDUCED: your built pad (A1-03, 40 x 93 m) holds 4 m nowhere within 288 m; this 30 x 30 m pad needs a trimmed composition. Was: REDUCED: the Comms Array's pad (A1-03) is 40 x 93 m; the stack top only takes about 30 x 30 m (the array's mast and a ring of guns); air only",
+   "water_ok": "beach",
+   "n_points": 49,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Cues the pumice-coast guns onto boats crossing the strait; killing it lets the crossing arrive unseen. Only air can reach it",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    2350,
+    14750
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    2369.0,
+    14750.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "5-14",
+   "name": "East Bay Landers",
+   "comp": "CIS Landing Position with GPs",
+   "x": 4500.0,
+   "y": 17890.0,
+   "yaw": 150,
+   "hx": 44.5,
+   "hy": 67.0,
+   "z": 106.0,
+   "cut_m": 2.59,
+   "fill_m": 2.36,
+   "max_change_m": 2.59,
+   "moved_m": 117,
+   "rough": [
+    4600,
+    17950
+   ],
+   "size_note": "KNOWN: 1-02 / 2-06 (a beach work)",
+   "water_ok": "beach",
+   "n_points": 505,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Supply landings in the north-east bay; taking them opens a second beach behind Kastro Quay",
+   "island": "Acropolis Isle",
+   "moved_from_rough_m": 117,
+   "design_xy": [
+    4600,
+    17950
+   ],
+   "entrance_bearing_deg": 150,
+   "entrance_xy": [
+    4535.5,
+    17828.5
+   ],
+   "entrance_note": "faces its foot link"
+  }
+ ],
+ "squad_positions": [
+  {
+   "id": "A5-01",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 3460.0,
+   "y": 16130.0,
+   "yaw": 45,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 183.0,
+   "cut_m": 2.34,
+   "fill_m": 2.39,
+   "max_change_m": 2.39,
+   "moved_m": 277,
+   "rough": [
+    3250,
+    15950
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 127,
+   "role": "squad position",
+   "guards": "the pumice south beach below the bunker line",
+   "nearest_site": "5-01",
+   "nearest_site_m": 204
+  },
+  {
+   "id": "A5-02",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 1970.0,
+   "y": 16120.0,
+   "yaw": 105,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 3.5,
+   "cut_m": 2.2,
+   "fill_m": 2.35,
+   "max_change_m": 2.35,
+   "moved_m": 256,
+   "rough": [
+    1750,
+    16250
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the sea-cave mouths and the Kastro Strait crossing",
+   "nearest_site": "5-M2",
+   "nearest_site_m": 331
+  },
+  {
+   "id": "A5-03",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 1440.0,
+   "y": 16760.0,
+   "yaw": 105,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 247.75,
+   "cut_m": 2.01,
+   "fill_m": 1.95,
+   "max_change_m": 2.01,
+   "moved_m": 199,
+   "rough": [
+    1250,
+    16700
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 137,
+   "role": "squad position",
+   "guards": "the west coast landing below the West Cliff AA",
+   "nearest_site": "5-02",
+   "nearest_site_m": 126
+  },
+  {
+   "id": "A5-04",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 2620.0,
+   "y": 18550.0,
+   "yaw": 90,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 94.0,
+   "cut_m": 2.04,
+   "fill_m": 1.89,
+   "max_change_m": 2.04,
+   "moved_m": 351,
+   "rough": [
+    2600,
+    18200
+   ],
+   "size_note": "KNOWN",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the citadel's north back slope, between the gun park and the cape battery",
+   "nearest_site": "5-03",
+   "nearest_site_m": 280
+  },
+  {
+   "id": "A5-05",
+   "name": "squad position",
+   "comp": "CIS Mixed AA Platform with GPs",
+   "x": 3090.0,
+   "y": 17440.0,
+   "yaw": 120,
+   "hx": 50.7,
+   "hy": 46.4,
+   "z": 339.0,
+   "cut_m": 1.92,
+   "fill_m": 1.94,
+   "max_change_m": 1.94,
+   "moved_m": 108,
+   "rough": [
+    3000,
+    17500
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 403,
+   "role": "squad position",
+   "guards": "the air over the acropolis",
+   "nearest_site": "5-07",
+   "nearest_site_m": 540
+  },
+  {
+   "id": "A5-06",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 4130.0,
+   "y": 16500.0,
+   "yaw": 150,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 209.5,
+   "cut_m": 3.31,
+   "fill_m": 3.4,
+   "max_change_m": 3.4,
+   "moved_m": 120,
+   "rough": [
+    4250,
+    16500
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "the road from Kastro Quay up to the power station",
+   "nearest_site": "5-05",
+   "nearest_site_m": 166
+  },
+  {
+   "id": "A5-07",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 4080.0,
+   "y": 18420.0,
+   "yaw": 135,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 67.5,
+   "cut_m": 2.79,
+   "fill_m": 2.95,
+   "max_change_m": 2.95,
+   "moved_m": 278,
+   "rough": [
+    4300,
+    18250
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 195,
+   "role": "squad position",
+   "guards": "the north-east bay beach and the landers",
+   "nearest_site": "5-14",
+   "nearest_site_m": 676
+  },
+  {
+   "id": "A5-08",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 3990.0,
+   "y": 17260.0,
+   "yaw": 30,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 293.0,
+   "cut_m": 3.41,
+   "fill_m": 3.16,
+   "max_change_m": 3.41,
+   "moved_m": 275,
+   "rough": [
+    4250,
+    17350
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "the road north of Kastro Quay to the fuel depot and the bay",
+   "nearest_site": "5-06",
+   "nearest_site_m": 269
+  },
+  {
+   "id": "A5-09",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 7680.0,
+   "y": 16490.0,
+   "yaw": 0,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 87.5,
+   "cut_m": 3.35,
+   "fill_m": 3.4,
+   "max_change_m": 3.4,
+   "moved_m": 50,
+   "rough": [
+    7650,
+    16450
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 143,
+   "role": "squad position",
+   "guards": "Lantern Quay's landing and the hamlet stair",
+   "nearest_site": "5-09",
+   "nearest_site_m": 156
+  },
+  {
+   "id": "A5-10",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 7960.0,
+   "y": 17110.0,
+   "yaw": 45,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 158.75,
+   "cut_m": 2.5,
+   "fill_m": 2.3,
+   "max_change_m": 2.5,
+   "moved_m": 41,
+   "rough": [
+    7950,
+    17150
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the Lantern channel and the head of the Coral Shelf",
+   "nearest_site": "5-M4",
+   "nearest_site_m": 282
+  }
+ ],
+ "towns": [
+  {
+   "id": "5-M3",
+   "name": "Kastro Quay",
+   "entry": [
+    4488.0,
+    16752.0
+   ],
+   "z": 108.25,
+   "ports": [
+    [
+     4488.0,
+     16752.0,
+     108.25,
+     0.0,
+     "road port"
+    ]
+   ],
+   "n_buildings": 34,
+   "garrison": 25,
+   "layout": "../../../kernel_10nov_v1/K6_repass/kastro_quay_v2/kastro_quay_v2_layout.json",
+   "exits": {},
+   "purpose_map_xy": [
+    4200,
+    16850
+   ],
+   "layout_centre_xy": [
+    4583.7,
+    16813.2
+   ],
+   "layout_offset_m": 385,
+   "hull": [
+    [
+     4585.0,
+     16616.4
+    ],
+    [
+     4584.2,
+     16615.9
+    ],
+    [
+     4583.3,
+     16615.4
+    ],
+    [
+     4582.3,
+     16615.1
+    ],
+    [
+     4581.4,
+     16614.8
+    ],
+    [
+     4580.4,
+     16614.6
+    ],
+    [
+     4579.4,
+     16614.6
+    ],
+    [
+     4578.4,
+     16614.6
+    ],
+    [
+     4577.4,
+     16614.7
+    ],
+    [
+     4576.5,
+     16615.0
+    ],
+    [
+     4565.1,
+     16618.3
+    ],
+    [
+     4563.8,
+     16618.7
+    ],
+    [
+     4491.9,
+     16650.9
+    ],
+    [
+     4491.1,
+     16651.3
+    ],
+    [
+     4490.3,
+     16651.8
+    ],
+    [
+     4489.5,
+     16652.4
+    ],
+    [
+     4488.8,
+     16653.0
+    ],
+    [
+     4488.2,
+     16653.7
+    ],
+    [
+     4487.6,
+     16654.5
+    ],
+    [
+     4487.2,
+     16655.3
+    ],
+    [
+     4486.8,
+     16656.2
+    ],
+    [
+     4486.4,
+     16657.1
+    ],
+    [
+     4484.1,
+     16664.7
+    ],
+    [
+     4481.8,
+     16672.3
+    ],
+    [
+     4481.7,
+     16672.6
+    ],
+    [
+     4480.7,
+     16676.4
+    ],
+    [
+     4480.6,
+     16676.9
+    ],
+    [
+     4479.8,
+     16680.8
+    ],
+    [
+     4479.7,
+     16680.8
+    ],
+    [
+     4467.7,
+     16739.3
+    ],
+    [
+     4467.5,
+     16740.3
+    ],
+    [
+     4467.5,
+     16741.3
+    ],
+    [
+     4467.5,
+     16742.3
+    ],
+    [
+     4467.7,
+     16743.2
+    ],
+    [
+     4467.9,
+     16744.2
+    ],
+    [
+     4468.2,
+     16745.1
+    ],
+    [
+     4590.7,
+     17043.8
+    ],
+    [
+     4591.2,
+     17044.7
+    ],
+    [
+     4591.7,
+     17045.5
+    ],
+    [
+     4592.3,
+     17046.3
+    ],
+    [
+     4592.9,
+     17047.1
+    ],
+    [
+     4593.7,
+     17047.7
+    ],
+    [
+     4594.5,
+     17048.3
+    ],
+    [
+     4595.3,
+     17048.8
+    ],
+    [
+     4596.2,
+     17049.3
+    ],
+    [
+     4597.2,
+     17049.6
+    ],
+    [
+     4598.1,
+     17049.8
+    ],
+    [
+     4599.1,
+     17050.0
+    ],
+    [
+     4600.1,
+     17050.0
+    ],
+    [
+     4601.1,
+     17049.9
+    ],
+    [
+     4602.1,
+     17049.8
+    ],
+    [
+     4603.0,
+     17049.5
+    ],
+    [
+     4603.9,
+     17049.2
+    ],
+    [
+     4604.8,
+     17048.8
+    ],
+    [
+     4605.7,
+     17048.2
+    ],
+    [
+     4606.5,
+     17047.6
+    ],
+    [
+     4678.5,
+     16986.6
+    ],
+    [
+     4679.2,
+     16986.0
+    ],
+    [
+     4679.8,
+     16985.2
+    ],
+    [
+     4680.4,
+     16984.4
+    ],
+    [
+     4680.9,
+     16983.6
+    ],
+    [
+     4681.3,
+     16982.7
+    ],
+    [
+     4681.6,
+     16981.8
+    ],
+    [
+     4681.8,
+     16980.8
+    ],
+    [
+     4682.0,
+     16979.8
+    ],
+    [
+     4682.0,
+     16978.8
+    ],
+    [
+     4681.9,
+     16977.9
+    ],
+    [
+     4645.9,
+     16663.5
+    ],
+    [
+     4645.8,
+     16662.6
+    ],
+    [
+     4645.6,
+     16661.7
+    ],
+    [
+     4645.2,
+     16660.8
+    ],
+    [
+     4644.8,
+     16660.0
+    ],
+    [
+     4644.4,
+     16659.2
+    ],
+    [
+     4643.8,
+     16658.4
+    ],
+    [
+     4643.2,
+     16657.7
+    ],
+    [
+     4642.5,
+     16657.1
+    ],
+    [
+     4641.8,
+     16656.5
+    ],
+    [
+     4585.0,
+     16616.4
+    ]
+   ]
+  },
+  {
+   "id": "5-09",
+   "name": "Lantern Quay Hamlet",
+   "entry": [
+    7533.3,
+    16542.3
+   ],
+   "z": 91.25,
+   "ports": [
+    [
+     7533.3,
+     16542.3,
+     91.25,
+     0.0,
+     "road port"
+    ]
+   ],
+   "n_buildings": 51,
+   "garrison": 33,
+   "layout": "../../../kernel_10nov_v1/K6_repass/lantern_quay_v2/lantern_quay_v2_layout.json",
+   "exits": {},
+   "purpose_map_xy": [
+    7400,
+    16650
+   ],
+   "layout_centre_xy": [
+    7390.9,
+    16512.2
+   ],
+   "layout_offset_m": 138,
+   "hull": [
+    [
+     7465.0,
+     16328.2
+    ],
+    [
+     7464.2,
+     16327.8
+    ],
+    [
+     7463.3,
+     16327.4
+    ],
+    [
+     7462.4,
+     16327.1
+    ],
+    [
+     7461.4,
+     16326.9
+    ],
+    [
+     7460.5,
+     16326.8
+    ],
+    [
+     7459.5,
+     16326.8
+    ],
+    [
+     7458.5,
+     16326.9
+    ],
+    [
+     7457.6,
+     16327.0
+    ],
+    [
+     7384.3,
+     16343.7
+    ],
+    [
+     7383.4,
+     16343.9
+    ],
+    [
+     7312.7,
+     16366.7
+    ],
+    [
+     7312.0,
+     16366.9
+    ],
+    [
+     7296.1,
+     16373.3
+    ],
+    [
+     7295.2,
+     16373.7
+    ],
+    [
+     7294.3,
+     16374.2
+    ],
+    [
+     7293.5,
+     16374.8
+    ],
+    [
+     7292.7,
+     16375.5
+    ],
+    [
+     7292.1,
+     16376.3
+    ],
+    [
+     7291.5,
+     16377.1
+    ],
+    [
+     7290.9,
+     16378.0
+    ],
+    [
+     7290.5,
+     16378.9
+    ],
+    [
+     7290.2,
+     16379.8
+    ],
+    [
+     7286.4,
+     16393.3
+    ],
+    [
+     7286.4,
+     16393.3
+    ],
+    [
+     7241.8,
+     16551.5
+    ],
+    [
+     7241.5,
+     16552.5
+    ],
+    [
+     7241.4,
+     16553.5
+    ],
+    [
+     7241.4,
+     16554.6
+    ],
+    [
+     7241.5,
+     16555.6
+    ],
+    [
+     7241.7,
+     16556.6
+    ],
+    [
+     7242.0,
+     16557.6
+    ],
+    [
+     7262.9,
+     16615.4
+    ],
+    [
+     7263.2,
+     16616.2
+    ],
+    [
+     7263.7,
+     16617.1
+    ],
+    [
+     7264.2,
+     16617.8
+    ],
+    [
+     7264.7,
+     16618.5
+    ],
+    [
+     7290.5,
+     16648.4
+    ],
+    [
+     7291.2,
+     16649.1
+    ],
+    [
+     7291.9,
+     16649.7
+    ],
+    [
+     7292.6,
+     16650.3
+    ],
+    [
+     7338.2,
+     16680.3
+    ],
+    [
+     7339.1,
+     16680.8
+    ],
+    [
+     7340.1,
+     16681.2
+    ],
+    [
+     7341.1,
+     16681.6
+    ],
+    [
+     7342.2,
+     16681.8
+    ],
+    [
+     7343.2,
+     16681.9
+    ],
+    [
+     7427.2,
+     16686.0
+    ],
+    [
+     7427.9,
+     16686.0
+    ],
+    [
+     7439.8,
+     16685.8
+    ],
+    [
+     7440.7,
+     16685.8
+    ],
+    [
+     7441.6,
+     16685.6
+    ],
+    [
+     7442.5,
+     16685.4
+    ],
+    [
+     7443.4,
+     16685.1
+    ],
+    [
+     7444.2,
+     16684.7
+    ],
+    [
+     7445.0,
+     16684.2
+    ],
+    [
+     7445.8,
+     16683.7
+    ],
+    [
+     7446.5,
+     16683.1
+    ],
+    [
+     7447.1,
+     16682.4
+    ],
+    [
+     7447.7,
+     16681.7
+    ],
+    [
+     7454.1,
+     16672.8
+    ],
+    [
+     7454.1,
+     16672.7
+    ],
+    [
+     7541.5,
+     16548.0
+    ],
+    [
+     7542.0,
+     16547.2
+    ],
+    [
+     7542.5,
+     16546.3
+    ],
+    [
+     7542.8,
+     16545.3
+    ],
+    [
+     7543.1,
+     16544.3
+    ],
+    [
+     7543.2,
+     16543.3
+    ],
+    [
+     7543.3,
+     16542.3
+    ],
+    [
+     7543.2,
+     16541.3
+    ],
+    [
+     7543.1,
+     16540.3
+    ],
+    [
+     7542.8,
+     16539.3
+    ],
+    [
+     7479.5,
+     16340.0
+    ],
+    [
+     7479.2,
+     16339.0
+    ],
+    [
+     7478.7,
+     16338.1
+    ],
+    [
+     7478.2,
+     16337.2
+    ],
+    [
+     7477.5,
+     16336.4
+    ],
+    [
+     7476.8,
+     16335.7
+    ],
+    [
+     7476.1,
+     16335.0
+    ],
+    [
+     7475.2,
+     16334.5
+    ],
+    [
+     7465.0,
+     16328.2
+    ]
+   ]
+  }
+ ],
+ "roads": [],
+ "ramps_needed": [],
+ "external_roads_joined": [],
+ "trunk_breaks": [],
+ "foot_links": [
+  {
+   "site": "5-F",
+   "bottom_xyz": [
+    2600.0,
+    17150.0,
+    369.25
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 1929,
+   "rise_m": -261.0
+  },
+  {
+   "site": "5-M1",
+   "bottom_xyz": [
+    3510.0,
+    16690.0,
+    318.25
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 980,
+   "rise_m": -210.0
+  },
+  {
+   "site": "5-M2",
+   "bottom_xyz": [
+    2300.0,
+    16100.0,
+    23.0
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 2283,
+   "rise_m": 85.2
+  },
+  {
+   "site": "5-M4",
+   "bottom_xyz": [
+    7700.0,
+    17000.0,
+    126.25
+   ],
+   "top_xyz": [
+    7533.3,
+    16542.3,
+    91.25
+   ],
+   "top_on_road": "town 5-09 (Lantern Quay Hamlet)",
+   "straight_m": 487,
+   "rise_m": -35.0
+  },
+  {
+   "site": "5-01",
+   "bottom_xyz": [
+    3260.0,
+    16170.0,
+    177.5
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 1359,
+   "rise_m": -69.2
+  },
+  {
+   "site": "5-02",
+   "bottom_xyz": [
+    1560.0,
+    16720.0,
+    239.5
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 2928,
+   "rise_m": -131.2
+  },
+  {
+   "site": "5-03",
+   "bottom_xyz": [
+    2900.0,
+    18540.0,
+    46.5
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 2391,
+   "rise_m": 61.8
+  },
+  {
+   "site": "5-04",
+   "bottom_xyz": [
+    1690.0,
+    18230.0,
+    54.5
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 3164,
+   "rise_m": 53.8
+  },
+  {
+   "site": "5-05",
+   "bottom_xyz": [
+    3980.0,
+    16430.0,
+    228.0
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 601,
+   "rise_m": -119.8
+  },
+  {
+   "site": "5-06",
+   "bottom_xyz": [
+    4060.0,
+    17520.0,
+    228.25
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 879,
+   "rise_m": -120.0
+  },
+  {
+   "site": "5-07",
+   "bottom_xyz": [
+    3100.0,
+    16900.0,
+    367.75
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 1396,
+   "rise_m": -259.5
+  },
+  {
+   "site": "5-08",
+   "bottom_xyz": [
+    2000.0,
+    16620.0,
+    294.5
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 2491,
+   "rise_m": -186.2
+  },
+  {
+   "site": "5-12",
+   "bottom_xyz": [
+    2300.0,
+    17600.0,
+    348.25
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 2347,
+   "rise_m": -240.0
+  },
+  {
+   "site": "5-14",
+   "bottom_xyz": [
+    4500.0,
+    17890.0,
+    106.0
+   ],
+   "top_xyz": [
+    4488.0,
+    16752.0,
+    108.25
+   ],
+   "top_on_road": "town 5-M3 (Kastro Quay)",
+   "straight_m": 1138,
+   "rise_m": 2.2
+  }
+ ],
+ "approaches": {
+  "5-F Acropolis Citadel": [
+   "up the road from Kastro Quay past the power station, Windmill Ridge and the Citadel Gate (5-07)",
+   "the covered climb from the south-west: past the Olive Terraces Post (5-08) onto the summit's west side"
+  ],
+  "5-M1 Windmill Ridge": [
+   "from the pumice south beach, past (or through) the bunker line (5-01) and up the spine",
+   "along the ridge road from the Ridge Power Station (5-05)"
+  ],
+  "5-M2 Sea Cave Pens": [
+   "by boat across the Kastro Strait into the cave mouth",
+   "from above: down from the Olive Terraces Post (5-08) on its road or the cliff path"
+  ],
+  "5-M3 Kastro Quay": [
+   "by boat to the quay apron in the cove, then the cargo lift and the stair up the cliff",
+   "overland from the East Bay Landers (5-14) or along the road from the power station (5-05)"
+  ],
+  "5-M4 Lantern Rock Beacon": [
+   "by boat to Lantern Quay, then up the hamlet stairs to the beacon",
+   "by boat or air to the rock's north and east shores (shores list), then up the slope on foot"
+  ]
+ },
+ "shores": [
+  {
+   "from_xy": [
+    10225.0,
+    15570.0
+   ],
+   "to_xy": [
+    10160.0,
+    15615.0
+   ],
+   "length_m": 79,
+   "points": 32,
+   "mean_inland_slope_pct": 8.0
+  },
+  {
+   "from_xy": [
+    10835.0,
+    15590.0
+   ],
+   "to_xy": [
+    10790.0,
+    15605.0
+   ],
+   "length_m": 47,
+   "points": 21,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    10100.0,
+    15635.0
+   ],
+   "to_xy": [
+    10140.0,
+    15635.0
+   ],
+   "length_m": 40,
+   "points": 16,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    10715.0,
+    15670.0
+   ],
+   "to_xy": [
+    10645.0,
+    15710.0
+   ],
+   "length_m": 81,
+   "points": 35,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    10560.0,
+    15725.0
+   ],
+   "to_xy": [
+    10510.0,
+    15745.0
+   ],
+   "length_m": 54,
+   "points": 24,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    10485.0,
+    15770.0
+   ],
+   "to_xy": [
+    10445.0,
+    15790.0
+   ],
+   "length_m": 45,
+   "points": 21,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    10415.0,
+    15805.0
+   ],
+   "to_xy": [
+    10380.0,
+    15825.0
+   ],
+   "length_m": 40,
+   "points": 19,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    1070.0,
+    15960.0
+   ],
+   "to_xy": [
+    920.0,
+    16005.0
+   ],
+   "length_m": 157,
+   "points": 32,
+   "mean_inland_slope_pct": 7.0
+  },
+  {
+   "from_xy": [
+    10090.0,
+    15950.0
+   ],
+   "to_xy": [
+    10130.0,
+    15985.0
+   ],
+   "length_m": 53,
+   "points": 15,
+   "mean_inland_slope_pct": 11.4
+  },
+  {
+   "from_xy": [
+    7240.0,
+    16400.0
+   ],
+   "to_xy": [
+    7150.0,
+    16465.0
+   ],
+   "length_m": 111,
+   "points": 20,
+   "mean_inland_slope_pct": 9.6
+  },
+  {
+   "from_xy": [
+    8080.0,
+    16555.0
+   ],
+   "to_xy": [
+    8115.0,
+    16620.0
+   ],
+   "length_m": 74,
+   "points": 26,
+   "mean_inland_slope_pct": 7.5
+  },
+  {
+   "from_xy": [
+    8270.0,
+    16825.0
+   ],
+   "to_xy": [
+    8265.0,
+    16870.0
+   ],
+   "length_m": 45,
+   "points": 16,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    8280.0,
+    16895.0
+   ],
+   "to_xy": [
+    8265.0,
+    16935.0
+   ],
+   "length_m": 43,
+   "points": 18,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    8265.0,
+    16985.0
+   ],
+   "to_xy": [
+    8260.0,
+    17025.0
+   ],
+   "length_m": 40,
+   "points": 12,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    1045.0,
+    17145.0
+   ],
+   "to_xy": [
+    1070.0,
+    17185.0
+   ],
+   "length_m": 47,
+   "points": 18,
+   "mean_inland_slope_pct": 7.3
+  },
+  {
+   "from_xy": [
+    8225.0,
+    17260.0
+   ],
+   "to_xy": [
+    8160.0,
+    17315.0
+   ],
+   "length_m": 85,
+   "points": 29,
+   "mean_inland_slope_pct": 7.9
+  },
+  {
+   "from_xy": [
+    8145.0,
+    17335.0
+   ],
+   "to_xy": [
+    8030.0,
+    17360.0
+   ],
+   "length_m": 118,
+   "points": 47,
+   "mean_inland_slope_pct": 6.2
+  },
+  {
+   "from_xy": [
+    7950.0,
+    17440.0
+   ],
+   "to_xy": [
+    7885.0,
+    17470.0
+   ],
+   "length_m": 72,
+   "points": 28,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    4585.0,
+    17535.0
+   ],
+   "to_xy": [
+    4645.0,
+    17775.0
+   ],
+   "length_m": 247,
+   "points": 40,
+   "mean_inland_slope_pct": 8.5
+  },
+  {
+   "from_xy": [
+    4685.0,
+    17840.0
+   ],
+   "to_xy": [
+    4660.0,
+    18070.0
+   ],
+   "length_m": 231,
+   "points": 48,
+   "mean_inland_slope_pct": 8.6
+  },
+  {
+   "from_xy": [
+    4185.0,
+    18585.0
+   ],
+   "to_xy": [
+    4140.0,
+    18615.0
+   ],
+   "length_m": 54,
+   "points": 20,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    3955.0,
+    18830.0
+   ],
+   "to_xy": [
+    3905.0,
+    18860.0
+   ],
+   "length_m": 58,
+   "points": 20,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    3820.0,
+    18905.0
+   ],
+   "to_xy": [
+    3665.0,
+    18950.0
+   ],
+   "length_m": 161,
+   "points": 62,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    3270.0,
+    18960.0
+   ],
+   "to_xy": [
+    3340.0,
+    18980.0
+   ],
+   "length_m": 73,
+   "points": 30,
+   "mean_inland_slope_pct": 4.6
+  }
+ ],
+ "gate": null,
+ "moves": [
+  {
+   "id": "5-M1",
+   "from_xy": [
+    3500,
+    16600
+   ],
+   "to_xy": [
+    3510.0,
+    16690.0
+   ],
+   "moved_m": 91
+  },
+  {
+   "id": "5-01",
+   "from_xy": [
+    3250,
+    16150
+   ],
+   "to_xy": [
+    3260.0,
+    16170.0
+   ],
+   "moved_m": 22
+  },
+  {
+   "id": "5-02",
+   "from_xy": [
+    1200,
+    17150
+   ],
+   "to_xy": [
+    1560.0,
+    16720.0
+   ],
+   "moved_m": 561
+  },
+  {
+   "id": "5-03",
+   "from_xy": [
+    2900,
+    18450
+   ],
+   "to_xy": [
+    2900.0,
+    18540.0
+   ],
+   "moved_m": 90
+  },
+  {
+   "id": "5-04",
+   "from_xy": [
+    1600,
+    17950
+   ],
+   "to_xy": [
+    1690.0,
+    18230.0
+   ],
+   "moved_m": 294
+  },
+  {
+   "id": "5-05",
+   "from_xy": [
+    3900,
+    16450
+   ],
+   "to_xy": [
+    3980.0,
+    16430.0
+   ],
+   "moved_m": 82
+  },
+  {
+   "id": "5-06",
+   "from_xy": [
+    4550,
+    17250
+   ],
+   "to_xy": [
+    4060.0,
+    17520.0
+   ],
+   "moved_m": 559
+  },
+  {
+   "id": "5-08",
+   "from_xy": [
+    2000,
+    16600
+   ],
+   "to_xy": [
+    2000.0,
+    16620.0
+   ],
+   "moved_m": 20
+  },
+  {
+   "id": "5-14",
+   "from_xy": [
+    4600,
+    17950
+   ],
+   "to_xy": [
+    4500.0,
+    17890.0
+   ],
+   "moved_m": 117
+  }
+ ],
+ "log": [
+  "road 5-05 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-05 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.28 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-05 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-05 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.28 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-M1 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.68 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-M1 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.48 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-M1 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.68 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-M1 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.48 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-07 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.73 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-07 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.52 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-07 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-07 -> 5-M3: rejected (grade 13.8 %, cut/fill 4.21 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-F -> 5-M3: rejected (grade 13.8 %, cut/fill 7.0 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-F -> 5-M3: rejected (grade 13.8 %, cut/fill 7.14 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-F -> 5-M3: rejected (grade 13.8 %, cut/fill 7.0 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-F -> 5-M3: rejected (grade 13.8 %, cut/fill 7.11 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-12 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-12 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.57 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-12 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-12 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.57 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-08 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.44 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-08 -> 5-M3: rejected (grade 17.9 %, cut/fill 6.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-08 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.44 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-08 -> 5-M3: rejected (grade 17.9 %, cut/fill 6.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-02 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.19 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-02 -> 5-M3: rejected (grade 26.5 %, cut/fill 5.91 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-02 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.19 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-02 -> 5-M3: rejected (grade 26.5 %, cut/fill 5.91 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-01 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.47 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-01 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.96 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-01 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.47 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-01 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.96 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-06 -> 5-M3: rejected (grade 13.8 %, cut/fill 9.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-06 -> 5-M3: rejected (grade 13.8 %, cut/fill 8.86 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-06 -> 5-M3: rejected (grade 13.8 %, cut/fill 9.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-06 -> 5-M3: rejected (grade 13.8 %, cut/fill 8.86 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-14 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.18 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-14 -> 5-M3: rejected (grade 13.8 %, cut/fill 5.7 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-14 -> 5-M3: rejected (grade 13.8 %, cut/fill 6.18 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road 5-14 -> 5-M3: rejected (grade 13.8 %, cut/fill 5.7 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.6 m)",
+  "road for 5-05: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-M1: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-07: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-F: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-12: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-03: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-08: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-04: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-02: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-01: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-06: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-14: NO ROUTE found to the Acropolis Isle net",
+  "road for 5-M2: NO ROUTE found to the Acropolis Isle net"
+ ]
+}

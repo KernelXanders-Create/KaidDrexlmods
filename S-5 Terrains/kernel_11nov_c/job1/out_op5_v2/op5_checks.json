@@ -1,0 +1,164 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    28.7,
+    "5-02",
+    "A5-03",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {},
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "5-02",
+   3.62
+  ],
+  "over_3_5": [
+   [
+    "5-02",
+    3.62
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": null,
+  "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": null
+ },
+ "3 roads: one connected net per island": {
+  "status": "PASS",
+  "nets": {
+   "Acropolis Isle": {
+    "pieces": [],
+    "not_reached": [
+     "5-05",
+     "5-M1",
+     "5-07",
+     "5-F",
+     "5-12",
+     "5-03",
+     "5-08",
+     "5-04",
+     "5-02",
+     "5-01",
+     "5-06",
+     "5-14",
+     "5-M2"
+    ]
+   }
+  },
+  "vehicle_sites_not_on_the_net": [],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": null
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [],
+  "town_houses_closest": [],
+  "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    28.7,
+    "5-02",
+    "A5-03",
+    true
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    12.6,
+    "A5-02"
+   ],
+   [
+    99,
+    "5-01"
+   ],
+   [
+    99,
+    "5-02"
+   ]
+  ],
+  "exempt": [
+   "5-M2",
+   "5-10",
+   "5-11",
+   "5-13",
+   "5-14"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    1020,
+    "5-F",
+    "5-M1"
+   ],
+   [
+    1081,
+    "5-M1",
+    "5-M3"
+   ],
+   [
+    1092,
+    "5-F",
+    "5-M2"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "5-F Acropolis Citadel": [
+    "up the road from Kastro Quay past the power station, Windmill Ridge and the Citadel Gate (5-07)",
+    "the covered climb from the south-west: past the Olive Terraces Post (5-08) onto the summit's west side"
+   ],
+   "5-M1 Windmill Ridge": [
+    "from the pumice south beach, past (or through) the bunker line (5-01) and up the spine",
+    "along the ridge road from the Ridge Power Station (5-05)"
+   ],
+   "5-M2 Sea Cave Pens": [
+    "by boat across the Kastro Strait into the cave mouth",
+    "from above: down from the Olive Terraces Post (5-08) on its road or the cliff path"
+   ],
+   "5-M3 Kastro Quay": [
+    "by boat to the quay apron in the cove, then the cargo lift and the stair up the cliff",
+    "overland from the East Bay Landers (5-14) or along the road from the power station (5-05)"
+   ],
+   "5-M4 Lantern Rock Beacon": [
+    "by boat to Lantern Quay, then up the hamlet stairs to the beacon",
+    "by boat or air to the rock's north and east shores (shores list), then up the slope on foot"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
