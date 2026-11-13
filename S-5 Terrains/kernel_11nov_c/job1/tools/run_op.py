@@ -305,9 +305,14 @@ for phase in (0, 1):
             for px_, py_, pz_, pb_, pn_ in t["ports"]:
                 b_ = math.radians(pb_); q_ = (px_ + 15.0 * math.sin(b_), py_ + 15.0 * math.cos(b_))
                 nodes[net].append((q_[0], q_[1], pz_, root)); t["street_extensions"].append(dict(street_end=pn_, from_xy=[px_, py_], to_xy=[round(q_[0], 1), round(q_[1], 1)], level_m=pz_, length_m=15.0))
-        elif root == "EXTERNAL_ROADS":      # existing roads (other ops', your built ones): their level stretches, and the free edges of the pads on them
-            nodes[net] = [n_ for r_ in EXT_ROADS for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]]
-            nodes[net] += [n_ for eid, e in EXT.items() for n_ in pad_edge_nodes(e, eid)]
+        elif root == "EXTERNAL_ROADS":      # existing roads (other ops', your built ones): anywhere on them (a join gets a level landing there, listed as an edit to that road),
+                                            # and the free edges of the pads a road serves
+            for r_ in EXT_ROADS:
+                ROADS_BY_ID[r_["id"]] = r_
+                nodes[net] += [n_ for n_ in own_nodes(r_, r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]] if not r_["id"].startswith("built:") else \
+                               [n_ for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]]
+            served = [eid for eid, e in EXT.items() if any(Polygon(rect(e["x"], e["y"], e["hx"], e["hy"], e["yaw"])).distance(LineString(r_["points"])) <= 15.0 for r_ in EXT_ROADS)]
+            nodes[net] += [n_ for eid in served for n_ in pad_edge_nodes(EXT[eid], eid)]
         elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
             e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
             nodes[net] = [tuple(np.array([e["x"], e["y"]]) + v * (h + 1.5 + 2.5)) + (e["z"], root) for v, h in ((ex_, e["hx"]), (-ex_, e["hx"]), (ey_, e["hy"]), (-ey_, e["hy"]))
@@ -462,10 +467,10 @@ for sid in getattr(op, "SHORE_LINKS", ()):
         best = (d, q, line)
     if best is None: continue
     d, q, line = best
-    foot = line[-2]; ep, v = entry_point(s, tuple(q))
-    rise = s["z"] - world.z(*foot); run = math.dist(ep, foot)
+    sfoot = line[-2]; ep, v = entry_point(s, tuple(q))
+    rise = s["z"] - world.z(*sfoot); run = math.dist(ep, sfoot)
     kind = "lift" if rise > 40.0 or (run > 0 and rise / run > 0.7) else "stair"
-    shore_links.append(dict(site=sid, top_xyz=[round(float(ep[0]), 1), round(float(ep[1]), 1), s["z"]], foot_xyz=[round(float(foot[0]), 1), round(float(foot[1]), 1), round(world.z(*foot), 2)],
+    shore_links.append(dict(site=sid, top_xyz=[round(float(ep[0]), 1), round(float(ep[1]), 1), s["z"]], foot_xyz=[round(float(sfoot[0]), 1), round(float(sfoot[1]), 1), round(world.z(*sfoot), 2)],
                             pier_at_xy=[round(float(q[0]), 1), round(float(q[1]), 1)], rise_m=round(rise, 1), run_m=round(run), slope_pct=round(100 * rise / max(run, 1.0)),
                             link=kind, pier="ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
                             lift=("ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; " + ("plus a 'stair' up the same face for foot traffic" if kind == "lift" else "")) if kind == "lift" else None,
@@ -582,7 +587,8 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, ramps_needed=ramps, shore_links=shore_links, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            roads=P.roads, ramps_needed=ramps, shore_links=shore_links,
+            edits_to_other_ops_roads=[dict(road=r_["id"], landings=r_["landings_for_joins"], points_z=r_["points_z"]) for r_ in EXT_ROADS if r_.get("landings_for_joins")], external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=lambda o: o.tolist() if hasattr(o, "tolist") else float(o))
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
