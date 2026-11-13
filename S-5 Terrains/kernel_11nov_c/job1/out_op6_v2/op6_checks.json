@@ -9,12 +9,6 @@
     true
    ],
    [
-    21.0,
-    "6-03",
-    "A6-05",
-    true
-   ],
-   [
     33.3,
     "6-13",
     "A6-01",
@@ -30,7 +24,12 @@
  },
  "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
   "status": "REPORT",
-  "by_road": {},
+  "by_road": {
+   "6-M2-6-13": [
+    2,
+    0.66
+   ]
+  },
   "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
  },
  "2 pad ground change <= 4.0 m": {
@@ -57,10 +56,6 @@
     3.73
    ],
    [
-    "6-14",
-    3.99
-   ],
-   [
     "A6-06",
     3.82
    ]
@@ -68,59 +63,120 @@
  },
  "3 roads: dirt grade <= 14 %": {
   "status": "PASS",
-  "worst": null,
+  "worst": [
+   "6-M2-6-13",
+   {
+    "over_10_m": 13.8,
+    "over_20_m": 13.8,
+    "point_to_point": 13.8
+   }
+  ],
   "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
  },
  "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
   "status": "PASS",
-  "worst": null
+  "worst": [
+   "6-02-6-F",
+   3.89
+  ]
  },
  "3 roads: one connected net per island": {
   "status": "FAIL",
   "nets": {
    "Ember Crescent": {
-    "pieces": [],
+    "pieces": [
+     [
+      "6-F",
+      "6-F-T",
+      "6-03",
+      "6-01",
+      "6-02",
+      "6-06",
+      "6-13",
+      "6-05",
+      "6-M2"
+     ]
+    ],
     "not_reached": [
-     "6-06",
-     "6-13",
-     "6-05",
-     "6-M2",
-     "6-03",
-     "6-F-T",
-     "6-F",
      "6-M3",
      "6-07",
      "6-04",
-     "6-02",
      "6-14"
     ]
    }
   },
+  "links_to_existing_net": [
+   {
+    "net": "Ember Crescent",
+    "status": "no road within the rules",
+    "links": [
+     "6-02",
+     "op4:4-08-4-M3"
+    ],
+    "best_try": {
+     "length_m": 2895,
+     "max_cut_fill_m": 5.01,
+     "grid_points_over_4_m": 7,
+     "over_4_m_between_m": [
+      137,
+      719
+     ],
+     "worst_cut_or_fill_m": 5.01,
+     "needs": "a cutting or retaining wall taking the band to within 4 m over that stretch, or your ramp there"
+    }
+   }
+  ],
   "vehicle_sites_not_on_the_net": [
-   "6-F",
-   "6-F-T",
-   "6-M2",
    "6-M3",
-   "6-02",
-   "6-03",
    "6-04",
-   "6-05",
-   "6-06",
    "6-07",
-   "6-13",
-   "6-14",
-   "6-01"
+   "6-14"
   ],
   "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
  },
  "3 roads: no straight run over 150 m (within 1 m of the chord)": {
   "status": "PASS",
-  "worst": null
+  "worst": [
+   "6-06-6-13",
+   80.9
+  ]
  },
  "3 roads: nothing built within 3 m of a road edge": {
   "status": "PASS",
-  "closest": [],
-  "town_houses_closest": [],
+  "closest": [
+   [
+    16.5,
+    "6-03",
+    "6-F-T-6-03"
+   ],
+   [
+    21.5,
+    "A6-01",
+    "6-05-6-13"
+   ],
+   [
+    25.4,
+    "6-05",
+    "6-05-6-13"
+   ]
+  ],
+  "town_houses_closest": [
+   [
+    15.27,
+    "6-01",
+    "6-01-6-03"
+   ],
+   [
+    17.46,
+    "6-01",
+    "6-01-6-03"
+   ],
+   [
+    18.26,
+    "6-01",
+    "6-01-6-03"
+   ]
+  ],
   "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"
  },
  "4 pads: no two within 12 m": {

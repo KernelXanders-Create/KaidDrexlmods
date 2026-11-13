@@ -659,7 +659,10 @@ for t in towns.values():
         ax.text(dx_, dy_ - 60, f"{t['id']} purpose-map point\n({math.dist((dx_, dy_), (cx_, cy_)):.0f} m from the layout)", fontsize=6.5, color="r", ha="center", va="top")
 for e in EXT.values():
     c_ = rect(e["x"], e["y"], e["hx"], e["hy"], e["yaw"]); ax.fill(c_[:, 0], c_[:, 1], fc="none", ec="k", hatch="///", lw=0.8)
-    ax.text(e["x"] + e["hx"] + 15, e["y"], e["id"], fontsize=7, va="center")
+    ax.text(e["x"] + e["hx"] + 15, e["y"], e["id"], fontsize=7, va="center", clip_on=True)
+for l_ in links_out:
+    if "best_try" in l_:
+        q_ = np.array(l_["best_try"]["points"]); ax.plot(q_[:, 0], q_[:, 1], color="#d62728", lw=2.0, ls="--")
 col = {"FINAL": "#d62728", "MAIN": "#ff7f0e", "SUP": "#1f77b4", "squad position": "#7f7f7f"}
 for s in pads:
     c = rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])

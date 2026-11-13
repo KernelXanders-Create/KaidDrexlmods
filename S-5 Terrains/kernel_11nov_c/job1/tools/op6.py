@@ -1,7 +1,7 @@
 """Op 6, Prophet Massif and Signal Isle: site list, town, net, squad anchors and approaches for the planner (pad half-sizes in metres)."""
 NAME = "Prophet Massif and Signal Isle"
 BOX = (13000, 19600, 7600, 18300)     # re-pass: south to 7600 so op 4 v2's roads at Causeway Foot are in reach
-VIEW = (13300, 19600, 9000, 18300)
+VIEW = (13000, 19600, 7600, 18300)
 PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)      # re-pass: as ops 3-5 v2
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
