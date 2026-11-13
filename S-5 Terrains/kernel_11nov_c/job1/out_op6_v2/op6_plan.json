@@ -1,0 +1,1621 @@
+{
+ "op": 6,
+ "name": "Prophet Massif and Signal Isle",
+ "frame": "map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+ "sites": [
+  {
+   "id": "6-F",
+   "name": "Prophet Monastery (citadel)",
+   "comp": "CIS Small Citadel with GPs",
+   "x": 15460.0,
+   "y": 11310.0,
+   "yaw": 120,
+   "hx": 74.2,
+   "hy": 76.6,
+   "z": 399.25,
+   "cut_m": 3.77,
+   "fill_m": 3.99,
+   "max_change_m": 3.99,
+   "moved_m": 85,
+   "rough": [
+    15400,
+    11250
+   ],
+   "size_note": "KNOWN: 1-xx / 2-xx (CIS Small Citadel, op 1-2 pads)",
+   "water_ok": false,
+   "n_points": 945,
+   "role": "FINAL",
+   "size": "P",
+   "stake": "The monastery on the highest peak (420 m) holds the CIS sensor crown that watches the whole east and directs the Signal Isle battery; the next FOB",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 85,
+   "design_xy": [
+    15400,
+    11250
+   ],
+   "entrance_bearing_deg": 120,
+   "entrance_xy": [
+    15529.8,
+    11269.7
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-F-T",
+   "name": "Prophet Monastery (sensor crown)",
+   "comp": "Giant Comms Antenna Array",
+   "x": 15860.0,
+   "y": 11560.0,
+   "yaw": 15,
+   "hx": 40.0,
+   "hy": 40.0,
+   "z": 322.5,
+   "cut_m": 2.89,
+   "fill_m": 3.1,
+   "max_change_m": 3.1,
+   "moved_m": 555,
+   "rough": [
+    15550,
+    11400
+   ],
+   "size_note": "ASSUMED: 80 x 80 m (as op 3's Peak Relay Dish); a second pad of the final, beside the citadel",
+   "water_ok": false,
+   "n_points": 273,
+   "role": "FINAL",
+   "size": "P",
+   "stake": "The monastery on the highest peak (420 m) holds the CIS sensor crown that watches the whole east and directs the Signal Isle battery; the next FOB",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 349,
+   "design_xy": [
+    15400,
+    11250
+   ],
+   "entrance_bearing_deg": 105,
+   "entrance_xy": [
+    15902.5,
+    11548.6
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-M1",
+   "name": "Signal Isle Turbolaser Battery",
+   "comp": "CIS Turbolaser Battery with GPs",
+   "x": 17000.0,
+   "y": 16520.0,
+   "yaw": 45,
+   "hx": 50.0,
+   "hy": 40.0,
+   "z": 375.0,
+   "cut_m": 1.54,
+   "fill_m": 1.71,
+   "max_change_m": 1.71,
+   "moved_m": 58,
+   "rough": [
+    17050,
+    16550
+   ],
+   "size_note": "ASSUMED: 100 x 80 m (the Turbolaser Tower is 55 x 60 m)",
+   "water_ok": false,
+   "n_points": 333,
+   "role": "MAIN",
+   "size": "P",
+   "stake": "Keeps the Republic fleet off the eastern sea; once it falls the fleet can close",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 58,
+   "design_xy": [
+    17050,
+    16550
+   ],
+   "entrance_bearing_deg": 45,
+   "entrance_xy": [
+    17031.1,
+    16551.1
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-M2",
+   "name": "Kamar Strand Bunker Line",
+   "comp": "CIS Basic Trenchline with GPs + Tukata Turret Bunker",
+   "x": 16790.0,
+   "y": 10890.0,
+   "yaw": 165,
+   "hx": 57.0,
+   "hy": 30.2,
+   "z": 141.25,
+   "cut_m": 2.1,
+   "fill_m": 2.14,
+   "max_change_m": 2.14,
+   "moved_m": 14,
+   "rough": [
+    16800,
+    10900
+   ],
+   "size_note": "KNOWN for the trenchline (2-12); the turret bunker is set into the line",
+   "water_ok": false,
+   "n_points": 295,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "Covers the black beach on the east; taking it opens the beach to boats and to the FOB's supply",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 14,
+   "design_xy": [
+    16800,
+    10900
+   ],
+   "entrance_bearing_deg": 345,
+   "entrance_xy": [
+    16781.1,
+    10923.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-M3",
+   "name": "North Point Ferry Pens",
+   "comp": "Supply Outpost Version 2",
+   "x": 15290.0,
+   "y": 12280.0,
+   "yaw": 75,
+   "hx": 41.0,
+   "hy": 32.5,
+   "z": 221.0,
+   "cut_m": 1.94,
+   "fill_m": 2.02,
+   "max_change_m": 2.02,
+   "moved_m": 614,
+   "rough": [
+    15900,
+    12350
+   ],
+   "size_note": "KNOWN: 82 x 65 m (the pad op 3 found for this composition)",
+   "water_ok": false,
+   "n_points": 229,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "The CIS ferry pens on the massif's north cape (Tanoa pier dressing) carry troops and shells across the 2 km channel to Signal Isle; blowing them cuts the battery's resupply and gives Republic boats the short hop",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 614,
+   "design_xy": [
+    15900,
+    12350
+   ],
+   "entrance_bearing_deg": 165,
+   "entrance_xy": [
+    15301.6,
+    12236.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-M4",
+   "name": "Signal Ridge Comms",
+   "comp": "CIS Communications FOB with GPs",
+   "x": 16260.0,
+   "y": 16230.0,
+   "yaw": 90,
+   "hx": 43.9,
+   "hy": 51.9,
+   "z": 320.25,
+   "cut_m": 3.25,
+   "fill_m": 3.15,
+   "max_change_m": 3.25,
+   "moved_m": 81,
+   "rough": [
+    16250,
+    16150
+   ],
+   "size_note": "KNOWN (built): your 1-13 pad of CIS Communications FOB with GPs, 88 x 104 m",
+   "water_ok": false,
+   "n_points": 399,
+   "role": "MAIN",
+   "size": "2S",
+   "stake": "The relay that links the battery to the monastery; cutting it leaves the battery firing blind",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 81,
+   "design_xy": [
+    16250,
+    16150
+   ],
+   "entrance_bearing_deg": 360,
+   "entrance_xy": [
+    16260.0,
+    16277.9
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-02",
+   "name": "Prophet Road Checkpoint",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 14560.0,
+   "y": 10490.0,
+   "yaw": 0,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 304.25,
+   "cut_m": 2.2,
+   "fill_m": 2.15,
+   "max_change_m": 2.2,
+   "moved_m": 41,
+   "rough": [
+    14600,
+    10500
+   ],
+   "size_note": "KNOWN: A2-05",
+   "water_ok": false,
+   "n_points": 165,
+   "role": "SUP",
+   "size": "S",
+   "stake": "The road from the crest to the monastery; taking it opens the vehicle way up",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 41,
+   "design_xy": [
+    14600,
+    10500
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    14592.4,
+    10490.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-03",
+   "name": "Massif AA",
+   "comp": "CIS Heavy AA Tower w Interior GPs",
+   "x": 16020.0,
+   "y": 11420.0,
+   "yaw": 165,
+   "hx": 46.4,
+   "hy": 44.0,
+   "z": 335.0,
+   "cut_m": 2.43,
+   "fill_m": 2.21,
+   "max_change_m": 2.43,
+   "moved_m": 530,
+   "rough": [
+    16000,
+    11950
+   ],
+   "size_note": "ASSUMED: as the CIS Flower Tower (1-11)",
+   "water_ok": false,
+   "n_points": 349,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Covers the north channel and the eastern sky; taking it opens the air route to Signal Isle",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 530,
+   "design_xy": [
+    16000,
+    11950
+   ],
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    16068.7,
+    11433.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-04",
+   "name": "Prophet Limestone Quarry",
+   "comp": "CIS Mining Complex with GPs",
+   "x": 14810.0,
+   "y": 12150.0,
+   "yaw": 165,
+   "hx": 60.0,
+   "hy": 45.0,
+   "z": 213.0,
+   "cut_m": 3.12,
+   "fill_m": 3.2,
+   "max_change_m": 3.2,
+   "moved_m": 273,
+   "rough": [
+    14700,
+    11900
+   ],
+   "size_note": "ASSUMED: 120 x 90 m of terraced dig (160 x 120 m found no seat within 840 m)",
+   "water_ok": false,
+   "n_points": 459,
+   "role": "SUP",
+   "size": "P",
+   "stake": "Pale limestone for the Yard's foundry; a big terraced dig and the covered climb to the summit",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 273,
+   "design_xy": [
+    14700,
+    11900
+   ],
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    14871.8,
+    12166.6
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-05",
+   "name": "Kamar Refuelling Base",
+   "comp": "TKTA Refueling Base (Mono, Fixed)",
+   "x": 16800.0,
+   "y": 10400.0,
+   "yaw": 105,
+   "hx": 43.6,
+   "hy": 32.3,
+   "z": 150.25,
+   "cut_m": 2.09,
+   "fill_m": 2.31,
+   "max_change_m": 2.31,
+   "moved_m": 0,
+   "rough": [
+    16800,
+    10400
+   ],
+   "size_note": "ASSUMED: as the CIS Fuel Depot (1-12)",
+   "water_ok": false,
+   "n_points": 243,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Fuel for the beach depot and the boats; it burns when hit",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    16800,
+    10400
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    16812.3,
+    10446.0
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-06",
+   "name": "East Slope Gun Line",
+   "comp": "CIS Small Artillery Base with GPs",
+   "x": 16050.0,
+   "y": 10370.0,
+   "yaw": 105,
+   "hx": 63.8,
+   "hy": 31.4,
+   "z": 230.5,
+   "cut_m": 3.57,
+   "fill_m": 3.38,
+   "max_change_m": 3.57,
+   "moved_m": 58,
+   "rough": [
+    16000,
+    10400
+   ],
+   "size_note": "KNOWN: 1-M3",
+   "water_ok": false,
+   "n_points": 345,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Guns over the east beaches; air softens them",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 58,
+   "design_xy": [
+    16000,
+    10400
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    16067.5,
+    10435.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-07",
+   "name": "North Point Pillboxes",
+   "comp": "Small Wall with Bunker",
+   "x": 16860.0,
+   "y": 11780.0,
+   "yaw": 135,
+   "hx": 45.1,
+   "hy": 29.1,
+   "z": 240.75,
+   "cut_m": 2.05,
+   "fill_m": 2.26,
+   "max_change_m": 2.26,
+   "moved_m": 630,
+   "rough": [
+    16350,
+    12150
+   ],
+   "size_note": "KNOWN as built: your 1-09 with this pick is a Small Rectangle FOB, 90 x 58 m",
+   "water_ok": false,
+   "n_points": 229,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Pillboxes over the ferry pens' beach cover the north channel",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 630,
+   "design_xy": [
+    16350,
+    12150
+   ],
+   "entrance_bearing_deg": 225,
+   "entrance_xy": [
+    16825.3,
+    11745.3
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-08",
+   "name": "Signal Isle Landing",
+   "comp": "CIS Landing Position with GPs",
+   "x": 16890.0,
+   "y": 15650.0,
+   "yaw": 105,
+   "hx": 44.5,
+   "hy": 67.0,
+   "z": 229.75,
+   "cut_m": 3.74,
+   "fill_m": 3.76,
+   "max_change_m": 3.76,
+   "moved_m": 990,
+   "rough": [
+    15900,
+    15680
+   ],
+   "size_note": "KNOWN: 1-02 / 2-06 (a beach work)",
+   "water_ok": "beach",
+   "n_points": 503,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Supply landings on Signal Isle's south-west beach; taking it opens that beach to boats",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 990,
+   "design_xy": [
+    15900,
+    15680
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    16902.6,
+    15696.8
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-09",
+   "name": "Signal Isle Depot",
+   "comp": "CIS Depot (Fixed) with GPs (D)",
+   "x": 17570.0,
+   "y": 15820.0,
+   "yaw": 0,
+   "hx": 40.0,
+   "hy": 30.0,
+   "z": 257.5,
+   "cut_m": 1.95,
+   "fill_m": 1.94,
+   "max_change_m": 1.95,
+   "moved_m": 36,
+   "rough": [
+    17550,
+    15850
+   ],
+   "size_note": "REDUCED: your built pad (1-06, 134 x 248 m) holds 4 m nowhere within 720 m; this 80 x 60 m pad needs a trimmed composition. Was: ASSUMED: 80 x 60 m",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "The battery's ammunition; it burns when hit",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 36,
+   "design_xy": [
+    17550,
+    15850
+   ],
+   "entrance_bearing_deg": 0,
+   "entrance_xy": [
+    17570.0,
+    15854.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-10",
+   "name": "Kalam Rock Chapel",
+   "comp": "TKTA Tower with Interior (Mono)",
+   "x": 18320.0,
+   "y": 16520.0,
+   "yaw": 75,
+   "hx": 15.0,
+   "hy": 15.0,
+   "z": 2.5,
+   "cut_m": 1.93,
+   "fill_m": 1.9,
+   "max_change_m": 1.93,
+   "moved_m": 193,
+   "rough": [
+    18250,
+    16700
+   ],
+   "size_note": "ASSUMED: 30 x 30 m on the east rock (a cliff work: may come to the water's edge)",
+   "water_ok": "beach",
+   "n_points": 41,
+   "role": "SUP",
+   "size": "S",
+   "stake": "A cliff chapel (Altis chapel dressing) on the east rock, used as the battery's spotter",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 193,
+   "design_xy": [
+    18250,
+    16700
+   ],
+   "entrance_bearing_deg": 75,
+   "entrance_xy": [
+    18338.4,
+    16524.9
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-11",
+   "name": "North Cape AA",
+   "comp": "CIS AA Tooth Fixed with GPs",
+   "x": 16960.0,
+   "y": 17020.0,
+   "yaw": 15,
+   "hx": 25.0,
+   "hy": 25.0,
+   "z": 274.0,
+   "cut_m": 3.59,
+   "fill_m": 3.73,
+   "max_change_m": 3.73,
+   "moved_m": 683,
+   "rough": [
+    16900,
+    17700
+   ],
+   "size_note": "ASSUMED: 50 x 50 m",
+   "water_ok": false,
+   "n_points": 113,
+   "role": "SUP",
+   "size": "2S",
+   "stake": "Covers the north-east sky; taking it opens the northern air route to the battery",
+   "island": "Signal Isle",
+   "moved_from_rough_m": 683,
+   "design_xy": [
+    16900,
+    17700
+   ],
+   "entrance_bearing_deg": 15,
+   "entrance_xy": [
+    16967.5,
+    17048.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-12",
+   "name": "Deep-Sea Sensor Stack",
+   "comp": "Giant Radar Dish",
+   "x": 18450.0,
+   "y": 15100.0,
+   "yaw": 0,
+   "hx": 15.0,
+   "hy": 15.0,
+   "z": 27.5,
+   "cut_m": 0.0,
+   "fill_m": 0.06,
+   "max_change_m": 0.06,
+   "moved_m": 0,
+   "rough": [
+    18450,
+    15100
+   ],
+   "size_note": "REDUCED / ASSUMED: the stack top takes about 30 x 30 m (the dish and a ring of guns); air only",
+   "water_ok": "beach",
+   "n_points": 49,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Spots the fleet's eastern anchorage for the battery; killing it blinds the battery's long shots. Only air can reach it",
+   "island": "reef/shoal bank",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    18450,
+    15100
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    18469.0,
+    15100.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  },
+  {
+   "id": "6-13",
+   "name": "Kamar Landers",
+   "comp": "CIS Lander Base Fixed with GPs (D)",
+   "x": 16600.0,
+   "y": 10370.0,
+   "yaw": 30,
+   "hx": 44.5,
+   "hy": 67.0,
+   "z": 158.75,
+   "cut_m": 3.12,
+   "fill_m": 3.26,
+   "max_change_m": 3.26,
+   "moved_m": 476,
+   "rough": [
+    16300,
+    10000
+   ],
+   "size_note": "ASSUMED: as the CIS Landing Position (1-02); a beach work",
+   "water_ok": "beach",
+   "n_points": 505,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Landers on the south end of the strand; taking them opens a second beach",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 476,
+   "design_xy": [
+    16300,
+    10000
+   ],
+   "entrance_bearing_deg": 30,
+   "entrance_xy": [
+    16635.5,
+    10431.5
+   ],
+   "entrance_note": "faces its foot link"
+  },
+  {
+   "id": "6-14",
+   "name": "Upper Spring Outpost",
+   "comp": "Zavala CIS Outpost with GPs",
+   "x": 14800.0,
+   "y": 11470.0,
+   "yaw": 0,
+   "hx": 30.0,
+   "hy": 30.0,
+   "z": 300.5,
+   "cut_m": 3.79,
+   "fill_m": 3.99,
+   "max_change_m": 3.99,
+   "moved_m": 522,
+   "rough": [
+    14680,
+    11450
+   ],
+   "size_note": "ASSUMED: 60 x 60 m (as op 3's Zavala outpost); seated beside the west climb road below the spring (the spring's own ridge at 385 m takes no road)",
+   "water_ok": false,
+   "n_points": 169,
+   "role": "SUP",
+   "size": "S",
+   "stake": "Holds the spring below the summit, the monastery's water, on the west climb",
+   "island": "Ember Crescent",
+   "moved_from_rough_m": 122,
+   "design_xy": [
+    14850,
+    10950
+   ],
+   "entrance_bearing_deg": 90,
+   "entrance_xy": [
+    14834.0,
+    11470.0
+   ],
+   "entrance_note": "faces its foot link"
+  }
+ ],
+ "squad_positions": [
+  {
+   "id": "A6-01",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 16700.0,
+   "y": 10310.0,
+   "yaw": 0,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 152.5,
+   "cut_m": 1.84,
+   "fill_m": 1.75,
+   "max_change_m": 1.84,
+   "moved_m": 160,
+   "rough": [
+    16700,
+    10150
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 143,
+   "role": "squad position",
+   "guards": "the south end of Kamar Strand and the landers",
+   "nearest_site": "6-13",
+   "nearest_site_m": 117
+  },
+  {
+   "id": "A6-02",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 16960.0,
+   "y": 11110.0,
+   "yaw": 0,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 100.5,
+   "cut_m": 1.76,
+   "fill_m": 1.85,
+   "max_change_m": 1.85,
+   "moved_m": 166,
+   "rough": [
+    17050,
+    11250
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the north end of Kamar Strand and the village quay",
+   "nearest_site": "6-M2",
+   "nearest_site_m": 278
+  },
+  {
+   "id": "A6-03",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 14960.0,
+   "y": 9830.0,
+   "yaw": 150,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 145.0,
+   "cut_m": 3.37,
+   "fill_m": 3.23,
+   "max_change_m": 3.37,
+   "moved_m": 221,
+   "rough": [
+    14750,
+    9900
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 171,
+   "role": "squad position",
+   "guards": "the road up from Causeway Foot (op 4's net)",
+   "nearest_site": "6-02",
+   "nearest_site_m": 772
+  },
+  {
+   "id": "A6-04",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 15110.0,
+   "y": 10490.0,
+   "yaw": 45,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 297.5,
+   "cut_m": 2.07,
+   "fill_m": 2.11,
+   "max_change_m": 2.11,
+   "moved_m": 117,
+   "rough": [
+    15150,
+    10600
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 127,
+   "role": "squad position",
+   "guards": "the west climb between the checkpoint and the spring",
+   "nearest_site": "6-02",
+   "nearest_site_m": 550
+  },
+  {
+   "id": "A6-05",
+   "name": "squad position",
+   "comp": "CIS Mixed AA Platform with GPs",
+   "x": 16040.0,
+   "y": 11310.0,
+   "yaw": 165,
+   "hx": 50.7,
+   "hy": 46.4,
+   "z": 339.25,
+   "cut_m": 2.37,
+   "fill_m": 2.51,
+   "max_change_m": 2.51,
+   "moved_m": 517,
+   "rough": [
+    15700,
+    11700
+   ],
+   "size_note": "KNOWN",
+   "water_ok": false,
+   "n_points": 399,
+   "role": "squad position",
+   "guards": "the air over the monastery",
+   "nearest_site": "6-03",
+   "nearest_site_m": 112
+  },
+  {
+   "id": "A6-06",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 16350.0,
+   "y": 12050.0,
+   "yaw": 90,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 171.5,
+   "cut_m": 3.6,
+   "fill_m": 3.82,
+   "max_change_m": 3.82,
+   "moved_m": 354,
+   "rough": [
+    16600,
+    12300
+   ],
+   "size_note": "KNOWN",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the north point beach and the ferry pens",
+   "nearest_site": "6-07",
+   "nearest_site_m": 577
+  },
+  {
+   "id": "A6-07",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with GPs (D)",
+   "x": 16770.0,
+   "y": 15680.0,
+   "yaw": 75,
+   "hx": 30.1,
+   "hy": 25.4,
+   "z": 220.75,
+   "cut_m": 3.19,
+   "fill_m": 3.01,
+   "max_change_m": 3.19,
+   "moved_m": 193,
+   "rough": [
+    16700,
+    15500
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 137,
+   "role": "squad position",
+   "guards": "Signal Isle's south shore over the channel",
+   "nearest_site": "6-08",
+   "nearest_site_m": 124
+  },
+  {
+   "id": "A6-08",
+   "name": "squad position",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 15770.0,
+   "y": 16260.0,
+   "yaw": 135,
+   "hx": 28.4,
+   "hy": 34.4,
+   "z": 170.25,
+   "cut_m": 2.27,
+   "fill_m": 2.03,
+   "max_change_m": 2.27,
+   "moved_m": 136,
+   "rough": [
+    15900,
+    16300
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 179,
+   "role": "squad position",
+   "guards": "the path up from the Signal Isle Landing",
+   "nearest_site": "6-M4",
+   "nearest_site_m": 491
+  },
+  {
+   "id": "A6-09",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 17970.0,
+   "y": 16930.0,
+   "yaw": 150,
+   "hx": 29.9,
+   "hy": 40.8,
+   "z": 12.25,
+   "cut_m": 2.87,
+   "fill_m": 2.63,
+   "max_change_m": 2.87,
+   "moved_m": 722,
+   "rough": [
+    17300,
+    17200
+   ],
+   "size_note": "KNOWN",
+   "water_ok": false,
+   "n_points": 213,
+   "role": "squad position",
+   "guards": "the north-east sky and the north cape",
+   "nearest_site": "6-10",
+   "nearest_site_m": 539
+  },
+  {
+   "id": "A6-10",
+   "name": "squad position",
+   "comp": "CIS Heavy Gun Position with AA (D)",
+   "x": 18030.0,
+   "y": 16080.0,
+   "yaw": 30,
+   "hx": 29.8,
+   "hy": 42.5,
+   "z": 235.5,
+   "cut_m": 2.58,
+   "fill_m": 2.68,
+   "max_change_m": 2.68,
+   "moved_m": 36,
+   "rough": [
+    18000,
+    16100
+   ],
+   "size_note": "KNOWN: same composition in pads_op1 / pads_op2",
+   "water_ok": false,
+   "n_points": 221,
+   "role": "squad position",
+   "guards": "the east rock and the sea toward the sensor stack",
+   "nearest_site": "6-10",
+   "nearest_site_m": 527
+  }
+ ],
+ "towns": [
+  {
+   "id": "6-01",
+   "name": "Kamar Village",
+   "entry": [
+    16648.0,
+    11506.0
+   ],
+   "z": 246.0,
+   "ports": [
+    [
+     16648.0,
+     11506.0,
+     246.0,
+     180.0,
+     "main street, south end"
+    ],
+    [
+     16786.0,
+     11566.0,
+     242.25,
+     180.0,
+     "east lane, south end"
+    ],
+    [
+     16584.0,
+     11540.0,
+     259.5,
+     180.0,
+     "west lane, south end"
+    ],
+    [
+     16600.0,
+     11790.0,
+     236.5,
+     270.0,
+     "north lane, west end"
+    ],
+    [
+     16728.0,
+     11784.0,
+     239.0,
+     90.0,
+     "north lane, east end"
+    ]
+   ],
+   "n_buildings": 42,
+   "garrison": 28,
+   "layout": "../../../kernel_10nov_v1/K6_repass/kamar_village_v2/kamar_village_v2_layout.json",
+   "exits": {},
+   "purpose_map_xy": [
+    16850,
+    11600
+   ],
+   "layout_centre_xy": [
+    16848.5,
+    11489.9
+   ],
+   "layout_offset_m": 110,
+   "hull": [
+    [
+     17208.0,
+     11124.0
+    ],
+    [
+     17208.0,
+     11123.0
+    ],
+    [
+     17207.8,
+     11122.0
+    ],
+    [
+     17207.6,
+     11121.1
+    ],
+    [
+     17207.2,
+     11120.2
+    ],
+    [
+     17206.8,
+     11119.3
+    ],
+    [
+     17206.3,
+     11118.4
+    ],
+    [
+     17205.7,
+     11117.6
+    ],
+    [
+     17205.1,
+     11116.9
+    ],
+    [
+     17204.3,
+     11116.3
+    ],
+    [
+     17203.5,
+     11115.7
+    ],
+    [
+     17202.7,
+     11115.2
+    ],
+    [
+     17201.8,
+     11114.7
+    ],
+    [
+     17200.9,
+     11114.4
+    ],
+    [
+     17199.9,
+     11114.2
+    ],
+    [
+     17198.9,
+     11114.0
+    ],
+    [
+     17198.0,
+     11114.0
+    ],
+    [
+     17197.0,
+     11114.1
+    ],
+    [
+     17196.0,
+     11114.2
+    ],
+    [
+     17195.0,
+     11114.4
+    ],
+    [
+     17194.1,
+     11114.8
+    ],
+    [
+     17193.2,
+     11115.2
+    ],
+    [
+     17192.4,
+     11115.7
+    ],
+    [
+     16578.4,
+     11531.7
+    ],
+    [
+     16577.6,
+     11532.3
+    ],
+    [
+     16576.9,
+     11532.9
+    ],
+    [
+     16567.5,
+     11542.4
+    ],
+    [
+     16566.8,
+     11543.1
+    ],
+    [
+     16566.3,
+     11543.8
+    ],
+    [
+     16565.8,
+     11544.6
+    ],
+    [
+     16565.4,
+     11545.5
+    ],
+    [
+     16565.0,
+     11546.4
+    ],
+    [
+     16560.1,
+     11561.6
+    ],
+    [
+     16559.8,
+     11562.5
+    ],
+    [
+     16559.7,
+     11563.5
+    ],
+    [
+     16559.6,
+     11564.4
+    ],
+    [
+     16559.6,
+     11565.4
+    ],
+    [
+     16564.6,
+     11636.3
+    ],
+    [
+     16564.6,
+     11636.8
+    ],
+    [
+     16571.3,
+     11692.2
+    ],
+    [
+     16571.4,
+     11692.4
+    ],
+    [
+     16573.4,
+     11706.7
+    ],
+    [
+     16573.5,
+     11707.2
+    ],
+    [
+     16590.2,
+     11791.9
+    ],
+    [
+     16590.4,
+     11792.9
+    ],
+    [
+     16590.8,
+     11793.8
+    ],
+    [
+     16591.2,
+     11794.8
+    ],
+    [
+     16591.7,
+     11795.6
+    ],
+    [
+     16592.3,
+     11796.4
+    ],
+    [
+     16593.0,
+     11797.1
+    ],
+    [
+     16593.7,
+     11797.8
+    ],
+    [
+     16594.6,
+     11798.4
+    ],
+    [
+     16595.4,
+     11798.9
+    ],
+    [
+     16596.3,
+     11799.3
+    ],
+    [
+     16597.3,
+     11799.6
+    ],
+    [
+     16612.5,
+     11803.9
+    ],
+    [
+     16612.7,
+     11804.0
+    ],
+    [
+     16616.5,
+     11805.0
+    ],
+    [
+     16617.1,
+     11805.1
+    ],
+    [
+     16620.9,
+     11805.9
+    ],
+    [
+     16621.6,
+     11806.0
+    ],
+    [
+     16625.5,
+     11806.5
+    ],
+    [
+     16626.1,
+     11806.6
+    ],
+    [
+     16630.0,
+     11806.8
+    ],
+    [
+     16630.7,
+     11806.9
+    ],
+    [
+     16634.7,
+     11806.9
+    ],
+    [
+     16635.3,
+     11806.8
+    ],
+    [
+     16639.2,
+     11806.6
+    ],
+    [
+     16639.5,
+     11806.6
+    ],
+    [
+     16694.3,
+     11801.9
+    ],
+    [
+     16694.4,
+     11801.9
+    ],
+    [
+     16698.4,
+     11801.5
+    ],
+    [
+     16698.8,
+     11801.4
+    ],
+    [
+     16702.7,
+     11800.9
+    ],
+    [
+     16703.1,
+     11800.8
+    ],
+    [
+     16707.0,
+     11800.1
+    ],
+    [
+     16707.4,
+     11800.0
+    ],
+    [
+     16711.2,
+     11799.1
+    ],
+    [
+     16711.6,
+     11799.0
+    ],
+    [
+     16715.4,
+     11798.0
+    ],
+    [
+     16715.6,
+     11798.0
+    ],
+    [
+     16730.7,
+     11793.6
+    ],
+    [
+     16731.7,
+     11793.3
+    ],
+    [
+     16732.6,
+     11792.9
+    ],
+    [
+     16733.4,
+     11792.4
+    ],
+    [
+     16734.2,
+     11791.8
+    ],
+    [
+     16734.9,
+     11791.2
+    ],
+    [
+     16735.6,
+     11790.5
+    ],
+    [
+     17205.6,
+     11238.5
+    ],
+    [
+     17206.2,
+     11237.7
+    ],
+    [
+     17206.8,
+     11236.8
+    ],
+    [
+     17207.2,
+     11235.9
+    ],
+    [
+     17207.5,
+     11235.0
+    ],
+    [
+     17207.8,
+     11234.0
+    ],
+    [
+     17207.9,
+     11233.0
+    ],
+    [
+     17208.0,
+     11232.0
+    ],
+    [
+     17208.0,
+     11124.0
+    ]
+   ]
+  }
+ ],
+ "roads": [],
+ "ramps_needed": [],
+ "shore_links": [
+  {
+   "site": "6-M3",
+   "top_xyz": [
+    15278.4,
+    12323.5,
+    221.0
+   ],
+   "foot_xyz": [
+    15418.3,
+    12640.2,
+    5.09
+   ],
+   "pier_at_xy": [
+    15420.0,
+    12645.0
+   ],
+   "rise_m": 215.9,
+   "run_m": 346,
+   "slope_pct": 62,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 308 m of flights"
+  },
+  {
+   "site": "6-07",
+   "top_xyz": [
+    16894.7,
+    11814.7,
+    240.75
+   ],
+   "foot_xyz": [
+    16889.7,
+    12239.9,
+    2.69
+   ],
+   "pier_at_xy": [
+    16890.0,
+    12245.0
+   ],
+   "rise_m": 238.1,
+   "run_m": 425,
+   "slope_pct": 56,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 340 m of flights"
+  },
+  {
+   "site": "6-13",
+   "top_xyz": [
+    16642.0,
+    10345.8,
+    158.75
+   ],
+   "foot_xyz": [
+    16822.2,
+    10029.3,
+    0.75
+   ],
+   "pier_at_xy": [
+    16825.0,
+    10025.0
+   ],
+   "rise_m": 158.0,
+   "run_m": 364,
+   "slope_pct": 43,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 226 m of flights"
+  },
+  {
+   "site": "6-08",
+   "top_xyz": [
+    16877.4,
+    15603.2,
+    229.75
+   ],
+   "foot_xyz": [
+    16682.9,
+    15354.2,
+    3.35
+   ],
+   "pier_at_xy": [
+    16680.0,
+    15350.0
+   ],
+   "rise_m": 226.4,
+   "run_m": 316,
+   "slope_pct": 72,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 323 m of flights"
+  },
+  {
+   "site": "6-11",
+   "top_xyz": [
+    16967.5,
+    17048.0,
+    274.0
+   ],
+   "foot_xyz": [
+    17341.6,
+    17431.3,
+    1.1
+   ],
+   "pier_at_xy": [
+    17345.0,
+    17435.0
+   ],
+   "rise_m": 272.9,
+   "run_m": 536,
+   "slope_pct": 51,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 390 m of flights"
+  },
+  {
+   "site": "6-10",
+   "top_xyz": [
+    18338.4,
+    16524.9,
+    2.5
+   ],
+   "foot_xyz": [
+    18327.5,
+    16525.0,
+    0.61
+   ],
+   "pier_at_xy": [
+    18335.0,
+    16530.0
+   ],
+   "rise_m": 1.9,
+   "run_m": 11,
+   "slope_pct": 17,
+   "link": "stair",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": null,
+   "stair": "zig-zag stair, 3 m of flights at 35 degrees, 3 m wide, landings every 4 m of rise"
+  },
+  {
+   "site": "6-M2",
+   "top_xyz": [
+    16848.9,
+    10905.8,
+    141.25
+   ],
+   "foot_xyz": [
+    17214.9,
+    10914.7,
+    0.93
+   ],
+   "pier_at_xy": [
+    17220.0,
+    10915.0
+   ],
+   "rise_m": 140.3,
+   "run_m": 366,
+   "slope_pct": 38,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 200 m of flights"
+  },
+  {
+   "site": "6-05",
+   "top_xyz": [
+    16787.7,
+    10354.0,
+    150.25
+   ],
+   "foot_xyz": [
+    16908.4,
+    10064.9,
+    1.09
+   ],
+   "pier_at_xy": [
+    16910.0,
+    10060.0
+   ],
+   "rise_m": 149.2,
+   "run_m": 313,
+   "slope_pct": 48,
+   "link": "lift",
+   "pier": "ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+   "lift": "ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; plus a 'stair' up the same face for foot traffic",
+   "stair": "service stair beside the lift, 213 m of flights"
+  }
+ ],
+ "external_roads_joined": [],
+ "trunk_breaks": [],
+ "foot_links": 

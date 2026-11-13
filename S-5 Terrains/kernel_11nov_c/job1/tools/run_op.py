@@ -584,7 +584,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
             roads=P.roads, ramps_needed=ramps, shore_links=shore_links, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
-json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
+json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=lambda o: o.tolist() if hasattr(o, "tolist") else float(o))
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
 
 # ---- plan image
