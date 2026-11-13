@@ -19,9 +19,9 @@
  "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
   "status": "REPORT",
   "by_road": {
-   "7-M3-built:7-05-7-14#1": [
-    9,
-    0.22
+   "7-04-built:7-05-7-14#1": [
+    10,
+    0.29
    ],
    "7-14-built:7-05-7-14#1": [
     3,
@@ -85,7 +85,8 @@
       "7-M4",
       "7-F",
       "7-13",
-      "7-02"
+      "7-02",
+      "7-M2"
      ],
      [
       "7-06",
@@ -106,16 +107,15 @@
   "links_to_existing_net": [],
   "vehicle_sites_not_on_the_net": [
    "7-M1",
-   "7-03",
-   "7-M2"
+   "7-03"
   ],
   "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
  },
  "3 roads: no straight run over 150 m (within 1 m of the chord)": {
   "status": "PASS",
   "worst": [
-   "7-M3-T-7-M3",
-   137.5
+   "7-M4-op6:6-02-6-F",
+   134.8
   ]
  },
  "3 roads: nothing built within 3 m of a road edge": {
@@ -127,31 +127,31 @@
     "7-02-7-F"
    ],
    [
-    9.9,
-    "7-14",
-    "7-M3-built:7-05-7-14#1"
+    10.0,
+    "7-04",
+    "7-05-7-06"
    ],
    [
-    12.8,
-    "7-M3-T",
-    "7-M3-built:7-05-7-14#1"
+    11.1,
+    "7-14",
+    "7-04-built:7-05-7-14#1"
    ]
   ],
   "town_houses_closest": [
    [
-    289.94,
+    16.15,
     "7-M2",
-    "7-06-7-M3-T"
+    "7-M2-7-F"
    ],
    [
-    290.69,
+    16.84,
     "7-M2",
-    "7-06-7-M3-T"
+    "7-M2-7-F"
    ],
    [
-    301.51,
+    30.87,
     "7-M2",
-    "7-06-7-M3-T"
+    "7-M2-7-F"
    ]
   ],
   "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"

@@ -389,6 +389,44 @@ for phase in (0, 1):
       pending = failed
     for sid in pending: log.append(f"road for {sid}: NO ROUTE found to the {net} net")
 
+# ---- pieces of one net that grew apart (each joined a different existing road): join them by a road, or report the best try (JOIN_PIECES)
+for net in getattr(op, "JOIN_PIECES", ()):
+    par_ = {}
+    def fp(a):
+        while par_.get(a, a) != a: a = par_[a]
+        return a
+    for r_ in P.roads:
+        a_, b_ = [EXT_GROUP.get(x, x) for x in r_["links"]]; par_.setdefault(a_, a_); par_.setdefault(b_, b_); par_[fp(a_)] = fp(b_)
+    groups = collections.defaultdict(list)
+    for n_ in nodes.get(net, []):
+        key_ = EXT_GROUP.get(n_[3], n_[3])
+        if key_ in par_: groups[fp(key_)].append(n_)
+    keys = sorted(groups, key=lambda k_: -len(groups[k_]))
+    if len(keys) < 2: continue
+    A_, B_ = groups[keys[0]], [n_ for k_ in keys[1:] for n_ in groups[k_]]
+    pairs = sorted(((math.dist(a[:2], b[:2]), a, b) for a in A_[::2] for b in B_[::2]), key=lambda t: t[0])
+    tried, best, done = [], None, None
+    for d_, a, b in pairs:
+        if any(math.dist(a[:2], q[0][:2]) < 150 and math.dist(b[:2], q[1][:2]) < 150 for q in tried): continue
+        tried.append((a, b))
+        if len(tried) > 10: break
+        rl = []; okl = True
+        for nd in (a, b):
+            if len(nd) > 4 and nd[4] in ROADS_BY_ID and not nd[4].startswith("built:"):
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
+                if zl is None: okl = False; break
+                rl.append((r_own, r_own["points_z"])); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
+        if okl:
+            r = P.route((a[0], a[1]), (b[0], b[1]), za=a[2], zb=b[2], name=f"join {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
+            ok = r is not None and r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= 14.05 and r["clash_points"] == 0 and r["in_water_points"] == 0 and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0
+            if ok:
+                P.commit_road(r); ROADS_BY_ID[r["id"]] = r; done = r; break
+            if r is not None and (best is None or r["max_cut_fill_m"] < best["max_cut_fill_m"]): best = r
+        for r_own, z0 in rl: P.uncommit(r_own); r_own["points_z"] = z0; P.recommit(r_own)
+    log.append(f"join of the {net} pieces: " + (f"road {done['id']} ({done['length_m']} m)" if done else f"no road within the rules (best try cut/fill {best['max_cut_fill_m'] if best else '-'} m)"))
+    if not done and best is not None:
+        trunk_breaks.append(dict(at=best["points"][len(best["points"]) // 2], z=0.0, label=f"the two parts of the net: best joining road breaks 4 m ({best['max_cut_fill_m']} m)"))
+
 # ---- the link from this op's net down to another op's (LINK_EXTERNAL): a road if one holds the rules, else the best try with its failing stretch
 links_out = []
 for net in getattr(op, "LINK_EXTERNAL", ()):

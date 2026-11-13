@@ -61,3 +61,6 @@ APPROACHES = {
     "7-M4 Chora AA Umbrella": ["by road from the Chora (vehicles)", "by road from the crest road past the Crew Barracks (7-12) and the Power Bank (7-07)"],
 }
 BOAT_ONLY = ("7-15",)
+
+# re-pass: the Chora-Oyra part and the Oyra Head part (joined to your built road) are joined by a road where one holds
+JOIN_PIECES = ("Ember Crescent",)
