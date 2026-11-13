@@ -307,6 +307,7 @@ for phase in (0, 1):
                 nodes[net].append((q_[0], q_[1], pz_, root)); t["street_extensions"].append(dict(street_end=pn_, from_xy=[px_, py_], to_xy=[round(q_[0], 1), round(q_[1], 1)], level_m=pz_, length_m=15.0))
         elif root == "EXTERNAL_ROADS":      # existing roads (other ops', your built ones): anywhere on them (a join gets a level landing there, listed as an edit to that road),
                                             # and the free edges of the pads a road serves
+            nodes[net] = []
             for r_ in EXT_ROADS:
                 ROADS_BY_ID[r_["id"]] = r_
                 nodes[net] += [n_ for n_ in own_nodes(r_, r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]] if not r_["id"].startswith("built:") else \
