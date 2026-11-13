@@ -2,7 +2,7 @@
 NAME = "Acropolis Isle"
 BOX = (0, 11000, 14300, 19400)
 # the island's flanks are steeper than ops 3-4: the router's band filter is loosened from 7.6 to 10 m and its step limit from 0.8 to 1.0 of the grade; every road is still held to 4 m cut / fill and 14 %
-PLAN_KW = dict(band_range=10.0, steep=1.0)
+PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)     # re-pass: as ops 3-4 v2
 VIEW = (0, 11000, 14300, 19400)
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
