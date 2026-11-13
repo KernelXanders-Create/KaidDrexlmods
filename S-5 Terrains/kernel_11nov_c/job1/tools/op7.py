@@ -3,7 +3,7 @@ NAME = "The Rim"
 BOX = (9000, 15200, 9500, 17500)
 VIEW = (9000, 15200, 9500, 17500)
 LEGEND_LOC = "lower left"
-PLAN_KW = dict(band_range=10.0, steep=1.0, repair_to=3.6)     # as ops 5-6; every road is still held to 14 % and 4 m
+PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)     # re-pass: as ops 3-6 v2
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
 SITES = [
@@ -35,7 +35,7 @@ TOWNS = {"7-M2": dict(name="Oyra", layout=K6 + "oyra_v2/oyra_v2_layout.json", en
                              (11592.0, 12378.0, 130.75, 290.0, "rim street, west end (rim path)")])}
 
 # ops 4 and 6 are done: their pads here are blocked and their roads are the net this op joins (op 6's west climb passes 600 m east of the Chora)
-EXTERNAL_PLANS = ["../out_op4/op4_plan.json", "../out_op6/op6_plan.json"]
+EXTERNAL_PLANS = ["../out_op4_v2/op4_plan.json", "../out_op6_v2/op6_plan.json"]     # re-pass: the v2 plans
 NETS = {"Ember Crescent": ["7-12", "7-03", "7-07", "7-M4", "7-F", "7-13", "7-02", "7-M1", "7-M2", "7-06", "7-M3", "7-M3-T", "7-11", "7-04", "7-14", "7-05"]}
 ROOT = {"Ember Crescent": "EXTERNAL_ROADS"}
 
