@@ -35,11 +35,15 @@ GATE = ((9015.0, 8820.0), (9265.0, 8570.0))
 GATE_LABEL = "Breach Dam (span)"
 
 # ops 4, 6 and 7 are done: their pads here are blocked and their roads are the net this op joins
-EXTERNAL_PLANS = ["../out_op4/op4_plan.json", "../out_op6/op6_plan.json", "../out_op7/op7_plan.json"]
+EXTERNAL_PLANS = ["../out_op4_v2/op4_plan.json", "../out_op6_v2/op6_plan.json", "../out_op7_v3/op7_plan.json"]     # re-pass: the v2 / v3 plans
 # two nets on one island: the arm net joins ops 4, 6 and 7; the inner shore (under a 20-110 m inner cliff all round the lagoon) cannot be reached
 # by any road within your rules, so it is its own net from the Yard, and rule 3 fails until a ramp joins them (GAPS)
-NETS = {"Ember Crescent": ["8-08", "8-M3", "8-13", "8-02", "8-M1", "8-14", "8-14-T", "8-09", "8-M4"],
-        "Ember Crescent: the inner shore": ["8-12", "8-10", "8-04", "8-03"]}
+NETS = {"Ember Crescent": ["8-08", "8-M3", "8-13", "8-02", "8-M1", "8-14", "8-14-T", "8-09", "8-M4", "ramp top (south arm)"],
+        "Ember Crescent: the inner shore": ["8-12", "8-10", "8-04", "8-03", "ramp foot (inner shore)", "7-M1 (op 7)"]}
+# items 3 and 4 (12 Nov): the roads are drawn to the two ends of the lowest step (the ramp's top on the arm, its foot on the inner shore),
+# and op 7's Skaros Rock Keep (on the same inner shore) is joined to the Yard's net by the shore road
+POINT_TARGETS = {"ramp top (south arm)": (9650.0, 8315.0), "ramp foot (inner shore)": (10005.0, 8305.0)}
+JOIN_PIECES = (("Ember Crescent", "Ember Crescent: the inner shore"),)
 ROOT = {"Ember Crescent": "EXTERNAL_ROADS", "Ember Crescent: the inner shore": "8-F"}
 GAPS = [dict(at=(9830, 8310), label="the inner shore to the south arm: the lowest step (MEASURED), 19.4 m between (10005, 8305) at 10 m and (9650, 8315) at 29.5 m, 355 m apart; your ramp here joins the Yard's net to the AI net")]
 

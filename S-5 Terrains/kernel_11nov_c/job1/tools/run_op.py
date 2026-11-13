@@ -322,12 +322,17 @@ for phase in (0, 1):
             s = SITE[root]; s["_root"] = True
             a_ = math.radians(s["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
             nodes[net] = [tuple(np.array([s["x"], s["y"]]) + v * (h + 1.5 + 2.5)) + (s["z"], root) for v, h in ((ex_, s["hx"]), (-ex_, s["hx"]), (ey_, s["hy"]), (-ey_, s["hy"]))]
-    pending = [x for x in order if (x in SITE or x in towns) and x != root]
+    POINTS = getattr(op, "POINT_TARGETS", {})
+    pending = [x for x in order if (x in SITE or x in towns or x in EXT or x in POINTS) and x != root]
     for pass_no in range(3):
       failed = []
       for sid in pending:
         if sid in towns:     # a town joins the net at its road port, leaving along the bearing its op file gives
             t_ = towns[sid]; s = dict(id=sid, x=t_["entry"][0], y=t_["entry"][1], z=t_["z"], _town=t_)
+        elif sid in EXT:     # another op's pad (e.g. op 7's Skaros keep): joined at one of its edges
+            s = dict(EXT[sid], id=sid, _pseudo=True)
+        elif sid in POINTS:  # a fixed point (a ramp's foot or top): a 6 m level patch at the ground's level
+            x_, y_ = POINTS[sid]; s = dict(id=sid, x=float(x_), y=float(y_), z=round(world.z(x_, y_), 2), hx=3.0, hy=3.0, yaw=0.0, _pseudo=True)
         else: s = SITE[sid]
         cand = sorted(nodes[net], key=lambda n: math.dist((n[0], n[1]), (s["x"], s["y"])))
         picked = []                                    # up to 4 candidates at least 150 m apart (not four points of one road)
@@ -375,7 +380,8 @@ for phase in (0, 1):
             if "_town" in s:      # the port the road reached becomes the town's entry
                 t_ = s["_town"]; t_["entry"] = (s["x"], s["y"]); t_["z"] = s["z"]; t_["port_used"] = pn_
                 t_.setdefault("street_extensions", []).append(dict(street_end=pn_, from_xy=[s["x"], s["y"]], to_xy=[round(float(ep[0]), 1), round(float(ep[1]), 1)], level_m=s["z"], length_m=15.0))
-            if "_town" not in s:
+            if "_pseudo" in s: pass
+            elif "_town" not in s:
                 s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360)
                 s["entrance_xy"] = [round(float(ep[0]), 1), round(float(ep[1]), 1)]
             nodes[net] += own_nodes(r, sid, away=ep)      # its points (not its own landing at its pad); a join there gets a level landing
@@ -391,6 +397,8 @@ for phase in (0, 1):
 
 # ---- pieces of one net that grew apart (each joined a different existing road): join them by a road, or report the best try (JOIN_PIECES)
 for net in getattr(op, "JOIN_PIECES", ()):
+    names_ = net if isinstance(net, tuple) else (net,); net = names_[0]
+    nodes[net] = [n_ for nm_ in names_ for n_ in nodes.get(nm_, [])]
     par_ = {}
     def fp(a):
         while par_.get(a, a) != a: a = par_[a]
