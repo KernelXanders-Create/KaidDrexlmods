@@ -38,8 +38,9 @@ TOWNS = {"6-01": dict(name="Kamar Village", layout="../../../kernel_10nov_v1/K6_
 # re-pass: op 4 v2's 4-10 has no road, so this op joins op 4 v2's actual road net (its pads here are blocked, its roads joinable)
 EXTERNAL_PLANS = ["../out_op4_v2/op4_plan.json"]
 # the net climbs the south slope to the east upland first (the west side is cut by ravines), then spreads over the upland and back west
-NETS = {"Ember Crescent": ["6-06", "6-13", "6-05", "6-M2", "6-01", "6-03", "6-F-T", "6-F", "6-M3", "6-07", "6-04", "6-02", "6-14"]}
-ROOT = {"Ember Crescent": "EXTERNAL_ROADS"}
+NETS = {"Ember Crescent": ["6-F-T", "6-03", "6-01", "6-M3", "6-07", "6-04", "6-14", "6-02", "6-06", "6-13", "6-05", "6-M2"]}
+ROOT = {"Ember Crescent": "6-F"}          # re-pass: the massif's own net grows from the monastery; its link down to op 4's net is LINK_EXTERNAL
+LINK_EXTERNAL = ("Ember Crescent",)
 
 SQUADS = [
     ("A6-01", "CIS Heavy Gun Position with GPs (D)", 30.1, 25.4, 16700, 10150, 300, "the south end of Kamar Strand and the landers"),

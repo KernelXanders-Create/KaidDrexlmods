@@ -387,6 +387,46 @@ for phase in (0, 1):
       pending = failed
     for sid in pending: log.append(f"road for {sid}: NO ROUTE found to the {net} net")
 
+# ---- the link from this op's net down to another op's (LINK_EXTERNAL): a road if one holds the rules, else the best try with its failing stretch
+links_out = []
+for net in getattr(op, "LINK_EXTERNAL", ()):
+    inner = [n_ for n_ in nodes.get(net, []) if not str(n_[3]).startswith(("op", "built:")) and not str(n_[3]).endswith(")")]
+    outer = [n_ for r_ in EXT_ROADS for n_ in own_nodes(r_, r_["id"])] if True else []
+    for r_ in EXT_ROADS: ROADS_BY_ID[r_["id"]] = r_
+    pairs = sorted(((math.dist(a[:2], b[:2]), a, b) for a in inner[::2] for b in outer[::2]), key=lambda t: t[0])
+    tried, best, done = [], None, None
+    for d_, a, b in pairs:
+        if any(math.dist(a[:2], q[0][:2]) < 150 and math.dist(b[:2], q[1][:2]) < 150 for q in tried): continue
+        tried.append((a, b))
+        if len(tried) > 8: break
+        rl = []
+        for nd in (a, b):
+            if len(nd) > 4:
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
+                if zl is None: break
+                rl.append((r_own, r_own["points_z"])); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
+        else:
+            r = P.route((a[0], a[1]), (b[0], b[1]), za=a[2], zb=b[2], name=f"link {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
+            ok = r is not None and r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= 14.05 and r["clash_points"] == 0 and r["in_water_points"] == 0 and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0
+            if ok:
+                P.commit_road(r); ROADS_BY_ID[r["id"]] = r; done = r
+                for r_own, _ in rl: r_own.setdefault("landings_for_joins", []).append(dict(for_road=r["id"]))
+                break
+            if r is not None and (best is None or r["max_cut_fill_m"] < best["max_cut_fill_m"]): best = r
+        for r_own, z0 in rl: P.uncommit(r_own); r_own["points_z"] = z0; P.recommit(r_own)
+    if done: links_out.append(dict(net=net, status="road", road=done["id"], length_m=done["length_m"], max_cut_fill_m=done["max_cut_fill_m"]))
+    elif best is not None:            # the best try, and where it breaks the 4 m rule: what a cutting, a retaining wall or a ramp must take
+        J_, I_, Z_ = P.band_points(best); over = np.abs(Z_ - P.H[J_, I_]) > 4.0
+        X_ = np.array(best["points"]); s_ = np.r_[0, np.cumsum(np.hypot(*np.diff(X_, axis=0).T))]
+        from scipy.spatial import cKDTree as _K
+        kk = _K(X_).query(np.c_[I_[over] * 5.0, J_[over] * 5.0])[1] if over.any() else np.array([], int)
+        stretch = [round(float(s_[kk.min()])), round(float(s_[kk.max()]))] if len(kk) else None
+        links_out.append(dict(net=net, status="no road within the rules", best_try=dict(points=best["points"], points_z=best["points_z"], length_m=best["length_m"], max_cut_fill_m=best["max_cut_fill_m"],
+                              grid_points_over_4_m=int(over.sum()), over_4_m_between_m=stretch, worst_cut_or_fill_m=round(float(np.abs(Z_ - P.H[J_, I_]).max()), 2),
+                              needs="a cutting or retaining wall taking the band to within 4 m over that stretch, or your ramp there"), links=best["links"]))
+        trunk_breaks.append(dict(at=[float(X_[kk[len(kk) // 2], 0]), float(X_[kk[len(kk) // 2], 1])] if len(kk) else best["points"][0], z=0.0,
+                                 label=f"link to the existing net: best road breaks 4 m ({best['max_cut_fill_m']} m) over {stretch[1] - stretch[0] if stretch else 0} m"))
+
 # ---- re-measure every road of this op on the final ground (landings for joins changed some levels)
 for r in P.roads:
     P.uncommit(r); P.check_road(r); P.recommit(r)
@@ -558,7 +598,8 @@ for line_ in open(os.path.join(world.PACK, "design", "PURPOSE_MAP.md"), encoding
         APPR[cells[0]] = cells[-1]
 veh = [x for x in list(SITE) + list(towns) if "vehicles" in APPR.get(x.split("-N")[0].split("-T")[0], "")]
 veh_missing = [x for x in veh if x not in {y for r in P.roads for y in r["links"]}]
-C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) and not veh_missing else "FAIL", nets=conn,
+C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) and not veh_missing and all(l_["status"] == "road" for l_ in links_out) else "FAIL", nets=conn,
+    links_to_existing_net=[{k: v for k, v in l_.items() if k != "best_try"} | ({"best_try": {k: v for k, v in l_["best_try"].items() if k not in ("points", "points_z")}} if "best_try" in l_ else {}) for l_ in links_out],
     vehicle_sites_not_on_the_net=veh_missing,
     reading="the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)")
 C["3 roads: no straight run over 150 m (within 1 m of the chord)"] = dict(status="PASS" if not st or st["straight_max_m"] <= 150 else "FAIL", worst=[st["id"], st["straight_max_m"]] if st else None)
@@ -588,7 +629,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, ramps_needed=ramps, shore_links=shore_links,
+            roads=P.roads, ramps_needed=ramps, shore_links=shore_links, links_to_existing_net=links_out,
             edits_to_other_ops_roads=[dict(road=r_["id"], landings=r_["landings_for_joins"], points_z=r_["points_z"]) for r_ in EXT_ROADS if r_.get("landings_for_joins")], external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=lambda o: o.tolist() if hasattr(o, "tolist") else float(o))
