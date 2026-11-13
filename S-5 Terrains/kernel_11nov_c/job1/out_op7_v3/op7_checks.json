@@ -26,6 +26,10 @@
    "7-14-built:7-05-7-14#1": [
     3,
     0.15
+   ],
+   "join 7-M2-7-06": [
+    1,
+    0.1
    ]
   },
   "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
@@ -86,9 +90,7 @@
       "7-F",
       "7-13",
       "7-02",
-      "7-M2"
-     ],
-     [
+      "7-M2",
       "7-06",
       "7-M3",
       "7-M3-T",
@@ -139,19 +141,19 @@
   ],
   "town_houses_closest": [
    [
-    16.15,
+    7.4,
     "7-M2",
-    "7-M2-7-F"
+    "join 7-M2-7-06"
    ],
    [
-    16.84,
+    7.95,
     "7-M2",
-    "7-M2-7-F"
+    "join 7-M2-7-06"
    ],
    [
-    30.87,
+    8.33,
     "7-M2",
-    "7-M2-7-F"
+    "join 7-M2-7-06"
    ]
   ],
   "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"
