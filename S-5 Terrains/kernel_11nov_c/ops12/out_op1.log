@@ -1,0 +1,103 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_11nov_c/ops12/../job1/tools/planner.py:260: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+{
+"reseated": [],
+"new": [],
+"replaced": [
+[
+"1-M2-1-14#2",
+" grade 10.1 %",
+63,
+9.86,
+2.15
+],
+[
+"1-M1-1-12#5",
+"straight 196 m",
+67,
+6.69,
+2.66
+],
+[
+"1-M1-1-11#8",
+"straight 160 m",
+72,
+13.8,
+2.22
+],
+[
+"1-03-1-13#18",
+"straight 185 m",
+63,
+13.81,
+3.0
+],
+[
+"1-11-1-15#21",
+"straight 248 m",
+67,
+13.81,
+2.31
+]
+],
+"offlevel": [
+[
+"1-M1",
+-0.7
+],
+[
+"1-M1",
+-0.51
+],
+[
+"1-M2",
+0.58
+],
+[
+"1-01",
+-0.88
+],
+[
+"1-02",
+-0.69
+],
+[
+"1-04",
+-1.23
+],
+[
+"1-05",
+-0.96
+],
+[
+"1-06",
+-0.58
+],
+[
+"1-13",
+-0.74
+],
+[
+"A1-09",
+0.92
+],
+[
+"A1-06",
+1.16
+],
+[
+"A1-03",
+0.51
+]
+],
+"houses": [],
+"log": [
+"  1-F-1-M2#1 to M west end: cut/fill 2.12 m, clash 0 [], houses 13.5 m, grade 13.81 %, from z 72.452 to 59.4",
+"  1-01-1-F#6 to M west end: cut/fill 2.09 m, clash 0 [], houses 2.6 m, grade 13.81 %, from z 69.673 to 59.4",
+"  1-01-1-F#6 to M east end: cut/fill 3.84 m, clash 0 [], houses 13.3 m, grade 13.82 %, from z 69.673 to 50.0",
+"  1-F-1-15#7 to M west end: cut/fill 2.09 m, clash 0 [], houses 2.6 m, grade 13.82 %, from z 69.66 to 59.4",
+"  1-F-1-15#7 to M east end: cut/fill 3.84 m, clash 0 [], houses 13.3 m, grade 13.79 %, from z 69.66 to 50.0",
+"  1-F-1-04#23 to M west end: cut/fill 1.45 m, clash 0 [], houses 18.3 m, grade 13.79 %, from z 56.074 to 59.4",
+"1-06-through#38: no fix within the rules (cut/fill 4.4 m, straight 63 m, grade 6.63 %)"
+]
+}

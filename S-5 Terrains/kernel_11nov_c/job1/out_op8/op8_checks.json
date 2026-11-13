@@ -1,0 +1,194 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "8-08-op4:4-09-4-07": [
+    25,
+    2.05
+   ],
+   "8-M1-8-02": [
+    7,
+    0.32
+   ],
+   "8-14-8-02": [
+    3,
+    0.11
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "A8-10",
+   3.54
+  ],
+  "over_3_5": [
+   [
+    "A8-10",
+    3.54
+   ]
+  ]
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "8-08-op4:4-09-4-07",
+   14.0
+  ]
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "8-04-8-10",
+   3.66
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "FAIL",
+  "nets": {
+   "Ember Crescent": {
+    "pieces": [
+     [
+      "8-F",
+      "8-12",
+      "8-10",
+      "8-04",
+      "8-03"
+     ],
+     [
+      "8-08",
+      "8-M3",
+      "8-13",
+      "8-02",
+      "8-M1",
+      "8-14",
+      "8-14-T",
+      "8-09",
+      "8-M4"
+     ]
+    ],
+    "not_reached": []
+   }
+  },
+  "vehicle_sites_not_on_the_net": [],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "8-10-8-12",
+   116.3
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    9.3,
+    "A8-02",
+    "8-03-8-04"
+   ],
+   [
+    12.6,
+    "A8-04",
+    "8-10-8-12"
+   ],
+   [
+    14.4,
+    "A8-06",
+    "8-M3-8-13"
+   ]
+  ],
+  "town_buildings_closest": [],
+  "town_note": "town buildings are tested centre to road edge >= 8 m (a building half-size of 5 m is ASSUMED), except within 25 m of the town's road ports (street ends), where a road meets the town's own street"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": []
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    15.2,
+    "A8-04"
+   ],
+   [
+    71.2,
+    "8-09"
+   ],
+   [
+    99,
+    "8-01"
+   ]
+  ],
+  "exempt": [
+   "8-F",
+   "8-M1",
+   "8-03",
+   "8-04",
+   "8-10",
+   "8-12",
+   "8-16"
+  ]
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": [
+   [
+    859,
+    "8-F",
+    "8-M4"
+   ],
+   [
+    1915,
+    "8-M1",
+    "8-M3"
+   ],
+   [
+    2351,
+    "8-M1",
+    "8-M2"
+   ]
+  ]
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "8-F Caldera Yard": [
+    "along the inner shore road from the south, through the Inner Shore Road Gate (8-10) (vehicles)",
+    "down the Skala path from the Rim Chora (op 7), on foot; or by boat across the lagoon once the dam gate opens"
+   ],
+   "8-M1 Breach Dam": [
+    "along the south arm road to the dam's east end (vehicles)",
+    "from Ash Crescent's south tip across the dam crest on foot, or by boat to either end"
+   ],
+   "8-M2 Kameni Shield Generator": [
+    "by boat to Kameni's north landing past the Vent Bunkers (8-05)",
+    "by boat to Kameni's south shore, or by air once the shield's AA falls"
+   ],
+   "8-M3 South Arm Gun Line": [
+    "along the south arm road from Causeway Foot past the South Arm Road Tower (8-08) (vehicles)",
+    "up from the Inner Shore Fuel Quay (8-03)"
+   ],
+   "8-M4 Yard Power Plant": [
+    "by road from the rim (the op 4 and op 7 nets) (vehicles)",
+    "up the cliff path from the Dry Dock Pump House (8-12), on foot"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
