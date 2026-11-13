@@ -1616,11 +1616,202 @@
    "stair": "service stair beside the lift, 213 m of flights"
   }
  ],
+ "edits_to_other_ops_roads": [],
  "external_roads_joined": [],
  "trunk_breaks": [],
  "foot_links": [
-  16908.428571428572,
-  10064.857142857143
+  {
+   "site": "6-F",
+   "bottom_xyz": [
+    15460.0,
+    11310.0,
+    399.25
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1204,
+   "rise_m": -153.2
+  },
+  {
+   "site": "6-F-T",
+   "bottom_xyz": [
+    15860.0,
+    11560.0,
+    322.5
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 790,
+   "rise_m": -76.5
+  },
+  {
+   "site": "6-M2",
+   "bottom_xyz": [
+    16790.0,
+    10890.0,
+    141.25
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 632,
+   "rise_m": 104.8
+  },
+  {
+   "site": "6-M3",
+   "bottom_xyz": [
+    15290.0,
+    12280.0,
+    221.0
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1563,
+   "rise_m": 25.0
+  },
+  {
+   "site": "6-02",
+   "bottom_xyz": [
+    14560.0,
+    10490.0,
+    304.25
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 2322,
+   "rise_m": -58.2
+  },
+  {
+   "site": "6-03",
+   "bottom_xyz": [
+    16020.0,
+    11420.0,
+    335.0
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 634,
+   "rise_m": -89.0
+  },
+  {
+   "site": "6-04",
+   "bottom_xyz": [
+    14810.0,
+    12150.0,
+    213.0
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1948,
+   "rise_m": 33.0
+  },
+  {
+   "site": "6-05",
+   "bottom_xyz": [
+    16800.0,
+    10400.0,
+    150.25
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1116,
+   "rise_m": 95.8
+  },
+  {
+   "site": "6-06",
+   "bottom_xyz": [
+    16050.0,
+    10370.0,
+    230.5
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1284,
+   "rise_m": 15.5
+  },
+  {
+   "site": "6-07",
+   "bottom_xyz": [
+    16860.0,
+    11780.0,
+    240.75
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 346,
+   "rise_m": 5.2
+  },
+  {
+   "site": "6-13",
+   "bottom_xyz": [
+    16600.0,
+    10370.0,
+    158.75
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1137,
+   "rise_m": 87.2
+  },
+  {
+   "site": "6-14",
+   "bottom_xyz": [
+    14800.0,
+    11470.0,
+    300.5
+   ],
+   "top_xyz": [
+    16648.0,
+    11506.0,
+    246.0
+   ],
+   "top_on_road": "town 6-01 (Kamar Village)",
+   "straight_m": 1848,
+   "rise_m": -54.5
+  }
  ],
  "approaches": {
   "6-F Prophet Monastery": [
@@ -1945,118 +2136,6 @@
   }
  ],
  "log": [
-  "road 6-06 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 1343.4 m)",
-  "road 6-06 -> 4-10 (op 4): rejected (grade 103.1 %, cut/fill 4.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 1121.9 m)",
-  "road 6-06 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.59 m, pad clash 0 [], junction step 0.0 m, water 0, house 1343.4 m)",
-  "road 6-06 -> A4-09 (op 4): rejected (grade 106.7 %, cut/fill 4.77 m, pad clash 0 [], junction step 0.0 m, water 0, house 1121.7 m)",
-  "road 6-06 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 1343.4 m)",
-  "road 6-06 -> 4-10 (op 4): rejected (grade 103.1 %, cut/fill 4.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 1121.9 m)",
-  "road 6-06 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.59 m, pad clash 0 [], junction step 0.0 m, water 0, house 1343.4 m)",
-  "road 6-06 -> A4-09 (op 4): rejected (grade 106.7 %, cut/fill 4.77 m, pad clash 0 [], junction step 0.0 m, water 0, house 1121.7 m)",
-  "road 6-13 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.43 m, pad clash 0 [], junction step 0.0 m, water 0, house 925.9 m)",
-  "road 6-13 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.38 m, pad clash 0 [], junction step 0.0 m, water 0, house 926.4 m)",
-  "road 6-13 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.44 m, pad clash 0 [], junction step 0.0 m, water 0, house 925.9 m)",
-  "road 6-13 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.66 m, pad clash 0 [], junction step 0.0 m, water 0, house 926.3 m)",
-  "road 6-13 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.43 m, pad clash 0 [], junction step 0.0 m, water 0, house 925.9 m)",
-  "road 6-13 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.38 m, pad clash 0 [], junction step 0.0 m, water 0, house 926.4 m)",
-  "road 6-13 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.44 m, pad clash 0 [], junction step 0.0 m, water 0, house 925.9 m)",
-  "road 6-13 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.66 m, pad clash 0 [], junction step 0.0 m, water 0, house 926.3 m)",
-  "road 6-05 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.36 m, pad clash 0 [], junction step 0.0 m, water 0, house 864.1 m)",
-  "road 6-05 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.34 m, pad clash 0 [], junction step 0.0 m, water 0, house 826.5 m)",
-  "road 6-05 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 864.1 m)",
-  "road 6-05 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.12 m, pad clash 0 [], junction step 0.0 m, water 0, house 826.5 m)",
-  "road 6-05 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.36 m, pad clash 0 [], junction step 0.0 m, water 0, house 864.1 m)",
-  "road 6-05 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.34 m, pad clash 0 [], junction step 0.0 m, water 0, house 826.5 m)",
-  "road 6-05 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 864.1 m)",
-  "road 6-05 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.12 m, pad clash 0 [], junction step 0.0 m, water 0, house 826.5 m)",
-  "road 6-M2 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 515.2 m)",
-  "road 6-M2 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.41 m, pad clash 0 [], junction step 0.0 m, water 0, house 466.7 m)",
-  "road 6-M2 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.56 m, pad clash 0 [], junction step 0.0 m, water 0, house 515.2 m)",
-  "road 6-M2 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.41 m, pad clash 0 [], junction step 0.0 m, water 0, house 466.7 m)",
-  "road 6-M2 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.5 m, pad clash 0 [], junction step 0.0 m, water 0, house 515.2 m)",
-  "road 6-M2 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.41 m, pad clash 0 [], junction step 0.0 m, water 0, house 466.7 m)",
-  "road 6-M2 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.56 m, pad clash 0 [], junction step 0.0 m, water 0, house 515.2 m)",
-  "road 6-M2 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.41 m, pad clash 0 [], junction step 0.0 m, water 0, house 466.7 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 38.6 %, cut/fill 5.09 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.95 m, pad clash 0 [], junction step 0.0 m, water 0, house 6.9 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 38.6 %, cut/fill 5.14 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.37 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.28 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.4 m, pad clash 0 [], junction step 0.0 m, water 0, house 7.1 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 38.6 %, cut/fill 5.09 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.95 m, pad clash 0 [], junction step 0.0 m, water 0, house 6.9 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 38.6 %, cut/fill 5.14 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.37 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.28 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.4 m, pad clash 0 [], junction step 0.0 m, water 0, house 7.1 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 38.6 %, cut/fill 5.09 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.95 m, pad clash 0 [], junction step 0.0 m, water 0, house 6.9 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 38.6 %, cut/fill 5.14 m, pad clash 0 [], junction step 0.0 m, water 0, house 58.7 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.37 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.28 m, pad clash 0 [], junction step 0.0 m, water 0, house 0.0 m)",
-  "road 6-01 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.4 m, pad clash 0 [], junction step 0.0 m, water 0, house 7.1 m)",
-  "road 6-03 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 7.17 m, pad clash 0 [], junction step 0.0 m, water 0, house 339.0 m)",
-  "road 6-03 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 8.79 m, pad clash 0 [], junction step 0.0 m, water 0, house 472.5 m)",
-  "road 6-03 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.17 m, pad clash 0 [], junction step 0.0 m, water 0, house 607.0 m)",
-  "road 6-03 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 558.1 m)",
-  "road 6-03 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 7.17 m, pad clash 0 [], junction step 0.0 m, water 0, house 339.0 m)",
-  "road 6-03 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 8.79 m, pad clash 0 [], junction step 0.0 m, water 0, house 472.5 m)",
-  "road 6-03 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.17 m, pad clash 0 [], junction step 0.0 m, water 0, house 607.0 m)",
-  "road 6-03 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.45 m, pad clash 0 [], junction step 0.0 m, water 0, house 558.1 m)",
-  "road 6-F-T -> 4-10 (op 4): rejected (grade 24.5 %, cut/fill 9.6 m, pad clash 0 [], junction step 0.0 m, water 0, house 338.0 m)",
-  "road 6-F-T -> 4-10 (op 4): rejected (grade 49.9 %, cut/fill 8.96 m, pad clash 0 [], junction step 0.0 m, water 0, house 385.8 m)",
-  "road 6-F-T -> A4-09 (op 4): rejected (grade 54.0 %, cut/fill 5.59 m, pad clash 0 [], junction step 0.0 m, water 0, house 711.2 m)",
-  "road 6-F-T -> A4-09 (op 4): rejected (grade 53.6 %, cut/fill 4.72 m, pad clash 0 [], junction step 0.0 m, water 0, house 740.5 m)",
-  "road 6-F-T -> 4-10 (op 4): rejected (grade 24.5 %, cut/fill 9.6 m, pad clash 0 [], junction step 0.0 m, water 0, house 338.0 m)",
-  "road 6-F-T -> 4-10 (op 4): rejected (grade 60.7 %, cut/fill 4.89 m, pad clash 0 [], junction step 0.0 m, water 0, house 184.7 m)",
-  "road 6-F-T -> A4-09 (op 4): rejected (grade 54.0 %, cut/fill 5.59 m, pad clash 0 [], junction step 0.0 m, water 0, house 711.2 m)",
-  "road 6-F-T -> A4-09 (op 4): rejected (grade 53.6 %, cut/fill 4.72 m, pad clash 0 [], junction step 0.0 m, water 0, house 740.5 m)",
-  "road 6-F -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 10.36 m, pad clash 0 [], junction step 0.0 m, water 0, house 1181.3 m)",
-  "road 6-F -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 11.1 m, pad clash 0 [], junction step 0.0 m, water 0, house 997.8 m)",
-  "road 6-F -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.98 m, pad clash 0 [], junction step 0.0 m, water 0, house 1181.3 m)",
-  "road 6-F -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.93 m, pad clash 0 [], junction step 0.0 m, water 0, house 997.2 m)",
-  "road 6-F -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.12 m, pad clash 0 [], junction step 0.0 m, water 0, house 1181.3 m)",
-  "road 6-F -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 6.19 m, pad clash 0 [], junction step 0.0 m, water 0, house 996.7 m)",
-  "road 6-F -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.98 m, pad clash 0 [], junction step 0.0 m, water 0, house 1181.3 m)",
-  "road 6-F -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.93 m, pad clash 0 [], junction step 0.0 m, water 0, house 997.2 m)",
-  "road 6-M3 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 10.76 m, pad clash 0 [], junction step 0.0 m, water 0, house 1360.2 m)",
-  "road 6-M3 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 11.31 m, pad clash 0 [], junction step 0.0 m, water 0, house 1409.1 m)",
-  "road 6-M3 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.16 m, pad clash 0 [], junction step 0.0 m, water 0, house 1360.2 m)",
-  "road 6-M3 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.82 m, pad clash 0 [], junction step 0.0 m, water 0, house 1409.1 m)",
-  "road 6-M3 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.07 m, pad clash 0 [], junction step 0.0 m, water 0, house 1360.2 m)",
-  "road 6-M3 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.7 m, pad clash 0 [], junction step 0.0 m, water 0, house 1409.1 m)",
-  "road 6-M3 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.16 m, pad clash 0 [], junction step 0.0 m, water 0, house 1360.2 m)",
-  "road 6-M3 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.82 m, pad clash 0 [], junction step 0.0 m, water 0, house 1409.1 m)",
-  "road 6-07 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.73 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.74 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.63 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.73 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.74 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.63 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-07 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.32 m, pad clash 0 [], junction step 0.0 m, water 0, house 16.5 m)",
-  "road 6-04 -> 4-10 (op 4): rejected (grade 39.0 %, cut/fill 10.54 m, pad clash 0 [], junction step 0.0 m, water 0, house 1580.8 m)",
-  "road 6-04 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 4.69 m, pad clash 0 [], junction step 0.0 m, water 0, house 1584.2 m)",
-  "road 6-04 -> A4-09 (op 4): rejected (grade 39.1 %, cut/fill 5.03 m, pad clash 0 [], junction step 0.0 m, water 0, house 1581.8 m)",
-  "road 6-04 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.66 m, pad clash 0 [], junction step 0.0 m, water 0, house 1584.0 m)",
-  "road 6-04 -> 4-10 (op 4): rejected (grade 39.1 %, cut/fill 4.37 m, pad clash 0 [], junction step 0.0 m, water 0, house 1581.8 m)",
-  "road 6-04 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.16 m, pad clash 0 [], junction step 0.0 m, water 0, house 1583.9 m)",
-  "road 6-04 -> A4-09 (op 4): rejected (grade 39.1 %, cut/fill 5.03 m, pad clash 0 [], junction step 0.0 m, water 0, house 1581.8 m)",
-  "road 6-04 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 4.66 m, pad clash 0 [], junction step 0.0 m, water 0, house 1584.0 m)",
-  "road 6-02 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.0 m, pad clash 0 [], junction step 0.0 m, water 0, house 2283.5 m)",
-  "road 6-02 -> 4-10 (op 4): rejected (grade 16.9 %, cut/fill 5.18 m, pad clash 0 [], junction step 0.0 m, water 0, house 2226.2 m)",
-  "road 6-02 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.74 m, pad clash 0 [], junction step 0.0 m, water 0, house 2283.5 m)",
-  "road 6-02 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.09 m, pad clash 0 [], junction step 0.0 m, water 0, house 2294.3 m)",
-  "road 6-02 -> 4-10 (op 4): rejected (grade 13.8 %, cut/fill 5.0 m, pad clash 0 [], junction step 0.0 m, water 0, house 2283.5 m)",
-  "road 6-02 -> 4-10 (op 4): rejected (grade 16.9 %, cut/fill 5.18 m, pad clash 0 [], junction step 0.0 m, water 0, house 2226.2 m)",
-  "road 6-02 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.74 m, pad clash 0 [], junction step 0.0 m, water 0, house 2283.5 m)",
-  "road 6-02 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.09 m, pad clash 0 [], junction step 0.0 m, water 0, house 2294.3 m)",
   "road for 6-06: NO ROUTE found to the Ember Crescent net",
   "road for 6-13: NO ROUTE found to the Ember Crescent net",
   "road for 6-05: NO ROUTE found to the Ember Crescent net",
@@ -2069,14 +2148,6 @@
   "road for 6-07: NO ROUTE found to the Ember Crescent net",
   "road for 6-04: NO ROUTE found to the Ember Crescent net",
   "road for 6-02: NO ROUTE found to the Ember Crescent net",
-  "road 6-14 -> 4-10 (op 4): rejected (grade 25.5 %, cut/fill 10.41 m, pad clash 0 [], junction step 0.0 m, water 0, house 1762.9 m)",
-  "road 6-14 -> 4-10 (op 4): rejected (grade 29.3 %, cut/fill 8.84 m, pad clash 0 [], junction step 0.0 m, water 0, house 1714.2 m)",
-  "road 6-14 -> A4-09 (op 4): rejected (grade 25.5 %, cut/fill 4.79 m, pad clash 0 [], junction step 0.0 m, water 0, house 1762.9 m)",
-  "road 6-14 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 1794.6 m)",
-  "road 6-14 -> 4-10 (op 4): rejected (grade 25.5 %, cut/fill 5.48 m, pad clash 0 [], junction step 0.0 m, water 0, house 1762.9 m)",
-  "road 6-14 -> 4-10 (op 4): rejected (grade 29.3 %, cut/fill 4.88 m, pad clash 0 [], junction step 0.0 m, water 0, house 1714.2 m)",
-  "road 6-14 -> A4-09 (op 4): rejected (grade 25.5 %, cut/fill 4.79 m, pad clash 0 [], junction step 0.0 m, water 0, house 1762.9 m)",
-  "road 6-14 -> A4-09 (op 4): rejected (grade 13.8 %, cut/fill 5.25 m, pad clash 0 [], junction step 0.0 m, water 0, house 1794.6 m)",
   "road for 6-14: NO ROUTE found to the Ember Crescent net"
  ]
 }
