@@ -2,7 +2,7 @@
 NAME = "Prophet Massif and Signal Isle"
 BOX = (13300, 19600, 9000, 18300)
 VIEW = (13300, 19600, 9000, 18300)
-PLAN_KW = dict(band_range=10.0, steep=1.0, repair_to=3.6)      # as op 5, and the profile repair aims at 3.6 m: the massif's flanks are steep; every road is still held to 14 % and 4 m
+PLAN_KW = dict(band_range=99.0, steep=0.8, repair_to=3.6)      # re-pass: as ops 3-5 v2
 
 # id, name, composition, hx, hy, size evidence, rough x, y (None = purpose map), search radius, water mode
 SITES = [
@@ -35,10 +35,11 @@ TOWNS = {"6-01": dict(name="Kamar Village", layout="../../../kernel_10nov_v1/K6_
                              (16728.0, 11784.0, 239.0, 90.0, "north lane, east end")])}
 
 # op 4's East Slope Comms pad: the end of op 4's Ember Crescent net (its own road leaves the south edge); op 6's net grows from its free edges
-EXTERNAL_PADS = [dict(id="4-10 (op 4 net)", x=14800.0, y=9370.0, hx=20.1, hy=46.3, yaw=0.0, z=155.25, used_entrance=(14800.0, 9319.7))]
+# re-pass: op 4 v2's 4-10 has no road, so this op joins op 4 v2's actual road net (its pads here are blocked, its roads joinable)
+EXTERNAL_PLANS = ["../out_op4_v2/op4_plan.json"]
 # the net climbs the south slope to the east upland first (the west side is cut by ravines), then spreads over the upland and back west
 NETS = {"Ember Crescent": ["6-06", "6-13", "6-05", "6-M2", "6-01", "6-03", "6-F-T", "6-F", "6-M3", "6-07", "6-04", "6-02", "6-14"]}
-ROOT = {"Ember Crescent": "4-10 (op 4 net)"}
+ROOT = {"Ember Crescent": "EXTERNAL_ROADS"}
 
 SQUADS = [
     ("A6-01", "CIS Heavy Gun Position with GPs (D)", 30.1, 25.4, 16700, 10150, 300, "the south end of Kamar Strand and the landers"),
@@ -66,5 +67,7 @@ BOAT_ONLY = ("6-12",)
 
 # the spring outpost is seated after the roads, beside the west climb road (its own ridge takes no road)
 LATE_SITES = ("6-14",)
-JUNCTION_MAX_LATE = 3.6      # its spur may meet the climb road at a step up to 3.6 m (a reported item, not a rule; the road builder ramps it)
 LEGEND_LOC = "upper left"
+
+# item 11: the coastal works get a pier at the water and a stair or lift up to their pads
+SHORE_LINKS = ("6-M3", "6-07", "6-13", "6-08", "6-11", "6-10", "6-M2", "6-05")

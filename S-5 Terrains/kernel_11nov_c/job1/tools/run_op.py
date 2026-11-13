@@ -445,6 +445,32 @@ for qid, comp, hx, hy, ax, ay, rad, guards in getattr(op, "SQUADS", []):
                key=lambda z_: math.dist((z_["x"], z_["y"]), (s["x"], s["y"])))
     s.update(role="squad position", guards=guards, nearest_site=near["id"], nearest_site_m=round(math.dist((near["x"], near["y"]), (s["x"], s["y"]))))
 
+# ---- shore links (item 11): a coastal work that stands above the water gets a pier at the nearest landing water and a stair or lift up to its pad
+shore_links = []
+for sid in getattr(op, "SHORE_LINKS", ()):
+    if sid not in SITE: continue
+    s = SITE[sid]; c0 = np.array([s["x"], s["y"]]); best = None
+    n_ = 120
+    J_, I_ = np.meshgrid(np.arange(int(s["y"] / 5) - n_, int(s["y"] / 5) + n_ + 1), np.arange(int(s["x"] / 5) - n_, int(s["x"] / 5) + n_ + 1), indexing="ij")
+    wat = P.water[J_, I_]
+    for j_, i_ in zip(J_[wat], I_[wat]):
+        q = np.array([i_ * 5.0, j_ * 5.0]); d = math.dist(q, c0)
+        if best is not None and d >= best[0]: continue
+        # the link runs from the pad edge facing the water to the water's edge, over dry ground (its foot is the last dry point)
+        n2 = max(2, int(d / 5)); line = [c0 + (q - c0) * t for t in np.linspace(0, 1, n2)]
+        if any(P.water[int(round(p_[1] / 5)), int(round(p_[0] / 5))] for p_ in line[:-1]): continue
+        best = (d, q, line)
+    if best is None: continue
+    d, q, line = best
+    foot = line[-2]; ep, v = entry_point(s, tuple(q))
+    rise = s["z"] - world.z(*foot); run = math.dist(ep, foot)
+    kind = "lift" if rise > 40.0 or (run > 0 and rise / run > 0.7) else "stair"
+    shore_links.append(dict(site=sid, top_xyz=[round(float(ep[0]), 1), round(float(ep[1]), 1), s["z"]], foot_xyz=[round(float(foot[0]), 1), round(float(foot[1]), 1), round(world.z(*foot), 2)],
+                            pier_at_xy=[round(float(q[0]), 1), round(float(q[1]), 1)], rise_m=round(rise, 1), run_m=round(run), slope_pct=round(100 * rise / max(run, 1.0)),
+                            link=kind, pier="ASSUMED 30 x 8 m deck at +1.5 m, its outer end in at least 2 m of water",
+                            lift=("ASSUMED 6 x 6 m shaft and head house, cage for 20 men or one pallet; " + ("plus a 'stair' up the same face for foot traffic" if kind == "lift" else "")) if kind == "lift" else None,
+                            stair=(f"zig-zag stair, {round(rise / 0.7)} m of flights at 35 degrees, 3 m wide, landings every 4 m of rise") if kind == "stair" else f"service stair beside the lift, {round(rise / 0.7)} m of flights"))
+
 # ---- shores
 shores = P.shores(*op.BOX)
 
@@ -556,7 +582,7 @@ plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, 
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
-            roads=P.roads, ramps_needed=ramps, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
+            roads=P.roads, ramps_needed=ramps, shore_links=shore_links, external_roads_joined=sorted({x for r in P.roads for x in r["links"] if x.startswith(("op", "built:")) and ":" in x}), trunk_breaks=trunk_breaks, foot_links=foot, approaches=getattr(op, "APPROACHES", {}), shores=shores, gate=getattr(op, "GATE", None), moves=[dict(id=s["id"], from_xy=list(s.get("design_xy", s["rough"])), to_xy=[s["x"], s["y"]], moved_m=s["moved_m"]) for s in pads if s.get("moved_m", 0) > 0 and not s["id"].startswith("A")],
             log=log)
 json.dump(plan, open(os.path.join(OUT, f"op{N}_plan.json"), "w"), indent=1, default=float)
 json.dump(C, open(os.path.join(OUT, f"op{N}_checks.json"), "w"), indent=1, default=str)
