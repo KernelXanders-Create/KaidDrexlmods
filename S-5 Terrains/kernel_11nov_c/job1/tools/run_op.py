@@ -62,7 +62,7 @@ for f_ in getattr(op, "EXTERNAL_PLANS", []):
     for r_ in D_["roads"]:
         pts_ = np.array(r_["points"])
         if not ((pts_[:, 0] > op.BOX[0]) & (pts_[:, 0] < op.BOX[1]) & (pts_[:, 1] > op.BOX[2]) & (pts_[:, 1] < op.BOX[3])).any(): continue
-        r2 = dict(r_, id=f"op{D_['op']}:{r_['id']}", external=True)
+        r2 = dict(r_, id=f"op{D_['op']}:{r_['id']}", external=True); r2.pop("landings_for_joins", None)     # only landings made by this op count as edits
         P.commit_road(r2); P.roads.remove(r2); EXT_ROADS.append(r2)
 
 # ---- your built ops 1-2 roads (ground/roads_ops_1_2.json): fixed ground; levels read off the build-4 grid (the file has none)
@@ -434,6 +434,16 @@ for net in getattr(op, "JOIN_PIECES", ()):
     log.append(f"join of the {net} pieces: " + (f"road {done['id']} ({done['length_m']} m)" if done else f"no road within the rules (best try cut/fill {best['max_cut_fill_m'] if best else '-'} m)"))
     if not done and best is not None:
         trunk_breaks.append(dict(at=best["points"][len(best["points"]) // 2], z=0.0, label=f"the two parts of the net: best joining road breaks 4 m ({best['max_cut_fill_m']} m)"))
+    if not done and best is None:     # no road at all: the ramp it needs, between the two parts' nearest road points
+        RA = [(x, y, z) for r_ in P.roads if fp(EXT_GROUP.get(r_["links"][0], r_["links"][0])) == keys[0] for (x, y), z in zip(r_["points"], r_["points_z"])]
+        RB = [(x, y, z) for r_ in P.roads if fp(EXT_GROUP.get(r_["links"][0], r_["links"][0])) != keys[0] for (x, y), z in zip(r_["points"], r_["points_z"])]
+        if RA and RB:
+            from scipy.spatial import cKDTree as _K
+            tA = _K(np.array([q[:2] for q in RA])); dd, ii = tA.query(np.array([q[:2] for q in RB]))
+            k_ = int(np.argmin(dd)); a_, b_ = RA[ii[k_]], RB[k_]
+            spec = ramp_spec((a_[0], a_[1]), a_[2], (b_[0], b_[1]), b_[2]); spec["between"] = ["the larger part of the net", "the other part"]
+            ramps.append(spec)
+            trunk_breaks.append(dict(at=[(a_[0] + b_[0]) / 2, (a_[1] + b_[1]) / 2], z=0.0, label=f"the two parts of the net: no road holds the rules; a ramp of {spec['rise_m']} m rise ({spec['length_at_14_pct_m']} m at 14 %, {spec['straight_m']} m apart)"))
 
 # ---- the link from this op's net down to another op's (LINK_EXTERNAL): a road if one holds the rules, else the best try with its failing stretch
 links_out = []
