@@ -5,3 +5,4 @@ Each row is one design choice: what was asked, the options shown, the pick, and 
 | # | date | question | options shown | pick | source |
 |---|---|---|---|---|---|
 | 1 | 17 Nov | NEW 1 Cauldron Refinery: dressing palette (the slot's ALIEN LAYER is blank in the pack) | (a) Rust and Ivory; (b) Glass Bog; (c) Coral Marsh | (a): Rust and Ivory: rust-red reeds and red-leaf trees, white mineral crust edges, milky water, high amber haze and a low sun, tufa towers from scaled rocks. Stated in the spec as the assumed palette. | HUMAN |
+| 2 | 17 Nov | NEW 1 stake and story reason | (a) fuels the CIS tanks (6-M3 keeps sending tanks); (b) powers the Moraine Citadel's power and shields for op 8, via the pipeline north (6-03) and the comms relay (6-11); (c) both, staged | (b): the Refinery powers the Moraine Citadel (op 8). Left standing, op 8 is harder. Readable on the ground from the pipeline heading north and the relay. | HUMAN |
