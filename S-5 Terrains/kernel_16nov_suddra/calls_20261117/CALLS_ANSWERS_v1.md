@@ -28,3 +28,8 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 - Call 7: the op 4 additions are the call-4 fixes at 4-M3, 4-02 and 4-11; the village houses' garrison waits on the owner's ruling.
 - Call 12: the measured comps for 6-01.
 - Call 10: waits for Comedian's story arc (Sat 21 Nov).
+
+## Follow-up answers
+| Call | Item | Answer | source |
+|---|---|---|---|
+| 4A | 3-04, 4-11, 5-03, 6-10 (Small Wall with Bunker, 0 / 5) | + a CIS Small Rectangle FOB with GPs each: 105 GPs / 75 obj, meets the squad floor on both counts | HUMAN |
