@@ -1,0 +1,192 @@
+{
+ "build": "NEW 2 The Moraine Citadel (working name), outline v1",
+ "capstone": {
+  "shell": "modular sci-fi corridor and room pieces (JM's Structures / Operation TREBUCHET; to confirm)",
+  "levels": 2,
+  "rooms": [
+   {
+    "id": "R1",
+    "name": "Entry Hall",
+    "level": 1,
+    "kind": "big",
+    "floor_m2": 300,
+    "gps": 10
+   },
+   {
+    "id": "R2",
+    "name": "Guardroom (west postern)",
+    "level": 1,
+    "kind": "small",
+    "floor_m2": 60,
+    "gps": 3
+   },
+   {
+    "id": "R3",
+    "name": "Droid Works",
+    "level": 1,
+    "kind": "big",
+    "floor_m2": 400,
+    "gps": 10
+   },
+   {
+    "id": "R4",
+    "name": "Armoury",
+    "level": 1,
+    "kind": "small",
+    "floor_m2": 80,
+    "gps": 3
+   },
+   {
+    "id": "R5",
+    "name": "Generator Room (escape tunnel foot)",
+    "level": 1,
+    "kind": "small",
+    "floor_m2": 80,
+    "gps": 3
+   },
+   {
+    "id": "R6",
+    "name": "Shield Control",
+    "level": 2,
+    "kind": "big",
+    "floor_m2": 300,
+    "gps": 10
+   },
+   {
+    "id": "R7",
+    "name": "Comms Room",
+    "level": 2,
+    "kind": "small",
+    "floor_m2": 80,
+    "gps": 3
+   },
+   {
+    "id": "R8",
+    "name": "Officers' Quarters (dead end)",
+    "level": 2,
+    "kind": "small",
+    "floor_m2": 80,
+    "gps": 3
+   },
+   {
+    "id": "R9",
+    "name": "Command Room (win)",
+    "level": 2,
+    "kind": "big",
+    "floor_m2": 350,
+    "gps": 10
+   }
+  ],
+  "passages_m2": {
+   "1": 400,
+   "2": 270
+  },
+  "floor_m2": {
+   "1": 1320,
+   "2": 1080
+  },
+  "edges": [
+   {
+    "a": "R1",
+    "b": "R2",
+    "kind": "passage"
+   },
+   {
+    "a": "R1",
+    "b": "R3",
+    "kind": "passage"
+   },
+   {
+    "a": "R1",
+    "b": "R4",
+    "kind": "passage"
+   },
+   {
+    "a": "R4",
+    "b": "R3",
+    "kind": "passage"
+   },
+   {
+    "a": "R2",
+    "b": "R3",
+    "kind": "passage (west loop)"
+   },
+   {
+    "a": "R3",
+    "b": "R5",
+    "kind": "passage"
+   },
+   {
+    "a": "R1",
+    "b": "R6",
+    "kind": "stair S1 (vanilla)"
+   },
+   {
+    "a": "R3",
+    "b": "R7",
+    "kind": "stair S2 (vanilla)"
+   },
+   {
+    "a": "R6",
+    "b": "R7",
+    "kind": "passage"
+   },
+   {
+    "a": "R6",
+    "b": "R9",
+    "kind": "passage"
+   },
+   {
+    "a": "R7",
+    "b": "R9",
+    "kind": "passage"
+   },
+   {
+    "a": "R7",
+    "b": "R8",
+    "kind": "passage, dead end beyond R8"
+   },
+   {
+    "a": "R9",
+    "b": "R5",
+    "kind": "escape stair S3 (vanilla)"
+   }
+  ],
+  "entries": [
+   {
+    "id": "E1",
+    "what": "main blast door, top terrace (south)",
+    "room": "R1"
+   },
+   {
+    "id": "E2",
+    "what": "west postern",
+    "room": "R2"
+   },
+   {
+    "id": "E3",
+    "what": "escape tunnel to 8-12 Escape Pad (enterable from the pad once 8-12 is taken)",
+    "room": "R5"
+   }
+  ],
+  "gps_per_level": {
+   "1": 39,
+   "2": 34
+  },
+  "gp_density_per_100m2": {
+   "1": 2.95,
+   "2": 3.15
+  },
+  "routes_between_big_rooms": {
+   "R1-R3": 7,
+   "R1-R6": 11,
+   "R1-R9": 12,
+   "R3-R6": 7,
+   "R3-R9": 9,
+   "R6-R9": 9
+  },
+  "parts_below_ground": 0,
+  "win": "capture the commander in R9 before they escape down S3 to the tunnel and 8-12"
+ },
+ "sources": "HUMAN: levels, room count and the four big rooms, entries, win, shell. AI: room names of the small rooms, floor areas, edges, GP numbers, passage areas."
+}

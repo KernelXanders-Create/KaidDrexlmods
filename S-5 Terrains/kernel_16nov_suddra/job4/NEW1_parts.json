@@ -1,0 +1,1697 @@
+{
+ "build": "NEW 1 The Cauldron Refinery (working name)",
+ "origin": "crater centre at K3 point (11000, 11000); x east, y north, z above sea level (m)",
+ "parts": [
+  {
+   "part": "yard fill",
+   "name": "west yard",
+   "x": -95,
+   "y": 0,
+   "size": [
+    40,
+    40
+   ],
+   "z": 0.5,
+   "fill_m": 2.0,
+   "kind": "ground (water ground request)",
+   "zone": "west half",
+   "source": "HUMAN (decision 8); AI (40 x 40 m)"
+  },
+  {
+   "part": "deck",
+   "name": "west north deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": -95,
+   "y": 35,
+   "z": 1.7,
+   "size": [
+    30,
+    30
+   ],
+   "count": 8,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "west north deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": -95,
+   "y": 35,
+   "count": 20,
+   "simple": true,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "west north deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": -95,
+   "y": 35,
+   "count": 40,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "west south deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": -95,
+   "y": -35,
+   "z": 1.7,
+   "size": [
+    30,
+    30
+   ],
+   "count": 8,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "west south deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": -95,
+   "y": -35,
+   "count": 20,
+   "simple": true,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "west south deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": -95,
+   "y": -35,
+   "count": 40,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "west inner deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": -67.5,
+   "y": 0,
+   "z": 1.7,
+   "size": [
+    15,
+    15
+   ],
+   "count": 2,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "west inner deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": -67.5,
+   "y": 0,
+   "count": 8,
+   "simple": true,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "west inner deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": -67.5,
+   "y": 0,
+   "count": 20,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "west gun deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": -122.5,
+   "y": 12.5,
+   "z": 1.7,
+   "size": [
+    15,
+    15
+   ],
+   "count": 2,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "west gun deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": -122.5,
+   "y": 12.5,
+   "count": 8,
+   "simple": true,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "west gun deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": -122.5,
+   "y": 12.5,
+   "count": 20,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "west half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "ramp",
+   "name": "west yard to north deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "ramp",
+   "name": "west yard to south deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "ramp",
+   "name": "west yard to inner deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "wall line",
+   "name": "west outer wall",
+   "cls": "CIS wall sections (3AS / DBA, to confirm)",
+   "x": -115,
+   "y0": -20,
+   "y1": 5,
+   "count": 6,
+   "simple": false,
+   "zone": "west half",
+   "source": "AI"
+  },
+  {
+   "part": "gate",
+   "name": "west causeway gate",
+   "cls": "3AS CIS wall door v2",
+   "x": -115,
+   "y": 0,
+   "start": "closed",
+   "simple": false,
+   "zone": "west half",
+   "source": "HUMAN (decision 10)"
+  },
+  {
+   "part": "breach wall",
+   "name": "west sandy wall section",
+   "cls": "destructible sandy CIS wall section (to confirm)",
+   "x": -115,
+   "y": -12,
+   "simple": false,
+   "zone": "west half",
+   "source": "HUMAN (decision 10); AI (12 m from the gate)"
+  },
+  {
+   "part": "forecourt fill",
+   "name": "west forecourt",
+   "x0": -115,
+   "x1": -127,
+   "y0": -20,
+   "y1": 5,
+   "z": 1.0,
+   "kind": "ground",
+   "zone": "west half",
+   "source": "AI (lets players reach the sandy wall)"
+  },
+  {
+   "part": "comp",
+   "name": "west gun position",
+   "cls": "CIS Heavy Gun Position + AA (UD)",
+   "x": -122.5,
+   "y": 12.5,
+   "z": 1.7,
+   "objects": 40,
+   "gps": 31,
+   "guns": 5,
+   "facing_bearing": 270,
+   "zone": "west half",
+   "source": "HUMAN (decision 11)",
+   "size_tag": "MEASURED (size table)"
+  },
+  {
+   "part": "pier",
+   "name": "west boat pier",
+   "kit": "K2",
+   "length": 25,
+   "x": -95,
+   "y0": -50,
+   "y1": -75,
+   "z": 1.7,
+   "count": 1,
+   "count_tag": "ASSUMED",
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (decision 10)"
+  },
+  {
+   "part": "boat step + ramp",
+   "name": "west boat step",
+   "kit": "K2",
+   "z": 0.5,
+   "count": 2,
+   "simple": false,
+   "walked": true,
+   "zone": "west half",
+   "source": "HUMAN (K2)"
+  },
+  {
+   "part": "pillars",
+   "name": "west boat pier",
+   "count": 10,
+   "simple": true,
+   "walked": false,
+   "zone": "west half",
+   "source": "AI"
+  },
+  {
+   "part": "low walls",
+   "name": "west boat pier",
+   "count": 17,
+   "simple": false,
+   "zone": "west half",
+   "source": "HUMAN (K2)"
+  },
+  {
+   "part": "yard fill",
+   "name": "east yard",
+   "x": 95,
+   "y": 0,
+   "size": [
+    40,
+    40
+   ],
+   "z": 0.5,
+   "fill_m": 2.0,
+   "kind": "ground (water ground request)",
+   "zone": "east half",
+   "source": "HUMAN (decision 8); AI (40 x 40 m)"
+  },
+  {
+   "part": "deck",
+   "name": "east north deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": 95,
+   "y": 35,
+   "z": 1.7,
+   "size": [
+    30,
+    30
+   ],
+   "count": 8,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "east north deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": 95,
+   "y": 35,
+   "count": 20,
+   "simple": true,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "east north deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": 95,
+   "y": 35,
+   "count": 40,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "east south deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": 95,
+   "y": -35,
+   "z": 1.7,
+   "size": [
+    30,
+    30
+   ],
+   "count": 8,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "east south deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": 95,
+   "y": -35,
+   "count": 20,
+   "simple": true,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "east south deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": 95,
+   "y": -35,
+   "count": 40,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "east inner deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": 67.5,
+   "y": 0,
+   "z": 1.7,
+   "size": [
+    15,
+    15
+   ],
+   "count": 2,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "east inner deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": 67.5,
+   "y": 0,
+   "count": 8,
+   "simple": true,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "east inner deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": 67.5,
+   "y": 0,
+   "count": 20,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "deck",
+   "name": "east gun deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": 122.5,
+   "y": 12.5,
+   "z": 1.7,
+   "size": [
+    15,
+    15
+   ],
+   "count": 2,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "east gun deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": 122.5,
+   "y": 12.5,
+   "count": 8,
+   "simple": true,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "east gun deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": 122.5,
+   "y": 12.5,
+   "count": 20,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "east half",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "ramp",
+   "name": "east yard to north deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "ramp",
+   "name": "east yard to south deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "ramp",
+   "name": "east yard to inner deck",
+   "cls": "Land_RampConcrete_F",
+   "rise": 1.2,
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (decision 8)"
+  },
+  {
+   "part": "wall line",
+   "name": "east outer wall",
+   "cls": "CIS wall sections (3AS / DBA, to confirm)",
+   "x": 115,
+   "y0": -20,
+   "y1": 5,
+   "count": 6,
+   "simple": false,
+   "zone": "east half",
+   "source": "AI"
+  },
+  {
+   "part": "gate",
+   "name": "east causeway gate",
+   "cls": "3AS CIS wall door v2",
+   "x": 115,
+   "y": 0,
+   "start": "closed",
+   "simple": false,
+   "zone": "east half",
+   "source": "HUMAN (decision 10)"
+  },
+  {
+   "part": "breach wall",
+   "name": "east sandy wall section",
+   "cls": "destructible sandy CIS wall section (to confirm)",
+   "x": 115,
+   "y": -12,
+   "simple": false,
+   "zone": "east half",
+   "source": "HUMAN (decision 10); AI (12 m from the gate)"
+  },
+  {
+   "part": "forecourt fill",
+   "name": "east forecourt",
+   "x0": 115,
+   "x1": 127,
+   "y0": -20,
+   "y1": 5,
+   "z": 1.0,
+   "kind": "ground",
+   "zone": "east half",
+   "source": "AI (lets players reach the sandy wall)"
+  },
+  {
+   "part": "comp",
+   "name": "east gun position",
+   "cls": "CIS Heavy Gun Position + AA (UD)",
+   "x": 122.5,
+   "y": 12.5,
+   "z": 1.7,
+   "objects": 40,
+   "gps": 31,
+   "guns": 5,
+   "facing_bearing": 90,
+   "zone": "east half",
+   "source": "HUMAN (decision 11)",
+   "size_tag": "MEASURED (size table)"
+  },
+  {
+   "part": "pier",
+   "name": "east boat pier",
+   "kit": "K2",
+   "length": 25,
+   "x": 95,
+   "y0": -50,
+   "y1": -75,
+   "z": 1.7,
+   "count": 1,
+   "count_tag": "ASSUMED",
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (decision 10)"
+  },
+  {
+   "part": "boat step + ramp",
+   "name": "east boat step",
+   "kit": "K2",
+   "z": 0.5,
+   "count": 2,
+   "simple": false,
+   "walked": true,
+   "zone": "east half",
+   "source": "HUMAN (K2)"
+  },
+  {
+   "part": "pillars",
+   "name": "east boat pier",
+   "count": 10,
+   "simple": true,
+   "walked": false,
+   "zone": "east half",
+   "source": "AI"
+  },
+  {
+   "part": "low walls",
+   "name": "east boat pier",
+   "count": 17,
+   "simple": false,
+   "zone": "east half",
+   "source": "HUMAN (K2)"
+  },
+  {
+   "part": "key building",
+   "name": "control room",
+   "cls": "sci-fi building with interior (3AS / JM's, to confirm)",
+   "x": -95,
+   "y": 35,
+   "z": 1.7,
+   "task": "download the flow logs; shut the flare",
+   "zone": "west half",
+   "source": "HUMAN (decision 9)"
+  },
+  {
+   "part": "key building",
+   "name": "pump hall",
+   "cls": "sci-fi hall with interior (to confirm)",
+   "x": 95,
+   "y": 35,
+   "z": 1.7,
+   "task": "plant charges on the manifold (stake payoff)",
+   "zone": "east half",
+   "source": "HUMAN (decision 9)"
+  },
+  {
+   "part": "set piece",
+   "name": "flare stack A (falls)",
+   "cls": "tall stack, 40-50 m (to confirm)",
+   "x": -103,
+   "y": -35,
+   "z": 1.7,
+   "height": 45,
+   "destructible": true,
+   "simple": false,
+   "zone": "west half",
+   "source": "HUMAN (decisions 5, 6)"
+  },
+  {
+   "part": "landmark",
+   "name": "flare stack B",
+   "cls": "tall stack, 40-50 m (to confirm)",
+   "x": -87,
+   "y": -35,
+   "z": 1.7,
+   "height": 45,
+   "simple": false,
+   "zone": "west half",
+   "source": "HUMAN (decision 5)"
+  },
+  {
+   "part": "tank",
+   "name": "tank 1",
+   "cls": "vanilla fuel tank (to confirm)",
+   "x": 85,
+   "y": -35,
+   "z": 1.7,
+   "destructible": false,
+   "simple": false,
+   "zone": "east half",
+   "source": "AI"
+  },
+  {
+   "part": "set piece",
+   "name": "tank 2 (burns)",
+   "cls": "vanilla fuel tank (to confirm)",
+   "x": 95,
+   "y": -35,
+   "z": 1.7,
+   "destructible": true,
+   "simple": false,
+   "zone": "east half",
+   "source": "HUMAN (decision 6)"
+  },
+  {
+   "part": "tank",
+   "name": "tank 3",
+   "cls": "vanilla fuel tank (to confirm)",
+   "x": 105,
+   "y": -35,
+   "z": 1.7,
+   "destructible": false,
+   "simple": false,
+   "zone": "east half",
+   "source": "AI"
+  },
+  {
+   "part": "set piece",
+   "name": "pipeline-north manifold (blows)",
+   "cls": "pipe manifold pieces (to confirm)",
+   "x": 95,
+   "y": 40,
+   "z": 1.7,
+   "destructible": true,
+   "simple": false,
+   "zone": "east half",
+   "source": "HUMAN (decision 6)"
+  },
+  {
+   "part": "pipeline",
+   "name": "pipeline north",
+   "cls": "vanilla pipe pieces (to confirm)",
+   "x0": 95,
+   "y0": 50,
+   "x1": 95,
+   "y1": 150,
+   "count": 12,
+   "simple": true,
+   "zone": "east half",
+   "source": "HUMAN (stake); AI (route)"
+  },
+  {
+   "part": "deck",
+   "name": "centre deck",
+   "kit": "K4",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x": 0,
+   "y": 0,
+   "z": 1.7,
+   "size": [
+    30,
+    30
+   ],
+   "count": 8,
+   "count_tag": "ASSUMED (16 x 8 m sections)",
+   "simple": false,
+   "walked": true,
+   "zone": "centre",
+   "source": "HUMAN (kit K4); AI (position)"
+  },
+  {
+   "part": "pillars",
+   "name": "centre deck",
+   "cls": "vanilla concrete or steel pillar (to confirm)",
+   "x": 0,
+   "y": 0,
+   "count": 20,
+   "simple": true,
+   "walked": false,
+   "zone": "centre",
+   "source": "HUMAN (K4); AI (6 m spacing)"
+  },
+  {
+   "part": "low walls",
+   "name": "centre deck",
+   "cls": "normal-object low wall about 1 m (to confirm)",
+   "x": 0,
+   "y": 0,
+   "count": 40,
+   "count_tag": "ASSUMED (3 m pieces; gaps not subtracted)",
+   "simple": false,
+   "walked": false,
+   "zone": "centre",
+   "source": "HUMAN (K4)"
+  },
+  {
+   "part": "comp",
+   "name": "centre AA",
+   "cls": "CIS Mixed AA Platform with GPs",
+   "x": 0,
+   "y": 0,
+   "z": 1.7,
+   "objects": 86,
+   "gps": 49,
+   "guns": 2,
+   "zone": "centre",
+   "source": "HUMAN (decision 11)",
+   "size_tag": "MEASURED (size table)"
+  },
+  {
+   "part": "boardwalk",
+   "name": "west link",
+   "kit": "K3",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x0": -60,
+   "x1": -15,
+   "y": 0,
+   "z": 1.7,
+   "width": 4,
+   "count": 2,
+   "count_tag": "ASSUMED",
+   "simple": false,
+   "walked": true,
+   "zone": "centre",
+   "source": "HUMAN (K3); AI (route)"
+  },
+  {
+   "part": "pillars",
+   "name": "west link",
+   "cls": "pillar (to confirm)",
+   "count": 18,
+   "simple": true,
+   "walked": false,
+   "zone": "centre",
+   "source": "AI"
+  },
+  {
+   "part": "low walls",
+   "name": "west link",
+   "cls": "low wall (to confirm)",
+   "count": 30,
+   "simple": false,
+   "walked": false,
+   "zone": "centre",
+   "source": "HUMAN (K3)"
+  },
+  {
+   "part": "boardwalk",
+   "name": "east link",
+   "kit": "K3",
+   "cls": "vanilla concrete pier sections (to confirm)",
+   "x0": 15,
+   "x1": 60,
+   "y": 0,
+   "z": 1.7,
+   "width": 4,
+   "count": 2,
+   "count_tag": "ASSUMED",
+   "simple": false,
+   "walked": true,
+   "zone": "centre",
+   "source": "HUMAN (K3); AI (route)"
+  },
+  {
+   "part": "pillars",
+   "name": "east link",
+   "cls": "pillar (to confirm)",
+   "count": 18,
+   "simple": true,
+   "walked": false,
+   "zone": "centre",
+   "source": "AI"
+  },
+  {
+   "part": "low walls",
+   "name": "east link",
+   "cls": "low wall (to confirm)",
+   "count": 30,
+   "simple": false,
+   "walked": false,
+   "zone": "centre",
+   "source": "HUMAN (K3)"
+  },
+  {
+   "part": "causeway",
+   "name": "SW causeway",
+   "kit": "K8 truck",
+   "pts": [
+    [
+     -168,
+     -42
+    ],
+    [
+     -150,
+     0
+    ],
+    [
+     -127,
+     0
+    ]
+   ],
+   "crest": 1.0,
+   "crest_width": 6,
+   "clear": 3.1,
+   "length": 68.7,
+   "kind": "ground; designed straight",
+   "zone": "approaches",
+   "source": "HUMAN (decision 7); AI (line)"
+  },
+  {
+   "part": "causeway",
+   "name": "east causeway",
+   "kit": "K8 truck",
+   "pts": [
+    [
+     175,
+     0
+    ],
+    [
+     127,
+     0
+    ]
+   ],
+   "crest": 1.0,
+   "crest_width": 6,
+   "clear": 3.1,
+   "length": 48.0,
+   "kind": "ground; designed straight",
+   "zone": "approaches",
+   "source": "HUMAN (decision 7); AI (line)"
+  },
+  {
+   "part": "clutter recipe",
+   "zone": "west half",
+   "items": {
+    "crates": 18,
+    "barrels": 14,
+    "pipes_valves": 20,
+    "sandbag_walls": 10,
+    "consoles": 8,
+    "containers": 4
+   },
+   "count": 74,
+   "simple": "mixed: cover pieces NORMAL, small props may be simple",
+   "source": "AI"
+  },
+  {
+   "part": "clutter recipe",
+   "zone": "east half",
+   "items": {
+    "crates": 18,
+    "barrels": 20,
+    "pipes_valves": 24,
+    "sandbag_walls": 10,
+    "consoles": 6,
+    "containers": 6
+   },
+   "count": 84,
+   "simple": "mixed: cover pieces NORMAL, small props may be simple",
+   "source": "AI"
+  },
+  {
+   "part": "clutter recipe",
+   "zone": "centre",
+   "items": {
+    "crates": 6,
+    "barrels": 6,
+    "sandbag_walls": 6,
+    "ammo": 6
+   },
+   "count": 24,
+   "simple": "mixed: cover pieces NORMAL, small props may be simple",
+   "source": "AI"
+  }
+ ],
+ "gp_list": [
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west gun position",
+   "n": 31,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west boat pier",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "west boat pier",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east yard",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east north deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east south deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east inner deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east gun position",
+   "n": 31,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east boat pier",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "east half",
+   "where": "east boat pier",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "west half",
+   "where": "control room",
+   "n": 16,
+   "static": false,
+   "tag": "ASSUMED"
+  },
+  {
+   "zone": "east half",
+   "where": "pump hall",
+   "n": 16,
+   "static": false,
+   "tag": "ASSUMED"
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre deck",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "centre AA",
+   "n": 49,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "west link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "west link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "west link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "west link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "east link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "east link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "east link",
+   "n": 1,
+   "static": false
+  },
+  {
+   "zone": "centre",
+   "where": "east link",
+   "n": 1,
+   "static": false
+  }
+ ],
+ "dressing": {
+  "palette": "Rust and Ivory (decision 1)",
+  "items": {
+   "rust_red_reeds": "clumps along every yard and causeway edge, about 120",
+   "red_leaf_trees": "on the rim only, about 20",
+   "white_crust_edges": "decals / ground texture at waterlines",
+   "tufa_towers": "scaled rocks in the water, about 8 (never as decks or roofs)"
+  },
+  "counted_in_physical": "no (vegetation and rocks listed separately)"
+ },
+ "counts": {
+  "physical_objects": 1010,
+  "physical_tag": "ASSUMED (deck sections at 16 x 8 m, 3 m wall pieces, clutter recipes)",
+  "gps": 251,
+  "gps_tag": "positions AI; comp GPs MEASURED; room GPs ASSUMED",
+  "guns": 12,
+  "footprint_m": [
+   350,
+   300
+  ],
+  "pad_levels": {
+   "yards": 0.5,
+   "forecourts": 1.0,
+   "causeways": 1.0,
+   "decks": 1.7,
+   "bed_assumed": -1.5
+  }
+ }
+}

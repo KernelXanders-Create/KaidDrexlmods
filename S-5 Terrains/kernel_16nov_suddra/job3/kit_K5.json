@@ -1,0 +1,76 @@
+{
+ "kit": "K5",
+ "deck_level_m": 1.7,
+ "decks": [
+  {
+   "name": "core (large K4)",
+   "cx": 0,
+   "cy": 0,
+   "S": 30,
+   "huts": [
+    [
+     "sci-fi",
+     -7,
+     4
+    ],
+    [
+     "sci-fi",
+     7,
+     4
+    ]
+   ],
+   "gps": 12
+  },
+  {
+   "name": "west (small K4)",
+   "cx": -32.5,
+   "cy": 0,
+   "S": 15,
+   "huts": [
+    [
+     "sci-fi",
+     0,
+     2
+    ]
+   ],
+   "gps": 6
+  },
+  {
+   "name": "east (small K4)",
+   "cx": 32.5,
+   "cy": 0,
+   "S": 15,
+   "huts": [
+    [
+     "real-world",
+     0,
+     2
+    ]
+   ],
+   "gps": 6
+  }
+ ],
+ "links": [
+  {
+   "name": "K3 link west",
+   "x0": -25.0,
+   "x1": -15,
+   "gps": 1
+  },
+  {
+   "name": "K3 link east",
+   "x0": 15,
+   "x1": 25.0,
+   "gps": 1
+  }
+ ],
+ "huts": {
+  "sci_fi": 3,
+  "real_world": 1,
+  "share_by_count": 0.75,
+  "share_by_volume": "NOT MEASURED"
+ },
+ "gp_count": 26,
+ "ways_in": "one Land_RampConcrete_F on the core deck bank side (K4); more ramps per site if needed",
+ "layout_source": "HUMAN (decks, huts); AI (positions, link length 10 m, GP positions)"
+}

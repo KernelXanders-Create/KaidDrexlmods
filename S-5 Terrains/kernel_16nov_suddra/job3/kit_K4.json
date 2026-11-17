@@ -1,0 +1,759 @@
+{
+ "kit": "K4",
+ "small": {
+  "piece": "K4 small stilt deck",
+  "origin": "deck centre at sea-level x/y; z is height above sea level (m)",
+  "size_m": [
+   15,
+   15
+  ],
+  "deck_level_m": 1.7,
+  "bed_m": -1.5,
+  "bank_m": 0.5,
+  "freeboard_calm_m": 1.7,
+  "centre_clear_m": null,
+  "parts": [
+   {
+    "part": "deck",
+    "cls": "vanilla concrete pier sections (Land_PierConcrete_01_* family; exact class and piece count to confirm in the editor)",
+    "tag": "UNSURE",
+    "x": 0,
+    "y": 0,
+    "z": 1.7,
+    "yaw": 0,
+    "size": [
+     15,
+     15
+    ],
+    "simple": false,
+    "walked": true,
+    "source": "HUMAN"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -7.5,
+    "y": -7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -7.5,
+    "y": 0.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -7.5,
+    "y": 7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 0.0,
+    "y": -7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 0.0,
+    "y": 7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 7.5,
+    "y": -7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 7.5,
+    "y": 0.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 7.5,
+    "y": 7.5,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "ramp",
+    "cls": "Land_RampConcrete_F",
+    "tag": "class from brief",
+    "x": 0,
+    "y": -7.5,
+    "z_from": 0.5,
+    "z_to": 1.7,
+    "rise": 1.2,
+    "yaw": 0,
+    "simple": false,
+    "walked": true,
+    "source": "HUMAN (one ramp, 1.2 m rise); AI (bank side centre)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "N",
+    "frm": [
+     -7.5,
+     7.5
+    ],
+    "to": [
+     7.5,
+     7.5
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "E",
+    "frm": [
+     7.5,
+     -7.5
+    ],
+    "to": [
+     7.5,
+     7.5
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "W",
+    "frm": [
+     -7.5,
+     -7.5
+    ],
+    "to": [
+     -7.5,
+     7.5
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "S-west",
+    "frm": [
+     -7.5,
+     -7.5
+    ],
+    "to": [
+     -2.0,
+     -7.5
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "S-east",
+    "frm": [
+     2.0,
+     -7.5
+    ],
+    "to": [
+     7.5,
+     -7.5
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "sci-fi prefab hut",
+    "cls": "3AS / Gliese and Miranda / JM's Structures prefab (class to confirm)",
+    "tag": "UNSURE",
+    "x": 0,
+    "y": 2,
+    "z": 1.7,
+    "simple": false,
+    "walked": true,
+    "source": "HUMAN"
+   }
+  ],
+  "gps": [
+   {
+    "x": 6.5,
+    "y": -6.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 6.5,
+    "y": 1.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 4.7,
+    "y": 6.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -4.7,
+    "y": 6.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -6.5,
+    "y": 1.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -6.5,
+    "y": -6.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   }
+  ],
+  "gp_count": 6,
+  "object_count": 16,
+  "object_count_note": "deck and wall counts are 1 entry per run until piece sizes are read in the editor (NOT MEASURED)"
+ },
+ "large": {
+  "piece": "K4 large stilt deck",
+  "origin": "deck centre at sea-level x/y; z is height above sea level (m)",
+  "size_m": [
+   30,
+   30
+  ],
+  "deck_level_m": 1.7,
+  "bed_m": -1.5,
+  "bank_m": 0.5,
+  "freeboard_calm_m": 1.7,
+  "centre_clear_m": [
+   20,
+   20
+  ],
+  "parts": [
+   {
+    "part": "deck",
+    "cls": "vanilla concrete pier sections (Land_PierConcrete_01_* family; exact class and piece count to confirm in the editor)",
+    "tag": "UNSURE",
+    "x": 0,
+    "y": 0,
+    "z": 1.7,
+    "yaw": 0,
+    "size": [
+     30,
+     30
+    ],
+    "simple": false,
+    "walked": true,
+    "source": "HUMAN"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": -9.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": -3.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": 3.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": 9.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -15.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -9.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -9.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -3.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": -3.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 3.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 3.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 9.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 9.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": -15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": -9.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": -3.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": 3.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": 9.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "pillar",
+    "cls": "vanilla concrete or steel pillar (class to confirm)",
+    "tag": "UNSURE",
+    "x": 15.0,
+    "y": 15.0,
+    "z_bottom": -1.5,
+    "z_top": 1.7,
+    "simple": true,
+    "walked": false,
+    "source": "HUMAN (pillars, every 5-7 m); AI (6 m spacing)"
+   },
+   {
+    "part": "ramp",
+    "cls": "Land_RampConcrete_F",
+    "tag": "class from brief",
+    "x": 0,
+    "y": -15.0,
+    "z_from": 0.5,
+    "z_to": 1.7,
+    "rise": 1.2,
+    "yaw": 0,
+    "simple": false,
+    "walked": true,
+    "source": "HUMAN (one ramp, 1.2 m rise); AI (bank side centre)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "N",
+    "frm": [
+     -15.0,
+     15.0
+    ],
+    "to": [
+     15.0,
+     15.0
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "E",
+    "frm": [
+     15.0,
+     -15.0
+    ],
+    "to": [
+     15.0,
+     15.0
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "W",
+    "frm": [
+     -15.0,
+     -15.0
+    ],
+    "to": [
+     -15.0,
+     15.0
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "S-west",
+    "frm": [
+     -15.0,
+     -15.0
+    ],
+    "to": [
+     -2.0,
+     -15.0
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   },
+   {
+    "part": "low wall",
+    "cls": "normal-object low wall, about 1 m (e.g. vanilla concrete barrier or sandbag fence; class to confirm)",
+    "tag": "UNSURE",
+    "side": "S-east",
+    "frm": [
+     2.0,
+     -15.0
+    ],
+    "to": [
+     15.0,
+     -15.0
+    ],
+    "z": 1.7,
+    "simple": false,
+    "walked": false,
+    "source": "HUMAN (solid low walls); AI (layout)"
+   }
+  ],
+  "gps": [
+   {
+    "x": 6.8,
+    "y": -14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 14.0,
+    "y": -13.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 14.0,
+    "y": -3.8,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 14.0,
+    "y": 5.8,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 14.0,
+    "y": 14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": 4.8,
+    "y": 14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -4.8,
+    "y": 14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -14.0,
+    "y": 14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -14.0,
+    "y": 5.8,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -14.0,
+    "y": -3.8,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -14.0,
+    "y": -13.5,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   },
+   {
+    "x": -6.8,
+    "y": -14.0,
+    "z": 1.7,
+    "static": false,
+    "source": "HUMAN (count); AI (positions)"
+   }
+  ],
+  "gp_count": 12,
+  "object_count": 27,
+  "object_count_note": "deck and wall counts are 1 entry per run until piece sizes are read in the editor (NOT MEASURED)"
+ }
+}

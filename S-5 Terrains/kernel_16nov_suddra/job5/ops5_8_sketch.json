@@ -1,0 +1,3159 @@
+{
+ "ops": [
+  {
+   "op": 5,
+   "name": "Esker Road",
+   "week": 3,
+   "after_any_of": [
+    2,
+    4
+   ],
+   "start": [
+    5200,
+    7800
+   ],
+   "fob_after": "by 5-F Esker Redoubt",
+   "draw_or_new_build": "D3 Esker Redoubt (5-F), week 3",
+   "garrison_planned": 795,
+   "garrison_note": "K3 per-site plan; members added since are not in it (ASSUMED)",
+   "alive_split": {
+    "garrison_cap": 700,
+    "director": 200,
+    "zeus": 300
+   },
+   "s5": {
+    "final": 1,
+    "mains": 4,
+    "supporting": 13,
+    "grades": [
+     "platoon",
+     "squad",
+     "two_squad"
+    ],
+    "platoon_main": true,
+    "passes": true
+   },
+   "line_ratio": 0.94
+  },
+  {
+   "op": 6,
+   "name": "The Cauldron",
+   "week": 3,
+   "after_any_of": [
+    3,
+    4
+   ],
+   "start": [
+    10400,
+    7200
+   ],
+   "fob_after": "by 6-F the Refinery (Cauldron rim)",
+   "draw_or_new_build": "NEW 1 Cauldron Refinery (6-F), week 3",
+   "garrison_planned": 830,
+   "garrison_note": "K3 per-site plan; members added since are not in it (ASSUMED)",
+   "alive_split": {
+    "garrison_cap": 700,
+    "director": 200,
+    "zeus": 300
+   },
+   "s5": {
+    "final": 1,
+    "mains": 4,
+    "supporting": 12,
+    "grades": [
+     "platoon",
+     "squad",
+     "two_squad"
+    ],
+    "platoon_main": true,
+    "passes": true
+   },
+   "line_ratio": 0.7
+  },
+  {
+   "op": 7,
+   "name": "Moraine Foot",
+   "week": 4,
+   "after_any_of": [
+    5,
+    6
+   ],
+   "start": [
+    10400,
+    10400
+   ],
+   "fob_after": "by 7-F Kesh Junction",
+   "draw_or_new_build": "7-M2 Rail Junction Yard cluster with a wrecked-train set piece (J5-11), week 4",
+   "garrison_planned": 770,
+   "garrison_note": "K3 per-site plan; members added since are not in it (ASSUMED)",
+   "alive_split": {
+    "garrison_cap": 700,
+    "director": 200,
+    "zeus": 300
+   },
+   "s5": {
+    "final": 1,
+    "mains": 4,
+    "supporting": 12,
+    "grades": [
+     "platoon",
+     "squad",
+     "two_squad"
+    ],
+    "platoon_main": true,
+    "passes": true
+   },
+   "line_ratio": 0.4
+  },
+  {
+   "op": 8,
+   "name": "The Moraine Citadel",
+   "week": 4,
+   "after_any_of": [
+    7
+   ],
+   "start": [
+    10600,
+    13200
+   ],
+   "fob_after": "end of run",
+   "draw_or_new_build": "NEW 2 Moraine Citadel + capstone (8-F), week 4",
+   "garrison_planned": 770,
+   "garrison_note": "K3 per-site plan; members added since are not in it (ASSUMED)",
+   "alive_split": {
+    "garrison_cap": 700,
+    "director": 200,
+    "zeus": 300
+   },
+   "s5": {
+    "final": 1,
+    "mains": 4,
+    "supporting": 12,
+    "grades": [
+     "platoon",
+     "squad",
+     "two_squad"
+    ],
+    "platoon_main": true,
+    "passes": true
+   },
+   "line_ratio": 0.31
+  }
+ ],
+ "sites": [
+  {
+   "id": "5-F",
+   "op": 5,
+   "name": "Esker Redoubt",
+   "role": "FINAL",
+   "grade": "platoon",
+   "xy": [
+    3000,
+    11000
+   ],
+   "comps": [
+    "CIS Mini Fortress with GPs",
+    "CIS Metal Trench Line with GPs",
+    "[Burnzy] CIS Arti-base + Flower Tower 2"
+   ],
+   "multi": true,
+   "stake": "Gravel fort on the only high ground in the west",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-18, K3 draw D3)",
+   "approaches": [
+    {
+     "way": "SSE via 5-M1",
+     "bearing": 166
+    },
+    {
+     "way": "N via 5-M2, after it falls",
+     "bearing": 14
+    }
+   ],
+   "approaches_source": "HUMAN (J5-14)",
+   "reason_tag": "from the K3 stake: Gravel fort on the only high ground in the west",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-M1",
+   "op": 5,
+   "name": "Esker Road Gate",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    3400,
+    9400
+   ],
+   "comps": [
+    "CIS Small Checkpoint with GPs",
+    "TKTA Checkpoint Fixed (Mono)",
+    "CIS Heavy Gun Position + AA (UD)"
+   ],
+   "multi": true,
+   "stake": "The road onto the esker",
+   "measured": {
+    "gps": 120,
+    "objects": 106,
+    "guns": 9,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-3)",
+   "approaches": [
+    {
+     "way": "via 5-05 Kettle North Trench",
+     "bearing": 90
+    },
+    {
+     "way": "via 5-09 West Fuel Dump",
+     "bearing": 225
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: The road onto the esker",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-M2",
+   "op": 5,
+   "name": "Esker Dugouts",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    3400,
+    12600
+   ],
+   "comps": [
+    "Royal Tunnel Holdout 1 (Mono)",
+    "CIS Turbolaser Tower with GPs",
+    "CIS Basic Trenchline with GPs",
+    "CIS Basic Trenchline with GPs",
+    "CIS Small Rectangle FOB with GPs"
+   ],
+   "multi": true,
+   "stake": "Dugouts in the esker side (library tunnel 2 of 3)",
+   "measured": {
+    "gps": 187,
+    "objects": 200,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept); HUMAN (J5-8 Turbolaser rule); HUMAN (J5-9, J5-10)",
+   "approaches": [
+    {
+     "way": "via 5-F Esker Redoubt",
+     "bearing": 194
+    },
+    {
+     "way": "via 5-08 Stake Causeway Checkpoint",
+     "bearing": 39
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Dugouts in the esker side (library tunnel 2 of 3)",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-M3",
+   "op": 5,
+   "name": "North-west Battery",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    1800,
+    13400
+   ],
+   "comps": [
+    "[Burnzy] CIS Arti-base + Flower Tower 2"
+   ],
+   "multi": false,
+   "stake": "Guns over the west bog; for pilots",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule)",
+   "approaches": [
+    {
+     "way": "via 5-M2 Esker Dugouts",
+     "bearing": 117
+    },
+    {
+     "way": "via 5-02 West Esker AA",
+     "bearing": 196
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Guns over the west bog; for pilots",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-M4",
+   "op": 5,
+   "name": "Moss Abbey Ruin",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    5800,
+    10200
+   ],
+   "comps": [
+    "CIS Outpost with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Ruined abbey held by a platoon",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "via 5-05 Kettle North Trench",
+     "bearing": 207
+    },
+    {
+     "way": "via 5-03 Bog Pool Pillboxes",
+     "bearing": 34
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Ruined abbey held by a platoon",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-01",
+   "op": 5,
+   "name": "Gravel Pit Bunkers II",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    2000,
+    10000
+   ],
+   "comps": [
+    "Tukata Turret Bunker"
+   ],
+   "multi": false,
+   "stake": "Pits on the esker foot",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Pits on the esker foot",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-02",
+   "op": 5,
+   "name": "West Esker AA",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    1400,
+    12000
+   ],
+   "comps": [
+    "CIS Medium AA Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Covers the west sky",
+   "measured": {
+    "gps": 168,
+    "objects": 162,
+    "guns": 4,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Covers the west sky",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-03",
+   "op": 5,
+   "name": "Bog Pool Pillboxes",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    6600,
+    11400
+   ],
+   "comps": [
+    "Small Wall with Bunker"
+   ],
+   "multi": false,
+   "stake": "Between the pools",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Between the pools",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-04",
+   "op": 5,
+   "name": "Walker Park",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    5000,
+    12400
+   ],
+   "comps": [
+    "CIS Vehicle Depot with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Walkers for counterattacks",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Walkers for counterattacks",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-05",
+   "op": 5,
+   "name": "Kettle North Trench",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    5400,
+    9400
+   ],
+   "comps": [
+    "CIS Basic Trenchline with GPs",
+    "CIS Basic Trenchline with GPs",
+    "CIS Small Rectangle FOB with GPs"
+   ],
+   "multi": true,
+   "stake": "Trench on the kettle's north shore",
+   "measured": {
+    "gps": 157,
+    "objects": 170,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule)",
+   "reason_tag": "from the K3 stake: Trench on the kettle's north shore",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-06",
+   "op": 5,
+   "name": "NW Comms",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    800,
+    14600
+   ],
+   "comps": [
+    "CIS Comms Array with GPs"
+   ],
+   "multi": false,
+   "stake": "Links the west to the citadel",
+   "measured": {
+    "gps": 57,
+    "objects": 50,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Links the west to the citadel",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-07",
+   "op": 5,
+   "name": "Esker North Watch",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    2600,
+    14800
+   ],
+   "comps": [
+    "CIS Guard Tower with GPs"
+   ],
+   "multi": false,
+   "stake": "Sees the moraine",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Sees the moraine",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-08",
+   "op": 5,
+   "name": "Stake Causeway Checkpoint",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    4200,
+    13600
+   ],
+   "comps": [
+    "CIS Small Checkpoint with GPs",
+    "CIS Heavy Gun Position + AA (UD)"
+   ],
+   "multi": true,
+   "stake": "Plank causeway north",
+   "measured": {
+    "gps": 70,
+    "objects": 68,
+    "guns": 5,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule)",
+   "reason_tag": "from the K3 stake: Plank causeway north",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-09",
+   "op": 5,
+   "name": "West Fuel Dump",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    2400,
+    8400
+   ],
+   "comps": [
+    "CIS Fuel Depot with GPs"
+   ],
+   "multi": false,
+   "stake": "Burns",
+   "measured": {
+    "gps": 79,
+    "objects": 84,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Burns",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-10",
+   "op": 5,
+   "name": "Peat Bog Snipers",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    6800,
+    12800
+   ],
+   "comps": [
+    "Zavala CIS Outpost with GPs"
+   ],
+   "multi": false,
+   "stake": "Snipers in the bog",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Snipers in the bog",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-11",
+   "op": 5,
+   "name": "Moraine West Post",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    4600,
+    15000
+   ],
+   "comps": [
+    "CIS Outpost with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Post on the moraine's west end",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Post on the moraine's west end",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-12",
+   "op": 5,
+   "name": "Esker Beacon",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    600,
+    11000
+   ],
+   "comps": [
+    "Claus - Small Radar"
+   ],
+   "multi": false,
+   "stake": "Air only",
+   "measured": {
+    "gps": 0,
+    "objects": 35,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "air-only, exempt",
+   "garrison_planned": 25,
+   "air_only": true,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Air only",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-F",
+   "op": 6,
+   "name": "Cauldron Refinery",
+   "role": "FINAL",
+   "grade": "platoon",
+   "xy": [
+    11000,
+    11000
+   ],
+   "comps": [
+    "NEW build 1 (centerpiece)"
+   ],
+   "multi": true,
+   "stake": "The gas refinery on stilts in the flooded crater",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "new build",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "SW over the rim past 6-M1",
+     "bearing": 225
+    },
+    {
+     "way": "E from 6-M4 Apron Town",
+     "bearing": 86
+    }
+   ],
+   "approaches_source": "HUMAN (JOB_4 decision 3)",
+   "reason_tag": "from the K3 stake: The gas refinery on stilts in the flooded crater",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-M1",
+   "op": 6,
+   "name": "Rim Bunker Ring",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    10400,
+    10400
+   ],
+   "comps": [
+    "CIS Metal Trench Line with GPs",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Bunkers round the crater rim",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "from the op start",
+     "bearing": 180
+    },
+    {
+     "way": "via 6-F Cauldron Refinery",
+     "bearing": 45
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Bunkers round the crater rim",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-M2",
+   "op": 6,
+   "name": "Terrace Batteries",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    11576,
+    11624
+   ],
+   "comps": [
+    "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Guns on the inner terraces; for pilots",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "via 6-F Cauldron Refinery",
+     "bearing": 223
+    },
+    {
+     "way": "via 6-02 Spoil Heap Snipers",
+     "bearing": 78
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Guns on the inner terraces; for pilots",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-M3",
+   "op": 6,
+   "name": "Tank Laager",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    12800,
+    10000
+   ],
+   "comps": [
+    "CIS Vehicle Depot with GPs (D)",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "CIS tanks on the crater apron",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "via 6-12 Flare Stack Field",
+     "bearing": 252
+    },
+    {
+     "way": "via 6-M4 Cauldron Apron Town",
+     "bearing": 34
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: CIS tanks on the crater apron",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-M4",
+   "op": 6,
+   "name": "Cauldron Apron Town",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    13600,
+    11200
+   ],
+   "comps": [
+    "hand-made town (town work, not a comp)"
+   ],
+   "multi": true,
+   "stake": "Workers' town on the crater apron",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "town work",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "via 6-M3 Tank Laager",
+     "bearing": 214
+    },
+    {
+     "way": "via 6-06 NE Esker Fort",
+     "bearing": 0
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Workers' town on the crater apron",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-01",
+   "op": 6,
+   "name": "Rim Spoil Galleries",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    11600,
+    10400
+   ],
+   "comps": [
+    "Royal Tunnel Holdout 1 (Mono)",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Roofed cuts in the spoil (library tunnel 3 of 3)",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed); HUMAN (J5-8 Turbolaser rule)",
+   "reason_tag": "from the K3 stake: Roofed cuts in the spoil (library tunnel 3 of 3)",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-02",
+   "op": 6,
+   "name": "Spoil Heap Snipers",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    12400,
+    11800
+   ],
+   "comps": [
+    "Zavala CIS Outpost with GPs"
+   ],
+   "multi": false,
+   "stake": "High spoil heaps",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: High spoil heaps",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-03",
+   "op": 6,
+   "name": "Pipeline Pump",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    9600,
+    12000
+   ],
+   "comps": [
+    "CIS Powerbank Facility with GPs"
+   ],
+   "multi": false,
+   "stake": "Pumps fuel north",
+   "measured": {
+    "gps": 44,
+    "objects": 243,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Pumps fuel north",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-04",
+   "op": 6,
+   "name": "Gas Holder",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    8800,
+    10600
+   ],
+   "comps": [
+    "CIS Fuel Depot with GPs"
+   ],
+   "multi": false,
+   "stake": "Air only; big burn",
+   "measured": {
+    "gps": 79,
+    "objects": 84,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "air-only, exempt",
+   "garrison_planned": 25,
+   "air_only": true,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Air only; big burn",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-05",
+   "op": 6,
+   "name": "Cauldron AA",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    10200,
+    11800
+   ],
+   "comps": [
+    "CIS Medium AA Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Covers the crater",
+   "measured": {
+    "gps": 168,
+    "objects": 162,
+    "guns": 4,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Covers the crater",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-06",
+   "op": 6,
+   "name": "NE Esker Fort",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    13600,
+    12400
+   ],
+   "comps": [
+    "CIS Mini Fortress with GPs"
+   ],
+   "multi": false,
+   "stake": "Fort on the north-east esker",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Fort on the north-east esker",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-07",
+   "op": 6,
+   "name": "Esker Watch NE",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    14600,
+    13400
+   ],
+   "comps": [
+    "CIS Guard Tower with GPs"
+   ],
+   "multi": false,
+   "stake": "Watches the north-east bog",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Watches the north-east bog",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-08",
+   "op": 6,
+   "name": "Supply Depot NE",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    13400,
+    14400
+   ],
+   "comps": [
+    "CIS Depot (Fixed) with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Stores for the citadel's east wing",
+   "measured": {
+    "gps": 187,
+    "objects": 297,
+    "guns": 2,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Stores for the citadel's east wing",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-09",
+   "op": 6,
+   "name": "Refinery Shield Pylon",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    11000,
+    12400
+   ],
+   "comps": [
+    "Destructable Shield Generator and its shield template"
+   ],
+   "multi": false,
+   "stake": "Shields the refinery until blown",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Shields the refinery until blown",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-10",
+   "op": 6,
+   "name": "Crater Lip Pillboxes",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    14400,
+    9000
+   ],
+   "comps": [
+    "Small Wall with Bunker"
+   ],
+   "multi": false,
+   "stake": "Cover the east approach",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Cover the east approach",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-11",
+   "op": 6,
+   "name": "Comms Relay East",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    15128,
+    11544
+   ],
+   "comps": [
+    "CIS Comms Array with GPs"
+   ],
+   "multi": false,
+   "stake": "Links the refinery to the citadel",
+   "measured": {
+    "gps": 57,
+    "objects": 50,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Links the refinery to the citadel",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "6-12",
+   "op": 6,
+   "name": "Flare Stack Field",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    11600,
+    9600
+   ],
+   "comps": [
+    "CIS Fuel Depot with GPs"
+   ],
+   "multi": false,
+   "stake": "Burns",
+   "measured": {
+    "gps": 79,
+    "objects": 84,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Burns",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-F",
+   "op": 7,
+   "name": "Kesh Junction",
+   "role": "FINAL",
+   "grade": "platoon",
+   "xy": [
+    10600,
+    13200
+   ],
+   "comps": [
+    "hand-made town (town work, not a comp)"
+   ],
+   "multi": true,
+   "stake": "Rail junction town at the moraine foot; the next FOB",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "town work",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "SW via 7-12",
+     "bearing": 236
+    },
+    {
+     "way": "N via 7-04",
+     "bearing": 13
+    }
+   ],
+   "approaches_source": "HUMAN (J5-15)",
+   "reason_tag": "from the K3 stake: Rail junction town at the moraine foot; the next FOB",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-M1",
+   "op": 7,
+   "name": "Command Dugout Salient",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    7608,
+    12984
+   ],
+   "comps": [
+    "CIS Metal Trench Line with GPs",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Trench salient guarding the citadel's south",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "via 7-01 Mud Fort",
+     "bearing": 135
+    },
+    {
+     "way": "via 7-09 Water Tower Snipers",
+     "bearing": 80
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Trench salient guarding the citadel's south",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-M2",
+   "op": 7,
+   "name": "Rail Junction Yard",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    11400,
+    13800
+   ],
+   "comps": [
+    "CIS Medium Logistics Base with GPs",
+    "CIS Turbolaser Tower with GPs",
+    "CIS Landing Position with GPs",
+    "wrecked train set piece (props, to confirm)"
+   ],
+   "multi": true,
+   "stake": "Rail yard; armour's way to the moraine",
+   "measured": {
+    "gps": 209,
+    "objects": 130,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept); HUMAN (J5-8 Turbolaser rule); HUMAN (J5-11, J5-12)",
+   "draw": "op 7 draw (library cluster)",
+   "approaches": [
+    {
+     "way": "via 7-F Kesh Junction",
+     "bearing": 233
+    },
+    {
+     "way": "via 7-M4 Moraine Road Gate",
+     "bearing": 45
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Rail yard; armour's way to the moraine",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-M3",
+   "op": 7,
+   "name": "Moraine Outwork Battery",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    6400,
+    14200
+   ],
+   "comps": [
+    "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Guns on the outwork; for pilots",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "via 7-M1 Command Dugout Salient",
+     "bearing": 135
+    },
+    {
+     "way": "via 7-08 Moraine Spring Post",
+     "bearing": 233
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Guns on the outwork; for pilots",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-M4",
+   "op": 7,
+   "name": "Moraine Road Gate",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    12200,
+    14600
+   ],
+   "comps": [
+    "CIS Double Pcannon Checkpoint with GPs",
+    "TKTA Checkpoint Fixed (Mono)",
+    "CIS Heavy Gun Position + AA (UD)"
+   ],
+   "multi": true,
+   "stake": "Road gate up the moraine",
+   "measured": {
+    "gps": 141,
+    "objects": 142,
+    "guns": 11,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-2)",
+   "approaches": [
+    {
+     "way": "via 7-M2 Rail Junction Yard",
+     "bearing": 225
+    },
+    {
+     "way": "via 7-04 Prisoner Pens",
+     "bearing": 284
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Road gate up the moraine",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-01",
+   "op": 7,
+   "name": "Mud Fort",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    8400,
+    12200
+   ],
+   "comps": [
+    "Tukata Turret Bunker"
+   ],
+   "multi": false,
+   "stake": "Earth fort",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Earth fort",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-02",
+   "op": 7,
+   "name": "Wrecked Walker Strongpoint",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    10000,
+    12300
+   ],
+   "comps": [
+    "Small Wall with Bunker"
+   ],
+   "multi": false,
+   "stake": "Dead walker as a bunker",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Dead walker as a bunker",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-03",
+   "op": 7,
+   "name": "North AA",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    9000,
+    14400
+   ],
+   "comps": [
+    "CIS Heavy AD Tower with GPs",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Covers the moraine",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed); HUMAN (J5-8 Turbolaser rule)",
+   "reason_tag": "from the K3 stake: Covers the moraine",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-04",
+   "op": 7,
+   "name": "Prisoner Pens",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    11000,
+    14900
+   ],
+   "comps": [
+    "CIS Depot (Fixed) with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Rescue clones",
+   "measured": {
+    "gps": 187,
+    "objects": 297,
+    "guns": 2,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Rescue clones",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-05",
+   "op": 7,
+   "name": "Reserve Camp",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    12800,
+    13200
+   ],
+   "comps": [
+    "CIS Medium Logistics Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Reserve for counterattacks",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Reserve for counterattacks",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-06",
+   "op": 7,
+   "name": "Kettle North Pillboxes",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    6000,
+    12400
+   ],
+   "comps": [
+    "Small Wall with Bunker"
+   ],
+   "multi": false,
+   "stake": "Cover the north kettle",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Cover the north kettle",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-07",
+   "op": 7,
+   "name": "Fuel Siding",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    10600,
+    12600
+   ],
+   "comps": [
+    "CIS Fuel Depot with GPs"
+   ],
+   "multi": false,
+   "stake": "Burns",
+   "measured": {
+    "gps": 79,
+    "objects": 84,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Burns",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-08",
+   "op": 7,
+   "name": "Moraine Spring Post",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    5600,
+    13600
+   ],
+   "comps": [
+    "Zavala CIS Outpost with GPs"
+   ],
+   "multi": false,
+   "stake": "Water for the citadel",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Water for the citadel",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-09",
+   "op": 7,
+   "name": "Water Tower Snipers",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    8800,
+    13200
+   ],
+   "comps": [
+    "CIS Guard Tower with GPs"
+   ],
+   "multi": false,
+   "stake": "Overwatch on the junction",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Overwatch on the junction",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-10",
+   "op": 7,
+   "name": "Comms Mast",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    12000,
+    12200
+   ],
+   "comps": [
+    "CIS Comms Array with GPs"
+   ],
+   "multi": false,
+   "stake": "Intel on the citadel",
+   "measured": {
+    "gps": 57,
+    "objects": 50,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Intel on the citadel",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-11",
+   "op": 7,
+   "name": "Junction Sensor",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    13800,
+    15400
+   ],
+   "comps": [
+    "Claus - Small Radar"
+   ],
+   "multi": false,
+   "stake": "Air only",
+   "measured": {
+    "gps": 0,
+    "objects": 35,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "air-only, exempt",
+   "garrison_planned": 25,
+   "air_only": true,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Air only",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "7-12",
+   "op": 7,
+   "name": "Junction Field Hospital",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    9400,
+    12400
+   ],
+   "comps": [
+    "CIS Depot (Fixed) with GPs (D)"
+   ],
+   "multi": false,
+   "stake": "Captured medics held here; rescue them",
+   "measured": {
+    "gps": 187,
+    "objects": 297,
+    "guns": 2,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Captured medics held here; rescue them",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-F",
+   "op": 8,
+   "name": "Moraine Citadel",
+   "role": "FINAL",
+   "grade": "platoon",
+   "xy": [
+    8400,
+    15200
+   ],
+   "comps": [
+    "NEW build 2 (centerpiece)"
+   ],
+   "multi": true,
+   "stake": "CIS front headquarters; the capstone interior is inside",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "new build",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "SW via 8-M1",
+     "bearing": 214
+    },
+    {
+     "way": "SE via 8-09",
+     "bearing": 124
+    }
+   ],
+   "approaches_source": "HUMAN (J5-16)",
+   "reason_tag": "from the K3 stake: CIS front headquarters; the capstone interior is inside",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-M1",
+   "op": 8,
+   "name": "Citadel Gate",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    8000,
+    14600
+   ],
+   "comps": [
+    "CIS Double Pcannon Checkpoint with GPs",
+    "TKTA Checkpoint Fixed (Mono)",
+    "CIS Heavy Gun Position + AA (UD)"
+   ],
+   "multi": true,
+   "stake": "Gate into the citadel (starts closed)",
+   "measured": {
+    "gps": 141,
+    "objects": 142,
+    "guns": 11,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-2)",
+   "approaches": [
+    {
+     "way": "via 8-07 Moraine Trench West",
+     "bearing": 156
+    },
+    {
+     "way": "via 8-11 Citadel Barracks",
+     "bearing": 270
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Gate into the citadel (starts closed)",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-M2",
+   "op": 8,
+   "name": "Hangar Bunkers",
+   "role": "main",
+   "grade": "platoon",
+   "xy": [
+    10400,
+    15300
+   ],
+   "comps": [
+    "CIS Elevated Landing Pad Construction with GPs",
+    "CIS Medium AA Base with GPs"
+   ],
+   "multi": true,
+   "stake": "Gunship bunkers",
+   "measured": {
+    "gps": 233,
+    "objects": 218,
+    "guns": 4,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 110,
+   "air_only": false,
+   "source": "HUMAN (J5-4)",
+   "approaches": [
+    {
+     "way": "via 8-12 Escape Pad",
+     "bearing": 204
+    },
+    {
+     "way": "via 8-M4 Citadel Power Plant",
+     "bearing": 297
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Gunship bunkers",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-M3",
+   "op": 8,
+   "name": "Moraine Battery",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    6400,
+    15400
+   ],
+   "comps": [
+    "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "CIS Turbolaser Tower with GPs"
+   ],
+   "multi": true,
+   "stake": "Guns on the moraine; for pilots",
+   "measured": {
+    "gps": 30,
+    "objects": 30,
+    "guns": 1,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule); HUMAN (J5-8 Turbolaser rule)",
+   "approaches": [
+    {
+     "way": "via 8-11 Citadel Barracks",
+     "bearing": 129
+    },
+    {
+     "way": "via 8-03 Comms Mast North",
+     "bearing": 69
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Guns on the moraine; for pilots",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-M4",
+   "op": 8,
+   "name": "Citadel Power Plant",
+   "role": "main",
+   "grade": "two_squad",
+   "xy": [
+    9600,
+    15700
+   ],
+   "comps": [
+    "CIS Large Power Facility with GPs"
+   ],
+   "multi": false,
+   "stake": "Powers the citadel's shields",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-1: K3 main kept)",
+   "approaches": [
+    {
+     "way": "via 8-M2 Hangar Bunkers",
+     "bearing": 117
+    },
+    {
+     "way": "via 8-09 Shield Pylons",
+     "bearing": 214
+    }
+   ],
+   "approaches_source": "AI (drafted: first from the start side within 45 deg, second the nearest site 45 deg or more away; not reviewed)",
+   "reason_tag": "from the K3 stake: Powers the citadel's shields",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-01",
+   "op": 8,
+   "name": "West Gate Bunkers",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    5600,
+    15000
+   ],
+   "comps": [
+    "Tukata Turret Bunker"
+   ],
+   "multi": false,
+   "stake": "Second way in",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Second way in",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-02",
+   "op": 8,
+   "name": "Supply Railhead",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    12000,
+    15400
+   ],
+   "comps": [
+    "CIS Medium Logistics Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Rail end",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Rail end",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-03",
+   "op": 8,
+   "name": "Comms Mast North",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    7200,
+    15700
+   ],
+   "comps": [
+    "CIS Comms Array with GPs"
+   ],
+   "multi": false,
+   "stake": "Calls the fleet",
+   "measured": {
+    "gps": 57,
+    "objects": 50,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Calls the fleet",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-04",
+   "op": 8,
+   "name": "Fuel Tanks",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    13000,
+    15000
+   ],
+   "comps": [
+    "CIS Fuel Depot with GPs"
+   ],
+   "multi": false,
+   "stake": "Burns",
+   "measured": {
+    "gps": 79,
+    "objects": 84,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Burns",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-05",
+   "op": 8,
+   "name": "Water Tower Overwatch",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    5000,
+    14400
+   ],
+   "comps": [
+    "CIS Guard Tower with GPs"
+   ],
+   "multi": false,
+   "stake": "Overwatch on the west gate",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Overwatch on the west gate",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-06",
+   "op": 8,
+   "name": "East Moraine AA",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    11600,
+    15700
+   ],
+   "comps": [
+    "CIS Medium AA Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Covers the citadel",
+   "measured": {
+    "gps": 168,
+    "objects": 162,
+    "guns": 4,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Covers the citadel",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-07",
+   "op": 8,
+   "name": "Moraine Trench West",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    8400,
+    13700
+   ],
+   "comps": [
+    "CIS Basic Trenchline with GPs",
+    "CIS Basic Trenchline with GPs",
+    "CIS Small Rectangle FOB with GPs"
+   ],
+   "multi": true,
+   "stake": "West flank",
+   "measured": {
+    "gps": 157,
+    "objects": 170,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule); HUMAN (J5-19, J5-20: moved)",
+   "reason_tag": "from the K3 stake: West flank",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-08",
+   "op": 8,
+   "name": "Moraine Trench East",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    9300,
+    13700
+   ],
+   "comps": [
+    "CIS Basic Trenchline with GPs",
+    "CIS Basic Trenchline with GPs",
+    "CIS Small Rectangle FOB with GPs"
+   ],
+   "multi": true,
+   "stake": "East flank",
+   "measured": {
+    "gps": 157,
+    "objects": 170,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "HUMAN (J5-1 rule); HUMAN (J5-19, J5-20: moved)",
+   "reason_tag": "from the K3 stake: East flank",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-09",
+   "op": 8,
+   "name": "Shield Pylons",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    9000,
+    14800
+   ],
+   "comps": [
+    "Destructable Shield Generator and its shield template"
+   ],
+   "multi": false,
+   "stake": "Shield the citadel until blown",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Shield the citadel until blown",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-10",
+   "op": 8,
+   "name": "Orbital Uplink Dish",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    9800,
+    13700
+   ],
+   "comps": [
+    "Giant Radar Dish"
+   ],
+   "multi": false,
+   "stake": "Air only",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "air-only, exempt",
+   "garrison_planned": 25,
+   "air_only": true,
+   "source": "AI (K3 pick, not reviewed); HUMAN (J5-19, J5-20: moved)",
+   "reason_tag": "from the K3 stake: Air only",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-11",
+   "op": 8,
+   "name": "Citadel Barracks",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    7400,
+    14600
+   ],
+   "comps": [
+    "CIS Medium Logistics Base with GPs"
+   ],
+   "multi": false,
+   "stake": "Reserve garrison",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": true
+   },
+   "floor": "NOT MEASURED",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Reserve garrison",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "8-12",
+   "op": 8,
+   "name": "Escape Pad",
+   "role": "supporting",
+   "grade": "squad",
+   "xy": [
+    10000,
+    14400
+   ],
+   "comps": [
+    "CIS Elevated Landing Pad Construction with GPs"
+   ],
+   "multi": false,
+   "stake": "Stops officers escaping",
+   "measured": {
+    "gps": 65,
+    "objects": 56,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "meets",
+   "garrison_planned": 25,
+   "air_only": false,
+   "source": "AI (K3 pick, not reviewed)",
+   "reason_tag": "from the K3 stake: Stops officers escaping",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  },
+  {
+   "id": "5-13",
+   "op": 5,
+   "name": "Stake Hamlet",
+   "role": "supporting",
+   "grade": "two_squad",
+   "xy": [
+    1600,
+    9000
+   ],
+   "comps": [
+    "hand-made town (town work, not a comp)"
+   ],
+   "multi": true,
+   "stake": "Pile-house hamlet; droid billets",
+   "measured": {
+    "gps": 0,
+    "objects": 0,
+    "guns": 0,
+    "partial": false
+   },
+   "floor": "town work",
+   "garrison_planned": 50,
+   "air_only": false,
+   "source": "HUMAN (J5-7)",
+   "reason_tag": "from the K3 stake: Pile-house hamlet; droid billets",
+   "landmass": 1,
+   "pad": "NOT MEASURED (drop 2)"
+  }
+ ],
+ "roads": [
+  {
+   "op": 5,
+   "links": [
+    "START",
+    "5-05"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1612,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-05",
+    "5-M4"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 894,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-M4",
+    "5-03"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1442,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-03",
+    "5-10"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1414,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-10",
+    "5-04"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1844,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-04",
+    "5-08"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1442,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-08",
+    "5-M2"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1281,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-08",
+    "5-11"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1456,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-M2",
+    "5-F"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1649,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-F",
+    "5-01"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1414,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-01",
+    "5-13"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1077,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-13",
+    "5-09"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1000,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-09",
+    "5-M1"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1414,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-01",
+    "5-12"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1720,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-12",
+    "5-02"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1281,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-02",
+    "5-M3"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1456,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-M3",
+    "5-06"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1562,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 5,
+   "links": [
+    "5-M3",
+    "5-07"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1612,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "START",
+    "6-12"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 2683,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-12",
+    "6-01"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 800,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-01",
+    "6-F"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 849,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-F",
+    "6-M1"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 849,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-F",
+    "6-M2"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 849,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M2",
+    "6-02"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 843,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M2",
+    "6-09"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 966,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-09",
+    "6-05"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1000,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-05",
+    "6-03"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 632,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-01",
+    "6-M3"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1265,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-02",
+    "6-M4"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1342,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M4",
+    "6-06"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1200,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-06",
+    "6-07"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1414,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-07",
+    "6-08"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1562,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M4",
+    "6-11"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1566,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M1",
+    "6-04"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1612,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 6,
+   "links": [
+    "6-M3",
+    "6-10"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1887,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "START",
+    "7-02"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1942,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-02",
+    "7-12"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 608,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-02",
+    "7-07"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 671,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-07",
+    "7-F"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 600,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-F",
+    "7-M2"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1000,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-12",
+    "7-09"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1000,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-12",
+    "7-01"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1020,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-01",
+    "7-M1"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1114,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-M2",
+    "7-M4"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1131,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-M2",
+    "7-04"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1170,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-09",
+    "7-03"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1217,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-07",
+    "7-10"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1456,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-10",
+    "7-05"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1281,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-M1",
+    "7-06"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1711,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-06",
+    "7-08"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1265,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-08",
+    "7-M3"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1000,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 7,
+   "links": [
+    "7-M4",
+    "7-11"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1789,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "START",
+    "8-10"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 943,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-10",
+    "8-08"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 500,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-10",
+    "8-12"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 728,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-08",
+    "8-07"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 900,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-07",
+    "8-M1"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 985,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-M1",
+    "8-11"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 600,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-M1",
+    "8-F"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 721,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-F",
+    "8-09"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 721,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-12",
+    "8-M2"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 985,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-M2",
+    "8-M4"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 894,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-11",
+    "8-03"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1118,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-03",
+    "8-M3"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 854,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-M3",
+    "8-01"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 894,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-01",
+    "8-05"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 849,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-M2",
+    "8-06"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1265,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-06",
+    "8-02"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 500,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  },
+  {
+   "op": 8,
+   "links": [
+    "8-02",
+    "8-04"
+   ],
+   "kind": "dirt (7 m)",
+   "length_m_straight": 1077,
+   "crosses_water": "NOT MEASURED (masks in drop 2)",
+   "source": "AI (minimum-spanning link from the op start)"
+  }
+ ]
+}

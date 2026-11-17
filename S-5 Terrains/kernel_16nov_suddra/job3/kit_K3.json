@@ -1,0 +1,38 @@
+{
+ "kit": "K3",
+ "deck_level_m": 1.7,
+ "width_m": 4.0,
+ "source_width_level": "HUMAN",
+ "segment": {
+  "length_m": 10.0,
+  "parts": [
+   "vanilla concrete pier section(s) (to confirm)",
+   "pillars at both ends, simple",
+   "low walls both sides, normal"
+  ],
+  "gps": 1,
+  "source": "AI (length, GP)"
+ },
+ "junction": {
+  "size_m": [
+   8,
+   8
+  ],
+  "arms": "T or X; a 4 m gap in the wall at each arm",
+  "parts": [
+   "vanilla concrete pier sections (to confirm)",
+   "4 pillars at the corners, simple",
+   "low walls between arms, normal"
+  ],
+  "gps": 2,
+  "source": "AI"
+ },
+ "end_ramp": {
+  "cls": "Land_RampConcrete_F",
+  "rise_m": 1.2,
+  "from_m": 0.5,
+  "to_m": 1.7,
+  "length_m_assumed": 8.0,
+  "source": "HUMAN (ramp); AI (length ASSUMED)"
+ }
+}

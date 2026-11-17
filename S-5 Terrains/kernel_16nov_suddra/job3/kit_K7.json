@@ -1,0 +1,32 @@
+{
+ "kit": "K7",
+ "pieces": [
+  {
+   "name": "fuel barge (moored)",
+   "hull": "vanilla barge or boat wreck model (to confirm)",
+   "hull_simple": true,
+   "tanks": 3,
+   "tank_cls": "vanilla fuel tank prop (to confirm)",
+   "tank_simple": false,
+   "where": "moored in -1.5 m water, hull top at about +1.0 m (ASSUMED)",
+   "walkable": false
+  },
+  {
+   "name": "beached barge",
+   "hull": "vanilla wreck model (to confirm)",
+   "hull_simple": true,
+   "tanks": 2,
+   "tank_cls": "vanilla fuel tank prop (to confirm)",
+   "tank_simple": false,
+   "where": "on a K1 beach slope or the bank, tilted with the ground",
+   "walkable": false
+  }
+ ],
+ "size_m": [
+  24,
+  7
+ ],
+ "size_source": "AI (hull size NOT MEASURED)",
+ "gps": 0,
+ "note": "tanks NORMAL so they can burn; hull may be simple; nothing on them is walked"
+}
