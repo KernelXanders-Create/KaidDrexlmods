@@ -101,7 +101,7 @@ for r_ in EXT_ROADS: EXT_GROUP[r_["id"]] = "existing net " + _f(r_["id"]).split(
 # ---- sites
 def place_sites(only=None, skip=()):
     for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
-        if (only is not None and sid not in only) or sid in skip or (only is None and sid in getattr(op, "LATE_SITES", ())): continue
+        if (only is not None and sid not in only) or sid in skip or (only is None and sid in tuple(getattr(op, "LATE_SITES", ())) + tuple(getattr(op, "ASTRIDE", ()))): continue
         base = sid.split("-N")[0].split("-T")[0]
         x, y = xy if xy else (R[base]["x"], R[base]["y"])
         kw_ = getattr(op, "SITE_KW", {}).get(sid, {})
@@ -127,7 +127,8 @@ def place_sites(only=None, skip=()):
             s["moved_from_rough_m"] = s.get("moved_m"); s["design_xy"] = [d_["x"], d_["y"]]
             s["moved_m"] = round(math.dist((d_["x"], d_["y"]), (s["x"], s["y"]))); s["rough"] = [d_["x"], d_["y"]] if not xy else list(xy)
 
-trunk_stops = [leg["stop"][1] for leg in getattr(op, "TRUNK", []) if leg["stop"][0] == "site"]
+CHAINS = getattr(op, "TRUNKS", None) or ([op.TRUNK] if getattr(op, "TRUNK", None) else [])     # Suddra: several trunk chains (entry roads)
+trunk_stops = [leg["stop"][1] for ch_ in CHAINS for leg in ch_ if leg["stop"][0] == "site"]
 place_sites(only=trunk_stops) if trunk_stops else place_sites()
 SITE = {s["id"]: s for s in P.sites}
 
@@ -218,9 +219,10 @@ def trunk_leg(prev_list, a_xy, a_z, v, leg, k, key):
 
 
 ramps = []
-if getattr(op, "TRUNK", None):
+for ci_, TR_ in enumerate(CHAINS):
     prev = None                     # list of start candidates (x, y, z, owner)
-    for k, leg in enumerate(op.TRUNK):
+    for i_, leg in enumerate(TR_):
+        k = ci_ * 100 + i_
         kind_, key = leg["stop"][0], leg["stop"][1]
         if kind_ == "net":          # start on your existing net near the anchor: its level stretches and the free edges of its pads
             ax_, ay_ = key; rad_ = leg["stop"][2]
@@ -255,7 +257,7 @@ if getattr(op, "TRUNK", None):
                     else: near = min(prev, key=lambda q: math.dist((q[0], q[1]), a_xy))
                     spec = ramp_spec(a_xy, a_z, (near[0], near[1]), near[2]); spec["between"] = [near[3], leg.get("label", f"point {k}")]
                     ramps.append(spec); trunk_breaks.append(dict(at=list(key), z=a_z, label=leg.get("label", "") + f"; no road holds the rules here: a ramp of {spec['rise_m']} m rise ({spec['length_at_14_pct_m']} m at 14 %)"))
-            prev = [(float(a_xy[0]), float(a_xy[1]), a_z, f"point {k}")]; continue
+            prev = [(float(a_xy[0]), float(a_xy[1]), a_z, leg.get("name", f"point {k}"))]; continue     # Suddra: a named point (e.g. the start FOB) is one node for every chain that names it
         if kind_ == "site":
             s = SITE[key]; ep, v = entry_point(s, min(prev, key=lambda q: math.dist((q[0], q[1]), (s["x"], s["y"])))[:2]); a_xy, a_z = ep, s["z"]
         else:
@@ -269,7 +271,7 @@ if getattr(op, "TRUNK", None):
         if kind_ == "site":
             s["entrance_bearing_deg"] = round(math.degrees(math.atan2(v[0], v[1])) % 360); s["entrance_xy"] = [round(float(a_xy[0]), 1), round(float(a_xy[1]), 1)]
             if leg.get("through"):                              # leave by the edge facing the next stop
-                nxt = op.TRUNK[k + 1]["stop"]
+                nxt = TR_[i_ + 1]["stop"]
                 tgt = SITE[nxt[1]] if nxt[0] == "site" else dict(x=towns[nxt[1]]["entry"][0], y=towns[nxt[1]]["entry"][1]) if nxt[0] == "town" else dict(x=nxt[1][0], y=nxt[1][1])
                 e2, v2 = entry_point(s, (tgt["x"], tgt["y"]))
                 if np.allclose(e2, a_xy): e2, v2 = entry_point(s, (tgt["x"], tgt["y"]), rank=1)
@@ -286,11 +288,56 @@ if trunk_stops:
     place_sites(skip=trunk_stops)
     SITE = {s["id"]: s for s in P.sites}
 
+# ---- decision 43 (Suddra): checkpoints are seated astride a road of the net, after the net is built (ASTRIDE in the op file)
+ASTRIDE_MOVES = []
+def seat_astride():
+    from shapely.geometry import Polygon as _Pg, LineString as _LS, Point as _Pt
+    pol_of = lambda x, y, hx, hy, yaw: _Pg(rect(x, y, hx, hy, yaw))
+    H_ = world.H()
+    for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
+        if sid not in getattr(op, "ASTRIDE", ()): continue
+        dx, dy = xy if xy else (R[sid]["x"], R[sid]["y"]); best = None
+        for r in P.roads:
+            X = np.array(r["points"]); Z = np.array(r["points_z"]); n = len(X)
+            for i in range(3, n - 3):
+                d0 = math.dist((dx, dy), X[i])
+                if best and d0 >= best[0]: continue
+                t = X[min(i + 2, n - 1)] - X[max(i - 2, 0)]; yaw = math.degrees(math.atan2(t[0], t[1])) % 180
+                x, y, z = float(X[i, 0]), float(X[i, 1]), float(Z[i]); c_ = rect(x, y, hx, hy, yaw); pol = _Pg(c_)
+                if any(pol.distance(_Pg(rect(o["x"], o["y"], o["hx"], o["hy"], o["yaw"]))) < 17.0 for o in P.sites): continue
+                ax = _LS([(x - (hy + 1) * math.sin(math.radians(yaw)), y - (hy + 1) * math.cos(math.radians(yaw))), (x + (hy + 1) * math.sin(math.radians(yaw)), y + (hy + 1) * math.cos(math.radians(yaw)))])
+                inside = [k for k in range(n) if pol.buffer(1.5).contains(_Pt(X[k]))]
+                if not inside or max(ax.distance(_Pt(X[k])) for k in inside) > 2.0: continue
+                if any(pol.buffer(3.0 + r2.get("width_m", 7.0) / 2).intersects(_LS(r2["points"])) for r2 in P.roads if r2 is not r): continue
+                cg = rect(x, y, hx, hy, yaw, 1.5); pg = _Pg(cg)
+                I_, J_ = np.meshgrid(np.arange(int(cg[:, 0].min() // 5), int(cg[:, 0].max() // 5) + 2), np.arange(int(cg[:, 1].min() // 5), int(cg[:, 1].max() // 5) + 2))
+                m_ = np.array([pg.contains(_Pt(a * 5.0, b * 5.0)) for a, b in zip(I_.ravel(), J_.ravel())])
+                jj, ii = J_.ravel()[m_], I_.ravel()[m_]
+                if np.abs(H_[jj, ii] - z).max() > 4.0 or (H_[jj, ii] <= 0.3).any(): continue
+                best = (d0, r, x, y, yaw, z, float(np.abs(H_[jj, ii] - z).max()), inside, jj, ii)
+        if not best: log.append(f"{sid}: NO SEAT astride any road of the net"); ASTRIDE_MOVES.append(dict(id=sid, status="no seat")); continue
+        d0, r, x, y, yaw, z, ch, inside, jj, ii = best
+        near_ = [k for k in range(len(r["points"])) if pol_of(x, y, hx, hy, yaw).buffer(1.5 + r["width_m"] / 2 + 3.5).contains(_Pt(r["points"][k]))]
+        for k in near_: r["points_z"][k] = round(z, 3)      # every road point whose band reaches the pad (+1.5 m) takes the pad's level
+        r.setdefault("astride", []).append(sid)
+        st = dict(id=sid, name=name, comp=comp, x=round(x, 1), y=round(y, 1), yaw=round(yaw), hx=hx, hy=hy, z=round(z, 3), cut_m=None, fill_m=None, max_change_m=round(ch, 2),
+                  moved_m=round(d0), rough=(dx, dy), size_note=ev, water_ok=False, n_points=int(len(jj)), astride=dict(road=r["id"], axis_offset_m="<= 2.0", angle_deg=0, passage_axis="local y (ASSUMED)"))
+        d_ = R.get(sid, {}); st.update(role=d_.get("role", "squad"), size=d_.get("tier"), stake=d_.get("stake", ""), island=d_.get("island", ""), design_xy=[dx, dy])
+        P.sites.append(st); P.fixed[jj, ii] = round(z, 3); P.owner[jj, ii] = sid
+        Jb, Ib, Zb = P.band_points(r)     # re-count this road's clash with pads at another level (the planner's own band, 5 cm)
+        own_ = P.owner[Jb, Ib]; padpt = np.array([bool(o_) and not str(o_).startswith("R:") for o_ in own_], bool)
+        r["clash_points"] = int((padpt & (np.abs(P.fixed[Jb, Ib] - Zb) > 0.05)).sum()); r["clash_with"] = sorted({str(o_) for o_, b_ in zip(own_, padpt & (np.abs(P.fixed[Jb, Ib] - Zb) > 0.05)) if b_})
+        ASTRIDE_MOVES.append(dict(id=sid, comp=comp, design_xy=[dx, dy], seat=[round(x, 1), round(y, 1)], moved_m=round(d0), road=r["id"], yaw=round(yaw), z=round(z, 2), pad_change_m=round(ch, 2)))
+        log.append(f"{sid}: seated astride {r['id']}, {d0:.0f} m from its design point")
+    globals()["SITE"] = {s_["id"]: s_ for s_ in P.sites}
+
+
 # ---- road nets
 nodes = {}       # net name -> list of (x, y, z, owner)
 LATE = tuple(getattr(op, "LATE_SITES", ()))     # sites seated after the roads, beside them, then joined by a short spur
 for phase in (0, 1):
   if phase == 1:
+    seat_astride()
     if not LATE: break
     place_sites(only=LATE); SITE = {s["id"]: s for s in P.sites}
   for net, order in op.NETS.items():
@@ -360,11 +407,11 @@ for phase in (0, 1):
             out = np.array(ep) + 12.0 * v
             rl = None                   # a road of this op at the join: give it a level landing there first (item 9: no steps)
             if len(nd) > 4:
-                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0, grade=getattr(op, "NET_GRADE", 0.14)) or P.relevel(r_own, nd[5], half=15.0, grade=getattr(op, "NET_GRADE", 0.14))
                 if zl is None: continue
                 rl = (r_own, r_own["points_z"]); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
             t_r = time.time()
-            r = P.route(tuple(out), (nd[0], nd[1]), grade=0.14, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
+            r = P.route(tuple(out), (nd[0], nd[1]), grade=getattr(op, "NET_GRADE", 0.14), width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
             if os.environ.get("PLAN_VERBOSE"):
                 print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {('no path ' + str(getattr(P, 'last_fail', ''))) if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
             def undo():
@@ -421,11 +468,11 @@ for net in getattr(op, "JOIN_PIECES", ()):
         rl = []; okl = True
         for nd in (a, b):
             if len(nd) > 4 and nd[4] in ROADS_BY_ID and not nd[4].startswith("built:"):
-                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0, grade=getattr(op, "NET_GRADE", 0.14)) or P.relevel(r_own, nd[5], half=15.0, grade=getattr(op, "NET_GRADE", 0.14))
                 if zl is None: okl = False; break
                 rl.append((r_own, r_own["points_z"])); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
         if okl:
-            r = P.route((a[0], a[1]), (b[0], b[1]), za=a[2], zb=b[2], name=f"join {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
+            r = P.route((a[0], a[1]), (b[0], b[1]), grade=getattr(op, "NET_GRADE", 0.14), za=a[2], zb=b[2], name=f"join {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
             ok = r is not None and r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= 14.05 and r["clash_points"] == 0 and r["in_water_points"] == 0 and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0
             if ok:
                 P.commit_road(r); ROADS_BY_ID[r["id"]] = r; done = r; break
@@ -460,11 +507,11 @@ for net in getattr(op, "LINK_EXTERNAL", ()):
         rl = []
         for nd in (a, b):
             if len(nd) > 4:
-                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0) or P.relevel(r_own, nd[5], half=15.0)
+                r_own = ROADS_BY_ID[nd[4]]; zl = P.relevel(r_own, nd[5], half=25.0, grade=getattr(op, "NET_GRADE", 0.14)) or P.relevel(r_own, nd[5], half=15.0, grade=getattr(op, "NET_GRADE", 0.14))
                 if zl is None: break
                 rl.append((r_own, r_own["points_z"])); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
         else:
-            r = P.route((a[0], a[1]), (b[0], b[1]), za=a[2], zb=b[2], name=f"link {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
+            r = P.route((a[0], a[1]), (b[0], b[1]), grade=getattr(op, "NET_GRADE", 0.14), za=a[2], zb=b[2], name=f"link {a[3]}-{b[3]}", kind="dirt", links=[a[3], b[3]], margin=1500, own_ids=(a[3], b[3]))
             ok = r is not None and r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= 14.05 and r["clash_points"] == 0 and r["in_water_points"] == 0 and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0
             if ok:
                 P.commit_road(r); ROADS_BY_ID[r["id"]] = r; done = r
@@ -505,7 +552,7 @@ def nearest_dry(xy):
     for t in sorted(road_pts, key=lambda t: math.dist((t[0], t[1]), xy))[:4000:7]:
         if dry(xy, (t[0], t[1])): return t
     return None
-reached_ids = {x for r in P.roads for x in r["links"]}
+reached_ids = {x for r in P.roads for x in list(r["links"]) + r.get("astride", [])}
 for s in P.sites:
     if s["id"] in reached_ids or s.get("water_ok") == "beach" and s["id"] in getattr(op, "BOAT_ONLY", ()): continue
     if s["id"] in reached_ids: continue
@@ -610,6 +657,7 @@ ALLPADS = [(s["id"], polys[s["id"]]) for s in pads] + [(eid, Polygon(rect(e["x"]
 for r in P.roads:
     X = np.array(r["points"])
     for pid, pol in ALLPADS:
+        if pid in r.get("astride", []): continue     # decision 43: the road runs through this checkpoint by design
         if pid in r["links"]:      # the pad a road serves: only the road's own end (its last 25 m) may meet it
             keep = [k for k in range(len(X)) if pol.distance(Point(X[k])) > 25.0 + r["width_m"] / 2]
             if len(keep) < 2: continue
@@ -632,7 +680,8 @@ for net, io in ISL.items():
     for r in P.roads:
         a, b = [EXT_GROUP.get(x, x) for x in r["links"]]     # other ops' and built roads: their own connected groups
         par.setdefault(a, a); par.setdefault(b, b); par[f(a)] = f(b)
-    reached = {x for r in P.roads for x in r["links"]}
+        for x_ in r.get("astride", []): par.setdefault(x_, x_); par[f(x_)] = f(a)
+    reached = {x for r in P.roads for x in list(r["links"]) + r.get("astride", [])}
     want = [x for x in io["roots"] + order if (x in SITE or x in towns) and x in reached]
     comps = collections.defaultdict(list)
     for x in want: comps[f(x)].append(x)
@@ -655,7 +704,7 @@ for line_ in open(os.path.join(world.PACK, "design", "PURPOSE_MAP.md"), encoding
         cells = [c.strip() for c in line_.strip().strip("|").split("|")]
         APPR[cells[0]] = cells[-1]
 veh = [x for x in list(SITE) + list(towns) if "vehicles" in APPR.get(x.split("-N")[0].split("-T")[0], "")]
-veh_missing = [x for x in veh if x not in {y for r in P.roads for y in r["links"]}]
+veh_missing = [x for x in veh if x not in {y for r in P.roads for y in list(r["links"]) + r.get("astride", [])}]
 C["3 roads: one connected net per island"] = dict(status="PASS" if all(len(v["pieces"]) <= 1 for v in conn.values()) and not veh_missing and all(l_["status"] == "road" for l_ in links_out) else "FAIL", nets=conn,
     links_to_existing_net=[{k: v for k, v in l_.items() if k != "best_try"} | ({"best_try": {k: v for k, v in l_["best_try"].items() if k not in ("points", "points_z")}} if "best_try" in l_ else {}) for l_ in links_out],
     vehicle_sites_not_on_the_net=veh_missing,
@@ -683,7 +732,7 @@ C["5 final and mains >= 400 m apart"] = dict(status="PASS" if not md or md[0][0]
 C["6 approaches (two per main, designed)"] = dict(status="SEE NOTES", per_main=getattr(op, "APPROACHES", {}))
 C["7 no rock walls / rock towers as dressing on fought ground"] = dict(status="PASS (none placed by this plan)")
 
-plan = dict(op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+plan = dict(astride_moves=ASTRIDE_MOVES, op=int(N), name=getattr(op, "NAME", ""), frame="map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
             sites=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if not s["id"].startswith("A")],
             squad_positions=[{k: v for k, v in s.items() if not k.startswith("_")} for s in pads if s["id"].startswith("A")],
             towns=[{k: v for k, v in t.items() if k not in ("hull", "houses")} | {"hull": [list(map(lambda q: round(q, 1), p)) for p in t["hull"].exterior.coords]} for t in towns.values()],
