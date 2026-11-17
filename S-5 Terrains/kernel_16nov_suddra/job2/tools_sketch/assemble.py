@@ -10,15 +10,16 @@ N = int(sys.argv[1]); D = json.load(open(f"{sys.argv[2]}/op{N}_plan.json")); SX 
 T = {r["composition"]: r for r in csv.DictReader(open(sys.argv[3]))}
 R = {s["id"]: s for s in world.objectives()["sites"]}
 APP = {3: {"3-F": [297, 243], "3-M1": [253, 188], "3-M2": [273, 235], "3-M3": [220, 256], "3-M4": [315, 72]},
-       4: {"4-F": [215, 269], "4-M1": [150, 336], "4-M2": [190, 309], "4-M3": [214, 238], "4-M4": [250, None]}}[N]
+       4: {"4-F": [215, 269], "4-M1": [91, 336], "4-M2": [190, 309], "4-M3": [214, 238], "4-M4": [250, None]}}[N]
 APP_TXT = {3: {"3-F": ["W along the pipeline road past 3-M2 (297 deg)", "SW past 3-M4 / 3-02 (243 deg)"], "3-M1": ["WSW past 3-12 (253 deg)", "S from 3-F once it falls (188 deg)"],
                "3-M2": ["W from the start (273 deg)", "SW past 3-05 (235 deg)"], "3-M3": ["SW past 3-M1 (220 deg)", "WSW past 3-07 (256 deg)"], "3-M4": ["NW past 3-05 (315 deg)", "E from 3-02 once it falls (72 deg)"]},
-           4: {"4-F": ["SW past 4-04 (215 deg)", "W along the bank from 4-M2 once it falls (269 deg)"], "4-M1": ["SSE past 4-07 (150 deg)", "NNW past 4-09 (336 deg)"],
+           4: {"4-F": ["SW past 4-04 (215 deg)", "W along the bank from 4-M2 once it falls (269 deg)"], "4-M1": ["E along the north bank from the Plank Road causeway, on the road to 4-M3 (91 deg; decision 46)", "NNW past 4-09 (336 deg)"],
                "4-M2": ["SSW past 4-01 to the south gate (190 deg)", "over the 4-06 causeway to the north gate (309 deg)"], "4-M3": ["SSW past 4-11 from the Rail Bridge (214 deg)", "WSW from the 4-06 causeway (238 deg)"],
                "4-M4": ["WSW past 4-05 (250 deg)", "by player boat through the lock once 4-F falls"]}}[N]
 START = {3: (8200, 3600), 4: (2600, 3200)}[N]
 FLOOR = {"squad": (49, 69), "two_squad": (116, 165), "platoon": (159, 312)}
 pads = {s["id"]: s for s in D["sites"]}
+BEARING_OVERRIDE = {"4-M1.3": (330, "HUMAN (decision 45): 6 deg west of the NNW approach, clear of the re-seated checkpoint 4-M1.4")}
 polys = {k: Polygon(rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])) for k, s in pads.items()}
 def brg(a, b): return math.degrees(math.atan2(b[0] - a[0], b[1] - a[1])) % 360
 def mean_bearing(bs):
@@ -35,7 +36,9 @@ for base in sorted({k.split(".")[0] for k in pads}, key=lambda k: (k[2] != "F", 
         elif not p["comp"].startswith("town"): unk = True
         # entrance: the nearest road end to this pad (the planner ends roads 2.5 m off the pad edge, on the edge facing the road)
         ent = None
-        near = min(road_ends, key=lambda e: polys[k].exterior.distance(Point(e[0]))) if road_ends else None
+        if p.get("astride"):     # decision 43: the road runs through this checkpoint's passage
+            ent = dict(x=p["x"], y=p["y"], faces_deg="along the road", sill_step_m=0.0, road_end_m=0.0, astride=dict(road=p["astride"]["road"], axis_offset_m="<= 2.0 (MEASURED when seated)", angle_deg=0, passage_axis="local y (ASSUMED)"), on_gate_axis="the road is the passage axis")
+        near = None if ent else min(road_ends, key=lambda e: polys[k].exterior.distance(Point(e[0]))) if road_ends else None
         if near and polys[k].exterior.distance(Point(near[0])) < 20:
             q = polys[k].exterior.interpolate(polys[k].exterior.project(Point(near[0])))
             ent = dict(x=round(near[0][0], 1), y=round(near[0][1], 1), faces_deg=round(brg((p["x"], p["y"]), near[0])), sill_step_m=round(abs(p["z"] - near[1]), 2),
@@ -48,13 +51,14 @@ for base in sorted({k.split(".")[0] for k in pads}, key=lambda k: (k[2] != "F", 
             elif k == base or math.dist(c0, (p["x"], p["y"])) < 1: b = round(bs[0]); why = "the site's first designed approach"
             else:     # a member faces the designed approach on its own side of the site
                 own = brg(c0, (p["x"], p["y"])); b = round(min(bs, key=lambda x: abs((x - own + 180) % 360 - 180))); why = "the designed approach on this member's side of the site"
+            if k in BEARING_OVERRIDE: b, why = BEARING_OVERRIDE[k]
             mz = p["z"] + 2.0
             prof = [(d, world.z(p["x"] + d * math.sin(math.radians(b)), p["y"] + d * math.cos(math.radians(b)))) for d in range(0, 301, 5)]
             rise = max(z for d, z in prof if d <= 150) - mz
             ln = LineString([(p["x"], p["y"]), (p["x"] + 300 * math.sin(math.radians(b)), p["y"] + 300 * math.cos(math.radians(b)))])
             hit = sorted((Point(p["x"], p["y"]).distance(ln.intersection(pl)), kk) for kk, pl in polys.items() if kk != k and ln.intersects(pl))
             gl.append(dict(guns=guns, bearing=b, approach=why,
-                           clear_m=round(hit[0][0]) if hit else 300, rise_150m_m=round(rise, 2), first_comp_hit=hit[0][1] if hit else None, muzzle="pad + 2.0 m (ASSUMED)", source="AI (bearing)"))
+                           clear_m=round(hit[0][0]) if hit else 300, rise_150m_m=round(rise, 2), first_comp_hit=hit[0][1] if hit else None, muzzle="pad + 2.0 m (ASSUMED)", source="HUMAN (bearing)" if k in BEARING_OVERRIDE else "AI (bearing)"))
             facing_rows.append([k, p["comp"], guns, b, round(rise, 2), hit[0][1] if hit else None])
         mem.append(dict(comp=p["comp"], part="main" if k == base else "member", x=p["x"], y=p["y"], yaw=p["yaw"],
                         pad=dict(hx=p["hx"], hy=p["hy"], z=p["z"], cut_fill_max_m=p.get("max_change_m", p.get("change_m"))),

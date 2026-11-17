@@ -1,0 +1,62 @@
+{
+ "method": [
+  "Cut grid: pads cut first (every 5 m point inside footprint + 1.5 m takes the pad level); then every point within half the road width + 3.5 m of any",
+  "centre line takes the level of the nearest centre-line point (all roads together). Grades are read along each centre line every 1 m, bilinear on that grid.",
+  "Usage: python3 cutgrid_check.py <opN_plan.json (planner)> <out.json>"
+ ],
+ "R1": {
+  "limit": "0 places under 12 m",
+  "places_under_12": 0,
+  "tightest": [
+   "4-M1.3-4-M1",
+   13.9,
+   0
+  ]
+ },
+ "R2": {
+  "limit": "dirt 14 %",
+  "worst": [
+   "4-03-4-M3",
+   13.77
+  ],
+  "over": []
+ },
+ "R3": {
+  "limit": "dirt 14 % over every 10 m",
+  "worst": [
+   "4-03-4-M3",
+   12.35
+  ],
+  "over": []
+ },
+ "R4": {
+  "limit": "dirt 14 % over every 20 m",
+  "worst": [
+   "dam N-4-03",
+   10.5
+  ],
+  "over": []
+ },
+ "R5": {
+  "limit": "0 stacked-leg pairs",
+  "pairs": []
+ },
+ "R6": {
+  "limit": "every junction on a level landing of 20 m or more",
+  "joins": 6,
+  "not_level": []
+ },
+ "R7": {
+  "limit": "straight <= 150 m; cut / fill <= 4 m",
+  "longest_straight": [
+   "causeway N-rail bridge N",
+   111,
+   0.02
+  ],
+  "largest_cut_fill": [
+   "4-03-4-M3",
+   63,
+   0.99
+  ]
+ }
+}

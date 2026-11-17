@@ -34,3 +34,9 @@ APPROACHES = {"4-F Drain Locks": ["SW past 4-04 (215 deg)", "W along the bank fr
               "4-M2 Drain Rail Bridge": ["SSW past 4-01 to the south gate (190 deg)", "over the 4-06 causeway to the north gate (309 deg)"],
               "4-M3 Central Salient": ["SSW past 4-11 from the Rail Bridge (214 deg)", "WSW from the 4-06 causeway (238 deg)"],
               "4-M4 Barge Quay": ["WSW past 4-05 (250 deg)", "by player boat through the lock once 4-F falls"]}
+
+# decision 43: checkpoints are seated astride a road of the net after the net is built
+ASTRIDE = ("4-06", "4-M1.2", "4-M1.4", "4-M2", "4-M2.3")
+
+# route at 13 % so the cut-grid reading (bands of joining roads overlap at junctions) stays under the 14 % rule
+NET_GRADE = 0.13
