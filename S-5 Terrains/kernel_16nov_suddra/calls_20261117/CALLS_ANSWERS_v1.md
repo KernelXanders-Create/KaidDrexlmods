@@ -5,3 +5,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | Call | Part | Due (US Eastern) | Answer | source |
 |---|---|---|---|---|
 | 1 | - | Thu 19 Nov 20:00 | A Packed dirt (vanilla Arma) for every main and dirt road | HUMAN |
+| 2 | - | Thu 19 Nov 20:00 | B Clumped: thick on wet ground and pool rims, thin to bare on the dry floor | HUMAN |
