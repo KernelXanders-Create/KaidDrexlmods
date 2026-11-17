@@ -1,0 +1,46 @@
+{
+ "kit": "K6",
+ "hangar": "sci-fi hangar or shelter piece (3AS / Legion; class to confirm)",
+ "slot": {
+  "width_m": 8.0,
+  "length_m": 20.0,
+  "bed_m": -1.5,
+  "source": "AI (size; must match the hangar piece, NOT MEASURED)"
+ },
+ "bank_m": 2.5,
+ "walkway": {
+  "level_m": 0.5,
+  "width_m": 3.0,
+  "kind": "cut bank (ground)",
+  "side": "east",
+  "source": "HUMAN (walkway); AI (width, side)"
+ },
+ "gps": [
+  {
+   "x": 5.5,
+   "y": 3,
+   "z": 0.5,
+   "static": false
+  },
+  {
+   "x": 5.5,
+   "y": 8,
+   "z": 0.5,
+   "static": false
+  },
+  {
+   "x": 5.5,
+   "y": 13,
+   "z": 0.5,
+   "static": false
+  },
+  {
+   "x": 5.5,
+   "y": 18,
+   "z": 0.5,
+   "static": false
+  }
+ ],
+ "gp_count": 4,
+ "ground_request": "water: a slot 8 x 20 m at -1.5 m cut into a +2.5 m bank, with a 3 m walkway at +0.5 m on one side; cut about 4.0 m at the slot back (inside 4 m only if the bank is +2.5 m)"
+}

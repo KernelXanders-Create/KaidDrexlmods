@@ -94,3 +94,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | no guns | - | - |
 | 9 | Size | sci-fi share 75 % by count (3 of 4 huts); by volume NOT MEASURED; true object count NOT MEASURED | - | - |
 | 10 | Risks and first test | AI between decks over the K3 links (W3, run deck to deck); a real-world hut on a concrete deck may look odd up close | UNSURE | AI |
+
+## K6 Boat pen in a bank
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | a CIS boat shelter: a member of a waterside site, or a squad site with its own guards | - | HUMAN |
+| 2 | Parts | one sci-fi hangar or shelter piece (3AS / Legion, class to confirm) over a water slot; no other objects | UNSURE | HUMAN |
+| 3 | Layout | `kit_K6.png`: slot 8 x 20 m at -1.5 m, open to the water; walkway 3 m wide at +0.5 m on the east side | sizes AI (must match the hangar piece, NOT MEASURED) | AI |
+| 4 | Walkables | the walkway is cut ground, not an object; nothing walked is an object | - | HUMAN |
+| 5 | Garrison points | 4 on the walkway, moving | - | HUMAN (count); AI (positions) |
+| 6 | Ways in | infantry and AI from the land end along the walkway; boats from the water end | - | HUMAN |
+| 7 | Built-for ground | a bank at +2.5 m or higher; a water ground request per use: the slot at -1.5 m and the walkway at +0.5 m. The cut at the slot is 4.0 m from a +2.5 m bank (at the 4 m limit; a higher bank breaks it) | MEASURED from the levels | AI |
+| 8 | Facing | no guns | - | - |
+| 9 | Size | 1 object + ground; 4 GPs; sci-fi share 100 % (one sci-fi piece) | MEASURED by count | - |
+| 10 | Risks and first test | the hangar piece may not stand over water (floor at the bed, or a solid floor that blocks boats): place it in the editor first; boats entering a roofed slot (W2) | UNSURE | AI |
