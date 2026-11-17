@@ -8,3 +8,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 2 | - | Thu 19 Nov 20:00 | B Clumped: thick on wet ground and pool rims, thin to bare on the dry floor | HUMAN |
 | 3 | - | Thu 19 Nov 20:00 | B Medium: about two and a half times today's haze (pilots see none) | HUMAN |
 | 4 | A | Fri 20 Nov | a Add members until each of the 13 short sites meets its floor (pattern: Heavy Gun Position + AA (UD), Small Checkpoint, Small Rectangle FOB); the member list per site follows in the return | HUMAN |
+| 4 | B | Fri 20 Nov | a Raise each of the 24 sites' grades to their content | HUMAN |
