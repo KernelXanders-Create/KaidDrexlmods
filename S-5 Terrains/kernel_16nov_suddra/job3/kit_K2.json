@@ -1,0 +1,703 @@
+{
+ "kit": "K2",
+ "pieces": [
+  {
+   "piece": "K2 pier 10 m",
+   "length_m": 10,
+   "width_m": 4.0,
+   "deck_level_m": 1.7,
+   "boat_step_m": 0.5,
+   "bed_m": -1.5,
+   "parts": [
+    {
+     "part": "deck",
+     "cls": "vanilla concrete pier sections (Land_PierConcrete_01_* family; to confirm)",
+     "tag": "UNSURE",
+     "x0": 0,
+     "x1": 10,
+     "width": 4.0,
+     "z": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "bank ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": -8.0,
+     "x1": 0,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN (K4 way in reused)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 5.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 5.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 10.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 10.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "boat step",
+     "cls": "normal-object platform (to confirm)",
+     "tag": "UNSURE",
+     "x0": 4,
+     "x1": 10,
+     "y0": 2.0,
+     "y1": 5.0,
+     "z": 0.5,
+     "simple": false,
+     "walked": true,
+     "note": "a boat step, not a deck (row K-c)",
+     "source": "HUMAN"
+    },
+    {
+     "part": "step ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": 4,
+     "x1": 10,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "low walls",
+     "cls": "normal-object low wall, about 1 m (to confirm)",
+     "tag": "UNSURE",
+     "along": "both edges and the head end; gap at the boat-step ramp",
+     "simple": false,
+     "source": "HUMAN"
+    }
+   ],
+   "gps": [
+    {
+     "x": 5,
+     "y": -1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    }
+   ],
+   "gp_count": 1,
+   "guns": 0
+  },
+  {
+   "piece": "K2 pier 25 m",
+   "length_m": 25,
+   "width_m": 4.0,
+   "deck_level_m": 1.7,
+   "boat_step_m": 0.5,
+   "bed_m": -1.5,
+   "parts": [
+    {
+     "part": "deck",
+     "cls": "vanilla concrete pier sections (Land_PierConcrete_01_* family; to confirm)",
+     "tag": "UNSURE",
+     "x0": 0,
+     "x1": 25,
+     "width": 4.0,
+     "z": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "bank ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": -8.0,
+     "x1": 0,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN (K4 way in reused)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 6.25,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 6.25,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 12.5,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 12.5,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 18.75,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 18.75,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 25.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 25.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "boat step",
+     "cls": "normal-object platform (to confirm)",
+     "tag": "UNSURE",
+     "x0": 19,
+     "x1": 25,
+     "y0": 2.0,
+     "y1": 5.0,
+     "z": 0.5,
+     "simple": false,
+     "walked": true,
+     "note": "a boat step, not a deck (row K-c)",
+     "source": "HUMAN"
+    },
+    {
+     "part": "step ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": 19,
+     "x1": 25,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "low walls",
+     "cls": "normal-object low wall, about 1 m (to confirm)",
+     "tag": "UNSURE",
+     "along": "both edges and the head end; gap at the boat-step ramp",
+     "simple": false,
+     "source": "HUMAN"
+    }
+   ],
+   "gps": [
+    {
+     "x": 5,
+     "y": -1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    },
+    {
+     "x": 15,
+     "y": 1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    }
+   ],
+   "gp_count": 2,
+   "guns": 0
+  },
+  {
+   "piece": "K2 pier 50 m with turret head",
+   "length_m": 58.0,
+   "width_m": 4.0,
+   "deck_level_m": 1.7,
+   "boat_step_m": 0.5,
+   "bed_m": -1.5,
+   "parts": [
+    {
+     "part": "deck",
+     "cls": "vanilla concrete pier sections (Land_PierConcrete_01_* family; to confirm)",
+     "tag": "UNSURE",
+     "x0": 0,
+     "x1": 50,
+     "width": 4.0,
+     "z": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "bank ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": -8.0,
+     "x1": 0,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN (K4 way in reused)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 0.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 6.25,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 6.25,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 12.5,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 12.5,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 18.75,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 18.75,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 25.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 25.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 31.25,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 31.25,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 37.5,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 37.5,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 43.75,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 43.75,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 50.0,
+     "y": -2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "pillar",
+     "cls": "vanilla concrete or steel pillar (to confirm)",
+     "tag": "UNSURE",
+     "x": 50.0,
+     "y": 2.0,
+     "z_bottom": -1.5,
+     "z_top": 1.7,
+     "simple": true,
+     "walked": false,
+     "source": "HUMAN (K4 pillars); AI (6 m spacing)"
+    },
+    {
+     "part": "widened head",
+     "cls": "vanilla concrete pier sections (to confirm)",
+     "tag": "UNSURE",
+     "x0": 50,
+     "x1": 58.0,
+     "width": 8.0,
+     "z": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "turret",
+     "cls": "CIS Turbolaser Tower with GPs",
+     "x": 54,
+     "y": 0,
+     "z": 1.7,
+     "gps": 30,
+     "objects": 30,
+     "guns": 1,
+     "source": "HUMAN",
+     "tag": "size MEASURED (size table)"
+    },
+    {
+     "part": "boat step",
+     "cls": "normal-object platform (to confirm)",
+     "tag": "UNSURE",
+     "x0": 52.0,
+     "x1": 58.0,
+     "y0": 4.0,
+     "y1": 7.0,
+     "z": 0.5,
+     "simple": false,
+     "walked": true,
+     "note": "a boat step, not a deck (row K-c)",
+     "source": "HUMAN"
+    },
+    {
+     "part": "step ramp",
+     "cls": "Land_RampConcrete_F",
+     "x0": 52.0,
+     "x1": 58.0,
+     "z_from": 0.5,
+     "z_to": 1.7,
+     "simple": false,
+     "walked": true,
+     "source": "HUMAN"
+    },
+    {
+     "part": "low walls",
+     "cls": "normal-object low wall, about 1 m (to confirm)",
+     "tag": "UNSURE",
+     "along": "both edges and the head end; gap at the boat-step ramp",
+     "simple": false,
+     "source": "HUMAN"
+    }
+   ],
+   "gps": [
+    {
+     "x": 5,
+     "y": -1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    },
+    {
+     "x": 15,
+     "y": 1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    },
+    {
+     "x": 25,
+     "y": -1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    },
+    {
+     "x": 35,
+     "y": 1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    },
+    {
+     "x": 45,
+     "y": -1.2,
+     "z": 1.7,
+     "static": false,
+     "source": "AI"
+    }
+   ],
+   "gp_count": 35,
+   "guns": 1
+  }
+ ]
+}
