@@ -1,0 +1,62 @@
+{
+ "kit": "K8",
+ "causeway": [
+  {
+   "name": "truck",
+   "crest_m": 6.0,
+   "clear_m": 3.1,
+   "level_m": 1.0,
+   "fill_m": 2.5,
+   "toe_width_m": 16.0,
+   "side_slope": "1:2 (AI)",
+   "ai_road_line": "centre line on the crest, level +1.0 m; points every 1-4 m given per site",
+   "boats": "cannot pass (no culvert in the kit section; a site may add one)"
+  },
+  {
+   "name": "armour",
+   "crest_m": 12.0,
+   "clear_m": 7.5,
+   "level_m": 1.0,
+   "fill_m": 2.5,
+   "toe_width_m": 22.0,
+   "side_slope": "1:2 (AI)",
+   "ai_road_line": "centre line on the crest, level +1.0 m; points every 1-4 m given per site",
+   "boats": "cannot pass (no culvert in the kit section; a site may add one)"
+  }
+ ],
+ "bridges": [
+  {
+   "name": "3AS bridge",
+   "cls": "3AS bridge piece (class to confirm in the editor)",
+   "tag": "UNSURE",
+   "second_way": "required on any AI route (rule 31)",
+   "clear_m": "3.1 truck / 7.5 armour (deck width NOT MEASURED)",
+   "boat_clearance_m": 3.0,
+   "deck_top_m": 3.5,
+   "deck_thickness_m_assumed": 0.5,
+   "approach_rise_m": 3.0,
+   "approach_length_m_at_10pct": 30.0,
+   "ai_road_line": "centre line over the deck and both approaches, levels every 1-4 m given per site"
+  },
+  {
+   "name": "vanilla / CUP road bridge (fallback)",
+   "cls": "vanilla or CUP road bridge (class to confirm)",
+   "tag": "UNSURE",
+   "second_way": "not required",
+   "clear_m": "3.1 truck / 7.5 armour (deck width NOT MEASURED)",
+   "boat_clearance_m": 3.0,
+   "deck_top_m": 3.5,
+   "deck_thickness_m_assumed": 0.5,
+   "approach_rise_m": 3.0,
+   "approach_length_m_at_10pct": 30.0,
+   "ai_road_line": "centre line over the deck and both approaches, levels every 1-4 m given per site"
+  }
+ ],
+ "dam_crest": {
+  "name": "dam crest",
+  "cls": "CIS Fortress Dam with GPs (library comp)",
+  "clear_m": "7.5 needed on armour routes; crest width NOT MEASURED",
+  "boats": "by a lock channel beside the dam where a site chooses one (op 4: opens on capture)",
+  "ai_road_line": "along the crest; its authored access is kept (rule 22)"
+ }
+}

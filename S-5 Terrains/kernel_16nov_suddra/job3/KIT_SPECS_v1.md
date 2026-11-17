@@ -34,3 +34,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | 50 m: the turret faces out along the pier's axis over open water; its 300 m / 150 m check is per site | NOT MEASURED | AI |
 | 9 | Size | entries in `kit_K2.json`: 11 / 15 / 25 (deck and walls one entry per run; true object counts NOT MEASURED); turret 30 obj, 1 gun (MEASURED) | - | - |
 | 10 | Risks and first test | (1) AI walk on the concrete deck: W3; (2) the boat step at +0.5 m is under the K-c +0.8 m deck minimum: it is a boat step, not a deck; wave swing may wash it (W5); (3) the turret on a pier deck: does it settle on the deck, not the bed? Check in the editor | UNSURE | AI |
+
+## K8 AI crossings: two road bridges, a causeway in two widths, the dam crest
+
+| Crossing | Part | Clear width | Level | Boats | AI road line | Second way | Tag | source |
+|---|---|---|---|---|---|---|---|---|
+| Road bridge 1 | 3AS bridge piece (class to confirm) | 3.1 m truck / 7.5 m armour (deck width NOT MEASURED) | deck top about +3.5 m | 3.0 m clearance under the deck | centre line over the deck and both approaches | required on any AI route (rule 31) | class UNSURE; AI on deck UNSURE (test W4) | HUMAN |
+| Road bridge 2 (fallback) | vanilla or CUP road bridge (class to confirm) | same | same | same | same | not required | UNSURE | HUMAN |
+| Causeway, truck | earth fill, 6 m crest, 16 m toe | 3.1 m | crest +1.0 m (2.5 m of fill from -1.5 m) | cannot pass | centre line on the crest, level +1.0 m | not required | toe MEASURED from the section; side slope 1:2 AI | HUMAN (width, level); AI (slope) |
+| Causeway, armour | earth fill, 12 m crest, 22 m toe | 7.5 m | +1.0 m | cannot pass | same | not required | same | same |
+| Dam crest | CIS Fortress Dam with GPs (library comp) | 7.5 m needed on armour routes; crest width NOT MEASURED | as the comp is built | by a lock channel where a site chooses one | along the crest, authored access kept (rule 22) | not required | NOT MEASURED | HUMAN (Drain picks) |
+
+- **Bridge approaches:** about 3.0 m of climb from a +0.5 m bank to the +3.5 m deck: 30 m at 10 % each end (MEASURED from the levels; 10 % is the main-road limit, a dirt road may use 14 %, about 21 m). Deck thickness 0.5 m is ASSUMED until the piece is measured.
+- **Each causeway is a designed straight** (listed in a site's `ground_requests.designed_straights` with its ends and reason).
+- **Risks and first tests:** W4 (a truck and a tracked vehicle over 1 km of causeway and over each bridge, 5 runs) decides whether the 3AS deck can carry AI; W2 checks that the live boats fit under 3.0 m.
+- Drawing: `kit_K8.png` (causeway cross-sections; bridge side view). Data: `kit_K8.json`.
