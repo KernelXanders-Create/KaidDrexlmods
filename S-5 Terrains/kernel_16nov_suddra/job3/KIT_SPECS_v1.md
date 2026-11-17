@@ -64,3 +64,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | no guns | - | - |
 | 9 | Size | 0 objects, 0 GPs, sci-fi share n/a | MEASURED | - |
 | 10 | Risks and first test | boats may not beach cleanly at 1:6 (W2); the landing is open ground, so its cover comes from the site around it | UNSURE | AI |
+
+## K3 Boardwalk: segment, junction, end ramp
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | foot routes over wet edges and fords, few and only where they matter; links between K4 decks and K2 piers | - | HUMAN |
+| 2 | Parts | same deck as K2: vanilla concrete pier sections (to confirm), 4 m wide, low walls both sides (normal), pillars (simple). Segment 10 m; junction 8 x 8 m (T or X, a 4 m wall gap per arm); end ramp one Land_RampConcrete_F | classes UNSURE | HUMAN (level, width, walls); AI (segment length, junction size) |
+| 3 | Layout | `kit_K3.png` | - | AI |
+| 4 | Walkables | deck, junction, ramps: all NORMAL. Joins K4 and K2 level at +1.7 m, no step | AI walk UNSURE (W3) | HUMAN |
+| 5 | Garrison points | 1 per segment, 2 per junction, moving | AI | AI |
+| 6 | Ways in | an end ramp at each ground end (1.2 m rise from +0.5 m); level joins to decks and piers | - | HUMAN |
+| 7 | Built-for ground | +0.5 m ground at each ramp foot; wet edge or ford below (any depth band down to -1.5 m) | - | HUMAN |
+| 8 | Facing | no guns | - | - |
+| 9 | Size | true object counts NOT MEASURED until piece sizes are read | - | - |
+| 10 | Risks and first test | AI on the deck (W3); a 4 m walled walkway is a straight, visible line across a wet edge, so keep them few | UNSURE | AI |
