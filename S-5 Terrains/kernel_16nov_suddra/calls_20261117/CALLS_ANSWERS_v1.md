@@ -16,3 +16,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 6 | C | Fri 20 Nov | a 3-M1's second approach is south-west past 3-04 (225 deg) | HUMAN |
 | 7 | - | Fri 20 Nov | c Both: undo decision 39 (3-M2 drops its TKTA checkpoint and Small Rectangle FOB) and add to op 4 (the call-4 fixes at 4-M3, 4-02, 4-11, plus the village houses' garrison if the owner rules it counts) | HUMAN |
 | 8 | - | Mon 23 Nov | b A high crater rim (a ground request) with a gap on each gun's bearing (west 270 deg, east 90 deg); the two truck causeways run through the gaps | HUMAN |
+| 9 | - | Mon 23 Nov | c Keep the open pillars; every deck GP is static; moving AI stay in the two yards (24 GPs) | HUMAN |
