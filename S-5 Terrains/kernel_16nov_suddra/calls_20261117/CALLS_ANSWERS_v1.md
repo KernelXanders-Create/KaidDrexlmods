@@ -44,3 +44,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 5A | new op 3 site 2: spot | (15600, 5600) on the K3 sketch: north-east of the gas field, 922 m from 3-09, 1.4 km from 3-M3 | HUMAN |
 | 5A | new op 3 site 1: comps | a CIS Fuel Depot with GPs + a CIS Heavy Gun Position + AA (UD): squad, 110 GPs / 124 obj, 5 guns; stake: fuel for the Works, a burn target (name: working name only) | HUMAN |
 | 5A | new op 3 site 2: comps | a CIS Comms Array with GPs + a CIS Heavy Gun Position + AA (UD): squad, 88 GPs / 90 obj, 5 guns; stake: links the battery's spotters (intel) (name: working name only) | HUMAN |
+| 5A | 5-05 move | 300 m north to (5400, 9700): about 160 m clear of op 4's ground (ASSUMED: AO edge taken as east-west until drop 2), 640 m from 5-M4 (MEASURED on K3 points) | HUMAN |
