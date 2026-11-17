@@ -35,3 +35,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 4A | 3-04, 4-11, 5-03, 6-10 (Small Wall with Bunker, 0 / 5) | + a CIS Small Rectangle FOB with GPs each: 105 GPs / 75 obj, meets the squad floor on both counts | HUMAN |
 | 4A | 4-02, 5-01 (Tukata Turret Bunker, 21 / 8) | + a CIS Small Rectangle FOB with GPs each: 126 GPs / 78 obj, meets the squad floor on both counts | HUMAN |
 | 4A | 5-07, 6-07 (CIS Guard Tower, 20 / 9) | + a CIS Heavy Gun Position + AA (UD) each: 51 GPs / 49 obj, meets the squad floor on GPs; 5 guns to face | HUMAN |
+| 4A | 5-M4 Moss Abbey Ruin (platoon; CIS Outpost, 67 / 78) | + a CIS Landing Position with GPs: 246 GPs / 178 obj, meets the platoon floor on GPs | HUMAN |
