@@ -1,0 +1,15 @@
+{
+ "kit": "K1",
+ "piece": "boat landing, ground-only beach",
+ "objects": 0,
+ "gps": 0,
+ "bed_m": -1.5,
+ "top_m": 0.5,
+ "slope": "1:6 or gentler",
+ "run_m": 12.0,
+ "waterline_from_toe_m": 9.0,
+ "width_m": 12.0,
+ "width_source": "AI suggestion (not reviewed)",
+ "ai_safe": "ground, no objects",
+ "ground_request": "water: grade the bank from -1.5 m to +0.5 m over 12 m at 1:6, width 12 m; depth band boat channel -1.5 m at the toe"
+}

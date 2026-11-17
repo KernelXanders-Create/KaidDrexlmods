@@ -49,3 +49,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 - **Each causeway is a designed straight** (listed in a site's `ground_requests.designed_straights` with its ends and reason).
 - **Risks and first tests:** W4 (a truck and a tracked vehicle over 1 km of causeway and over each bridge, 5 runs) decides whether the 3AS deck can carry AI; W2 checks that the live boats fit under 3.0 m.
 - Drawing: `kit_K8.png` (causeway cross-sections; bridge side view). Data: `kit_K8.json`.
+
+## K1 Boat landing (ground-only beach)
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | the shore points players land on; FOB boats; Refinery landings (op 6) | - | HUMAN (kind) |
+| 2 | Parts | none: graded ground only | - | HUMAN |
+| 3 | Layout | `kit_K1.png`: 12 m run at 1:6 from -1.5 m to +0.5 m; waterline 9 m up from the toe; 12 m wide | run and waterline MEASURED from the levels; width AI | HUMAN / AI |
+| 4 | Walkables | ground only; no simple or normal objects | - | - |
+| 5 | Garrison points | 0 (a site covering a landing brings its own) | - | - |
+| 6 | Ways in | boats beach on the wet slope; infantry walk up 1:6 (about 9.5 deg) | slope MEASURED from 1:6 | - |
+| 7 | Built-for ground | a water ground request at each use: bank graded -1.5 to +0.5 m over 12 m; boat channel at -1.5 m at the toe | - | HUMAN |
+| 8 | Facing | no guns | - | - |
+| 9 | Size | 0 objects, 0 GPs, sci-fi share n/a | MEASURED | - |
+| 10 | Risks and first test | boats may not beach cleanly at 1:6 (W2); the landing is open ground, so its cover comes from the site around it | UNSURE | AI |
