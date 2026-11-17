@@ -46,3 +46,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 5A | new op 3 site 2: comps | a CIS Comms Array with GPs + a CIS Heavy Gun Position + AA (UD): squad, 88 GPs / 90 obj, 5 guns; stake: links the battery's spotters (intel) (name: working name only) | HUMAN |
 | 5A | 5-05 move | 300 m north to (5400, 9700): about 160 m clear of op 4's ground (ASSUMED: AO edge taken as east-west until drop 2), 640 m from 5-M4 (MEASURED on K3 points) | HUMAN |
 | 5B (added) | 5-05 Kettle North Trench (trench on low bog, not in the call list) | breastwork as call 5B: pad raised to +2.5 m (about 1.6-1.9 m of fill on the sketch) | HUMAN |
+| 12 | 6-01 Rim Spoil Galleries: comps replacing the tunnel | a CIS Heavy Gun Position + AA (UD) + a CIS Small Rectangle FOB with GPs, with the CIS Turbolaser Tower kept: 166 GPs / 140 obj, meets the two-squad floor on GPs; 6 guns | HUMAN |
