@@ -37,3 +37,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 4A | 5-07, 6-07 (CIS Guard Tower, 20 / 9) | + a CIS Heavy Gun Position + AA (UD) each: 51 GPs / 49 obj, meets the squad floor on GPs; 5 guns to face | HUMAN |
 | 4A | 5-M4 Moss Abbey Ruin (platoon; CIS Outpost, 67 / 78) | + a CIS Landing Position with GPs: 246 GPs / 178 obj, meets the platoon floor on GPs | HUMAN |
 | 4A | 5-11 Moraine West Post (two-squad; CIS Outpost, 67 / 78) | + a CIS Small Rectangle FOB with GPs: 172 GPs / 148 obj, meets the two-squad floor on GPs | HUMAN |
+| 4A | 4-M3 Central Salient (platoon; CIS Metal Trench Line, 70 / 80, on a +2.5 m breastwork) | + two CIS Basic Trenchlines with GPs + a CIS Small Rectangle FOB with GPs: 227 GPs / 250 obj, meets the platoon floor on GPs | HUMAN |
