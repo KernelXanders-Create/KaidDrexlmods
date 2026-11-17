@@ -13,3 +13,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 5 | B | Fri 20 Nov | a Breastworks: keep 3-10, 4-03 and 4-M3 at their spots, pads raised to +2.5 m (1.5-2.2 m of fill) | HUMAN |
 | 6 | A | Fri 20 Nov | b An armour causeway beside the Danger Dam (7.5 m clear, its own AI road line) as the Rail Bridge's armour second way; the dam stays as built | HUMAN |
 | 6 | B | Fri 20 Nov | a The lock opens only when players open it at the lock, or a Zeus does, at any time (a hand-fired switch); 4-M4's boat assault stays | HUMAN |
+| 6 | C | Fri 20 Nov | a 3-M1's second approach is south-west past 3-04 (225 deg) | HUMAN |
