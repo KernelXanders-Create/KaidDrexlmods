@@ -33,3 +33,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | Call | Item | Answer | source |
 |---|---|---|---|
 | 4A | 3-04, 4-11, 5-03, 6-10 (Small Wall with Bunker, 0 / 5) | + a CIS Small Rectangle FOB with GPs each: 105 GPs / 75 obj, meets the squad floor on both counts | HUMAN |
+| 4A | 4-02, 5-01 (Tukata Turret Bunker, 21 / 8) | + a CIS Small Rectangle FOB with GPs each: 126 GPs / 78 obj, meets the squad floor on both counts | HUMAN |
