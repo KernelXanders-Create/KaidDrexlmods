@@ -82,7 +82,7 @@ class Plan:
         X, Y = np.meshgrid(xs, ys); keep = np.hypot(X - x, Y - y) <= radius
         X = np.round(X[keep] / C) * C; Y = np.round(Y[keep] / C) * C
         I = (X / C).astype(int); J = (Y / C).astype(int)
-        wmask = ndimage.binary_dilation(self.water, iterations=2) if not water_ok else None     # +0.3 m line + 10 m
+        wmask = ndimage.binary_dilation(self.water, iterations=3) if not water_ok else None     # +0.3 m line + 15 m on the grid (2 cells let a footprint edge come to 8 m between grid points)
         for yaw in yaws:
             dj, di = offsets(hx, hy, yaw, 1.5)                   # pad points (footprint + 1.5 m)
             fj, fi = offsets(hx, hy, yaw, 0.0)                   # footprint points (spacing tests)
