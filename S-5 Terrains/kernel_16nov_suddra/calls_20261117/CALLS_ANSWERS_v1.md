@@ -18,3 +18,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 8 | - | Mon 23 Nov | b A high crater rim (a ground request) with a gap on each gun's bearing (west 270 deg, east 90 deg); the two truck causeways run through the gaps | HUMAN |
 | 9 | - | Mon 23 Nov | c Keep the open pillars; every deck GP is static; moving AI stay in the two yards (24 GPs) | HUMAN |
 | 10 | - | Mon 23 Nov | WAITING: Kernel will pick after reading Comedian's story arc (due Sat 21 Nov) | HUMAN |
+| 11 | - | Thu 26 Nov | C Op 6 starts from op 4's FOB by Peat Cutters' Village, as it stands (6.6 km from the Refinery); ops 5 and 6 share a start | HUMAN |
