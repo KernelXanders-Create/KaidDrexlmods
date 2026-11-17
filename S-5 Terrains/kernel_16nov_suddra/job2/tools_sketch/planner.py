@@ -247,6 +247,15 @@ class Plan:
             s2 = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]; L = s2[-1]          # the wave bunches points on curves: space them evenly again
             n = max(2, int(math.ceil(L / 4.5)) + 1); ss = np.linspace(0, L, n)
             P = np.c_[np.interp(ss, s2, P[:, 0]), np.interp(ss, s2, P[:, 1])]
+        # Suddra rule: bend radius >= 12 m. Ease every point whose circle (with its two neighbours) is under 12.5 m toward them; the ends stay put
+        for _ in range(400):
+            A, B, Cc = P[:-2], P[1:-1], P[2:]
+            ab = np.hypot(*(B - A).T); bc = np.hypot(*(Cc - B).T); ca = np.hypot(*(Cc - A).T)
+            cr = np.abs((B[:, 0] - A[:, 0]) * (Cc[:, 1] - A[:, 1]) - (B[:, 1] - A[:, 1]) * (Cc[:, 0] - A[:, 0]))
+            rad = np.where(cr > 1e-9, ab * bc * ca / (2 * cr + 1e-12), 1e9)
+            tight = np.where(rad < 12.5)[0] + 1
+            if not len(tight): break
+            P[tight] = 0.5 * P[tight] + 0.25 * (P[tight - 1] + P[tight + 1])
         gz = np.array([world.z(x, y) for x, y in P])
         # target level per station: the middle of the natural ground over the band points nearest to it (balances cut against fill)
         Rb = width / 2 + 3.5
