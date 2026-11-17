@@ -20,3 +20,11 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 10 | - | Mon 23 Nov | WAITING: Kernel will pick after reading Comedian's story arc (due Sat 21 Nov) | HUMAN |
 | 11 | - | Thu 26 Nov | C Op 6 starts from op 4's FOB by Peat Cutters' Village, as it stands (6.6 km from the Refinery); ops 5 and 6 share a start | HUMAN |
 | 11 | if held | Thu 26 Nov | If op 4's final (the Drain Locks) held on its Sunday, op 6 starts from the ship | HUMAN |
+| 12 | - | Thu 26 Nov | a No tunnels: 5-M2 and 6-01 become above-ground sites from measured comps; 5-M2 keeps its trenchline, FOB and tower members (187 / 200); 6-01's comps follow in the return | HUMAN |
+
+## Follow-ups these answers open (to be chosen by Kernel, then sent)
+- Call 4A: the members for each of the 13 short sites.
+- Call 5A: the two new op 3 supporting sites further east; where 5-05 moves north to.
+- Call 7: the op 4 additions are the call-4 fixes at 4-M3, 4-02 and 4-11; the village houses' garrison waits on the owner's ruling.
+- Call 12: the measured comps for 6-01.
+- Call 10: waits for Comedian's story arc (Sat 21 Nov).
