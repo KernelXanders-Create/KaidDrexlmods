@@ -41,3 +41,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 4A | 6-M1 Rim Bunker Ring (platoon; CIS Metal Trench Line + CIS Turbolaser Tower, 100 / 110) | + a CIS Heavy Gun Position + AA (UD) + a CIS Small Checkpoint with GPs: 170 GPs / 178 obj, meets the platoon floor on GPs; checkpoint astride a road | HUMAN |
 | 4A | 6-06 NE Esker Fort (two-squad; CIS Mini Fortress, 27 / 77) | + a CIS Small Rectangle FOB with GPs: 132 GPs / 147 obj, meets the two-squad floor on GPs | HUMAN |
 | 5A | new op 3 site 1: spot | (14500, 3600) on the K3 sketch: between 3-F (1.6 km) and 3-03 (922 m), on the gas field's east side | HUMAN |
+| 5A | new op 3 site 2: spot | (15600, 5600) on the K3 sketch: north-east of the gas field, 922 m from 3-09, 1.4 km from 3-M3 | HUMAN |
