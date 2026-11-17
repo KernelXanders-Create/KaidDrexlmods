@@ -124,3 +124,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | no guns | - | - |
 | 9 | Size | 4 / 3 objects; 0 GPs; sci-fi share 0 % (vanilla props; counts toward a site's real-world share) | MEASURED by count | - |
 | 10 | Risks and first test | the tanks must be NORMAL objects to burn (simple objects take no damage); a moored hull may sink or sit at the bed: set its height in the editor; wave swing may lift the sea over a low hull (W5) | UNSURE | AI |
+
+## K9 Reed-mound AA nest
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | a member for AA cover over channels (e.g. the Drain; the Refinery's flooded crater) | - | HUMAN (brief) |
+| 2 | Parts | one CIS Heavy Gun Position + AA (UD) on an earth mound; reed and swamp plants around the toe | - | HUMAN |
+| 3 | Layout | `kit_K9.png`: mound top +1.5 m, pad 20 x 20 m, side slopes 1:3, a 6 m ground ramp at 1:6 on one side | pad and slopes AI (footprint NOT MEASURED) | HUMAN (level); AI (rest) |
+| 4 | Walkables | ground only (the mound); the comp keeps its authored floors | - | - |
+| 5 | Garrison points | 31, from the comp | MEASURED (size table) | HUMAN |
+| 6 | Ways in | a graded ground ramp: the 1.0 m rise is over the 0.5 m sill step and under the 1.08 m concrete-ramp band, so the way in is ground at 1:6 (6 m) | MEASURED from the levels | AI |
+| 7 | Built-for ground | swamp at +0.5 m; a pad at +1.5 m (1.0 m of fill, inside 4 m) | - | HUMAN |
+| 8 | Facing | 5 guns face the channel; 300 m clear and no ground above the muzzle within 150 m are checked per site (NOT MEASURED); no reeds or trees on the firing lines | - | AI |
+| 9 | Size | 40 objects + plants; 31 GPs; 5 guns | MEASURED (size table) | - |
+| 10 | Risks and first test | a +1.5 m mound may lose the 150 m check near any rise or bank over about +1.5 m plus the muzzle height; check facing first on placement | UNSURE | AI |

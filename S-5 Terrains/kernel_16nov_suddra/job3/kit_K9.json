@@ -1,0 +1,22 @@
+{
+ "kit": "K9",
+ "comp": "CIS Heavy Gun Position + AA (UD)",
+ "gps": 31,
+ "objects": 40,
+ "guns": 5,
+ "size_source": "MEASURED (size table)",
+ "mound": {
+  "top_m": 1.5,
+  "around_m": 0.5,
+  "fill_m": 1.0,
+  "pad_m": [
+   20.0,
+   20.0
+  ],
+  "pad_source": "AI (comp footprint NOT MEASURED; pad = footprint + 1.5 m)",
+  "side_slope": "1:3 on three sides (AI)",
+  "way_in": "a graded ground ramp at 1:6 on one side, 6 m long (a 1.0 m rise is over the 0.5 m sill step and under the 1.08 m concrete-ramp band, so the way in is ground)"
+ },
+ "reeds": "reed and swamp plants around the toe, not on the pad or the 300 m firing lines",
+ "facing": "per site: guns face the channel; 300 m clear, no ground above the muzzle within 150 m (NOT MEASURED until placed)"
+}
