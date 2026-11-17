@@ -109,3 +109,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | no guns | - | - |
 | 9 | Size | 1 object + ground; 4 GPs; sci-fi share 100 % (one sci-fi piece) | MEASURED by count | - |
 | 10 | Risks and first test | the hangar piece may not stand over water (floor at the bed, or a solid floor that blocks boats): place it in the editor first; boats entering a roofed slot (W2) | UNSURE | AI |
+
+## K7 Fuel barge and beached barge
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | fuel sites and burnable targets (e.g. 3-01 Flare Stack Field, 4-04 Fuel Point, 4-M4 Barge Quay) | - | AI (uses) |
+| 2 | Parts | fuel barge: a vanilla barge or boat wreck hull + 3 vanilla fuel tank props; beached barge: a wreck hull + 2 tanks. Classes to confirm | UNSURE | HUMAN |
+| 3 | Layout | `kit_K7.png`; hull about 24 x 7 m | size AI, NOT MEASURED | AI |
+| 4 | Walkables | none; nothing on a barge is walked | - | HUMAN (brief) |
+| 5 | Garrison points | 0 | - | - |
+| 6 | Ways in | none (targets) | - | - |
+| 7 | Built-for ground | moored: -1.5 m water; beached: a K1 beach or bank | - | AI |
+| 8 | Facing | no guns | - | - |
+| 9 | Size | 4 / 3 objects; 0 GPs; sci-fi share 0 % (vanilla props; counts toward a site's real-world share) | MEASURED by count | - |
+| 10 | Risks and first test | the tanks must be NORMAL objects to burn (simple objects take no damage); a moored hull may sink or sit at the bed: set its height in the editor; wave swing may lift the sea over a low hull (W5) | UNSURE | AI |
