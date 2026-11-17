@@ -7,7 +7,7 @@
 - Forced name changes: four artillery mains take the Burnzy pick; 7-M4 and 8-M1 take the Pcannon checkpoint with a TKTA + gun position (as 4-M2).
 - Moves: 7-02 and 7-07 (were under 400 m from op 6 sites); 8-07, 8-08, 8-10 pulled in so op 8 is not a line along the moraine (spread ratio 0.15 to 0.31). Stake Hamlet re-sited into op 5.
 - Draws: D3 Esker Redoubt as K3's cluster; 7-M2 Rail Junction Yard is op 7's new draw (wrecked-train set piece).
-- Floors: 33 sites use comps not in the size table and stay NOT MEASURED; every measured site meets its floor.
+- Floors (69 sites): 26 meet (MEASURED); 34 use a comp not in the size table and stay NOT MEASURED; 4 air-only; 3 town work; 2 new builds. None is measured under its floor.
 
 **Coverage:** no empty 4 x 4 km square (thinnest A4, 5 sites). Landforms: every K3-named landform has sites by name; whether they stand **on** it waits for the heightmap (C-e NOT MEASURED).
 
