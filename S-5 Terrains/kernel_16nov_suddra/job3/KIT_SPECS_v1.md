@@ -79,3 +79,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | no guns | - | - |
 | 9 | Size | true object counts NOT MEASURED until piece sizes are read | - | - |
 | 10 | Risks and first test | AI on the deck (W3); a 4 m walled walkway is a straight, visible line across a wet edge, so keep them few | UNSURE | AI |
+
+## K5 Stilt hut cluster
+
+| # | Section | Value | Tag | source |
+|---|---|---|---|---|
+| 1 | For | stilt villages as town work; the Peat Cutters' Village pile fringe in week 3 | - | HUMAN |
+| 2 | Parts | 1 large K4 deck with 2 sci-fi huts; 2 small K4 decks with 1 hut each (one sci-fi, one real-world); 2 K3 links of 10 m. Huts: 3 sci-fi prefabs (3AS / Gliese / JM's) + 1 real-world (e.g. a vanilla Tanoa stilt hut); all classes to confirm | UNSURE | HUMAN (build, mix); AI (link length) |
+| 3 | Layout | `kit_K5.png` | - | AI |
+| 4 | Walkables | all decks, links and ramps NORMAL, at +1.7 m; hut floors NORMAL | AI walk UNSURE (W3) | HUMAN |
+| 5 | Garrison points | 26: 12 core + 6 + 6 + 1 per link; moving | count MEASURED from `kit_K5.json`; positions AI | AI |
+| 6 | Ways in | one ramp on the core deck's bank side (K4); a site may add a ramp to a small deck | - | HUMAN (K4) |
+| 7 | Built-for ground | +0.5 m bank at the ramp; -1.5 m bed under all decks | - | HUMAN |
+| 8 | Facing | no guns | - | - |
+| 9 | Size | sci-fi share 75 % by count (3 of 4 huts); by volume NOT MEASURED; true object count NOT MEASURED | - | - |
+| 10 | Risks and first test | AI between decks over the K3 links (W3, run deck to deck); a real-world hut on a concrete deck may look odd up close | UNSURE | AI |
