@@ -17,7 +17,7 @@ for f_ in ("pads_op1", "pads_op2"):
         if p_.get("hx") and p_.get("hy") and p_.get("comp") and p_["comp"] not in BUILT: BUILT[p_["comp"]] = (p_["hx"], p_["hy"], p_.get("site"))
 
 op = importlib.import_module(sys.argv[1]); OUT = sys.argv[2]; os.makedirs(OUT, exist_ok=True)
-N = sys.argv[1].replace("op", "")
+N = sys.argv[1].replace("op", "").rstrip("s")     # op3s -> 3 (the sketch dry-run files)
 D = world.objectives(); R = {s["id"]: s for s in D["sites"]}
 P = planner.Plan(op.BOX)
 for k_, v_ in getattr(op, "PLAN_KW", {}).items(): setattr(P, k_, v_)     # per-op router settings (none change a rule)
