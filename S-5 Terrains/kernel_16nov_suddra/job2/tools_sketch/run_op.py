@@ -744,7 +744,7 @@ ax.legend(handles=[Patch(fc=col["FINAL"], label="final"), Patch(fc=col["MAIN"], 
                    Line2D([], [], color="#00a6d6", lw=4, label="landing shore (boat)"), Line2D([], [], color="r", ls=":", label="moved from the purpose map point"),
                    Line2D([], [], marker="^", color="w", mec="k", ls="", label="entrance (road end)")], loc=getattr(op, "LEGEND_LOC", "lower left"), fontsize=8)
 nfail = sum(1 for v in C.values() if str(v["status"]).startswith("FAIL"))
-ax.set_title(f"Op {N}: {getattr(op, 'NAME', '')} ground plan (Kernel, PROPOSED) over the real ground, build 4 | rules failing: {nfail}", fontsize=13)
+ax.set_title(f"Op {N}: {getattr(op, 'NAME', '')} ground plan (AI draft from your decisions) over the K3 sketch ground (dry run until drop 2), build 4 | rules failing: {nfail}", fontsize=13)
 ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_aspect("equal"); ax.set_xlabel("x east (m)"); ax.set_ylabel("y north (m)")
 fig.savefig(os.path.join(OUT, f"op{N}_plan.png"), dpi=90, bbox_inches="tight"); plt.close(fig)
 print("\n".join(log)); print({k: v["status"] for k, v in C.items()})

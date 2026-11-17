@@ -27,7 +27,7 @@ ASSUMED = {
  "town outline (about 80 buildings)": (125.0, 125.0, "ASSUMED: a 250 x 250 m town outline (Causeway Foot scale)"),
 }
 def size(comp):
-    if comp in KNOWN: return KNOWN[comp][0], KNOWN[comp][1], f"KNOWN (built): your pad of {comp}, {2*KNOWN[comp][0]:.0f} x {2*KNOWN[comp][1]:.0f} m"
+    if comp in KNOWN: return KNOWN[comp][0], KNOWN[comp][1], f"KNOWN (built): your built pad of {comp} on Thirra (11 Nov C pack), {2*KNOWN[comp][0]:.0f} x {2*KNOWN[comp][1]:.0f} m"
     hx, hy, ev = ASSUMED[comp]; return hx, hy, ev
 
 def sites(spec, R):
