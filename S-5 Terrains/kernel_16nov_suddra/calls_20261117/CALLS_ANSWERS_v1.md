@@ -11,3 +11,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 4 | B | Fri 20 Nov | a Raise each of the 24 sites' grades to their content | HUMAN |
 | 5 | A | Fri 20 Nov | b Fold 3-05 and 3-12 into 3-M2 and 3-M1 as gate members, add two new op 3 supporting sites further east (to be chosen), move 5-05 north | HUMAN |
 | 5 | B | Fri 20 Nov | a Breastworks: keep 3-10, 4-03 and 4-M3 at their spots, pads raised to +2.5 m (1.5-2.2 m of fill) | HUMAN |
+| 6 | A | Fri 20 Nov | b An armour causeway beside the Danger Dam (7.5 m clear, its own AI road line) as the Rail Bridge's armour second way; the dam stays as built | HUMAN |
