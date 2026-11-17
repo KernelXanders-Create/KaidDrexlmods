@@ -139,3 +139,18 @@ Built from `DECISIONS.md`. No engine tests were run (no Arma 3 with the live mod
 | 8 | Facing | 5 guns face the channel; 300 m clear and no ground above the muzzle within 150 m are checked per site (NOT MEASURED); no reeds or trees on the firing lines | - | AI |
 | 9 | Size | 40 objects + plants; 31 GPs; 5 guns | MEASURED (size table) | - |
 | 10 | Risks and first test | a +1.5 m mound may lose the 150 m check near any rise or bank over about +1.5 m plus the muzzle height; check facing first on placement | UNSURE | AI |
+
+## K10 Pier checkpoint (two variants)
+
+| # | Section | Causeway variant | Pier variant | Tag | source |
+|---|---|---|---|---|---|
+| 1 | For | a gate on an AI road over water (e.g. the Plank Road causeway, 4-06) | a gate on a foot route over water (piers, boardwalks) | - | HUMAN |
+| 2 | Parts | CIS Small Checkpoint with GPs astride a K8 causeway road | the same comp on a K2 pier section widened to 8 m | - | HUMAN |
+| 3 | Layout | `kit_K10.png` | same | footprint NOT MEASURED | AI |
+| 4 | Walkables | ground (causeway) | the widened deck, NORMAL; the comp on a deck UNSURE (W3) | - | HUMAN |
+| 5 | Garrison points | 39 | 39 | MEASURED (size table) | - |
+| 6 | Ways in | the road runs through the passage within 2 m and 20 deg (rule 18) | the walkway does the same | - | rule |
+| 7 | Built-for ground | causeway crest +1.0 m | pier deck +1.7 m | - | HUMAN |
+| 8 | Facing | no guns | no guns | MEASURED (0 guns) | - |
+| 9 | Size | 28 objects, 39 GPs, sci-fi share as the comp (NOT MEASURED) | 28 objects + the widened section | MEASURED / NOT MEASURED | - |
+| 10 | Risks and first test | the passage must be 3.1 m clear for trucks (7.5 m on armour causeways): NOT MEASURED, check in the editor first | the comp's floor on a deck: W3 | UNSURE | AI |

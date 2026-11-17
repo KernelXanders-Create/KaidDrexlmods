@@ -1,0 +1,28 @@
+{
+ "kit": "K10",
+ "variants": [
+  {
+   "name": "causeway checkpoint",
+   "on": "K8 causeway (truck 6 m or armour 12 m crest) at +1.0 m",
+   "comp": "CIS Small Checkpoint with GPs",
+   "gps": 39,
+   "objects": 28,
+   "guns": 0,
+   "rule18": "road centre line through the passage within 2 m, along its axis within 20 deg",
+   "clear": "3.1 m truck / 7.5 m armour through the passage: NOT MEASURED (passage width of the comp)",
+   "walkable": "ground"
+  },
+  {
+   "name": "pier checkpoint",
+   "on": "K2 pier, a section widened to 8 m at +1.7 m",
+   "comp": "CIS Small Checkpoint with GPs",
+   "gps": 39,
+   "objects": 28,
+   "guns": 0,
+   "rule18": "walkway centre line through the passage within 2 m, along its axis within 20 deg",
+   "clear": "foot only",
+   "walkable": "deck NORMAL; comp on a deck UNSURE (W3)"
+  }
+ ],
+ "size_source": "MEASURED (size table)"
+}
