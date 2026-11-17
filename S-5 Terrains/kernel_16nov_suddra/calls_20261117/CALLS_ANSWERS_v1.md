@@ -14,3 +14,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 6 | A | Fri 20 Nov | b An armour causeway beside the Danger Dam (7.5 m clear, its own AI road line) as the Rail Bridge's armour second way; the dam stays as built | HUMAN |
 | 6 | B | Fri 20 Nov | a The lock opens only when players open it at the lock, or a Zeus does, at any time (a hand-fired switch); 4-M4's boat assault stays | HUMAN |
 | 6 | C | Fri 20 Nov | a 3-M1's second approach is south-west past 3-04 (225 deg) | HUMAN |
+| 7 | - | Fri 20 Nov | c Both: undo decision 39 (3-M2 drops its TKTA checkpoint and Small Rectangle FOB) and add to op 4 (the call-4 fixes at 4-M3, 4-02, 4-11, plus the village houses' garrison if the owner rules it counts) | HUMAN |
