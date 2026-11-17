@@ -15,3 +15,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 6 | B | Fri 20 Nov | a The lock opens only when players open it at the lock, or a Zeus does, at any time (a hand-fired switch); 4-M4's boat assault stays | HUMAN |
 | 6 | C | Fri 20 Nov | a 3-M1's second approach is south-west past 3-04 (225 deg) | HUMAN |
 | 7 | - | Fri 20 Nov | c Both: undo decision 39 (3-M2 drops its TKTA checkpoint and Small Rectangle FOB) and add to op 4 (the call-4 fixes at 4-M3, 4-02, 4-11, plus the village houses' garrison if the owner rules it counts) | HUMAN |
+| 8 | - | Mon 23 Nov | b A high crater rim (a ground request) with a gap on each gun's bearing (west 270 deg, east 90 deg); the two truck causeways run through the gaps | HUMAN |
