@@ -12,3 +12,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 16 | - | Mon 23 Nov 20:00 | C Half-drowned: a patched ruin (the settlers' rotting plant, patched by the droids only where it must run), plus whole old sections sunk and leaning in the water round the working core (dressing only, never walked) | HUMAN |
 | 17 | A | Tue 24 Nov 20:00 | c Rim about +25 m above the water | HUMAN |
 | 17 | B | Tue 24 Nov 20:00 | a Narrow gaps, about 40 m (the causeway plus its verges) | HUMAN |
+| 18 | - | Tue 24 Nov 20:00 | C A Zeus reserve: no new placed GPs; the Zeus brief holds a moving droid reserve for the Refinery (landed by gunship, inside the Zeus share of about 300 AI); the 251 GP bar margin stays at 0 | HUMAN |
