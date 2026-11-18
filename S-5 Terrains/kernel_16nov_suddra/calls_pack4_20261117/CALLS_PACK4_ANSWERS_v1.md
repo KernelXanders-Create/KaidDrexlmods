@@ -11,3 +11,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 15 | B | Mon 23 Nov 20:00 | b Industrial leaks: near the Peat-Gas Works, the Drain Locks and the Refinery's pipes, still 350 m or more from those sites | HUMAN |
 | 16 | - | Mon 23 Nov 20:00 | C Half-drowned: a patched ruin (the settlers' rotting plant, patched by the droids only where it must run), plus whole old sections sunk and leaning in the water round the working core (dressing only, never walked) | HUMAN |
 | 17 | A | Tue 24 Nov 20:00 | c Rim about +25 m above the water | HUMAN |
+| 17 | B | Tue 24 Nov 20:00 | a Narrow gaps, about 40 m (the causeway plus its verges) | HUMAN |
