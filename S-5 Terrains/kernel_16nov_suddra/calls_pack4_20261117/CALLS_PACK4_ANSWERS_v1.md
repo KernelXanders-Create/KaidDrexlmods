@@ -8,3 +8,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 14 | A | after drop 2 (Mon 23 Nov 20:00 or 48 h after the spot) | a Two road gates, as in the draft, moved to where the two roads reach the foot of the mound | HUMAN |
 | 14 | B | after drop 2 | a About 80 buildings, as in the draft, packed onto the mound | HUMAN |
 | 15 | A | Mon 23 Nov 20:00 | b Three toxic zones per op (ops 3-6), as week 1 | HUMAN |
+| 15 | B | Mon 23 Nov 20:00 | b Industrial leaks: near the Peat-Gas Works, the Drain Locks and the Refinery's pipes, still 350 m or more from those sites | HUMAN |
