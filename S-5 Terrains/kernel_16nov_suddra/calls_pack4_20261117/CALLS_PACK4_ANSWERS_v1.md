@@ -13,3 +13,4 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 17 | A | Tue 24 Nov 20:00 | c Rim about +25 m above the water | HUMAN |
 | 17 | B | Tue 24 Nov 20:00 | a Narrow gaps, about 40 m (the causeway plus its verges) | HUMAN |
 | 18 | - | Tue 24 Nov 20:00 | C A Zeus reserve: no new placed GPs; the Zeus brief holds a moving droid reserve for the Refinery (landed by gunship, inside the Zeus share of about 300 AI); the 251 GP bar margin stays at 0 | HUMAN |
+| 19 | - | Tue 24 Nov 20:00 | C Mixed: the tank and the manifold go from players' own fire; the flare stack's fall is a Zeus moment | HUMAN |
