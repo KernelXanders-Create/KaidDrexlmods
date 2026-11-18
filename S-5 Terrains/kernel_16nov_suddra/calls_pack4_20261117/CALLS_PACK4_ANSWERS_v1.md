@@ -16,3 +16,9 @@ Every answer marked HUMAN (chosen by Kernel) or AI (a suggestion Kernel did not 
 | 19 | - | Tue 24 Nov 20:00 | C Mixed: the tank and the manifold go from players' own fire; the flare stack's fall is a Zeus moment | HUMAN |
 | 20 | - | Tue 24 Nov 20:00 (proposal; Comedian confirms by Wed 2 Dec) | B The guns: if the Refinery fell, the Citadel's gun decks on the lowest terrace and its AA stand cold and unmanned in op 8 | HUMAN |
 | 21 | - | Tue 24 Nov 20:00 | B All the way: a pipeline on trestles across the bog to the moraine, as map objects in a weekly terrain update (owner-approved build), bending so it never becomes a straight lane, clear of every op 5-8 site | HUMAN |
+| 22 | - | 24 h after the shots | B Small flares on the stacks, plus burning gas vents at the waterline round the crater (picked before the shots; can be changed once the shots arrive) | HUMAN |
+
+## Notes
+- Call 14 was answered before Comedian's Mound camp spot arrived; it applies to whichever spot Comedian picks.
+- Call 22 was answered before the shots exist; Kernel may change it when the shots arrive.
+- Call 20 is a proposal to Comedian, who confirms or changes it by Wed 2 Dec.
