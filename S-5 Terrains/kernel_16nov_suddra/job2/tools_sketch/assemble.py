@@ -9,17 +9,17 @@ from planner import rect
 N = int(sys.argv[1]); D = json.load(open(f"{sys.argv[2]}/op{N}_plan.json")); SX = json.load(open(f"{sys.argv[2]}/op{N}_plan_suddra.json"))
 T = {r["composition"]: r for r in csv.DictReader(open(sys.argv[3]))}
 R = {s["id"]: s for s in world.objectives()["sites"]}
-APP = {3: {"3-F": [297, 243], "3-M1": [253, 188], "3-M2": [273, 235], "3-M3": [220, 256], "3-M4": [315, 72]},
+APP = {3: {"3-F": [297, 243], "3-M1": [253, 225], "3-M2": [273, 235], "3-M3": [220, 256], "3-M4": [315, 72]},
        4: {"4-F": [215, 269], "4-M1": [91, 336], "4-M2": [190, 309], "4-M3": [214, 238], "4-M4": [250, None]}}[N]
-APP_TXT = {3: {"3-F": ["W along the pipeline road past 3-M2 (297 deg)", "SW past 3-M4 / 3-02 (243 deg)"], "3-M1": ["WSW past 3-12 (253 deg)", "S from 3-F once it falls (188 deg)"],
-               "3-M2": ["W from the start (273 deg)", "SW past 3-05 (235 deg)"], "3-M3": ["SW past 3-M1 (220 deg)", "WSW past 3-07 (256 deg)"], "3-M4": ["NW past 3-05 (315 deg)", "E from 3-02 once it falls (72 deg)"]},
+APP_TXT = {3: {"3-F": ["W along the pipeline road past 3-M2 (297 deg)", "SW past 3-M4 / 3-02 (243 deg)"], "3-M1": ["WSW along the entry road (253 deg)", "SW past 3-04 (225 deg; call 6C)"],
+               "3-M2": ["W from the start (273 deg)", "SW along the pipeline (235 deg)"], "3-M3": ["SW past 3-M1 (220 deg)", "WSW past 3-07 (256 deg)"], "3-M4": ["NW along the pipeline road (315 deg)", "E from 3-02 once it falls (72 deg)"]},
            4: {"4-F": ["SW past 4-04 (215 deg)", "W along the bank from 4-M2 once it falls (269 deg)"], "4-M1": ["E along the north bank from the Plank Road causeway, on the road to 4-M3 (91 deg; decision 46)", "NNW past 4-09 (336 deg)"],
                "4-M2": ["SSW past 4-01 to the south gate (190 deg)", "over the 4-06 causeway to the north gate (309 deg)"], "4-M3": ["SSW past 4-11 from the Rail Bridge (214 deg)", "WSW from the 4-06 causeway (238 deg)"],
                "4-M4": ["WSW past 4-05 (250 deg)", "by player boat through the lock once 4-F falls"]}}[N]
 START = {3: (8200, 3600), 4: (2600, 3200)}[N]
 FLOOR = {"squad": (49, 69), "two_squad": (116, 165), "platoon": (159, 312)}
 pads = {s["id"]: s for s in D["sites"]}
-BEARING_OVERRIDE = {"4-M1.3": (330, "HUMAN (decision 45): 6 deg west of the NNW approach, clear of the re-seated checkpoint 4-M1.4")}
+BEARING_OVERRIDE = {"4-M1.3": (330, "HUMAN (decision 45): 6 deg west of the NNW approach, clear of the re-seated checkpoint 4-M1.4"), "3-M1.3": (200, "HUMAN (decision 48): south toward 3-F's side, clear of the fort")}
 polys = {k: Polygon(rect(s["x"], s["y"], s["hx"], s["hy"], s["yaw"])) for k, s in pads.items()}
 def brg(a, b): return math.degrees(math.atan2(b[0] - a[0], b[1] - a[1])) % 360
 def mean_bearing(bs):
@@ -65,8 +65,8 @@ for base in sorted({k.split(".")[0] for k in pads}, key=lambda k: (k[2] != "F", 
                         gps=int(t["garrison_points"]) if t else None, objects=int(t["objects"]) if t else None, size_from="measured_table" if t else "ESTIMATE (not in the size table)",
                         pad_size_from=p.get("size_note", ""), built_for="NOT MEASURED (per comp)", guns=gl, entrance=ent))
     if base == "4-F":     # the CIS Fortress Dam is the crossing itself, not a pad here
-        mem.insert(0, dict(comp="CIS Fortress Dam with GPs", part="main", x=10393, y=7230, yaw=0, pad="the dam spans the Drain (see crossings)", gps=None, objects=None,
-                           size_from="ESTIMATE (not in the size table)", guns=[], entrance=None)); unk = True
+        mem.insert(0, dict(comp="Danger Dam (owner's pick, placed as built)", part="main", x=10393, y=7230, yaw=0, pad="the dam spans the Drain (see crossings)", gps=None, objects=None,
+                           size_from="their count (the dam is not in the size table here)", guns=[], entrance=None)); unk = True
         mem[1]["part"] = "member"
     tier = s0.get("tier"); fl = FLOOR.get(tier, (0, 0))
     floor = "gps" if g >= fl[0] else "objects" if o >= fl[1] else ("NOT MEASURED" if unk else "NO")
@@ -98,7 +98,7 @@ plan = dict(op=N, concept="A", name=D["name"], ground="K3 A sketch (16 m cells r
             sites=sites, roads=[dict(id=r["id"], kind="dirt", width_m=7, links=r["links"], length_m=r.get("length_m"), raised_to_0_5=r.get("raised_to_0_5", False),
                                      points=[[round(x, 1), round(y, 1), round(z, 2)] for (x, y), z in zip(r["points"], r["points_z"])]) for r in D["roads"]],
             crossings=[], ground_requests=dict(pads=[dict(site=k, x=v["x"], y=v["y"], hx=v["hx"], hy=v["hy"], yaw=v["yaw"], z=v["z"]) for k, v in pads.items()], water=[], designed_straights=[]),
-            reserves=res, towns=[], garrison_total={3: 770, 4: 885}[N], garrison_note="K3 per-site plan (+30 village for op 4); members added since are not in it (ASSUMED)",
+            reserves=res, towns=[], garrison_total={3: 770, 4: 885}[N], garrison_note="K3 per-site plan; members added since are not in it (ASSUMED); the owner ruled the village houses' garrison does not count toward op 4's size",
             alive_split_proposal=dict(garrison_cap=700, director=200, zeus=300), checks_planner=json.load(open(f"{sys.argv[2]}/op{N}_checks.json")), checks_suddra=SX)
 json.dump(plan, open(sys.argv[4], "w"), indent=1)
 print("sites", len(sites), "reserves", sum(1 for r in res if "x" in r), "/", len(res)); print("facing (pad, comp, guns, bearing, rise in 150 m, first comp hit):")

@@ -75,7 +75,7 @@ class Plan:
         self.chaikin = 3
 
     # ----------------------------------------------------------------- pads
-    def search(self, x, y, hx, hy, radius, step=10.0, yaws=range(0, 180, 15), water_ok=False, cap=3.6, prefer_low=True, avoid=(), pull=None):
+    def search(self, x, y, hx, hy, radius, step=10.0, yaws=range(0, 180, 15), water_ok=False, cap=3.6, prefer_low=True, avoid=(), pull=None, z_floor=None):
         """best pad near (x, y): smallest score = distance + 60 m per metre of ground change over 2 m; all hard rules met"""
         H = self.H; best = None
         xs = np.arange(x - radius, x + radius + 1e-6, step); ys = np.arange(y - radius, y + radius + 1e-6, step)
@@ -91,6 +91,8 @@ class Plan:
             hz = H[JJ, II]
             lo, hi = hz.min(1), hz.max(1)
             lvl = (lo + hi) / 2; ch = (hi - lo) / 2
+            if z_floor is not None:     # Suddra call 5B: a breastwork pad is raised to at least z_floor (fill)
+                lvl = np.maximum(lvl, z_floor); ch = np.maximum(hi - lvl, lvl - lo)
             ok &= ch <= cap
             ok &= ~self.block[J[:, None] + fj[None, :], I[:, None] + fi[None, :]].any(1)
             if not water_ok:
