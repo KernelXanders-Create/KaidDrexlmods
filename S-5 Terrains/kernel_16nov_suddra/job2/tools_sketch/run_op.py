@@ -297,7 +297,9 @@ def seat_astride():
     for sid, name, comp, hx, hy, ev, xy, rad, wmode in op.SITES:
         if sid not in getattr(op, "ASTRIDE", ()): continue
         dx, dy = xy if xy else (R[sid]["x"], R[sid]["y"]); best = None
+        hint_ = getattr(op, "ASTRIDE_ROAD", {}).get(sid)      # a gate may be held to the road it guards (a substring of that road's id)
         for r in P.roads:
+            if hint_ and hint_ not in r["id"]: continue
             X = np.array(r["points"]); Z = np.array(r["points_z"]); n = len(X)
             for i in range(3, n - 3):
                 d0 = math.dist((dx, dy), X[i])
@@ -307,21 +309,24 @@ def seat_astride():
                 if any(pol.distance(_Pg(rect(o["x"], o["y"], o["hx"], o["hy"], o["yaw"]))) < 17.0 for o in P.sites): continue
                 ax = _LS([(x - (hy + 1) * math.sin(math.radians(yaw)), y - (hy + 1) * math.cos(math.radians(yaw))), (x + (hy + 1) * math.sin(math.radians(yaw)), y + (hy + 1) * math.cos(math.radians(yaw)))])
                 inside = [k for k in range(n) if pol.buffer(1.5).contains(_Pt(X[k]))]
-                if not inside or max(ax.distance(_Pt(X[k])) for k in inside) > 2.0: continue
+                if not inside: continue
+                # rule S12: the road runs through the passage (the pad centre is a road point, so 0 m off) and along its axis within 20 deg
+                angs = [abs(((math.degrees(math.atan2(*(X[k + 1] - X[k]))) % 180) - yaw + 90) % 180 - 90) for k in inside if k + 1 < n]
+                if not angs or max(angs) > 20.0: continue
                 if any(pol.buffer(3.0 + r2.get("width_m", 7.0) / 2).intersects(_LS(r2["points"])) for r2 in P.roads if r2 is not r): continue
                 cg = rect(x, y, hx, hy, yaw, 1.5); pg = _Pg(cg)
                 I_, J_ = np.meshgrid(np.arange(int(cg[:, 0].min() // 5), int(cg[:, 0].max() // 5) + 2), np.arange(int(cg[:, 1].min() // 5), int(cg[:, 1].max() // 5) + 2))
                 m_ = np.array([pg.contains(_Pt(a * 5.0, b * 5.0)) for a, b in zip(I_.ravel(), J_.ravel())])
                 jj, ii = J_.ravel()[m_], I_.ravel()[m_]
                 if np.abs(H_[jj, ii] - z).max() > 4.0 or (H_[jj, ii] <= 0.3).any(): continue
-                best = (d0, r, x, y, yaw, z, float(np.abs(H_[jj, ii] - z).max()), inside, jj, ii)
+                best = (d0, r, x, y, yaw, z, float(np.abs(H_[jj, ii] - z).max()), inside, jj, ii, angs)
         if not best: log.append(f"{sid}: NO SEAT astride any road of the net"); ASTRIDE_MOVES.append(dict(id=sid, status="no seat")); continue
-        d0, r, x, y, yaw, z, ch, inside, jj, ii = best
+        d0, r, x, y, yaw, z, ch, inside, jj, ii, angs_best = best
         near_ = [k for k in range(len(r["points"])) if pol_of(x, y, hx, hy, yaw).buffer(1.5 + r["width_m"] / 2 + 3.5).contains(_Pt(r["points"][k]))]
         for k in near_: r["points_z"][k] = round(z, 3)      # every road point whose band reaches the pad (+1.5 m) takes the pad's level
         r.setdefault("astride", []).append(sid)
         st = dict(id=sid, name=name, comp=comp, x=round(x, 1), y=round(y, 1), yaw=round(yaw), hx=hx, hy=hy, z=round(z, 3), cut_m=None, fill_m=None, max_change_m=round(ch, 2),
-                  moved_m=round(d0), rough=(dx, dy), size_note=ev, water_ok=False, n_points=int(len(jj)), astride=dict(road=r["id"], axis_offset_m="<= 2.0", angle_deg=0, passage_axis="local y (ASSUMED)"))
+                  moved_m=round(d0), rough=(dx, dy), size_note=ev, water_ok=False, n_points=int(len(jj)), astride=dict(road=r["id"], axis_offset_m=0.0, max_angle_deg=round(max(angs_best), 1), passage_axis="local y (ASSUMED)"))
         d_ = R.get(sid, {}); st.update(role=d_.get("role", "squad"), size=d_.get("tier"), stake=d_.get("stake", ""), island=d_.get("island", ""), design_xy=[dx, dy])
         P.sites.append(st); P.fixed[jj, ii] = round(z, 3); P.owner[jj, ii] = sid
         Jb, Ib, Zb = P.band_points(r)     # re-count this road's clash with pads at another level (the planner's own band, 5 cm)
