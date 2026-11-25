@@ -164,6 +164,7 @@ class Plan:
         """route; where the smoothed road breaks the 4 m cut / fill (smoothing shortens a climb, so the ground gets ahead of a road held to the grade),
         try again with lighter corner smoothing (1 and 2 Chaikin passes): the road then keeps closer to the searched line"""
         self._avoid = None; keep = self.chaikin; best = None
+        margin = max(margin, getattr(self, "min_margin", 0))      # Suddra drop 2: dry roads wind far round the water
         for ch in [keep] + [c for c in (1, 2) if c != keep]:
             self.chaikin = ch
             r = self._route_once(a, b, grade, width, za, zb, name, kind, links, margin, cell, steep, pre, post, own_ids)
@@ -188,7 +189,8 @@ class Plan:
         padonly = np.vectorize(lambda o: bool(o) and not o.startswith("R:"))(own)
         band = int(math.ceil((width / 2 + 3.5 + ROAD_CLEAR) / C))
         wband = int(math.ceil((width / 2 + 3.5 + 1.0) / C))                 # the whole band stays on dry ground
-        bad = ndimage.binary_dilation(water, iterations=max(2, wband)) | ndimage.binary_dilation(padonly, iterations=band)
+        wit = getattr(self, "water_band_cells", None)          # Suddra drop 2: levee roads may keep a narrower dry band (None = the sketch rule)
+        bad = (ndimage.binary_dilation(water, iterations=wit) if wit else water.copy() if wit == 0 else ndimage.binary_dilation(water, iterations=max(2, wband))) | ndimage.binary_dilation(padonly, iterations=band)
         Hf = ndimage.gaussian_filter(H[j0:j1 + 1, i0:i1 + 1], 1.0); gy_, gx_ = np.gradient(Hf, C)
         sl_ = np.hypot(gx_, gy_)
         bad |= sl_ > self.cross_max                                 # side slope: the 7 m band would cut / fill too much

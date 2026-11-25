@@ -23,3 +23,7 @@ for t in op3s.SITES:
     xy = MOVES.get(sid, _POS.get(sid, xy))
     _out.append((sid, name, comp, hx, hy, ev, xy, 60, wm))
 SITES = _out
+
+# ground check v1 finding 16 (HUMAN): roads on dry ground only; dry roads wind far round the water, so search the whole map
+BOX = (0, 15995, 0, 15995)
+ROUTE_MARGIN = 6000

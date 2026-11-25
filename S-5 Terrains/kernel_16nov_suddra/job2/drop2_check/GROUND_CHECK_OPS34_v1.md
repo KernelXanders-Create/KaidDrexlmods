@@ -49,3 +49,4 @@ Ground: `suddra_height_cm.npz` and `suddra_masks.npz` (drop 2, 24 Nov). "Good gr
 
 ## Not checked yet (NOT MEASURED until the planner re-runs on the drop 2 ground with these moves)
 Roads (routes, grades, bend radii, +0.5 m), gun fire lanes (300 m clear, no ground above the muzzle within 150 m), checkpoints astride their roads, mains / finals 400 m apart, grade floors after the 3-F swap, entrances. The lane is also building the real ops 3-4 seats from sketch v3; this list is what Kernel wants changed in them.
+| 16 | Roads on the real ground: dry-only shortest paths run long (1-F to 3-M1 16.7 km vs 5.5 km straight; 4-04 to 4-M2 10.1 vs 1.7; 4-M3 to 4-M1 20.5 vs 4.1; 4-04 to 4-F none); with wade causeways 7.7 / 7.1 / 11.4 km and 4-F 8.8 km | a: dry ground only; roads follow the existing islands and levees, no new causeways | 4-F is reached once its dam pad (finding 4) is built | HUMAN |

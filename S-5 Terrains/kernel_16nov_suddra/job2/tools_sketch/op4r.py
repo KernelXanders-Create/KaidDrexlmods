@@ -16,3 +16,7 @@ MOVES = {
  "4-04.2": (9664.0, 5904.0),                                  # f15
 }
 SITES = [(sid, name, comp, hx, hy, ev, MOVES.get(sid, _POS.get(sid, xy)), 60, wm) for sid, name, comp, hx, hy, ev, xy, rad, wm in op4s.SITES]
+
+# ground check v1 finding 16 (HUMAN): roads on dry ground only; dry roads wind far round the water, so search the whole map
+BOX = (0, 15995, 0, 15995)
+ROUTE_MARGIN = 6000
