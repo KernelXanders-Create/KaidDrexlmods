@@ -5,3 +5,6 @@ WIDE = {"4-F", "4-M1.5", "4-02.2", "4-07"}       # decisions 3-4 (HUMAN): search
 FIX = {"4-M2": (8522.9, 7779.1)}                  # decision 5 (HUMAN): keep the north seat on the rail bridge N road
 SITES = [(sid, n, c, hx, hy, ev, FIX.get(sid, xy), 125 if sid in WIDE else rad, wm) for sid, n, c, hx, hy, ev, xy, rad, wm in op4r.SITES]
 ASTRIDE_ROAD = dict(getattr(op4s, "ASTRIDE_ROAD", {}), **{"4-M2": "rail bridge N"})
+
+# re-run v2 decision 1 (HUMAN): the planner ramps the flattened stretch at an astride seat back to the road (applied to op 4 as well, AI)
+ASTRIDE_RAMP_PCT = 12.0

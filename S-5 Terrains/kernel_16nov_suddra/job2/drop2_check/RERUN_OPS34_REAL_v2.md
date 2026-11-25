@@ -34,3 +34,5 @@ Any fill placed before the run can miss like this whenever the seat moves.
 
 | # | Question | Answer | source |
 |---|---|---|---|
+| 1 | Trunk step 19.4 % at the 3-M1.2 seat | c Both: pin 3-M1.2 at (13838, 5447) with the fills rebuilt round it, and the planner ramps the flattened stretch back to the road at ≤ 14 % | HUMAN |
+| 2 | 3-03 and 3-10.3 still with no spot after the 300 m search | a Ground requests: fill under each pad at its current point | HUMAN |

@@ -325,6 +325,14 @@ def seat_astride():
         d0, r, x, y, yaw, z, ch, inside, jj, ii, angs_best = best
         near_ = [k for k in range(len(r["points"])) if pol_of(x, y, hx, hy, yaw).buffer(1.5 + r["width_m"] / 2 + 3.5).contains(_Pt(r["points"][k]))]
         for k in near_: r["points_z"][k] = round(z, 3)      # every road point whose band reaches the pad (+1.5 m) takes the pad's level
+        if near_ and getattr(op, "ASTRIDE_RAMP_PCT", None):     # re-run v2 decision 1 (HUMAN): ramp the flattened stretch back to the road's own profile
+            g_ = op.ASTRIDE_RAMP_PCT / 100.0; Pz = r["points_z"]; Px = r["points"]
+            for k0, step_ in ((max(near_), 1), (min(near_), -1)):
+                k = k0 + step_
+                while 0 <= k < len(Pz):
+                    ds_ = math.dist(Px[k], Px[k - step_]); lo_, hi_ = Pz[k - step_] - g_ * ds_, Pz[k - step_] + g_ * ds_
+                    if lo_ <= Pz[k] <= hi_: break
+                    Pz[k] = round(min(max(Pz[k], lo_), hi_), 3); k += step_
         r.setdefault("astride", []).append(sid)
         st = dict(id=sid, name=name, comp=comp, x=round(x, 1), y=round(y, 1), yaw=round(yaw), hx=hx, hy=hy, z=round(z, 3), cut_m=None, fill_m=None, max_change_m=round(ch, 2),
                   moved_m=round(d0), rough=(dx, dy), size_note=ev, water_ok=False, n_points=int(len(jj)), astride=dict(road=r["id"], axis_offset_m=0.0, max_angle_deg=round(max(angs_best), 1), passage_axis="local y (ASSUMED)"))
