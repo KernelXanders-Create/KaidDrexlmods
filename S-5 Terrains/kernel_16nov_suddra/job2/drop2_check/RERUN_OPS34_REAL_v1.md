@@ -47,3 +47,18 @@ Before the next run, Kernel decides the questions below, one at a time.
 
 | # | Question | Answer | source |
 |---|---|---|---|
+| 1 | Roads on wet ground | a Keep dry only. Keep the long routes; sites with no route become foot / boat / air links | HUMAN |
+| 2 | Trunk 1-F → 3-M1 at 16.7 % at (13824, 5436) | a Ground request: ease that slope with a small cut / fill | HUMAN |
+| 3 | 8 pads with no spot in 144 m (3-03, 3-04.2, 3-10.2, 3-10.3, 4-F, 4-M1.5, 4-02.2, 4-07) | b Wider search for these 8 | HUMAN |
+| 4 | Wider search radius | a 300 m from the current point | HUMAN |
+| 5 | 4-M2 seated 857 m away on the north bank | a Keep the north seat at (8523, 7779) | HUMAN |
+| 6 | 4 pads within 10 m of the +0.3 m line (3-M1.2 1.8 m, 4-06 1.4 m, 4-M2 4.2 m, 4-M2.3 5.7 m) | a Ground requests: raise the water side so each edge is 10 m clear | HUMAN |
+| 7 | 3-M2, 3-04, 3-10; op 4 north 4-M1, 4-M1.3, 4-09, 4-03 ×3, 4-08; south 4-M2.2, 4-05; the dam / causeway / rail bridge S ends | Follows from decision 1: foot / boat / air links, no road | AI |
+| 8 | 4-M1.2, 4-M1.4 (no seat, because their roads were not built) | Follows from decision 1: stay at their design points | AI |
+
+## Next run
+
+- Pad search radius 300 m for the 8 sites in decision 3.
+- Slope fill at (13824, 5436) on the trunk (decision 2). Its size is ASSUMED until measured.
+- Shore fills for the 4 pads in decision 6 (sizes ASSUMED).
+- 4-M2 is fixed at its north seat (decision 5).
