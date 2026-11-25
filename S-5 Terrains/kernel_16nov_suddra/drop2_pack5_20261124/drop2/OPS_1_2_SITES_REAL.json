@@ -1,0 +1,1847 @@
+{
+ "what": "Ops 1-2 sites as built and played on Sun 22 Nov 2026. x, y in metres, Arma frame (x east, y north, origin south-west, 16384 m). Member x, y = placed position of the comp (site book), yaw in degrees. Marker positions are cross-checked against the shipped mission files (cross_check). 1-M2 and 1-12 also stood in the op 2 mission (also_in_op2_mission).",
+ "sites": [
+  {
+   "op": 1,
+   "site_id": "1-F",
+   "map_label": "Dregat Redoubt",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Wirefield Redoubt",
+   "role": "FINAL",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 8230.0,
+   "marker_y": 3590.0,
+   "square": "C1",
+   "ground_h_at_marker_m": 0.96,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-F#0",
+     "role": "main",
+     "comp": "CIS Mini Fortress with GPs",
+     "x": 8230.0,
+     "y": 3590.0,
+     "yaw_deg": 22.0,
+     "garrison_points_lib": 27,
+     "objects_lib": 77
+    },
+    {
+     "member_id": "1-F#1",
+     "role": "member",
+     "comp": "CIS Metal Trench Line with GPs",
+     "x": 8183.0,
+     "y": 3437.0,
+     "yaw_deg": 81.0,
+     "garrison_points_lib": 70,
+     "objects_lib": 80
+    },
+    {
+     "member_id": "1-F#2",
+     "role": "member",
+     "comp": "CIS Small Checkpoint with GPs",
+     "x": 8032.0,
+     "y": 3370.6,
+     "yaw_deg": 282.8,
+     "garrison_points_lib": 39,
+     "objects_lib": 28
+    },
+    {
+     "member_id": "1-F#3",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 8295.0,
+     "y": 3430.0,
+     "yaw_deg": 7.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    },
+    {
+     "member_id": "1-F#4",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 8365.0,
+     "y": 3640.0,
+     "yaw_deg": 41.8,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     8230.0,
+     3590.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-M1",
+   "map_label": "Tobek Hill",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Pillbox Line",
+   "role": "MAIN",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 6600,
+   "marker_y": 2900,
+   "square": "B1",
+   "ground_h_at_marker_m": 4.4,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-M1#0",
+     "role": "main",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 6600.0,
+     "y": 2900.0,
+     "yaw_deg": 119.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "1-M1#1",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 6676.3,
+     "y": 2938.8,
+     "yaw_deg": 341.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    },
+    {
+     "member_id": "1-M1#2",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 6534.8,
+     "y": 2844.5,
+     "yaw_deg": 341.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    },
+    {
+     "member_id": "1-M1#3",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 6675.9,
+     "y": 2840.1,
+     "yaw_deg": 325.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    },
+    {
+     "member_id": "1-M1#4",
+     "role": "member",
+     "comp": "CIS Small Wall (Bunker) with GPs",
+     "x": 6749.8,
+     "y": 2963.8,
+     "yaw_deg": 1.3,
+     "garrison_points_lib": 11,
+     "objects_lib": 5
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     6600.0,
+     2900.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-M2",
+   "map_label": "Mashera Station",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Rail Halt",
+   "role": "MAIN",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 5490.0,
+   "marker_y": 2730.0,
+   "square": "B1",
+   "ground_h_at_marker_m": 1.35,
+   "also_in_op2_mission": true,
+   "members": [
+    {
+     "member_id": "1-M2#0",
+     "role": "main",
+     "comp": "CIS Medium Logistics Base with GPs",
+     "x": 5490.0,
+     "y": 2730.0,
+     "yaw_deg": 348.6,
+     "garrison_points_lib": 90,
+     "objects_lib": 401
+    },
+    {
+     "member_id": "1-M2#1",
+     "role": "member",
+     "comp": "CIS Fuel Depot with GPs",
+     "x": 5636.6,
+     "y": 2842.8,
+     "yaw_deg": 66.5,
+     "garrison_points_lib": 79,
+     "objects_lib": 84
+    },
+    {
+     "member_id": "1-M2#2",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 5545.9,
+     "y": 2597.1,
+     "yaw_deg": 96.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "1-M2#3",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 5627.8,
+     "y": 2726.8,
+     "yaw_deg": 341.2,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     5490.0,
+     2730.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   },
+   "position_note": "PRE-EDIT position from the site book. On Sun 22 Nov the owner moved this base about 20 m off the rail and added defences in the editor. Shipped build check: the shipped garrison deck holds 281 garrison points (the post-edit count) and its main-comp points centre on (5480.5, 2730.4), 9.5 m west of the book point. The exact post-edit comp positions sit only in the binarized mission file, which was not read. Treat the 1-M2 member x,y as the book position, about 20 m out."
+  },
+  {
+   "op": 1,
+   "site_id": "1-M3",
+   "map_label": "Bokret Gun Pits",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Crater Gun Pits",
+   "role": "MAIN",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 9800,
+   "marker_y": 3000,
+   "square": "C1",
+   "ground_h_at_marker_m": 0.87,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-M3#0",
+     "role": "main",
+     "comp": "CIS Mixed AA Platform with GPs",
+     "x": 9825.3,
+     "y": 3031.0,
+     "yaw_deg": 252.0,
+     "garrison_points_lib": 49,
+     "objects_lib": 86
+    },
+    {
+     "member_id": "1-M3#1",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 9831.7,
+     "y": 2896.6,
+     "yaw_deg": 192.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "1-M3#2",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 9775.0,
+     "y": 2903.0,
+     "yaw_deg": 192.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "1-M3#3",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 9692.3,
+     "y": 3010.6,
+     "yaw_deg": 192.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     9800.0,
+     3000.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-M4",
+   "map_label": "Gutok Command Post",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Salient Command Post",
+   "role": "MAIN",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 8890.0,
+   "marker_y": 4370.0,
+   "square": "C2",
+   "ground_h_at_marker_m": 1.01,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-M4#0",
+     "role": "main",
+     "comp": "CIS Small FOB 1 With GPs",
+     "x": 8890.0,
+     "y": 4370.0,
+     "yaw_deg": 283.1,
+     "garrison_points_lib": 108,
+     "objects_lib": 167
+    },
+    {
+     "member_id": "1-M4#1",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 8869.4,
+     "y": 4287.5,
+     "yaw_deg": 17.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     8890.0,
+     4370.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-01",
+   "map_label": "Hasena Mill",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Wire Outpost",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 7000,
+   "marker_y": 2000,
+   "square": "B1",
+   "ground_h_at_marker_m": 0.96,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-01#0",
+     "role": "main",
+     "comp": "CIS Outpost with GPs",
+     "x": 7000.0,
+     "y": 2000.0,
+     "yaw_deg": 139.1,
+     "garrison_points_lib": 67,
+     "objects_lib": 78
+    },
+    {
+     "member_id": "1-01#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 7044.8,
+     "y": 1946.2,
+     "yaw_deg": 319.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     7000.0,
+     2000.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-02",
+   "map_label": "Selowa Field Hospital",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Bog Prison Camp",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 10600,
+   "marker_y": 2200,
+   "square": "C1",
+   "ground_h_at_marker_m": 0.93,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-02#0",
+     "role": "main",
+     "comp": "Prison with Garrison Marks",
+     "x": 10600.0,
+     "y": 2200.0,
+     "yaw_deg": 359.0,
+     "garrison_points_lib": 110,
+     "objects_lib": 142
+    },
+    {
+     "member_id": "1-02#1",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 10553.6,
+     "y": 2106.9,
+     "yaw_deg": 65.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     10600.0,
+     2200.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-03",
+   "map_label": "Grubak Checkpoint",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Moraine Foot Checkpoint",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 8070,
+   "marker_y": 1800,
+   "square": "C1",
+   "ground_h_at_marker_m": 1.02,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-03#0",
+     "role": "main",
+     "comp": "CIS Small Checkpoint with GPs",
+     "x": 8061.8,
+     "y": 1800.1,
+     "yaw_deg": 288.3,
+     "garrison_points_lib": 39,
+     "objects_lib": 28
+    },
+    {
+     "member_id": "1-03#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 8127.0,
+     "y": 1826.1,
+     "yaw_deg": 41.7,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     8070.0,
+     1800.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-04",
+   "map_label": "Kuged Gun Line",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Flower Tower Battery",
+   "role": "SUP",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 8340.0,
+   "marker_y": 5440.0,
+   "square": "C2",
+   "ground_h_at_marker_m": 0.5,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-04#0",
+     "role": "main",
+     "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+     "x": 8340.0,
+     "y": 5440.0,
+     "yaw_deg": 87.0,
+     "garrison_points_lib": 417,
+     "objects_lib": 553
+    },
+    {
+     "member_id": "1-04#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 8295.2,
+     "y": 5204.7,
+     "yaw_deg": 7.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     8340.0,
+     5440.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-05",
+   "map_label": "Ekad AA Pit",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Bog AA Base",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 7180.0,
+   "marker_y": 4610.0,
+   "square": "B2",
+   "ground_h_at_marker_m": 1.03,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-05#0",
+     "role": "main",
+     "comp": "CIS Medium AA Base with GPs",
+     "x": 7180.0,
+     "y": 4610.0,
+     "yaw_deg": 125.7,
+     "garrison_points_lib": 168,
+     "objects_lib": 162
+    },
+    {
+     "member_id": "1-05#1",
+     "role": "member",
+     "comp": "CIS Minimal AA Flak Cannon with GPs",
+     "x": 7209.5,
+     "y": 4478.3,
+     "yaw_deg": 165.9,
+     "garrison_points_lib": 11,
+     "objects_lib": 7
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     7180.0,
+     4610.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-06",
+   "map_label": "Ketud Sniper Nest",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Crater Watch",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 10600,
+   "marker_y": 4000,
+   "square": "C2",
+   "ground_h_at_marker_m": 0.84,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-06#0",
+     "role": "main",
+     "comp": "CIS Basic Trenchline with GPs",
+     "x": 10600.0,
+     "y": 4000.0,
+     "yaw_deg": 13.0,
+     "garrison_points_lib": 26,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "1-06#1",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 10656.7,
+     "y": 3940.3,
+     "yaw_deg": 54.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     10600.0,
+     4000.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-07",
+   "map_label": "Gikod Bunkers",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Sap Bunkers",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 6480.0,
+   "marker_y": 3850.0,
+   "square": "B1",
+   "ground_h_at_marker_m": 1.46,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-07#0",
+     "role": "main",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 6480.0,
+     "y": 3850.0,
+     "yaw_deg": 126.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "1-07#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 6538.1,
+     "y": 3802.8,
+     "yaw_deg": 331.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     6480.0,
+     3850.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-08",
+   "map_label": "Gedrak Gate",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Plank Road Gate",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 7830.0,
+   "marker_y": 5230.0,
+   "square": "B2",
+   "ground_h_at_marker_m": 0.92,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-08#0",
+     "role": "main",
+     "comp": "CIS Medium Checkpoint 3 with GPs",
+     "x": 7831.1,
+     "y": 5230.1,
+     "yaw_deg": 353.5,
+     "garrison_points_lib": 93,
+     "objects_lib": 80
+    },
+    {
+     "member_id": "1-08#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 7758.3,
+     "y": 5266.8,
+     "yaw_deg": 35.1,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    },
+    {
+     "member_id": "1-08#2",
+     "role": "member",
+     "comp": "Tukata Defense Tower Missile",
+     "x": 7907.0,
+     "y": 5188.5,
+     "yaw_deg": 0.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     7830.0,
+     5230.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-09",
+   "map_label": "Bekot Fuel Dump",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Bog Gas Dump",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 9600,
+   "marker_y": 4800,
+   "square": "C2",
+   "ground_h_at_marker_m": 0.87,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-09#0",
+     "role": "main",
+     "comp": "CIS Fuel Depot with GPs",
+     "x": 9600.0,
+     "y": 4800.0,
+     "yaw_deg": 144.8,
+     "garrison_points_lib": 79,
+     "objects_lib": 84
+    },
+    {
+     "member_id": "1-09#1",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 9628.8,
+     "y": 4723.9,
+     "yaw_deg": 25.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    },
+    {
+     "member_id": "1-09#2",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 9526.7,
+     "y": 4734.7,
+     "yaw_deg": 21.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     9600.0,
+     4800.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-10",
+   "map_label": "Trodik Blimp",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Spotter Radar",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 11170.0,
+   "marker_y": 5430.0,
+   "square": "C2",
+   "ground_h_at_marker_m": 0.86,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-10#0",
+     "role": "main",
+     "comp": "Claus - Small Radar",
+     "x": 11170.0,
+     "y": 5430.0,
+     "yaw_deg": 305.4,
+     "garrison_points_lib": 0,
+     "objects_lib": 35
+    },
+    {
+     "member_id": "1-10#1",
+     "role": "member",
+     "comp": "CIS Mixed AA Platform with GPs",
+     "x": 11127.2,
+     "y": 5353.4,
+     "yaw_deg": 247.0,
+     "garrison_points_lib": 49,
+     "objects_lib": 86
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     11170.0,
+     5430.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-11",
+   "map_label": "Bakug Mortar Pit",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker Mortar Trench",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 5020,
+   "marker_y": 4610,
+   "square": "B2",
+   "ground_h_at_marker_m": 5.96,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "1-11#0",
+     "role": "main",
+     "comp": "CIS Basic Trenchline with GPs",
+     "x": 5036.0,
+     "y": 4615.0,
+     "yaw_deg": 67.8,
+     "garrison_points_lib": 26,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "1-11#1",
+     "role": "member",
+     "comp": "Mrogg trench part 2 (Support weapon)",
+     "x": 4955.0,
+     "y": 4720.0,
+     "yaw_deg": 52.0,
+     "garrison_points_lib": 0,
+     "objects_lib": 57
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     5020.0,
+     4610.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 1,
+   "site_id": "1-12",
+   "map_label": "Preduk Signal Mast",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker Signal Mast",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 5330,
+   "marker_y": 3800,
+   "square": "B1",
+   "ground_h_at_marker_m": 6.6,
+   "also_in_op2_mission": true,
+   "members": [
+    {
+     "member_id": "1-12#0",
+     "role": "main",
+     "comp": "CIS Comms Array with GPs",
+     "x": 5330.0,
+     "y": 3800.0,
+     "yaw_deg": 158.2,
+     "garrison_points_lib": 57,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "1-12#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 5384.0,
+     "y": 3754.4,
+     "yaw_deg": 356.0,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     5330.0,
+     3800.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op1",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-F",
+   "map_label": "Rewoha Listening Post",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Old Listening Post",
+   "role": "FINAL",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 2590.0,
+   "marker_y": 3170.0,
+   "square": "A1",
+   "ground_h_at_marker_m": 3.9,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-F#0",
+     "role": "main",
+     "comp": "CIS Communications FOB with GPs",
+     "x": 2590.0,
+     "y": 3170.0,
+     "yaw_deg": 309.6,
+     "garrison_points_lib": 104,
+     "objects_lib": 114
+    },
+    {
+     "member_id": "2-F#1",
+     "role": "member",
+     "comp": "CIS Medium FOB with GPs",
+     "x": 2690.7,
+     "y": 3236.1,
+     "yaw_deg": 142.0,
+     "garrison_points_lib": 64,
+     "objects_lib": 73
+    },
+    {
+     "member_id": "2-F#2",
+     "role": "member",
+     "comp": "Tukata Air Defense Tower with GPs",
+     "x": 2522.7,
+     "y": 3368.8,
+     "yaw_deg": 52.0,
+     "garrison_points_lib": 196,
+     "objects_lib": 199
+    },
+    {
+     "member_id": "2-F#3",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 2657.8,
+     "y": 3083.4,
+     "yaw_deg": 115.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    },
+    {
+     "member_id": "2-F#4",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 2738.3,
+     "y": 3159.0,
+     "yaw_deg": 325.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    },
+    {
+     "member_id": "2-F#5",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 2565.0,
+     "y": 3023.5,
+     "yaw_deg": 325.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     2590.0,
+     3170.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-M1",
+   "map_label": "Krupad Fort",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker South Fort",
+   "role": "MAIN",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 4700.0,
+   "marker_y": 5210.0,
+   "square": "B2",
+   "ground_h_at_marker_m": 6.98,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-M1#0",
+     "role": "main",
+     "comp": "CIS Small FOB 1 With GPs",
+     "x": 4679.0,
+     "y": 5290.0,
+     "yaw_deg": 273.5,
+     "garrison_points_lib": 108,
+     "objects_lib": 167
+    },
+    {
+     "member_id": "2-M1#1",
+     "role": "member",
+     "comp": "CIS Small Citadel with GPs",
+     "x": 4750.5,
+     "y": 5119.7,
+     "yaw_deg": 8.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 82
+    },
+    {
+     "member_id": "2-M1#2",
+     "role": "member",
+     "comp": "CIS Basic Trenchline with GPs",
+     "x": 4553.8,
+     "y": 5356.5,
+     "yaw_deg": 66.9,
+     "garrison_points_lib": 26,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "2-M1#3",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 4811.0,
+     "y": 5001.0,
+     "yaw_deg": 7.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     4700.0,
+     5210.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-M2",
+   "map_label": "Nowesha Pumphouse",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Kettle Pumphouse",
+   "role": "MAIN",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 2800,
+   "marker_y": 6000,
+   "square": "A2",
+   "ground_h_at_marker_m": 0.93,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-M2#0",
+     "role": "main",
+     "comp": "CIS Powerbank Facility with GPs",
+     "x": 2800.0,
+     "y": 6000.0,
+     "yaw_deg": 60.6,
+     "garrison_points_lib": 44,
+     "objects_lib": 243
+    },
+    {
+     "member_id": "2-M2#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 2838.9,
+     "y": 5876.0,
+     "yaw_deg": 20.3,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     2800.0,
+     6000.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-M3",
+   "map_label": "Wesamo Dish",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Listening Mast",
+   "role": "MAIN",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 1300,
+   "marker_y": 3050,
+   "square": "A1",
+   "ground_h_at_marker_m": 0.92,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-M3#0",
+     "role": "main",
+     "comp": "CIS Big Radio Tower with GPs",
+     "x": 1300.0,
+     "y": 3050.0,
+     "yaw_deg": 33.7,
+     "garrison_points_lib": 147,
+     "objects_lib": 70
+    },
+    {
+     "member_id": "2-M3#1",
+     "role": "member",
+     "comp": "CIS Guard Tower Fixed with GPs",
+     "x": 1407.2,
+     "y": 3073.0,
+     "yaw_deg": 306.3,
+     "garrison_points_lib": 20,
+     "objects_lib": 16
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     1300.0,
+     3050.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-M4",
+   "map_label": "Bogek Battery",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Moraine Flower Tower Battery",
+   "role": "MAIN",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 1350.0,
+   "marker_y": 1540.0,
+   "square": "A1",
+   "ground_h_at_marker_m": 0.96,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-M4#0",
+     "role": "main",
+     "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+     "x": 1350.0,
+     "y": 1540.0,
+     "yaw_deg": 0.0,
+     "garrison_points_lib": 417,
+     "objects_lib": 553
+    },
+    {
+     "member_id": "2-M4#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 1573.4,
+     "y": 1461.5,
+     "yaw_deg": 280.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     1350.0,
+     1540.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-01",
+   "map_label": "Bekad Gravel Pits",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Peat Pit Bunkers",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 3400,
+   "marker_y": 4200,
+   "square": "A2",
+   "ground_h_at_marker_m": 1.08,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-01#0",
+     "role": "main",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 3400.0,
+     "y": 4200.0,
+     "yaw_deg": 358.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    },
+    {
+     "member_id": "2-01#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 3435.3,
+     "y": 4159.0,
+     "yaw_deg": 342.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     3400.0,
+     4200.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-02",
+   "map_label": "Droid Billet Camp",
+   "map_label_source": "shipped DIR_SITES label (the site list has no map_label for this site)",
+   "working_name": "Droid Billet Camp",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 1300,
+   "marker_y": 4800,
+   "square": "A2",
+   "ground_h_at_marker_m": 1.04,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-02#0",
+     "role": "main",
+     "comp": "CIS Small Rectangle FOB with GPs",
+     "x": 1300.0,
+     "y": 4800.0,
+     "yaw_deg": 231.7,
+     "garrison_points_lib": 105,
+     "objects_lib": 70
+    },
+    {
+     "member_id": "2-02#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 1384.3,
+     "y": 4790.4,
+     "yaw_deg": 359.2,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     1300.0,
+     4800.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-03",
+   "map_label": "Prudok AA Site",
+   "map_label_source": "SITES json map_label",
+   "working_name": "West Covered AA",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 770.0,
+   "marker_y": 6490.0,
+   "square": "A2",
+   "ground_h_at_marker_m": 0.98,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-03#0",
+     "role": "main",
+     "comp": "Medium Covered AA Base with GPs",
+     "x": 770.0,
+     "y": 6490.0,
+     "yaw_deg": 97.0,
+     "garrison_points_lib": 116,
+     "objects_lib": 499
+    },
+    {
+     "member_id": "2-03#1",
+     "role": "member",
+     "comp": "CIS Guard Tower Fixed with GPs",
+     "x": 860.4,
+     "y": 6351.9,
+     "yaw_deg": 328.4,
+     "garrison_points_lib": 20,
+     "objects_lib": 16
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     770.0,
+     6490.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": false
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-04",
+   "map_label": "Gokit Watchtower",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker Watchtowers",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 5220,
+   "marker_y": 4050,
+   "square": "B2",
+   "ground_h_at_marker_m": 5.46,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-04#0",
+     "role": "main",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 5220.0,
+     "y": 4050.0,
+     "yaw_deg": 18.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    },
+    {
+     "member_id": "2-04#1",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 5275.9,
+     "y": 4066.4,
+     "yaw_deg": 30.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     5220.0,
+     4050.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-05",
+   "map_label": "Traket Gun Post",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Rail Embankment Guns",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 3780,
+   "marker_y": 1560,
+   "square": "A1",
+   "ground_h_at_marker_m": 1.45,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-05#0",
+     "role": "main",
+     "comp": "CIS Turbolaser Tower with GPs",
+     "x": 3780.0,
+     "y": 1560.0,
+     "yaw_deg": 102.0,
+     "garrison_points_lib": 30,
+     "objects_lib": 30
+    },
+    {
+     "member_id": "2-05#1",
+     "role": "member",
+     "comp": "CIS Heavy Gun Position + AA (UD)",
+     "x": 3735.8,
+     "y": 1504.8,
+     "yaw_deg": 110.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 40
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     3780.0,
+     1560.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-06",
+   "map_label": "Debuk Spring Post",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Moraine Spring Post",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 800,
+   "marker_y": 2000,
+   "square": "A1",
+   "ground_h_at_marker_m": 0.88,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-06#0",
+     "role": "main",
+     "comp": "CIS Outpost with GPs",
+     "x": 800.0,
+     "y": 2000.0,
+     "yaw_deg": 105.9,
+     "garrison_points_lib": 67,
+     "objects_lib": 78
+    },
+    {
+     "member_id": "2-06#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 866.9,
+     "y": 1979.5,
+     "yaw_deg": 324.7,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    },
+    {
+     "member_id": "2-06#2",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 814.9,
+     "y": 1911.8,
+     "yaw_deg": 302.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     800.0,
+     2000.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-07",
+   "map_label": "Abrik Relay",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Comms Relay",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 2000,
+   "marker_y": 5400,
+   "square": "A2",
+   "ground_h_at_marker_m": 0.94,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-07#0",
+     "role": "main",
+     "comp": "CIS Comms Array with GPs",
+     "x": 2000.0,
+     "y": 5400.0,
+     "yaw_deg": 235.7,
+     "garrison_points_lib": 57,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "2-07#1",
+     "role": "member",
+     "comp": "CIS Guard Tower Fixed with GPs",
+     "x": 2061.2,
+     "y": 5370.3,
+     "yaw_deg": 333.5,
+     "garrison_points_lib": 20,
+     "objects_lib": 16
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     2000.0,
+     5400.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-08",
+   "map_label": "Getod Fuel Dump",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Post Fuel Depot",
+   "role": "SUP",
+   "grade": "Two-squad",
+   "grade_code": "2S",
+   "marker_x": 3000,
+   "marker_y": 2200,
+   "square": "A1",
+   "ground_h_at_marker_m": 0.98,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-08#0",
+     "role": "main",
+     "comp": "CIS Fuel Depot with GPs",
+     "x": 3000.0,
+     "y": 2200.0,
+     "yaw_deg": 75.9,
+     "garrison_points_lib": 79,
+     "objects_lib": 84
+    },
+    {
+     "member_id": "2-08#1",
+     "role": "member",
+     "comp": "CIS Guard Tower (PCannon) with GPS",
+     "x": 3065.7,
+     "y": 2241.4,
+     "yaw_deg": 316.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 18
+    },
+    {
+     "member_id": "2-08#2",
+     "role": "member",
+     "comp": "Tukata Defense Tower Missile",
+     "x": 2963.6,
+     "y": 2131.4,
+     "yaw_deg": 316.0,
+     "garrison_points_lib": 31,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     3000.0,
+     2200.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 80,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-09",
+   "map_label": "Butog Vehicle Park",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Vehicle Depot",
+   "role": "SUP",
+   "grade": "Platoon",
+   "grade_code": "P",
+   "marker_x": 4100.2,
+   "marker_y": 3219.1,
+   "square": "B1",
+   "ground_h_at_marker_m": 0.5,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-09#0",
+     "role": "main",
+     "comp": "CIS Vehicle Depot with GPs (D)",
+     "x": 4100.2,
+     "y": 3219.1,
+     "yaw_deg": 30.0,
+     "garrison_points_lib": 170,
+     "objects_lib": 365
+    },
+    {
+     "member_id": "2-09#1",
+     "role": "member",
+     "comp": "Tukata Turret Bunker",
+     "x": 4307.6,
+     "y": 3378.6,
+     "yaw_deg": 359.0,
+     "garrison_points_lib": 21,
+     "objects_lib": 8
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     4100.2,
+     3219.1
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 100,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-10",
+   "map_label": "Kitag Trench",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker Flank Trench",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 4110,
+   "marker_y": 6560,
+   "square": "B2",
+   "ground_h_at_marker_m": 4.3,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-10#0",
+     "role": "main",
+     "comp": "CIS Basic Trenchline with GPs",
+     "x": 4091.0,
+     "y": 6580.0,
+     "yaw_deg": 65.6,
+     "garrison_points_lib": 26,
+     "objects_lib": 50
+    },
+    {
+     "member_id": "2-10#1",
+     "role": "member",
+     "comp": "Tukata Defense Tower Turbolaser",
+     "x": 4175.0,
+     "y": 6480.0,
+     "yaw_deg": 12.0,
+     "garrison_points_lib": 35,
+     "objects_lib": 2
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     4110.0,
+     6560.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-11",
+   "map_label": "Kugrod Sensor",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Kettle Sensor",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 970.0,
+   "marker_y": 7610.0,
+   "square": "A2",
+   "ground_h_at_marker_m": 1.04,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-11#0",
+     "role": "main",
+     "comp": "Claus - Small Radar",
+     "x": 970.0,
+     "y": 7610.0,
+     "yaw_deg": 243.7,
+     "garrison_points_lib": 0,
+     "objects_lib": 35
+    },
+    {
+     "member_id": "2-11#1",
+     "role": "member",
+     "comp": "CIS Mixed AA Platform with GPs",
+     "x": 1016.9,
+     "y": 7535.6,
+     "yaw_deg": 185.0,
+     "garrison_points_lib": 49,
+     "objects_lib": 86
+    }
+   ],
+   "dropped_members": [],
+   "cross_check": {
+    "shipped_marker_xy": [
+     970.0,
+     7610.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  },
+  {
+   "op": 2,
+   "site_id": "2-12",
+   "map_label": "Drogit Checkpoint",
+   "map_label_source": "SITES json map_label",
+   "working_name": "Esker Road Checkpoint",
+   "role": "SUP",
+   "grade": "Squad",
+   "grade_code": "S",
+   "marker_x": 4380,
+   "marker_y": 6200,
+   "square": "B2",
+   "ground_h_at_marker_m": 2.57,
+   "also_in_op2_mission": false,
+   "members": [
+    {
+     "member_id": "2-12#0",
+     "role": "main",
+     "comp": "CIS Small Checkpoint with GPs",
+     "x": 4327.9,
+     "y": 6176.7,
+     "yaw_deg": 263.6,
+     "garrison_points_lib": 39,
+     "objects_lib": 28
+    },
+    {
+     "member_id": "2-12#1",
+     "role": "member",
+     "comp": "CIS Guard Tower with GPs",
+     "x": 4292.5,
+     "y": 6218.8,
+     "yaw_deg": 174.1,
+     "garrison_points_lib": 20,
+     "objects_lib": 9
+    }
+   ],
+   "dropped_members": [
+    {
+     "member_id": "2-12#1",
+     "comp": "Simple Barricades with GPs",
+     "x": 4310.2,
+     "y": 6094.7,
+     "yaw_deg": 0.0,
+     "why": "dropped by the owner; not in the played mission"
+    }
+   ],
+   "cross_check": {
+    "shipped_marker_xy": [
+     4380.0,
+     6200.0
+    ],
+    "delta_m": 0.0,
+    "shipped_core_radius_m": 60,
+    "pbo_checked": "op2",
+    "core_radius_matches_grade": true
+   }
+  }
+ ]
+}

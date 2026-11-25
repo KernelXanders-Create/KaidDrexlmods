@@ -1,0 +1,444 @@
+{
+ "what": "Op 7 outline STAND-IN for re-checking the Escape Pad spot (8400, 15500) (ruling SUD-R34, option (c) North spot). There is no built op 7 yet.",
+ "outline_tag": "ASSUMED: stand-in until op 7 is built. Convex hull of the op 7 site points + 350 m, clipped to the 16384 m frame.",
+ "op7_site_points_used": [
+  {
+   "id": "7-F",
+   "name": "Kesh Junction",
+   "x": 10600,
+   "y": 13200
+  },
+  {
+   "id": "7-M1",
+   "name": "Command Dugout Salient",
+   "x": 7608,
+   "y": 12984
+  },
+  {
+   "id": "7-M2",
+   "name": "Rail Junction Yard",
+   "x": 11400,
+   "y": 13800
+  },
+  {
+   "id": "7-M3",
+   "name": "Moraine Outwork Battery",
+   "x": 6400,
+   "y": 14200
+  },
+  {
+   "id": "7-M4",
+   "name": "Moraine Road Gate",
+   "x": 12200,
+   "y": 14600
+  },
+  {
+   "id": "7-01",
+   "name": "Mud Fort",
+   "x": 8400,
+   "y": 12200
+  },
+  {
+   "id": "7-02",
+   "name": "Wrecked Walker Strongpoint",
+   "x": 10000,
+   "y": 12300
+  },
+  {
+   "id": "7-03",
+   "name": "North AA",
+   "x": 9000,
+   "y": 14400
+  },
+  {
+   "id": "7-04",
+   "name": "Prisoner Pens",
+   "x": 11000,
+   "y": 14900
+  },
+  {
+   "id": "7-05",
+   "name": "Reserve Camp",
+   "x": 12800,
+   "y": 13200
+  },
+  {
+   "id": "7-06",
+   "name": "Kettle North Pillboxes",
+   "x": 6000,
+   "y": 12400
+  },
+  {
+   "id": "7-07",
+   "name": "Fuel Siding",
+   "x": 10600,
+   "y": 12600
+  },
+  {
+   "id": "7-08",
+   "name": "Moraine Spring Post",
+   "x": 5600,
+   "y": 13600
+  },
+  {
+   "id": "7-09",
+   "name": "Water Tower Snipers",
+   "x": 8800,
+   "y": 13200
+  },
+  {
+   "id": "7-10",
+   "name": "Comms Mast",
+   "x": 12000,
+   "y": 12200
+  },
+  {
+   "id": "7-11",
+   "name": "Junction Sensor",
+   "x": 13800,
+   "y": 15400
+  },
+  {
+   "id": "7-12",
+   "name": "Junction Field Hospital",
+   "x": 9400,
+   "y": 12400
+  }
+ ],
+ "points_source": "Kernel part-1 return, ops 5-8 sketch (17 Nov moves of 7-02 and 7-07 applied). Same as the K3 points except 7-02 (10000, 12300 vs 10000, 12000) and 7-07 (10600, 12600 vs 10800, 12400).",
+ "hull_vertices": [
+  [
+   5600,
+   13600
+  ],
+  [
+   6000,
+   12400
+  ],
+  [
+   8400,
+   12200
+  ],
+  [
+   12000,
+   12200
+  ],
+  [
+   12800,
+   13200
+  ],
+  [
+   13800,
+   15400
+  ],
+  [
+   6400,
+   14200
+  ]
+ ],
+ "outline_polygon_hull_plus_350m": [
+  [
+   5250.0,
+   13600.0
+  ],
+  [
+   5251.9,
+   13563.4
+  ],
+  [
+   5257.6,
+   13527.2
+  ],
+  [
+   5267.1,
+   13491.8
+  ],
+  [
+   5667.1,
+   12291.8
+  ],
+  [
+   5680.3,
+   12257.6
+  ],
+  [
+   5696.9,
+   12225.0
+  ],
+  [
+   5716.8,
+   12194.3
+  ],
+  [
+   5739.9,
+   12165.8
+  ],
+  [
+   5765.8,
+   12139.9
+  ],
+  [
+   5794.3,
+   12116.8
+  ],
+  [
+   5825.0,
+   12096.9
+  ],
+  [
+   5857.6,
+   12080.3
+  ],
+  [
+   5891.8,
+   12067.1
+  ],
+  [
+   5927.2,
+   12057.6
+  ],
+  [
+   5963.4,
+   12051.9
+  ],
+  [
+   8363.4,
+   11851.9
+  ],
+  [
+   8400.0,
+   11850.0
+  ],
+  [
+   12000.0,
+   11850.0
+  ],
+  [
+   12036.6,
+   11851.9
+  ],
+  [
+   12072.8,
+   11857.6
+  ],
+  [
+   12108.2,
+   11867.1
+  ],
+  [
+   12142.4,
+   11880.3
+  ],
+  [
+   12175.0,
+   11896.9
+  ],
+  [
+   12205.7,
+   11916.8
+  ],
+  [
+   12234.2,
+   11939.9
+  ],
+  [
+   12260.1,
+   11965.8
+  ],
+  [
+   12283.2,
+   11994.3
+  ],
+  [
+   13083.2,
+   12994.3
+  ],
+  [
+   13103.1,
+   13025.0
+  ],
+  [
+   13119.7,
+   13057.6
+  ],
+  [
+   14119.7,
+   15257.6
+  ],
+  [
+   14132.9,
+   15291.8
+  ],
+  [
+   14142.4,
+   15327.2
+  ],
+  [
+   14148.1,
+   15363.4
+  ],
+  [
+   14150.0,
+   15400.0
+  ],
+  [
+   14148.1,
+   15436.6
+  ],
+  [
+   14142.4,
+   15472.8
+  ],
+  [
+   14132.9,
+   15508.2
+  ],
+  [
+   14119.7,
+   15542.4
+  ],
+  [
+   14103.1,
+   15575.0
+  ],
+  [
+   14083.2,
+   15605.7
+  ],
+  [
+   14060.1,
+   15634.2
+  ],
+  [
+   14034.2,
+   15660.1
+  ],
+  [
+   14005.7,
+   15683.2
+  ],
+  [
+   13975.0,
+   15703.1
+  ],
+  [
+   13942.4,
+   15719.7
+  ],
+  [
+   13908.2,
+   15732.9
+  ],
+  [
+   13872.8,
+   15742.4
+  ],
+  [
+   13836.6,
+   15748.1
+  ],
+  [
+   13800.0,
+   15750.0
+  ],
+  [
+   13763.4,
+   15748.1
+  ],
+  [
+   13727.2,
+   15742.4
+  ],
+  [
+   6327.2,
+   14542.4
+  ],
+  [
+   6291.8,
+   14532.9
+  ],
+  [
+   6257.6,
+   14519.7
+  ],
+  [
+   6225.0,
+   14503.1
+  ],
+  [
+   6194.3,
+   14483.2
+  ],
+  [
+   5394.3,
+   13883.2
+  ],
+  [
+   5365.8,
+   13860.1
+  ],
+  [
+   5339.9,
+   13834.2
+  ],
+  [
+   5316.8,
+   13805.7
+  ],
+  [
+   5296.9,
+   13775.0
+  ],
+  [
+   5280.3,
+   13742.4
+  ],
+  [
+   5267.1,
+   13708.2
+  ],
+  [
+   5257.6,
+   13672.8
+  ],
+  [
+   5251.9,
+   13636.6
+  ]
+ ],
+ "outline_area_km2": 24.7,
+ "outline_share_not_sea": 0.731,
+ "spot_check": {
+  "spot": [
+   8400,
+   15500
+  ],
+  "ground_h_m": 25.9,
+  "water_mask": false,
+  "sea_mask": false,
+  "ai_dry": true,
+  "zone_code": 0,
+  "distance_to_north_map_edge_m": 884,
+  "tag": "MEASURED on the drop-2 ground"
+ },
+ "distance_spot_to_hull_of_site_points_m": 963.1,
+ "distance_spot_to_outline_hull_plus_350m_m": 613.1,
+ "distance_tag": "point distances MEASURED; the outline itself is ASSUMED, so the outline distance is a stand-in figure",
+ "nearest_op7_site": {
+  "id": "7-03",
+  "distance_m": 1253.0,
+  "tag": "MEASURED on points"
+ },
+ "rule_band_m": 600,
+ "margin_over_600m_m": 13.1,
+ "rule_met_on_stand_in": true,
+ "rule_breaks_if_real_outline_reaches_beyond_the_stand_in_by_more_than_m": 13.1,
+ "same_on_K3_original_points": {
+  "distance_spot_to_outline_m": 613.1,
+  "nearest_site": {
+   "id": "7-03",
+   "distance_m": 1253.0
+  }
+ },
+ "cross_check_with_earlier_relay_answer": "The relay answer of 18 Nov gave 963 m outside the outline and 1,253 m to 7-03. Reproduced here: 963.1 m is the distance to the hull of the site points WITHOUT the 350 m buffer; with the buffer the distance is 613.1 m. The 1,253 m to 7-03 is reproduced exactly. That answer also gave 500 m from the spot to the map edge; on the 16384 m frame it is 884 m."
+}

@@ -1,0 +1,350 @@
+{
+ "what": "The three Drain crossing centre lines, exactly as given in the part-1 return, measured on the drop-2 ground.",
+ "crossings": {
+  "Plank Road": {
+   "line_given": {
+    "a": [
+     7628,
+     6792
+    ],
+    "b": [
+     7681,
+     7326
+    ]
+   },
+   "length_m": 536.6,
+   "bearing_deg": 5.7,
+   "water_segments": [
+    {
+     "from_m": 228.3,
+     "to_m": 310.4,
+     "width_m": 84.1,
+     "min_h_m": -2.14,
+     "max_h_m": -0.13,
+     "depth_bands": [
+      2,
+      3
+     ]
+    }
+   ],
+   "water_width_total_m": 84.1,
+   "main_water_width_m": 84.1,
+   "lowest_h_on_line_m": -2.14,
+   "highest_h_on_line_m": 1.6,
+   "highest_h_inside_main_water_m": -0.13,
+   "metres_of_line_by_depth_band": {
+    "0": 454.5,
+    "2": 12.0,
+    "3": 72.1
+   },
+   "ai_dry_share_of_line": 0.822,
+   "net_core_metres_on_line": 438.5,
+   "banks": {
+    "south_bank": {
+     "h_at_first_dry_sample_m": 0.17,
+     "mean_h_40m_before_water_m": 1.35,
+     "max_h_40m_before_water_m": 1.6
+    },
+    "north_bank": {
+     "h_at_first_dry_sample_m": -0.03,
+     "mean_h_40m_after_water_m": 1.31,
+     "max_h_40m_after_water_m": 1.6
+    },
+    "line_length_south_of_water_m": 228.3,
+    "line_length_north_of_water_m": 226.3
+   },
+   "parallel_lines_beside_the_given_line": {
+    "-150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       80.1,
+       398.5
+      ],
+      [
+       480.6,
+       2.0
+      ]
+     ],
+     "lowest_h_m": -2.18,
+     "highest_h_m": 1.01
+    },
+    "-75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       124.1,
+       402.5
+      ]
+     ],
+     "lowest_h_m": -2.1,
+     "highest_h_m": 0.65
+    },
+    "+75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       184.2,
+       260.3
+      ]
+     ],
+     "lowest_h_m": -2.15,
+     "highest_h_m": 0.93
+    },
+    "+150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       48.1,
+       18.0
+      ],
+      [
+       74.1,
+       12.0
+      ],
+      [
+       90.1,
+       4.0
+      ],
+      [
+       238.3,
+       72.1
+      ],
+      [
+       476.6,
+       62.1
+      ]
+     ],
+     "lowest_h_m": -2.17,
+     "highest_h_m": 1.34
+    }
+   },
+   "tag": "MEASURED: samples every ~2 m along the given line; height bilinear on the 4 m grid, masks from the nearest cell; water width = length of the line where the water mask is set"
+  },
+  "Rail Bridge": {
+   "line_given": {
+    "a": [
+     8241,
+     6907
+    ],
+    "b": [
+     8213,
+     7450
+    ]
+   },
+   "length_m": 543.7,
+   "bearing_deg": 357.0,
+   "water_segments": [
+    {
+     "from_m": 232.7,
+     "to_m": 311.0,
+     "width_m": 80.3,
+     "min_h_m": -2.14,
+     "max_h_m": -0.0,
+     "depth_bands": [
+      3
+     ]
+    }
+   ],
+   "water_width_total_m": 80.3,
+   "main_water_width_m": 80.3,
+   "lowest_h_on_line_m": -2.14,
+   "highest_h_on_line_m": 1.6,
+   "highest_h_inside_main_water_m": -0.0,
+   "metres_of_line_by_depth_band": {
+    "0": 465.5,
+    "3": 80.3
+   },
+   "ai_dry_share_of_line": 0.853,
+   "net_core_metres_on_line": 437.4,
+   "banks": {
+    "south_bank": {
+     "h_at_first_dry_sample_m": 0.47,
+     "mean_h_40m_before_water_m": 1.31,
+     "max_h_40m_before_water_m": 1.6
+    },
+    "north_bank": {
+     "h_at_first_dry_sample_m": 1.1,
+     "mean_h_40m_after_water_m": 1.28,
+     "max_h_40m_after_water_m": 1.6
+    },
+    "line_length_south_of_water_m": 232.7,
+    "line_length_north_of_water_m": 232.7
+   },
+   "parallel_lines_beside_the_given_line": {
+    "-150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       104.3,
+       64.2
+      ],
+      [
+       200.6,
+       80.3
+      ],
+      [
+       345.1,
+       110.3
+      ],
+      [
+       463.5,
+       82.3
+      ]
+     ],
+     "lowest_h_m": -2.13,
+     "highest_h_m": 3.6
+    },
+    "-75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       76.2
+      ],
+      [
+       236.7,
+       72.2
+      ]
+     ],
+     "lowest_h_m": -2.2,
+     "highest_h_m": 3.59
+    },
+    "+75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       325.0
+      ],
+      [
+       477.5,
+       68.2
+      ]
+     ],
+     "lowest_h_m": -2.16,
+     "highest_h_m": 3.65
+    },
+    "+150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       321.0
+      ],
+      [
+       405.3,
+       36.1
+      ]
+     ],
+     "lowest_h_m": -2.16,
+     "highest_h_m": 3.64
+    }
+   },
+   "tag": "MEASURED: samples every ~2 m along the given line; height bilinear on the 4 m grid, masks from the nearest cell; water width = length of the line where the water mask is set"
+  },
+  "Drain Locks": {
+   "line_given": {
+    "a": [
+     10415,
+     6932
+    ],
+    "b": [
+     10350,
+     7474
+    ]
+   },
+   "length_m": 545.9,
+   "bearing_deg": 353.2,
+   "water_segments": [],
+   "water_width_total_m": 0,
+   "main_water_width_m": 0,
+   "lowest_h_on_line_m": 0.71,
+   "highest_h_on_line_m": 1.31,
+   "highest_h_inside_main_water_m": null,
+   "metres_of_line_by_depth_band": {
+    "0": 547.9
+   },
+   "ai_dry_share_of_line": 1.0,
+   "net_core_metres_on_line": 547.9,
+   "banks": {},
+   "parallel_lines_beside_the_given_line": {
+    "-150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       547.9
+      ]
+     ],
+     "lowest_h_m": -2.68,
+     "highest_h_m": -1.71
+    },
+    "-75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       547.9
+      ]
+     ],
+     "lowest_h_m": -2.68,
+     "highest_h_m": -1.74
+    },
+    "+75 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       102.4,
+       242.8
+      ],
+      [
+       465.6,
+       32.1
+      ],
+      [
+       517.8,
+       30.1
+      ]
+     ],
+     "lowest_h_m": -2.13,
+     "highest_h_m": 0.4
+    },
+    "+150 m east": {
+     "water_runs_from_m_and_width_m": [
+      [
+       0.0,
+       202.7
+      ],
+      [
+       274.9,
+       76.3
+      ],
+      [
+       475.6,
+       72.2
+      ]
+     ],
+     "lowest_h_m": -2.18,
+     "highest_h_m": 0.39
+    }
+   },
+   "tag": "MEASURED: samples every ~2 m along the given line; height bilinear on the 4 m grid, masks from the nearest cell; water width = length of the line where the water mask is set"
+  }
+ },
+ "crossing_marks_of_the_ground_build": {
+  "drain_locks": {
+   "centre": [
+    10384.2,
+    7204.7
+   ],
+   "drain_width_m": 78.2,
+   "kind": "dam_crest"
+  },
+  "drain_rail_bridge": {
+   "centre": [
+    8228.7,
+    7180.5
+   ],
+   "drain_width_m": 75.3,
+   "kind": "bridge_gap"
+  },
+  "plank_road_bridge": {
+   "centre": [
+    7656.8,
+    7061.0
+   ],
+   "drain_width_m": 69.4,
+   "kind": "bridge_gap"
+  }
+ }
+}

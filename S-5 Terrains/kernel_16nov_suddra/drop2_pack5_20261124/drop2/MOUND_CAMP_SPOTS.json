@@ -1,0 +1,91 @@
+{
+ "what": "Mound camp (4-M1, Peat Cutters' Village) spot options on the real ground, for Comedian's pick (call A5 / pack 5). AI suggestions: the PERSON picks.",
+ "rules": "core r 110 m >= 93 % dry and <= 1.6 m range; ring 130-320 m >= 30 % water / reed sea; >= 450 m from op 4's other comps; >= 400 m from op 2's 7 untaken sites; >= 150 m from op 4 hazard zones; off the Drain",
+ "tag": "MEASURED (4 m grid); source AI",
+ "options": [
+  {
+   "label": "A",
+   "x": 6160.0,
+   "y": 8100.0,
+   "core_dry": 1.0,
+   "core_range": 0.09,
+   "core_mean": 0.19,
+   "rise_over_ring": 0.84,
+   "ring_water": 0.519,
+   "nearest_op4_comp": [
+    539,
+    "4-02"
+   ],
+   "nearest_op2_open": [
+    2564,
+    "2-10"
+   ],
+   "nearest_zone_edge_m": 482,
+   "from_kernel_m": 1018,
+   "score": 2.468
+  },
+  {
+   "label": "B",
+   "x": 5520.0,
+   "y": 7820.0,
+   "core_dry": 1.0,
+   "core_range": 0.08,
+   "core_mean": 0.19,
+   "rise_over_ring": -0.01,
+   "ring_water": 0.386,
+   "nearest_op4_comp": [
+    1234,
+    "4-02"
+   ],
+   "nearest_op2_open": [
+    1891,
+    "2-10"
+   ],
+   "nearest_zone_edge_m": 237,
+   "from_kernel_m": 331,
+   "score": 0.837
+  },
+  {
+   "label": "C",
+   "x": 5720.0,
+   "y": 9220.0,
+   "core_dry": 0.947,
+   "core_range": 1.1,
+   "core_mean": 0.18,
+   "rise_over_ring": 0.64,
+   "ring_water": 0.549,
+   "nearest_op4_comp": [
+    573,
+    "4-08"
+   ],
+   "nearest_op2_open": [
+    3109,
+    "2-10"
+   ],
+   "nearest_zone_edge_m": 426,
+   "from_kernel_m": 1525,
+   "score": 0.81
+  }
+ ],
+ "kernel_point": {
+  "x": 5190.0,
+  "y": 7790.0,
+  "core_dry": 1.0,
+  "core_range": 0.01,
+  "core_mean": 1.1,
+  "rise_over_ring": 0.88,
+  "ring_water": 0.133,
+  "nearest_op4_comp": [
+   1547,
+   "4-02"
+  ],
+  "nearest_op2_open": [
+   1637,
+   "2-10"
+  ],
+  "nearest_zone_edge_m": 337,
+  "from_kernel_m": 0,
+  "note": "Kernel's sketch point (the build's current 4-M1 guards stand around it)"
+ },
+ "note": "A move of 4-M1 moves its two road gates and guns with it (re-seated by our build); op 4's radiation plan is re-checked after the pick."
+}
