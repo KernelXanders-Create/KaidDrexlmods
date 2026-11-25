@@ -44,3 +44,5 @@ The fills changed the roads, so all three checkpoints seated off their filled sp
 
 | # | Question | Answer | source |
 |---|---|---|---|
+| 1 | 4-M2.3 (2.2 m), 4-M2 (3.8 m), 4-06 (5.9 m) from the +0.3 m line after seating off their fills | a Fill and pin all 3 at their new seats: 4-M2 (8401, 7842), 4-M2.3 (8177, 7326), 4-06 (7250, 7766) | HUMAN |
+| 2 | 4-07 (197 × 193 m) with no spot in 300 m | a Ground request: fill under the pad at its current point (6000, 6400) | HUMAN |
