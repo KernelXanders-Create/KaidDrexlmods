@@ -21,3 +21,14 @@ Every answer marked HUMAN or AI; every number MEASURED or ASSUMED.
 
 **Where the town's roads join:** two roads, following Kernel's approaches (JOB_5 decision 28): one at the town's south-south-west edge from 6-M3 Tank Laager, one at its north edge from 6-06 NE Esker Fort. Exact join points and levels NOT MEASURED (they wait for the drop-2 ground). The houses' garrison is not counted (the village ruling, read as holding here: ASSUMED).
 | 28 | A | a Stake Hamlet (5-13) on a dry rise, like the Mound camp; about 30 houses (Kernel's estimate; counted on the build) | no kit piece needed | HUMAN |
+| 28 | B | a As the 5-M1 gate: a TKTA Checkpoint Fixed (Mono), a CIS Heavy Gun Position + AA (UD) and a CIS Small Checkpoint with GPs: 120 GPs / 106 objects, 9 guns; one gate per road (member table below) | meets the two-squad floor on GPs by 4 | HUMAN |
+
+### Call 28 member table: Stake Hamlet (5-13), on a dry rise, about 30 houses
+| member | where (road, side) | GPs | objects | guns | tag | source |
+|---|---|---|---|---|---|---|
+| TKTA Checkpoint Fixed (Mono) | astride the SE road in, from 5-09 West Fuel Dump (127 deg from the hamlet, 1.0 km; MEASURED on K3 points) | 50 | 38 | 4 | MEASURED (library size table) | HUMAN |
+| CIS Small Checkpoint with GPs | astride the NNE road in, from 5-01 Gravel Pit Bunkers II (22 deg, 1.1 km; MEASURED on K3 points) | 39 | 28 | 0 | MEASURED (library size table) | HUMAN |
+| CIS Heavy Gun Position + AA (UD) | between the two gates, on the side facing op 5's start (the village bears 108 deg from the hamlet, 3.8 km; MEASURED on K3 points) | 31 | 40 | 5 | MEASURED (library size table) | HUMAN |
+| **Total** | | **120** | **106** | **9** | MEASURED; two-squad floor 116 GPs met by 4 | |
+
+**Where the hamlet's roads join:** two roads, SE toward 5-09 and NNE toward 5-01; exact join points and levels NOT MEASURED (drop-2 ground). The houses' garrison is not counted (the village ruling, read as holding here: ASSUMED).
