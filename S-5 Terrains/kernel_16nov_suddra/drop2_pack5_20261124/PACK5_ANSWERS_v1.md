@@ -20,3 +20,4 @@ Every answer marked HUMAN or AI; every number MEASURED or ASSUMED.
 | **Total** | | **167** | **150** | **10** | MEASURED; platoon floor 159 GPs met on GPs by 8 | |
 
 **Where the town's roads join:** two roads, following Kernel's approaches (JOB_5 decision 28): one at the town's south-south-west edge from 6-M3 Tank Laager, one at its north edge from 6-06 NE Esker Fort. Exact join points and levels NOT MEASURED (they wait for the drop-2 ground). The houses' garrison is not counted (the village ruling, read as holding here: ASSUMED).
+| 28 | A | a Stake Hamlet (5-13) on a dry rise, like the Mound camp; about 30 houses (Kernel's estimate; counted on the build) | no kit piece needed | HUMAN |
