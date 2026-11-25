@@ -1,0 +1,192 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    20.1,
+    "4-M1",
+    "4-M1.5",
+    false
+   ],
+   [
+    20.7,
+    "4-03",
+    "4-03.3",
+    true
+   ],
+   [
+    21.3,
+    "4-06",
+    "4-M2.3",
+    true
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "4-01-4-M4": [
+    28,
+    0.24
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "4-05",
+   1.96
+  ],
+  "over_3_5": []
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "4-M4-4-04",
+   {
+    "over_10_m": 12.8,
+    "over_20_m": 12.8,
+    "point_to_point": 12.8
+   }
+  ],
+  "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "4-M4-4-04",
+   3.78
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "FAIL",
+  "nets": {
+   "south bank": {
+    "pieces": [
+     [
+      "4-04",
+      "4-M4",
+      "4-01",
+      "4-04.2"
+     ]
+    ],
+    "not_reached": [
+     "4-F",
+     "4-M2.2",
+     "4-05"
+    ]
+   }
+  },
+  "links_to_existing_net": [],
+  "vehicle_sites_not_on_the_net": [
+   "4-F",
+   "4-M1",
+   "4-M3",
+   "4-02",
+   "4-03",
+   "4-05",
+   "4-08",
+   "4-09",
+   "4-10",
+   "4-11"
+  ],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "4-M4-4-04",
+   80.9
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    9.3,
+    "4-04.2",
+    "4-M4-4-04"
+   ],
+   [
+    25.3,
+    "4-01",
+    "4-01-4-M4"
+   ],
+   [
+    25.4,
+    "4-04",
+    "4-M4-4-04"
+   ]
+  ],
+  "town_houses_closest": [],
+  "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    20.1,
+    "4-M1",
+    "4-M1.5",
+    false
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    12.2,
+    "4-06.2"
+   ],
+   [
+    12.2,
+    "4-M2.2"
+   ],
+   [
+    12.4,
+    "4-09"
+   ]
+  ],
+  "exempt": []
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": []
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "4-F Drain Locks": [
+    "SW past 4-04 (215 deg)",
+    "W along the bank from 4-M2 once it falls (269 deg)"
+   ],
+   "4-M1 Peat Cutters' Village": [
+    "SSE past 4-07 (150 deg)",
+    "NNW past 4-09 (336 deg)"
+   ],
+   "4-M2 Drain Rail Bridge": [
+    "SSW past 4-01 to the south gate (190 deg)",
+    "over the 4-06 causeway to the north gate (309 deg)"
+   ],
+   "4-M3 Central Salient": [
+    "SSW past 4-11 from the Rail Bridge (214 deg)",
+    "WSW from the 4-06 causeway (238 deg)"
+   ],
+   "4-M4 Barge Quay": [
+    "WSW past 4-05 (250 deg)",
+    "by player boat through the lock once 4-F falls"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}

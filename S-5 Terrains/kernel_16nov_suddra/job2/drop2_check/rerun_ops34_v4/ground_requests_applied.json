@@ -1,0 +1,241 @@
+[
+ {
+  "site": "4-M2",
+  "member": 0,
+  "comp": "CIS Double Pcannon Checkpoint with GPs",
+  "x": 8239.8,
+  "y": 6970.2,
+  "level_m": 1.0,
+  "finding": "f2",
+  "lowest_before_m": -1.73,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-M2",
+  "member": 1,
+  "comp": "CIS Heavy Gun Position + AA (UD)",
+  "x": 8320.0,
+  "y": 6900.0,
+  "level_m": 1.0,
+  "finding": "f2",
+  "lowest_before_m": -1.8,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-M2",
+  "member": 2,
+  "comp": "TKTA Checkpoint Fixed (Mono)",
+  "x": 8175.1,
+  "y": 7235.8,
+  "level_m": 1.0,
+  "finding": "f2",
+  "lowest_before_m": -2.11,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-F",
+  "member": 1,
+  "comp": "CIS Turbolaser Tower with GPs",
+  "x": 10390.0,
+  "y": 7105.0,
+  "level_m": 1.3,
+  "finding": "f4",
+  "lowest_before_m": -2.53,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-M1",
+  "member": 1,
+  "comp": "CIS Small Checkpoint with GPs",
+  "x": 5471.1,
+  "y": 7854.4,
+  "level_m": 0.75,
+  "finding": "f5",
+  "lowest_before_m": 0.16,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-M1",
+  "member": 3,
+  "comp": "CIS Small Checkpoint with GPs",
+  "x": 5083.7,
+  "y": 8032.6,
+  "level_m": 0.75,
+  "finding": "f5",
+  "lowest_before_m": -0.57,
+  "margin_m": 10.0
+ },
+ {
+  "site": "3-M2",
+  "member": 2,
+  "comp": "CIS Small Checkpoint with GPs",
+  "x": 11421.1,
+  "y": 3448.6,
+  "level_m": 0.75,
+  "finding": "f6",
+  "lowest_before_m": 0.18,
+  "margin_m": 10.0
+ },
+ {
+  "site": "3-10",
+  "member": 0,
+  "comp": "CIS Basic Trenchline with GPs",
+  "x": 14000.0,
+  "y": 6400.0,
+  "level_m": 0.75,
+  "finding": "f7",
+  "lowest_before_m": 0.15,
+  "margin_m": 10.0
+ },
+ {
+  "site": "3-10",
+  "member": 1,
+  "comp": "CIS Basic Trenchline with GPs",
+  "x": 14000.0,
+  "y": 6310.0,
+  "level_m": 0.75,
+  "finding": "f7",
+  "lowest_before_m": -0.41,
+  "margin_m": 10.0
+ },
+ {
+  "site": "3-10",
+  "member": 2,
+  "comp": "CIS Small Rectangle FOB with GPs",
+  "x": 14000.0,
+  "y": 6480.0,
+  "level_m": 0.75,
+  "finding": "f7",
+  "lowest_before_m": -0.86,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-11",
+  "member": 1,
+  "comp": "CIS Small Rectangle FOB with GPs",
+  "x": 8800.0,
+  "y": 7940.0,
+  "level_m": 1.0,
+  "finding": "f10",
+  "lowest_before_m": -0.6,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-06",
+  "member": 0,
+  "comp": "CIS Small Checkpoint with GPs",
+  "x": 7507.6,
+  "y": 7645.4,
+  "level_m": 0.75,
+  "finding": "f13",
+  "lowest_before_m": -0.23,
+  "margin_m": 10.0
+ },
+ {
+  "site": "4-06",
+  "member": 1,
+  "comp": "CIS Heavy Gun Position + AA (UD)",
+  "x": 7570.0,
+  "y": 7560.0,
+  "level_m": 0.75,
+  "finding": "f13",
+  "lowest_before_m": -0.51,
+  "margin_m": 10.0
+ },
+ {
+  "decision": "re-run 2",
+  "kind": "apron from the 3-M1.2 pad edge",
+  "x": 13838.1,
+  "y": 5447.2,
+  "pad_level_m": 1.422,
+  "slope_pct": 8,
+  "reach_m": 30,
+  "max_fill_m": 1.22,
+  "source": "HUMAN decision; slope and reach ASSUMED"
+ },
+ {
+  "decision": "re-run 6",
+  "kind": "shore fill",
+  "site": "3-M1.2",
+  "x": 13838.1,
+  "y": 5447.2,
+  "radius_m": 64.6,
+  "level_m": 0.75,
+  "lowest_before_m": 0.18,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run 6",
+  "kind": "shore fill",
+  "site": "4-06",
+  "x": 7516.4,
+  "y": 7652.4,
+  "radius_m": 64.6,
+  "level_m": 0.75,
+  "lowest_before_m": -1.12,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run 6",
+  "kind": "shore fill",
+  "site": "4-M2",
+  "x": 8522.9,
+  "y": 7779.1,
+  "radius_m": 63.7,
+  "level_m": 0.75,
+  "lowest_before_m": -1.1,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run 6",
+  "kind": "shore fill",
+  "site": "4-M2.3",
+  "x": 8231.0,
+  "y": 7262.1,
+  "radius_m": 56.1,
+  "level_m": 0.75,
+  "lowest_before_m": -2.03,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run v2 2",
+  "kind": "pad fill",
+  "site": "3-03",
+  "x": 15200.0,
+  "y": 3000.0,
+  "half_size_m": [
+   118.5,
+   116.4
+  ],
+  "extra_north_m": 0.0,
+  "level_m": 0.75,
+  "lowest_before_m": -2.67,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run v2 2",
+  "kind": "pad fill",
+  "site": "3-10.3",
+  "x": 14000.0,
+  "y": 6480.0,
+  "half_size_m": [
+   65.1,
+   49.1
+  ],
+  "extra_north_m": 120.0,
+  "level_m": 0.75,
+  "lowest_before_m": 0.11,
+  "source": "HUMAN decision; level and size ASSUMED"
+ },
+ {
+  "decision": "re-run v2 3",
+  "kind": "shore fill",
+  "site": "3-M1.2",
+  "x": 13874.0,
+  "y": 5552.2,
+  "radius_m": 64.6,
+  "level_m": 0.75,
+  "lowest_before_m": 0.17,
+  "source": "HUMAN decision; level and size ASSUMED"
+ }
+]
