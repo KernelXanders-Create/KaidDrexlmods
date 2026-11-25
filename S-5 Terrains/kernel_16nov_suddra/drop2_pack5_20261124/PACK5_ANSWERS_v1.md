@@ -7,3 +7,4 @@ Every answer marked HUMAN or AI; every number MEASURED or ASSUMED.
 | 23 | - | B Start op 4 from 2-M1 Krupad Fort (4700, 5210), where week 1 ended | If Krupad Fort is not held, op 4 starts from the ship | HUMAN |
 | 24 | - | A Do ops 5-6 part 1 now on the K3 sketch ground, as for ops 3-4 (sketch v3), and re-run it when the drop-2 ground (the .npz files) lands | - | HUMAN |
 | 25 | - | A Kernel updates their own Refinery v1 with calls 8, 9, 16 C, 17, 18 C and 19 C and sends it as layout v2 | send day not stated | HUMAN |
+| 26 | - | B All ten kit pieces now; per-piece rows in KIT_CALLS_v1.md | - | HUMAN |
