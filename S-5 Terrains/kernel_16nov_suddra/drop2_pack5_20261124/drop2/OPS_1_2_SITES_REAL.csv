@@ -1,0 +1,89 @@
+op,site_id,map_label,working_name,role,grade,marker_x,marker_y,square,member_id,member_role,comp,x,y,yaw_deg,garrison_points_lib,objects_lib,also_in_op2_mission,marker_vs_shipped_delta_m
+1,1-F,Dregat Redoubt,Wirefield Redoubt,FINAL,Platoon,8230.0,3590.0,C1,1-F#0,main,CIS Mini Fortress with GPs,8230.0,3590.0,22.0,27,77,False,0.0
+1,1-F,Dregat Redoubt,Wirefield Redoubt,FINAL,Platoon,8230.0,3590.0,C1,1-F#1,member,CIS Metal Trench Line with GPs,8183.0,3437.0,81.0,70,80,False,0.0
+1,1-F,Dregat Redoubt,Wirefield Redoubt,FINAL,Platoon,8230.0,3590.0,C1,1-F#2,member,CIS Small Checkpoint with GPs,8032.0,3370.6,282.8,39,28,False,0.0
+1,1-F,Dregat Redoubt,Wirefield Redoubt,FINAL,Platoon,8230.0,3590.0,C1,1-F#3,member,CIS Guard Tower (PCannon) with GPS,8295.0,3430.0,7.0,21,18,False,0.0
+1,1-F,Dregat Redoubt,Wirefield Redoubt,FINAL,Platoon,8230.0,3590.0,C1,1-F#4,member,CIS Guard Tower with GPs,8365.0,3640.0,41.8,20,9,False,0.0
+1,1-M1,Tobek Hill,Pillbox Line,MAIN,Two-squad,6600,2900,B1,1-M1#0,main,CIS Heavy Gun Position + AA (UD),6600.0,2900.0,119.0,31,40,False,0.0
+1,1-M1,Tobek Hill,Pillbox Line,MAIN,Two-squad,6600,2900,B1,1-M1#1,member,Tukata Defense Tower Turbolaser,6676.3,2938.8,341.0,35,2,False,0.0
+1,1-M1,Tobek Hill,Pillbox Line,MAIN,Two-squad,6600,2900,B1,1-M1#2,member,Tukata Defense Tower Turbolaser,6534.8,2844.5,341.0,35,2,False,0.0
+1,1-M1,Tobek Hill,Pillbox Line,MAIN,Two-squad,6600,2900,B1,1-M1#3,member,Tukata Turret Bunker,6675.9,2840.1,325.0,21,8,False,0.0
+1,1-M1,Tobek Hill,Pillbox Line,MAIN,Two-squad,6600,2900,B1,1-M1#4,member,CIS Small Wall (Bunker) with GPs,6749.8,2963.8,1.3,11,5,False,0.0
+1,1-M2,Mashera Station,Rail Halt,MAIN,Platoon,5490.0,2730.0,B1,1-M2#0,main,CIS Medium Logistics Base with GPs,5490.0,2730.0,348.6,90,401,True,0.0
+1,1-M2,Mashera Station,Rail Halt,MAIN,Platoon,5490.0,2730.0,B1,1-M2#1,member,CIS Fuel Depot with GPs,5636.6,2842.8,66.5,79,84,True,0.0
+1,1-M2,Mashera Station,Rail Halt,MAIN,Platoon,5490.0,2730.0,B1,1-M2#2,member,CIS Heavy Gun Position + AA (UD),5545.9,2597.1,96.0,31,40,True,0.0
+1,1-M2,Mashera Station,Rail Halt,MAIN,Platoon,5490.0,2730.0,B1,1-M2#3,member,CIS Guard Tower with GPs,5627.8,2726.8,341.2,20,9,True,0.0
+1,1-M3,Bokret Gun Pits,Crater Gun Pits,MAIN,Two-squad,9800,3000,C1,1-M3#0,main,CIS Mixed AA Platform with GPs,9825.3,3031.0,252.0,49,86,False,0.0
+1,1-M3,Bokret Gun Pits,Crater Gun Pits,MAIN,Two-squad,9800,3000,C1,1-M3#1,member,CIS Heavy Gun Position + AA (UD),9831.7,2896.6,192.0,31,40,False,0.0
+1,1-M3,Bokret Gun Pits,Crater Gun Pits,MAIN,Two-squad,9800,3000,C1,1-M3#2,member,CIS Heavy Gun Position + AA (UD),9775.0,2903.0,192.0,31,40,False,0.0
+1,1-M3,Bokret Gun Pits,Crater Gun Pits,MAIN,Two-squad,9800,3000,C1,1-M3#3,member,CIS Heavy Gun Position + AA (UD),9692.3,3010.6,192.0,31,40,False,0.0
+1,1-M4,Gutok Command Post,Salient Command Post,MAIN,Two-squad,8890.0,4370.0,C2,1-M4#0,main,CIS Small FOB 1 With GPs,8890.0,4370.0,283.1,108,167,False,0.0
+1,1-M4,Gutok Command Post,Salient Command Post,MAIN,Two-squad,8890.0,4370.0,C2,1-M4#1,member,CIS Guard Tower (PCannon) with GPS,8869.4,4287.5,17.0,21,18,False,0.0
+1,1-01,Hasena Mill,Wire Outpost,SUP,Squad,7000,2000,B1,1-01#0,main,CIS Outpost with GPs,7000.0,2000.0,139.1,67,78,False,0.0
+1,1-01,Hasena Mill,Wire Outpost,SUP,Squad,7000,2000,B1,1-01#1,member,Tukata Turret Bunker,7044.8,1946.2,319.0,21,8,False,0.0
+1,1-02,Selowa Field Hospital,Bog Prison Camp,SUP,Two-squad,10600,2200,C1,1-02#0,main,Prison with Garrison Marks,10600.0,2200.0,359.0,110,142,False,0.0
+1,1-02,Selowa Field Hospital,Bog Prison Camp,SUP,Two-squad,10600,2200,C1,1-02#1,member,CIS Guard Tower (PCannon) with GPS,10553.6,2106.9,65.0,21,18,False,0.0
+1,1-03,Grubak Checkpoint,Moraine Foot Checkpoint,SUP,Squad,8070,1800,C1,1-03#0,main,CIS Small Checkpoint with GPs,8061.8,1800.1,288.3,39,28,False,0.0
+1,1-03,Grubak Checkpoint,Moraine Foot Checkpoint,SUP,Squad,8070,1800,C1,1-03#1,member,CIS Guard Tower with GPs,8127.0,1826.1,41.7,20,9,False,0.0
+1,1-04,Kuged Gun Line,Flower Tower Battery,SUP,Platoon,8340.0,5440.0,C2,1-04#0,main,[Burnzy] CIS Arti-base + Flower Tower 2,8340.0,5440.0,87.0,417,553,False,0.0
+1,1-04,Kuged Gun Line,Flower Tower Battery,SUP,Platoon,8340.0,5440.0,C2,1-04#1,member,Tukata Turret Bunker,8295.2,5204.7,7.0,21,8,False,0.0
+1,1-05,Ekad AA Pit,Bog AA Base,SUP,Two-squad,7180.0,4610.0,B2,1-05#0,main,CIS Medium AA Base with GPs,7180.0,4610.0,125.7,168,162,False,0.0
+1,1-05,Ekad AA Pit,Bog AA Base,SUP,Two-squad,7180.0,4610.0,B2,1-05#1,member,CIS Minimal AA Flak Cannon with GPs,7209.5,4478.3,165.9,11,7,False,0.0
+1,1-06,Ketud Sniper Nest,Crater Watch,SUP,Squad,10600,4000,C2,1-06#0,main,CIS Basic Trenchline with GPs,10600.0,4000.0,13.0,26,50,False,0.0
+1,1-06,Ketud Sniper Nest,Crater Watch,SUP,Squad,10600,4000,C2,1-06#1,member,Tukata Defense Tower Turbolaser,10656.7,3940.3,54.0,35,2,False,0.0
+1,1-07,Gikod Bunkers,Sap Bunkers,SUP,Squad,6480.0,3850.0,B1,1-07#0,main,CIS Heavy Gun Position + AA (UD),6480.0,3850.0,126.0,31,40,False,0.0
+1,1-07,Gikod Bunkers,Sap Bunkers,SUP,Squad,6480.0,3850.0,B1,1-07#1,member,Tukata Turret Bunker,6538.1,3802.8,331.0,21,8,False,0.0
+1,1-08,Gedrak Gate,Plank Road Gate,SUP,Two-squad,7830.0,5230.0,B2,1-08#0,main,CIS Medium Checkpoint 3 with GPs,7831.1,5230.1,353.5,93,80,False,0.0
+1,1-08,Gedrak Gate,Plank Road Gate,SUP,Two-squad,7830.0,5230.0,B2,1-08#1,member,CIS Guard Tower with GPs,7758.3,5266.8,35.1,20,9,False,0.0
+1,1-08,Gedrak Gate,Plank Road Gate,SUP,Two-squad,7830.0,5230.0,B2,1-08#2,member,Tukata Defense Tower Missile,7907.0,5188.5,0.0,31,2,False,0.0
+1,1-09,Bekot Fuel Dump,Bog Gas Dump,SUP,Two-squad,9600,4800,C2,1-09#0,main,CIS Fuel Depot with GPs,9600.0,4800.0,144.8,79,84,False,0.0
+1,1-09,Bekot Fuel Dump,Bog Gas Dump,SUP,Two-squad,9600,4800,C2,1-09#1,member,CIS Guard Tower (PCannon) with GPS,9628.8,4723.9,25.0,21,18,False,0.0
+1,1-09,Bekot Fuel Dump,Bog Gas Dump,SUP,Two-squad,9600,4800,C2,1-09#2,member,Tukata Turret Bunker,9526.7,4734.7,21.0,21,8,False,0.0
+1,1-10,Trodik Blimp,Spotter Radar,SUP,Squad,11170.0,5430.0,C2,1-10#0,main,Claus - Small Radar,11170.0,5430.0,305.4,0,35,False,0.0
+1,1-10,Trodik Blimp,Spotter Radar,SUP,Squad,11170.0,5430.0,C2,1-10#1,member,CIS Mixed AA Platform with GPs,11127.2,5353.4,247.0,49,86,False,0.0
+1,1-11,Bakug Mortar Pit,Esker Mortar Trench,SUP,Squad,5020,4610,B2,1-11#0,main,CIS Basic Trenchline with GPs,5036.0,4615.0,67.8,26,50,False,0.0
+1,1-11,Bakug Mortar Pit,Esker Mortar Trench,SUP,Squad,5020,4610,B2,1-11#1,member,Mrogg trench part 2 (Support weapon),4955.0,4720.0,52.0,0,57,False,0.0
+1,1-12,Preduk Signal Mast,Esker Signal Mast,SUP,Squad,5330,3800,B1,1-12#0,main,CIS Comms Array with GPs,5330.0,3800.0,158.2,57,50,True,0.0
+1,1-12,Preduk Signal Mast,Esker Signal Mast,SUP,Squad,5330,3800,B1,1-12#1,member,CIS Guard Tower with GPs,5384.0,3754.4,356.0,20,9,True,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#0,main,CIS Communications FOB with GPs,2590.0,3170.0,309.6,104,114,False,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#1,member,CIS Medium FOB with GPs,2690.7,3236.1,142.0,64,73,False,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#2,member,Tukata Air Defense Tower with GPs,2522.7,3368.8,52.0,196,199,False,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#3,member,CIS Heavy Gun Position + AA (UD),2657.8,3083.4,115.0,31,40,False,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#4,member,CIS Guard Tower (PCannon) with GPS,2738.3,3159.0,325.0,21,18,False,0.0
+2,2-F,Rewoha Listening Post,Old Listening Post,FINAL,Platoon,2590.0,3170.0,A1,2-F#5,member,CIS Guard Tower (PCannon) with GPS,2565.0,3023.5,325.0,21,18,False,0.0
+2,2-M1,Krupad Fort,Esker South Fort,MAIN,Platoon,4700.0,5210.0,B2,2-M1#0,main,CIS Small FOB 1 With GPs,4679.0,5290.0,273.5,108,167,False,0.0
+2,2-M1,Krupad Fort,Esker South Fort,MAIN,Platoon,4700.0,5210.0,B2,2-M1#1,member,CIS Small Citadel with GPs,4750.5,5119.7,8.0,31,82,False,0.0
+2,2-M1,Krupad Fort,Esker South Fort,MAIN,Platoon,4700.0,5210.0,B2,2-M1#2,member,CIS Basic Trenchline with GPs,4553.8,5356.5,66.9,26,50,False,0.0
+2,2-M1,Krupad Fort,Esker South Fort,MAIN,Platoon,4700.0,5210.0,B2,2-M1#3,member,CIS Guard Tower (PCannon) with GPS,4811.0,5001.0,7.0,21,18,False,0.0
+2,2-M2,Nowesha Pumphouse,Kettle Pumphouse,MAIN,Two-squad,2800,6000,A2,2-M2#0,main,CIS Powerbank Facility with GPs,2800.0,6000.0,60.6,44,243,False,0.0
+2,2-M2,Nowesha Pumphouse,Kettle Pumphouse,MAIN,Two-squad,2800,6000,A2,2-M2#1,member,CIS Guard Tower with GPs,2838.9,5876.0,20.3,20,9,False,0.0
+2,2-M3,Wesamo Dish,Listening Mast,MAIN,Two-squad,1300,3050,A1,2-M3#0,main,CIS Big Radio Tower with GPs,1300.0,3050.0,33.7,147,70,False,0.0
+2,2-M3,Wesamo Dish,Listening Mast,MAIN,Two-squad,1300,3050,A1,2-M3#1,member,CIS Guard Tower Fixed with GPs,1407.2,3073.0,306.3,20,16,False,0.0
+2,2-M4,Bogek Battery,Moraine Flower Tower Battery,MAIN,Platoon,1350.0,1540.0,A1,2-M4#0,main,[Burnzy] CIS Arti-base + Flower Tower 2,1350.0,1540.0,0.0,417,553,False,0.0
+2,2-M4,Bogek Battery,Moraine Flower Tower Battery,MAIN,Platoon,1350.0,1540.0,A1,2-M4#1,member,Tukata Turret Bunker,1573.4,1461.5,280.0,21,8,False,0.0
+2,2-01,Bekad Gravel Pits,Peat Pit Bunkers,SUP,Squad,3400,4200,A2,2-01#0,main,Tukata Defense Tower Turbolaser,3400.0,4200.0,358.0,35,2,False,0.0
+2,2-01,Bekad Gravel Pits,Peat Pit Bunkers,SUP,Squad,3400,4200,A2,2-01#1,member,Tukata Turret Bunker,3435.3,4159.0,342.0,21,8,False,0.0
+2,2-02,Droid Billet Camp,Droid Billet Camp,SUP,Two-squad,1300,4800,A2,2-02#0,main,CIS Small Rectangle FOB with GPs,1300.0,4800.0,231.7,105,70,False,0.0
+2,2-02,Droid Billet Camp,Droid Billet Camp,SUP,Two-squad,1300,4800,A2,2-02#1,member,CIS Guard Tower with GPs,1384.3,4790.4,359.2,20,9,False,0.0
+2,2-03,Prudok AA Site,West Covered AA,SUP,Two-squad,770.0,6490.0,A2,2-03#0,main,Medium Covered AA Base with GPs,770.0,6490.0,97.0,116,499,False,0.0
+2,2-03,Prudok AA Site,West Covered AA,SUP,Two-squad,770.0,6490.0,A2,2-03#1,member,CIS Guard Tower Fixed with GPs,860.4,6351.9,328.4,20,16,False,0.0
+2,2-04,Gokit Watchtower,Esker Watchtowers,SUP,Squad,5220,4050,B2,2-04#0,main,CIS Guard Tower (PCannon) with GPS,5220.0,4050.0,18.0,21,18,False,0.0
+2,2-04,Gokit Watchtower,Esker Watchtowers,SUP,Squad,5220,4050,B2,2-04#1,member,Tukata Defense Tower Turbolaser,5275.9,4066.4,30.0,35,2,False,0.0
+2,2-05,Traket Gun Post,Rail Embankment Guns,SUP,Squad,3780,1560,A1,2-05#0,main,CIS Turbolaser Tower with GPs,3780.0,1560.0,102.0,30,30,False,0.0
+2,2-05,Traket Gun Post,Rail Embankment Guns,SUP,Squad,3780,1560,A1,2-05#1,member,CIS Heavy Gun Position + AA (UD),3735.8,1504.8,110.0,31,40,False,0.0
+2,2-06,Debuk Spring Post,Moraine Spring Post,SUP,Two-squad,800,2000,A1,2-06#0,main,CIS Outpost with GPs,800.0,2000.0,105.9,67,78,False,0.0
+2,2-06,Debuk Spring Post,Moraine Spring Post,SUP,Two-squad,800,2000,A1,2-06#1,member,CIS Guard Tower with GPs,866.9,1979.5,324.7,20,9,False,0.0
+2,2-06,Debuk Spring Post,Moraine Spring Post,SUP,Two-squad,800,2000,A1,2-06#2,member,Tukata Defense Tower Turbolaser,814.9,1911.8,302.0,35,2,False,0.0
+2,2-07,Abrik Relay,Comms Relay,SUP,Squad,2000,5400,A2,2-07#0,main,CIS Comms Array with GPs,2000.0,5400.0,235.7,57,50,False,0.0
+2,2-07,Abrik Relay,Comms Relay,SUP,Squad,2000,5400,A2,2-07#1,member,CIS Guard Tower Fixed with GPs,2061.2,5370.3,333.5,20,16,False,0.0
+2,2-08,Getod Fuel Dump,Post Fuel Depot,SUP,Two-squad,3000,2200,A1,2-08#0,main,CIS Fuel Depot with GPs,3000.0,2200.0,75.9,79,84,False,0.0
+2,2-08,Getod Fuel Dump,Post Fuel Depot,SUP,Two-squad,3000,2200,A1,2-08#1,member,CIS Guard Tower (PCannon) with GPS,3065.7,2241.4,316.0,21,18,False,0.0
+2,2-08,Getod Fuel Dump,Post Fuel Depot,SUP,Two-squad,3000,2200,A1,2-08#2,member,Tukata Defense Tower Missile,2963.6,2131.4,316.0,31,2,False,0.0
+2,2-09,Butog Vehicle Park,Vehicle Depot,SUP,Platoon,4100.2,3219.1,B1,2-09#0,main,CIS Vehicle Depot with GPs (D),4100.2,3219.1,30.0,170,365,False,0.0
+2,2-09,Butog Vehicle Park,Vehicle Depot,SUP,Platoon,4100.2,3219.1,B1,2-09#1,member,Tukata Turret Bunker,4307.6,3378.6,359.0,21,8,False,0.0
+2,2-10,Kitag Trench,Esker Flank Trench,SUP,Squad,4110,6560,B2,2-10#0,main,CIS Basic Trenchline with GPs,4091.0,6580.0,65.6,26,50,False,0.0
+2,2-10,Kitag Trench,Esker Flank Trench,SUP,Squad,4110,6560,B2,2-10#1,member,Tukata Defense Tower Turbolaser,4175.0,6480.0,12.0,35,2,False,0.0
+2,2-11,Kugrod Sensor,Kettle Sensor,SUP,Squad,970.0,7610.0,A2,2-11#0,main,Claus - Small Radar,970.0,7610.0,243.7,0,35,False,0.0
+2,2-11,Kugrod Sensor,Kettle Sensor,SUP,Squad,970.0,7610.0,A2,2-11#1,member,CIS Mixed AA Platform with GPs,1016.9,7535.6,185.0,49,86,False,0.0
+2,2-12,Drogit Checkpoint,Esker Road Checkpoint,SUP,Squad,4380,6200,B2,2-12#0,main,CIS Small Checkpoint with GPs,4327.9,6176.7,263.6,39,28,False,0.0
+2,2-12,Drogit Checkpoint,Esker Road Checkpoint,SUP,Squad,4380,6200,B2,2-12#1,member,CIS Guard Tower with GPs,4292.5,6218.8,174.1,20,9,False,0.0
