@@ -122,3 +122,66 @@ Note: the links were drawn as minimum-spanning links on the K3 points. Several n
 | R1 | Do roads stay on dry ground only for ops 5-6? | b Dry only, plus a fill causeway (ground request) to each small island that needs a vehicle road | HUMAN |
 | R2 | Which small islands get a fill causeway | Causeways for 5-09 (22 m), 6-07 (22 m), 6-12 (20 m), 5-12 (50 m). Not chosen: 5-M4 + 5-05, 5-04, the op 6 start, 6-M3 (foot / boat / air links under dry-only) | HUMAN |
 | R3 | Op 6 start (10400, 7200) on a 0.02 km² island with no road | b Keep it: op 6 starts by boat or air | HUMAN |
+| R4 | How to set the ops 5-6 road net | a Redraw as the shortest dry net on the drop 2 ground (with the 4 causeways), bring back long links | HUMAN |
+| R5 | 5-12 via its 50 m causeway gives a 47.6 km road (5.7 km straight to 5-11) | a Keep the 50 m causeway and the 47.6 km road | HUMAN |
+| R6 | Op 6 long links 6-09–6-03 (4.3×), 6-09–6-02 (2.9×), 6-06–6-02 (2.7×) | a Accept the detours as measured | HUMAN |
+
+## Redrawn ops 5-6 net (R4, MEASURED; `net56.py`, output in `net56_v1.json`)
+
+The net is a minimum spanning tree over the shortest dry paths between each op's sites, with Kernel's 4 causeways (R2) opened as 7 m fill strips. The causeway fill level is ASSUMED. Each path is in `net56_v1.json`, sampled every 50 m.
+
+### Op 5: 15 on the net, 76.0 km
+
+Off the net (foot / boat / air under R1-R3): 5-M4, 5-04, 5-05, 5-13
+
+| Link | Dry m | Straight m | × |
+|---|---|---|---|
+| 5-11 – 5-12 | 47575 | 5657 | 8.41 |
+| 5-M1 – START | 3179 | 2408 | 1.32 |
+| 5-M2 – 5-08 | 1689 | 1281 | 1.32 |
+| 5-02 – 5-M3 | 1885 | 1456 | 1.29 |
+| 5-06 – 5-M3 | 1802 | 1562 | 1.15 |
+| 5-03 – 5-10 | 1607 | 1414 | 1.14 |
+| 5-10 – 5-08 | 3077 | 2720 | 1.13 |
+| 5-M1 – 5-09 | 1546 | 1414 | 1.09 |
+| 5-10 – 5-11 | 3381 | 3111 | 1.09 |
+| 5-M1 – 5-01 | 1649 | 1523 | 1.08 |
+| 5-M3 – 5-F | 2897 | 2683 | 1.08 |
+| 5-M1 – 5-F | 1766 | 1649 | 1.07 |
+| 5-06 – 5-07 | 1883 | 1811 | 1.04 |
+| 5-07 – 5-11 | 2083 | 2010 | 1.04 |
+
+Causeways (ground requests, R2): 5-09 22 m from (3020, 9120) to (3040, 9130), lowest ground +0.76; 5-12 50 m from (400, 9360) to (400, 9310), lowest ground +0.52
+
+### Op 6: 15 on the net, 35.0 km
+
+Off the net (foot / boat / air under R1-R3): 6-M3, 6-F; the op 6 start (boat / air, R3)
+
+| Link | Dry m | Straight m | × |
+|---|---|---|---|
+| 6-09 – 6-03 | 6324 | 1456 | 4.34 |
+| 6-09 – 6-02 | 4389 | 1523 | 2.88 |
+| 6-06 – 6-02 | 3554 | 1342 | 2.65 |
+| 6-09 – 6-M2 | 1894 | 966 | 1.96 |
+| 6-04 – 6-M1 | 2331 | 1612 | 1.45 |
+| 6-08 – 6-07 | 2150 | 1562 | 1.38 |
+| 6-M4 – 6-07 | 3105 | 2417 | 1.28 |
+| 6-11 – 6-M4 | 2005 | 1566 | 1.28 |
+| 6-M1 – 6-05 | 1659 | 1414 | 1.17 |
+| 6-M4 – 6-06 | 1388 | 1200 | 1.16 |
+| 6-10 – 6-11 | 2893 | 2646 | 1.09 |
+| 6-01 – 6-12 | 866 | 800 | 1.08 |
+| 6-M2 – 6-01 | 1257 | 1224 | 1.03 |
+| 6-01 – 6-M1 | 1225 | 1200 | 1.02 |
+
+Causeways (ground requests, R2): 6-07 22 m from (14450, 13430) to (14430, 13440), lowest ground +0.64; 6-12 20 m from (11620, 9720) to (11620, 9740), lowest ground +0.68
+
+The 5-12 causeway lands on a far lobe of the main island, so its road runs 47.6 km. Kernel kept it (R5). `cw512.py` measured two shorter routes in: an 819 m causeway toward 5-F and a 1,251 m causeway toward 5-01.
+
+## Ops 7-8 (Comedian's)
+
+The island table above lists them. 7-F Kesh Junction, which is also the op 8 start, sits on a 0.11 km² island. 7-01, 7-06 and 8-07 are on small islands, and 7-07 is in water. Passed to Comedian with the ground check findings.
+
+## Not done
+
+- Real road lines through the planner (grade per 10 / 20 m, cut / fill, approaches) for ops 5-6. This check only measures paths on a 10 m lattice.
