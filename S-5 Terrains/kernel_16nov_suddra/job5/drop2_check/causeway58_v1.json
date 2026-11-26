@@ -1,0 +1,131 @@
+[
+ {
+  "island_km2": 0.02,
+  "from_xy": [
+   10350,
+   7490
+  ],
+  "to_xy": [
+   10290,
+   7710
+  ],
+  "gap_m": 228,
+  "lowest_ground_m": -1.6,
+  "sites": [
+   "START op6"
+  ]
+ },
+ {
+  "island_km2": 0.11,
+  "from_xy": [
+   6160,
+   10060
+  ],
+  "to_xy": [
+   6270,
+   10080
+  ],
+  "gap_m": 112,
+  "lowest_ground_m": 0.18,
+  "sites": [
+   "5-M4",
+   "5-05"
+  ]
+ },
+ {
+  "island_km2": 0.07,
+  "from_xy": [
+   4840,
+   12530
+  ],
+  "to_xy": [
+   4840,
+   12590
+  ],
+  "gap_m": 60,
+  "lowest_ground_m": -2.07,
+  "sites": [
+   "5-04"
+  ]
+ },
+ {
+  "island_km2": 0.67,
+  "from_xy": [
+   3020,
+   9120
+  ],
+  "to_xy": [
+   3040,
+   9130
+  ],
+  "gap_m": 22,
+  "lowest_ground_m": 0.76,
+  "sites": [
+   "5-09"
+  ]
+ },
+ {
+  "island_km2": 3.1,
+  "from_xy": [
+   400,
+   9360
+  ],
+  "to_xy": [
+   400,
+   9310
+  ],
+  "gap_m": 50,
+  "lowest_ground_m": 0.52,
+  "sites": [
+   "5-12"
+  ]
+ },
+ {
+  "island_km2": 0.07,
+  "from_xy": [
+   12610,
+   9920
+  ],
+  "to_xy": [
+   11870,
+   10090
+  ],
+  "gap_m": 759,
+  "lowest_ground_m": -0.52,
+  "sites": [
+   "6-M3"
+  ]
+ },
+ {
+  "island_km2": 0.02,
+  "from_xy": [
+   14450,
+   13430
+  ],
+  "to_xy": [
+   14430,
+   13440
+  ],
+  "gap_m": 22,
+  "lowest_ground_m": 0.64,
+  "sites": [
+   "6-07"
+  ]
+ },
+ {
+  "island_km2": 0.02,
+  "from_xy": [
+   11620,
+   9720
+  ],
+  "to_xy": [
+   11620,
+   9740
+  ],
+  "gap_m": 20,
+  "lowest_ground_m": 0.68,
+  "sites": [
+   "6-12"
+  ]
+ }
+]

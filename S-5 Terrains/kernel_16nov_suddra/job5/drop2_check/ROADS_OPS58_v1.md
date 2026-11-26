@@ -119,3 +119,6 @@ Note: the links were drawn as minimum-spanning links on the K3 points. Several n
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| R1 | Do roads stay on dry ground only for ops 5-6? | b Dry only, plus a fill causeway (ground request) to each small island that needs a vehicle road | HUMAN |
+| R2 | Which small islands get a fill causeway | Causeways for 5-09 (22 m), 6-07 (22 m), 6-12 (20 m), 5-12 (50 m). Not chosen: 5-M4 + 5-05, 5-04, the op 6 start, 6-M3 (foot / boat / air links under dry-only) | HUMAN |
+| R3 | Op 6 start (10400, 7200) on a 0.02 km² island with no road | b Keep it: op 6 starts by boat or air | HUMAN |
