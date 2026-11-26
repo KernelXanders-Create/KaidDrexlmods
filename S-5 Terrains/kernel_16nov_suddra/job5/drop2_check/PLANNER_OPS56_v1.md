@@ -38,3 +38,16 @@ Outputs are in `planner_ops56_v1/op5` and `op6` (plan json, checks json, png, lo
 | P4 | 5-02 no route (router about 10.4 % per step) | a Ease the router grade to 14 % per step for the 5-02 road only (still held to the 14 % rule) | HUMAN |
 | P5 | 5-12 no route | a Ease the router grade to 14 % per step for the 5-12 road only | HUMAN |
 | P6 | 5-03 → 5-F.3 11.5 km (3.1×) | c Let the re-run pick how 5-03 joins | HUMAN |
+| P7 | 6-03 still no road after the P1 fill (second run: junction steps 0.67-1.39 m) | d Ramp piece at the junction, logged as a ramp spec | HUMAN |
+
+### Ramp spec for 6-03 (P7)
+
+| Item | Value | Tag |
+|---|---|---|
+| Where | The 6-03 road's junction at the west edge of 6-05, about (10105, 11825). 6-05 is at (10200, 11800), yaw 15, half-length 98.5 m | ASSUMED (the edge the best try used; the log gives no point) |
+| Rise | 0.67 m (the smallest step of the rejected tries) | MEASURED |
+| Length at 14 % | 4.8 m | MEASURED (from the rise) |
+| Deck | 7 m, the road width | ASSUMED |
+| Between | 6-03 (Fuel Depot, pad +1.0 m) and 6-05 (Medium AA Base, pad +3.75 m) | MEASURED |
+
+With the ramp, the 6-03 road (about 0.6 km, worst grade 12.8 % on the tries) joins the net. The road line itself waits for the next planner run with the ramp allowed.
