@@ -1,0 +1,23 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_16nov_suddra/job2/tools_sketch/planner.py:273: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+road 5-F -> 5-03: rejected (grade 0.0 %, cut/fill 1.66 m, pad clash 2 ['5-F'], junction step 0.0 m, water 0, house 1000000000.0 m)
+road 5-F -> 5-03: rejected (grade 12.8 %, cut/fill 1.95 m, pad clash 0 [], junction step 0.54 m, water 0, house 1000000000.0 m)
+road 5-F.2 -> 5-03: rejected (grade 0.0 %, cut/fill 0.91 m, pad clash 1 ['5-F.2'], junction step 0.0 m, water 0, house 1000000000.0 m)
+road 5-F.2 -> 5-03: rejected (grade 12.8 %, cut/fill 1.93 m, pad clash 0 [], junction step 0.78 m, water 0, house 1000000000.0 m)
+road 5-F.2 -> 5-03: rejected (grade 5.7 %, cut/fill 0.86 m, pad clash 0 [], junction step 0.55 m, water 0, house 1000000000.0 m)
+road 5-08 -> 5-03: rejected (grade 12.2 %, cut/fill 0.69 m, pad clash 0 [], junction step 0.37 m, water 0, house 1000000000.0 m)
+road 5-08 -> 5-03: rejected (grade 12.8 %, cut/fill 0.82 m, pad clash 0 [], junction step 0.45 m, water 0, house 1000000000.0 m)
+road 5-08.2 -> 5-08: rejected (grade 0.0 %, cut/fill 0.3 m, pad clash 3 ['5-08.2'], junction step 0.0 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 10.1 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.57 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 10.1 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.64 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 10.1 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.57 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 12.8 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.7 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 10.1 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.83 m, water 0, house 1000000000.0 m)
+road 5-M2.4 -> 5-03: rejected (grade 10.1 %, cut/fill 2.24 m, pad clash 0 [], junction step 0.9 m, water 0, house 1000000000.0 m)
+road for 5-M2.5: NO ROUTE found to the op 5 net
+road for 5-02: NO ROUTE found to the op 5 net
+{'1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)': 'PASS', '1 grid: road points vs pad points at another level (5 cm)': 'PASS', "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": 'REPORT', '2 pad ground change <= 4.0 m': 'PASS', '3 roads: dirt grade <= 14 %': 'PASS', '3 roads: cut / fill <= 4 m (every grid point the road fixes)': 'PASS', '3 roads: one connected net per island': 'FAIL', '3 roads: no straight run over 150 m (within 1 m of the chord)': 'PASS', '3 roads: nothing built within 3 m of a road edge': 'PASS', '4 pads: no two within 12 m': 'PASS', '4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)': 'PASS', '5 final and mains >= 400 m apart': 'PASS', '6 approaches (two per main, designed)': 'SEE NOTES', '7 no rock walls / rock towers as dressing on fought ground': 'PASS (none placed by this plan)'}
+
+real	33m9.820s
+user	36m46.109s
+sys	1m24.058s
