@@ -1,0 +1,123 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_16nov_suddra/job2/tools_sketch/planner.py:273: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+road 4-M3.4 -> 4-M3: rejected (grade 0.0 %, cut/fill 1.66 m, pad clash 3 ['4-M3.4'], junction step 0.0 m, water 0, house 1000000000.0 m)
+road 4-02.2 -> 4-M3.2: rejected (grade 12.8 %, cut/fill 1.86 m, pad clash 0 [], junction step 0.0 m, water 1, house 1000000000.0 m)
+road 4-10 -> 4-M3.3: rejected (grade 12.8 %, cut/fill 1.68 m, pad clash 0 [], junction step 0.0 m, water 1, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.18 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.86 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.18 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.86 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.18 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.86 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.4 %, cut/fill 1.5 m, pad clash 0 [], junction step 1.25 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.7 %, cut/fill 1.78 m, pad clash 0 [], junction step 1.24 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.3 %, cut/fill 1.5 m, pad clash 0 [], junction step 1.26 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.5 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.9 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.9 %, cut/fill 1.95 m, pad clash 0 [], junction step 1.37 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.8 %, cut/fill 1.54 m, pad clash 0 [], junction step 2.07 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.5 %, cut/fill 1.65 m, pad clash 0 [], junction step 2.27 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.93 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.7 %, cut/fill 1.9 m, pad clash 0 [], junction step 2.0 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 10.1 %, cut/fill 1.75 m, pad clash 0 [], junction step 1.5 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 11.0 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.66 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 11.5 %, cut/fill 1.73 m, pad clash 0 [], junction step 1.96 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 12.8 %, cut/fill 2.24 m, pad clash 0 [], junction step 2.65 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 10.9 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.93 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 10.1 %, cut/fill 2.27 m, pad clash 0 [], junction step 1.61 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 8.5 %, cut/fill 1.58 m, pad clash 0 [], junction step 2.09 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 8.5 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 9.6 %, cut/fill 1.74 m, pad clash 0 [], junction step 1.77 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 8.8 %, cut/fill 1.59 m, pad clash 0 [], junction step 2.09 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 8.3 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 9.5 %, cut/fill 1.72 m, pad clash 0 [], junction step 1.76 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.59 m, pad clash 0 [], junction step 1.76 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.46 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.73 m, pad clash 0 [], junction step 1.46 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-M3.2: rejected (grade 12.8 %, cut/fill 1.66 m, pad clash 0 [], junction step 1.96 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-M3.2: rejected (grade 12.8 %, cut/fill 1.87 m, pad clash 0 [], junction step 1.56 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-M3.2: rejected (grade 12.8 %, cut/fill 1.71 m, pad clash 0 [], junction step 1.56 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.4 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.92 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.4 %, cut/fill 1.96 m, pad clash 0 [], junction step 1.99 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-06.2: rejected (grade 10.3 %, cut/fill 1.74 m, pad clash 0 [], junction step 1.67 m, water 0, house 1000000000.0 m)
+road 4-08 -> rail bridge N: rejected (grade 12.8 %, cut/fill 2.05 m, pad clash 0 [], junction step 2.62 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-11: rejected (grade 6.7 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-11.2: rejected (grade 8.5 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-10: rejected (grade 12.8 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.71 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.18 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.86 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.5 %, cut/fill 1.5 m, pad clash 0 [], junction step 1.25 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.18 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.86 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.4 %, cut/fill 1.5 m, pad clash 0 [], junction step 1.21 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.6 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.19 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.5 %, cut/fill 1.5 m, pad clash 0 [], junction step 1.25 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 8.5 %, cut/fill 1.64 m, pad clash 0 [], junction step 1.29 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.1 %, cut/fill 1.95 m, pad clash 0 [], junction step 1.06 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.8 %, cut/fill 1.58 m, pad clash 0 [], junction step 1.66 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.0 %, cut/fill 1.65 m, pad clash 0 [], junction step 1.51 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 10.7 %, cut/fill 1.93 m, pad clash 0 [], junction step 1.92 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-02.2: rejected (grade 9.8 %, cut/fill 1.56 m, pad clash 0 [], junction step 1.68 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 10.1 %, cut/fill 1.75 m, pad clash 0 [], junction step 1.5 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 11.0 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.66 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-06.2: rejected (grade 11.5 %, cut/fill 1.73 m, pad clash 0 [], junction step 1.96 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 12.8 %, cut/fill 2.24 m, pad clash 0 [], junction step 2.65 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 10.9 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.93 m, water 0, house 1000000000.0 m)
+road 4-09 -> rail bridge N: rejected (grade 10.1 %, cut/fill 2.27 m, pad clash 0 [], junction step 1.61 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 8.5 %, cut/fill 1.58 m, pad clash 0 [], junction step 2.09 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 8.5 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11: rejected (grade 9.6 %, cut/fill 1.74 m, pad clash 0 [], junction step 1.77 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 8.8 %, cut/fill 1.59 m, pad clash 0 [], junction step 2.09 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 8.3 %, cut/fill 1.84 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-11.2: rejected (grade 9.5 %, cut/fill 1.72 m, pad clash 0 [], junction step 1.76 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.59 m, pad clash 0 [], junction step 1.76 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.85 m, pad clash 0 [], junction step 1.46 m, water 0, house 1000000000.0 m)
+road 4-09 -> 4-10: rejected (grade 12.8 %, cut/fill 1.73 m, pad clash 0 [], junction step 1.46 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.4 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.6 %, cut/fill 1.92 m, pad clash 0 [], junction step 1.15 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.5 %, cut/fill 1.91 m, pad clash 0 [], junction step 1.16 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-02.2: rejected (grade 10.4 %, cut/fill 1.96 m, pad clash 0 [], junction step 1.99 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-06.2: rejected (grade 10.3 %, cut/fill 1.74 m, pad clash 0 [], junction step 1.67 m, water 0, house 1000000000.0 m)
+road 4-08 -> rail bridge N: rejected (grade 12.8 %, cut/fill 2.05 m, pad clash 0 [], junction step 2.62 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-11: rejected (grade 6.7 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-11.2: rejected (grade 8.5 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.75 m, water 0, house 1000000000.0 m)
+road 4-08 -> 4-10: rejected (grade 12.8 %, cut/fill 1.55 m, pad clash 0 [], junction step 1.71 m, water 0, house 1000000000.0 m)
+road for village east road: NO ROUTE found to the north bank net
+road for 4-M1: NO ROUTE found to the north bank net
+road for village NNW road: NO ROUTE found to the north bank net
+road for 4-09: NO ROUTE found to the north bank net
+road for 4-M1.3: NO ROUTE found to the north bank net
+road for 4-M1.5: NO ROUTE found to the north bank net
+road for 4-03: NO ROUTE found to the north bank net
+road for 4-03.2: NO ROUTE found to the north bank net
+road for 4-03.3: NO ROUTE found to the north bank net
+road for 4-08: NO ROUTE found to the north bank net
+road for dam N: NO ROUTE found to the north bank net
+road for causeway N: NO ROUTE found to the north bank net
+road for armour causeway N: NO ROUTE found to the north bank net
+4-M1.2: NO SEAT astride any road of the net
+4-M1.4: NO SEAT astride any road of the net
+4-06: seated astride 4-02.2-4-M3.2, 0 m from its design point
+4-M2: seated astride rail bridge N-4-06.2, 1 m from its design point
+4-M2.3: seated astride rail bridge N-4-06.2, 5 m from its design point
+{'1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)': 'PASS', '1 grid: road points vs pad points at another level (5 cm)': 'PASS', "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": 'REPORT', '2 pad ground change <= 4.0 m': 'PASS', '3 roads: dirt grade <= 14 %': 'PASS', '3 roads: cut / fill <= 4 m (every grid point the road fixes)': 'PASS', '3 roads: one connected net per island': 'FAIL', '3 roads: no straight run over 150 m (within 1 m of the chord)': 'PASS', '3 roads: nothing built within 3 m of a road edge': 'PASS', '4 pads: no two within 12 m': 'PASS', '4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)': 'PASS', '5 final and mains >= 400 m apart': 'PASS', '6 approaches (two per main, designed)': 'SEE NOTES', '7 no rock walls / rock towers as dressing on fought ground': 'PASS (none placed by this plan)'}
+
+real	83m54.397s
+user	81m34.237s
+sys	2m34.786s
