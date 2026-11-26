@@ -1,0 +1,205 @@
+{
+ "1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)": {
+  "status": "PASS",
+  "closest": [
+   [
+    20.6,
+    "5-M1",
+    "5-M1.2",
+    false
+   ],
+   [
+    21.7,
+    "5-F",
+    "5-F.3",
+    true
+   ],
+   [
+    21.7,
+    "5-M1",
+    "5-M1.3",
+    false
+   ]
+  ],
+  "failing": []
+ },
+ "1 grid: road points vs pad points at another level (5 cm)": {
+  "status": "PASS",
+  "total": 0,
+  "by_road": {}
+ },
+ "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": {
+  "status": "REPORT",
+  "by_road": {
+   "5-09-5-M1": [
+    1,
+    0.19
+   ],
+   "5-01-5-F.3": [
+    1,
+    0.26
+   ],
+   "5-08.2-5-08": [
+    6,
+    0.15
+   ]
+  },
+  "note": "each joining road ends on a 12 m level landing at the junction's level; the step is where the earlier road's band climbs away from it"
+ },
+ "2 pad ground change <= 4.0 m": {
+  "status": "PASS",
+  "worst": [
+   "5-F.3",
+   2.76
+  ],
+  "over_3_5": []
+ },
+ "3 roads: dirt grade <= 14 %": {
+  "status": "PASS",
+  "worst": [
+   "5-M3-5-03",
+   {
+    "over_10_m": 12.8,
+    "over_20_m": 11.0,
+    "point_to_point": 12.8
+   }
+  ],
+  "method": "measured on the points as handed over: point to point, and over every stretch of 10 m and 20 m along them"
+ },
+ "3 roads: cut / fill <= 4 m (every grid point the road fixes)": {
+  "status": "PASS",
+  "worst": [
+   "5-M2.4-5-08",
+   2.05
+  ]
+ },
+ "3 roads: one connected net per island": {
+  "status": "FAIL",
+  "nets": {
+   "op 5": {
+    "pieces": [
+     [
+      "5-M1.3",
+      "5-M1.2",
+      "5-09",
+      "5-F.3",
+      "5-03",
+      "5-F",
+      "5-01",
+      "5-F.2",
+      "5-M2.2",
+      "5-M2.4",
+      "5-10",
+      "5-08",
+      "5-08.2",
+      "5-M3",
+      "5-06"
+     ]
+    ],
+    "not_reached": [
+     "5-M2",
+     "5-12",
+     "5-02"
+    ]
+   }
+  },
+  "links_to_existing_net": [],
+  "vehicle_sites_not_on_the_net": [
+   "5-M2",
+   "5-02",
+   "5-04",
+   "5-05"
+  ],
+  "reading": "the rule binds sites with a vehicle approach; where the purpose map gives no site one, every site the net reaches is on ONE net per island and the rest are foot / boat / air (their foot links are in the plan)"
+ },
+ "3 roads: no straight run over 150 m (within 1 m of the chord)": {
+  "status": "PASS",
+  "worst": [
+   "5-03-5-F.3",
+   80.8
+  ]
+ },
+ "3 roads: nothing built within 3 m of a road edge": {
+  "status": "PASS",
+  "closest": [
+   [
+    7.6,
+    "5-F",
+    "5-03-5-F.3"
+   ],
+   [
+    10.4,
+    "5-F.2",
+    "5-03-5-F.3"
+   ],
+   [
+    11.7,
+    "5-08.2",
+    "5-08-5-03"
+   ]
+  ],
+  "town_houses_closest": [],
+  "town_note": "town houses are measured from their walls (your grader's footprints of the K6 layouts) to the road edge, with no exemption at the street ends"
+ },
+ "4 pads: no two within 12 m": {
+  "status": "PASS",
+  "closest": [
+   [
+    20.6,
+    "5-M1",
+    "5-M1.2",
+    false
+   ]
+  ]
+ },
+ "4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)": {
+  "status": "PASS",
+  "closest": [
+   [
+    13.7,
+    "5-08.2"
+   ],
+   [
+    15.1,
+    "5-05"
+   ],
+   [
+    16.0,
+    "5-05.3"
+   ]
+  ],
+  "exempt": []
+ },
+ "5 final and mains >= 400 m apart": {
+  "status": "PASS",
+  "closest": []
+ },
+ "6 approaches (two per main, designed)": {
+  "status": "SEE NOTES",
+  "per_main": {
+   "5-F Esker Redoubt": [
+    "SSE via 5-M1 (166 deg)",
+    "N via 5-M2, after it falls (14 deg)"
+   ],
+   "5-M1 Esker Road Gate": [
+    "via 5-05 Kettle North Trench (90 deg)",
+    "via 5-09 West Fuel Dump (225 deg)"
+   ],
+   "5-M2 Esker Dugouts": [
+    "via 5-F Esker Redoubt (194 deg)",
+    "via 5-08 Stake Causeway Checkpoint (39 deg)"
+   ],
+   "5-M3 North-west Battery": [
+    "via 5-M2 Esker Dugouts (117 deg)",
+    "via 5-02 West Esker AA (196 deg)"
+   ],
+   "5-M4 Moss Abbey Ruin": [
+    "via 5-05 Kettle North Trench (207 deg)",
+    "via 5-03 Bog Pool Pillboxes (34 deg)"
+   ]
+  }
+ },
+ "7 no rock walls / rock towers as dressing on fought ground": {
+  "status": "PASS (none placed by this plan)"
+ }
+}
