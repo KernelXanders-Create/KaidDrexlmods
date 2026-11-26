@@ -64,3 +64,4 @@ All numbers are MEASURED unless marked otherwise.
 | P8 | Op 5 third pass stopped at the 2-hour limit | a Split off 5-12: the rest of op 5 as one job, then 5-12 alone joined to that net | HUMAN |
 | P9 | 5-12 no road: every try rejected at the junction (steps 0.55-1.41 m) | a Ramp piece: allow up to a 0.6 m step at the 5-12 junction, logged as a ramp spec (about 3.9 m long at 14 %, ASSUMED until the re-run gives the step), then re-run 5-12 alone | HUMAN |
 | P10 | 5-02 and 5-M2.5 no road (the router found no dry path to either, with every edge tried) | a Both foot / boat / air. 5-M2.5 gets a 21 m foot link to 5-M2.2 (like P3) | HUMAN |
+| P11 | 5-03 → 5-F.3 still 11.5 km (3.1× the straight line) after P6 | a Accept it, like the long dry routes in ops 3-4 (v1 decision 1) | HUMAN |
