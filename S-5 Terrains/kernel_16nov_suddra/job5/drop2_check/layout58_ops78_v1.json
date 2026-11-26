@@ -1,0 +1,500 @@
+{
+ "7-M1": {
+  "point": [
+   7608,
+   12984
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Metal Trench Line with GPs",
+    "size": [
+     43,
+     150
+    ],
+    "size_src": "KNOWN",
+    "x": 7608,
+    "y": 12984,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.84,
+     0.84
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 7676,
+    "y": 13009,
+    "yaw": 0,
+    "from_point_m": 72,
+    "ground": [
+     0.84,
+     0.84
+    ]
+   }
+  ]
+ },
+ "7-M2": {
+  "point": [
+   11400,
+   13800
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Medium Logistics Base with GPs",
+    "size": [
+     120,
+     100
+    ],
+    "size_src": "ASSUMED",
+    "x": 11400,
+    "y": 13800,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.99,
+     1.1
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 11400,
+    "y": 13896,
+    "yaw": 90,
+    "from_point_m": 96,
+    "ground": [
+     0.53,
+     1.1
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Landing Position with GPs",
+    "size": [
+     89,
+     134
+    ],
+    "size_src": "KNOWN",
+    "x": 11631,
+    "y": 14076,
+    "yaw": 0,
+    "from_point_m": 360,
+    "ground": [
+     4.98,
+     12.59
+    ]
+   },
+   {
+    "member": 3,
+    "comp": "wrecked train set piece (props, to confirm)",
+    "status": "NOT MEASURED (no size): not seated"
+   }
+  ]
+ },
+ "7-M3": {
+  "point": [
+   6400,
+   14200
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "size": [
+     140,
+     120
+    ],
+    "size_src": "ASSUMED",
+    "x": 6400,
+    "y": 14200,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.67,
+     0.97
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 6400,
+    "y": 14312,
+    "yaw": 0,
+    "from_point_m": 112,
+    "ground": [
+     0.63,
+     1.48
+    ]
+   }
+  ]
+ },
+ "7-M4": {
+  "point": [
+   12200,
+   14600
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Double Pcannon Checkpoint with GPs",
+    "size": [
+     71,
+     51
+    ],
+    "size_src": "KNOWN",
+    "x": 12200,
+    "y": 14600,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     1.09,
+     1.82
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "TKTA Checkpoint Fixed (Mono)",
+    "size": [
+     60,
+     40
+    ],
+    "size_src": "ASSUMED",
+    "x": 12200,
+    "y": 14664,
+    "yaw": 0,
+    "from_point_m": 64,
+    "ground": [
+     1.0,
+     1.16
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Heavy Gun Position + AA (UD)",
+    "size": [
+     60,
+     82
+    ],
+    "size_src": "KNOWN",
+    "x": 12227,
+    "y": 14525,
+    "yaw": 90,
+    "from_point_m": 80,
+    "ground": [
+     1.03,
+     2.77
+    ]
+   }
+  ]
+ },
+ "7-03": {
+  "point": [
+   9000,
+   14400
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Heavy AD Tower with GPs",
+    "status": "NOT MEASURED (no size): not seated"
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 9000,
+    "y": 14400,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.95,
+     2.14
+    ]
+   }
+  ]
+ },
+ "8-M1": {
+  "point": [
+   8000,
+   14600
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Double Pcannon Checkpoint with GPs",
+    "size": [
+     71,
+     51
+    ],
+    "size_src": "KNOWN",
+    "x": 8000,
+    "y": 14600,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.95,
+     0.95
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "TKTA Checkpoint Fixed (Mono)",
+    "size": [
+     60,
+     40
+    ],
+    "size_src": "ASSUMED",
+    "x": 8000,
+    "y": 14664,
+    "yaw": 0,
+    "from_point_m": 64,
+    "ground": [
+     0.89,
+     0.97
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Heavy Gun Position + AA (UD)",
+    "size": [
+     60,
+     82
+    ],
+    "size_src": "KNOWN",
+    "x": 8027,
+    "y": 14525,
+    "yaw": 90,
+    "from_point_m": 80,
+    "ground": [
+     0.51,
+     0.98
+    ]
+   }
+  ]
+ },
+ "8-M2": {
+  "point": [
+   10400,
+   15300
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Elevated Landing Pad Construction with GPs",
+    "size": [
+     121,
+     79
+    ],
+    "size_src": "KNOWN",
+    "x": 10400,
+    "y": 15300,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     19.59,
+     20.63
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Medium AA Base with GPs",
+    "size": [
+     197,
+     193
+    ],
+    "size_src": "KNOWN",
+    "x": 10400,
+    "y": 15460,
+    "yaw": 0,
+    "from_point_m": 160,
+    "ground": [
+     19.93,
+     26.78
+    ]
+   }
+  ]
+ },
+ "8-M3": {
+  "point": [
+   6400,
+   15400
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "size": [
+     140,
+     120
+    ],
+    "size_src": "ASSUMED",
+    "x": 6400,
+    "y": 15400,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     20.83,
+     25.82
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 6400,
+    "y": 15512,
+    "yaw": 0,
+    "from_point_m": 112,
+    "ground": [
+     25.36,
+     27.41
+    ]
+   }
+  ]
+ },
+ "8-07": {
+  "point": [
+   8400,
+   13700
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 8302,
+    "y": 13618,
+    "yaw": 0,
+    "from_point_m": 128,
+    "ground": [
+     0.67,
+     2.42
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 8204,
+    "y": 13535,
+    "yaw": 0,
+    "from_point_m": 256,
+    "ground": [
+     1.63,
+     4.26
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Small Rectangle FOB with GPs",
+    "size": [
+     90,
+     58
+    ],
+    "size_src": "KNOWN",
+    "x": 8112,
+    "y": 13458,
+    "yaw": 0,
+    "from_point_m": 376,
+    "ground": [
+     2.97,
+     4.82
+    ]
+   }
+  ]
+ },
+ "8-08": {
+  "point": [
+   9300,
+   13700
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 9522,
+    "y": 13572,
+    "yaw": 90,
+    "from_point_m": 256,
+    "ground": [
+     0.58,
+     6.03
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 9599,
+    "y": 13647,
+    "yaw": 90,
+    "from_point_m": 304,
+    "ground": [
+     1.39,
+     5.86
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Small Rectangle FOB with GPs",
+    "size": [
+     90,
+     58
+    ],
+    "size_src": "KNOWN",
+    "x": 9444,
+    "y": 13451,
+    "yaw": 0,
+    "from_point_m": 288,
+    "ground": [
+     0.56,
+     6.15
+    ]
+   }
+  ]
+ }
+}

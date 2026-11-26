@@ -5,9 +5,10 @@ D = sys.argv[1]; SK = sys.argv[3]; ids = sys.argv[4].split(",")
 h = np.load(D + "/suddra_height_cm.npz")["height_cm"].astype(np.float32) / 100
 m = np.load(D + "/suddra_masks.npz"); good = (m["ai_dry"] == 1) & (m["water"] == 0) & (h >= 0.5)
 P = {s["id"]: s for s in json.load(open(SK))["sites"]}
+MOVES = json.loads(sys.argv[6]) if len(sys.argv) > 6 else {}
 out = {}
 for sid in ids:
-    s = P[sid]; x0, y0 = s["xy"]; seated = []; rows = []
+    s = P[sid]; x0, y0 = MOVES.get(sid, s["xy"]); seated = []; rows = []
     for k, c in enumerate(s["comps"]):
         try: hx, hy, ev = sizes.size(c)
         except Exception: rows.append(dict(member=k, comp=c, status="NOT MEASURED (no size): not seated")); continue
@@ -25,6 +26,6 @@ for sid in ids:
         if not best: rows.append(dict(member=k, comp=c, status="no spot within 800 m")); continue
         d, X, Y, yaw, ax, ay, lo, hi = best; seated.append((X, Y, ax, ay))
         rows.append(dict(member=k, comp=c, size=[round(2 * hx), round(2 * hy)], size_src="KNOWN" if ev.startswith("KNOWN") else "ASSUMED", x=round(X), y=round(Y), yaw=yaw, from_point_m=d, ground=[round(lo, 2), round(hi, 2)]))
-    out[sid] = rows
+    out[sid] = dict(point=[x0, y0], members=rows)
     print(sid, s["name"]); [print("  ", r) for r in rows]
 json.dump(out, open(sys.argv[5], "w"), indent=1)

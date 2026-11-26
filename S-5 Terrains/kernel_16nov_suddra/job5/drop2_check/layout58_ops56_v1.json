@@ -1,0 +1,377 @@
+{
+ "5-F": {
+  "point": [
+   3000,
+   11000
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Mini Fortress with GPs",
+    "size": [
+     154,
+     145
+    ],
+    "size_src": "KNOWN",
+    "x": 3000,
+    "y": 11000,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.9,
+     8.38
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Metal Trench Line with GPs",
+    "size": [
+     43,
+     150
+    ],
+    "size_src": "KNOWN",
+    "x": 3000,
+    "y": 11112,
+    "yaw": 90,
+    "from_point_m": 112,
+    "ground": [
+     0.9,
+     6.47
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "size": [
+     140,
+     120
+    ],
+    "size_src": "ASSUMED",
+    "x": 3026,
+    "y": 10850,
+    "yaw": 0,
+    "from_point_m": 152,
+    "ground": [
+     1.3,
+     8.51
+    ]
+   }
+  ]
+ },
+ "5-M1": {
+  "point": [
+   3400,
+   9400
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Small Checkpoint with GPs",
+    "size": [
+     57,
+     69
+    ],
+    "size_src": "KNOWN",
+    "x": 3400,
+    "y": 9400,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.81,
+     0.81
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "TKTA Checkpoint Fixed (Mono)",
+    "size": [
+     60,
+     40
+    ],
+    "size_src": "ASSUMED",
+    "x": 3400,
+    "y": 9472,
+    "yaw": 0,
+    "from_point_m": 72,
+    "ground": [
+     0.66,
+     0.82
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Heavy Gun Position + AA (UD)",
+    "size": [
+     60,
+     82
+    ],
+    "size_src": "KNOWN",
+    "x": 3480,
+    "y": 9400,
+    "yaw": 0,
+    "from_point_m": 80,
+    "ground": [
+     0.59,
+     0.81
+    ]
+   }
+  ]
+ },
+ "5-05": {
+  "point": [
+   5729,
+   10092
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 5729,
+    "y": 10092,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.52,
+     0.88
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Basic Trenchline with GPs",
+    "size": [
+     114,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 5729,
+    "y": 10172,
+    "yaw": 0,
+    "from_point_m": 80,
+    "ground": [
+     0.85,
+     0.88
+    ]
+   },
+   {
+    "member": 2,
+    "comp": "CIS Small Rectangle FOB with GPs",
+    "size": [
+     90,
+     58
+    ],
+    "size_src": "KNOWN",
+    "x": 5833,
+    "y": 10092,
+    "yaw": 90,
+    "from_point_m": 104,
+    "ground": [
+     0.55,
+     0.88
+    ]
+   }
+  ]
+ },
+ "5-08": {
+  "point": [
+   4200,
+   13600
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Small Checkpoint with GPs",
+    "size": [
+     57,
+     69
+    ],
+    "size_src": "KNOWN",
+    "x": 4200,
+    "y": 13600,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.89,
+     0.9
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Heavy Gun Position + AA (UD)",
+    "size": [
+     60,
+     82
+    ],
+    "size_src": "KNOWN",
+    "x": 4232,
+    "y": 13781,
+    "yaw": 90,
+    "from_point_m": 184,
+    "ground": [
+     0.61,
+     3.24
+    ]
+   }
+  ]
+ },
+ "6-M1": {
+  "point": [
+   10400,
+   10400
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Metal Trench Line with GPs",
+    "size": [
+     43,
+     150
+    ],
+    "size_src": "KNOWN",
+    "x": 10400,
+    "y": 10400,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.85,
+     0.85
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 10468,
+    "y": 10425,
+    "yaw": 0,
+    "from_point_m": 72,
+    "ground": [
+     0.85,
+     0.85
+    ]
+   }
+  ]
+ },
+ "6-M2": {
+  "point": [
+   11576,
+   11624
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "[Burnzy] CIS Arti-base + Flower Tower 2",
+    "size": [
+     140,
+     120
+    ],
+    "size_src": "ASSUMED",
+    "x": 11576,
+    "y": 11624,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.81,
+     1.0
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 11473,
+    "y": 11501,
+    "yaw": 0,
+    "from_point_m": 160,
+    "ground": [
+     0.51,
+     5.44
+    ]
+   }
+  ]
+ },
+ "6-M3": {
+  "point": [
+   12800,
+   10000
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "CIS Vehicle Depot with GPs (D)",
+    "size": [
+     120,
+     120
+    ],
+    "size_src": "ASSUMED",
+    "x": 12800,
+    "y": 10000,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.81,
+     0.89
+    ]
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 13132,
+    "y": 9425,
+    "yaw": 0,
+    "from_point_m": 664,
+    "ground": [
+     0.62,
+     0.89
+    ]
+   }
+  ]
+ },
+ "6-01": {
+  "point": [
+   11600,
+   10400
+  ],
+  "members": [
+   {
+    "member": 0,
+    "comp": "Royal Tunnel Holdout 1 (Mono)",
+    "status": "NOT MEASURED (no size): not seated"
+   },
+   {
+    "member": 1,
+    "comp": "CIS Turbolaser Tower with GPs",
+    "size": [
+     55,
+     60
+    ],
+    "size_src": "KNOWN",
+    "x": 11600,
+    "y": 10400,
+    "yaw": 0,
+    "from_point_m": 0,
+    "ground": [
+     0.97,
+     0.97
+    ]
+   }
+  ]
+ }
+}
