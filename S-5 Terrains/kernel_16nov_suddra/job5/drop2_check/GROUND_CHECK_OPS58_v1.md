@@ -139,3 +139,43 @@ The layout rules (ASSUMED): each member is fully on good ground, the ground rang
   | Small Rectangle FOB | (3386, 12521) | 80 m | — |
   | Trenchline 2 | (3400, 13032), yaw 90 | **432 m** N | — |
   | Royal Tunnel Holdout | not seated (no size) | — | — |
+| 6a | 5-02 Medium AA Base 95 % good, no full spot within 800 m | a Ground request: fill the wet 5 % at (1400, 12000) | HUMAN |
+| 6b | 6-06 Mini Fortress 97 % good | b Ground request: fill the wet 3 % at (13600, 12400) | HUMAN |
+| 6c | 5-M2 second Basic Trenchline only fits 432 m N | b Ground request: fill a spot for it beside the other members | HUMAN |
+| 7-11 | Ops 7-8 findings (7-02, 7-07, 7-12, 7-04, 7-05, 8-M4, 8-07, 8-08, 8-10) | a Pass to Comedian with the good spots; Kernel's sketch follows their answers | HUMAN |
+
+## Summary of answers
+
+**Moves**
+- 5-05 to (5729, 10092).
+
+**Comp swap**
+- 6-03 Pipeline Pump becomes the CIS Fuel Depot with GPs (87 × 65 m) at (9600, 12000).
+
+**Water by design**
+- 6-F (refinery on stilts) and 5-13 (pile houses). AI access is settled when each is built.
+
+**Level in place**
+- 5-F, 6-05, 5-M3, 6-04, 6-08.
+
+**Ground requests** (the levels are the lane's to set)
+- 5-02: the wet 5 % under the Medium AA Base at (1400, 12000).
+- 6-06: the wet 3 % under the Mini Fortress at (13600, 12400).
+- 5-M2: a spot for the second Basic Trenchline (114 × 60 m) beside the other members near (3400, 12600).
+
+**5-M2 seats**
+- Turbolaser Tower at (3400, 12600).
+- Trenchline 1 at (3476, 12644), yaw 90.
+- Small Rectangle FOB at (3386, 12521).
+- The Royal Tunnel Holdout is not seated (no size).
+
+**To Comedian:** findings 7-11 for ops 7-8, with the good spots listed above:
+- 7-02: (10095, 12317), 96 m E.
+- 7-07: (10784, 12446), 240 m SE.
+
+## Not checked yet
+
+- Pads for the members of the other multi-comp sites. Only 5-M2 is laid out.
+- Roads for ops 5-8.
+- The call 26 B spots for 8-04, 8-07, 8-08 and 8-10.
+- The op 7 real outline against the Escape Pad (no built op 7).
