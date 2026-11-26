@@ -32,3 +32,9 @@ Outputs are in `planner_ops56_v1/op5` and `op6` (plan json, checks json, png, lo
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| P1 | 6-03 no road (junction steps 0.67-1.6 m) | a Ground request: level the ground at the 6-03 → 6-05 junction (0.67 m step) | HUMAN |
+| P2 | 5-M2.3 (Trenchline) and 5-M2.5 (FOB) no pad within 144 m | a Ground requests: fill under both at their layout seats (3476, 12644) yaw 90 and (3386, 12521) | HUMAN |
+| P3 | 5-M2 Royal Tunnel Holdout no road (routes cross its own pad) | a Foot link from the Turbolaser Tower, 17 m away | HUMAN |
+| P4 | 5-02 no route (router about 10.4 % per step) | a Ease the router grade to 14 % per step for the 5-02 road only (still held to the 14 % rule) | HUMAN |
+| P5 | 5-12 no route | a Ease the router grade to 14 % per step for the 5-12 road only | HUMAN |
+| P6 | 5-03 → 5-F.3 11.5 km (3.1×) | c Let the re-run pick how 5-03 joins | HUMAN |

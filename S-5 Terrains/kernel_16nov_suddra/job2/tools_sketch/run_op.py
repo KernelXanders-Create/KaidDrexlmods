@@ -425,7 +425,8 @@ for phase in (0, 1):
                 if zl is None: continue
                 rl = (r_own, r_own["points_z"]); P.uncommit(r_own); r_own["points_z"] = zl; P.recommit(r_own)
             t_r = time.time()
-            r = P.route(tuple(out), (nd[0], nd[1]), grade=getattr(op, "NET_GRADE", 0.14), width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
+            g_site = getattr(op, "SITE_GRADE", {}).get(sid)      # ops 5-6 planner P4 / P5 (HUMAN): a named road may route at its own grade, step limit = grade
+            r = P.route(tuple(out), (nd[0], nd[1]), grade=g_site or getattr(op, "NET_GRADE", 0.14), steep=1.0 if g_site else None, width=7.0, za=s["z"], zb=nd[2], name=f"{sid}-{nd[3]}", kind="dirt", links=[sid, nd[3]], margin=margin, pre=[tuple(ep)], own_ids=(sid, nd[3]))
             if os.environ.get("PLAN_VERBOSE"):
                 print(f"  {sid} -> {nd[3]} margin {margin} edge {e_rank}: {('no path ' + str(getattr(P, 'last_fail', ''))) if r is None else (r['max_cut_fill_m'], r['junction_step_max_m'], len(r['points']))} {time.time() - t_r:.0f} s", file=sys.stderr, flush=True)
             def undo():

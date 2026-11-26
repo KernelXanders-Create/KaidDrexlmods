@@ -10,3 +10,7 @@ TRUNKS = [[dict(stop=("xyz", _start), name="op 5 start", label="op 5 start (job 
 NETS = {"op 5": _ORD}
 ROOT = {"op 5": "TRUNK"}
 APPROACHES = {f'{s["id"]} {s["name"]}': [f'{a["way"]} ({a["bearing"]} deg)' for a in s.get("approaches", [])] for s in op58d.SK["sites"] if s["op"] == 5 and s["role"] in ("FINAL", "main")}
+
+# planner v1 answers (HUMAN): P3 the tunnel holdout is a foot link from the Turbolaser Tower; P4 / P5 the 5-02 and 5-12 roads route at 14 % per step
+_ORD.remove("5-M2"); NETS = {"op 5": _ORD}
+SITE_GRADE = {"5-02": 0.14, "5-12": 0.14}
