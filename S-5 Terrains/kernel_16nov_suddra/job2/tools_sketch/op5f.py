@@ -12,3 +12,4 @@ APPROACHES = {}
 SITE_GRADE = {"5-12": 0.14}
 ALL_EDGES = ("5-12",)
 SITE_MARGIN = {"5-12": 16000}
+SITE_JMAX = {"5-12": 0.6}          # planner v3 P9 (HUMAN): ramp piece at the 5-12 junction
