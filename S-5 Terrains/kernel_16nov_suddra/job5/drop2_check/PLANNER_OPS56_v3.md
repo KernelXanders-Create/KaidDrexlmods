@@ -22,7 +22,7 @@ All numbers are MEASURED unless marked otherwise.
 |---|---|
 | Sites | Every site the plan puts on the net is on it. That includes **6-03**, by the road 6-03 → 6-05: 4,303 m long, worst grade 9.6 %, with a 0.67 m step at the junction |
 | Roads | 17 roads, 32.4 km. Worst grade 12.8 % |
-| One net | Reads FAIL, but the check lists no site as not reached. It most likely counts the sites left off the net by decision: 6-M3 (roads R2) and 6-F (ground check f3) (NOT MEASURED) |
+| One net | Reads FAIL only because of 6-M3, which has a vehicle approach but is off the net by decision (roads R2). The op 6 net is one piece with no site unreached |
 | Other checks | Pass |
 
 ## Op 5 part 1, every site except 5-12 (33 min)
