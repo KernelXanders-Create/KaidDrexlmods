@@ -117,3 +117,25 @@ Scripts: `pads58.py` (every site) and `spot58.py` (nearest good spots for one fo
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| 1 | 5-05 at (5400, 9700) on low ground | b Move to (5729, 10092), 512 m NE | HUMAN |
+| 2 | 6-03 Powerbank Facility 69 % good | d Smaller comp: CIS Fuel Depot with GPs (87 × 65 m, KNOWN) at (9600, 12000), fully on good ground | HUMAN |
+| 3 | 6-F at (11000, 11000) is 100 % water | a Water by design (refinery on stilts); size and AI access settled when the NEW build is drawn | HUMAN |
+| 4 | 5-13 at (1600, 9000) is 43 % water | a Water by design (pile houses); AI access settled when the town is built | HUMAN |
+| 5 | Sloped pads 5-F, 6-05, 5-M3, 6-04, 6-08 (4.9-7.5 m range) | a Level in place, each pad to the middle level | HUMAN |
+| 6 | Wet rings round 5-02, 6-06, 5-M2 | b Lay out every member on good ground now and report what fits | HUMAN |
+
+### Finding 6 layout (MEASURED, `layout58.py`, output in `layout58_v1.json`)
+
+The layout rules (ASSUMED): each member is fully on good ground, the ground range under it is 8 m or less, it is 17 m clear of the other members, and its yaw is 0 or 90.
+
+- **5-02 West Esker AA** has one comp, the CIS Medium AA Base (197 × 193 m). There is **no fully good spot within 800 m**. At its point it is 95 % good.
+- **6-06 NE Esker Fort** has one comp, the CIS Mini Fortress (154 × 145 m). At its point it is 97 % good. The nearest fully good spot is (13446, 12216), **240 m** SW, with ground +4.07..+11.94 (7.9 m range).
+- **5-M2 Esker Dugouts:**
+
+  | Member | Seat | Distance from the point | Ground |
+  |---|---|---|---|
+  | Turbolaser Tower | (3400, 12600), yaw 0 | at the point | +0.94 |
+  | Trenchline 1 | (3476, 12644), yaw 90 | 88 m | — |
+  | Small Rectangle FOB | (3386, 12521) | 80 m | — |
+  | Trenchline 2 | (3400, 13032), yaw 90 | **432 m** N | — |
+  | Royal Tunnel Holdout | not seated (no size) | — | — |

@@ -1,0 +1,103 @@
+{
+ "5-02": [
+  {
+   "member": 0,
+   "comp": "CIS Medium AA Base with GPs",
+   "status": "no spot within 800 m"
+  }
+ ],
+ "6-06": [
+  {
+   "member": 0,
+   "comp": "CIS Mini Fortress with GPs",
+   "size": [
+    154,
+    145
+   ],
+   "size_src": "KNOWN",
+   "x": 13446,
+   "y": 12216,
+   "yaw": 0,
+   "from_point_m": 240,
+   "ground": [
+    4.07,
+    11.94
+   ]
+  }
+ ],
+ "5-M2": [
+  {
+   "member": 0,
+   "comp": "Royal Tunnel Holdout 1 (Mono)",
+   "status": "NOT MEASURED (no size): not seated"
+  },
+  {
+   "member": 1,
+   "comp": "CIS Turbolaser Tower with GPs",
+   "size": [
+    55,
+    60
+   ],
+   "size_src": "KNOWN",
+   "x": 3400,
+   "y": 12600,
+   "yaw": 0,
+   "from_point_m": 0,
+   "ground": [
+    0.94,
+    0.94
+   ]
+  },
+  {
+   "member": 2,
+   "comp": "CIS Basic Trenchline with GPs",
+   "size": [
+    114,
+    60
+   ],
+   "size_src": "KNOWN",
+   "x": 3476,
+   "y": 12644,
+   "yaw": 90,
+   "from_point_m": 88,
+   "ground": [
+    0.63,
+    1.1
+   ]
+  },
+  {
+   "member": 3,
+   "comp": "CIS Basic Trenchline with GPs",
+   "size": [
+    114,
+    60
+   ],
+   "size_src": "KNOWN",
+   "x": 3400,
+   "y": 13032,
+   "yaw": 90,
+   "from_point_m": 432,
+   "ground": [
+    0.59,
+    0.93
+   ]
+  },
+  {
+   "member": 4,
+   "comp": "CIS Small Rectangle FOB with GPs",
+   "size": [
+    90,
+    58
+   ],
+   "size_src": "KNOWN",
+   "x": 3386,
+   "y": 12521,
+   "yaw": 0,
+   "from_point_m": 80,
+   "ground": [
+    0.57,
+    1.09
+   ]
+  }
+ ]
+}
