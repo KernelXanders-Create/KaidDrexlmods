@@ -103,3 +103,5 @@ Both are written into `layout58_ops56_v1.json` and `layout58_v1.json`.
 **Still to check:**
 - 7-M2's wrecked train has no size, and 7-03's Heavy AD Tower has no size (both Comedian's).
 - The roads for ops 5-8.
+| L4a | 5-F arti-base: no spot closer than 152 m with the 17 m pad gap | a Take the 152 m seat at (3026, 10850), levelled to the middle; no ground request | HUMAN |
+| L3a | 6-M2 Turbolaser: a spot needing no fill was found at (11570, 11730), 106 m out, ground +0.51..+1.01 | Taken for the ground request in L3 (no fill needed) | AI |
