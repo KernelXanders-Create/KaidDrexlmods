@@ -353,7 +353,19 @@
    {
     "member": 0,
     "comp": "Royal Tunnel Holdout 1 (Mono)",
-    "status": "NOT MEASURED (no size): not seated"
+    "size": [
+     60,
+     60
+    ],
+    "size_src": "ASSUMED (Kernel L5a, 60 x 60 m)",
+    "x": 11600,
+    "y": 10480,
+    "yaw": 0,
+    "from_point_m": 80,
+    "ground": [
+     0.53,
+     0.97
+    ]
    },
    {
     "member": 1,

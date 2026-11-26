@@ -75,3 +75,31 @@ Cross-site check: 46 members are seated in all, and no two from different sites 
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| L1 | 6-M3 Turbolaser Tower 664 m out | a Seat it at (13132, 9425) | HUMAN |
+| L2 | 5-08 Heavy Gun Position + AA 184 m out | a Seat it at (4232, 13781), yaw 90 | HUMAN |
+| L3 | 6-M2 Turbolaser Tower 160 m out | b Ground request: fill a spot for it closer to the arti-base | HUMAN |
+| L4 | 5-F Arti-base + Flower Tower 2 152 m out | b Ground request: fill a spot for it closer to the fortress | HUMAN |
+| L5 | Royal Tunnel Holdout at 6-01 and 5-M2 has no size | b Seat both now with an ASSUMED footprint, replaced by the real size later | HUMAN |
+| L5a | ASSUMED footprint for the Royal Tunnel Holdout | b 60 × 60 m | HUMAN |
+
+## Tunnel holdouts seated (L5, 60 × 60 m ASSUMED; MEASURED seats)
+
+- 6-01 Royal Tunnel Holdout: (11600, 10480), 80 m N of the point, ground +0.53..+0.97.
+- 5-M2 Royal Tunnel Holdout: (3320, 12600), 80 m W of the point, ground +0.66..+0.96.
+
+Both are written into `layout58_ops56_v1.json` and `layout58_v1.json`.
+
+## Summary
+
+**Ops 5-6 seats taken as laid out.** These include 6-M3's Turbolaser Tower at (13132, 9425) (L1) and 5-08's gun at (4232, 13781) (L2).
+
+**Ground requests** (the lane sets the levels):
+- 6-M2: a Turbolaser Tower spot closer to the arti-base (L3).
+- 5-F: an Arti-base + Flower Tower 2 spot closer to the fortress (L4).
+- From the ground check, finding 6c: 5-M2's second Basic Trenchline.
+
+**Ops 7-8:** the layout is for Comedian, under ground check findings 7-11.
+
+**Still to check:**
+- 7-M2's wrecked train has no size, and 7-03's Heavy AD Tower has no size (both Comedian's).
+- The roads for ops 5-8.
