@@ -409,6 +409,8 @@ for phase in (0, 1):
         done = False
         tries = [(q, 450, e) for q in picked[:2] for e in (0, 1)] + [(q, 900, e) for q in picked[:3] for e in (0, 1)]
         if pass_no > 0: tries += [(q, 1500, e) for q in picked[:12] for e in (0, 1, 2)]
+        if sid in getattr(op, "ALL_EDGES", ()): tries += [(q, 1500, e) for q in picked[:12] for e in (2, 3)]     # ops 5-6 planner v2: pads whose facing edges are wet try every edge
+        if sid in getattr(op, "SITE_MARGIN", {}): tries = [(q, op.SITE_MARGIN[sid], e) for q, _m, e in tries]      # a road known to wind far (5-12's 47.6 km, roads R5)
         if "_town" in s: tries = [(q, m_, e) for m_ in (450, 900, 1500) for q in picked[:4] for e in range(len(s["_town"]["ports"]))]
         for nd, margin, e_rank in tries:
             if "_town" in s:      # a town tries each of its road ports (street ends at the town's edge) in turn
@@ -432,7 +434,7 @@ for phase in (0, 1):
             def undo():
                 if rl: P.uncommit(rl[0]); rl[0]["points_z"] = rl[1]; P.recommit(rl[0])
             if r is None: undo(); continue
-            if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > JMAX or house_clear(r) < 3.0:
+            if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > getattr(op, "SITE_JMAX", {}).get(sid, JMAX) or house_clear(r) < 3.0:
                 log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m)"); undo(); continue
             P.commit_road(r); ROADS_BY_ID[r["id"]] = r
             if rl:                # the re-levelled road's join points move with its new levels

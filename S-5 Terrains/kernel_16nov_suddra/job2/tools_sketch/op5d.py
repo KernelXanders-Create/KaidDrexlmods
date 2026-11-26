@@ -14,3 +14,7 @@ APPROACHES = {f'{s["id"]} {s["name"]}': [f'{a["way"]} ({a["bearing"]} deg)' for 
 # planner v1 answers (HUMAN): P3 the tunnel holdout is a foot link from the Turbolaser Tower; P4 / P5 the 5-02 and 5-12 roads route at 14 % per step
 _ORD.remove("5-M2"); NETS = {"op 5": _ORD}
 SITE_GRADE = {"5-02": 0.14, "5-12": 0.14}
+# planner v2 (AI, carrying out P2 / P4 / P5): 5-02 and 5-M2.5 face water on their nearest edges, so they try every edge;
+# 5-12's kept road (roads R5) winds about 47.6 km, so its search margin covers the whole map
+ALL_EDGES = ("5-02", "5-M2.5", "5-12")
+SITE_MARGIN = {"5-12": 16000}
