@@ -37926,25 +37926,26 @@
  "approaches": {
   "6-F Cauldron Refinery": [
    "SW over the rim past 6-M1 (225 deg)",
-   "E from 6-M4 Apron Town (86 deg)"
+   "E from 6-M4 Cauldron Apron Town (86 deg)"
   ],
   "6-M1 Rim Bunker Ring": [
-   "from the op start (180 deg)",
-   "via 6-F Cauldron Refinery (45 deg)"
+   "WSW from the start (243 deg)",
+   "W past 6-04 Gas Holder (277 deg)"
   ],
   "6-M2 Terrace Batteries": [
-   "via 6-F Cauldron Refinery (223 deg)",
-   "via 6-02 Spoil Heap Snipers (78 deg)"
+   "S past 6-01 Rim Spoil Galleries (179 deg)",
+   "ENE past 6-02 Spoil Heap Snipers (78 deg)"
   ],
   "6-M3 Tank Laager": [
-   "via 6-12 Flare Stack Field (252 deg)",
-   "via 6-M4 Cauldron Apron Town (34 deg)"
+   "WNW past 6-01 (288 deg)",
+   "SE past 6-10 Crater Lip Pillboxes (122 deg)"
   ],
   "6-M4 Cauldron Apron Town": [
-   "via 6-M3 Tank Laager (214 deg)",
-   "via 6-06 NE Esker Fort (0 deg)"
+   "SSW from 6-M3 once it falls (214 deg)",
+   "N past 6-06 NE Esker Fort (0 deg)"
   ]
  },
+ "approaches_source": "job5/ops5_6_approaches_v2.md (HUMAN), swapped in after the run (planner v3, approaches swap); routing does not read approaches",
  "shores": [
   {
    "from_xy": [

@@ -178,24 +178,24 @@
   "status": "SEE NOTES",
   "per_main": {
    "5-F Esker Redoubt": [
-    "SSE via 5-M1 (166 deg)",
-    "N via 5-M2, after it falls (14 deg)"
+    "SSE up the esker road via 5-M1 (166 deg)",
+    "N down the esker from 5-M2 once it falls (14 deg)"
    ],
    "5-M1 Esker Road Gate": [
-    "via 5-05 Kettle North Trench (90 deg)",
-    "via 5-09 West Fuel Dump (225 deg)"
+    "E past 5-05 Kettle North Trench (81 deg)",
+    "SW past 5-09 West Fuel Dump (225 deg)"
    ],
    "5-M2 Esker Dugouts": [
-    "via 5-F Esker Redoubt (194 deg)",
-    "via 5-08 Stake Causeway Checkpoint (39 deg)"
+    "NNE past 5-08 Stake Causeway Checkpoint (39 deg)",
+    "E past 5-04 Walker Park (97 deg)"
    ],
    "5-M3 North-west Battery": [
-    "via 5-M2 Esker Dugouts (117 deg)",
-    "via 5-02 West Esker AA (196 deg)"
+    "ESE from 5-M2 once it falls (117 deg)",
+    "S past 5-02 West Esker AA (196 deg)"
    ],
    "5-M4 Moss Abbey Ruin": [
-    "via 5-05 Kettle North Trench (207 deg)",
-    "via 5-03 Bog Pool Pillboxes (34 deg)"
+    "SW past 5-05 (219 deg)",
+    "WSW from 5-M1 once it falls (252 deg)"
    ]
   }
  },
