@@ -97,6 +97,34 @@ For scale: the four ops 5-6 causeways cross gaps of 20-50 m (roads R2).
 - 3-05's point comes from the objectives file. 3-05 is not in the drop 2 op 3 plan.
 - 3-M2's line ends at 1-F. A causeway that joined a nearer op 3 road would be shorter (NOT MEASURED).
 
+## A4 re-runs on pack v8 (MEASURED)
+
+Outputs: `approaches36/run_a4/op3` and `op6`. The approaches check was run again on these plans; its output is `approaches36/approaches36_v2.json`.
+
+| Approach | Before | After |
+|---|---|---|
+| 3-M2 W from the start | no road on that side (51° off) | **road on that side.** The trunk from 1-F to 3-M2 now runs over the causeway: 3,429 m, worst grade 12.8 %. The road leaves 3-M2 20° off the approach bearing |
+| 3-M4 NW past 3-05 | no road on that side (50° off) | **road on that side.** The new road from the causeway end is 1,241 m long, worst grade 1.5 %, and leaves 6° off |
+| 6-M1 W past 6-04 | no road on that side (50° off) | **road on that side.** The new road from the causeway end is 1,409 m long, worst grade 13.8 %, and leaves 0° off. 6-M1's WSW approach, from the start, is now 34° off, so it also counts as on that side |
+
+### Op 6 (15 min)
+
+- 18 roads, 33.0 km.
+- Every check passes except "one connected net". That fails only because of 6-M3 (roads R2).
+
+### Op 3 (52 min): one setback
+
+- **3-M1 lost its trunk.**
+  - The trunk from 1-F to 3-M1 found a much shorter path this time: worst grade 9.9 %, inside a 500 m margin. The fourth pass needed 17.8 km.
+  - That path was rejected at its start on the 1-F FOB point, with a 0.37 m junction step against the 0.3 m limit.
+  - So 3-M1's own pad has no road. The planner gave a ramp spec instead (0.4 m rise).
+  - 3-M1.3 is reached instead by a 14.6 km road from 3-M2.
+- **Knock-on to 3-M1.2.** The checkpoint seated astride the 3-M2 trunk, 3,942 m from its pin. It is now only 4.2 m from the +0.3 m line, which fails the 10 m rule.
+- **Other checks:**
+  - "One connected net" fails, as accepted before: 3-04, 3-04.2, 3-10, 3-10.2 and 3-10.3 are foot / boat / air sites.
+  - Everything else passes.
+  - The worst grade is 12.8 %. The plan has 22 roads, 34.6 km.
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |

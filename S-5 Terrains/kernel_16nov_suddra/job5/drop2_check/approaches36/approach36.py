@@ -6,6 +6,8 @@ PLANS = {3: ["job2/drop2_check/rerun_ops34_v4/op3/op33_plan.json"],
          4: ["job2/drop2_check/rerun_ops34_v5/op4_north/op43_plan.json", "job2/drop2_check/rerun_ops34_v5/op4_south/op43_plan.json"],
          5: ["job5/drop2_check/planner_ops56_v4/op5_main/op5_plan.json"],
          6: ["job5/drop2_check/planner_ops56_v3/op6/op6_plan.json"]}
+if os.environ.get("APPROACH_PLANS"): PLANS.update({int(k): v for k, v in json.loads(os.environ["APPROACH_PLANS"]).items()})     # re-check on newer plans
+OUT_NAME = os.environ.get("APPROACH_OUT", "approaches36_v1.json")
 OUT_M = 150.0      # ASSUMED: the road's heading is read where it is 150 m out from the site centre
 TOL = 45.0         # ASSUMED: a road "on that side" leaves within 45 deg of the approach bearing
 # reviewed approaches for ops 5-6 (ops5_6_approaches_v2.md, HUMAN); ops 3-4 from the plans (JOB_2 decisions 16-25, call 6C), 4-M1 per JOB_2 decision 46
@@ -66,5 +68,5 @@ for op, files in PLANS.items():
             rows.append(dict(op=op, site=full, way=way, bearing=b, result=res,
                              closest_road=best[0] if best else None, closest_heading=best[1] if best else None,
                              off_deg=round(dif(best[1], b)) if best else None, roads=heads))
-json.dump(rows, open(os.path.join(H, "approaches36_v1.json"), "w"), indent=1)
+json.dump(rows, open(os.path.join(H, OUT_NAME), "w"), indent=1)
 for r in rows: print(r["op"], r["site"].split(" ")[0], f'{r["bearing"]}', r["result"], r.get("closest_road"), r.get("closest_heading"), r.get("off_deg"), "| all:", [h[1] for h in r["roads"]])
