@@ -1,0 +1,90 @@
+{
+ "FOB": {
+  "id": "6-M4 FOB",
+  "comp": "CIS Small Rectangle FOB with GPs",
+  "x": 13570.0,
+  "y": 11055.0,
+  "yaw": 30,
+  "hx": 45.1,
+  "hy": 29.1,
+  "z": 0.64,
+  "change_m": 0.27,
+  "ground": [
+   0.37,
+   0.91
+  ],
+  "road_edge_m": 5.7,
+  "from_town_point_m": 148,
+  "score": 79.62411694957753,
+  "facing": null
+ },
+ "SSW gun": {
+  "id": "6-M4 SSW gun",
+  "comp": "CIS Heavy Gun Position + AA (UD)",
+  "x": 13500.0,
+  "y": 11130.0,
+  "yaw": 45,
+  "hx": 29.9,
+  "hy": 40.8,
+  "z": 0.78,
+  "change_m": 0.12,
+  "ground": [
+   0.65,
+   0.9
+  ],
+  "road_edge_m": 3.1,
+  "from_town_point_m": 122,
+  "score": 91.35097153287424,
+  "facing": {
+   "bearing": 214,
+   "rise_150m_m": -1.89,
+   "clear_300m": true
+  }
+ },
+ "N gun": {
+  "id": "6-M4 N gun",
+  "comp": "CIS Heavy Gun Position + AA (UD)",
+  "x": 13726.0,
+  "y": 11266.0,
+  "yaw": 135,
+  "hx": 29.9,
+  "hy": 40.8,
+  "z": 0.67,
+  "change_m": 0.27,
+  "ground": [
+   0.41,
+   0.94
+  ],
+  "road_edge_m": 3.9,
+  "from_town_point_m": 142,
+  "score": 120.83045973594572,
+  "facing": {
+   "bearing": 0,
+   "rise_150m_m": -1.9,
+   "clear_300m": true
+  }
+ },
+ "N gun, road bearing": {
+  "id": "6-M4 N gun (along the road, 45 deg)",
+  "comp": "CIS Heavy Gun Position + AA (UD)",
+  "x": 13726.0,
+  "y": 11266.0,
+  "yaw": 135,
+  "hx": 29.9,
+  "hy": 40.8,
+  "z": 0.67,
+  "change_m": 0.27,
+  "ground": [
+   0.41,
+   0.94
+  ],
+  "road_edge_m": 3.9,
+  "from_town_point_m": 142,
+  "score": 120.83045973594572,
+  "facing": {
+   "bearing": 45,
+   "rise_150m_m": -1.9,
+   "clear_300m": true
+  }
+ }
+}
