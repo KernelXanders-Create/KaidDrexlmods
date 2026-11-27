@@ -113,6 +113,7 @@ Output in `planner_ops56_v8/op5_512` (module `op5h.py`, pack v7, no ramp). It fi
 | P14 | 5-12 three-join run stopped at 115 min with no tries | d Re-run the 76-min setup without the ramp, then a ground request at the best junction | HUMAN |
 | P15 | 5-12: where to put the junction ground request (the log gave no point) | a Log each try's junction point, re-run the no-ramp setup, then place the ground request at the measured junction | HUMAN |
 | P16 | 5-12: the two best joins tie at a 0.55 m step | a Low shore road: the ground request goes at the 5-03 → 5-F.3 road join, (2733, 11760), net level +0.66 m | HUMAN |
+| P17 | 5-12 still no road on pack v10; the step is road against road, not ground | c Off the net: 5-12 is a foot / boat / air site, like 5-02 and 5-M2.5 (P10). No more 5-12 runs | HUMAN |
 
 ## P16 ground request at the 5-12 join (pack v10)
 
@@ -136,4 +137,4 @@ Why (MEASURED from the code, `planner.py` `check_road`):
 
 Reading (AI): the new road probably climbs at about 12.5 % in its last few metres, inside the shared band. 0.55 m at 12.5 % is 4.4 m. The new road's levels at the join are NOT MEASURED, because the log does not keep a rejected road's points.
 
-Pack v10's cut stays in the ground log but did nothing for this run.
+Pack v10's cut stays in the ground log but did nothing for this run. Under P17, 5-12 is off the net, so the cut is not needed by any road (AI reading).
