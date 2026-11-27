@@ -125,6 +125,31 @@ Outputs: `approaches36/run_a4/op3` and `op6`. The approaches check was run again
   - Everything else passes.
   - The worst grade is 12.8 %. The plan has 22 roads, 34.6 km.
 
+## A5 re-run of op 3 (58 min, MEASURED)
+
+Output: `approaches36/run_a5/op3`. Approaches re-checked in `approaches36/approaches36_v3.json`.
+
+**Correction.** Under A4 I called the rejected 3-M1 trunk path "much shorter". That was my reading of its 500 m search margin, and it was wrong (AI, not measured). The trunk that now passes is 17,661 m long, about the same as the fourth pass (17.8 km).
+
+| Item | Result |
+|---|---|
+| 1-F → 3-M1 trunk | On the net: 17,661 m, worst grade 12.8 %, with a 0.37 m step at its start on the 1-F FOB point (8300, 3780) |
+| 3-M1.2 | Seated on that trunk 1 m from its pin (13874, 5552). Pad change 0.77 m |
+| 3-M2 W and 3-M4 NW | Both still have a road on their side, 5° and 6° off the approach bearing |
+| Approaches (op 3) | Every land approach has a road on its side except 3-F W, which is a water way by A2 |
+| Roads | 23 roads, 35.0 km. Worst grade 13.8 % |
+| One net | FAIL, as accepted before: 3-04, 3-04.2, 3-10, 3-10.2 and 3-10.3 are foot / boat / air |
+| **Water line** | **FAIL: 3-M2.3** (Small Checkpoint) now sits astride the 3-M2 trunk on the causeway, at (11461, 3440). That is 41 m from its design point and **2.0 m** from the +0.3 m line. In the fourth pass it was on the 3-07 → 3-M2.4 road and passed |
+
+### Ramp spec at the 1-F start of the 3-M1 trunk (A5)
+
+| Item | Value | Tag |
+|---|---|---|
+| Where | The trunk's start on the 1-F FOB point, (8300, 3780), ground +0.32 m | MEASURED |
+| Rise | 0.37 m | MEASURED |
+| Length at 14 % | 2.6 m | MEASURED (from the rise) |
+| Deck | 7 m, the road width | ASSUMED |
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |

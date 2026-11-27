@@ -1,0 +1,1029 @@
+[
+ {
+  "op": 3,
+  "site": "3-F Peat-Gas Works",
+  "way": "W along the pipeline road past 3-M2",
+  "bearing": 297.0,
+  "result": "no road on that side",
+  "closest_road": "3-F-3-02",
+  "closest_heading": 212,
+  "off_deg": 85,
+  "roads": [
+   [
+    "3-F-3-02",
+    212
+   ],
+   [
+    "3-F.3-3-F",
+    212
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-F Peat-Gas Works",
+  "way": "SW past 3-M4 / 3-02",
+  "bearing": 243.0,
+  "result": "road on that side",
+  "closest_road": "3-F-3-02",
+  "closest_heading": 212,
+  "off_deg": 31,
+  "roads": [
+   [
+    "3-F-3-02",
+    212
+   ],
+   [
+    "3-F.3-3-F",
+    212
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M1 Kettle East Fort",
+  "way": "WSW along the entry road",
+  "bearing": 253.0,
+  "result": "road on that side",
+  "closest_road": "3-M2.2-3-M1",
+  "closest_heading": 224,
+  "off_deg": 29,
+  "roads": [
+   [
+    "3-01-3-M1",
+    167
+   ],
+   [
+    "3-02-3-M1",
+    200
+   ],
+   [
+    "3-03-3-M1",
+    145
+   ],
+   [
+    "3-06-3-M1",
+    114
+   ],
+   [
+    "3-08-3-M1",
+    180
+   ],
+   [
+    "3-14-3-M1",
+    111
+   ],
+   [
+    "3-M1.3-3-M1",
+    64
+   ],
+   [
+    "3-M2.2-3-M1",
+    224
+   ],
+   [
+    "3-M3-3-M1",
+    54
+   ],
+   [
+    "3-M4-3-M1",
+    212
+   ],
+   [
+    "3-M4.2-3-M1",
+    210
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    59
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    64
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    65
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M1 Kettle East Fort",
+  "way": "SW past 3-04",
+  "bearing": 225.0,
+  "result": "road on that side",
+  "closest_road": "3-M2.2-3-M1",
+  "closest_heading": 224,
+  "off_deg": 1,
+  "roads": [
+   [
+    "3-01-3-M1",
+    167
+   ],
+   [
+    "3-02-3-M1",
+    200
+   ],
+   [
+    "3-03-3-M1",
+    145
+   ],
+   [
+    "3-06-3-M1",
+    114
+   ],
+   [
+    "3-08-3-M1",
+    180
+   ],
+   [
+    "3-14-3-M1",
+    111
+   ],
+   [
+    "3-M1.3-3-M1",
+    64
+   ],
+   [
+    "3-M2.2-3-M1",
+    224
+   ],
+   [
+    "3-M3-3-M1",
+    54
+   ],
+   [
+    "3-M4-3-M1",
+    212
+   ],
+   [
+    "3-M4.2-3-M1",
+    210
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    59
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    64
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    65
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M2 Pipeline Pumping Station",
+  "way": "W from the start",
+  "bearing": 273.0,
+  "result": "road on that side",
+  "closest_road": "trunk-1:1-F FOB-3-M2",
+  "closest_heading": 278,
+  "off_deg": 5,
+  "roads": [
+   [
+    "3-07-3-M2.4",
+    50
+   ],
+   [
+    "3-07-3-M2.4",
+    52
+   ],
+   [
+    "3-M2.2-3-M1",
+    222
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    72
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    77
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    85
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    181
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    214
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    221
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    223
+   ],
+   [
+    "trunk-1:1-F FOB-3-M2",
+    278
+   ],
+   [
+    "trunk-1:1-F FOB-3-M2",
+    295
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M2 Pipeline Pumping Station",
+  "way": "SW along the pipeline",
+  "bearing": 235.0,
+  "result": "road on that side",
+  "closest_road": "trunk-101:1-F FOB-3-M1",
+  "closest_heading": 223,
+  "off_deg": 12,
+  "roads": [
+   [
+    "3-07-3-M2.4",
+    50
+   ],
+   [
+    "3-07-3-M2.4",
+    52
+   ],
+   [
+    "3-M2.2-3-M1",
+    222
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    72
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    77
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    85
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    181
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    214
+   ],
+   [
+    "3-M2.4-3-M2.2",
+    221
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    223
+   ],
+   [
+    "trunk-1:1-F FOB-3-M2",
+    278
+   ],
+   [
+    "trunk-1:1-F FOB-3-M2",
+    295
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M3 East Crater Battery",
+  "way": "SW past 3-M1",
+  "bearing": 220.0,
+  "result": "road on that side",
+  "closest_road": "3-M3-3-M1",
+  "closest_heading": 213,
+  "off_deg": 7,
+  "roads": [
+   [
+    "3-M3-3-M1",
+    213
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M3 East Crater Battery",
+  "way": "WSW past 3-07",
+  "bearing": 256.0,
+  "result": "road on that side",
+  "closest_road": "3-M3-3-M1",
+  "closest_heading": 213,
+  "off_deg": 43,
+  "roads": [
+   [
+    "3-M3-3-M1",
+    213
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M4 Gasworks Spur",
+  "way": "NW along the pipeline road",
+  "bearing": 315.0,
+  "result": "road on that side",
+  "closest_road": "3-M4-3-M1",
+  "closest_heading": 321,
+  "off_deg": 6,
+  "roads": [
+   [
+    "3-M4-3-M1",
+    103
+   ],
+   [
+    "3-M4-3-M1",
+    321
+   ],
+   [
+    "3-M4.2-3-M1",
+    108
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    103
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    321
+   ],
+   [
+    "trunk-201:3-M4 causeway end-3-M4",
+    309
+   ]
+  ]
+ },
+ {
+  "op": 3,
+  "site": "3-M4 Gasworks Spur",
+  "way": "E from 3-02 once it falls",
+  "bearing": 72.0,
+  "result": "road on that side",
+  "closest_road": "3-M4-3-M1",
+  "closest_heading": 103,
+  "off_deg": 31,
+  "roads": [
+   [
+    "3-M4-3-M1",
+    103
+   ],
+   [
+    "3-M4-3-M1",
+    321
+   ],
+   [
+    "3-M4.2-3-M1",
+    108
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    103
+   ],
+   [
+    "trunk-101:1-F FOB-3-M1",
+    321
+   ],
+   [
+    "trunk-201:3-M4 causeway end-3-M4",
+    309
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-F Drain Locks",
+  "way": "SW past 4-04",
+  "bearing": 215.0,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 4,
+  "site": "4-F Drain Locks",
+  "way": "W along the bank from 4-M2 once it falls",
+  "bearing": 269.0,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 4,
+  "site": "4-M1 Peat Cutters' Village",
+  "way": "E along the north bank from the causeway (J2-46)",
+  "bearing": 91.0,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 4,
+  "site": "4-M1 Peat Cutters' Village",
+  "way": "NNW past 4-09",
+  "bearing": 336.0,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 4,
+  "site": "4-M2 Drain Rail Bridge",
+  "way": "SSW past 4-01 to the south gate",
+  "bearing": 190.0,
+  "result": "road on that side",
+  "closest_road": "rail bridge N-4-06.2",
+  "closest_heading": 201,
+  "off_deg": 11,
+  "roads": [
+   [
+    "rail bridge N-4-06.2",
+    25
+   ],
+   [
+    "rail bridge N-4-06.2",
+    201
+   ],
+   [
+    "rail bridge N-4-06.2",
+    206
+   ],
+   [
+    "rail bridge N-4-06.2",
+    208
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-M2 Drain Rail Bridge",
+  "way": "over the 4-06 causeway to the north gate",
+  "bearing": 309.0,
+  "result": "no road on that side",
+  "closest_road": "rail bridge N-4-06.2",
+  "closest_heading": 25,
+  "off_deg": 76,
+  "roads": [
+   [
+    "rail bridge N-4-06.2",
+    25
+   ],
+   [
+    "rail bridge N-4-06.2",
+    201
+   ],
+   [
+    "rail bridge N-4-06.2",
+    206
+   ],
+   [
+    "rail bridge N-4-06.2",
+    208
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-M3 Central Salient",
+  "way": "SSW past 4-11 from the Rail Bridge",
+  "bearing": 214.0,
+  "result": "road on that side",
+  "closest_road": "4-11-4-M3.4",
+  "closest_heading": 242,
+  "off_deg": 28,
+  "roads": [
+   [
+    "4-02.2-4-M3.2",
+    271
+   ],
+   [
+    "4-10-4-M3.3",
+    321
+   ],
+   [
+    "4-11-4-M3.4",
+    242
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-M3 Central Salient",
+  "way": "WSW from the 4-06 causeway",
+  "bearing": 238.0,
+  "result": "road on that side",
+  "closest_road": "4-11-4-M3.4",
+  "closest_heading": 242,
+  "off_deg": 4,
+  "roads": [
+   [
+    "4-02.2-4-M3.2",
+    271
+   ],
+   [
+    "4-10-4-M3.3",
+    321
+   ],
+   [
+    "4-11-4-M3.4",
+    242
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-M4 Barge Quay",
+  "way": "WSW past 4-05",
+  "bearing": 250.0,
+  "result": "road on that side",
+  "closest_road": "4-04.2-4-M4",
+  "closest_heading": 250,
+  "off_deg": 0,
+  "roads": [
+   [
+    "4-01-4-M4",
+    244
+   ],
+   [
+    "4-04.2-4-M4",
+    250
+   ],
+   [
+    "4-M4-4-04",
+    234
+   ]
+  ]
+ },
+ {
+  "op": 4,
+  "site": "4-M4 Barge Quay",
+  "way": "by player boat through the lock once 4-F falls",
+  "bearing": null,
+  "result": "not a land way (no bearing)",
+  "roads": [
+   [
+    "4-01-4-M4",
+    244
+   ],
+   [
+    "4-04.2-4-M4",
+    250
+   ],
+   [
+    "4-M4-4-04",
+    234
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-F Esker Redoubt",
+  "way": "SSE up the esker road via 5-M1",
+  "bearing": 166,
+  "result": "road on that side",
+  "closest_road": "5-F.3-5-M1.2",
+  "closest_heading": 165,
+  "off_deg": 1,
+  "roads": [
+   [
+    "5-01-5-F.3",
+    172
+   ],
+   [
+    "5-03-5-F.3",
+    132
+   ],
+   [
+    "5-03-5-F.3",
+    142
+   ],
+   [
+    "5-03-5-F.3",
+    346
+   ],
+   [
+    "5-03-5-F.3",
+    349
+   ],
+   [
+    "5-F-5-03",
+    132
+   ],
+   [
+    "5-F-5-03",
+    349
+   ],
+   [
+    "5-F.2-5-03",
+    20
+   ],
+   [
+    "5-F.2-5-03",
+    358
+   ],
+   [
+    "5-F.3-5-M1.2",
+    165
+   ],
+   [
+    "5-F.3-5-M1.2",
+    167
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-F Esker Redoubt",
+  "way": "N down the esker from 5-M2 once it falls",
+  "bearing": 14,
+  "result": "road on that side",
+  "closest_road": "5-F.2-5-03",
+  "closest_heading": 20,
+  "off_deg": 6,
+  "roads": [
+   [
+    "5-01-5-F.3",
+    172
+   ],
+   [
+    "5-03-5-F.3",
+    132
+   ],
+   [
+    "5-03-5-F.3",
+    142
+   ],
+   [
+    "5-03-5-F.3",
+    346
+   ],
+   [
+    "5-03-5-F.3",
+    349
+   ],
+   [
+    "5-F-5-03",
+    132
+   ],
+   [
+    "5-F-5-03",
+    349
+   ],
+   [
+    "5-F.2-5-03",
+    20
+   ],
+   [
+    "5-F.2-5-03",
+    358
+   ],
+   [
+    "5-F.3-5-M1.2",
+    165
+   ],
+   [
+    "5-F.3-5-M1.2",
+    167
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M1 Esker Road Gate",
+  "way": "E past 5-05 Kettle North Trench",
+  "bearing": 81,
+  "result": "no road on that side",
+  "closest_road": "5-09-5-M1",
+  "closest_heading": 176,
+  "off_deg": 95,
+  "roads": [
+   [
+    "5-09-5-M1",
+    176
+   ],
+   [
+    "5-F.3-5-M1.2",
+    328
+   ],
+   [
+    "5-M1.3-5-M1",
+    196
+   ],
+   [
+    "trunk-1:op 5 start-5-M1",
+    196
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M1 Esker Road Gate",
+  "way": "SW past 5-09 West Fuel Dump",
+  "bearing": 225,
+  "result": "road on that side",
+  "closest_road": "5-M1.3-5-M1",
+  "closest_heading": 196,
+  "off_deg": 29,
+  "roads": [
+   [
+    "5-09-5-M1",
+    176
+   ],
+   [
+    "5-F.3-5-M1.2",
+    328
+   ],
+   [
+    "5-M1.3-5-M1",
+    196
+   ],
+   [
+    "trunk-1:op 5 start-5-M1",
+    196
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M2 Esker Dugouts",
+  "way": "NNE past 5-08 Stake Causeway Checkpoint",
+  "bearing": 39,
+  "result": "road on that side",
+  "closest_road": "5-M2.4-5-08",
+  "closest_heading": 22,
+  "off_deg": 17,
+  "roads": [
+   [
+    "5-M2.4-5-08",
+    22
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M2 Esker Dugouts",
+  "way": "E past 5-04 Walker Park",
+  "bearing": 97,
+  "result": "no road on that side",
+  "closest_road": "5-M2.4-5-08",
+  "closest_heading": 22,
+  "off_deg": 75,
+  "roads": [
+   [
+    "5-M2.4-5-08",
+    22
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M3 North-west Battery",
+  "way": "ESE from 5-M2 once it falls",
+  "bearing": 117,
+  "result": "road on that side",
+  "closest_road": "5-M3-5-03",
+  "closest_heading": 92,
+  "off_deg": 25,
+  "roads": [
+   [
+    "5-M3-5-03",
+    34
+   ],
+   [
+    "5-M3-5-03",
+    92
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M3 North-west Battery",
+  "way": "S past 5-02 West Esker AA",
+  "bearing": 196,
+  "result": "no road on that side",
+  "closest_road": "5-M3-5-03",
+  "closest_heading": 92,
+  "off_deg": 104,
+  "roads": [
+   [
+    "5-M3-5-03",
+    34
+   ],
+   [
+    "5-M3-5-03",
+    92
+   ]
+  ]
+ },
+ {
+  "op": 5,
+  "site": "5-M4 Moss Abbey Ruin",
+  "way": "SW past 5-05",
+  "bearing": 219,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 5,
+  "site": "5-M4 Moss Abbey Ruin",
+  "way": "WSW from 5-M1 once it falls",
+  "bearing": 252,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 6,
+  "site": "6-F Cauldron Refinery",
+  "way": "SW over the rim past 6-M1",
+  "bearing": 225,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 6,
+  "site": "6-F Cauldron Refinery",
+  "way": "E from 6-M4 Cauldron Apron Town",
+  "bearing": 86,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 6,
+  "site": "6-M1 Rim Bunker Ring",
+  "way": "WSW from the start",
+  "bearing": 243,
+  "result": "road on that side",
+  "closest_road": "trunk-1:6-M1 causeway end-6-M1",
+  "closest_heading": 277,
+  "off_deg": 34,
+  "roads": [
+   [
+    "6-01.2-6-M1.2",
+    77
+   ],
+   [
+    "6-05-6-M1",
+    327
+   ],
+   [
+    "trunk-1:6-M1 causeway end-6-M1",
+    277
+   ]
+  ]
+ },
+ {
+  "op": 6,
+  "site": "6-M1 Rim Bunker Ring",
+  "way": "W past 6-04 Gas Holder",
+  "bearing": 277,
+  "result": "road on that side",
+  "closest_road": "trunk-1:6-M1 causeway end-6-M1",
+  "closest_heading": 277,
+  "off_deg": 0,
+  "roads": [
+   [
+    "6-01.2-6-M1.2",
+    77
+   ],
+   [
+    "6-05-6-M1",
+    327
+   ],
+   [
+    "trunk-1:6-M1 causeway end-6-M1",
+    277
+   ]
+  ]
+ },
+ {
+  "op": 6,
+  "site": "6-M2 Terrace Batteries",
+  "way": "S past 6-01 Rim Spoil Galleries",
+  "bearing": 179,
+  "result": "road on that side",
+  "closest_road": "6-M2-6-01",
+  "closest_heading": 190,
+  "off_deg": 11,
+  "roads": [
+   [
+    "6-02-6-M2",
+    236
+   ],
+   [
+    "6-M2-6-01",
+    190
+   ],
+   [
+    "6-M2.2-6-M2",
+    190
+   ]
+  ]
+ },
+ {
+  "op": 6,
+  "site": "6-M2 Terrace Batteries",
+  "way": "ENE past 6-02 Spoil Heap Snipers",
+  "bearing": 78,
+  "result": "no road on that side",
+  "closest_road": "6-M2-6-01",
+  "closest_heading": 190,
+  "off_deg": 112,
+  "roads": [
+   [
+    "6-02-6-M2",
+    236
+   ],
+   [
+    "6-M2-6-01",
+    190
+   ],
+   [
+    "6-M2.2-6-M2",
+    190
+   ]
+  ]
+ },
+ {
+  "op": 6,
+  "site": "6-M3 Tank Laager",
+  "way": "WNW past 6-01",
+  "bearing": 288,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 6,
+  "site": "6-M3 Tank Laager",
+  "way": "SE past 6-10 Crater Lip Pillboxes",
+  "bearing": 122,
+  "result": "no road at the site",
+  "closest_road": null,
+  "closest_heading": null,
+  "off_deg": null,
+  "roads": []
+ },
+ {
+  "op": 6,
+  "site": "6-M4 Cauldron Apron Town",
+  "way": "SSW from 6-M3 once it falls",
+  "bearing": 214,
+  "result": "no road on that side",
+  "closest_road": "6-M4-6-11",
+  "closest_heading": 41,
+  "off_deg": 173,
+  "roads": [
+   [
+    "6-M4-6-11",
+    41
+   ]
+  ]
+ },
+ {
+  "op": 6,
+  "site": "6-M4 Cauldron Apron Town",
+  "way": "N past 6-06 NE Esker Fort",
+  "bearing": 0,
+  "result": "road on that side",
+  "closest_road": "6-M4-6-11",
+  "closest_heading": 41,
+  "off_deg": 41,
+  "roads": [
+   [
+    "6-M4-6-11",
+    41
+   ]
+  ]
+ }
+]
