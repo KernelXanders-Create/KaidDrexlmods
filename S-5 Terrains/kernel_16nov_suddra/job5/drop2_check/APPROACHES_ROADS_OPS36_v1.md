@@ -163,12 +163,12 @@ Final approaches check on these plans (op 3 `run_a6`, op 4 v5, op 5 v4 main, op 
 
 | Result | Count |
 |---|---|
-| Road on that side | 21 |
+| Road on that side | 22 |
 | No road at the site | 10 |
-| Road at the site, none on that side | 8 |
+| Road at the site, none on that side | 7 (3-F W, 4-M2 north gate, 5-M1 E, 5-M2 E, 5-M3 S, 6-M2 ENE, 6-M4 SSW) |
 | Not a land way | 1 |
 
-Every approach that still has no road on its side has a decision behind it: A2, roads R2 / R3 / R6, P10, or ops 3-4 v1 decisions 1 and 7.
+Every approach that still has no road on its side has a decision behind it: A2, roads R2 / R6, P10, T2 (6-M4's SSW shore stub and boat landing), or ops 3-4 v1 decisions 1 and 7.
 
 ## Decisions (Kernel)
 
