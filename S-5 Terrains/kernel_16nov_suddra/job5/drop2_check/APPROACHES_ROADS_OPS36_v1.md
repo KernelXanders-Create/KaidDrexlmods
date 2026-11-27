@@ -71,3 +71,4 @@ These five sites have no road by an earlier decision. This reading is AI.
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| A1 | Tolerance for "a road on the approach side" (3-M2 W, 3-M4 NW and 6-M1 W miss by 50-51°) | a Keep 45°: the three stay as findings | HUMAN |
