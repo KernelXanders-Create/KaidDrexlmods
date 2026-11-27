@@ -61,6 +61,15 @@ Output in `planner_ops56_v6/op5_512` (log only). **Stopped at its own 115 min li
 
 Where the time goes is NOT MEASURED.
 
+## Op 5 part 2, 5-12 without the ramp, repeated (P14, 73 min)
+
+Output in `planner_ops56_v7/op5_512`. **It finished**, in 73 min, so the no-ramp setup still finishes as it did in the 76-min run.
+- No road was built. All 34 tries were rejected at the junction.
+- The smallest steps were 0.55 m (the 5-03 → 5-F.3 road, 12.5 % grade) and 0.56 m (the 5-F pad, 12.9 %), the same as before.
+- The log gives the step but not where the junction is.
+
+Reading (AI): the two runs that allowed a 0.6 m step both ran past 115 min. The one that allowed none finished in 73 min. So allowing the step is likely what makes those runs slow. The cause is NOT MEASURED.
+
 ## Ramp spec for 6-03 (P7), corrected
 
 | Item | Value | Tag |
@@ -81,3 +90,4 @@ Where the time goes is NOT MEASURED.
 | P11 | 5-03 → 5-F.3 still 11.5 km (3.1× the straight line) after P6 | a Accept it, like the long dry routes in ops 3-4 (v1 decision 1) | HUMAN |
 | P12 | 5-12 re-run with the ramp stopped at the 2-hour limit (no output) | a Narrow the search: join only the 5-03 → 5-F.3 road, the 5-F.3 → 5-M1.2 road or the 5-F pad, with a 6 km margin, then re-run | HUMAN |
 | P13 | 5-12 narrowed re-run: no path inside the 6 km margin (ASSUMED by me, too small) | a Keep the three joins, go back to the 16 km margin, stop at 115 min | HUMAN |
+| P14 | 5-12 three-join run stopped at 115 min with no tries | d Re-run the 76-min setup without the ramp, then a ground request at the best junction | HUMAN |
