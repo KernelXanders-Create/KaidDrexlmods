@@ -70,6 +70,26 @@ Output in `planner_ops56_v7/op5_512`. **It finished**, in 73 min, so the no-ramp
 
 Reading (AI): the two runs that allowed a 0.6 m step both ran past 115 min. The one that allowed none finished in 73 min. So allowing the step is likely what makes those runs slow. The cause is NOT MEASURED.
 
+## Op 5 part 2, 5-12 with each junction point logged (P15, 73 min)
+
+Output in `planner_ops56_v8/op5_512` (module `op5h.py`, pack v7, no ramp). It finished in 73 min. **No road was built.** All 34 tries were again rejected at the junction, and the log now gives where each one joins and how long it is.
+
+| Joins | Join point | Net level there | Best step | Grade | Road length |
+|---|---|---|---|---|---|
+| 5-03 → 5-F.3 road | (2733, 11760) | +0.66 m | 0.55 m | 12.5 % | 52,660 m |
+| 5-F.3 → 5-M1.2 road | (3024, 10704) | +6.91 m | 0.55 m | 12.9 % | 53,830 m |
+| 5-F pad | (2876, 10950) | +6.25 m | 0.56 m | 12.9 % | 53,479 m |
+| 5-F.3 pad | (2914, 10796) | +5.75 m | 0.60 m | 13.1 % | 53,642 m |
+| 5-03 → 5-F.3 road, second point | (2633, 12004) | +3.65 m | 0.63 m | 12.8 % | 52,372 m |
+| 5-F.2 → 5-03 road | (2936, 11199) | +1.16 m | 0.89 m | 12.4 % | 53,251 m |
+| 5-F.2 pad | (2931, 11160) | +2.75 m | 0.92 m | 12.7 % | 53,304 m |
+| 5-01 → 5-F.3 road (4 points) | (2072-2429, 9853-9998) | +0.77 to +1.87 m | 0.99 m | 12.7-12.8 % | 55,495-55,907 m |
+| 5-01 pad | (1981, 10000) | +1.0 m | 0.99 m | 12.7 % | 55,956 m |
+
+- Every try is 52-56 km long. The best one, 52,660 m, is about 23 times the 2.3 km straight line from 5-12 (600, 11000) to its join. That length fits roads R5's 47.6 km kept road.
+- The two best joins both have a 0.55 m step. One is on the low shore road at (2733, 11760), net level +0.66 m. The other is on the high road at (3024, 10704), net level +6.91 m.
+- What the ground request would be: raising or lowering the ground under the last few metres of the 5-12 road by about 0.3 m would bring the step under the 0.3 m limit. That is AI reading: the size and length of the change are NOT MEASURED.
+
 ## Ramp spec for 6-03 (P7), corrected
 
 | Item | Value | Tag |

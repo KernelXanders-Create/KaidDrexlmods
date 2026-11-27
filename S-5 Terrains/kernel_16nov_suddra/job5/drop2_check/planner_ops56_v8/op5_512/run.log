@@ -1,0 +1,42 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_16nov_suddra/job2/tools_sketch/planner.py:273: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+road 5-12 -> 5-01 (op 5): rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 56002 m)
+road 5-12 -> 5-01 (op 5): rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55956 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.22 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55838 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55791 m)
+road 5-12 -> 5-01 (op 5): rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 56002 m)
+road 5-12 -> 5-01 (op 5): rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55956 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.22 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55838 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55791 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.9 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55674 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55629 m)
+road 5-12 -> 5-01 (op 5): rejected (grade 11.3 %, cut/fill 1.31 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55998 m)
+road 5-12 -> 5-01 (op 5): rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55985 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.0 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.4 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55836 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.7 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55819 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.1 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.4 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55674 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 13.0 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55656 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.3 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (2429, 9853) net level 1.87 m, road length 55513 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.6 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2429, 9853) net level 1.87 m, road length 55495 m)
+road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.5 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.58 m, water 0, house 1000000000.0 m, joins at (2733, 11760) net level 0.66 m, road length 52641 m)
+road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.5 %, cut/fill 1.22 m, pad clash 0 [], junction step 0.55 m, water 0, house 1000000000.0 m, joins at (2733, 11760) net level 0.66 m, road length 52660 m)
+road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.8 %, cut/fill 1.36 m, pad clash 0 [], junction step 0.63 m, water 0, house 1000000000.0 m, joins at (2633, 12004) net level 3.65 m, road length 52372 m)
+road 5-12 -> op5:5-03-5-F.3: rejected (grade 13.0 %, cut/fill 1.22 m, pad clash 0 [], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2633, 12004) net level 3.65 m, road length 52393 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.1 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (2072, 9998) net level 0.84 m, road length 55907 m)
+road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.01 m, water 0, house 1000000000.0 m, joins at (2072, 9998) net level 0.84 m, road length 55887 m)
+road 5-12 -> 5-F (op 5): rejected (grade 13.8 %, cut/fill 1.31 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2876, 10950) net level 6.25 m, road length 53492 m)
+road 5-12 -> 5-F (op 5): rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.56 m, water 0, house 1000000000.0 m, joins at (2876, 10950) net level 6.25 m, road length 53479 m)
+road 5-12 -> 5-F.3 (op 5): rejected (grade 11.0 %, cut/fill 1.55 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2914, 10796) net level 5.75 m, road length 53654 m)
+road 5-12 -> 5-F.3 (op 5): rejected (grade 13.1 %, cut/fill 1.55 m, pad clash 0 [], junction step 0.6 m, water 0, house 1000000000.0 m, joins at (2914, 10796) net level 5.75 m, road length 53642 m)
+road 5-12 -> 5-F.2 (op 5): rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 1.0 m, water 0, house 1000000000.0 m, joins at (2931, 11160) net level 2.75 m, road length 53285 m)
+road 5-12 -> 5-F.2 (op 5): rejected (grade 12.7 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.92 m, water 0, house 1000000000.0 m, joins at (2931, 11160) net level 2.75 m, road length 53304 m)
+road 5-12 -> op5:5-F.2-5-03: rejected (grade 12.4 %, cut/fill 1.38 m, pad clash 0 [], junction step 0.89 m, water 0, house 1000000000.0 m, joins at (2936, 11199) net level 1.16 m, road length 53251 m)
+road 5-12 -> op5:5-F.2-5-03: rejected (grade 12.8 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.21 m, water 0, house 1000000000.0 m, joins at (2936, 11199) net level 1.16 m, road length 53269 m)
+road 5-12 -> op5:5-F.3-5-M1.2: rejected (grade 11.4 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (3024, 10704) net level 6.91 m, road length 53839 m)
+road 5-12 -> op5:5-F.3-5-M1.2: rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.55 m, water 0, house 1000000000.0 m, joins at (3024, 10704) net level 6.91 m, road length 53830 m)
+road for 5-12: NO ROUTE found to the 5-12 net
+{'1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)': 'PASS', '1 grid: road points vs pad points at another level (5 cm)': 'PASS', "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": 'REPORT', '2 pad ground change <= 4.0 m': 'PASS', '3 roads: dirt grade <= 14 %': 'PASS', '3 roads: cut / fill <= 4 m (every grid point the road fixes)': 'PASS', '3 roads: one connected net per island': 'PASS', '3 roads: no straight run over 150 m (within 1 m of the chord)': 'PASS', '3 roads: nothing built within 3 m of a road edge': 'PASS', '4 pads: no two within 12 m': 'PASS', '4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)': 'PASS', '5 final and mains >= 400 m apart': 'PASS', '6 approaches (two per main, designed)': 'SEE NOTES', '7 no rock walls / rock towers as dressing on fought ground': 'PASS (none placed by this plan)'}
+
+real	73m8.597s
+user	75m39.560s
+sys	1m26.090s
