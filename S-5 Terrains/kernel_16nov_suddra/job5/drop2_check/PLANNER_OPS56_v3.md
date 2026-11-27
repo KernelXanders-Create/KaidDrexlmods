@@ -112,3 +112,17 @@ Output in `planner_ops56_v8/op5_512` (module `op5h.py`, pack v7, no ramp). It fi
 | P13 | 5-12 narrowed re-run: no path inside the 6 km margin (ASSUMED by me, too small) | a Keep the three joins, go back to the 16 km margin, stop at 115 min | HUMAN |
 | P14 | 5-12 three-join run stopped at 115 min with no tries | d Re-run the 76-min setup without the ramp, then a ground request at the best junction | HUMAN |
 | P15 | 5-12: where to put the junction ground request (the log gave no point) | a Log each try's junction point, re-run the no-ramp setup, then place the ground request at the measured junction | HUMAN |
+| P16 | 5-12: the two best joins tie at a 0.55 m step | a Low shore road: the ground request goes at the 5-03 → 5-F.3 road join, (2733, 11760), net level +0.66 m | HUMAN |
+
+## P16 ground request at the 5-12 join (pack v10)
+
+Script `build_pack_drop2_v10.py` builds pack v10 = pack v9 plus this cut. Pack v9 only differs from v7 at ops 3 and 6, far from op 5.
+
+| Item | Value | Tag |
+|---|---|---|
+| Where | The 5-03 → 5-F.3 road join, (2733, 11760), net level +0.66 m | MEASURED (P15 run) |
+| Ground there before | +0.6 to +0.7 m at the join, rising to +1.2-1.4 m about 25-30 m inland (west). The water is 10-20 m to the east | MEASURED |
+| Shape | Cut only. Within 40 m of the join, ground is held to no more than +0.66 m + 3 % of the distance (+1.86 m at 40 m). Ground is never raised, so the water line does not move | Reach and slope ASSUMED |
+| Size | Largest cut 0.59 m. 33 grid cells changed, 209 m³ | MEASURED |
+
+The re-run of 5-12 (module `op5h.py`, no ramp) on pack v10 is under way. Output goes to `planner_ops56_v9/op5_512`.
