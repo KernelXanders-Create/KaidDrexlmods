@@ -1,0 +1,72 @@
+{
+ "point": [
+  13600.0,
+  11200.0
+ ],
+ "point_z": 0.88,
+ "rise_area_ha": 13.2,
+ "rise_z": [
+  0.5,
+  2.04
+ ],
+ "rise_extent_m": {
+  "x": [
+   -180,
+   350
+  ],
+  "y": [
+   -175,
+   330
+  ]
+ },
+ "roads": [
+  {
+   "road": "N road toward 6-06 NE Esker Fort",
+   "bearing": 0.0,
+   "join_xy": [
+    13600,
+    11400
+   ],
+   "join_from_point_m": 200,
+   "join_ground_z": 0.52,
+   "line_to": [
+    13600.0,
+    12400.0
+   ],
+   "line_m": 1200,
+   "first_wet_m_from_point": 225,
+   "wet_m": 380,
+   "nearest_planned_road": "6-M4-6-11",
+   "nearest_planned_point": [
+    13686,
+    11306
+   ],
+   "nearest_planned_m": 127,
+   "nearest_planned_z": 0.678
+  },
+  {
+   "road": "SSW road toward 6-M3 Tank Laager",
+   "bearing": 214.0,
+   "join_xy": [
+    13491,
+    11038
+   ],
+   "join_from_point_m": 195,
+   "join_ground_z": 0.53,
+   "line_to": [
+    12800.0,
+    10000.0
+   ],
+   "line_m": 1442,
+   "first_wet_m_from_point": 200,
+   "wet_m": 930,
+   "nearest_planned_road": "6-M4-6-11",
+   "nearest_planned_point": [
+    13600,
+    11207
+   ],
+   "nearest_planned_m": 201,
+   "nearest_planned_z": 0.88
+  }
+ ]
+}
