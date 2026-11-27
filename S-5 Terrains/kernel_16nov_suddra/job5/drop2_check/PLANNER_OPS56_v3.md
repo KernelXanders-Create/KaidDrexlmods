@@ -91,3 +91,4 @@ Reading (AI): the two runs that allowed a 0.6 m step both ran past 115 min. The 
 | P12 | 5-12 re-run with the ramp stopped at the 2-hour limit (no output) | a Narrow the search: join only the 5-03 → 5-F.3 road, the 5-F.3 → 5-M1.2 road or the 5-F pad, with a 6 km margin, then re-run | HUMAN |
 | P13 | 5-12 narrowed re-run: no path inside the 6 km margin (ASSUMED by me, too small) | a Keep the three joins, go back to the 16 km margin, stop at 115 min | HUMAN |
 | P14 | 5-12 three-join run stopped at 115 min with no tries | d Re-run the 76-min setup without the ramp, then a ground request at the best junction | HUMAN |
+| P15 | 5-12: where to put the junction ground request (the log gave no point) | a Log each try's junction point, re-run the no-ramp setup, then place the ground request at the measured junction | HUMAN |

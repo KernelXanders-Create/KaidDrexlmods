@@ -437,7 +437,7 @@ for phase in (0, 1):
                 if rl: P.uncommit(rl[0]); rl[0]["points_z"] = rl[1]; P.recommit(rl[0])
             if r is None: undo(); continue
             if r["max_cut_fill_m"] > 4.0 or r["max_grade_pct"] > 14.05 or r["clash_points"] > 0 or r["in_water_points"] or r["junction_step_max_m"] > getattr(op, "SITE_JMAX", {}).get(sid, JMAX) or house_clear(r) < 3.0:
-                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m)"); undo(); continue
+                log.append(f"road {sid} -> {nd[3]}: rejected (grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction step {r['junction_step_max_m']} m, water {r['in_water_points']}, house {round(house_clear(r), 1)} m, joins at ({round(nd[0])}, {round(nd[1])}) net level {round(nd[2], 2)} m, road length {r.get('length_m')} m)"); undo(); continue     # the join point is logged (planner v3 P15)
             P.commit_road(r); ROADS_BY_ID[r["id"]] = r
             if rl:                # the re-levelled road's join points move with its new levels
                 rid_ = rl[0]["id"]; own_ = [n_ for n_ in nodes[net] if len(n_) > 4 and n_[4] == rid_][:1]
