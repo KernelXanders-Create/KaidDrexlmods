@@ -1,0 +1,88 @@
+{
+ "point": [
+  1840.0,
+  9705.0
+ ],
+ "ground_at_point": 3.58,
+ "stubs": {
+  "NNE gate": {
+   "bearing": 31,
+   "length_m": 112.0,
+   "shore_xy": [
+    1898,
+    9801
+   ],
+   "shore_ground_m": 0.55
+  },
+  "SE gate": {
+   "bearing": 123,
+   "length_m": 200.0,
+   "shore_xy": [
+    2008,
+    9596
+   ],
+   "shore_ground_m": 0.61
+  }
+ },
+ "members": [
+  {
+   "id": "NNE gate",
+   "comp": "CIS Small Checkpoint with GPs",
+   "x": 1874.8,
+   "y": 9762.9,
+   "yaw": 31,
+   "hx": 28.4,
+   "hy": 34.4,
+   "size_src": "KNOWN",
+   "along_stub_m": 67.5,
+   "z": 2.7,
+   "change_m": 1.31,
+   "ground": [
+    1.39,
+    4.02
+   ],
+   "from_point_m": 68
+  },
+  {
+   "id": "SE gate",
+   "comp": "TKTA Checkpoint Fixed (Mono)",
+   "x": 1911.3,
+   "y": 9658.7,
+   "yaw": 123,
+   "hx": 20.0,
+   "hy": 30.0,
+   "size_src": "ASSUMED (60 x 40 m, as in the ops 5-8 layout)",
+   "along_stub_m": 85.0,
+   "z": 2.6,
+   "change_m": 1.17,
+   "ground": [
+    1.43,
+    3.78
+   ],
+   "from_point_m": 85
+  },
+  {
+   "id": "gun",
+   "comp": "CIS Heavy Gun Position + AA (UD)",
+   "x": 1945.0,
+   "y": 9715.0,
+   "yaw": 120,
+   "hx": 29.9,
+   "hy": 40.8,
+   "size_src": "KNOWN",
+   "z": 2.97,
+   "change_m": 0.95,
+   "ground": [
+    2.02,
+    3.92
+   ],
+   "facing": {
+    "bearing": 120,
+    "why": "toward the op 5 start (call 28 B)",
+    "rise_150m_m": -1.5,
+    "clear_300m": true
+   },
+   "from_point_m": 105
+  }
+ ]
+}

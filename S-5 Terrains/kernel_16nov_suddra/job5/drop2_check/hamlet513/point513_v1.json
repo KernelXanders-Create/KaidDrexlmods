@@ -1,0 +1,41 @@
+{
+ "rise_area_ha": 121.6,
+ "point": [
+  1840.0,
+  9705.0
+ ],
+ "ground_at_point": 3.58,
+ "moved_from_sketch_m": 745,
+ "ways": {
+  "5-01": {
+   "site": "Gravel Pit Bunkers II",
+   "bearing": 28,
+   "straight_m": 336,
+   "leaves_rise": {
+    "xy": [
+     1895,
+     9806
+    ],
+    "dist_m": 115.0,
+    "ground_m": 0.44
+   },
+   "wet_m_before_road": 90.0,
+   "meets_road": null
+  },
+  "5-09": {
+   "site": "West Fuel Dump",
+   "bearing": 157,
+   "straight_m": 1420,
+   "leaves_rise": {
+    "xy": [
+     1875,
+     9622
+    ],
+    "dist_m": 90.0,
+    "ground_m": 0.27
+   },
+   "wet_m_before_road": 685.0,
+   "meets_road": null
+  }
+ }
+}

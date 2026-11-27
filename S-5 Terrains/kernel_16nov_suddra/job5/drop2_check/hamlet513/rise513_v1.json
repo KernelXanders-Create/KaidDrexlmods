@@ -1,0 +1,162 @@
+{
+ "point": [
+  1600.0,
+  9000.0
+ ],
+ "ground_at_point": 0.16,
+ "dry_within_100m_pct": 0,
+ "rises": [
+  {
+   "area_ha": 38.3,
+   "level": [
+    0.5,
+    5.56
+   ],
+   "nearest_xy": [
+    1825.0,
+    8925.0
+   ],
+   "nearest_m": 237,
+   "centre_xy": [
+    1887,
+    9571
+   ],
+   "bearing_from_point": 27,
+   "road_m": 230,
+   "nearest_road": "5-01-5-F.3"
+  },
+  {
+   "area_ha": 3.2,
+   "level": [
+    0.5,
+    1.31
+   ],
+   "nearest_xy": [
+    1895.0,
+    9280.0
+   ],
+   "nearest_m": 407,
+   "centre_xy": [
+    1887,
+    9455
+   ],
+   "bearing_from_point": 32,
+   "road_m": 422,
+   "nearest_road": "5-01-5-F.3"
+  },
+  {
+   "area_ha": 5.9,
+   "level": [
+    0.5,
+    1.98
+   ],
+   "nearest_xy": [
+    1170.0,
+    9080.0
+   ],
+   "nearest_m": 437,
+   "centre_xy": [
+    1081,
+    9210
+   ],
+   "bearing_from_point": 292,
+   "road_m": 1053,
+   "nearest_road": "5-01-5-F.3"
+  },
+  {
+   "area_ha": 55.1,
+   "level": [
+    0.5,
+    5.06
+   ],
+   "nearest_xy": [
+    1860.0,
+    8590.0
+   ],
+   "nearest_m": 485,
+   "centre_xy": [
+    2122,
+    8452
+   ],
+   "bearing_from_point": 136,
+   "road_m": 0,
+   "nearest_road": "5-09-5-M1"
+  },
+  {
+   "area_ha": 63.7,
+   "level": [
+    0.5,
+    10.44
+   ],
+   "nearest_xy": [
+    820.0,
+    8955.0
+   ],
+   "nearest_m": 781,
+   "centre_xy": [
+    629,
+    8461
+   ],
+   "bearing_from_point": 241,
+   "road_m": 1374,
+   "nearest_road": "5-09-5-M1"
+  },
+  {
+   "area_ha": 8.8,
+   "level": [
+    0.5,
+    2.84
+   ],
+   "nearest_xy": [
+    1975.0,
+    9930.0
+   ],
+   "nearest_m": 1003,
+   "centre_xy": [
+    2385,
+    9854
+   ],
+   "bearing_from_point": 43,
+   "road_m": 0,
+   "nearest_road": "5-01-5-F.3"
+  },
+  {
+   "area_ha": 2.9,
+   "level": [
+    0.5,
+    2.76
+   ],
+   "nearest_xy": [
+    2795.0,
+    8245.0
+   ],
+   "nearest_m": 1414,
+   "centre_xy": [
+    2750,
+    7935
+   ],
+   "bearing_from_point": 133,
+   "road_m": 376,
+   "nearest_road": "5-09-5-M1"
+  },
+  {
+   "area_ha": 1.3,
+   "level": [
+    0.5,
+    9.17
+   ],
+   "nearest_xy": [
+    595.0,
+    10195.0
+   ],
+   "nearest_m": 1561,
+   "centre_xy": [
+    457,
+    10150
+   ],
+   "bearing_from_point": 315,
+   "road_m": 1437,
+   "nearest_road": "5-01-5-F.3"
+  }
+ ]
+}
