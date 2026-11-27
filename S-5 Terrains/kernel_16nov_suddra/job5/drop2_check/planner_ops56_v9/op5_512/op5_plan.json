@@ -1,0 +1,13175 @@
+{
+ "astride_moves": [],
+ "op": 5,
+ "name": "Esker Road 5-12 (drop 2)",
+ "frame": "map metres, x east, y north, origin SW corner; yaw clockwise from north; hx along the pad's local x",
+ "sites": [
+  {
+   "id": "5-12",
+   "name": "Esker Beacon",
+   "comp": "Claus - Small Radar",
+   "x": 600.0,
+   "y": 11000.0,
+   "yaw": 0,
+   "hx": 15.0,
+   "hy": 15.0,
+   "z": 3.5,
+   "cut_m": 0.44,
+   "fill_m": 0.19,
+   "max_change_m": 0.44,
+   "moved_m": 0,
+   "rough": [
+    600.0,
+    11000.0
+   ],
+   "size_note": "ASSUMED: 30 x 30 m",
+   "water_ok": false,
+   "n_points": 49,
+   "role": "supporting",
+   "size": "squad",
+   "stake": "Air only",
+   "island": "Suddra",
+   "moved_from_rough_m": 0,
+   "design_xy": [
+    600,
+    11000
+   ],
+   "entrance_bearing_deg": 0,
+   "entrance_xy": [
+    600.0,
+    11019.0
+   ],
+   "entrance_note": "faces the water (a sea / beach work)"
+  }
+ ],
+ "squad_positions": [],
+ "towns": [],
+ "roads": [],
+ "ramps_needed": [],
+ "shore_links": [],
+ "links_to_existing_net": [],
+ "edits_to_other_ops_roads": [],
+ "external_roads_joined": [],
+ "trunk_breaks": [],
+ "foot_links": [],
+ "approaches": {},
+ "shores": [
+  {
+   "from_xy": [
+    13485.0,
+    295.0
+   ],
+   "to_xy": [
+    15400.0,
+    3770.0
+   ],
+   "length_m": 3968,
+   "points": 3297,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    9880.0,
+    575.0
+   ],
+   "to_xy": [
+    10145.0,
+    995.0
+   ],
+   "length_m": 497,
+   "points": 230,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    11600.0,
+    560.0
+   ],
+   "to_xy": [
+    10900.0,
+    1285.0
+   ],
+   "length_m": 1008,
+   "points": 602,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    15810.0,
+    745.0
+   ],
+   "to_xy": [
+    15745.0,
+    920.0
+   ],
+   "length_m": 187,
+   "points": 94,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    10075.0,
+    795.0
+   ],
+   "to_xy": [
+    10045.0,
+    900.0
+   ],
+   "length_m": 109,
+   "points": 58,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    660.0,
+    870.0
+   ],
+   "to_xy": [
+    250.0,
+    1055.0
+   ],
+   "length_m": 450,
+   "points": 270,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    13535.0,
+    950.0
+   ],
+   "to_xy": [
+    13470.0,
+    1160.0
+   ],
+   "length_m": 220,
+   "points": 96,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    4355.0,
+    970.0
+   ],
+   "to_xy": [
+    5310.0,
+    2615.0
+   ],
+   "length_m": 1902,
+   "points": 762,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    5595.0,
+    1040.0
+   ],
+   "to_xy": [
+    8245.0,
+    7120.0
+   ],
+   "length_m": 6632,
+   "points": 9191,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    15895.0,
+    1080.0
+   ],
+   "to_xy": [
+    15875.0,
+    1430.0
+   ],
+   "length_m": 351,
+   "points": 216,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    10020.0,
+    1105.0
+   ],
+   "to_xy": [
+    9920.0,
+    3475.0
+   ],
+   "length_m": 2372,
+   "points": 3917,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    4890.0,
+    1120.0
+   ],
+   "to_xy": [
+    5040.0,
+    1230.0
+   ],
+   "length_m": 186,
+   "points": 89,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    5325.0,
+    1130.0
+   ],
+   "to_xy": [
+    5240.0,
+    1325.0
+   ],
+   "length_m": 213,
+   "points": 109,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    5645.0,
+    1170.0
+   ],
+   "to_xy": [
+    5550.0,
+    1320.0
+   ],
+   "length_m": 178,
+   "points": 108,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    13100.0,
+    1180.0
+   ],
+   "to_xy": [
+    12905.0,
+    1255.0
+   ],
+   "length_m": 209,
+   "points": 109,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    13395.0,
+    1175.0
+   ],
+   "to_xy": [
+    13410.0,
+    1665.0
+   ],
+   "length_m": 490,
+   "points": 232,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    13620.0,
+    1215.0
+   ],
+   "to_xy": [
+    13745.0,
+    1595.0
+   ],
+   "length_m": 400,
+   "points": 208,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    9975.0,
+    1230.0
+   ],
+   "to_xy": [
+    9930.0,
+    1625.0
+   ],
+   "length_m": 398,
+   "points": 205,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    13765.0,
+    1230.0
+   ],
+   "to_xy": [
+    13800.0,
+    1265.0
+   ],
+   "length_m": 49,
+   "points": 21,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    4275.0,
+    1315.0
+   ],
+   "to_xy": [
+    4305.0,
+    1405.0
+   ],
+   "length_m": 95,
+   "points": 42,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    13110.0,
+    1370.0
+   ],
+   "to_xy": [
+    13100.0,
+    1715.0
+   ],
+   "length_m": 345,
+   "points": 176,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    15990.0,
+    1375.0
+   ],
+   "to_xy": [
+    15970.0,
+    1445.0
+   ],
+   "length_m": 73,
+   "points": 21,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    13910.0,
+    1405.0
+   ],
+   "to_xy": [
+    13800.0,
+    1445.0
+   ],
+   "length_m": 117,
+   "points": 56,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    5235.0,
+    1430.0
+   ],
+   "to_xy": [
+    5190.0,
+    1625.0
+   ],
+   "length_m": 200,
+   "points": 94,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    1560.0,
+    1580.0
+   ],
+   "to_xy": [
+    1665.0,
+    1650.0
+   ],
+   "length_m": 126,
+   "points": 48,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    11340.0,
+    1580.0
+   ],
+   "to_xy": [
+    12080.0,
+    7125.0
+   ],
+   "length_m": 5594,
+   "points": 4365,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    11050.0,
+    1595.0
+   ],
+   "to_xy": [
+    10565.0,
+    2005.0
+   ],
+   "length_m": 635,
+   "points": 342,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    1695.0,
+    1630.0
+   ],
+   "to_xy": [
+    2250.0,
+    2035.0
+   ],
+   "length_m": 687,
+   "points": 345,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    2175.0,
+    1645.0
+   ],
+   "to_xy": [
+    2415.0,
+    2135.0
+   ],
+   "length_m": 546,
+   "points": 290,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    1035.0,
+    1810.0
+   ],
+   "to_xy": [
+    1610.0,
+    1915.0
+   ],
+   "length_m": 585,
+   "points": 296,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    3535.0,
+    1680.0
+   ],
+   "to_xy": [
+    5200.0,
+    2595.0
+   ],
+   "length_m": 1900,
+   "points": 1336,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    1425.0,
+    1695.0
+   ],
+   "to_xy": [
+    1575.0,
+    1800.0
+   ],
+   "length_m": 183,
+   "points": 72,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    7120.0,
+    1695.0
+   ],
+   "to_xy": [
+    7160.0,
+    1695.0
+   ],
+   "length_m": 40,
+   "points": 16,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    15290.0,
+    1770.0
+   ],
+   "to_xy": [
+    14970.0,
+    1820.0
+   ],
+   "length_m": 324,
+   "points": 189,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    3310.0,
+    1700.0
+   ],
+   "to_xy": [
+    3185.0,
+    1765.0
+   ],
+   "length_m": 141,
+   "points": 74,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    13450.0,
+    1730.0
+   ],
+   "to_xy": [
+    13460.0,
+    2265.0
+   ],
+   "length_m": 535,
+   "points": 314,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    7105.0,
+    1735.0
+   ],
+   "to_xy": [
+    7120.0,
+    1810.0
+   ],
+   "length_m": 76,
+   "points": 40,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    13230.0,
+    1770.0
+   ],
+   "to_xy": [
+    13055.0,
+    2040.0
+   ],
+   "length_m": 322,
+   "points": 269,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    3850.0,
+    1790.0
+   ],
+   "to_xy": [
+    4280.0,
+    1795.0
+   ],
+   "length_m": 430,
+   "points": 222,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    1850.0,
+    1765.0
+   ],
+   "to_xy": [
+    2130.0,
+    1975.0
+   ],
+   "length_m": 350,
+   "points": 66,
+   "mean_inland_slope_pct": 9.6
+  },
+  {
+   "from_xy": [
+    9685.0,
+    1795.0
+   ],
+   "to_xy": [
+    9650.0,
+    1855.0
+   ],
+   "length_m": 69,
+   "points": 36,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    810.0,
+    1810.0
+   ],
+   "to_xy": [
+    1205.0,
+    2980.0
+   ],
+   "length_m": 1235,
+   "points": 1076,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    1260.0,
+    1825.0
+   ],
+   "to_xy": [
+    1250.0,
+    1865.0
+   ],
+   "length_m": 41,
+   "points": 20,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    9165.0,
+    1825.0
+   ],
+   "to_xy": [
+    9230.0,
+    1950.0
+   ],
+   "length_m": 141,
+   "points": 62,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    11490.0,
+    1845.0
+   ],
+   "to_xy": [
+    11180.0,
+    2180.0
+   ],
+   "length_m": 456,
+   "points": 301,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    1645.0,
+    1855.0
+   ],
+   "to_xy": [
+    1715.0,
+    1905.0
+   ],
+   "length_m": 86,
+   "points": 16,
+   "mean_inland_slope_pct": 11.4
+  },
+  {
+   "from_xy": [
+    10470.0,
+    1870.0
+   ],
+   "to_xy": [
+    10445.0,
+    2320.0
+   ],
+   "length_m": 451,
+   "points": 220,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    1255.0,
+    1910.0
+   ],
+   "to_xy": [
+    1450.0,
+    1945.0
+   ],
+   "length_m": 198,
+   "points": 69,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    13835.0,
+    1915.0
+   ],
+   "to_xy": [
+    13870.0,
+    1955.0
+   ],
+   "length_m": 53,
+   "points": 20,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    3210.0,
+    1940.0
+   ],
+   "to_xy": [
+    3315.0,
+    2025.0
+   ],
+   "length_m": 135,
+   "points": 48,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    1795.0,
+    1940.0
+   ],
+   "to_xy": [
+    2070.0,
+    2120.0
+   ],
+   "length_m": 329,
+   "points": 63,
+   "mean_inland_slope_pct": 8.9
+  },
+  {
+   "from_xy": [
+    8430.0,
+    1965.0
+   ],
+   "to_xy": [
+    8585.0,
+    2515.0
+   ],
+   "length_m": 571,
+   "points": 255,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    6535.0,
+    1980.0
+   ],
+   "to_xy": [
+    6530.0,
+    2055.0
+   ],
+   "length_m": 75,
+   "points": 33,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    11590.0,
+    1985.0
+   ],
+   "to_xy": [
+    11520.0,
+    2095.0
+   ],
+   "length_m": 130,
+   "points": 59,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    9640.0,
+    1990.0
+   ],
+   "to_xy": [
+    9610.0,
+    2090.0
+   ],
+   "length_m": 104,
+   "points": 46,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    15165.0,
+    1995.0
+   ],
+   "to_xy": [
+    15265.0,
+    2045.0
+   ],
+   "length_m": 112,
+   "points": 62,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    9055.0,
+    2010.0
+   ],
+   "to_xy": [
+    9245.0,
+    2130.0
+   ],
+   "length_m": 225,
+   "points": 142,
+   "mean_inland_slope_pct": 0.5
+  },
+  {
+   "from_xy": [
+    1540.0,
+    2050.0
+   ],
+   "to_xy": [
+    1835.0,
+    2210.0
+   ],
+   "length_m": 336,
+   "points": 64,
+   "mean_inland_slope_pct": 10.0
+  },
+  {
+   "from_xy": [
+    9875.0,
+    2125.0
+   ],
+   "to_xy": [
+    10015.0,
+    2165.0
+   ],
+   "length_m": 146,
+   "points": 93,
+   "mean_inland_slope_pct": 0.5
+  },
+  {
+   "from_xy": [
+    14100.0,
+    2185.0
+   ],
+   "to_xy": [
+    14535.0,
+    2200.0
+   ],
+   "length_m": 435,
+   "points": 229,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    1125.0,
+    2135.0
+   ],
+   "to_xy": [
+    1205.0,
+    2185.0
+   ],
+   "length_m": 94,
+   "points": 51,
+   "mean_inland_slope_pct": 1.1
+  },
+  {
+   "from_xy": [
+    7200.0,
+    2135.0
+   ],
+   "to_xy": [
+    7210.0,
+    2175.0
+   ],
+   "length_m": 41,
+   "points": 18,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    9550.0,
+    2135.0
+   ],
+   "to_xy": [
+    9530.0,
+    2230.0
+   ],
+   "length_m": 97,
+   "points": 48,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    9465.0,
+    2185.0
+   ],
+   "to_xy": [
+    9415.0,
+    2215.0
+   ],
+   "length_m": 58,
+   "points": 11,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    1185.0,
+    2230.0
+   ],
+   "to_xy": [
+    1295.0,
+    2240.0
+   ],
+   "length_m": 110,
+   "points": 56,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    9335.0,
+    2255.0
+   ],
+   "to_xy": [
+    9510.0,
+    2285.0
+   ],
+   "length_m": 178,
+   "points": 123,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    9275.0,
+    2250.0
+   ],
+   "to_xy": [
+    9235.0,
+    2295.0
+   ],
+   "length_m": 60,
+   "points": 31,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    13165.0,
+    2270.0
+   ],
+   "to_xy": [
+    13370.0,
+    2380.0
+   ],
+   "length_m": 233,
+   "points": 99,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    1955.0,
+    2260.0
+   ],
+   "to_xy": [
+    2290.0,
+    2465.0
+   ],
+   "length_m": 393,
+   "points": 73,
+   "mean_inland_slope_pct": 9.8
+  },
+  {
+   "from_xy": [
+    2170.0,
+    2315.0
+   ],
+   "to_xy": [
+    2970.0,
+    2640.0
+   ],
+   "length_m": 863,
+   "points": 188,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    1470.0,
+    2335.0
+   ],
+   "to_xy": [
+    2265.0,
+    3090.0
+   ],
+   "length_m": 1096,
+   "points": 1118,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    3550.0,
+    2340.0
+   ],
+   "to_xy": [
+    3510.0,
+    2385.0
+   ],
+   "length_m": 60,
+   "points": 26,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    10005.0,
+    2365.0
+   ],
+   "to_xy": [
+    9165.0,
+    3070.0
+   ],
+   "length_m": 1097,
+   "points": 771,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    12635.0,
+    2375.0
+   ],
+   "to_xy": [
+    12655.0,
+    2420.0
+   ],
+   "length_m": 49,
+   "points": 24,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    2945.0,
+    2380.0
+   ],
+   "to_xy": [
+    3020.0,
+    2440.0
+   ],
+   "length_m": 96,
+   "points": 19,
+   "mean_inland_slope_pct": 11.2
+  },
+  {
+   "from_xy": [
+    3110.0,
+    2440.0
+   ],
+   "to_xy": [
+    3265.0,
+    2595.0
+   ],
+   "length_m": 219,
+   "points": 89,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    4380.0,
+    2475.0
+   ],
+   "to_xy": [
+    4070.0,
+    3400.0
+   ],
+   "length_m": 976,
+   "points": 881,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    3590.0,
+    2500.0
+   ],
+   "to_xy": [
+    3880.0,
+    2800.0
+   ],
+   "length_m": 417,
+   "points": 222,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    15080.0,
+    2510.0
+   ],
+   "to_xy": [
+    15315.0,
+    3030.0
+   ],
+   "length_m": 571,
+   "points": 468,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    2435.0,
+    2530.0
+   ],
+   "to_xy": [
+    3040.0,
+    2805.0
+   ],
+   "length_m": 665,
+   "points": 190,
+   "mean_inland_slope_pct": 7.3
+  },
+  {
+   "from_xy": [
+    6565.0,
+    2535.0
+   ],
+   "to_xy": [
+    6515.0,
+    2615.0
+   ],
+   "length_m": 94,
+   "points": 36,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    3360.0,
+    2585.0
+   ],
+   "to_xy": [
+    3380.0,
+    2625.0
+   ],
+   "length_m": 45,
+   "points": 21,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    2205.0,
+    2630.0
+   ],
+   "to_xy": [
+    2335.0,
+    2695.0
+   ],
+   "length_m": 145,
+   "points": 61,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    3360.0,
+    2660.0
+   ],
+   "to_xy": [
+    3395.0,
+    2680.0
+   ],
+   "length_m": 40,
+   "points": 11,
+   "mean_inland_slope_pct": 7.3
+  },
+  {
+   "from_xy": [
+    10145.0,
+    2660.0
+   ],
+   "to_xy": [
+    10150.0,
+    2700.0
+   ],
+   "length_m": 40,
+   "points": 19,
+   "mean_inland_slope_pct": 1.3
+  },
+  {
+   "from_xy": [
+    11040.0,
+    2680.0
+   ],
+   "to_xy": [
+    10960.0,
+    2805.0
+   ],
+   "length_m": 148,
+   "points": 53,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    12025.0,
+    2710.0
+   ],
+   "to_xy": [
+    11920.0,
+    2885.0
+   ],
+   "length_m": 204,
+   "points": 96,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    6540.0,
+    2725.0
+   ],
+   "to_xy": [
+    6480.0,
+    2740.0
+   ],
+   "length_m": 62,
+   "points": 22,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    5340.0,
+    2750.0
+   ],
+   "to_xy": [
+    5445.0,
+    2915.0
+   ],
+   "length_m": 196,
+   "points": 69,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    9665.0,
+    2750.0
+   ],
+   "to_xy": [
+    8500.0,
+    3575.0
+   ],
+   "length_m": 1428,
+   "points": 1763,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    10470.0,
+    2895.0
+   ],
+   "to_xy": [
+    10035.0,
+    2915.0
+   ],
+   "length_m": 435,
+   "points": 222,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    3180.0,
+    2760.0
+   ],
+   "to_xy": [
+    3280.0,
+    2815.0
+   ],
+   "length_m": 114,
+   "points": 22,
+   "mean_inland_slope_pct": 11.6
+  },
+  {
+   "from_xy": [
+    14835.0,
+    2760.0
+   ],
+   "to_xy": [
+    15010.0,
+    3470.0
+   ],
+   "length_m": 731,
+   "points": 1083,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    14950.0,
+    2780.0
+   ],
+   "to_xy": [
+    14905.0,
+    2785.0
+   ],
+   "length_m": 45,
+   "points": 20,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    6240.0,
+    2800.0
+   ],
+   "to_xy": [
+    6300.0,
+    2955.0
+   ],
+   "length_m": 166,
+   "points": 82,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    10670.0,
+    2820.0
+   ],
+   "to_xy": [
+    10940.0,
+    3115.0
+   ],
+   "length_m": 400,
+   "points": 404,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    2650.0,
+    2890.0
+   ],
+   "to_xy": [
+    3420.0,
+    3165.0
+   ],
+   "length_m": 818,
+   "points": 395,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    2550.0,
+    2855.0
+   ],
+   "to_xy": [
+    2610.0,
+    2865.0
+   ],
+   "length_m": 61,
+   "points": 27,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    11840.0,
+    2845.0
+   ],
+   "to_xy": [
+    11880.0,
+    2900.0
+   ],
+   "length_m": 68,
+   "points": 24,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    13380.0,
+    2850.0
+   ],
+   "to_xy": [
+    13475.0,
+    2865.0
+   ],
+   "length_m": 96,
+   "points": 18,
+   "mean_inland_slope_pct": 11.2
+  },
+  {
+   "from_xy": [
+    9500.0,
+    2935.0
+   ],
+   "to_xy": [
+    9375.0,
+    2950.0
+   ],
+   "length_m": 126,
+   "points": 67,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    7815.0,
+    2895.0
+   ],
+   "to_xy": [
+    7955.0,
+    3105.0
+   ],
+   "length_m": 252,
+   "points": 51,
+   "mean_inland_slope_pct": 10.3
+  },
+  {
+   "from_xy": [
+    12975.0,
+    2895.0
+   ],
+   "to_xy": [
+    13085.0,
+    3100.0
+   ],
+   "length_m": 233,
+   "points": 149,
+   "mean_inland_slope_pct": 1.2
+  },
+  {
+   "from_xy": [
+    5635.0,
+    2910.0
+   ],
+   "to_xy": [
+    5685.0,
+    3000.0
+   ],
+   "length_m": 103,
+   "points": 54,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    4475.0,
+    2910.0
+   ],
+   "to_xy": [
+    4485.0,
+    3055.0
+   ],
+   "length_m": 145,
+   "points": 73,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    5465.0,
+    2925.0
+   ],
+   "to_xy": [
+    3240.0,
+    4370.0
+   ],
+   "length_m": 2653,
+   "points": 2885,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    960.0,
+    2930.0
+   ],
+   "to_xy": [
+    760.0,
+    7220.0
+   ],
+   "length_m": 4295,
+   "points": 4058,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    5715.0,
+    2985.0
+   ],
+   "to_xy": [
+    5860.0,
+    3060.0
+   ],
+   "length_m": 163,
+   "points": 85,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    13170.0,
+    2975.0
+   ],
+   "to_xy": [
+    13200.0,
+    3020.0
+   ],
+   "length_m": 54,
+   "points": 51,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    6795.0,
+    2990.0
+   ],
+   "to_xy": [
+    6810.0,
+    3040.0
+   ],
+   "length_m": 52,
+   "points": 25,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    13485.0,
+    3000.0
+   ],
+   "to_xy": [
+    13430.0,
+    3710.0
+   ],
+   "length_m": 712,
+   "points": 566,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    8460.0,
+    3010.0
+   ],
+   "to_xy": [
+    8600.0,
+    3315.0
+   ],
+   "length_m": 336,
+   "points": 133,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    12855.0,
+    3025.0
+   ],
+   "to_xy": [
+    12850.0,
+    3130.0
+   ],
+   "length_m": 105,
+   "points": 50,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    4530.0,
+    3045.0
+   ],
+   "to_xy": [
+    4505.0,
+    3085.0
+   ],
+   "length_m": 47,
+   "points": 18,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    5820.0,
+    3075.0
+   ],
+   "to_xy": [
+    5750.0,
+    3085.0
+   ],
+   "length_m": 71,
+   "points": 25,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    12800.0,
+    3080.0
+   ],
+   "to_xy": [
+    12820.0,
+    3140.0
+   ],
+   "length_m": 63,
+   "points": 27,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    15265.0,
+    3115.0
+   ],
+   "to_xy": [
+    15045.0,
+    3475.0
+   ],
+   "length_m": 422,
+   "points": 100,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    7990.0,
+    3120.0
+   ],
+   "to_xy": [
+    8100.0,
+    3800.0
+   ],
+   "length_m": 689,
+   "points": 346,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    3190.0,
+    3125.0
+   ],
+   "to_xy": [
+    3110.0,
+    3350.0
+   ],
+   "length_m": 239,
+   "points": 129,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    9535.0,
+    3155.0
+   ],
+   "to_xy": [
+    9470.0,
+    3190.0
+   ],
+   "length_m": 74,
+   "points": 43,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    5745.0,
+    3170.0
+   ],
+   "to_xy": [
+    5760.0,
+    3405.0
+   ],
+   "length_m": 235,
+   "points": 104,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    5215.0,
+    3180.0
+   ],
+   "to_xy": [
+    5195.0,
+    3390.0
+   ],
+   "length_m": 211,
+   "points": 147,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    2070.0,
+    3190.0
+   ],
+   "to_xy": [
+    2090.0,
+    3320.0
+   ],
+   "length_m": 132,
+   "points": 112,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    11600.0,
+    3205.0
+   ],
+   "to_xy": [
+    11340.0,
+    3380.0
+   ],
+   "length_m": 313,
+   "points": 156,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    10900.0,
+    3200.0
+   ],
+   "to_xy": [
+    10840.0,
+    3220.0
+   ],
+   "length_m": 63,
+   "points": 30,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    11145.0,
+    3205.0
+   ],
+   "to_xy": [
+    11105.0,
+    3210.0
+   ],
+   "length_m": 40,
+   "points": 15,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    11425.0,
+    3215.0
+   ],
+   "to_xy": [
+    11435.0,
+    3255.0
+   ],
+   "length_m": 41,
+   "points": 20,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    12215.0,
+    3220.0
+   ],
+   "to_xy": [
+    12200.0,
+    3285.0
+   ],
+   "length_m": 67,
+   "points": 28,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    9645.0,
+    3245.0
+   ],
+   "to_xy": [
+    9630.0,
+    3290.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    9545.0,
+    3255.0
+   ],
+   "to_xy": [
+    9575.0,
+    3400.0
+   ],
+   "length_m": 148,
+   "points": 105,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    4305.0,
+    3280.0
+   ],
+   "to_xy": [
+    4345.0,
+    3405.0
+   ],
+   "length_m": 131,
+   "points": 82,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    9420.0,
+    3310.0
+   ],
+   "to_xy": [
+    9330.0,
+    3320.0
+   ],
+   "length_m": 91,
+   "points": 35,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    2960.0,
+    3545.0
+   ],
+   "to_xy": [
+    2225.0,
+    3665.0
+   ],
+   "length_m": 745,
+   "points": 358,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    4780.0,
+    3320.0
+   ],
+   "to_xy": [
+    5045.0,
+    3640.0
+   ],
+   "length_m": 415,
+   "points": 342,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    12930.0,
+    3340.0
+   ],
+   "to_xy": [
+    12970.0,
+    3390.0
+   ],
+   "length_m": 64,
+   "points": 40,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    11235.0,
+    3355.0
+   ],
+   "to_xy": [
+    11170.0,
+    3390.0
+   ],
+   "length_m": 74,
+   "points": 31,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    5890.0,
+    3355.0
+   ],
+   "to_xy": [
+    5960.0,
+    7185.0
+   ],
+   "length_m": 3831,
+   "points": 5090,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    3955.0,
+    3380.0
+   ],
+   "to_xy": [
+    4000.0,
+    3415.0
+   ],
+   "length_m": 57,
+   "points": 22,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    795.0,
+    3390.0
+   ],
+   "to_xy": [
+    745.0,
+    3460.0
+   ],
+   "length_m": 86,
+   "points": 50,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    12175.0,
+    3410.0
+   ],
+   "to_xy": [
+    12220.0,
+    3570.0
+   ],
+   "length_m": 166,
+   "points": 104,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    5690.0,
+    3415.0
+   ],
+   "to_xy": [
+    5695.0,
+    3465.0
+   ],
+   "length_m": 50,
+   "points": 22,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    13220.0,
+    3430.0
+   ],
+   "to_xy": [
+    13165.0,
+    3510.0
+   ],
+   "length_m": 97,
+   "points": 62,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    11320.0,
+    3430.0
+   ],
+   "to_xy": [
+    9660.0,
+    5730.0
+   ],
+   "length_m": 2836,
+   "points": 4465,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    12715.0,
+    3435.0
+   ],
+   "to_xy": [
+    12940.0,
+    4370.0
+   ],
+   "length_m": 962,
+   "points": 1028,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    12905.0,
+    3460.0
+   ],
+   "to_xy": [
+    13045.0,
+    3525.0
+   ],
+   "length_m": 154,
+   "points": 68,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    13635.0,
+    3450.0
+   ],
+   "to_xy": [
+    14395.0,
+    3585.0
+   ],
+   "length_m": 772,
+   "points": 321,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    3850.0,
+    3530.0
+   ],
+   "to_xy": [
+    3610.0,
+    3565.0
+   ],
+   "length_m": 243,
+   "points": 224,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    15315.0,
+    3535.0
+   ],
+   "to_xy": [
+    15000.0,
+    3585.0
+   ],
+   "length_m": 319,
+   "points": 112,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    885.0,
+    3480.0
+   ],
+   "to_xy": [
+    890.0,
+    3520.0
+   ],
+   "length_m": 40,
+   "points": 18,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    4105.0,
+    3500.0
+   ],
+   "to_xy": [
+    4010.0,
+    3595.0
+   ],
+   "length_m": 134,
+   "points": 90,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    4135.0,
+    3485.0
+   ],
+   "to_xy": [
+    4185.0,
+    3505.0
+   ],
+   "length_m": 54,
+   "points": 19,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    7175.0,
+    3485.0
+   ],
+   "to_xy": [
+    7155.0,
+    3545.0
+   ],
+   "length_m": 63,
+   "points": 29,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    10455.0,
+    3490.0
+   ],
+   "to_xy": [
+    10405.0,
+    3500.0
+   ],
+   "length_m": 51,
+   "points": 22,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    10060.0,
+    3515.0
+   ],
+   "to_xy": [
+    10365.0,
+    3540.0
+   ],
+   "length_m": 306,
+   "points": 152,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    10805.0,
+    3520.0
+   ],
+   "to_xy": [
+    10755.0,
+    3555.0
+   ],
+   "length_m": 61,
+   "points": 50,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    9925.0,
+    3515.0
+   ],
+   "to_xy": [
+    9095.0,
+    4190.0
+   ],
+   "length_m": 1070,
+   "points": 934,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    12830.0,
+    3515.0
+   ],
+   "to_xy": [
+    12815.0,
+    3585.0
+   ],
+   "length_m": 72,
+   "points": 33,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    14690.0,
+    3555.0
+   ],
+   "to_xy": [
+    14410.0,
+    4700.0
+   ],
+   "length_m": 1179,
+   "points": 1426,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    7345.0,
+    3565.0
+   ],
+   "to_xy": [
+    7615.0,
+    3810.0
+   ],
+   "length_m": 365,
+   "points": 191,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    6005.0,
+    3600.0
+   ],
+   "to_xy": [
+    6075.0,
+    3690.0
+   ],
+   "length_m": 114,
+   "points": 71,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    11485.0,
+    3620.0
+   ],
+   "to_xy": [
+    11655.0,
+    3870.0
+   ],
+   "length_m": 302,
+   "points": 136,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    3010.0,
+    3615.0
+   ],
+   "to_xy": [
+    3060.0,
+    3645.0
+   ],
+   "length_m": 58,
+   "points": 11,
+   "mean_inland_slope_pct": 10.9
+  },
+  {
+   "from_xy": [
+    6805.0,
+    3615.0
+   ],
+   "to_xy": [
+    6910.0,
+    3705.0
+   ],
+   "length_m": 138,
+   "points": 52,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    6810.0,
+    3670.0
+   ],
+   "to_xy": [
+    6725.0,
+    3710.0
+   ],
+   "length_m": 94,
+   "points": 74,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    10975.0,
+    3660.0
+   ],
+   "to_xy": [
+    10815.0,
+    3705.0
+   ],
+   "length_m": 166,
+   "points": 121,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    8300.0,
+    3785.0
+   ],
+   "to_xy": [
+    8670.0,
+    3900.0
+   ],
+   "length_m": 387,
+   "points": 175,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    11045.0,
+    3700.0
+   ],
+   "to_xy": [
+    10980.0,
+    3765.0
+   ],
+   "length_m": 92,
+   "points": 51,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    1745.0,
+    3715.0
+   ],
+   "to_xy": [
+    1720.0,
+    3765.0
+   ],
+   "length_m": 56,
+   "points": 28,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    1380.0,
+    3740.0
+   ],
+   "to_xy": [
+    1275.0,
+    3785.0
+   ],
+   "length_m": 114,
+   "points": 81,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    13320.0,
+    3730.0
+   ],
+   "to_xy": [
+    13495.0,
+    3820.0
+   ],
+   "length_m": 197,
+   "points": 80,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    10780.0,
+    3740.0
+   ],
+   "to_xy": [
+    10805.0,
+    3780.0
+   ],
+   "length_m": 47,
+   "points": 21,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    1040.0,
+    3750.0
+   ],
+   "to_xy": [
+    1090.0,
+    3805.0
+   ],
+   "length_m": 74,
+   "points": 65,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    3395.0,
+    3775.0
+   ],
+   "to_xy": [
+    3355.0,
+    3830.0
+   ],
+   "length_m": 68,
+   "points": 62,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    1340.0,
+    3830.0
+   ],
+   "to_xy": [
+    1100.0,
+    4040.0
+   ],
+   "length_m": 319,
+   "points": 257,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    8710.0,
+    3815.0
+   ],
+   "to_xy": [
+    8700.0,
+    3900.0
+   ],
+   "length_m": 86,
+   "points": 42,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    2045.0,
+    3865.0
+   ],
+   "to_xy": [
+    3775.0,
+    7065.0
+   ],
+   "length_m": 3638,
+   "points": 5946,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    12590.0,
+    3920.0
+   ],
+   "to_xy": [
+    12720.0,
+    3950.0
+   ],
+   "length_m": 133,
+   "points": 82,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    12880.0,
+    3885.0
+   ],
+   "to_xy": [
+    12920.0,
+    3945.0
+   ],
+   "length_m": 72,
+   "points": 37,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    6920.0,
+    3910.0
+   ],
+   "to_xy": [
+    6760.0,
+    3920.0
+   ],
+   "length_m": 160,
+   "points": 39,
+   "mean_inland_slope_pct": 10.3
+  },
+  {
+   "from_xy": [
+    7055.0,
+    3935.0
+   ],
+   "to_xy": [
+    7425.0,
+    4040.0
+   ],
+   "length_m": 385,
+   "points": 118,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    8670.0,
+    3965.0
+   ],
+   "to_xy": [
+    8540.0,
+    4525.0
+   ],
+   "length_m": 575,
+   "points": 606,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    8165.0,
+    3990.0
+   ],
+   "to_xy": [
+    8105.0,
+    3995.0
+   ],
+   "length_m": 60,
+   "points": 13,
+   "mean_inland_slope_pct": 11.1
+  },
+  {
+   "from_xy": [
+    3295.0,
+    4005.0
+   ],
+   "to_xy": [
+    3255.0,
+    4015.0
+   ],
+   "length_m": 41,
+   "points": 24,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    7540.0,
+    4000.0
+   ],
+   "to_xy": [
+    7610.0,
+    4015.0
+   ],
+   "length_m": 72,
+   "points": 19,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    8255.0,
+    4000.0
+   ],
+   "to_xy": [
+    8225.0,
+    4280.0
+   ],
+   "length_m": 282,
+   "points": 117,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    7465.0,
+    4005.0
+   ],
+   "to_xy": [
+    7820.0,
+    4115.0
+   ],
+   "length_m": 372,
+   "points": 127,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    10735.0,
+    4005.0
+   ],
+   "to_xy": [
+    10705.0,
+    4055.0
+   ],
+   "length_m": 58,
+   "points": 43,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    12670.0,
+    4020.0
+   ],
+   "to_xy": [
+    12695.0,
+    4075.0
+   ],
+   "length_m": 60,
+   "points": 54,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    6195.0,
+    4035.0
+   ],
+   "to_xy": [
+    6270.0,
+    4130.0
+   ],
+   "length_m": 121,
+   "points": 68,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    4485.0,
+    4085.0
+   ],
+   "to_xy": [
+    4740.0,
+    4100.0
+   ],
+   "length_m": 255,
+   "points": 129,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    14235.0,
+    4055.0
+   ],
+   "to_xy": [
+    14155.0,
+    4060.0
+   ],
+   "length_m": 80,
+   "points": 34,
+   "mean_inland_slope_pct": 7.7
+  },
+  {
+   "from_xy": [
+    4235.0,
+    4050.0
+   ],
+   "to_xy": [
+    3810.0,
+    5115.0
+   ],
+   "length_m": 1147,
+   "points": 904,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    11540.0,
+    4090.0
+   ],
+   "to_xy": [
+    11510.0,
+    4140.0
+   ],
+   "length_m": 58,
+   "points": 26,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    5645.0,
+    4120.0
+   ],
+   "to_xy": [
+    5795.0,
+    4220.0
+   ],
+   "length_m": 180,
+   "points": 69,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    4795.0,
+    4115.0
+   ],
+   "to_xy": [
+    4735.0,
+    4775.0
+   ],
+   "length_m": 663,
+   "points": 320,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    8060.0,
+    4115.0
+   ],
+   "to_xy": [
+    8075.0,
+    4175.0
+   ],
+   "length_m": 62,
+   "points": 54,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    9765.0,
+    4120.0
+   ],
+   "to_xy": [
+    9750.0,
+    4165.0
+   ],
+   "length_m": 47,
+   "points": 24,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    9920.0,
+    4155.0
+   ],
+   "to_xy": [
+    9945.0,
+    4300.0
+   ],
+   "length_m": 147,
+   "points": 105,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    4410.0,
+    4170.0
+   ],
+   "to_xy": [
+    4130.0,
+    5005.0
+   ],
+   "length_m": 881,
+   "points": 511,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    7670.0,
+    4245.0
+   ],
+   "to_xy": [
+    7825.0,
+    4265.0
+   ],
+   "length_m": 156,
+   "points": 62,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    2145.0,
+    4205.0
+   ],
+   "to_xy": [
+    2230.0,
+    4240.0
+   ],
+   "length_m": 92,
+   "points": 37,
+   "mean_inland_slope_pct": 8.1
+  },
+  {
+   "from_xy": [
+    6020.0,
+    4195.0
+   ],
+   "to_xy": [
+    6380.0,
+    4690.0
+   ],
+   "length_m": 612,
+   "points": 500,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    7595.0,
+    4220.0
+   ],
+   "to_xy": [
+    7530.0,
+    4240.0
+   ],
+   "length_m": 68,
+   "points": 28,
+   "mean_inland_slope_pct": 7.0
+  },
+  {
+   "from_xy": [
+    12115.0,
+    4210.0
+   ],
+   "to_xy": [
+    11575.0,
+    7045.0
+   ],
+   "length_m": 2886,
+   "points": 2201,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    7835.0,
+    4230.0
+   ],
+   "to_xy": [
+    7940.0,
+    4265.0
+   ],
+   "length_m": 111,
+   "points": 44,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    4500.0,
+    4255.0
+   ],
+   "to_xy": [
+    4575.0,
+    4260.0
+   ],
+   "length_m": 75,
+   "points": 26,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    4080.0,
+    4270.0
+   ],
+   "to_xy": [
+    4070.0,
+    4315.0
+   ],
+   "length_m": 46,
+   "points": 20,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    7995.0,
+    4270.0
+   ],
+   "to_xy": [
+    8170.0,
+    4280.0
+   ],
+   "length_m": 175,
+   "points": 36,
+   "mean_inland_slope_pct": 10.6
+  },
+  {
+   "from_xy": [
+    3520.0,
+    4320.0
+   ],
+   "to_xy": [
+    3470.0,
+    4335.0
+   ],
+   "length_m": 52,
+   "points": 27,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    5615.0,
+    4320.0
+   ],
+   "to_xy": [
+    5575.0,
+    4395.0
+   ],
+   "length_m": 85,
+   "points": 36,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    3330.0,
+    4335.0
+   ],
+   "to_xy": [
+    3485.0,
+    4610.0
+   ],
+   "length_m": 316,
+   "points": 243,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    8340.0,
+    4355.0
+   ],
+   "to_xy": [
+    8440.0,
+    4585.0
+   ],
+   "length_m": 251,
+   "points": 152,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    1525.0,
+    4360.0
+   ],
+   "to_xy": [
+    1440.0,
+    4485.0
+   ],
+   "length_m": 151,
+   "points": 64,
+   "mean_inland_slope_pct": 7.8
+  },
+  {
+   "from_xy": [
+    8285.0,
+    4355.0
+   ],
+   "to_xy": [
+    8275.0,
+    6340.0
+   ],
+   "length_m": 1985,
+   "points": 1343,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    5670.0,
+    4360.0
+   ],
+   "to_xy": [
+    5650.0,
+    4400.0
+   ],
+   "length_m": 45,
+   "points": 22,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    8105.0,
+    4375.0
+   ],
+   "to_xy": [
+    8060.0,
+    4390.0
+   ],
+   "length_m": 47,
+   "points": 16,
+   "mean_inland_slope_pct": 11.6
+  },
+  {
+   "from_xy": [
+    6480.0,
+    4395.0
+   ],
+   "to_xy": [
+    6510.0,
+    4440.0
+   ],
+   "length_m": 54,
+   "points": 41,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    12820.0,
+    4430.0
+   ],
+   "to_xy": [
+    13225.0,
+    4570.0
+   ],
+   "length_m": 429,
+   "points": 182,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    7930.0,
+    4410.0
+   ],
+   "to_xy": [
+    7890.0,
+    4770.0
+   ],
+   "length_m": 362,
+   "points": 157,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    13480.0,
+    4455.0
+   ],
+   "to_xy": [
+    13585.0,
+    4695.0
+   ],
+   "length_m": 262,
+   "points": 126,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    1190.0,
+    4485.0
+   ],
+   "to_xy": [
+    1265.0,
+    4490.0
+   ],
+   "length_m": 75,
+   "points": 34,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    2810.0,
+    4485.0
+   ],
+   "to_xy": [
+    2840.0,
+    4560.0
+   ],
+   "length_m": 81,
+   "points": 69,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    3830.0,
+    4505.0
+   ],
+   "to_xy": [
+    3905.0,
+    4615.0
+   ],
+   "length_m": 133,
+   "points": 63,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    6945.0,
+    4545.0
+   ],
+   "to_xy": [
+    6960.0,
+    4625.0
+   ],
+   "length_m": 81,
+   "points": 53,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    10325.0,
+    4565.0
+   ],
+   "to_xy": [
+    10270.0,
+    4590.0
+   ],
+   "length_m": 60,
+   "points": 51,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    8925.0,
+    4555.0
+   ],
+   "to_xy": [
+    8875.0,
+    4680.0
+   ],
+   "length_m": 135,
+   "points": 64,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    3750.0,
+    4560.0
+   ],
+   "to_xy": [
+    3810.0,
+    4710.0
+   ],
+   "length_m": 162,
+   "points": 97,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    8380.0,
+    4600.0
+   ],
+   "to_xy": [
+    8385.0,
+    4650.0
+   ],
+   "length_m": 50,
+   "points": 22,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    9290.0,
+    4615.0
+   ],
+   "to_xy": [
+    9250.0,
+    4955.0
+   ],
+   "length_m": 342,
+   "points": 161,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    11760.0,
+    4620.0
+   ],
+   "to_xy": [
+    11000.0,
+    5370.0
+   ],
+   "length_m": 1068,
+   "points": 443,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    12970.0,
+    4630.0
+   ],
+   "to_xy": [
+    12900.0,
+    4640.0
+   ],
+   "length_m": 71,
+   "points": 31,
+   "mean_inland_slope_pct": 8.4
+  },
+  {
+   "from_xy": [
+    8470.0,
+    4625.0
+   ],
+   "to_xy": [
+    8425.0,
+    6175.0
+   ],
+   "length_m": 1551,
+   "points": 1525,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    14240.0,
+    4655.0
+   ],
+   "to_xy": [
+    14385.0,
+    4735.0
+   ],
+   "length_m": 166,
+   "points": 72,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    12895.0,
+    4670.0
+   ],
+   "to_xy": [
+    12970.0,
+    4680.0
+   ],
+   "length_m": 76,
+   "points": 43,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    4485.0,
+    4670.0
+   ],
+   "to_xy": [
+    4400.0,
+    5360.0
+   ],
+   "length_m": 695,
+   "points": 588,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    6430.0,
+    4675.0
+   ],
+   "to_xy": [
+    6620.0,
+    4695.0
+   ],
+   "length_m": 191,
+   "points": 83,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    15545.0,
+    4675.0
+   ],
+   "to_xy": [
+    15545.0,
+    4715.0
+   ],
+   "length_m": 40,
+   "points": 18,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    11230.0,
+    4710.0
+   ],
+   "to_xy": [
+    11320.0,
+    4730.0
+   ],
+   "length_m": 92,
+   "points": 75,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    1570.0,
+    4710.0
+   ],
+   "to_xy": [
+    1645.0,
+    4745.0
+   ],
+   "length_m": 83,
+   "points": 41,
+   "mean_inland_slope_pct": 10.2
+  },
+  {
+   "from_xy": [
+    15480.0,
+    4715.0
+   ],
+   "to_xy": [
+    15685.0,
+    7160.0
+   ],
+   "length_m": 2454,
+   "points": 4071,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    12790.0,
+    4725.0
+   ],
+   "to_xy": [
+    12760.0,
+    4780.0
+   ],
+   "length_m": 63,
+   "points": 39,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    5825.0,
+    4785.0
+   ],
+   "to_xy": [
+    6580.0,
+    5020.0
+   ],
+   "length_m": 791,
+   "points": 322,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    7815.0,
+    4775.0
+   ],
+   "to_xy": [
+    7775.0,
+    5105.0
+   ],
+   "length_m": 332,
+   "points": 131,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    12905.0,
+    4790.0
+   ],
+   "to_xy": [
+    12850.0,
+    4920.0
+   ],
+   "length_m": 141,
+   "points": 116,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    15465.0,
+    4800.0
+   ],
+   "to_xy": [
+    15415.0,
+    4830.0
+   ],
+   "length_m": 58,
+   "points": 28,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    7345.0,
+    4835.0
+   ],
+   "to_xy": [
+    7455.0,
+    4865.0
+   ],
+   "length_m": 114,
+   "points": 105,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    3055.0,
+    4815.0
+   ],
+   "to_xy": [
+    3065.0,
+    4890.0
+   ],
+   "length_m": 76,
+   "points": 34,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    8075.0,
+    4820.0
+   ],
+   "to_xy": [
+    7995.0,
+    4985.0
+   ],
+   "length_m": 183,
+   "points": 88,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    13415.0,
+    4830.0
+   ],
+   "to_xy": [
+    13485.0,
+    4865.0
+   ],
+   "length_m": 78,
+   "points": 63,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    12190.0,
+    4865.0
+   ],
+   "to_xy": [
+    12070.0,
+    4875.0
+   ],
+   "length_m": 120,
+   "points": 71,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    15330.0,
+    4845.0
+   ],
+   "to_xy": [
+    15275.0,
+    4885.0
+   ],
+   "length_m": 68,
+   "points": 27,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    5770.0,
+    4855.0
+   ],
+   "to_xy": [
+    5705.0,
+    4905.0
+   ],
+   "length_m": 82,
+   "points": 67,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    5260.0,
+    4880.0
+   ],
+   "to_xy": [
+    5195.0,
+    5005.0
+   ],
+   "length_m": 141,
+   "points": 125,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    12770.0,
+    4885.0
+   ],
+   "to_xy": [
+    12825.0,
+    4995.0
+   ],
+   "length_m": 123,
+   "points": 59,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    14865.0,
+    4940.0
+   ],
+   "to_xy": [
+    14965.0,
+    4965.0
+   ],
+   "length_m": 103,
+   "points": 82,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    4440.0,
+    4910.0
+   ],
+   "to_xy": [
+    4500.0,
+    4920.0
+   ],
+   "length_m": 61,
+   "points": 22,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    13635.0,
+    4950.0
+   ],
+   "to_xy": [
+    13735.0,
+    4990.0
+   ],
+   "length_m": 108,
+   "points": 67,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    7650.0,
+    4925.0
+   ],
+   "to_xy": [
+    7495.0,
+    5595.0
+   ],
+   "length_m": 688,
+   "points": 236,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    6420.0,
+    4935.0
+   ],
+   "to_xy": [
+    6440.0,
+    4970.0
+   ],
+   "length_m": 40,
+   "points": 20,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    8250.0,
+    4935.0
+   ],
+   "to_xy": [
+    8225.0,
+    4995.0
+   ],
+   "length_m": 65,
+   "points": 49,
+   "mean_inland_slope_pct": 8.0
+  },
+  {
+   "from_xy": [
+    14065.0,
+    4970.0
+   ],
+   "to_xy": [
+    14115.0,
+    5005.0
+   ],
+   "length_m": 61,
+   "points": 56,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    15195.0,
+    4975.0
+   ],
+   "to_xy": [
+    15125.0,
+    5015.0
+   ],
+   "length_m": 81,
+   "points": 33,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    9205.0,
+    4990.0
+   ],
+   "to_xy": [
+    9180.0,
+    5060.0
+   ],
+   "length_m": 74,
+   "points": 29,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    15065.0,
+    5005.0
+   ],
+   "to_xy": [
+    15105.0,
+    5020.0
+   ],
+   "length_m": 43,
+   "points": 18,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    3305.0,
+    5035.0
+   ],
+   "to_xy": [
+    3385.0,
+    5135.0
+   ],
+   "length_m": 128,
+   "points": 115,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    12300.0,
+    5030.0
+   ],
+   "to_xy": [
+    12480.0,
+    5200.0
+   ],
+   "length_m": 248,
+   "points": 131,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    12735.0,
+    5050.0
+   ],
+   "to_xy": [
+    12630.0,
+    5205.0
+   ],
+   "length_m": 187,
+   "points": 96,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    9980.0,
+    5045.0
+   ],
+   "to_xy": [
+    9155.0,
+    6785.0
+   ],
+   "length_m": 1926,
+   "points": 2645,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    12950.0,
+    5055.0
+   ],
+   "to_xy": [
+    12930.0,
+    5095.0
+   ],
+   "length_m": 45,
+   "points": 17,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    3210.0,
+    5060.0
+   ],
+   "to_xy": [
+    3240.0,
+    5110.0
+   ],
+   "length_m": 58,
+   "points": 51,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    5565.0,
+    5065.0
+   ],
+   "to_xy": [
+    5545.0,
+    5115.0
+   ],
+   "length_m": 54,
+   "points": 46,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    14770.0,
+    5075.0
+   ],
+   "to_xy": [
+    15140.0,
+    5695.0
+   ],
+   "length_m": 722,
+   "points": 344,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    5540.0,
+    5145.0
+   ],
+   "to_xy": [
+    5570.0,
+    5200.0
+   ],
+   "length_m": 63,
+   "points": 55,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    13530.0,
+    5195.0
+   ],
+   "to_xy": [
+    13775.0,
+    5270.0
+   ],
+   "length_m": 256,
+   "points": 124,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    10065.0,
+    5170.0
+   ],
+   "to_xy": [
+    10120.0,
+    5275.0
+   ],
+   "length_m": 119,
+   "points": 23,
+   "mean_inland_slope_pct": 9.8
+  },
+  {
+   "from_xy": [
+    1890.0,
+    5195.0
+   ],
+   "to_xy": [
+    1905.0,
+    5260.0
+   ],
+   "length_m": 67,
+   "points": 54,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    12530.0,
+    5245.0
+   ],
+   "to_xy": [
+    12715.0,
+    5400.0
+   ],
+   "length_m": 241,
+   "points": 103,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    2755.0,
+    5230.0
+   ],
+   "to_xy": [
+    2790.0,
+    5325.0
+   ],
+   "length_m": 101,
+   "points": 86,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    14295.0,
+    5225.0
+   ],
+   "to_xy": [
+    14280.0,
+    5290.0
+   ],
+   "length_m": 67,
+   "points": 38,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    3190.0,
+    5260.0
+   ],
+   "to_xy": [
+    3080.0,
+    5295.0
+   ],
+   "length_m": 115,
+   "points": 92,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    6915.0,
+    5255.0
+   ],
+   "to_xy": [
+    7060.0,
+    5340.0
+   ],
+   "length_m": 168,
+   "points": 74,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    10550.0,
+    5260.0
+   ],
+   "to_xy": [
+    10500.0,
+    5350.0
+   ],
+   "length_m": 103,
+   "points": 80,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    2860.0,
+    5285.0
+   ],
+   "to_xy": [
+    2905.0,
+    5315.0
+   ],
+   "length_m": 54,
+   "points": 24,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    5785.0,
+    5280.0
+   ],
+   "to_xy": [
+    5815.0,
+    5335.0
+   ],
+   "length_m": 63,
+   "points": 49,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    14845.0,
+    5290.0
+   ],
+   "to_xy": [
+    14795.0,
+    5315.0
+   ],
+   "length_m": 56,
+   "points": 20,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    3695.0,
+    5330.0
+   ],
+   "to_xy": [
+    3705.0,
+    5395.0
+   ],
+   "length_m": 66,
+   "points": 53,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    1480.0,
+    5355.0
+   ],
+   "to_xy": [
+    1430.0,
+    5370.0
+   ],
+   "length_m": 52,
+   "points": 25,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    12255.0,
+    5345.0
+   ],
+   "to_xy": [
+    12280.0,
+    5455.0
+   ],
+   "length_m": 113,
+   "points": 38,
+   "mean_inland_slope_pct": 10.2
+  },
+  {
+   "from_xy": [
+    9810.0,
+    5425.0
+   ],
+   "to_xy": [
+    9880.0,
+    5465.0
+   ],
+   "length_m": 81,
+   "points": 38,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    10990.0,
+    5415.0
+   ],
+   "to_xy": [
+    10900.0,
+    6840.0
+   ],
+   "length_m": 1428,
+   "points": 717,
+   "mean_inland_slope_pct": 7.3
+  },
+  {
+   "from_xy": [
+    10585.0,
+    5425.0
+   ],
+   "to_xy": [
+    10635.0,
+    5480.0
+   ],
+   "length_m": 74,
+   "points": 48,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    5660.0,
+    5430.0
+   ],
+   "to_xy": [
+    5730.0,
+    5495.0
+   ],
+   "length_m": 96,
+   "points": 80,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    8220.0,
+    5425.0
+   ],
+   "to_xy": [
+    8200.0,
+    5500.0
+   ],
+   "length_m": 78,
+   "points": 36,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    3275.0,
+    5435.0
+   ],
+   "to_xy": [
+    3235.0,
+    5460.0
+   ],
+   "length_m": 47,
+   "points": 18,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    12740.0,
+    5450.0
+   ],
+   "to_xy": [
+    12800.0,
+    5725.0
+   ],
+   "length_m": 281,
+   "points": 94,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    9340.0,
+    5455.0
+   ],
+   "to_xy": [
+    9360.0,
+    5535.0
+   ],
+   "length_m": 82,
+   "points": 42,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    10165.0,
+    5460.0
+   ],
+   "to_xy": [
+    10205.0,
+    5515.0
+   ],
+   "length_m": 68,
+   "points": 14,
+   "mean_inland_slope_pct": 8.9
+  },
+  {
+   "from_xy": [
+    11480.0,
+    5485.0
+   ],
+   "to_xy": [
+    11415.0,
+    5655.0
+   ],
+   "length_m": 182,
+   "points": 119,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    3765.0,
+    5495.0
+   ],
+   "to_xy": [
+    3705.0,
+    5575.0
+   ],
+   "length_m": 100,
+   "points": 41,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    10470.0,
+    5515.0
+   ],
+   "to_xy": [
+    10590.0,
+    6005.0
+   ],
+   "length_m": 504,
+   "points": 100,
+   "mean_inland_slope_pct": 9.5
+  },
+  {
+   "from_xy": [
+    13180.0,
+    5515.0
+   ],
+   "to_xy": [
+    13340.0,
+    6535.0
+   ],
+   "length_m": 1032,
+   "points": 896,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    7010.0,
+    5540.0
+   ],
+   "to_xy": [
+    7265.0,
+    6270.0
+   ],
+   "length_m": 773,
+   "points": 434,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    13405.0,
+    5545.0
+   ],
+   "to_xy": [
+    13465.0,
+    5815.0
+   ],
+   "length_m": 277,
+   "points": 226,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    1470.0,
+    5560.0
+   ],
+   "to_xy": [
+    1525.0,
+    5630.0
+   ],
+   "length_m": 89,
+   "points": 50,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    3810.0,
+    5595.0
+   ],
+   "to_xy": [
+    3920.0,
+    5630.0
+   ],
+   "length_m": 115,
+   "points": 102,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    1240.0,
+    5575.0
+   ],
+   "to_xy": [
+    1295.0,
+    5615.0
+   ],
+   "length_m": 68,
+   "points": 30,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    14965.0,
+    5590.0
+   ],
+   "to_xy": [
+    14920.0,
+    5730.0
+   ],
+   "length_m": 147,
+   "points": 85,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    13835.0,
+    5630.0
+   ],
+   "to_xy": [
+    13710.0,
+    5670.0
+   ],
+   "length_m": 131,
+   "points": 64,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    3705.0,
+    5615.0
+   ],
+   "to_xy": [
+    3600.0,
+    5770.0
+   ],
+   "length_m": 187,
+   "points": 72,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    10265.0,
+    5625.0
+   ],
+   "to_xy": [
+    10480.0,
+    6020.0
+   ],
+   "length_m": 450,
+   "points": 93,
+   "mean_inland_slope_pct": 8.9
+  },
+  {
+   "from_xy": [
+    2630.0,
+    5640.0
+   ],
+   "to_xy": [
+    2555.0,
+    5685.0
+   ],
+   "length_m": 87,
+   "points": 30,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    7190.0,
+    5660.0
+   ],
+   "to_xy": [
+    7175.0,
+    5710.0
+   ],
+   "length_m": 52,
+   "points": 24,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    7925.0,
+    5665.0
+   ],
+   "to_xy": [
+    7920.0,
+    5745.0
+   ],
+   "length_m": 80,
+   "points": 50,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    11240.0,
+    5680.0
+   ],
+   "to_xy": [
+    11225.0,
+    5765.0
+   ],
+   "length_m": 86,
+   "points": 39,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    8135.0,
+    5695.0
+   ],
+   "to_xy": [
+    8205.0,
+    5725.0
+   ],
+   "length_m": 76,
+   "points": 32,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    13630.0,
+    5690.0
+   ],
+   "to_xy": [
+    13550.0,
+    5775.0
+   ],
+   "length_m": 117,
+   "points": 82,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    13065.0,
+    5710.0
+   ],
+   "to_xy": [
+    13150.0,
+    5745.0
+   ],
+   "length_m": 92,
+   "points": 89,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    15125.0,
+    5730.0
+   ],
+   "to_xy": [
+    15260.0,
+    5900.0
+   ],
+   "length_m": 217,
+   "points": 89,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    4940.0,
+    5740.0
+   ],
+   "to_xy": [
+    5245.0,
+    6090.0
+   ],
+   "length_m": 464,
+   "points": 194,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    2860.0,
+    5740.0
+   ],
+   "to_xy": [
+    2870.0,
+    5790.0
+   ],
+   "length_m": 51,
+   "points": 44,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    1105.0,
+    5760.0
+   ],
+   "to_xy": [
+    1060.0,
+    5765.0
+   ],
+   "length_m": 45,
+   "points": 16,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    15020.0,
+    5770.0
+   ],
+   "to_xy": [
+    14975.0,
+    5830.0
+   ],
+   "length_m": 75,
+   "points": 70,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    1060.0,
+    5810.0
+   ],
+   "to_xy": [
+    985.0,
+    5830.0
+   ],
+   "length_m": 78,
+   "points": 43,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    9705.0,
+    5790.0
+   ],
+   "to_xy": [
+    9720.0,
+    5850.0
+   ],
+   "length_m": 62,
+   "points": 38,
+   "mean_inland_slope_pct": 8.0
+  },
+  {
+   "from_xy": [
+    14900.0,
+    5795.0
+   ],
+   "to_xy": [
+    14860.0,
+    5855.0
+   ],
+   "length_m": 72,
+   "points": 40,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    13950.0,
+    5840.0
+   ],
+   "to_xy": [
+    13795.0,
+    6065.0
+   ],
+   "length_m": 273,
+   "points": 191,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    12815.0,
+    5915.0
+   ],
+   "to_xy": [
+    12775.0,
+    5930.0
+   ],
+   "length_m": 43,
+   "points": 19,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    15410.0,
+    5925.0
+   ],
+   "to_xy": [
+    15275.0,
+    5930.0
+   ],
+   "length_m": 135,
+   "points": 62,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    3605.0,
+    5955.0
+   ],
+   "to_xy": [
+    3455.0,
+    6035.0
+   ],
+   "length_m": 170,
+   "points": 107,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    8770.0,
+    5950.0
+   ],
+   "to_xy": [
+    8800.0,
+    6045.0
+   ],
+   "length_m": 100,
+   "points": 48,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    12810.0,
+    5965.0
+   ],
+   "to_xy": [
+    12760.0,
+    5985.0
+   ],
+   "length_m": 54,
+   "points": 24,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    10080.0,
+    5990.0
+   ],
+   "to_xy": [
+    9995.0,
+    5995.0
+   ],
+   "length_m": 85,
+   "points": 35,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    3350.0,
+    5980.0
+   ],
+   "to_xy": [
+    3315.0,
+    6150.0
+   ],
+   "length_m": 174,
+   "points": 68,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    3805.0,
+    5985.0
+   ],
+   "to_xy": [
+    3740.0,
+    6035.0
+   ],
+   "length_m": 82,
+   "points": 30,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    3195.0,
+    6035.0
+   ],
+   "to_xy": [
+    2990.0,
+    6540.0
+   ],
+   "length_m": 545,
+   "points": 263,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    3870.0,
+    6035.0
+   ],
+   "to_xy": [
+    3885.0,
+    6075.0
+   ],
+   "length_m": 43,
+   "points": 18,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    13905.0,
+    6050.0
+   ],
+   "to_xy": [
+    14075.0,
+    6200.0
+   ],
+   "length_m": 227,
+   "points": 155,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    10500.0,
+    6080.0
+   ],
+   "to_xy": [
+    10620.0,
+    6245.0
+   ],
+   "length_m": 204,
+   "points": 92,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    9285.0,
+    6065.0
+   ],
+   "to_xy": [
+    9505.0,
+    6560.0
+   ],
+   "length_m": 542,
+   "points": 262,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    11455.0,
+    6065.0
+   ],
+   "to_xy": [
+    11495.0,
+    6125.0
+   ],
+   "length_m": 72,
+   "points": 66,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    9640.0,
+    6120.0
+   ],
+   "to_xy": [
+    9680.0,
+    6130.0
+   ],
+   "length_m": 41,
+   "points": 19,
+   "mean_inland_slope_pct": 7.5
+  },
+  {
+   "from_xy": [
+    14410.0,
+    6110.0
+   ],
+   "to_xy": [
+    14420.0,
+    6155.0
+   ],
+   "length_m": 46,
+   "points": 22,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    3255.0,
+    6125.0
+   ],
+   "to_xy": [
+    3215.0,
+    6135.0
+   ],
+   "length_m": 41,
+   "points": 18,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    11395.0,
+    6130.0
+   ],
+   "to_xy": [
+    11365.0,
+    6225.0
+   ],
+   "length_m": 100,
+   "points": 83,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    13995.0,
+    6130.0
+   ],
+   "to_xy": [
+    13980.0,
+    6175.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    8700.0,
+    6135.0
+   ],
+   "to_xy": [
+    8740.0,
+    6195.0
+   ],
+   "length_m": 72,
+   "points": 58,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    13855.0,
+    6155.0
+   ],
+   "to_xy": [
+    14350.0,
+    6715.0
+   ],
+   "length_m": 747,
+   "points": 726,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    14310.0,
+    6230.0
+   ],
+   "to_xy": [
+    14145.0,
+    6260.0
+   ],
+   "length_m": 168,
+   "points": 124,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    1120.0,
+    6290.0
+   ],
+   "to_xy": [
+    1085.0,
+    6590.0
+   ],
+   "length_m": 302,
+   "points": 214,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    13335.0,
+    6330.0
+   ],
+   "to_xy": [
+    13435.0,
+    6350.0
+   ],
+   "length_m": 102,
+   "points": 52,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    7385.0,
+    6310.0
+   ],
+   "to_xy": [
+    7350.0,
+    6330.0
+   ],
+   "length_m": 40,
+   "points": 20,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    6225.0,
+    6325.0
+   ],
+   "to_xy": [
+    6395.0,
+    6370.0
+   ],
+   "length_m": 176,
+   "points": 107,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    9060.0,
+    6310.0
+   ],
+   "to_xy": [
+    9045.0,
+    6355.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    11155.0,
+    6310.0
+   ],
+   "to_xy": [
+    11210.0,
+    6820.0
+   ],
+   "length_m": 513,
+   "points": 313,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    6500.0,
+    6315.0
+   ],
+   "to_xy": [
+    6520.0,
+    6375.0
+   ],
+   "length_m": 63,
+   "points": 54,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    1830.0,
+    6335.0
+   ],
+   "to_xy": [
+    1880.0,
+    6420.0
+   ],
+   "length_m": 99,
+   "points": 57,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    10320.0,
+    6365.0
+   ],
+   "to_xy": [
+    10480.0,
+    6725.0
+   ],
+   "length_m": 394,
+   "points": 311,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    5230.0,
+    6400.0
+   ],
+   "to_xy": [
+    5495.0,
+    6610.0
+   ],
+   "length_m": 338,
+   "points": 130,
+   "mean_inland_slope_pct": 6.9
+  },
+  {
+   "from_xy": [
+    15425.0,
+    6405.0
+   ],
+   "to_xy": [
+    15450.0,
+    6475.0
+   ],
+   "length_m": 74,
+   "points": 37,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    14105.0,
+    6420.0
+   ],
+   "to_xy": [
+    14110.0,
+    6460.0
+   ],
+   "length_m": 40,
+   "points": 18,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    7625.0,
+    6430.0
+   ],
+   "to_xy": [
+    7535.0,
+    6740.0
+   ],
+   "length_m": 323,
+   "points": 203,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    9260.0,
+    6460.0
+   ],
+   "to_xy": [
+    9305.0,
+    6500.0
+   ],
+   "length_m": 60,
+   "points": 39,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    13745.0,
+    6480.0
+   ],
+   "to_xy": [
+    13660.0,
+    6490.0
+   ],
+   "length_m": 86,
+   "points": 47,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    1750.0,
+    6475.0
+   ],
+   "to_xy": [
+    1680.0,
+    6610.0
+   ],
+   "length_m": 152,
+   "points": 69,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    9355.0,
+    6485.0
+   ],
+   "to_xy": [
+    9275.0,
+    6785.0
+   ],
+   "length_m": 310,
+   "points": 219,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    6230.0,
+    6540.0
+   ],
+   "to_xy": [
+    6640.0,
+    6780.0
+   ],
+   "length_m": 475,
+   "points": 322,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    7140.0,
+    6520.0
+   ],
+   "to_xy": [
+    7100.0,
+    6545.0
+   ],
+   "length_m": 47,
+   "points": 18,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    12855.0,
+    6520.0
+   ],
+   "to_xy": [
+    12835.0,
+    6580.0
+   ],
+   "length_m": 63,
+   "points": 54,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    13775.0,
+    6545.0
+   ],
+   "to_xy": [
+    13825.0,
+    6620.0
+   ],
+   "length_m": 90,
+   "points": 76,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    12925.0,
+    6550.0
+   ],
+   "to_xy": [
+    12740.0,
+    6990.0
+   ],
+   "length_m": 477,
+   "points": 657,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    13630.0,
+    6575.0
+   ],
+   "to_xy": [
+    13935.0,
+    6915.0
+   ],
+   "length_m": 457,
+   "points": 331,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    13560.0,
+    6590.0
+   ],
+   "to_xy": [
+    13480.0,
+    6615.0
+   ],
+   "length_m": 84,
+   "points": 75,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    4660.0,
+    6605.0
+   ],
+   "to_xy": [
+    4805.0,
+    6725.0
+   ],
+   "length_m": 188,
+   "points": 91,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    7095.0,
+    6595.0
+   ],
+   "to_xy": [
+    7065.0,
+    6655.0
+   ],
+   "length_m": 67,
+   "points": 31,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    4860.0,
+    6610.0
+   ],
+   "to_xy": [
+    5360.0,
+    6960.0
+   ],
+   "length_m": 610,
+   "points": 282,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    1600.0,
+    6620.0
+   ],
+   "to_xy": [
+    1450.0,
+    7210.0
+   ],
+   "length_m": 609,
+   "points": 469,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    15060.0,
+    6620.0
+   ],
+   "to_xy": [
+    15015.0,
+    6700.0
+   ],
+   "length_m": 92,
+   "points": 38,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    1080.0,
+    6625.0
+   ],
+   "to_xy": [
+    1075.0,
+    6710.0
+   ],
+   "length_m": 85,
+   "points": 41,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    12365.0,
+    6655.0
+   ],
+   "to_xy": [
+    12415.0,
+    6685.0
+   ],
+   "length_m": 58,
+   "points": 52,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    14115.0,
+    6695.0
+   ],
+   "to_xy": [
+    14195.0,
+    6715.0
+   ],
+   "length_m": 82,
+   "points": 70,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    14900.0,
+    6685.0
+   ],
+   "to_xy": [
+    14875.0,
+    6820.0
+   ],
+   "length_m": 137,
+   "points": 100,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    13550.0,
+    6715.0
+   ],
+   "to_xy": [
+    13465.0,
+    6745.0
+   ],
+   "length_m": 90,
+   "points": 43,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    7730.0,
+    6735.0
+   ],
+   "to_xy": [
+    7665.0,
+    6750.0
+   ],
+   "length_m": 67,
+   "points": 32,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    13440.0,
+    6755.0
+   ],
+   "to_xy": [
+    13385.0,
+    6765.0
+   ],
+   "length_m": 56,
+   "points": 27,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    10425.0,
+    6740.0
+   ],
+   "to_xy": [
+    10440.0,
+    6780.0
+   ],
+   "length_m": 43,
+   "points": 24,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    13875.0,
+    6760.0
+   ],
+   "to_xy": [
+    13800.0,
+    6780.0
+   ],
+   "length_m": 78,
+   "points": 64,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    6385.0,
+    6770.0
+   ],
+   "to_xy": [
+    6335.0,
+    6800.0
+   ],
+   "length_m": 58,
+   "points": 54,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    1100.0,
+    6780.0
+   ],
+   "to_xy": [
+    1135.0,
+    6830.0
+   ],
+   "length_m": 61,
+   "points": 36,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    10350.0,
+    6775.0
+   ],
+   "to_xy": [
+    10380.0,
+    6875.0
+   ],
+   "length_m": 104,
+   "points": 54,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    14705.0,
+    6785.0
+   ],
+   "to_xy": [
+    14750.0,
+    6915.0
+   ],
+   "length_m": 138,
+   "points": 111,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    2770.0,
+    6975.0
+   ],
+   "to_xy": [
+    2335.0,
+    6990.0
+   ],
+   "length_m": 435,
+   "points": 220,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    3075.0,
+    6830.0
+   ],
+   "to_xy": [
+    2855.0,
+    6965.0
+   ],
+   "length_m": 258,
+   "points": 168,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    6505.0,
+    6830.0
+   ],
+   "to_xy": [
+    6550.0,
+    6955.0
+   ],
+   "length_m": 133,
+   "points": 71,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    9085.0,
+    6830.0
+   ],
+   "to_xy": [
+    9115.0,
+    6905.0
+   ],
+   "length_m": 81,
+   "points": 41,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    12900.0,
+    6830.0
+   ],
+   "to_xy": [
+    12890.0,
+    6920.0
+   ],
+   "length_m": 91,
+   "points": 48,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    10025.0,
+    6835.0
+   ],
+   "to_xy": [
+    10015.0,
+    6950.0
+   ],
+   "length_m": 115,
+   "points": 47,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    14450.0,
+    6840.0
+   ],
+   "to_xy": [
+    14410.0,
+    6855.0
+   ],
+   "length_m": 43,
+   "points": 21,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    835.0,
+    6855.0
+   ],
+   "to_xy": [
+    940.0,
+    7060.0
+   ],
+   "length_m": 230,
+   "points": 139,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    7015.0,
+    6865.0
+   ],
+   "to_xy": [
+    7105.0,
+    6905.0
+   ],
+   "length_m": 98,
+   "points": 47,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    9425.0,
+    6870.0
+   ],
+   "to_xy": [
+    9295.0,
+    7150.0
+   ],
+   "length_m": 309,
+   "points": 224,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    8820.0,
+    6890.0
+   ],
+   "to_xy": [
+    8995.0,
+    7135.0
+   ],
+   "length_m": 301,
+   "points": 157,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    2590.0,
+    6905.0
+   ],
+   "to_xy": [
+    2535.0,
+    6970.0
+   ],
+   "length_m": 85,
+   "points": 44,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    13430.0,
+    6905.0
+   ],
+   "to_xy": [
+    10895.0,
+    12110.0
+   ],
+   "length_m": 5789,
+   "points": 5375,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    10425.0,
+    6915.0
+   ],
+   "to_xy": [
+    10405.0,
+    7165.0
+   ],
+   "length_m": 251,
+   "points": 91,
+   "mean_inland_slope_pct": 8.5
+  },
+  {
+   "from_xy": [
+    13155.0,
+    6980.0
+   ],
+   "to_xy": [
+    13415.0,
+    7055.0
+   ],
+   "length_m": 271,
+   "points": 220,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    1105.0,
+    6955.0
+   ],
+   "to_xy": [
+    1045.0,
+    6970.0
+   ],
+   "length_m": 62,
+   "points": 55,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    9980.0,
+    6945.0
+   ],
+   "to_xy": [
+    9940.0,
+    7005.0
+   ],
+   "length_m": 72,
+   "points": 22,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    9625.0,
+    6955.0
+   ],
+   "to_xy": [
+    9600.0,
+    7015.0
+   ],
+   "length_m": 65,
+   "points": 26,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    14525.0,
+    6990.0
+   ],
+   "to_xy": [
+    14385.0,
+    7025.0
+   ],
+   "length_m": 144,
+   "points": 115,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    7810.0,
+    6990.0
+   ],
+   "to_xy": [
+    7925.0,
+    7020.0
+   ],
+   "length_m": 119,
+   "points": 54,
+   "mean_inland_slope_pct": 7.4
+  },
+  {
+   "from_xy": [
+    8745.0,
+    6980.0
+   ],
+   "to_xy": [
+    8765.0,
+    7050.0
+   ],
+   "length_m": 73,
+   "points": 43,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    1660.0,
+    7025.0
+   ],
+   "to_xy": [
+    1825.0,
+    7070.0
+   ],
+   "length_m": 171,
+   "points": 75,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    2865.0,
+    7045.0
+   ],
+   "to_xy": [
+    2805.0,
+    7105.0
+   ],
+   "length_m": 85,
+   "points": 34,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    12740.0,
+    7065.0
+   ],
+   "to_xy": [
+    12500.0,
+    7185.0
+   ],
+   "length_m": 268,
+   "points": 132,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    7785.0,
+    7090.0
+   ],
+   "to_xy": [
+    7595.0,
+    7895.0
+   ],
+   "length_m": 827,
+   "points": 514,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    2255.0,
+    7095.0
+   ],
+   "to_xy": [
+    2295.0,
+    7505.0
+   ],
+   "length_m": 412,
+   "points": 586,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    2440.0,
+    7120.0
+   ],
+   "to_xy": [
+    2415.0,
+    7205.0
+   ],
+   "length_m": 89,
+   "points": 49,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    7410.0,
+    7120.0
+   ],
+   "to_xy": [
+    6640.0,
+    8500.0
+   ],
+   "length_m": 1580,
+   "points": 1154,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    9720.0,
+    7180.0
+   ],
+   "to_xy": [
+    9880.0,
+    7290.0
+   ],
+   "length_m": 194,
+   "points": 92,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    6215.0,
+    7130.0
+   ],
+   "to_xy": [
+    6275.0,
+    7200.0
+   ],
+   "length_m": 92,
+   "points": 62,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    2575.0,
+    7140.0
+   ],
+   "to_xy": [
+    2655.0,
+    7195.0
+   ],
+   "length_m": 97,
+   "points": 48,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    3775.0,
+    7145.0
+   ],
+   "to_xy": [
+    1975.0,
+    12750.0
+   ],
+   "length_m": 5887,
+   "points": 5652,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    8035.0,
+    7160.0
+   ],
+   "to_xy": [
+    9305.0,
+    9455.0
+   ],
+   "length_m": 2623,
+   "points": 2041,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    6895.0,
+    7180.0
+   ],
+   "to_xy": [
+    6585.0,
+    7315.0
+   ],
+   "length_m": 338,
+   "points": 183,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    12340.0,
+    7195.0
+   ],
+   "to_xy": [
+    12130.0,
+    7295.0
+   ],
+   "length_m": 233,
+   "points": 133,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    11940.0,
+    7180.0
+   ],
+   "to_xy": [
+    10145.0,
+    10550.0
+   ],
+   "length_m": 3818,
+   "points": 6418,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    4085.0,
+    7205.0
+   ],
+   "to_xy": [
+    3750.0,
+    8505.0
+   ],
+   "length_m": 1342,
+   "points": 2518,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    11390.0,
+    7210.0
+   ],
+   "to_xy": [
+    10670.0,
+    7950.0
+   ],
+   "length_m": 1032,
+   "points": 554,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    9260.0,
+    7225.0
+   ],
+   "to_xy": [
+    8700.0,
+    7980.0
+   ],
+   "length_m": 940,
+   "points": 896,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    15590.0,
+    7225.0
+   ],
+   "to_xy": [
+    14890.0,
+    10590.0
+   ],
+   "length_m": 3437,
+   "points": 2536,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    2740.0,
+    7245.0
+   ],
+   "to_xy": [
+    2545.0,
+    7390.0
+   ],
+   "length_m": 243,
+   "points": 166,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    1275.0,
+    7245.0
+   ],
+   "to_xy": [
+    1185.0,
+    7330.0
+   ],
+   "length_m": 124,
+   "points": 81,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    10550.0,
+    7310.0
+   ],
+   "to_xy": [
+    10355.0,
+    7535.0
+   ],
+   "length_m": 298,
+   "points": 249,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    1140.0,
+    7250.0
+   ],
+   "to_xy": [
+    1145.0,
+    7320.0
+   ],
+   "length_m": 70,
+   "points": 32,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    8940.0,
+    7250.0
+   ],
+   "to_xy": [
+    8975.0,
+    7310.0
+   ],
+   "length_m": 69,
+   "points": 61,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    6965.0,
+    7255.0
+   ],
+   "to_xy": [
+    6990.0,
+    7310.0
+   ],
+   "length_m": 60,
+   "points": 36,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    2865.0,
+    7275.0
+   ],
+   "to_xy": [
+    2825.0,
+    7430.0
+   ],
+   "length_m": 160,
+   "points": 73,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    815.0,
+    7285.0
+   ],
+   "to_xy": [
+    115.0,
+    12425.0
+   ],
+   "length_m": 5187,
+   "points": 5394,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    5080.0,
+    7285.0
+   ],
+   "to_xy": [
+    4985.0,
+    7420.0
+   ],
+   "length_m": 165,
+   "points": 81,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    9195.0,
+    7330.0
+   ],
+   "to_xy": [
+    9065.0,
+    7370.0
+   ],
+   "length_m": 136,
+   "points": 72,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    8250.0,
+    7310.0
+   ],
+   "to_xy": [
+    8470.0,
+    7730.0
+   ],
+   "length_m": 474,
+   "points": 244,
+   "mean_inland_slope_pct": 7.2
+  },
+  {
+   "from_xy": [
+    5325.0,
+    7320.0
+   ],
+   "to_xy": [
+    5220.0,
+    7345.0
+   ],
+   "length_m": 108,
+   "points": 60,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    5565.0,
+    7320.0
+   ],
+   "to_xy": [
+    5700.0,
+    7635.0
+   ],
+   "length_m": 343,
+   "points": 202,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    14720.0,
+    7370.0
+   ],
+   "to_xy": [
+    14630.0,
+    7400.0
+   ],
+   "length_m": 95,
+   "points": 85,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    1120.0,
+    7335.0
+   ],
+   "to_xy": [
+    1080.0,
+    7440.0
+   ],
+   "length_m": 112,
+   "points": 97,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    8925.0,
+    7340.0
+   ],
+   "to_xy": [
+    8950.0,
+    7395.0
+   ],
+   "length_m": 60,
+   "points": 51,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    1455.0,
+    7370.0
+   ],
+   "to_xy": [
+    1440.0,
+    7415.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 7.0
+  },
+  {
+   "from_xy": [
+    4255.0,
+    7440.0
+   ],
+   "to_xy": [
+    4375.0,
+    7480.0
+   ],
+   "length_m": 126,
+   "points": 95,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    2455.0,
+    7415.0
+   ],
+   "to_xy": [
+    2835.0,
+    8280.0
+   ],
+   "length_m": 945,
+   "points": 698,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    3160.0,
+    7420.0
+   ],
+   "to_xy": [
+    3255.0,
+    7960.0
+   ],
+   "length_m": 548,
+   "points": 226,
+   "mean_inland_slope_pct": 7.0
+  },
+  {
+   "from_xy": [
+    7645.0,
+    7425.0
+   ],
+   "to_xy": [
+    7675.0,
+    7525.0
+   ],
+   "length_m": 104,
+   "points": 46,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    9450.0,
+    7460.0
+   ],
+   "to_xy": [
+    9360.0,
+    7480.0
+   ],
+   "length_m": 92,
+   "points": 43,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    6685.0,
+    7455.0
+   ],
+   "to_xy": [
+    6745.0,
+    7495.0
+   ],
+   "length_m": 72,
+   "points": 63,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    7395.0,
+    7490.0
+   ],
+   "to_xy": [
+    7450.0,
+    7515.0
+   ],
+   "length_m": 60,
+   "points": 53,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    5060.0,
+    7510.0
+   ],
+   "to_xy": [
+    5015.0,
+    7575.0
+   ],
+   "length_m": 79,
+   "points": 52,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    7500.0,
+    7520.0
+   ],
+   "to_xy": [
+    7475.0,
+    7560.0
+   ],
+   "length_m": 47,
+   "points": 20,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    8745.0,
+    7545.0
+   ],
+   "to_xy": [
+    8665.0,
+    7570.0
+   ],
+   "length_m": 84,
+   "points": 44,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    10405.0,
+    7550.0
+   ],
+   "to_xy": [
+    10610.0,
+    7570.0
+   ],
+   "length_m": 206,
+   "points": 150,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    3130.0,
+    7540.0
+   ],
+   "to_xy": [
+    3145.0,
+    7695.0
+   ],
+   "length_m": 156,
+   "points": 60,
+   "mean_inland_slope_pct": 8.8
+  },
+  {
+   "from_xy": [
+    2005.0,
+    7555.0
+   ],
+   "to_xy": [
+    2080.0,
+    7585.0
+   ],
+   "length_m": 81,
+   "points": 27,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    2380.0,
+    7575.0
+   ],
+   "to_xy": [
+    2435.0,
+    7590.0
+   ],
+   "length_m": 57,
+   "points": 51,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    4540.0,
+    7560.0
+   ],
+   "to_xy": [
+    4550.0,
+    7625.0
+   ],
+   "length_m": 66,
+   "points": 29,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    14760.0,
+    7590.0
+   ],
+   "to_xy": [
+    14595.0,
+    7735.0
+   ],
+   "length_m": 220,
+   "points": 116,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    870.0,
+    7585.0
+   ],
+   "to_xy": [
+    935.0,
+    7925.0
+   ],
+   "length_m": 346,
+   "points": 162,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    7455.0,
+    7595.0
+   ],
+   "to_xy": [
+    7420.0,
+    7615.0
+   ],
+   "length_m": 40,
+   "points": 10,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    3950.0,
+    7610.0
+   ],
+   "to_xy": [
+    3915.0,
+    7660.0
+   ],
+   "length_m": 61,
+   "points": 25,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    7575.0,
+    7610.0
+   ],
+   "to_xy": [
+    7595.0,
+    7655.0
+   ],
+   "length_m": 49,
+   "points": 22,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    4060.0,
+    7620.0
+   ],
+   "to_xy": [
+    4035.0,
+    7740.0
+   ],
+   "length_m": 123,
+   "points": 92,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    1455.0,
+    7655.0
+   ],
+   "to_xy": [
+    1405.0,
+    7670.0
+   ],
+   "length_m": 52,
+   "points": 25,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    6355.0,
+    7680.0
+   ],
+   "to_xy": [
+    6405.0,
+    7715.0
+   ],
+   "length_m": 61,
+   "points": 52,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    5995.0,
+    7725.0
+   ],
+   "to_xy": [
+    6475.0,
+    7990.0
+   ],
+   "length_m": 548,
+   "points": 220,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    14180.0,
+    7705.0
+   ],
+   "to_xy": [
+    14145.0,
+    7745.0
+   ],
+   "length_m": 53,
+   "points": 25,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    12040.0,
+    7735.0
+   ],
+   "to_xy": [
+    11940.0,
+    7750.0
+   ],
+   "length_m": 101,
+   "points": 37,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    2305.0,
+    7770.0
+   ],
+   "to_xy": [
+    2415.0,
+    7840.0
+   ],
+   "length_m": 130,
+   "points": 104,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    7580.0,
+    7740.0
+   ],
+   "to_xy": [
+    7550.0,
+    7840.0
+   ],
+   "length_m": 104,
+   "points": 46,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    14545.0,
+    7740.0
+   ],
+   "to_xy": [
+    14455.0,
+    7930.0
+   ],
+   "length_m": 210,
+   "points": 109,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    14105.0,
+    7745.0
+   ],
+   "to_xy": [
+    14045.0,
+    8135.0
+   ],
+   "length_m": 395,
+   "points": 188,
+   "mean_inland_slope_pct": 6.9
+  },
+  {
+   "from_xy": [
+    9550.0,
+    7895.0
+   ],
+   "to_xy": [
+    10050.0,
+    7925.0
+   ],
+   "length_m": 501,
+   "points": 255,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    11860.0,
+    7775.0
+   ],
+   "to_xy": [
+    11805.0,
+    7860.0
+   ],
+   "length_m": 101,
+   "points": 32,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    5420.0,
+    7840.0
+   ],
+   "to_xy": [
+    5525.0,
+    7865.0
+   ],
+   "length_m": 108,
+   "points": 54,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    14775.0,
+    7825.0
+   ],
+   "to_xy": [
+    14850.0,
+    7875.0
+   ],
+   "length_m": 90,
+   "points": 75,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    9980.0,
+    7820.0
+   ],
+   "to_xy": [
+    10025.0,
+    7840.0
+   ],
+   "length_m": 49,
+   "points": 13,
+   "mean_inland_slope_pct": 10.4
+  },
+  {
+   "from_xy": [
+    2865.0,
+    7830.0
+   ],
+   "to_xy": [
+    2905.0,
+    7850.0
+   ],
+   "length_m": 45,
+   "points": 26,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    12530.0,
+    7865.0
+   ],
+   "to_xy": [
+    12485.0,
+    7875.0
+   ],
+   "length_m": 46,
+   "points": 20,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    12865.0,
+    7880.0
+   ],
+   "to_xy": [
+    12920.0,
+    7880.0
+   ],
+   "length_m": 55,
+   "points": 42,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    2050.0,
+    7885.0
+   ],
+   "to_xy": [
+    2080.0,
+    7990.0
+   ],
+   "length_m": 109,
+   "points": 99,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    6590.0,
+    7895.0
+   ],
+   "to_xy": [
+    6520.0,
+    8000.0
+   ],
+   "length_m": 126,
+   "points": 106,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    14790.0,
+    7900.0
+   ],
+   "to_xy": [
+    14735.0,
+    7920.0
+   ],
+   "length_m": 59,
+   "points": 51,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    6750.0,
+    7915.0
+   ],
+   "to_xy": [
+    6800.0,
+    7935.0
+   ],
+   "length_m": 54,
+   "points": 25,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    7735.0,
+    7905.0
+   ],
+   "to_xy": [
+    7740.0,
+    8020.0
+   ],
+   "length_m": 115,
+   "points": 44,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    12605.0,
+    7910.0
+   ],
+   "to_xy": [
+    12620.0,
+    7975.0
+   ],
+   "length_m": 67,
+   "points": 31,
+   "mean_inland_slope_pct": 7.1
+  },
+  {
+   "from_xy": [
+    12365.0,
+    7945.0
+   ],
+   "to_xy": [
+    12565.0,
+    8025.0
+   ],
+   "length_m": 215,
+   "points": 109,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    2315.0,
+    7940.0
+   ],
+   "to_xy": [
+    2405.0,
+    7985.0
+   ],
+   "length_m": 101,
+   "points": 45,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    4860.0,
+    7960.0
+   ],
+   "to_xy": [
+    4940.0,
+    7980.0
+   ],
+   "length_m": 82,
+   "points": 75,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    8890.0,
+    7940.0
+   ],
+   "to_xy": [
+    9015.0,
+    8545.0
+   ],
+   "length_m": 618,
+   "points": 504,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    12320.0,
+    7945.0
+   ],
+   "to_xy": [
+    12305.0,
+    8020.0
+   ],
+   "length_m": 76,
+   "points": 37,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    1155.0,
+    7965.0
+   ],
+   "to_xy": [
+    1210.0,
+    8095.0
+   ],
+   "length_m": 141,
+   "points": 58,
+   "mean_inland_slope_pct": 7.0
+  },
+  {
+   "from_xy": [
+    10570.0,
+    7990.0
+   ],
+   "to_xy": [
+    10150.0,
+    8485.0
+   ],
+   "length_m": 649,
+   "points": 461,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    10355.0,
+    8020.0
+   ],
+   "to_xy": [
+    10150.0,
+    8065.0
+   ],
+   "length_m": 210,
+   "points": 100,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    14440.0,
+    7995.0
+   ],
+   "to_xy": [
+    14510.0,
+    8280.0
+   ],
+   "length_m": 293,
+   "points": 157,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    14895.0,
+    7995.0
+   ],
+   "to_xy": [
+    14880.0,
+    8050.0
+   ],
+   "length_m": 57,
+   "points": 39,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    13380.0,
+    8040.0
+   ],
+   "to_xy": [
+    13260.0,
+    8625.0
+   ],
+   "length_m": 597,
+   "points": 589,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    5630.0,
+    8080.0
+   ],
+   "to_xy": [
+    5545.0,
+    8115.0
+   ],
+   "length_m": 92,
+   "points": 84,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    9005.0,
+    8100.0
+   ],
+   "to_xy": [
+    9125.0,
+    8135.0
+   ],
+   "length_m": 125,
+   "points": 91,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    14660.0,
+    8080.0
+   ],
+   "to_xy": [
+    14735.0,
+    8115.0
+   ],
+   "length_m": 83,
+   "points": 72,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    7785.0,
+    8075.0
+   ],
+   "to_xy": [
+    7980.0,
+    8275.0
+   ],
+   "length_m": 279,
+   "points": 84,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    2375.0,
+    8120.0
+   ],
+   "to_xy": [
+    2315.0,
+    8135.0
+   ],
+   "length_m": 62,
+   "points": 53,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    2520.0,
+    8135.0
+   ],
+   "to_xy": [
+    2450.0,
+    8170.0
+   ],
+   "length_m": 78,
+   "points": 70,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    5215.0,
+    8170.0
+   ],
+   "to_xy": [
+    4655.0,
+    8210.0
+   ],
+   "length_m": 561,
+   "points": 293,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    6940.0,
+    8155.0
+   ],
+   "to_xy": [
+    6885.0,
+    8165.0
+   ],
+   "length_m": 56,
+   "points": 48,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    1960.0,
+    8150.0
+   ],
+   "to_xy": [
+    1965.0,
+    8195.0
+   ],
+   "length_m": 45,
+   "points": 19,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    5695.0,
+    8170.0
+   ],
+   "to_xy": [
+    5640.0,
+    8185.0
+   ],
+   "length_m": 57,
+   "points": 50,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    11545.0,
+    8160.0
+   ],
+   "to_xy": [
+    11575.0,
+    8315.0
+   ],
+   "length_m": 158,
+   "points": 120,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    11665.0,
+    8160.0
+   ],
+   "to_xy": [
+    11625.0,
+    8195.0
+   ],
+   "length_m": 53,
+   "points": 20,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    9630.0,
+    8240.0
+   ],
+   "to_xy": [
+    10165.0,
+    8320.0
+   ],
+   "length_m": 541,
+   "points": 315,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    2715.0,
+    8175.0
+   ],
+   "to_xy": [
+    2740.0,
+    8230.0
+   ],
+   "length_m": 60,
+   "points": 51,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    7555.0,
+    8185.0
+   ],
+   "to_xy": [
+    7395.0,
+    8445.0
+   ],
+   "length_m": 305,
+   "points": 132,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    5885.0,
+    8195.0
+   ],
+   "to_xy": [
+    5865.0,
+    8235.0
+   ],
+   "length_m": 45,
+   "points": 19,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    7355.0,
+    8260.0
+   ],
+   "to_xy": [
+    7140.0,
+    8380.0
+   ],
+   "length_m": 246,
+   "points": 135,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    7620.0,
+    8245.0
+   ],
+   "to_xy": [
+    7655.0,
+    8270.0
+   ],
+   "length_m": 43,
+   "points": 8,
+   "mean_inland_slope_pct": 11.1
+  },
+  {
+   "from_xy": [
+    13460.0,
+    8290.0
+   ],
+   "to_xy": [
+    13485.0,
+    8325.0
+   ],
+   "length_m": 43,
+   "points": 22,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    7655.0,
+    8305.0
+   ],
+   "to_xy": [
+    7705.0,
+    8325.0
+   ],
+   "length_m": 54,
+   "points": 25,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    11670.0,
+    8305.0
+   ],
+   "to_xy": [
+    11615.0,
+    8410.0
+   ],
+   "length_m": 119,
+   "points": 40,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    5090.0,
+    8320.0
+   ],
+   "to_xy": [
+    5060.0,
+    8460.0
+   ],
+   "length_m": 143,
+   "points": 115,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    4140.0,
+    8330.0
+   ],
+   "to_xy": [
+    4085.0,
+    8340.0
+   ],
+   "length_m": 56,
+   "points": 12,
+   "mean_inland_slope_pct": 10.9
+  },
+  {
+   "from_xy": [
+    11610.0,
+    8340.0
+   ],
+   "to_xy": [
+    11545.0,
+    8425.0
+   ],
+   "length_m": 107,
+   "points": 45,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    8040.0,
+    8350.0
+   ],
+   "to_xy": [
+    8305.0,
+    8605.0
+   ],
+   "length_m": 368,
+   "points": 68,
+   "mean_inland_slope_pct": 9.5
+  },
+  {
+   "from_xy": [
+    13925.0,
+    8360.0
+   ],
+   "to_xy": [
+    13720.0,
+    8650.0
+   ],
+   "length_m": 355,
+   "points": 226,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    4665.0,
+    8355.0
+   ],
+   "to_xy": [
+    4595.0,
+    8375.0
+   ],
+   "length_m": 73,
+   "points": 15,
+   "mean_inland_slope_pct": 11.0
+  },
+  {
+   "from_xy": [
+    14800.0,
+    8380.0
+   ],
+   "to_xy": [
+    14780.0,
+    8460.0
+   ],
+   "length_m": 82,
+   "points": 70,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    2730.0,
+    8390.0
+   ],
+   "to_xy": [
+    2705.0,
+    8490.0
+   ],
+   "length_m": 103,
+   "points": 92,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    9255.0,
+    8395.0
+   ],
+   "to_xy": [
+    9475.0,
+    9385.0
+   ],
+   "length_m": 1014,
+   "points": 1445,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    3630.0,
+    8435.0
+   ],
+   "to_xy": [
+    3695.0,
+    10055.0
+   ],
+   "length_m": 1621,
+   "points": 1448,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    4495.0,
+    8440.0
+   ],
+   "to_xy": [
+    4260.0,
+    8835.0
+   ],
+   "length_m": 460,
+   "points": 284,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    8865.0,
+    8455.0
+   ],
+   "to_xy": [
+    8885.0,
+    8505.0
+   ],
+   "length_m": 54,
+   "points": 24,
+   "mean_inland_slope_pct": 7.9
+  },
+  {
+   "from_xy": [
+    14585.0,
+    8460.0
+   ],
+   "to_xy": [
+    12330.0,
+    13415.0
+   ],
+   "length_m": 5444,
+   "points": 2555,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    10870.0,
+    8470.0
+   ],
+   "to_xy": [
+    10905.0,
+    8525.0
+   ],
+   "length_m": 65,
+   "points": 54,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    14120.0,
+    8475.0
+   ],
+   "to_xy": [
+    14155.0,
+    8810.0
+   ],
+   "length_m": 337,
+   "points": 85,
+   "mean_inland_slope_pct": 10.2
+  },
+  {
+   "from_xy": [
+    15550.0,
+    8485.0
+   ],
+   "to_xy": [
+    15555.0,
+    8740.0
+   ],
+   "length_m": 255,
+   "points": 106,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    7145.0,
+    8490.0
+   ],
+   "to_xy": [
+    6980.0,
+    8720.0
+   ],
+   "length_m": 283,
+   "points": 126,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    7460.0,
+    8505.0
+   ],
+   "to_xy": [
+    7430.0,
+    8805.0
+   ],
+   "length_m": 301,
+   "points": 212,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    4395.0,
+    8530.0
+   ],
+   "to_xy": [
+    4405.0,
+    8590.0
+   ],
+   "length_m": 61,
+   "points": 31,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    2840.0,
+    8535.0
+   ],
+   "to_xy": [
+    2825.0,
+    8595.0
+   ],
+   "length_m": 62,
+   "points": 48,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    13870.0,
+    8570.0
+   ],
+   "to_xy": [
+    13835.0,
+    8635.0
+   ],
+   "length_m": 74,
+   "points": 34,
+   "mean_inland_slope_pct": 1.4
+  },
+  {
+   "from_xy": [
+    6695.0,
+    8575.0
+   ],
+   "to_xy": [
+    6705.0,
+    8665.0
+   ],
+   "length_m": 91,
+   "points": 56,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    11530.0,
+    8580.0
+   ],
+   "to_xy": [
+    11475.0,
+    8690.0
+   ],
+   "length_m": 123,
+   "points": 52,
+   "mean_inland_slope_pct": 6.9
+  },
+  {
+   "from_xy": [
+    5190.0,
+    8595.0
+   ],
+   "to_xy": [
+    5215.0,
+    8665.0
+   ],
+   "length_m": 74,
+   "points": 67,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    13040.0,
+    8610.0
+   ],
+   "to_xy": [
+    13245.0,
+    8895.0
+   ],
+   "length_m": 351,
+   "points": 208,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    2905.0,
+    8615.0
+   ],
+   "to_xy": [
+    2875.0,
+    8665.0
+   ],
+   "length_m": 58,
+   "points": 49,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    12575.0,
+    8630.0
+   ],
+   "to_xy": [
+    12530.0,
+    8665.0
+   ],
+   "length_m": 57,
+   "points": 31,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    13200.0,
+    8665.0
+   ],
+   "to_xy": [
+    13150.0,
+    8680.0
+   ],
+   "length_m": 52,
+   "points": 25,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    15460.0,
+    8645.0
+   ],
+   "to_xy": [
+    15430.0,
+    8715.0
+   ],
+   "length_m": 76,
+   "points": 44,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    14680.0,
+    8655.0
+   ],
+   "to_xy": [
+    14655.0,
+    8725.0
+   ],
+   "length_m": 74,
+   "points": 65,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    6705.0,
+    8700.0
+   ],
+   "to_xy": [
+    6780.0,
+    8755.0
+   ],
+   "length_m": 93,
+   "points": 53,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    0.0,
+    8710.0
+   ],
+   "to_xy": [
+    0.0,
+    9935.0
+   ],
+   "length_m": 1225,
+   "points": 332,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    5460.0,
+    8740.0
+   ],
+   "to_xy": [
+    5520.0,
+    8825.0
+   ],
+   "length_m": 104,
+   "points": 42,
+   "mean_inland_slope_pct": 7.1
+  },
+  {
+   "from_xy": [
+    5955.0,
+    8765.0
+   ],
+   "to_xy": [
+    5900.0,
+    8800.0
+   ],
+   "length_m": 65,
+   "points": 35,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    7825.0,
+    8760.0
+   ],
+   "to_xy": [
+    7550.0,
+    9175.0
+   ],
+   "length_m": 498,
+   "points": 945,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    965.0,
+    8780.0
+   ],
+   "to_xy": [
+    915.0,
+    9535.0
+   ],
+   "length_m": 757,
+   "points": 482,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    11030.0,
+    8785.0
+   ],
+   "to_xy": [
+    10855.0,
+    8935.0
+   ],
+   "length_m": 230,
+   "points": 236,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    4020.0,
+    8820.0
+   ],
+   "to_xy": [
+    3685.0,
+    8910.0
+   ],
+   "length_m": 347,
+   "points": 295,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    6810.0,
+    8830.0
+   ],
+   "to_xy": [
+    6915.0,
+    8850.0
+   ],
+   "length_m": 107,
+   "points": 72,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    12835.0,
+    8815.0
+   ],
+   "to_xy": [
+    12605.0,
+    9160.0
+   ],
+   "length_m": 415,
+   "points": 466,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    1200.0,
+    8840.0
+   ],
+   "to_xy": [
+    1185.0,
+    9035.0
+   ],
+   "length_m": 196,
+   "points": 70,
+   "mean_inland_slope_pct": 7.3
+  },
+  {
+   "from_xy": [
+    2035.0,
+    8860.0
+   ],
+   "to_xy": [
+    2050.0,
+    8905.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    5085.0,
+    8880.0
+   ],
+   "to_xy": [
+    5115.0,
+    8955.0
+   ],
+   "length_m": 81,
+   "points": 70,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    13995.0,
+    8890.0
+   ],
+   "to_xy": [
+    13985.0,
+    8930.0
+   ],
+   "length_m": 41,
+   "points": 9,
+   "mean_inland_slope_pct": 11.5
+  },
+  {
+   "from_xy": [
+    6180.0,
+    8900.0
+   ],
+   "to_xy": [
+    6300.0,
+    11620.0
+   ],
+   "length_m": 2723,
+   "points": 3921,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    9275.0,
+    8945.0
+   ],
+   "to_xy": [
+    9375.0,
+    9000.0
+   ],
+   "length_m": 114,
+   "points": 56,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    8425.0,
+    8955.0
+   ],
+   "to_xy": [
+    8325.0,
+    9015.0
+   ],
+   "length_m": 117,
+   "points": 52,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    15340.0,
+    8975.0
+   ],
+   "to_xy": [
+    15560.0,
+    9180.0
+   ],
+   "length_m": 301,
+   "points": 230,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    0.0,
+    8965.0
+   ],
+   "to_xy": [
+    100.0,
+    9140.0
+   ],
+   "length_m": 202,
+   "points": 64,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    13740.0,
+    8970.0
+   ],
+   "to_xy": [
+    13770.0,
+    9000.0
+   ],
+   "length_m": 42,
+   "points": 18,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    7225.0,
+    8995.0
+   ],
+   "to_xy": [
+    7255.0,
+    9080.0
+   ],
+   "length_m": 90,
+   "points": 78,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    13730.0,
+    9020.0
+   ],
+   "to_xy": [
+    13765.0,
+    9040.0
+   ],
+   "length_m": 40,
+   "points": 18,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    6700.0,
+    9030.0
+   ],
+   "to_xy": [
+    7370.0,
+    9530.0
+   ],
+   "length_m": 836,
+   "points": 316,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    4050.0,
+    9145.0
+   ],
+   "to_xy": [
+    4310.0,
+    9175.0
+   ],
+   "length_m": 262,
+   "points": 158,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    2545.0,
+    9125.0
+   ],
+   "to_xy": [
+    2605.0,
+    9140.0
+   ],
+   "length_m": 62,
+   "points": 57,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    2250.0,
+    9145.0
+   ],
+   "to_xy": [
+    2310.0,
+    9185.0
+   ],
+   "length_m": 72,
+   "points": 37,
+   "mean_inland_slope_pct": 8.0
+  },
+  {
+   "from_xy": [
+    8285.0,
+    9140.0
+   ],
+   "to_xy": [
+    8335.0,
+    9165.0
+   ],
+   "length_m": 56,
+   "points": 42,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    7305.0,
+    9160.0
+   ],
+   "to_xy": [
+    7350.0,
+    9180.0
+   ],
+   "length_m": 49,
+   "points": 31,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    1595.0,
+    9160.0
+   ],
+   "to_xy": [
+    1545.0,
+    9340.0
+   ],
+   "length_m": 187,
+   "points": 89,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    0.0,
+    9180.0
+   ],
+   "to_xy": [
+    50.0,
+    9300.0
+   ],
+   "length_m": 130,
+   "points": 36,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    810.0,
+    9185.0
+   ],
+   "to_xy": [
+    800.0,
+    9225.0
+   ],
+   "length_m": 41,
+   "points": 21,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    2185.0,
+    9195.0
+   ],
+   "to_xy": [
+    2130.0,
+    9210.0
+   ],
+   "length_m": 57,
+   "points": 45,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    13685.0,
+    9195.0
+   ],
+   "to_xy": [
+    13900.0,
+    9575.0
+   ],
+   "length_m": 437,
+   "points": 273,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    12590.0,
+    9205.0
+   ],
+   "to_xy": [
+    12545.0,
+    9290.0
+   ],
+   "length_m": 96,
+   "points": 51,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    7625.0,
+    9210.0
+   ],
+   "to_xy": [
+    8910.0,
+    9810.0
+   ],
+   "length_m": 1418,
+   "points": 911,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    12885.0,
+    9245.0
+   ],
+   "to_xy": [
+    12825.0,
+    9275.0
+   ],
+   "length_m": 67,
+   "points": 44,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    12675.0,
+    9220.0
+   ],
+   "to_xy": [
+    12765.0,
+    9345.0
+   ],
+   "length_m": 154,
+   "points": 75,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    7170.0,
+    9240.0
+   ],
+   "to_xy": [
+    7505.0,
+    9270.0
+   ],
+   "length_m": 336,
+   "points": 129,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    13255.0,
+    9285.0
+   ],
+   "to_xy": [
+    13025.0,
+    9510.0
+   ],
+   "length_m": 322,
+   "points": 254,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    12635.0,
+    9250.0
+   ],
+   "to_xy": [
+    12625.0,
+    9370.0
+   ],
+   "length_m": 120,
+   "points": 63,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    5620.0,
+    9275.0
+   ],
+   "to_xy": [
+    5570.0,
+    9310.0
+   ],
+   "length_m": 61,
+   "points": 53,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    14145.0,
+    9270.0
+   ],
+   "to_xy": [
+    14130.0,
+    9570.0
+   ],
+   "length_m": 300,
+   "points": 61,
+   "mean_inland_slope_pct": 10.3
+  },
+  {
+   "from_xy": [
+    12960.0,
+    9280.0
+   ],
+   "to_xy": [
+    12915.0,
+    9350.0
+   ],
+   "length_m": 83,
+   "points": 40,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    4050.0,
+    9290.0
+   ],
+   "to_xy": [
+    3985.0,
+    9335.0
+   ],
+   "length_m": 79,
+   "points": 36,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    1210.0,
+    9310.0
+   ],
+   "to_xy": [
+    1265.0,
+    9385.0
+   ],
+   "length_m": 93,
+   "points": 50,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    13395.0,
+    9320.0
+   ],
+   "to_xy": [
+    13475.0,
+    9480.0
+   ],
+   "length_m": 179,
+   "points": 75,
+   "mean_inland_slope_pct": 7.1
+  },
+  {
+   "from_xy": [
+    4160.0,
+    9335.0
+   ],
+   "to_xy": [
+    4190.0,
+    9430.0
+   ],
+   "length_m": 100,
+   "points": 46,
+   "mean_inland_slope_pct": 0.5
+  },
+  {
+   "from_xy": [
+    12460.0,
+    9345.0
+   ],
+   "to_xy": [
+    12645.0,
+    9475.0
+   ],
+   "length_m": 226,
+   "points": 136,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    4580.0,
+    9360.0
+   ],
+   "to_xy": [
+    4650.0,
+    9375.0
+   ],
+   "length_m": 72,
+   "points": 40,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    4485.0,
+    9435.0
+   ],
+   "to_xy": [
+    4445.0,
+    9580.0
+   ],
+   "length_m": 150,
+   "points": 130,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    9390.0,
+    9440.0
+   ],
+   "to_xy": [
+    8765.0,
+    10435.0
+   ],
+   "length_m": 1175,
+   "points": 963,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    12845.0,
+    9445.0
+   ],
+   "to_xy": [
+    12885.0,
+    9475.0
+   ],
+   "length_m": 50,
+   "points": 24,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    4650.0,
+    9485.0
+   ],
+   "to_xy": [
+    4730.0,
+    9510.0
+   ],
+   "length_m": 84,
+   "points": 71,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    6495.0,
+    9470.0
+   ],
+   "to_xy": [
+    7000.0,
+    10545.0
+   ],
+   "length_m": 1188,
+   "points": 585,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    1550.0,
+    9480.0
+   ],
+   "to_xy": [
+    1560.0,
+    9520.0
+   ],
+   "length_m": 41,
+   "points": 10,
+   "mean_inland_slope_pct": 1.4
+  },
+  {
+   "from_xy": [
+    12670.0,
+    9505.0
+   ],
+   "to_xy": [
+    12715.0,
+    9505.0
+   ],
+   "length_m": 45,
+   "points": 13,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    5510.0,
+    9515.0
+   ],
+   "to_xy": [
+    5560.0,
+    9615.0
+   ],
+   "length_m": 112,
+   "points": 52,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    2695.0,
+    9520.0
+   ],
+   "to_xy": [
+    2735.0,
+    9575.0
+   ],
+   "length_m": 68,
+   "points": 58,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    12725.0,
+    9525.0
+   ],
+   "to_xy": [
+    12665.0,
+    9585.0
+   ],
+   "length_m": 85,
+   "points": 46,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    9870.0,
+    9550.0
+   ],
+   "to_xy": [
+    9835.0,
+    9610.0
+   ],
+   "length_m": 69,
+   "points": 60,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    13515.0,
+    9545.0
+   ],
+   "to_xy": [
+    13510.0,
+    9590.0
+   ],
+   "length_m": 45,
+   "points": 10,
+   "mean_inland_slope_pct": 11.3
+  },
+  {
+   "from_xy": [
+    185.0,
+    9575.0
+   ],
+   "to_xy": [
+    120.0,
+    9600.0
+   ],
+   "length_m": 70,
+   "points": 31,
+   "mean_inland_slope_pct": 0.5
+  },
+  {
+   "from_xy": [
+    12605.0,
+    9595.0
+   ],
+   "to_xy": [
+    12540.0,
+    9645.0
+   ],
+   "length_m": 82,
+   "points": 74,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    3580.0,
+    9590.0
+   ],
+   "to_xy": [
+    3515.0,
+    9635.0
+   ],
+   "length_m": 79,
+   "points": 48,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    8225.0,
+    9595.0
+   ],
+   "to_xy": [
+    8330.0,
+    9715.0
+   ],
+   "length_m": 159,
+   "points": 91,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    1210.0,
+    9600.0
+   ],
+   "to_xy": [
+    1300.0,
+    9730.0
+   ],
+   "length_m": 158,
+   "points": 96,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    5005.0,
+    9610.0
+   ],
+   "to_xy": [
+    4960.0,
+    9635.0
+   ],
+   "length_m": 51,
+   "points": 38,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    4345.0,
+    9610.0
+   ],
+   "to_xy": [
+    4365.0,
+    10515.0
+   ],
+   "length_m": 905,
+   "points": 924,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    7465.0,
+    9625.0
+   ],
+   "to_xy": [
+    7575.0,
+    9650.0
+   ],
+   "length_m": 113,
+   "points": 27,
+   "mean_inland_slope_pct": 7.7
+  },
+  {
+   "from_xy": [
+    4740.0,
+    9615.0
+   ],
+   "to_xy": [
+    4770.0,
+    9685.0
+   ],
+   "length_m": 76,
+   "points": 37,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    670.0,
+    9620.0
+   ],
+   "to_xy": [
+    710.0,
+    9635.0
+   ],
+   "length_m": 43,
+   "points": 21,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    8390.0,
+    9625.0
+   ],
+   "to_xy": [
+    8425.0,
+    9645.0
+   ],
+   "length_m": 40,
+   "points": 18,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    13850.0,
+    9620.0
+   ],
+   "to_xy": [
+    13535.0,
+    10550.0
+   ],
+   "length_m": 982,
+   "points": 410,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    5260.0,
+    9630.0
+   ],
+   "to_xy": [
+    5260.0,
+    9960.0
+   ],
+   "length_m": 330,
+   "points": 154,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    730.0,
+    9665.0
+   ],
+   "to_xy": [
+    815.0,
+    9840.0
+   ],
+   "length_m": 195,
+   "points": 94,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    9800.0,
+    9670.0
+   ],
+   "to_xy": [
+    9900.0,
+    10110.0
+   ],
+   "length_m": 451,
+   "points": 188,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    6020.0,
+    9685.0
+   ],
+   "to_xy": [
+    5970.0,
+    9695.0
+   ],
+   "length_m": 51,
+   "points": 18,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    4125.0,
+    9705.0
+   ],
+   "to_xy": [
+    4070.0,
+    9780.0
+   ],
+   "length_m": 93,
+   "points": 85,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    12195.0,
+    9725.0
+   ],
+   "to_xy": [
+    12220.0,
+    9805.0
+   ],
+   "length_m": 84,
+   "points": 44,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    6730.0,
+    9745.0
+   ],
+   "to_xy": [
+    6795.0,
+    9785.0
+   ],
+   "length_m": 76,
+   "points": 66,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    9550.0,
+    9730.0
+   ],
+   "to_xy": [
+    9685.0,
+    9950.0
+   ],
+   "length_m": 258,
+   "points": 90,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    12835.0,
+    9800.0
+   ],
+   "to_xy": [
+    12725.0,
+    9815.0
+   ],
+   "length_m": 111,
+   "points": 56,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    4800.0,
+    9765.0
+   ],
+   "to_xy": [
+    4860.0,
+    9835.0
+   ],
+   "length_m": 92,
+   "points": 47,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    6070.0,
+    9785.0
+   ],
+   "to_xy": [
+    6165.0,
+    9940.0
+   ],
+   "length_m": 182,
+   "points": 130,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    10515.0,
+    9780.0
+   ],
+   "to_xy": [
+    10460.0,
+    9830.0
+   ],
+   "length_m": 74,
+   "points": 30,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    7090.0,
+    9805.0
+   ],
+   "to_xy": [
+    7020.0,
+    11980.0
+   ],
+   "length_m": 2176,
+   "points": 1550,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    13450.0,
+    9815.0
+   ],
+   "to_xy": [
+    13450.0,
+    9930.0
+   ],
+   "length_m": 115,
+   "points": 24,
+   "mean_inland_slope_pct": 10.6
+  },
+  {
+   "from_xy": [
+    14695.0,
+    9820.0
+   ],
+   "to_xy": [
+    14725.0,
+    9870.0
+   ],
+   "length_m": 58,
+   "points": 39,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    10705.0,
+    9850.0
+   ],
+   "to_xy": [
+    10790.0,
+    9870.0
+   ],
+   "length_m": 87,
+   "points": 40,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    1895.0,
+    9855.0
+   ],
+   "to_xy": [
+    1960.0,
+    9875.0
+   ],
+   "length_m": 68,
+   "points": 33,
+   "mean_inland_slope_pct": 0.4
+  },
+  {
+   "from_xy": [
+    14430.0,
+    9840.0
+   ],
+   "to_xy": [
+    14475.0,
+    9850.0
+   ],
+   "length_m": 46,
+   "points": 22,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    13785.0,
+    9855.0
+   ],
+   "to_xy": [
+    13850.0,
+    9970.0
+   ],
+   "length_m": 132,
+   "points": 106,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    4580.0,
+    9875.0
+   ],
+   "to_xy": [
+    4495.0,
+    9925.0
+   ],
+   "length_m": 99,
+   "points": 49,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    14395.0,
+    9860.0
+   ],
+   "to_xy": [
+    14420.0,
+    9955.0
+   ],
+   "length_m": 98,
+   "points": 42,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    4735.0,
+    9905.0
+   ],
+   "to_xy": [
+    4860.0,
+    9950.0
+   ],
+   "length_m": 133,
+   "points": 102,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    14650.0,
+    9895.0
+   ],
+   "to_xy": [
+    14495.0,
+    10720.0
+   ],
+   "length_m": 839,
+   "points": 576,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    815.0,
+    9970.0
+   ],
+   "to_xy": [
+    980.0,
+    10010.0
+   ],
+   "length_m": 170,
+   "points": 119,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    3275.0,
+    9930.0
+   ],
+   "to_xy": [
+    3445.0,
+    10010.0
+   ],
+   "length_m": 188,
+   "points": 106,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    5150.0,
+    9910.0
+   ],
+   "to_xy": [
+    5125.0,
+    10145.0
+   ],
+   "length_m": 236,
+   "points": 112,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    12530.0,
+    9930.0
+   ],
+   "to_xy": [
+    12545.0,
+    9985.0
+   ],
+   "length_m": 57,
+   "points": 46,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    8590.0,
+    10020.0
+   ],
+   "to_xy": [
+    8860.0,
+    10050.0
+   ],
+   "length_m": 272,
+   "points": 96,
+   "mean_inland_slope_pct": 7.6
+  },
+  {
+   "from_xy": [
+    13895.0,
+    9945.0
+   ],
+   "to_xy": [
+    13815.0,
+    10625.0
+   ],
+   "length_m": 685,
+   "points": 295,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    9490.0,
+    9970.0
+   ],
+   "to_xy": [
+    9250.0,
+    10520.0
+   ],
+   "length_m": 600,
+   "points": 359,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    2485.0,
+    9980.0
+   ],
+   "to_xy": [
+    2465.0,
+    10060.0
+   ],
+   "length_m": 82,
+   "points": 57,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    3340.0,
+    10020.0
+   ],
+   "to_xy": [
+    3360.0,
+    10160.0
+   ],
+   "length_m": 141,
+   "points": 86,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    4910.0,
+    10025.0
+   ],
+   "to_xy": [
+    4985.0,
+    10110.0
+   ],
+   "length_m": 113,
+   "points": 56,
+   "mean_inland_slope_pct": 1.2
+  },
+  {
+   "from_xy": [
+    4640.0,
+    10035.0
+   ],
+   "to_xy": [
+    4640.0,
+    10105.0
+   ],
+   "length_m": 70,
+   "points": 50,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    14365.0,
+    10050.0
+   ],
+   "to_xy": [
+    14415.0,
+    10070.0
+   ],
+   "length_m": 54,
+   "points": 38,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    7585.0,
+    10065.0
+   ],
+   "to_xy": [
+    7550.0,
+    10130.0
+   ],
+   "length_m": 74,
+   "points": 66,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    9595.0,
+    10085.0
+   ],
+   "to_xy": [
+    9955.0,
+    10430.0
+   ],
+   "length_m": 499,
+   "points": 272,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    10790.0,
+    10130.0
+   ],
+   "to_xy": [
+    10860.0,
+    10150.0
+   ],
+   "length_m": 73,
+   "points": 35,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    3650.0,
+    10130.0
+   ],
+   "to_xy": [
+    3455.0,
+    11300.0
+   ],
+   "length_m": 1186,
+   "points": 394,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    690.0,
+    10190.0
+   ],
+   "to_xy": [
+    640.0,
+    10200.0
+   ],
+   "length_m": 51,
+   "points": 21,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    6620.0,
+    10175.0
+   ],
+   "to_xy": [
+    6590.0,
+    10215.0
+   ],
+   "length_m": 50,
+   "points": 23,
+   "mean_inland_slope_pct": 0.5
+  },
+  {
+   "from_xy": [
+    14475.0,
+    10210.0
+   ],
+   "to_xy": [
+    14570.0,
+    10220.0
+   ],
+   "length_m": 96,
+   "points": 46,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    11875.0,
+    10190.0
+   ],
+   "to_xy": [
+    12010.0,
+    10225.0
+   ],
+   "length_m": 139,
+   "points": 65,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    7205.0,
+    10215.0
+   ],
+   "to_xy": [
+    7185.0,
+    10270.0
+   ],
+   "length_m": 59,
+   "points": 49,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    3790.0,
+    10220.0
+   ],
+   "to_xy": [
+    3910.0,
+    10345.0
+   ],
+   "length_m": 173,
+   "points": 41,
+   "mean_inland_slope_pct": 11.1
+  },
+  {
+   "from_xy": [
+    7420.0,
+    10245.0
+   ],
+   "to_xy": [
+    7320.0,
+    10325.0
+   ],
+   "length_m": 128,
+   "points": 107,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    7125.0,
+    10235.0
+   ],
+   "to_xy": [
+    7110.0,
+    10290.0
+   ],
+   "length_m": 57,
+   "points": 51,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    8680.0,
+    10240.0
+   ],
+   "to_xy": [
+    8695.0,
+    10315.0
+   ],
+   "length_m": 76,
+   "points": 52,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    2825.0,
+    10300.0
+   ],
+   "to_xy": [
+    2870.0,
+    10335.0
+   ],
+   "length_m": 57,
+   "points": 50,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    6805.0,
+    10310.0
+   ],
+   "to_xy": [
+    6765.0,
+    10375.0
+   ],
+   "length_m": 76,
+   "points": 37,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    12315.0,
+    10310.0
+   ],
+   "to_xy": [
+    12230.0,
+    10340.0
+   ],
+   "length_m": 90,
+   "points": 48,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    3685.0,
+    10315.0
+   ],
+   "to_xy": [
+    3675.0,
+    10670.0
+   ],
+   "length_m": 355,
+   "points": 413,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    2645.0,
+    10340.0
+   ],
+   "to_xy": [
+    2555.0,
+    10405.0
+   ],
+   "length_m": 111,
+   "points": 90,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    12120.0,
+    10330.0
+   ],
+   "to_xy": [
+    12220.0,
+    10460.0
+   ],
+   "length_m": 164,
+   "points": 96,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    5475.0,
+    10350.0
+   ],
+   "to_xy": [
+    5425.0,
+    10415.0
+   ],
+   "length_m": 82,
+   "points": 48,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    6890.0,
+    10340.0
+   ],
+   "to_xy": [
+    6845.0,
+    10440.0
+   ],
+   "length_m": 110,
+   "points": 65,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    7640.0,
+    10340.0
+   ],
+   "to_xy": [
+    7820.0,
+    11130.0
+   ],
+   "length_m": 810,
+   "points": 511,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    1650.0,
+    10350.0
+   ],
+   "to_xy": [
+    1420.0,
+    10525.0
+   ],
+   "length_m": 289,
+   "points": 142,
+   "mean_inland_slope_pct": 6.2
+  },
+  {
+   "from_xy": [
+    12800.0,
+    10365.0
+   ],
+   "to_xy": [
+    12735.0,
+    10405.0
+   ],
+   "length_m": 76,
+   "points": 62,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    15545.0,
+    10365.0
+   ],
+   "to_xy": [
+    15110.0,
+    11135.0
+   ],
+   "length_m": 884,
+   "points": 419,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    3930.0,
+    10495.0
+   ],
+   "to_xy": [
+    4355.0,
+    10745.0
+   ],
+   "length_m": 493,
+   "points": 183,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    2125.0,
+    10435.0
+   ],
+   "to_xy": [
+    2075.0,
+    10450.0
+   ],
+   "length_m": 52,
+   "points": 22,
+   "mean_inland_slope_pct": 8.1
+  },
+  {
+   "from_xy": [
+    9180.0,
+    10445.0
+   ],
+   "to_xy": [
+    9095.0,
+    10540.0
+   ],
+   "length_m": 127,
+   "points": 64,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    14315.0,
+    10450.0
+   ],
+   "to_xy": [
+    14285.0,
+    10500.0
+   ],
+   "length_m": 58,
+   "points": 29,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    3445.0,
+    10470.0
+   ],
+   "to_xy": [
+    3395.0,
+    10535.0
+   ],
+   "length_m": 82,
+   "points": 39,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    14055.0,
+    10480.0
+   ],
+   "to_xy": [
+    14110.0,
+    10510.0
+   ],
+   "length_m": 63,
+   "points": 53,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    9965.0,
+    10475.0
+   ],
+   "to_xy": [
+    9185.0,
+    12830.0
+   ],
+   "length_m": 2481,
+   "points": 2182,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    13400.0,
+    10515.0
+   ],
+   "to_xy": [
+    13445.0,
+    10745.0
+   ],
+   "length_m": 234,
+   "points": 185,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    5120.0,
+    10520.0
+   ],
+   "to_xy": [
+    5035.0,
+    11340.0
+   ],
+   "length_m": 824,
+   "points": 404,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    11715.0,
+    10520.0
+   ],
+   "to_xy": [
+    11695.0,
+    10605.0
+   ],
+   "length_m": 87,
+   "points": 71,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    12835.0,
+    10540.0
+   ],
+   "to_xy": [
+    12785.0,
+    10555.0
+   ],
+   "length_m": 52,
+   "points": 27,
+   "mean_inland_slope_pct": 6.7
+  },
+  {
+   "from_xy": [
+    5540.0,
+    10585.0
+   ],
+   "to_xy": [
+    5630.0,
+    10640.0
+   ],
+   "length_m": 105,
+   "points": 67,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    9075.0,
+    10570.0
+   ],
+   "to_xy": [
+    7835.0,
+    14825.0
+   ],
+   "length_m": 4432,
+   "points": 5259,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    10020.0,
+    10575.0
+   ],
+   "to_xy": [
+    10035.0,
+    10650.0
+   ],
+   "length_m": 76,
+   "points": 31,
+   "mean_inland_slope_pct": 6.9
+  },
+  {
+   "from_xy": [
+    13065.0,
+    10580.0
+   ],
+   "to_xy": [
+    13080.0,
+    10655.0
+   ],
+   "length_m": 76,
+   "points": 67,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    10360.0,
+    10615.0
+   ],
+   "to_xy": [
+    10285.0,
+    10900.0
+   ],
+   "length_m": 295,
+   "points": 183,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    14000.0,
+    10640.0
+   ],
+   "to_xy": [
+    14075.0,
+    10705.0
+   ],
+   "length_m": 99,
+   "points": 66,
+   "mean_inland_slope_pct": 1.4
+  },
+  {
+   "from_xy": [
+    3485.0,
+    10640.0
+   ],
+   "to_xy": [
+    3490.0,
+    11215.0
+   ],
+   "length_m": 575,
+   "points": 290,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    3295.0,
+    10680.0
+   ],
+   "to_xy": [
+    3350.0,
+    10690.0
+   ],
+   "length_m": 56,
+   "points": 45,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    15640.0,
+    10670.0
+   ],
+   "to_xy": [
+    15270.0,
+    11260.0
+   ],
+   "length_m": 696,
+   "points": 307,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    1850.0,
+    10670.0
+   ],
+   "to_xy": [
+    1825.0,
+    10760.0
+   ],
+   "length_m": 93,
+   "points": 56,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    11770.0,
+    10690.0
+   ],
+   "to_xy": [
+    11835.0,
+    10705.0
+   ],
+   "length_m": 67,
+   "points": 50,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    6950.0,
+    10690.0
+   ],
+   "to_xy": [
+    6910.0,
+    10735.0
+   ],
+   "length_m": 60,
+   "points": 12,
+   "mean_inland_slope_pct": 10.5
+  },
+  {
+   "from_xy": [
+    10050.0,
+    10705.0
+   ],
+   "to_xy": [
+    10225.0,
+    10970.0
+   ],
+   "length_m": 318,
+   "points": 145,
+   "mean_inland_slope_pct": 7.8
+  },
+  {
+   "from_xy": [
+    6730.0,
+    10740.0
+   ],
+   "to_xy": [
+    6620.0,
+    10785.0
+   ],
+   "length_m": 119,
+   "points": 103,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    7570.0,
+    10715.0
+   ],
+   "to_xy": [
+    7540.0,
+    10800.0
+   ],
+   "length_m": 90,
+   "points": 83,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    14330.0,
+    10740.0
+   ],
+   "to_xy": [
+    14500.0,
+    10765.0
+   ],
+   "length_m": 172,
+   "points": 108,
+   "mean_inland_slope_pct": 5.9
+  },
+  {
+   "from_xy": [
+    5715.0,
+    10730.0
+   ],
+   "to_xy": [
+    5680.0,
+    10755.0
+   ],
+   "length_m": 43,
+   "points": 20,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    8195.0,
+    10735.0
+   ],
+   "to_xy": [
+    8175.0,
+    10770.0
+   ],
+   "length_m": 40,
+   "points": 19,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    13790.0,
+    10775.0
+   ],
+   "to_xy": [
+    13885.0,
+    10825.0
+   ],
+   "length_m": 107,
+   "points": 87,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    14300.0,
+    10770.0
+   ],
+   "to_xy": [
+    14210.0,
+    10825.0
+   ],
+   "length_m": 105,
+   "points": 58,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    7220.0,
+    10840.0
+   ],
+   "to_xy": [
+    7670.0,
+    11025.0
+   ],
+   "length_m": 487,
+   "points": 321,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    4705.0,
+    10835.0
+   ],
+   "to_xy": [
+    4760.0,
+    10910.0
+   ],
+   "length_m": 93,
+   "points": 17,
+   "mean_inland_slope_pct": 11.1
+  },
+  {
+   "from_xy": [
+    12910.0,
+    10885.0
+   ],
+   "to_xy": [
+    12995.0,
+    10925.0
+   ],
+   "length_m": 94,
+   "points": 78,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    3260.0,
+    10880.0
+   ],
+   "to_xy": [
+    3310.0,
+    10900.0
+   ],
+   "length_m": 54,
+   "points": 31,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    10570.0,
+    10890.0
+   ],
+   "to_xy": [
+    10560.0,
+    10940.0
+   ],
+   "length_m": 51,
+   "points": 10,
+   "mean_inland_slope_pct": 11.0
+  },
+  {
+   "from_xy": [
+    12160.0,
+    10940.0
+   ],
+   "to_xy": [
+    12190.0,
+    10995.0
+   ],
+   "length_m": 63,
+   "points": 36,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    4775.0,
+    10950.0
+   ],
+   "to_xy": [
+    4840.0,
+    11005.0
+   ],
+   "length_m": 85,
+   "points": 37,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    4520.0,
+    10960.0
+   ],
+   "to_xy": [
+    4585.0,
+    11125.0
+   ],
+   "length_m": 177,
+   "points": 87,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    8770.0,
+    10955.0
+   ],
+   "to_xy": [
+    8720.0,
+    12915.0
+   ],
+   "length_m": 1961,
+   "points": 2288,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    9035.0,
+    10965.0
+   ],
+   "to_xy": [
+    9005.0,
+    11010.0
+   ],
+   "length_m": 54,
+   "points": 49,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    10125.0,
+    10965.0
+   ],
+   "to_xy": [
+    10220.0,
+    12005.0
+   ],
+   "length_m": 1044,
+   "points": 720,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    4620.0,
+    10975.0
+   ],
+   "to_xy": [
+    4680.0,
+    11030.0
+   ],
+   "length_m": 81,
+   "points": 15,
+   "mean_inland_slope_pct": 10.0
+  },
+  {
+   "from_xy": [
+    13015.0,
+    10980.0
+   ],
+   "to_xy": [
+    13035.0,
+    11025.0
+   ],
+   "length_m": 49,
+   "points": 32,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    2575.0,
+    11000.0
+   ],
+   "to_xy": [
+    2445.0,
+    11180.0
+   ],
+   "length_m": 222,
+   "points": 121,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    10210.0,
+    11005.0
+   ],
+   "to_xy": [
+    10225.0,
+    11095.0
+   ],
+   "length_m": 91,
+   "points": 42,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    4010.0,
+    11020.0
+   ],
+   "to_xy": [
+    3980.0,
+    11065.0
+   ],
+   "length_m": 54,
+   "points": 27,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    3185.0,
+    11030.0
+   ],
+   "to_xy": [
+    3275.0,
+    11265.0
+   ],
+   "length_m": 252,
+   "points": 102,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    3805.0,
+    11050.0
+   ],
+   "to_xy": [
+    4250.0,
+    11575.0
+   ],
+   "length_m": 688,
+   "points": 357,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    9150.0,
+    11095.0
+   ],
+   "to_xy": [
+    9040.0,
+    11105.0
+   ],
+   "length_m": 110,
+   "points": 84,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    14855.0,
+    11085.0
+   ],
+   "to_xy": [
+    14215.0,
+    15640.0
+   ],
+   "length_m": 4600,
+   "points": 7031,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    11745.0,
+    11120.0
+   ],
+   "to_xy": [
+    11825.0,
+    11660.0
+   ],
+   "length_m": 546,
+   "points": 278,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    4770.0,
+    11140.0
+   ],
+   "to_xy": [
+    4975.0,
+    11355.0
+   ],
+   "length_m": 297,
+   "points": 56,
+   "mean_inland_slope_pct": 10.4
+  },
+  {
+   "from_xy": [
+    5645.0,
+    11145.0
+   ],
+   "to_xy": [
+    5595.0,
+    11190.0
+   ],
+   "length_m": 67,
+   "points": 58,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    3080.0,
+    11165.0
+   ],
+   "to_xy": [
+    2865.0,
+    14850.0
+   ],
+   "length_m": 3691,
+   "points": 1940,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    7305.0,
+    11170.0
+   ],
+   "to_xy": [
+    7420.0,
+    11445.0
+   ],
+   "length_m": 298,
+   "points": 117,
+   "mean_inland_slope_pct": 5.8
+  },
+  {
+   "from_xy": [
+    13360.0,
+    11195.0
+   ],
+   "to_xy": [
+    12770.0,
+    12135.0
+   ],
+   "length_m": 1110,
+   "points": 683,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    15380.0,
+    11265.0
+   ],
+   "to_xy": [
+    15420.0,
+    11275.0
+   ],
+   "length_m": 41,
+   "points": 21,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    13780.0,
+    11265.0
+   ],
+   "to_xy": [
+    13805.0,
+    11320.0
+   ],
+   "length_m": 60,
+   "points": 28,
+   "mean_inland_slope_pct": 1.0
+  },
+  {
+   "from_xy": [
+    9295.0,
+    11305.0
+   ],
+   "to_xy": [
+    9050.0,
+    11460.0
+   ],
+   "length_m": 290,
+   "points": 179,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    12380.0,
+    11290.0
+   ],
+   "to_xy": [
+    12700.0,
+    11510.0
+   ],
+   "length_m": 388,
+   "points": 197,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    5750.0,
+    11310.0
+   ],
+   "to_xy": [
+    5800.0,
+    11365.0
+   ],
+   "length_m": 74,
+   "points": 39,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    6720.0,
+    11400.0
+   ],
+   "to_xy": [
+    6495.0,
+    11425.0
+   ],
+   "length_m": 226,
+   "points": 111,
+   "mean_inland_slope_pct": 9.1
+  },
+  {
+   "from_xy": [
+    13980.0,
+    11345.0
+   ],
+   "to_xy": [
+    13805.0,
+    11385.0
+   ],
+   "length_m": 180,
+   "points": 87,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    3500.0,
+    11345.0
+   ],
+   "to_xy": [
+    3565.0,
+    11465.0
+   ],
+   "length_m": 136,
+   "points": 51,
+   "mean_inland_slope_pct": 10.0
+  },
+  {
+   "from_xy": [
+    15265.0,
+    11345.0
+   ],
+   "to_xy": [
+    15280.0,
+    11390.0
+   ],
+   "length_m": 47,
+   "points": 21,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    2980.0,
+    11360.0
+   ],
+   "to_xy": [
+    3645.0,
+    12155.0
+   ],
+   "length_m": 1036,
+   "points": 392,
+   "mean_inland_slope_pct": 7.1
+  },
+  {
+   "from_xy": [
+    5005.0,
+    11390.0
+   ],
+   "to_xy": [
+    5080.0,
+    11415.0
+   ],
+   "length_m": 79,
+   "points": 35,
+   "mean_inland_slope_pct": 8.5
+  },
+  {
+   "from_xy": [
+    15200.0,
+    11375.0
+   ],
+   "to_xy": [
+    15250.0,
+    11455.0
+   ],
+   "length_m": 94,
+   "points": 50,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    11145.0,
+    11400.0
+   ],
+   "to_xy": [
+    11095.0,
+    11425.0
+   ],
+   "length_m": 56,
+   "points": 11,
+   "mean_inland_slope_pct": 10.8
+  },
+  {
+   "from_xy": [
+    14825.0,
+    11420.0
+   ],
+   "to_xy": [
+    14750.0,
+    11485.0
+   ],
+   "length_m": 99,
+   "points": 44,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    5135.0,
+    11460.0
+   ],
+   "to_xy": [
+    5235.0,
+    11600.0
+   ],
+   "length_m": 172,
+   "points": 85,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    10005.0,
+    11460.0
+   ],
+   "to_xy": [
+    10020.0,
+    11570.0
+   ],
+   "length_m": 111,
+   "points": 26,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    14635.0,
+    11470.0
+   ],
+   "to_xy": [
+    14695.0,
+    11550.0
+   ],
+   "length_m": 100,
+   "points": 54,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    5630.0,
+    11500.0
+   ],
+   "to_xy": [
+    5685.0,
+    11520.0
+   ],
+   "length_m": 59,
+   "points": 36,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    9335.0,
+    11495.0
+   ],
+   "to_xy": [
+    9305.0,
+    11605.0
+   ],
+   "length_m": 114,
+   "points": 52,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    5560.0,
+    11545.0
+   ],
+   "to_xy": [
+    5615.0,
+    11725.0
+   ],
+   "length_m": 188,
+   "points": 101,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    5650.0,
+    11565.0
+   ],
+   "to_xy": [
+    5665.0,
+    11675.0
+   ],
+   "length_m": 111,
+   "points": 53,
+   "mean_inland_slope_pct": 6.6
+  },
+  {
+   "from_xy": [
+    5905.0,
+    11570.0
+   ],
+   "to_xy": [
+    5940.0,
+    11625.0
+   ],
+   "length_m": 65,
+   "points": 48,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    6655.0,
+    11580.0
+   ],
+   "to_xy": [
+    5605.0,
+    13085.0
+   ],
+   "length_m": 1835,
+   "points": 2530,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    10560.0,
+    11585.0
+   ],
+   "to_xy": [
+    10595.0,
+    11635.0
+   ],
+   "length_m": 61,
+   "points": 13,
+   "mean_inland_slope_pct": 10.2
+  },
+  {
+   "from_xy": [
+    9990.0,
+    11600.0
+   ],
+   "to_xy": [
+    9990.0,
+    11640.0
+   ],
+   "length_m": 40,
+   "points": 14,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    13660.0,
+    11630.0
+   ],
+   "to_xy": [
+    13605.0,
+    11645.0
+   ],
+   "length_m": 57,
+   "points": 43,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    14255.0,
+    11615.0
+   ],
+   "to_xy": [
+    12325.0,
+    15450.0
+   ],
+   "length_m": 4293,
+   "points": 4238,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    4050.0,
+    11620.0
+   ],
+   "to_xy": [
+    3940.0,
+    11800.0
+   ],
+   "length_m": 211,
+   "points": 117,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    5240.0,
+    11620.0
+   ],
+   "to_xy": [
+    5235.0,
+    12400.0
+   ],
+   "length_m": 780,
+   "points": 400,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    5915.0,
+    11650.0
+   ],
+   "to_xy": [
+    5760.0,
+    11750.0
+   ],
+   "length_m": 184,
+   "points": 131,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    11870.0,
+    11665.0
+   ],
+   "to_xy": [
+    11925.0,
+    11985.0
+   ],
+   "length_m": 325,
+   "points": 236,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    10615.0,
+    11670.0
+   ],
+   "to_xy": [
+    10460.0,
+    12350.0
+   ],
+   "length_m": 697,
+   "points": 578,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    6405.0,
+    11675.0
+   ],
+   "to_xy": [
+    6355.0,
+    11740.0
+   ],
+   "length_m": 82,
+   "points": 34,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    4815.0,
+    11680.0
+   ],
+   "to_xy": [
+    4870.0,
+    11775.0
+   ],
+   "length_m": 110,
+   "points": 94,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    11305.0,
+    11695.0
+   ],
+   "to_xy": [
+    11395.0,
+    11740.0
+   ],
+   "length_m": 101,
+   "points": 54,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    12460.0,
+    11690.0
+   ],
+   "to_xy": [
+    12145.0,
+    12040.0
+   ],
+   "length_m": 471,
+   "points": 111,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    8125.0,
+    11700.0
+   ],
+   "to_xy": [
+    8385.0,
+    12040.0
+   ],
+   "length_m": 428,
+   "points": 183,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    14155.0,
+    11725.0
+   ],
+   "to_xy": [
+    14175.0,
+    11820.0
+   ],
+   "length_m": 97,
+   "points": 49,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    5215.0,
+    11740.0
+   ],
+   "to_xy": [
+    5235.0,
+    11800.0
+   ],
+   "length_m": 63,
+   "points": 32,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    5410.0,
+    11740.0
+   ],
+   "to_xy": [
+    5450.0,
+    11805.0
+   ],
+   "length_m": 76,
+   "points": 63,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    9980.0,
+    11740.0
+   ],
+   "to_xy": [
+    9960.0,
+    12240.0
+   ],
+   "length_m": 500,
+   "points": 120,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    6380.0,
+    11775.0
+   ],
+   "to_xy": [
+    6315.0,
+    11905.0
+   ],
+   "length_m": 145,
+   "points": 101,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    10495.0,
+    11810.0
+   ],
+   "to_xy": [
+    10430.0,
+    11825.0
+   ],
+   "length_m": 67,
+   "points": 38,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    13430.0,
+    11815.0
+   ],
+   "to_xy": [
+    13350.0,
+    11870.0
+   ],
+   "length_m": 97,
+   "points": 49,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    5660.0,
+    11815.0
+   ],
+   "to_xy": [
+    5595.0,
+    12070.0
+   ],
+   "length_m": 263,
+   "points": 148,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    4465.0,
+    11830.0
+   ],
+   "to_xy": [
+    4495.0,
+    11885.0
+   ],
+   "length_m": 63,
+   "points": 55,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    11655.0,
+    11830.0
+   ],
+   "to_xy": [
+    11640.0,
+    13895.0
+   ],
+   "length_m": 2065,
+   "points": 1498,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    2805.0,
+    11840.0
+   ],
+   "to_xy": [
+    3080.0,
+    12910.0
+   ],
+   "length_m": 1105,
+   "points": 691,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    3945.0,
+    11840.0
+   ],
+   "to_xy": [
+    3880.0,
+    12225.0
+   ],
+   "length_m": 390,
+   "points": 229,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    8750.0,
+    11850.0
+   ],
+   "to_xy": [
+    8755.0,
+    12040.0
+   ],
+   "length_m": 190,
+   "points": 84,
+   "mean_inland_slope_pct": 1.5
+  },
+  {
+   "from_xy": [
+    2295.0,
+    11860.0
+   ],
+   "to_xy": [
+    2315.0,
+    11945.0
+   ],
+   "length_m": 87,
+   "points": 53,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    15615.0,
+    11905.0
+   ],
+   "to_xy": [
+    15525.0,
+    12005.0
+   ],
+   "length_m": 135,
+   "points": 67,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    925.0,
+    11895.0
+   ],
+   "to_xy": [
+    655.0,
+    12145.0
+   ],
+   "length_m": 368,
+   "points": 261,
+   "mean_inland_slope_pct": 1.5
+  },
+  {
+   "from_xy": [
+    7470.0,
+    12155.0
+   ],
+   "to_xy": [
+    8045.0,
+    12280.0
+   ],
+   "length_m": 588,
+   "points": 358,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    13485.0,
+    11945.0
+   ],
+   "to_xy": [
+    13410.0,
+    11965.0
+   ],
+   "length_m": 78,
+   "points": 39,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    3060.0,
+    11955.0
+   ],
+   "to_xy": [
+    3265.0,
+    12060.0
+   ],
+   "length_m": 230,
+   "points": 174,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    9120.0,
+    11945.0
+   ],
+   "to_xy": [
+    9135.0,
+    12000.0
+   ],
+   "length_m": 57,
+   "points": 23,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    2770.0,
+    11965.0
+   ],
+   "to_xy": [
+    2775.0,
+    12020.0
+   ],
+   "length_m": 55,
+   "points": 23,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    4880.0,
+    11975.0
+   ],
+   "to_xy": [
+    4900.0,
+    12025.0
+   ],
+   "length_m": 54,
+   "points": 49,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    4995.0,
+    11985.0
+   ],
+   "to_xy": [
+    4965.0,
+    12075.0
+   ],
+   "length_m": 95,
+   "points": 80,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    7615.0,
+    11990.0
+   ],
+   "to_xy": [
+    7580.0,
+    12085.0
+   ],
+   "length_m": 101,
+   "points": 83,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    12500.0,
+    12000.0
+   ],
+   "to_xy": [
+    12440.0,
+    12165.0
+   ],
+   "length_m": 176,
+   "points": 55,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    2230.0,
+    12065.0
+   ],
+   "to_xy": [
+    2250.0,
+    12130.0
+   ],
+   "length_m": 68,
+   "points": 58,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    12135.0,
+    12065.0
+   ],
+   "to_xy": [
+    11940.0,
+    12290.0
+   ],
+   "length_m": 298,
+   "points": 119,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    9260.0,
+    12120.0
+   ],
+   "to_xy": [
+    9365.0,
+    12155.0
+   ],
+   "length_m": 111,
+   "points": 53,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    4715.0,
+    12145.0
+   ],
+   "to_xy": [
+    4535.0,
+    12335.0
+   ],
+   "length_m": 262,
+   "points": 207,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    6220.0,
+    12175.0
+   ],
+   "to_xy": [
+    6245.0,
+    12295.0
+   ],
+   "length_m": 123,
+   "points": 52,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    12430.0,
+    12180.0
+   ],
+   "to_xy": [
+    12380.0,
+    12260.0
+   ],
+   "length_m": 94,
+   "points": 16,
+   "mean_inland_slope_pct": 10.9
+  },
+  {
+   "from_xy": [
+    12890.0,
+    12225.0
+   ],
+   "to_xy": [
+    12895.0,
+    12315.0
+   ],
+   "length_m": 90,
+   "points": 47,
+   "mean_inland_slope_pct": 5.7
+  },
+  {
+   "from_xy": [
+    11415.0,
+    12270.0
+   ],
+   "to_xy": [
+    11310.0,
+    12330.0
+   ],
+   "length_m": 121,
+   "points": 55,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    10075.0,
+    12275.0
+   ],
+   "to_xy": [
+    10065.0,
+    12330.0
+   ],
+   "length_m": 56,
+   "points": 12,
+   "mean_inland_slope_pct": 11.4
+  },
+  {
+   "from_xy": [
+    14805.0,
+    12275.0
+   ],
+   "to_xy": [
+    14835.0,
+    12365.0
+   ],
+   "length_m": 95,
+   "points": 69,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    6330.0,
+    12295.0
+   ],
+   "to_xy": [
+    6280.0,
+    12310.0
+   ],
+   "length_m": 52,
+   "points": 39,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    14395.0,
+    12290.0
+   ],
+   "to_xy": [
+    14400.0,
+    12370.0
+   ],
+   "length_m": 80,
+   "points": 40,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    10720.0,
+    12335.0
+   ],
+   "to_xy": [
+    11005.0,
+    12510.0
+   ],
+   "length_m": 334,
+   "points": 151,
+   "mean_inland_slope_pct": 8.5
+  },
+  {
+   "from_xy": [
+    10995.0,
+    12300.0
+   ],
+   "to_xy": [
+    11070.0,
+    12460.0
+   ],
+   "length_m": 177,
+   "points": 43,
+   "mean_inland_slope_pct": 8.8
+  },
+  {
+   "from_xy": [
+    1600.0,
+    12310.0
+   ],
+   "to_xy": [
+    1315.0,
+    13715.0
+   ],
+   "length_m": 1434,
+   "points": 1915,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    11505.0,
+    12325.0
+   ],
+   "to_xy": [
+    11520.0,
+    12415.0
+   ],
+   "length_m": 91,
+   "points": 45,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    2845.0,
+    12330.0
+   ],
+   "to_xy": [
+    2835.0,
+    12380.0
+   ],
+   "length_m": 51,
+   "points": 25,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    12595.0,
+    12350.0
+   ],
+   "to_xy": [
+    12540.0,
+    12760.0
+   ],
+   "length_m": 414,
+   "points": 291,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    3935.0,
+    12360.0
+   ],
+   "to_xy": [
+    4275.0,
+    12505.0
+   ],
+   "length_m": 370,
+   "points": 318,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    7750.0,
+    12480.0
+   ],
+   "to_xy": [
+    8070.0,
+    12540.0
+   ],
+   "length_m": 326,
+   "points": 163,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    5690.0,
+    12430.0
+   ],
+   "to_xy": [
+    5735.0,
+    12435.0
+   ],
+   "length_m": 45,
+   "points": 20,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    11290.0,
+    12420.0
+   ],
+   "to_xy": [
+    11310.0,
+    12540.0
+   ],
+   "length_m": 122,
+   "points": 56,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    6185.0,
+    12435.0
+   ],
+   "to_xy": [
+    6120.0,
+    12495.0
+   ],
+   "length_m": 88,
+   "points": 34,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    7020.0,
+    12450.0
+   ],
+   "to_xy": [
+    7040.0,
+    12490.0
+   ],
+   "length_m": 45,
+   "points": 23,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    10060.0,
+    12455.0
+   ],
+   "to_xy": [
+    10090.0,
+    12895.0
+   ],
+   "length_m": 441,
+   "points": 274,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    11540.0,
+    12465.0
+   ],
+   "to_xy": [
+    11520.0,
+    12515.0
+   ],
+   "length_m": 54,
+   "points": 28,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    3325.0,
+    12475.0
+   ],
+   "to_xy": [
+    3215.0,
+    13515.0
+   ],
+   "length_m": 1046,
+   "points": 876,
+   "mean_inland_slope_pct": 5.4
+  },
+  {
+   "from_xy": [
+    4345.0,
+    12475.0
+   ],
+   "to_xy": [
+    4405.0,
+    12500.0
+   ],
+   "length_m": 65,
+   "points": 33,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    4545.0,
+    12485.0
+   ],
+   "to_xy": [
+    4510.0,
+    12540.0
+   ],
+   "length_m": 65,
+   "points": 60,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    6980.0,
+    12530.0
+   ],
+   "to_xy": [
+    6875.0,
+    12665.0
+   ],
+   "length_m": 171,
+   "points": 69,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    7690.0,
+    12535.0
+   ],
+   "to_xy": [
+    7865.0,
+    12825.0
+   ],
+   "length_m": 339,
+   "points": 149,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    14320.0,
+    12540.0
+   ],
+   "to_xy": [
+    14330.0,
+    12630.0
+   ],
+   "length_m": 91,
+   "points": 49,
+   "mean_inland_slope_pct": 1.5
+  },
+  {
+   "from_xy": [
+    6115.0,
+    12545.0
+   ],
+   "to_xy": [
+    6145.0,
+    12630.0
+   ],
+   "length_m": 90,
+   "points": 45,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    11030.0,
+    12545.0
+   ],
+   "to_xy": [
+    11405.0,
+    13945.0
+   ],
+   "length_m": 1449,
+   "points": 1699,
+   "mean_inland_slope_pct": 4.9
+  },
+  {
+   "from_xy": [
+    9390.0,
+    12585.0
+   ],
+   "to_xy": [
+    9330.0,
+    12695.0
+   ],
+   "length_m": 125,
+   "points": 86,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    9520.0,
+    12600.0
+   ],
+   "to_xy": [
+    9995.0,
+    13880.0
+   ],
+   "length_m": 1365,
+   "points": 1315,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    12760.0,
+    12600.0
+   ],
+   "to_xy": [
+    12705.0,
+    12715.0
+   ],
+   "length_m": 127,
+   "points": 62,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    450.0,
+    12605.0
+   ],
+   "to_xy": [
+    0.0,
+    14880.0
+   ],
+   "length_m": 2319,
+   "points": 1782,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    4690.0,
+    12610.0
+   ],
+   "to_xy": [
+    4635.0,
+    12635.0
+   ],
+   "length_m": 60,
+   "points": 32,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    4235.0,
+    12625.0
+   ],
+   "to_xy": [
+    4200.0,
+    12645.0
+   ],
+   "length_m": 40,
+   "points": 17,
+   "mean_inland_slope_pct": 7.8
+  },
+  {
+   "from_xy": [
+    9820.0,
+    12635.0
+   ],
+   "to_xy": [
+    9785.0,
+    12680.0
+   ],
+   "length_m": 57,
+   "points": 45,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    11815.0,
+    12655.0
+   ],
+   "to_xy": [
+    11830.0,
+    12720.0
+   ],
+   "length_m": 67,
+   "points": 34,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    11565.0,
+    12665.0
+   ],
+   "to_xy": [
+    11560.0,
+    12740.0
+   ],
+   "length_m": 75,
+   "points": 67,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    4350.0,
+    12720.0
+   ],
+   "to_xy": [
+    4620.0,
+    12840.0
+   ],
+   "length_m": 295,
+   "points": 207,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    7125.0,
+    12685.0
+   ],
+   "to_xy": [
+    7040.0,
+    12895.0
+   ],
+   "length_m": 227,
+   "points": 158,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    12445.0,
+    12685.0
+   ],
+   "to_xy": [
+    12460.0,
+    12740.0
+   ],
+   "length_m": 57,
+   "points": 26,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    2350.0,
+    12755.0
+   ],
+   "to_xy": [
+    2410.0,
+    13395.0
+   ],
+   "length_m": 643,
+   "points": 360,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    4235.0,
+    12790.0
+   ],
+   "to_xy": [
+    4320.0,
+    12800.0
+   ],
+   "length_m": 86,
+   "points": 56,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    0.0,
+    12760.0
+   ],
+   "to_xy": [
+    0.0,
+    12815.0
+   ],
+   "length_m": 55,
+   "points": 12,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    11545.0,
+    12800.0
+   ],
+   "to_xy": [
+    11405.0,
+    12855.0
+   ],
+   "length_m": 150,
+   "points": 94,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    11415.0,
+    12800.0
+   ],
+   "to_xy": [
+    11360.0,
+    12810.0
+   ],
+   "length_m": 56,
+   "points": 27,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    10605.0,
+    12815.0
+   ],
+   "to_xy": [
+    10650.0,
+    12830.0
+   ],
+   "length_m": 47,
+   "points": 23,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    9270.0,
+    12860.0
+   ],
+   "to_xy": [
+    9285.0,
+    12990.0
+   ],
+   "length_m": 131,
+   "points": 92,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    10.0,
+    12875.0
+   ],
+   "to_xy": [
+    0.0,
+    12920.0
+   ],
+   "length_m": 46,
+   "points": 14,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    2485.0,
+    12885.0
+   ],
+   "to_xy": [
+    2530.0,
+    12950.0
+   ],
+   "length_m": 79,
+   "points": 32,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    5750.0,
+    12895.0
+   ],
+   "to_xy": [
+    5780.0,
+    12995.0
+   ],
+   "length_m": 104,
+   "points": 56,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    14525.0,
+    12915.0
+   ],
+   "to_xy": [
+    14575.0,
+    12955.0
+   ],
+   "length_m": 64,
+   "points": 56,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    4185.0,
+    12910.0
+   ],
+   "to_xy": [
+    4160.0,
+    13125.0
+   ],
+   "length_m": 216,
+   "points": 132,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    4520.0,
+    12955.0
+   ],
+   "to_xy": [
+    4510.0,
+    13085.0
+   ],
+   "length_m": 130,
+   "points": 89,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    1375.0,
+    12980.0
+   ],
+   "to_xy": [
+    1285.0,
+    13030.0
+   ],
+   "length_m": 103,
+   "points": 53,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    6790.0,
+    12970.0
+   ],
+   "to_xy": [
+    6770.0,
+    13025.0
+   ],
+   "length_m": 59,
+   "points": 32,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    4035.0,
+    12980.0
+   ],
+   "to_xy": [
+    4075.0,
+    13040.0
+   ],
+   "length_m": 72,
+   "points": 33,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    4710.0,
+    12985.0
+   ],
+   "to_xy": [
+    4740.0,
+    13065.0
+   ],
+   "length_m": 85,
+   "points": 75,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    6245.0,
+    13015.0
+   ],
+   "to_xy": [
+    5875.0,
+    13430.0
+   ],
+   "length_m": 556,
+   "points": 207,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    9300.0,
+    13015.0
+   ],
+   "to_xy": [
+    9725.0,
+    13580.0
+   ],
+   "length_m": 707,
+   "points": 324,
+   "mean_inland_slope_pct": 6.5
+  },
+  {
+   "from_xy": [
+    2930.0,
+    13050.0
+   ],
+   "to_xy": [
+    2860.0,
+    13075.0
+   ],
+   "length_m": 74,
+   "points": 70,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    830.0,
+    13040.0
+   ],
+   "to_xy": [
+    780.0,
+    13045.0
+   ],
+   "length_m": 50,
+   "points": 22,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    5025.0,
+    13030.0
+   ],
+   "to_xy": [
+    4735.0,
+    13235.0
+   ],
+   "length_m": 355,
+   "points": 139,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    8755.0,
+    13040.0
+   ],
+   "to_xy": [
+    8770.0,
+    13090.0
+   ],
+   "length_m": 52,
+   "points": 26,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    4345.0,
+    13075.0
+   ],
+   "to_xy": [
+    4270.0,
+    13210.0
+   ],
+   "length_m": 154,
+   "points": 116,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    10215.0,
+    13080.0
+   ],
+   "to_xy": [
+    10200.0,
+    13130.0
+   ],
+   "length_m": 52,
+   "points": 41,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    5240.0,
+    13095.0
+   ],
+   "to_xy": [
+    5195.0,
+    13160.0
+   ],
+   "length_m": 79,
+   "points": 33,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    7110.0,
+    13095.0
+   ],
+   "to_xy": [
+    7130.0,
+    13130.0
+   ],
+   "length_m": 40,
+   "points": 15,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    5590.0,
+    13120.0
+   ],
+   "to_xy": [
+    5430.0,
+    13140.0
+   ],
+   "length_m": 161,
+   "points": 33,
+   "mean_inland_slope_pct": 11.1
+  },
+  {
+   "from_xy": [
+    2405.0,
+    13160.0
+   ],
+   "to_xy": [
+    2310.0,
+    13190.0
+   ],
+   "length_m": 100,
+   "points": 91,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    9175.0,
+    13125.0
+   ],
+   "to_xy": [
+    9270.0,
+    13210.0
+   ],
+   "length_m": 127,
+   "points": 20,
+   "mean_inland_slope_pct": 10.6
+  },
+  {
+   "from_xy": [
+    5355.0,
+    13145.0
+   ],
+   "to_xy": [
+    5275.0,
+    13160.0
+   ],
+   "length_m": 81,
+   "points": 18,
+   "mean_inland_slope_pct": 10.4
+  },
+  {
+   "from_xy": [
+    1645.0,
+    13215.0
+   ],
+   "to_xy": [
+    1375.0,
+    13345.0
+   ],
+   "length_m": 300,
+   "points": 179,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    13850.0,
+    13160.0
+   ],
+   "to_xy": [
+    13825.0,
+    13235.0
+   ],
+   "length_m": 79,
+   "points": 53,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    8210.0,
+    13185.0
+   ],
+   "to_xy": [
+    8280.0,
+    13225.0
+   ],
+   "length_m": 81,
+   "points": 38,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    4150.0,
+    13180.0
+   ],
+   "to_xy": [
+    4190.0,
+    13225.0
+   ],
+   "length_m": 60,
+   "points": 26,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    7740.0,
+    13180.0
+   ],
+   "to_xy": [
+    8180.0,
+    13810.0
+   ],
+   "length_m": 768,
+   "points": 657,
+   "mean_inland_slope_pct": 5.2
+  },
+  {
+   "from_xy": [
+    11590.0,
+    13200.0
+   ],
+   "to_xy": [
+    11645.0,
+    13245.0
+   ],
+   "length_m": 71,
+   "points": 43,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    8185.0,
+    13200.0
+   ],
+   "to_xy": [
+    8080.0,
+    13230.0
+   ],
+   "length_m": 109,
+   "points": 47,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    2165.0,
+    13215.0
+   ],
+   "to_xy": [
+    2060.0,
+    13665.0
+   ],
+   "length_m": 462,
+   "points": 237,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    3415.0,
+    13220.0
+   ],
+   "to_xy": [
+    3425.0,
+    13265.0
+   ],
+   "length_m": 46,
+   "points": 23,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    1015.0,
+    13240.0
+   ],
+   "to_xy": [
+    965.0,
+    13255.0
+   ],
+   "length_m": 52,
+   "points": 23,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    11500.0,
+    13235.0
+   ],
+   "to_xy": [
+    11435.0,
+    13285.0
+   ],
+   "length_m": 82,
+   "points": 63,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    9290.0,
+    13240.0
+   ],
+   "to_xy": [
+    9375.0,
+    13430.0
+   ],
+   "length_m": 208,
+   "points": 41,
+   "mean_inland_slope_pct": 9.1
+  },
+  {
+   "from_xy": [
+    5630.0,
+    13275.0
+   ],
+   "to_xy": [
+    5680.0,
+    13325.0
+   ],
+   "length_m": 71,
+   "points": 49,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    5700.0,
+    13265.0
+   ],
+   "to_xy": [
+    5150.0,
+    14665.0
+   ],
+   "length_m": 1504,
+   "points": 1967,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    6905.0,
+    13275.0
+   ],
+   "to_xy": [
+    6930.0,
+    13335.0
+   ],
+   "length_m": 65,
+   "points": 53,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    1295.0,
+    13305.0
+   ],
+   "to_xy": [
+    1290.0,
+    13440.0
+   ],
+   "length_m": 135,
+   "points": 82,
+   "mean_inland_slope_pct": 1.5
+  },
+  {
+   "from_xy": [
+    5840.0,
+    13305.0
+   ],
+   "to_xy": [
+    5855.0,
+    13345.0
+   ],
+   "length_m": 43,
+   "points": 19,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    11590.0,
+    13320.0
+   ],
+   "to_xy": [
+    11545.0,
+    13390.0
+   ],
+   "length_m": 83,
+   "points": 62,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    5190.0,
+    13345.0
+   ],
+   "to_xy": [
+    4915.0,
+    13665.0
+   ],
+   "length_m": 422,
+   "points": 320,
+   "mean_inland_slope_pct": 0.8
+  },
+  {
+   "from_xy": [
+    4885.0,
+    13360.0
+   ],
+   "to_xy": [
+    4955.0,
+    13375.0
+   ],
+   "length_m": 72,
+   "points": 15,
+   "mean_inland_slope_pct": 11.5
+  },
+  {
+   "from_xy": [
+    8560.0,
+    13360.0
+   ],
+   "to_xy": [
+    8520.0,
+    13365.0
+   ],
+   "length_m": 40,
+   "points": 16,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    4845.0,
+    13370.0
+   ],
+   "to_xy": [
+    4695.0,
+    13505.0
+   ],
+   "length_m": 202,
+   "points": 71,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    6540.0,
+    13365.0
+   ],
+   "to_xy": [
+    6415.0,
+    13475.0
+   ],
+   "length_m": 167,
+   "points": 86,
+   "mean_inland_slope_pct": 1.6
+  },
+  {
+   "from_xy": [
+    3850.0,
+    13370.0
+   ],
+   "to_xy": [
+    3565.0,
+    14965.0
+   ],
+   "length_m": 1620,
+   "points": 2630,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    6790.0,
+    13385.0
+   ],
+   "to_xy": [
+    6825.0,
+    13435.0
+   ],
+   "length_m": 61,
+   "points": 56,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    15400.0,
+    13465.0
+   ],
+   "to_xy": [
+    15170.0,
+    13480.0
+   ],
+   "length_m": 230,
+   "points": 156,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    4140.0,
+    13410.0
+   ],
+   "to_xy": [
+    3995.0,
+    13460.0
+   ],
+   "length_m": 153,
+   "points": 125,
+   "mean_inland_slope_pct": 1.0
+  },
+  {
+   "from_xy": [
+    4345.0,
+    13395.0
+   ],
+   "to_xy": [
+    4260.0,
+    13405.0
+   ],
+   "length_m": 86,
+   "points": 22,
+   "mean_inland_slope_pct": 4.3
+  },
+  {
+   "from_xy": [
+    4165.0,
+    13400.0
+   ],
+   "to_xy": [
+    3930.0,
+    13755.0
+   ],
+   "length_m": 426,
+   "points": 296,
+   "mean_inland_slope_pct": 2.6
+  },
+  {
+   "from_xy": [
+    9260.0,
+    13425.0
+   ],
+   "to_xy": [
+    9205.0,
+    13440.0
+   ],
+   "length_m": 57,
+   "points": 51,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    11515.0,
+    13425.0
+   ],
+   "to_xy": [
+    11895.0,
+    13670.0
+   ],
+   "length_m": 452,
+   "points": 222,
+   "mean_inland_slope_pct": 3.6
+  },
+  {
+   "from_xy": [
+    8680.0,
+    13435.0
+   ],
+   "to_xy": [
+    8720.0,
+    13520.0
+   ],
+   "length_m": 94,
+   "points": 31,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    13715.0,
+    13450.0
+   ],
+   "to_xy": [
+    13655.0,
+    13745.0
+   ],
+   "length_m": 301,
+   "points": 261,
+   "mean_inland_slope_pct": 1.4
+  },
+  {
+   "from_xy": [
+    5375.0,
+    13485.0
+   ],
+   "to_xy": [
+    5455.0,
+    13600.0
+   ],
+   "length_m": 140,
+   "points": 76,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    14740.0,
+    13510.0
+   ],
+   "to_xy": [
+    14780.0,
+    13570.0
+   ],
+   "length_m": 72,
+   "points": 66,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    9395.0,
+    13510.0
+   ],
+   "to_xy": [
+    8425.0,
+    14735.0
+   ],
+   "length_m": 1563,
+   "points": 1040,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    2180.0,
+    13530.0
+   ],
+   "to_xy": [
+    2120.0,
+    13565.0
+   ],
+   "length_m": 69,
+   "points": 33,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    4720.0,
+    13535.0
+   ],
+   "to_xy": [
+    4695.0,
+    13645.0
+   ],
+   "length_m": 113,
+   "points": 105,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    1950.0,
+    13570.0
+   ],
+   "to_xy": [
+    1925.0,
+    13670.0
+   ],
+   "length_m": 103,
+   "points": 51,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    7190.0,
+    13595.0
+   ],
+   "to_xy": [
+    7260.0,
+    13715.0
+   ],
+   "length_m": 139,
+   "points": 69,
+   "mean_inland_slope_pct": 0.1
+  },
+  {
+   "from_xy": [
+    10010.0,
+    13615.0
+   ],
+   "to_xy": [
+    9965.0,
+    13630.0
+   ],
+   "length_m": 47,
+   "points": 24,
+   "mean_inland_slope_pct": 4.6
+  },
+  {
+   "from_xy": [
+    0.0,
+    13625.0
+   ],
+   "to_xy": [
+    230.0,
+    13735.0
+   ],
+   "length_m": 255,
+   "points": 129,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    7890.0,
+    13620.0
+   ],
+   "to_xy": [
+    7925.0,
+    13650.0
+   ],
+   "length_m": 46,
+   "points": 21,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    980.0,
+    13625.0
+   ],
+   "to_xy": [
+    1215.0,
+    14210.0
+   ],
+   "length_m": 630,
+   "points": 648,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    8825.0,
+    13630.0
+   ],
+   "to_xy": [
+    8805.0,
+    13685.0
+   ],
+   "length_m": 59,
+   "points": 39,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    1995.0,
+    13635.0
+   ],
+   "to_xy": [
+    2005.0,
+    13685.0
+   ],
+   "length_m": 51,
+   "points": 23,
+   "mean_inland_slope_pct": 2.2
+  },
+  {
+   "from_xy": [
+    6410.0,
+    13635.0
+   ],
+   "to_xy": [
+    6360.0,
+    14050.0
+   ],
+   "length_m": 418,
+   "points": 466,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    0.0,
+    13670.0
+   ],
+   "to_xy": [
+    0.0,
+    13730.0
+   ],
+   "length_m": 60,
+   "points": 13,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    8855.0,
+    13725.0
+   ],
+   "to_xy": [
+    9015.0,
+    13750.0
+   ],
+   "length_m": 162,
+   "points": 81,
+   "mean_inland_slope_pct": 4.0
+  },
+  {
+   "from_xy": [
+    10915.0,
+    13715.0
+   ],
+   "to_xy": [
+    10875.0,
+    13805.0
+   ],
+   "length_m": 98,
+   "points": 39,
+   "mean_inland_slope_pct": 6.1
+  },
+  {
+   "from_xy": [
+    13430.0,
+    13740.0
+   ],
+   "to_xy": [
+    13565.0,
+    13895.0
+   ],
+   "length_m": 206,
+   "points": 166,
+   "mean_inland_slope_pct": 0.6
+  },
+  {
+   "from_xy": [
+    3155.0,
+    13820.0
+   ],
+   "to_xy": [
+    3320.0,
+    13835.0
+   ],
+   "length_m": 166,
+   "points": 69,
+   "mean_inland_slope_pct": 3.5
+  },
+  {
+   "from_xy": [
+    15470.0,
+    13830.0
+   ],
+   "to_xy": [
+    15430.0,
+    13855.0
+   ],
+   "length_m": 47,
+   "points": 21,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    10855.0,
+    13840.0
+   ],
+   "to_xy": [
+    10530.0,
+    14345.0
+   ],
+   "length_m": 601,
+   "points": 881,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    12945.0,
+    13870.0
+   ],
+   "to_xy": [
+    12980.0,
+    13900.0
+   ],
+   "length_m": 46,
+   "points": 13,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    9220.0,
+    13895.0
+   ],
+   "to_xy": [
+    9200.0,
+    13965.0
+   ],
+   "length_m": 73,
+   "points": 32,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    935.0,
+    13905.0
+   ],
+   "to_xy": [
+    1180.0,
+    14510.0
+   ],
+   "length_m": 653,
+   "points": 489,
+   "mean_inland_slope_pct": 2.3
+  },
+  {
+   "from_xy": [
+    3760.0,
+    13915.0
+   ],
+   "to_xy": [
+    3685.0,
+    13955.0
+   ],
+   "length_m": 85,
+   "points": 49,
+   "mean_inland_slope_pct": 2.4
+  },
+  {
+   "from_xy": [
+    2800.0,
+    13920.0
+   ],
+   "to_xy": [
+    2755.0,
+    13950.0
+   ],
+   "length_m": 54,
+   "points": 24,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    13630.0,
+    13915.0
+   ],
+   "to_xy": [
+    13595.0,
+    13940.0
+   ],
+   "length_m": 43,
+   "points": 16,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    13725.0,
+    13935.0
+   ],
+   "to_xy": [
+    13705.0,
+    13990.0
+   ],
+   "length_m": 59,
+   "points": 51,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    15145.0,
+    13940.0
+   ],
+   "to_xy": [
+    15245.0,
+    14055.0
+   ],
+   "length_m": 152,
+   "points": 70,
+   "mean_inland_slope_pct": 2.0
+  },
+  {
+   "from_xy": [
+    12550.0,
+    13965.0
+   ],
+   "to_xy": [
+    12475.0,
+    14005.0
+   ],
+   "length_m": 85,
+   "points": 44,
+   "mean_inland_slope_pct": 5.3
+  },
+  {
+   "from_xy": [
+    5505.0,
+    13955.0
+   ],
+   "to_xy": [
+    5490.0,
+    13995.0
+   ],
+   "length_m": 43,
+   "points": 21,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    9960.0,
+    13970.0
+   ],
+   "to_xy": [
+    9795.0,
+    14420.0
+   ],
+   "length_m": 479,
+   "points": 447,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    13480.0,
+    14050.0
+   ],
+   "to_xy": [
+    13725.0,
+    14170.0
+   ],
+   "length_m": 273,
+   "points": 198,
+   "mean_inland_slope_pct": 1.4
+  },
+  {
+   "from_xy": [
+    13375.0,
+    13985.0
+   ],
+   "to_xy": [
+    13435.0,
+    14055.0
+   ],
+   "length_m": 92,
+   "points": 42,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    6150.0,
+    13990.0
+   ],
+   "to_xy": [
+    6075.0,
+    14135.0
+   ],
+   "length_m": 163,
+   "points": 86,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    9440.0,
+    14015.0
+   ],
+   "to_xy": [
+    9295.0,
+    14130.0
+   ],
+   "length_m": 185,
+   "points": 106,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    11335.0,
+    14130.0
+   ],
+   "to_xy": [
+    10810.0,
+    14195.0
+   ],
+   "length_m": 529,
+   "points": 278,
+   "mean_inland_slope_pct": 1.7
+  },
+  {
+   "from_xy": [
+    12800.0,
+    14070.0
+   ],
+   "to_xy": [
+    12720.0,
+    14185.0
+   ],
+   "length_m": 140,
+   "points": 74,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    15015.0,
+    14075.0
+   ],
+   "to_xy": [
+    14840.0,
+    14300.0
+   ],
+   "length_m": 285,
+   "points": 193,
+   "mean_inland_slope_pct": 3.4
+  },
+  {
+   "from_xy": [
+    13395.0,
+    14075.0
+   ],
+   "to_xy": [
+    13440.0,
+    14135.0
+   ],
+   "length_m": 75,
+   "points": 38,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    7365.0,
+    14080.0
+   ],
+   "to_xy": [
+    7415.0,
+    14155.0
+   ],
+   "length_m": 90,
+   "points": 64,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    7690.0,
+    14080.0
+   ],
+   "to_xy": [
+    7730.0,
+    14135.0
+   ],
+   "length_m": 68,
+   "points": 58,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    4960.0,
+    14085.0
+   ],
+   "to_xy": [
+    5000.0,
+    14140.0
+   ],
+   "length_m": 68,
+   "points": 30,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    14500.0,
+    14090.0
+   ],
+   "to_xy": [
+    14510.0,
+    14130.0
+   ],
+   "length_m": 41,
+   "points": 20,
+   "mean_inland_slope_pct": 5.0
+  },
+  {
+   "from_xy": [
+    6220.0,
+    14100.0
+   ],
+   "to_xy": [
+    6135.0,
+    14160.0
+   ],
+   "length_m": 104,
+   "points": 40,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    15475.0,
+    14140.0
+   ],
+   "to_xy": [
+    15375.0,
+    14300.0
+   ],
+   "length_m": 189,
+   "points": 134,
+   "mean_inland_slope_pct": 2.5
+  },
+  {
+   "from_xy": [
+    6840.0,
+    14160.0
+   ],
+   "to_xy": [
+    6860.0,
+    14225.0
+   ],
+   "length_m": 68,
+   "points": 34,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    12670.0,
+    14190.0
+   ],
+   "to_xy": [
+    12590.0,
+    14230.0
+   ],
+   "length_m": 89,
+   "points": 44,
+   "mean_inland_slope_pct": 1.5
+  },
+  {
+   "from_xy": [
+    8480.0,
+    14185.0
+   ],
+   "to_xy": [
+    8415.0,
+    14240.0
+   ],
+   "length_m": 85,
+   "points": 57,
+   "mean_inland_slope_pct": 1.8
+  },
+  {
+   "from_xy": [
+    13475.0,
+    14185.0
+   ],
+   "to_xy": [
+    13505.0,
+    14235.0
+   ],
+   "length_m": 58,
+   "points": 27,
+   "mean_inland_slope_pct": 0.2
+  },
+  {
+   "from_xy": [
+    6760.0,
+    14215.0
+   ],
+   "to_xy": [
+    6705.0,
+    14325.0
+   ],
+   "length_m": 123,
+   "points": 69,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    8545.0,
+    14240.0
+   ],
+   "to_xy": [
+    8475.0,
+    14275.0
+   ],
+   "length_m": 78,
+   "points": 36,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    4360.0,
+    14255.0
+   ],
+   "to_xy": [
+    4395.0,
+    14360.0
+   ],
+   "length_m": 111,
+   "points": 62,
+   "mean_inland_slope_pct": 1.0
+  },
+  {
+   "from_xy": [
+    3345.0,
+    14265.0
+   ],
+   "to_xy": [
+    3350.0,
+    14325.0
+   ],
+   "length_m": 60,
+   "points": 26,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    10235.0,
+    14300.0
+   ],
+   "to_xy": [
+    10100.0,
+    14370.0
+   ],
+   "length_m": 152,
+   "points": 92,
+   "mean_inland_slope_pct": 3.1
+  },
+  {
+   "from_xy": [
+    11710.0,
+    14295.0
+   ],
+   "to_xy": [
+    11730.0,
+    14430.0
+   ],
+   "length_m": 136,
+   "points": 64,
+   "mean_inland_slope_pct": 0.7
+  },
+  {
+   "from_xy": [
+    11615.0,
+    14325.0
+   ],
+   "to_xy": [
+    11555.0,
+    14435.0
+   ],
+   "length_m": 125,
+   "points": 40,
+   "mean_inland_slope_pct": 5.6
+  },
+  {
+   "from_xy": [
+    255.0,
+    14340.0
+   ],
+   "to_xy": [
+    5.0,
+    14625.0
+   ],
+   "length_m": 379,
+   "points": 166,
+   "mean_inland_slope_pct": 3.0
+  },
+  {
+   "from_xy": [
+    5165.0,
+    14340.0
+   ],
+   "to_xy": [
+    5155.0,
+    14380.0
+   ],
+   "length_m": 41,
+   "points": 14,
+   "mean_inland_slope_pct": 2.1
+  },
+  {
+   "from_xy": [
+    14770.0,
+    14345.0
+   ],
+   "to_xy": [
+    14920.0,
+    14615.0
+   ],
+   "length_m": 309,
+   "points": 188,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    2135.0,
+    14355.0
+   ],
+   "to_xy": [
+    2190.0,
+    14380.0
+   ],
+   "length_m": 60,
+   "points": 27,
+   "mean_inland_slope_pct": 4.1
+  },
+  {
+   "from_xy": [
+    8360.0,
+    14360.0
+   ],
+   "to_xy": [
+    8405.0,
+    14370.0
+   ],
+   "length_m": 46,
+   "points": 23,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    3360.0,
+    14385.0
+   ],
+   "to_xy": [
+    3305.0,
+    14400.0
+   ],
+   "length_m": 57,
+   "points": 26,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    3300.0,
+    14425.0
+   ],
+   "to_xy": [
+    3250.0,
+    14440.0
+   ],
+   "length_m": 52,
+   "points": 24,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    8635.0,
+    14420.0
+   ],
+   "to_xy": [
+    8605.0,
+    14560.0
+   ],
+   "length_m": 143,
+   "points": 70,
+   "mean_inland_slope_pct": 0.9
+  },
+  {
+   "from_xy": [
+    11685.0,
+    14595.0
+   ],
+   "to_xy": [
+    11815.0,
+    15760.0
+   ],
+   "length_m": 1172,
+   "points": 751,
+   "mean_inland_slope_pct": 6.4
+  },
+  {
+   "from_xy": [
+    4785.0,
+    14625.0
+   ],
+   "to_xy": [
+    4845.0,
+    14635.0
+   ],
+   "length_m": 61,
+   "points": 26,
+   "mean_inland_slope_pct": 0.3
+  },
+  {
+   "from_xy": [
+    15090.0,
+    14650.0
+   ],
+   "to_xy": [
+    14860.0,
+    14775.0
+   ],
+   "length_m": 262,
+   "points": 169,
+   "mean_inland_slope_pct": 3.2
+  },
+  {
+   "from_xy": [
+    4655.0,
+    14630.0
+   ],
+   "to_xy": [
+    5255.0,
+    14765.0
+   ],
+   "length_m": 615,
+   "points": 361,
+   "mean_inland_slope_pct": 3.9
+  },
+  {
+   "from_xy": [
+    15475.0,
+    14630.0
+   ],
+   "to_xy": [
+    15440.0,
+    14705.0
+   ],
+   "length_m": 83,
+   "points": 47,
+   "mean_inland_slope_pct": 2.7
+  },
+  {
+   "from_xy": [
+    14490.0,
+    14665.0
+   ],
+   "to_xy": [
+    14475.0,
+    14710.0
+   ],
+   "length_m": 47,
+   "points": 21,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    15530.0,
+    14675.0
+   ],
+   "to_xy": [
+    15575.0,
+    14695.0
+   ],
+   "length_m": 49,
+   "points": 20,
+   "mean_inland_slope_pct": 5.5
+  },
+  {
+   "from_xy": [
+    15590.0,
+    14705.0
+   ],
+   "to_xy": [
+    15655.0,
+    14725.0
+   ],
+   "length_m": 68,
+   "points": 28,
+   "mean_inland_slope_pct": 6.8
+  },
+  {
+   "from_xy": [
+    12330.0,
+    14795.0
+   ],
+   "to_xy": [
+    12350.0,
+    14835.0
+   ],
+   "length_m": 45,
+   "points": 21,
+   "mean_inland_slope_pct": 2.9
+  },
+  {
+   "from_xy": [
+    14760.0,
+    14800.0
+   ],
+   "to_xy": [
+    14740.0,
+    14920.0
+   ],
+   "length_m": 122,
+   "points": 65,
+   "mean_inland_slope_pct": 4.7
+  },
+  {
+   "from_xy": [
+    13280.0,
+    14855.0
+   ],
+   "to_xy": [
+    13645.0,
+    15180.0
+   ],
+   "length_m": 489,
+   "points": 263,
+   "mean_inland_slope_pct": 5.1
+  },
+  {
+   "from_xy": [
+    12390.0,
+    14905.0
+   ],
+   "to_xy": [
+    12405.0,
+    14975.0
+   ],
+   "length_m": 72,
+   "points": 35,
+   "mean_inland_slope_pct": 3.7
+  },
+  {
+   "from_xy": [
+    13390.0,
+    14955.0
+   ],
+   "to_xy": [
+    13320.0,
+    14980.0
+   ],
+   "length_m": 74,
+   "points": 32,
+   "mean_inland_slope_pct": 4.4
+  },
+  {
+   "from_xy": [
+    15120.0,
+    14985.0
+   ],
+   "to_xy": [
+    15050.0,
+    15065.0
+   ],
+   "length_m": 106,
+   "points": 53,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    13945.0,
+    14980.0
+   ],
+   "to_xy": [
+    13975.0,
+    15065.0
+   ],
+   "length_m": 90,
+   "points": 43,
+   "mean_inland_slope_pct": 1.9
+  },
+  {
+   "from_xy": [
+    8900.0,
+    15015.0
+   ],
+   "to_xy": [
+    9115.0,
+    15365.0
+   ],
+   "length_m": 411,
+   "points": 247,
+   "mean_inland_slope_pct": 6.0
+  },
+  {
+   "from_xy": [
+    14370.0,
+    15040.0
+   ],
+   "to_xy": [
+    14420.0,
+    15050.0
+   ],
+   "length_m": 51,
+   "points": 23,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    15040.0,
+    15115.0
+   ],
+   "to_xy": [
+    15015.0,
+    15150.0
+   ],
+   "length_m": 43,
+   "points": 14,
+   "mean_inland_slope_pct": 6.3
+  },
+  {
+   "from_xy": [
+    14560.0,
+    15240.0
+   ],
+   "to_xy": [
+    14240.0,
+    15415.0
+   ],
+   "length_m": 365,
+   "points": 196,
+   "mean_inland_slope_pct": 4.5
+  },
+  {
+   "from_xy": [
+    13705.0,
+    15230.0
+   ],
+   "to_xy": [
+    13725.0,
+    15290.0
+   ],
+   "length_m": 63,
+   "points": 28,
+   "mean_inland_slope_pct": 2.8
+  },
+  {
+   "from_xy": [
+    11640.0,
+    15340.0
+   ],
+   "to_xy": [
+    11560.0,
+    15375.0
+   ],
+   "length_m": 87,
+   "points": 55,
+   "mean_inland_slope_pct": 4.2
+  },
+  {
+   "from_xy": [
+    11615.0,
+    15490.0
+   ],
+   "to_xy": [
+    11810.0,
+    15575.0
+   ],
+   "length_m": 213,
+   "points": 104,
+   "mean_inland_slope_pct": 4.8
+  },
+  {
+   "from_xy": [
+    12710.0,
+    15470.0
+   ],
+   "to_xy": [
+    12745.0,
+    15550.0
+   ],
+   "length_m": 87,
+   "points": 37,
+   "mean_inland_slope_pct": 3.8
+  },
+  {
+   "from_xy": [
+    11935.0,
+    15515.0
+   ],
+   "to_xy": [
+    11970.0,
+    15685.0
+   ],
+   "length_m": 174,
+   "points": 81,
+   "mean_inland_slope_pct": 8.5
+  },
+  {
+   "from_xy": [
+    13905.0,
+    15550.0
+   ],
+   "to_xy": [
+    13920.0,
+    15590.0
+   ],
+   "length_m": 43,
+   "points": 20,
+   "mean_inland_slope_pct": 3.3
+  },
+  {
+   "from_xy": [
+    12415.0,
+    15685.0
+   ],
+   "to_xy": [
+    12760.0,
+    15705.0
+   ],
+   "length_m": 346,
+   "points": 206,
+   "mean_inland_slope_pct": 5.0
+  }
+ ],
+ "gate": null,
+ "moves": [],
+ "log": [
+  "road 5-12 -> 5-01 (op 5): rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 56002 m)",
+  "road 5-12 -> 5-01 (op 5): rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55956 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.22 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55838 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55791 m)",
+  "road 5-12 -> 5-01 (op 5): rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 56002 m)",
+  "road 5-12 -> 5-01 (op 5): rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55956 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.5 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.22 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55838 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55791 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.9 %, cut/fill 1.26 m, pad clash 0 [], junction step 1.23 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55674 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.7 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.99 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55629 m)",
+  "road 5-12 -> 5-01 (op 5): rejected (grade 11.3 %, cut/fill 1.31 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55998 m)",
+  "road 5-12 -> 5-01 (op 5): rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (1981, 10000) net level 1.0 m, road length 55985 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.0 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.4 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55836 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.7 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2131, 9967) net level 0.77 m, road length 55819 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.1 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.4 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55674 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 13.0 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2283, 9917) net level 1.01 m, road length 55656 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.3 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (2429, 9853) net level 1.87 m, road length 55513 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.6 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.02 m, water 0, house 1000000000.0 m, joins at (2429, 9853) net level 1.87 m, road length 55495 m)",
+  "road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.5 %, cut/fill 1.37 m, pad clash 0 [], junction step 0.58 m, water 0, house 1000000000.0 m, joins at (2733, 11760) net level 0.66 m, road length 52641 m)",
+  "road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.5 %, cut/fill 1.22 m, pad clash 0 [], junction step 0.55 m, water 0, house 1000000000.0 m, joins at (2733, 11760) net level 0.66 m, road length 52660 m)",
+  "road 5-12 -> op5:5-03-5-F.3: rejected (grade 12.8 %, cut/fill 1.36 m, pad clash 0 [], junction step 0.63 m, water 0, house 1000000000.0 m, joins at (2633, 12004) net level 3.65 m, road length 52372 m)",
+  "road 5-12 -> op5:5-03-5-F.3: rejected (grade 13.0 %, cut/fill 1.22 m, pad clash 0 [], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2633, 12004) net level 3.65 m, road length 52393 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 11.1 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 1.41 m, water 0, house 1000000000.0 m, joins at (2072, 9998) net level 0.84 m, road length 55907 m)",
+  "road 5-12 -> op5:5-01-5-F.3: rejected (grade 12.8 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.01 m, water 0, house 1000000000.0 m, joins at (2072, 9998) net level 0.84 m, road length 55887 m)",
+  "road 5-12 -> 5-F (op 5): rejected (grade 13.8 %, cut/fill 1.31 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2876, 10950) net level 6.25 m, road length 53492 m)",
+  "road 5-12 -> 5-F (op 5): rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.56 m, water 0, house 1000000000.0 m, joins at (2876, 10950) net level 6.25 m, road length 53479 m)",
+  "road 5-12 -> 5-F.3 (op 5): rejected (grade 11.0 %, cut/fill 1.55 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (2914, 10796) net level 5.75 m, road length 53654 m)",
+  "road 5-12 -> 5-F.3 (op 5): rejected (grade 13.1 %, cut/fill 1.55 m, pad clash 0 [], junction step 0.6 m, water 0, house 1000000000.0 m, joins at (2914, 10796) net level 5.75 m, road length 53642 m)",
+  "road 5-12 -> 5-F.2 (op 5): rejected (grade 12.8 %, cut/fill 1.37 m, pad clash 0 [], junction step 1.0 m, water 0, house 1000000000.0 m, joins at (2931, 11160) net level 2.75 m, road length 53285 m)",
+  "road 5-12 -> 5-F.2 (op 5): rejected (grade 12.7 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.92 m, water 0, house 1000000000.0 m, joins at (2931, 11160) net level 2.75 m, road length 53304 m)",
+  "road 5-12 -> op5:5-F.2-5-03: rejected (grade 12.4 %, cut/fill 1.38 m, pad clash 0 [], junction step 0.89 m, water 0, house 1000000000.0 m, joins at (2936, 11199) net level 1.16 m, road length 53251 m)",
+  "road 5-12 -> op5:5-F.2-5-03: rejected (grade 12.8 %, cut/fill 1.21 m, pad clash 0 [], junction step 1.21 m, water 0, house 1000000000.0 m, joins at (2936, 11199) net level 1.16 m, road length 53269 m)",
+  "road 5-12 -> op5:5-F.3-5-M1.2: rejected (grade 11.4 %, cut/fill 1.32 m, pad clash 4 ['5-12'], junction step 0.69 m, water 0, house 1000000000.0 m, joins at (3024, 10704) net level 6.91 m, road length 53839 m)",
+  "road 5-12 -> op5:5-F.3-5-M1.2: rejected (grade 12.9 %, cut/fill 1.21 m, pad clash 0 [], junction step 0.55 m, water 0, house 1000000000.0 m, joins at (3024, 10704) net level 6.91 m, road length 53830 m)",
+  "road for 5-12: NO ROUTE found to the 5-12 net"
+ ]
+}

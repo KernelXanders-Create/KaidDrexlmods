@@ -125,4 +125,15 @@ Script `build_pack_drop2_v10.py` builds pack v10 = pack v9 plus this cut. Pack v
 | Shape | Cut only. Within 40 m of the join, ground is held to no more than +0.66 m + 3 % of the distance (+1.86 m at 40 m). Ground is never raised, so the water line does not move | Reach and slope ASSUMED |
 | Size | Largest cut 0.59 m. 33 grid cells changed, 209 m³ | MEASURED |
 
-The re-run of 5-12 (module `op5h.py`, no ramp) on pack v10 is under way. Output goes to `planner_ops56_v9/op5_512`.
+### Re-run of 5-12 on pack v10 (69 min)
+
+Output in `planner_ops56_v9/op5_512` (module `op5h.py`, no ramp). **No road. The cut changed nothing**: all 34 tries are the same as on pack v7, with the same steps, joins and lengths. The best is still 0.55 m at (2733, 11760).
+
+Why (MEASURED from the code, `planner.py` `check_road`):
+- The junction step is not measured against the ground. It is the largest level difference over the grid points that both the new road's band (half width + 3.5 m, so 7 m) and the net road already fix.
+- The 5-12 road ends at the net level (+0.66 m) at the join. The net road there is flat: +0.65 to +0.73 m over 100 m (MEASURED).
+- On an external plan's road the planner gives no level landing. That landing (`relevel`) is only made for this op's own roads.
+
+Reading (AI): the new road probably climbs at about 12.5 % in its last few metres, inside the shared band. 0.55 m at 12.5 % is 4.4 m. The new road's levels at the join are NOT MEASURED, because the log does not keep a rejected road's points.
+
+Pack v10's cut stays in the ground log but did nothing for this run.
