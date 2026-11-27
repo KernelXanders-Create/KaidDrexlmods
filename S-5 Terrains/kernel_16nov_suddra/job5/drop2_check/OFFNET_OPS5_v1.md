@@ -33,7 +33,47 @@ Script: `offnet/offnet5.py`. Output: `offnet/offnet5_v1.json`. It uses the drop 
 - **5-M2.5:** it is in practice on the net: its walk is 80 m of dry ground, a little longer than the 21 m pad-to-pad gap in P10.
 - **5-12 and 5-13:** their AI are cut off from the net. Their droids stay where they are (X1, X2). Players can walk in to both without wading.
 
-## Decisions (Kernel)
+## All ops 3-6 (script `offnet/offnet36.py`, spec `offnet/offnet36_spec.json`)
+
+Run the same way on every pad in the final ops 3-6 plans that no road links. The checkpoints seated on trunks (3-M1.2, 3-M2.3) and the astride moves are left out.
+- Output: `offnet/offnet36_v1.json`, searched within a 3.5 km box round each pad.
+- The pads with no AI walk inside that box were run again within 9 km: `offnet/offnet36_ai9km_v1.json`.
+
+| Op | Pad | Players' walk (wade / low ground) | AI walk | Nearest boat water |
+|---|---|---|---|---|
+| 3 | 3-04 | 289 m (153 / 79) | 432 m | 345 m |
+| 3 | 3-04.2 | 493 m (158 / 158) | **none within 9 km** | 414 m |
+| 3 | 3-10 | 425 m (0 / 337) | **none within 9 km** | 542 m |
+| 3 | 3-10.2 | 257 m (0 / 257) | **none within 9 km** | 515 m |
+| 3 | 3-10.3 | 471 m (72 / 255) | **none within 9 km** | 448 m |
+| 3 | 3-11 | 747 m (0 / 0) | 747 m | 1,882 m |
+| 4 | 4-03, 4-03.2, 4-03.3 | 929-1,086 m (about 515 / 410) | 2,234-2,307 m | 411-454 m |
+| 4 | 4-05 | 1,184 m (104 / 464) | 3,041 m | 206 m |
+| 4 | 4-08 | 1,633 m (530 / 996) | 4,401 m | 204 m |
+| 4 | 4-09 | 5,365 m (2,054 / 2,202) | 17,700 m | 110 m |
+| 4 | 4-12 | 1,501 m (91 / 1,157) | 1,774 m | 166 m |
+| 4 | **4-F** (final) | 1,691 m (371 / 562) | **none within 9 km** | 55 m |
+| 4 | 4-M1, 4-M1.3, 4-M1.5 | 7,753-7,860 m (about 2,100 / 3,650) | 19,158-19,590 m | 266-473 m |
+| 4 | 4-M2.2 | 3,843 m (231 / 2,716) | 5,441 m | 4 m |
+| 5 | 5-02 | 1,016 m (676 / 124) | 1,298 m | 1,857 m |
+| 5 | 5-04 | 1,474 m (0 / 674) | 1,821 m | 152 m |
+| 5 | 5-05, 5-05.2, 5-05.3 | 2,732-2,848 m (128 / 2,318) | 6,313-6,413 m | 633-703 m |
+| 5 | 5-M2 | 23 m (0 / 0) | 23 m | 93 m |
+| 5 | 5-M2.5 | 80 m (0 / 0) | 80 m | 56 m |
+| 5 | 5-12, 5-13 | see above | none within 3.5 km | see above |
+| 6 | 6-M3 | 1,120 m (0 / 816) | 1,270 m | 309 m |
+| 6 | 6-M3.2 | 1,810 m (1,084 / 572) | **none within 9 km** | 116 m |
+
+Reading (AI):
+- Every pad can be walked to by players.
+- The AI are cut off at 3-04.2, the three 3-10 pads, the final 4-F, and 6-M3.2, as well as at 5-12 and 5-13.
+- The 4-M1 village and 4-09 have AI walks, but they run 17-19 km against about 5 km straight, so reinforcing them on foot is slow.
+
+| # | Finding | Answer | source |
+|---|---|---|---|
+| X3 | No AI walk to the net within 9 km for 3-04.2, 3-10, 3-10.2, 3-10.3, 4-F (final) and 6-M3.2. The AI walks to 4-M1 and 4-09 are 17-19 km | a Accept all: the droids at those sites stay where they are; players walk in. Recorded as a known limit | HUMAN |
+
+## Decisions (Kernel), op 5
 
 | # | Finding | Answer | source |
 |---|---|---|---|

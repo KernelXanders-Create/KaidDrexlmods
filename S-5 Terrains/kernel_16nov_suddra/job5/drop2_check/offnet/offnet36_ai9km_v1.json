@@ -1,0 +1,233 @@
+{
+ "3-04.2": {
+  "op": "3",
+  "pad": [
+   12770.0,
+   4240.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 414,
+   "boat_cell": [
+    12840,
+    4648
+   ],
+   "that_cell_to_road_m": 480
+  }
+ },
+ "3-10": {
+  "op": "3",
+  "pad": [
+   14000.0,
+   6430.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 542,
+   "boat_cell": [
+    13768,
+    6920
+   ],
+   "that_cell_to_road_m": 872
+  }
+ },
+ "3-10.2": {
+  "op": "3",
+  "pad": [
+   14170.0,
+   6430.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 515,
+   "boat_cell": [
+    14264,
+    6936
+   ],
+   "that_cell_to_road_m": 516
+  }
+ },
+ "3-10.3": {
+  "op": "3",
+  "pad": [
+   14000.0,
+   6535.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 448,
+   "boat_cell": [
+    13800,
+    6936
+   ],
+   "that_cell_to_road_m": 853
+  }
+ },
+ "4-09": {
+  "op": "4",
+  "pad": [
+   4350.0,
+   9750.0
+  ],
+  "AI": {
+   "length_m": 17700,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9600,
+    9704
+   ],
+   "straight_m": 5250
+  },
+  "boat": {
+   "nearest_boat_water_m": 110,
+   "boat_cell": [
+    4240,
+    9752
+   ],
+   "that_cell_to_road_m": 2764
+  }
+ },
+ "4-F": {
+  "op": "4",
+  "pad": [
+   10460.0,
+   7335.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 55,
+   "boat_cell": [
+    10488,
+    7288
+   ],
+   "that_cell_to_road_m": 1533
+  }
+ },
+ "4-M1": {
+  "op": "4",
+  "pad": [
+   5190.0,
+   7790.0
+  ],
+  "AI": {
+   "length_m": 19376,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9600,
+    9704
+   ],
+   "straight_m": 4807
+  },
+  "boat": {
+   "nearest_boat_water_m": 473,
+   "boat_cell": [
+    5656,
+    7872
+   ],
+   "that_cell_to_road_m": 1107
+  }
+ },
+ "4-M1.3": {
+  "op": "4",
+  "pad": [
+   4780.0,
+   7655.0
+  ],
+  "AI": {
+   "length_m": 19158,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9600,
+    9704
+   ],
+   "straight_m": 5237
+  },
+  "boat": {
+   "nearest_boat_water_m": 266,
+   "boat_cell": [
+    4704,
+    7400
+   ],
+   "that_cell_to_road_m": 1676
+  }
+ },
+ "4-M1.5": {
+  "op": "4",
+  "pad": [
+   5240.0,
+   7965.0
+  ],
+  "AI": {
+   "length_m": 19590,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9600,
+    9704
+   ],
+   "straight_m": 4694
+  },
+  "boat": {
+   "nearest_boat_water_m": 401,
+   "boat_cell": [
+    5640,
+    7992
+   ],
+   "that_cell_to_road_m": 1072
+  }
+ },
+ "4-M2.2": {
+  "op": "4",
+  "pad": [
+   8320.0,
+   6900.0
+  ],
+  "AI": {
+   "length_m": 5441,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-07-4-01",
+   "at": [
+    5528,
+    3024
+   ],
+   "straight_m": 4777
+  },
+  "boat": {
+   "nearest_boat_water_m": 4,
+   "boat_cell": [
+    8320,
+    6896
+   ],
+   "that_cell_to_road_m": 362
+  }
+ },
+ "6-M3.2": {
+  "op": "6",
+  "pad": [
+   13080.0,
+   9405.0
+  ],
+  "AI": "NO WALK to the road net within 9 km",
+  "boat": {
+   "nearest_boat_water_m": 116,
+   "boat_cell": [
+    13184,
+    9456
+   ],
+   "that_cell_to_road_m": 1288
+  }
+ }
+}

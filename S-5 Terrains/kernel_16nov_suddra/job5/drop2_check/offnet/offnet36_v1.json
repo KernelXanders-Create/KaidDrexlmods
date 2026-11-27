@@ -1,0 +1,934 @@
+{
+ "3-04": {
+  "op": "3",
+  "pad": [
+   12600.0,
+   4400.0
+  ],
+  "players": {
+   "length_m": 289,
+   "wade_m": 153,
+   "low_not_water_m": 79,
+   "lowest_ground_m": -0.67,
+   "reaches": "3-07-3-M2.4",
+   "at": [
+    12360,
+    4592
+   ],
+   "straight_m": 307
+  },
+  "AI": {
+   "length_m": 432,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.58,
+   "reaches": "3-07-3-M2.4",
+   "at": [
+    12240,
+    4360
+   ],
+   "straight_m": 362
+  },
+  "boat": {
+   "nearest_boat_water_m": 345,
+   "boat_cell": [
+    12840,
+    4648
+   ],
+   "that_cell_to_road_m": 480
+  }
+ },
+ "3-04.2": {
+  "op": "3",
+  "pad": [
+   12770.0,
+   4240.0
+  ],
+  "players": {
+   "length_m": 493,
+   "wade_m": 158,
+   "low_not_water_m": 158,
+   "lowest_ground_m": -0.67,
+   "reaches": "3-07-3-M2.4",
+   "at": [
+    12360,
+    4592
+   ],
+   "straight_m": 540
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 414,
+   "boat_cell": [
+    12840,
+    4648
+   ],
+   "that_cell_to_road_m": 480
+  }
+ },
+ "3-10": {
+  "op": "3",
+  "pad": [
+   14000.0,
+   6430.0
+  ],
+  "players": {
+   "length_m": 425,
+   "wade_m": 0,
+   "low_not_water_m": 337,
+   "lowest_ground_m": 0.15,
+   "reaches": "3-M3-3-M1",
+   "at": [
+    14456,
+    6320
+   ],
+   "straight_m": 469
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 542,
+   "boat_cell": [
+    13768,
+    6920
+   ],
+   "that_cell_to_road_m": 872
+  }
+ },
+ "3-10.2": {
+  "op": "3",
+  "pad": [
+   14170.0,
+   6430.0
+  ],
+  "players": {
+   "length_m": 257,
+   "wade_m": 0,
+   "low_not_water_m": 257,
+   "lowest_ground_m": 0.14,
+   "reaches": "3-M3-3-M1",
+   "at": [
+    14456,
+    6320
+   ],
+   "straight_m": 306
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 515,
+   "boat_cell": [
+    14264,
+    6936
+   ],
+   "that_cell_to_road_m": 516
+  }
+ },
+ "3-10.3": {
+  "op": "3",
+  "pad": [
+   14000.0,
+   6535.0
+  ],
+  "players": {
+   "length_m": 471,
+   "wade_m": 72,
+   "low_not_water_m": 255,
+   "lowest_ground_m": -0.6,
+   "reaches": "3-M3-3-M1",
+   "at": [
+    14496,
+    6448
+   ],
+   "straight_m": 504
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 448,
+   "boat_cell": [
+    13800,
+    6936
+   ],
+   "that_cell_to_road_m": 853
+  }
+ },
+ "3-11": {
+  "op": "3",
+  "pad": [
+   15600.0,
+   600.0
+  ],
+  "players": {
+   "length_m": 747,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 5.8,
+   "reaches": "trunk-101:1-F FOB-3-M1",
+   "at": [
+    15056,
+    1144
+   ],
+   "straight_m": 769
+  },
+  "AI": {
+   "length_m": 747,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 5.8,
+   "reaches": "trunk-101:1-F FOB-3-M1",
+   "at": [
+    15056,
+    1144
+   ],
+   "straight_m": 769
+  },
+  "boat": {
+   "nearest_boat_water_m": 1882,
+   "boat_cell": [
+    15000,
+    2384
+   ],
+   "that_cell_to_road_m": 659
+  }
+ },
+ "4-03": {
+  "op": "4",
+  "pad": [
+   11200.0,
+   8200.0
+  ],
+  "players": {
+   "length_m": 1003,
+   "wade_m": 520,
+   "low_not_water_m": 403,
+   "lowest_ground_m": -0.74,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    11464,
+    9152
+   ],
+   "straight_m": 988
+  },
+  "AI": {
+   "length_m": 2244,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.54,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9512,
+    9488
+   ],
+   "straight_m": 2123
+  },
+  "boat": {
+   "nearest_boat_water_m": 436,
+   "boat_cell": [
+    11632,
+    8256
+   ],
+   "that_cell_to_road_m": 278
+  }
+ },
+ "4-03.2": {
+  "op": "4",
+  "pad": [
+   11200.0,
+   8115.0
+  ],
+  "players": {
+   "length_m": 1086,
+   "wade_m": 515,
+   "low_not_water_m": 411,
+   "lowest_ground_m": -0.74,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    11464,
+    9152
+   ],
+   "straight_m": 1070
+  },
+  "AI": {
+   "length_m": 2234,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9512,
+    9488
+   ],
+   "straight_m": 2176
+  },
+  "boat": {
+   "nearest_boat_water_m": 454,
+   "boat_cell": [
+    11632,
+    8256
+   ],
+   "that_cell_to_road_m": 278
+  }
+ },
+ "4-03.3": {
+  "op": "4",
+  "pad": [
+   11200.0,
+   8280.0
+  ],
+  "players": {
+   "length_m": 929,
+   "wade_m": 510,
+   "low_not_water_m": 411,
+   "lowest_ground_m": -0.74,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    11464,
+    9152
+   ],
+   "straight_m": 911
+  },
+  "AI": {
+   "length_m": 2307,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.54,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9512,
+    9488
+   ],
+   "straight_m": 2076
+  },
+  "boat": {
+   "nearest_boat_water_m": 411,
+   "boat_cell": [
+    11600,
+    8376
+   ],
+   "that_cell_to_road_m": 238
+  }
+ },
+ "4-05": {
+  "op": "4",
+  "pad": [
+   10845.0,
+   6370.0
+  ],
+  "players": {
+   "length_m": 1184,
+   "wade_m": 104,
+   "low_not_water_m": 464,
+   "lowest_ground_m": -0.59,
+   "reaches": "4-M4-4-04",
+   "at": [
+    12128,
+    6280
+   ],
+   "straight_m": 1286
+  },
+  "AI": {
+   "length_m": 3041,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.54,
+   "reaches": "4-M4-4-04",
+   "at": [
+    12136,
+    4144
+   ],
+   "straight_m": 2573
+  },
+  "boat": {
+   "nearest_boat_water_m": 206,
+   "boat_cell": [
+    10832,
+    6576
+   ],
+   "that_cell_to_road_m": 1287
+  }
+ },
+ "4-08": {
+  "op": "4",
+  "pad": [
+   6200.0,
+   9000.0
+  ],
+  "players": {
+   "length_m": 1633,
+   "wade_m": 530,
+   "low_not_water_m": 996,
+   "lowest_ground_m": -0.72,
+   "reaches": "4-02.2-4-M3.2",
+   "at": [
+    6816,
+    8248
+   ],
+   "straight_m": 972
+  },
+  "AI": {
+   "length_m": 4401,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9576,
+    9656
+   ],
+   "straight_m": 3439
+  },
+  "boat": {
+   "nearest_boat_water_m": 204,
+   "boat_cell": [
+    6112,
+    8816
+   ],
+   "that_cell_to_road_m": 684
+  }
+ },
+ "4-09": {
+  "op": "4",
+  "pad": [
+   4350.0,
+   9750.0
+  ],
+  "players": {
+   "length_m": 5365,
+   "wade_m": 2054,
+   "low_not_water_m": 2202,
+   "lowest_ground_m": -0.78,
+   "reaches": "4-02.2-4-M3.2",
+   "at": [
+    6816,
+    8248
+   ],
+   "straight_m": 2887
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 110,
+   "boat_cell": [
+    4240,
+    9752
+   ],
+   "that_cell_to_road_m": 2764
+  }
+ },
+ "4-12": {
+  "op": "4",
+  "pad": [
+   13560.0,
+   7090.0
+  ],
+  "players": {
+   "length_m": 1501,
+   "wade_m": 91,
+   "low_not_water_m": 1157,
+   "lowest_ground_m": -0.2,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    12664,
+    8136
+   ],
+   "straight_m": 1377
+  },
+  "AI": {
+   "length_m": 1774,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.53,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    12656,
+    8168
+   ],
+   "straight_m": 1407
+  },
+  "boat": {
+   "nearest_boat_water_m": 166,
+   "boat_cell": [
+    13640,
+    6944
+   ],
+   "that_cell_to_road_m": 1349
+  }
+ },
+ "4-F": {
+  "op": "4",
+  "pad": [
+   10460.0,
+   7335.0
+  ],
+  "players": {
+   "length_m": 1691,
+   "wade_m": 371,
+   "low_not_water_m": 562,
+   "lowest_ground_m": -0.69,
+   "reaches": "4-10-4-M3.3",
+   "at": [
+    9320,
+    8592
+   ],
+   "straight_m": 1697
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 55,
+   "boat_cell": [
+    10488,
+    7288
+   ],
+   "that_cell_to_road_m": 1533
+  }
+ },
+ "4-M1": {
+  "op": "4",
+  "pad": [
+   5190.0,
+   7790.0
+  ],
+  "players": {
+   "length_m": 7753,
+   "wade_m": 2139,
+   "low_not_water_m": 3629,
+   "lowest_ground_m": -0.78,
+   "reaches": "4-02.2-4-M3.2",
+   "at": [
+    6816,
+    8248
+   ],
+   "straight_m": 1689
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 473,
+   "boat_cell": [
+    5656,
+    7872
+   ],
+   "that_cell_to_road_m": 1107
+  }
+ },
+ "4-M1.3": {
+  "op": "4",
+  "pad": [
+   4780.0,
+   7655.0
+  ],
+  "players": {
+   "length_m": 7797,
+   "wade_m": 2066,
+   "low_not_water_m": 3600,
+   "lowest_ground_m": -0.78,
+   "reaches": "4-02.2-4-M3.2",
+   "at": [
+    6816,
+    8248
+   ],
+   "straight_m": 2121
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 266,
+   "boat_cell": [
+    4704,
+    7400
+   ],
+   "that_cell_to_road_m": 1676
+  }
+ },
+ "4-M1.5": {
+  "op": "4",
+  "pad": [
+   5240.0,
+   7965.0
+  ],
+  "players": {
+   "length_m": 7860,
+   "wade_m": 2150,
+   "low_not_water_m": 3733,
+   "lowest_ground_m": -0.78,
+   "reaches": "4-02.2-4-M3.2",
+   "at": [
+    6816,
+    8248
+   ],
+   "straight_m": 1601
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 401,
+   "boat_cell": [
+    5640,
+    7992
+   ],
+   "that_cell_to_road_m": 1072
+  }
+ },
+ "4-M2.2": {
+  "op": "4",
+  "pad": [
+   8320.0,
+   6900.0
+  ],
+  "players": {
+   "length_m": 3843,
+   "wade_m": 231,
+   "low_not_water_m": 2716,
+   "lowest_ground_m": -0.67,
+   "reaches": "4-07-4-01",
+   "at": [
+    8272,
+    4296
+   ],
+   "straight_m": 2604
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 4,
+   "boat_cell": [
+    8320,
+    6896
+   ],
+   "that_cell_to_road_m": 362
+  }
+ },
+ "5-02": {
+  "op": "5",
+  "pad": [
+   1400.0,
+   12000.0
+  ],
+  "players": {
+   "length_m": 1016,
+   "wade_m": 676,
+   "low_not_water_m": 124,
+   "lowest_ground_m": -0.74,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    2248,
+    12752
+   ],
+   "straight_m": 1133
+  },
+  "AI": {
+   "length_m": 1298,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.51,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    2160,
+    12936
+   ],
+   "straight_m": 1206
+  },
+  "boat": {
+   "nearest_boat_water_m": 1857,
+   "boat_cell": [
+    3152,
+    11384
+   ],
+   "that_cell_to_road_m": 266
+  }
+ },
+ "5-04": {
+  "op": "5",
+  "pad": [
+   5000.0,
+   12400.0
+  ],
+  "players": {
+   "length_m": 1474,
+   "wade_m": 0,
+   "low_not_water_m": 674,
+   "lowest_ground_m": 0.11,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6128,
+    13432
+   ],
+   "straight_m": 1529
+  },
+  "AI": {
+   "length_m": 1821,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.54,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6400,
+    13120
+   ],
+   "straight_m": 1574
+  },
+  "boat": {
+   "nearest_boat_water_m": 152,
+   "boat_cell": [
+    5000,
+    12552
+   ],
+   "that_cell_to_road_m": 1170
+  }
+ },
+ "5-05": {
+  "op": "5",
+  "pad": [
+   5730.0,
+   10100.0
+  ],
+  "players": {
+   "length_m": 2828,
+   "wade_m": 128,
+   "low_not_water_m": 2318,
+   "lowest_ground_m": -0.68,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6680,
+    11680
+   ],
+   "straight_m": 1844
+  },
+  "AI": {
+   "length_m": 6406,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6952,
+    12048
+   ],
+   "straight_m": 2300
+  },
+  "boat": {
+   "nearest_boat_water_m": 633,
+   "boat_cell": [
+    5352,
+    9592
+   ],
+   "that_cell_to_road_m": 1798
+  }
+ },
+ "5-05.2": {
+  "op": "5",
+  "pad": [
+   5730.0,
+   10185.0
+  ],
+  "players": {
+   "length_m": 2848,
+   "wade_m": 128,
+   "low_not_water_m": 2318,
+   "lowest_ground_m": -0.68,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6680,
+    11680
+   ],
+   "straight_m": 1771
+  },
+  "AI": {
+   "length_m": 6413,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6952,
+    12048
+   ],
+   "straight_m": 2228
+  },
+  "boat": {
+   "nearest_boat_water_m": 703,
+   "boat_cell": [
+    5352,
+    9592
+   ],
+   "that_cell_to_road_m": 1798
+  }
+ },
+ "5-05.3": {
+  "op": "5",
+  "pad": [
+   5840.0,
+   10095.0
+  ],
+  "players": {
+   "length_m": 2732,
+   "wade_m": 128,
+   "low_not_water_m": 2318,
+   "lowest_ground_m": -0.68,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6680,
+    11680
+   ],
+   "straight_m": 1794
+  },
+  "AI": {
+   "length_m": 6313,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.5,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    6952,
+    12048
+   ],
+   "straight_m": 2247
+  },
+  "boat": {
+   "nearest_boat_water_m": 701,
+   "boat_cell": [
+    5352,
+    9592
+   ],
+   "that_cell_to_road_m": 1798
+  }
+ },
+ "5-M2": {
+  "op": "5",
+  "pad": [
+   3320.0,
+   12600.0
+  ],
+  "players": {
+   "length_m": 23,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3368,
+    12648
+   ],
+   "straight_m": 68
+  },
+  "AI": {
+   "length_m": 23,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3368,
+    12648
+   ],
+   "straight_m": 68
+  },
+  "boat": {
+   "nearest_boat_water_m": 93,
+   "boat_cell": [
+    3240,
+    12552
+   ],
+   "that_cell_to_road_m": 163
+  }
+ },
+ "5-M2.5": {
+  "op": "5",
+  "pad": [
+   3385.0,
+   12520.0
+  ],
+  "players": {
+   "length_m": 80,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3392,
+    12632
+   ],
+   "straight_m": 112
+  },
+  "AI": {
+   "length_m": 80,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3392,
+    12632
+   ],
+   "straight_m": 112
+  },
+  "boat": {
+   "nearest_boat_water_m": 56,
+   "boat_cell": [
+    3424,
+    12480
+   ],
+   "that_cell_to_road_m": 156
+  }
+ },
+ "6-M3": {
+  "op": "6",
+  "pad": [
+   12800.0,
+   10000.0
+  ],
+  "players": {
+   "length_m": 1120,
+   "wade_m": 0,
+   "low_not_water_m": 816,
+   "lowest_ground_m": 0.12,
+   "reaches": "6-12-6-01.2",
+   "at": [
+    11616,
+    10064
+   ],
+   "straight_m": 1186
+  },
+  "AI": {
+   "length_m": 1270,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.51,
+   "reaches": "6-12-6-01.2",
+   "at": [
+    11648,
+    10200
+   ],
+   "straight_m": 1169
+  },
+  "boat": {
+   "nearest_boat_water_m": 309,
+   "boat_cell": [
+    13096,
+    9912
+   ],
+   "that_cell_to_road_m": 1390
+  }
+ },
+ "6-M3.2": {
+  "op": "6",
+  "pad": [
+   13080.0,
+   9405.0
+  ],
+  "players": {
+   "length_m": 1810,
+   "wade_m": 1084,
+   "low_not_water_m": 572,
+   "lowest_ground_m": -0.86,
+   "reaches": "6-12-6-01.2",
+   "at": [
+    11608,
+    9632
+   ],
+   "straight_m": 1489
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 116,
+   "boat_cell": [
+    13184,
+    9456
+   ],
+   "that_cell_to_road_m": 1288
+  }
+ }
+}
