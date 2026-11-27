@@ -67,6 +67,14 @@ These five sites have no road by an earlier decision. This reading is AI.
 
 3-F SW; 3-M1 both; 3-M2 SW; 3-M3 both; 3-M4 E; 4-M2 SSW; 4-M3 both; 4-M4 WSW; 5-F both; 5-M1 SW; 5-M2 NNE; 5-M3 ESE; 6-M2 S; 6-M4 N.
 
+## A2 ground check: 3-F west side (ground v5, MEASURED)
+
+- **The line checked:** the straight line from 3-F (13200, 2600) to 3-M2 (11645, 3390). It is 1,744 m long, at a bearing of 297°.
+- **Wet ground:** 1,290 m of it is at or below +0.3 m, in one main stretch from 175 m to 1,215 m out, going down to −2.72 m. Lines 150 m either side are just as wet, with 1,020 m and 1,270 m of wet ground.
+- **Slope:** not the cause. On the centre line the worst 10 m grade is 10.6 %.
+- **Pads:** none in the way.
+- **Reading (AI):** a road on the W side would have to cross about 1 km of water. Under ops 3-4 v1 decision 1, roads stay on dry ground only, so that decision is why no road leaves 3-F on the W side.
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |
