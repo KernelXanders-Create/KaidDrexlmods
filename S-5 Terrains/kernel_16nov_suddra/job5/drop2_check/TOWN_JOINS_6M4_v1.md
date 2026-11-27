@@ -46,8 +46,20 @@ Script: `town64/town64.py`. Output: `town64/town64_v1.json`. Numbers are MEASURE
 | Road level there | +0.69 m (ground +0.82 m) |
 | The N gun position (call 27) | stands by this road at the town edge; its spot is NOT MEASURED |
 
+## T2: the SSW road is a shore stub with a K1 boat landing (MEASURED, script `town64/town64_t2.py`)
+
+| Item | Value |
+|---|---|
+| Stub | 194 m from the town point at 214°, ground +0.54 to +0.88 m, worst 10 m grade 1.1 %. It runs inside the town, so most of it is town street (AI reading) |
+| Landing top (+0.5 m) | (13492, 11039) |
+| Ground at −1.5 m | (13485, 11030), 11 m beyond the top: a natural bank of about 1:5.5 |
+| K1 boat landing | Graded beach from −1.5 m to +0.5 m at 1:6, 12 m wide, so a 12 m run. The bank is already close to that, so little grading is needed (AI reading; the cut / fill is NOT MEASURED) |
+| Faces | 6-M3 Tank Laager across the water, along the stub's line (214°) |
+| The FOB and SSW gun position (call 27) | They stand by the stub on the south edge. Their spots are NOT MEASURED. The rise ends 5 m short of the water here, so a pad edge 10 m clear of the +0.3 m line has to stand back from the shore (AI reading) |
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |
 |---|---|---|---|
 | T1 | North road: due N crosses 380 m of water | a Use the planned 6-M4 → 6-11 road (NE, 41°) as the north road; it joins at the town edge and the N gun position stands by it | HUMAN |
+| T2 | SSW road: water 5 m past the town edge; 6-M3 off the net | a Shore stub from the town to a K1 boat landing toward 6-M3; the FOB and gun position stand by it | HUMAN |
