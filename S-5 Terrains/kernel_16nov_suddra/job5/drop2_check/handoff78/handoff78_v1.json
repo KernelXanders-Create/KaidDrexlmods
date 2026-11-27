@@ -1,0 +1,174 @@
+{
+ "roads_near": [
+  {
+   "op": 5,
+   "road": "5-03-5-F.3",
+   "site": "7-08",
+   "site_name": "Moraine Spring Post",
+   "member": "sketch point",
+   "closest_xy": [
+    5865,
+    13725
+   ],
+   "road_level_m": 8.31,
+   "centre_dist_m": 292.8,
+   "band_edge_dist_m": 285.8
+  },
+  {
+   "op": 5,
+   "road": "5-03-5-F.3",
+   "site": "8-05",
+   "site_name": "Water Tower Overwatch",
+   "member": "sketch point",
+   "closest_xy": [
+    4987,
+    14643
+   ],
+   "road_level_m": 1.44,
+   "centre_dist_m": 243.0,
+   "band_edge_dist_m": 236.0
+  },
+  {
+   "op": 6,
+   "road": "6-02-6-M2",
+   "site": "7-M2",
+   "site_name": "Rail Junction Yard",
+   "member": "CIS Medium Logistics Base with GPs",
+   "closest_xy": [
+    11519,
+    13711
+   ],
+   "road_level_m": 1.43,
+   "centre_dist_m": 70.1,
+   "band_edge_dist_m": 63.1
+  },
+  {
+   "op": 6,
+   "road": "6-02-6-M2",
+   "site": "7-M2",
+   "site_name": "Rail Junction Yard",
+   "member": "CIS Turbolaser Tower with GPs",
+   "closest_xy": [
+    11558,
+    13797
+   ],
+   "road_level_m": 0.39,
+   "centre_dist_m": 147.0,
+   "band_edge_dist_m": 140.0
+  },
+  {
+   "op": 6,
+   "road": "6-02-6-M2",
+   "site": "7-M2",
+   "site_name": "Rail Junction Yard",
+   "member": "CIS Landing Position with GPs",
+   "closest_xy": [
+    11628,
+    13906
+   ],
+   "road_level_m": 0.4,
+   "centre_dist_m": 102.7,
+   "band_edge_dist_m": 95.7
+  },
+  {
+   "op": 6,
+   "road": "6-02-6-M2",
+   "site": "7-10",
+   "site_name": "Comms Mast",
+   "member": "sketch point",
+   "closest_xy": [
+    12223,
+    12352
+   ],
+   "road_level_m": 5.57,
+   "centre_dist_m": 269.9,
+   "band_edge_dist_m": 262.9
+  },
+  {
+   "op": 6,
+   "road": "6-11-6-02",
+   "site": "7-05",
+   "site_name": "Reserve Camp",
+   "member": "sketch point",
+   "closest_xy": [
+    12688,
+    13108
+   ],
+   "road_level_m": 9.49,
+   "centre_dist_m": 144.4,
+   "band_edge_dist_m": 137.4
+  },
+  {
+   "op": 6,
+   "road": "6-11-6-02",
+   "site": "7-10",
+   "site_name": "Comms Mast",
+   "member": "sketch point",
+   "closest_xy": [
+    12254,
+    12290
+   ],
+   "road_level_m": 8.05,
+   "centre_dist_m": 269.7,
+   "band_edge_dist_m": 262.7
+  },
+  {
+   "op": 6,
+   "road": "6-08-6-11",
+   "site": "7-05",
+   "site_name": "Reserve Camp",
+   "member": "sketch point",
+   "closest_xy": [
+    12531,
+    13262
+   ],
+   "road_level_m": 1.01,
+   "centre_dist_m": 275.6,
+   "band_edge_dist_m": 268.6
+  },
+  {
+   "op": 6,
+   "road": "6-08-6-11",
+   "site": "8-02",
+   "site_name": "Supply Railhead",
+   "member": "sketch point",
+   "closest_xy": [
+    12023,
+    15359
+   ],
+   "road_level_m": 0.99,
+   "centre_dist_m": 46.8,
+   "band_edge_dist_m": 39.8
+  },
+  {
+   "op": 6,
+   "road": "6-08-6-11",
+   "site": "8-04",
+   "site_name": "Fuel Tanks",
+   "member": "sketch point",
+   "closest_xy": [
+    12902,
+    14926
+   ],
+   "road_level_m": 11.94,
+   "centre_dist_m": 123.0,
+   "band_edge_dist_m": 116.0
+  }
+ ],
+ "start": {
+  "op7_start": [
+   10400,
+   10400
+  ],
+  "nearest_road": {
+   "op": 6,
+   "road": "6-M1.2-6-M1",
+   "xy": [
+    10425,
+    10404
+   ],
+   "level_m": 0.75,
+   "dist_m": 25
+  }
+ }
+}
