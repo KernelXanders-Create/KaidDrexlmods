@@ -16,3 +16,4 @@ SITE_JMAX = {"5-12": 0.6}          # planner v3 P9 (HUMAN): ramp piece at the 5-
 # planner v3 P12 (HUMAN): narrow the search to the best junctions of the last run, with a 6 km margin
 JOIN_ONLY = ("op5:5-03-5-F.3", "op5:5-F.3-5-M1.2", "5-F (op 5)")
 SITE_MARGIN = {"5-12": 6000}
+SITE_MARGIN = {"5-12": 16000}      # planner v3 P13 (HUMAN): back to the 16 km margin, joins still narrowed

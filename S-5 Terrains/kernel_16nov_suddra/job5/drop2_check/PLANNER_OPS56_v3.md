@@ -72,3 +72,4 @@ The 0.6 m ramp allowance (P9) was never tested, because no path reached a juncti
 | P10 | 5-02 and 5-M2.5 no road (the router found no dry path to either, with every edge tried) | a Both foot / boat / air. 5-M2.5 gets a 21 m foot link to 5-M2.2 (like P3) | HUMAN |
 | P11 | 5-03 → 5-F.3 still 11.5 km (3.1× the straight line) after P6 | a Accept it, like the long dry routes in ops 3-4 (v1 decision 1) | HUMAN |
 | P12 | 5-12 re-run with the ramp stopped at the 2-hour limit (no output) | a Narrow the search: join only the 5-03 → 5-F.3 road, the 5-F.3 → 5-M1.2 road or the 5-F pad, with a 6 km margin, then re-run | HUMAN |
+| P13 | 5-12 narrowed re-run: no path inside the 6 km margin (ASSUMED by me, too small) | a Keep the three joins, go back to the 16 km margin, stop at 115 min | HUMAN |
