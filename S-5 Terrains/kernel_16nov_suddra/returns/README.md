@@ -11,5 +11,7 @@
 | `SUDDRA_KERNEL_SCRIPTS_OPS36_DROP2_v1.zip` | Scripts behind the ops 3-6 return | planner and op modules, pack builders base to v10 with their inputs, the ops 5-8, approaches, town and hand-off checks; how each pack and plan was run (v1, 27 Nov). The one zip here with scripts |
 | `SUDDRA_KERNEL_RETURN_OPS36_DROP2_v2.zip` | Ops 3-6 on the drop 2 ground | replaces v1: adds the 6-M4 FOB and gun seats (G1); op 5-6 plan files carry the reviewed approaches (v2, 27 Nov) |
 | `SUDDRA_KERNEL_SCRIPTS_OPS36_DROP2_v2.zip` | Scripts behind the ops 3-6 return | replaces v1: adds the reviewed approaches module and the 6-M4 guard seat script (v2, 27 Nov) |
+| `SUDDRA_KERNEL_RETURN_OPS36_DROP2_v3.zip` | Ops 3-6 on the drop 2 ground | replaces v2: adds the 5-13 hamlet point, stubs and guards (H1-H3), the house fit, and the AI and player ways in for every off-net pad (X1-X3) (v3, 27 Nov) |
+| `SUDDRA_KERNEL_SCRIPTS_OPS36_DROP2_v3.zip` | Scripts behind the ops 3-6 return | replaces v2: adds the 5-13 hamlet, house fit and ways-in scripts (v3, 27 Nov) |
 
 Each zip has its own README on top. Data and proposals only; no scripts.
