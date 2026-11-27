@@ -7,5 +7,6 @@
 | `SUDDRA_KERNEL_RETURN_JOB3.zip` | JOB_3 water and stilt kit | all ten pieces drafted (v1); class names to confirm in the editor; no engine tests run |
 | `SUDDRA_KERNEL_RETURN_JOB4_v1.zip` | JOB_4 new builds | NEW 1 Cauldron Refinery full spec (v1); NEW 2 Moraine Citadel outline (v1) |
 | `SUDDRA_KERNEL_RETURN_JOB5_v1.zip` | JOB_5 ops 5-8, coverage, parity | ops 5-8 to the site rules at sketch level; coverage grid and map; parity with fixes (v1) |
+| `SUDDRA_KERNEL_RETURN_OPS36_DROP2_v1.zip` | Ops 3-6 on the drop 2 ground | final planner plans for ops 3-6 with checks; all 40 ground changes to pack v10; approaches check (22 / 10 / 7 / 1); 6-M4 town joins; ops 7-8 hand-off (v1, 27 Nov) |
 
 Each zip has its own README on top. Data and proposals only; no scripts.
