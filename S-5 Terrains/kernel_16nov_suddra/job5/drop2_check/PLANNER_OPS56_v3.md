@@ -47,6 +47,12 @@ All numbers are MEASURED unless marked otherwise.
 | Rejected tries | At the junction, with steps of 0.55-1.41 m. The best tries were: 5-03 → 5-F.3 road (0.55 m step, grade 12.5 %), 5-F.3 → 5-M1.2 road (0.55 m, 12.9 %), and 5-F pad (0.56 m, 12.9 %). Some tries also clashed with 5-12's own pad |
 | Road length | NOT MEASURED (the log does not give the length of rejected tries) |
 
+## Op 5 part 2, 5-12 re-run with the narrowed search (P12, 7 min)
+
+Output in `planner_ops56_v5/op5_512`. **No road.** The log has no tries at all: with the search margin cut from 16 km to 6 km, the router found no dry path to any of the three joins. The run with the 16 km margin did find paths to them, so the dry way round is longer than a 6 km box allows. The 6 km figure was ASSUMED by me; that assumption was wrong. (Roads R5 measured 5-12's kept road at 47.6 km.)
+
+The 0.6 m ramp allowance (P9) was never tested, because no path reached a junction.
+
 ## Ramp spec for 6-03 (P7), corrected
 
 | Item | Value | Tag |

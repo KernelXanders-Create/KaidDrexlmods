@@ -1,0 +1,6 @@
+road for 5-12: NO ROUTE found to the 5-12 net
+{'1 grid: pads at different levels >= 14 m (17 m diagonal; checked at 17 m)': 'PASS', '1 grid: road points vs pad points at another level (5 cm)': 'PASS', "1 grid: junction steps (a road joining the net meets the earlier road's points at another level; the earlier road keeps its level)": 'REPORT', '2 pad ground change <= 4.0 m': 'PASS', '3 roads: dirt grade <= 14 %': 'PASS', '3 roads: cut / fill <= 4 m (every grid point the road fixes)': 'PASS', '3 roads: one connected net per island': 'PASS', '3 roads: no straight run over 150 m (within 1 m of the chord)': 'PASS', '3 roads: nothing built within 3 m of a road edge': 'PASS', '4 pads: no two within 12 m': 'PASS', '4 pads: edge >= 10 m from the +0.3 m line (harbour / beach works exempt)': 'PASS', '5 final and mains >= 400 m apart': 'PASS', '6 approaches (two per main, designed)': 'SEE NOTES', '7 no rock walls / rock towers as dressing on fought ground': 'PASS (none placed by this plan)'}
+
+real	6m58.067s
+user	11m25.619s
+sys	0m19.280s
