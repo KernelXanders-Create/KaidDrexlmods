@@ -104,3 +104,4 @@ For scale: the four ops 5-6 causeways cross gaps of 20-50 m (roads R2).
 | A1 | Tolerance for "a road on the approach side" (3-M2 W, 3-M4 NW and 6-M1 W miss by 50-51°) | a Keep 45°: the three stay as findings | HUMAN |
 | A2 | 3-F W approach (297°): no road on that side; the line to 3-M2 is about 1 km of water | a Boat / wade way: the W approach stays a water way, no road | HUMAN |
 | A3 | 3-M2 W, 3-M4 NW and 6-M1 W: approach sides wet | b Causeways: measure them before any re-run | HUMAN |
+| A4 | Causeways on the three wet sides (3-M2 W 2,265 m; 3-M4 NW 705 m; 6-M1 W 635 m, with dry ground to 16.2 %) | a All three: ground requests in pack v8, with a cut to 12 % on the 6-M1 line; re-run ops 3 and 6 | HUMAN |
