@@ -1,0 +1,6 @@
+/home/user/KaidDrexlmods/S-5 Terrains/kernel_16nov_suddra/job2/tools_sketch/planner.py:273: RuntimeWarning: invalid value encountered in add
+  mid = np.where(np.isfinite(lo), (lo + hi) / 2, gz)
+
+real	115m0.012s
+user	148m29.308s
+sys	28m25.843s

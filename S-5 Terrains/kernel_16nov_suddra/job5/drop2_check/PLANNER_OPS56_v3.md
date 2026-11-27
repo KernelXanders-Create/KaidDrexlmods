@@ -53,6 +53,14 @@ Output in `planner_ops56_v5/op5_512`. **No road.** The log has no tries at all: 
 
 The 0.6 m ramp allowance (P9) was never tested, because no path reached a junction.
 
+## Op 5 part 2, 5-12 re-run with three joins and the 16 km margin (P13)
+
+Output in `planner_ops56_v6/op5_512` (log only). **Stopped at its own 115 min limit with no output.** The log has no tries at all. The two earlier 16 km runs behaved differently:
+- the first, with every join and no ramp, finished in 76 min and logged 19 rejected tries;
+- the second, with every join and the ramp, also stopped with no output.
+
+Where the time goes is NOT MEASURED.
+
 ## Ramp spec for 6-03 (P7), corrected
 
 | Item | Value | Tag |
