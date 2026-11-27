@@ -1,0 +1,132 @@
+{
+ "5-02": {
+  "pad": [
+   1400.0,
+   12000.0
+  ],
+  "players": {
+   "length_m": 1016,
+   "wade_m": 676,
+   "low_not_water_m": 124,
+   "lowest_ground_m": -0.74,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    2248,
+    12752
+   ],
+   "straight_m": 1133
+  },
+  "AI": {
+   "length_m": 1298,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.51,
+   "reaches": "5-03-5-F.3",
+   "at": [
+    2160,
+    12936
+   ],
+   "straight_m": 1206
+  },
+  "boat": {
+   "nearest_boat_water_m": 1857,
+   "boat_cell": [
+    3152,
+    11384
+   ],
+   "that_cell_to_road_m": 266
+  }
+ },
+ "5-M2.5": {
+  "pad": [
+   3385.0,
+   12520.0
+  ],
+  "players": {
+   "length_m": 80,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3392,
+    12632
+   ],
+   "straight_m": 112
+  },
+  "AI": {
+   "length_m": 80,
+   "wade_m": 0,
+   "low_not_water_m": 0,
+   "lowest_ground_m": 0.94,
+   "reaches": "5-M2.2-5-M2.4",
+   "at": [
+    3392,
+    12632
+   ],
+   "straight_m": 112
+  },
+  "boat": {
+   "nearest_boat_water_m": 56,
+   "boat_cell": [
+    3424,
+    12480
+   ],
+   "that_cell_to_road_m": 156
+  }
+ },
+ "5-12": {
+  "pad": [
+   600.0,
+   11000.0
+  ],
+  "players": {
+   "length_m": 1804,
+   "wade_m": 0,
+   "low_not_water_m": 594,
+   "lowest_ground_m": 0.13,
+   "reaches": "5-01-5-F.3",
+   "at": [
+    2016,
+    10008
+   ],
+   "straight_m": 1729
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 1106,
+   "boat_cell": [
+    928,
+    9944
+   ],
+   "that_cell_to_road_m": 1092
+  }
+ },
+ "5-13": {
+  "pad": [
+   1840.0,
+   9705.0
+  ],
+  "players": {
+   "length_m": 353,
+   "wade_m": 0,
+   "low_not_water_m": 172,
+   "lowest_ground_m": 0.13,
+   "reaches": "5-01-5-F.3",
+   "at": [
+    2016,
+    9992
+   ],
+   "straight_m": 337
+  },
+  "AI": "NO WALK to the road net within 3.5 km",
+  "boat": {
+   "nearest_boat_water_m": 648,
+   "boat_cell": [
+    1232,
+    9480
+   ],
+   "that_cell_to_road_m": 943
+  }
+ }
+}
