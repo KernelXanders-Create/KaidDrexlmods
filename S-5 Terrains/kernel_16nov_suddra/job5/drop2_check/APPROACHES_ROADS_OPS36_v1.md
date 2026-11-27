@@ -51,7 +51,7 @@ These five sites have no road by an earlier decision. This reading is AI.
 | 3 | 3-F Peat-Gas Works | W along the pipeline road past 3-M2 | 297° | 3-F → 3-02 at 212° | 85° | — |
 | 3 | 3-M2 Pipeline Pumping Station | W from the start | 273° | 3-M2.2 → 3-M1 at 222° | 51° | — |
 | 3 | 3-M4 Gasworks Spur | NW along the pipeline road | 315° | 3-M4 → 3-M2.2 at 265° | 50° | — |
-| 4 | 4-M2 Drain Rail Bridge | over the 4-06 causeway to the north gate | 309° | rail bridge N → 4-06.2 at 25° | 76° | — |
+| 4 | 4-M2 Drain Rail Bridge | over the 4-06 causeway to the north gate | 309° | rail bridge N → 4-06.2 at 25° | 76° | The 4-06 causeway end has no road (ops 3-4 v1 decision 7; AI reading) |
 | 5 | 5-M1 Esker Road Gate | E past 5-05 | 81° | 5-09 → 5-M1 at 176° | 95° | 5-05 is off the net (roads R2) |
 | 5 | 5-M2 Esker Dugouts | E past 5-04 | 97° | 5-M2.4 → 5-08 at 22° | 75° | 5-04 is off the net (roads R2) |
 | 5 | 5-M3 North-west Battery | S past 5-02 | 196° | 5-M3 spur, 92° | 104° | 5-02 is foot / boat / air (P10) |
