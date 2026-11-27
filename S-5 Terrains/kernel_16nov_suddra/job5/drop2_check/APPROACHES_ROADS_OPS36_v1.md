@@ -150,6 +150,26 @@ Output: `approaches36/run_a5/op3`. Approaches re-checked in `approaches36/approa
 | Length at 14 % | 2.6 m | MEASURED (from the rise) |
 | Deck | 7 m, the road width | ASSUMED |
 
+## A6 re-run of op 3 (58 min, MEASURED): passes
+
+Output: `approaches36/run_a6/op3`, run on pack v9.
+- **3-M2.3:** seated on the 3-M2 trunk 0 m from its pin, pad change 0.23 m.
+- **3-M1.2:** seated 1 m from its pin.
+- **Water line:** PASS. The closest pads are 3-M2.2 at 12.5 m and 3-M2 at 12.6 m.
+- **Roads:** 23 roads, 35.0 km. Worst grade 13.8 %.
+- **Other checks:** every one passes except "one connected net", the failure already accepted (3-04, 3-04.2, 3-10, 3-10.2 and 3-10.3 are foot / boat / air).
+
+Final approaches check on these plans (op 3 `run_a6`, op 4 v5, op 5 v4 main, op 6 `run_a4`): `approaches36/approaches36_v4.json`. Of the 40 approaches:
+
+| Result | Count |
+|---|---|
+| Road on that side | 21 |
+| No road at the site | 10 |
+| Road at the site, none on that side | 8 |
+| Not a land way | 1 |
+
+Every approach that still has no road on its side has a decision behind it: A2, roads R2 / R3 / R6, P10, or ops 3-4 v1 decisions 1 and 7.
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |
