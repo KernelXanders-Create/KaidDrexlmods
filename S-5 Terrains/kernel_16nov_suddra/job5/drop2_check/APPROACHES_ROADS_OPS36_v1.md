@@ -133,3 +133,4 @@ Outputs: `approaches36/run_a4/op3` and `op6`. The approaches check was run again
 | A2 | 3-F W approach (297°): no road on that side; the line to 3-M2 is about 1 km of water | a Boat / wade way: the W approach stays a water way, no road | HUMAN |
 | A3 | 3-M2 W, 3-M4 NW and 6-M1 W: approach sides wet | b Causeways: measure them before any re-run | HUMAN |
 | A4 | Causeways on the three wet sides (3-M2 W 2,265 m; 3-M4 NW 705 m; 6-M1 W 635 m, with dry ground to 16.2 %) | a All three: ground requests in pack v8, with a cut to 12 % on the 6-M1 line; re-run ops 3 and 6 | HUMAN |
+| A5 | Op 3: the 1-F → 3-M1 trunk rejected at its start (0.37 m junction step); 3-M1 off the net, 3-M1.2 seated 3,942 m away | a Ramp piece at the trunk's 1-F start (step up to 0.4 m, ramp spec logged); 3-M1.2 held to that trunk at its pin; re-run op 3 | HUMAN |

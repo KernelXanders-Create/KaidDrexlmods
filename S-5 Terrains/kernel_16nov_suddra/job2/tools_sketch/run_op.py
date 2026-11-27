@@ -213,7 +213,7 @@ def trunk_leg(prev_list, a_xy, a_z, v, leg, k, key):
                         links=[pid, key], margin=margin, post=[tuple(a_xy)] if v is not None else None, own_ids=(pid, key))
             if r is None: continue
             ok = (r["max_cut_fill_m"] <= 4.0 and r["max_grade_pct"] <= leg["grade"] * 100 + 0.05 and r["clash_points"] == 0 and r["in_water_points"] <= 3
-                  and r["junction_step_max_m"] <= JMAX and house_clear(r) >= 3.0)
+                  and r["junction_step_max_m"] <= leg.get("jmax", JMAX) and house_clear(r) >= 3.0)     # a leg may allow a ramp piece at its start (leg "jmax")
             if ok: return r, (px, py, pz, pid)
             log.append(f"trunk leg {k} to {key} from {pid} (margin {margin}): grade {r['max_grade_pct']} %, cut/fill {r['max_cut_fill_m']} m, pad clash {r['clash_points']} {r['clash_with']}, junction {r['junction_step_max_m']} m, water {r['in_water_points']}")
     return None, None
