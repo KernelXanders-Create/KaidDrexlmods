@@ -75,9 +75,32 @@ These five sites have no road by an earlier decision. This reading is AI.
 - **Pads:** none in the way.
 - **Reading (AI):** a road on the W side would have to cross about 1 km of water. Under ops 3-4 v1 decision 1, roads stay on dry ground only, so that decision is why no road leaves 3-F on the W side.
 
+## A3 causeways on the three wet sides (MEASURED, method ASSUMED)
+
+How this was measured (script `approaches36/causeway36.py`, output `approaches36/causeway36_v1.jsonl`):
+- Each line runs straight from the site's centre to the place the approach comes from.
+- Ground at or below +0.3 m is wet.
+- Each wet stretch is filled to +0.75 m, 50 m wide (the ops 5-6 causeway size).
+- Stretches less than 50 m apart are joined into one piece.
+- Fill is counted under the deck only, with no side slopes.
+
+The line ends and the deck size are ASSUMED. The ground is pack v5 for op 3 and v7 for op 6.
+
+| Approach | Line | Causeway (pieces) | Fill | Deepest fill | Worst dry-ground grade on the line |
+|---|---|---|---|---|---|
+| 3-M2 W from the start | 3,451 m to 1-F (8200, 3600), 273° | **2,265 m** in 5 pieces; the longest is 925 m, down to −2.23 m | 124,640 m³ | 2.98 m | 9.1 % |
+| 3-M4 NW past 3-05 | 1,273 m to 3-05 (10300, 2500), 315° | 705 m in 3 pieces; the longest is 595 m | 23,633 m³ | 1.23 m | 7.6 % |
+| 6-M1 W past 6-04 | 1,612 m to 6-04 (8800, 10600), 277° | 635 m in 5 pieces; the longest is 270 m | 21,339 m³ | 1.02 m | **16.2 %** (over the 14 % rule; a road there would need a cut) |
+
+For scale: the four ops 5-6 causeways cross gaps of 20-50 m (roads R2).
+
+- 3-05's point comes from the objectives file. 3-05 is not in the drop 2 op 3 plan.
+- 3-M2's line ends at 1-F. A causeway that joined a nearer op 3 road would be shorter (NOT MEASURED).
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |
 |---|---|---|---|
 | A1 | Tolerance for "a road on the approach side" (3-M2 W, 3-M4 NW and 6-M1 W miss by 50-51°) | a Keep 45°: the three stay as findings | HUMAN |
 | A2 | 3-F W approach (297°): no road on that side; the line to 3-M2 is about 1 km of water | a Boat / wade way: the W approach stays a water way, no road | HUMAN |
+| A3 | 3-M2 W, 3-M4 NW and 6-M1 W: approach sides wet | b Causeways: measure them before any re-run | HUMAN |
