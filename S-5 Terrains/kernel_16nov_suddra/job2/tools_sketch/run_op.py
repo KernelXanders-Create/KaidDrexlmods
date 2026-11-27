@@ -371,9 +371,11 @@ for phase in (0, 1):
             nodes[net] = []
             for r_ in EXT_ROADS:
                 ROADS_BY_ID[r_["id"]] = r_
+                if getattr(op, "JOIN_ONLY", None) and r_["id"] not in op.JOIN_ONLY: continue     # a narrowed search: only the named roads
                 nodes[net] += [n_ for n_ in own_nodes(r_, r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]] if not r_["id"].startswith("built:") else \
                                [n_ for n_ in level_nodes(r_["points"], r_["points_z"], r_["id"]) if op.BOX[0] < n_[0] < op.BOX[1] and op.BOX[2] < n_[1] < op.BOX[3]]
             served = [eid for eid, e in EXT.items() if any(Polygon(rect(e["x"], e["y"], e["hx"], e["hy"], e["yaw"])).distance(LineString(r_["points"])) <= 15.0 for r_ in EXT_ROADS)]
+            if getattr(op, "JOIN_ONLY", None): served = [eid for eid in served if eid in op.JOIN_ONLY]
             nodes[net] += [n_ for eid in served for n_ in pad_edge_nodes(EXT[eid], eid)]
         elif root in EXT:     # another op's pad: the net leaves it from its free edges (the edges its own op's road does not use)
             e = EXT[root]; a_ = math.radians(e["yaw"]); ex_ = np.array([math.cos(a_), -math.sin(a_)]); ey_ = np.array([math.sin(a_), math.cos(a_)])
