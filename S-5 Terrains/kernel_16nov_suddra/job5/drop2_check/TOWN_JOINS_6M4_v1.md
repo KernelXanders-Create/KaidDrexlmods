@@ -37,7 +37,17 @@ Script: `town64/town64.py`. Output: `town64/town64_v1.json`. Numbers are MEASURE
 - **Both joins:** both sit at +0.52-0.53 m, about 0.2 m above the +0.3 m water line, with water 5-25 m beyond. That is inside the 10 m pad clearance rule if a gate or gun position stands there.
 - **The FOB and SSW gun position:** call 27 puts them on the south edge by the SSW road. Their spots are NOT MEASURED.
 
+## T1: the north road is the planned NE road (MEASURED, script `town64/town64_t1.py`)
+
+| Item | Value |
+|---|---|
+| Road | 6-M4 → 6-11, 713 m long; it reaches 6-06 by way of 6-11 |
+| Where it leaves the town's rise | (13776, 11376), 249 m from the town point at a bearing of 45° |
+| Road level there | +0.69 m (ground +0.82 m) |
+| The N gun position (call 27) | stands by this road at the town edge; its spot is NOT MEASURED |
+
 ## Decisions (Kernel)
 
 | # | Finding | Answer | source |
 |---|---|---|---|
+| T1 | North road: due N crosses 380 m of water | a Use the planned 6-M4 → 6-11 road (NE, 41°) as the north road; it joins at the town edge and the N gun position stands by it | HUMAN |
