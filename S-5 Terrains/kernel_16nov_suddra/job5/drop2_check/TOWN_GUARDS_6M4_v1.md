@@ -41,3 +41,11 @@ The N gun passes on either bearing.
 - **The N gun is inside the town:** it is 121 m short of where the N road leaves the rise. Nearer the edge, the rise is too narrow to keep a pad 10 m clear of the water.
 - **Firing lines:** on 0°, the N gun's line crosses the north part of the town, which reaches about 260 m beyond the gun. On 45° it runs along the road out of town. No houses are placed yet, so whether houses block either line is NOT MEASURED.
 - **The FOB:** it is about 80 m from the K1 landing top, on the south edge, facing 6-M3 across the water, as call 27 asks.
+
+## Decisions (Kernel)
+
+| # | Finding | Answer | source |
+|---|---|---|---|
+| G1 | The N gun passes facing on both 0° (designed N approach) and 45° (along the N road); on 0° its line crosses the town's north part | b 45°, along the planned N road (T1) as it leaves the town to the NE, toward 6-11 | HUMAN |
+
+The seats of the FOB, the SSW gun and the N gun stand as in the tables above. The bearings are SSW gun 214° and N gun 45°.
